@@ -1,6 +1,24 @@
 # Cloud topology journal
 Latest update first. Images show actual geometry unless labeled as reference images or diagrams. Click a GitHub image to open it separately.
 
+## Curved native CAD with real mounting and screwdriver access
+2026-09-08T13:03:02+00:00
+
+The blocky solver mesh has now become a native **FreeCAD 1.1.3 CAD candidate**. The model has a curved wall spine, two large openings, an upper sweeping brace, a diagonal rib, a tilted bottom seat and front retention rail. This is newly constructed CAD guided by the topology studies and the supplied rendering.
+
+The repository's existing **Ø7 mm wall-hole and Ø16 mm screwdriver-corridor dimensions** are retained, with a Ø15 mm washer envelope. Each bracket has two room-facing holes. The lower driver corridor passes through a deliberate opening in the front rail. The laptop must be removed for installation. The render shows simplified screw/washer envelopes and the separate blue view shows the tool paths.
+
+The shape is one valid solid. Exact CAD intersections are zero for both circular driver envelopes and both bolt-hole gauges. The simplified laptop envelope also clears the model at seven sampled positions along the tilted retrieval path. The upper grasp region remains above the bracket.
+
+This follows the repository's preferred sequence: editable native CAD, named construction features, fit and service checks, oriented print files, Orca review, then a clear current-candidate handoff. The previous fan-cooled print release remains a separate design.
+
+The native model uses stock Sketcher/Part features. The curved profiles have editable control points; they are not yet fully constrained. Shared depth dimensions are expression-driven. Broader parameter edits require regeneration and renewed checks. Slicing and structural reanalysis of this new shape are underway; the previous voxel mesh's weight and deflections do not apply to it.
+
+
+![Curved native CAD with real mounting and screwdriver access](../topology/cad_candidate/results/curved_bracket.jpg)
+
+![Curved native CAD with real mounting and screwdriver access](../topology/cad_candidate/results/screw_access.jpg)
+
 ## Tilted 32 mm grasp-clearance candidate — layer-aware results
 2026-09-08T12:24:25+00:00
 
