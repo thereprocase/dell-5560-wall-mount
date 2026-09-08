@@ -1,7 +1,19 @@
-# Cloud topology journal
-Latest update first. Images show actual geometry unless labeled as reference images or diagrams. Click a GitHub image to open it separately.
+# Progress journal
+
+Latest update first.
+
+## Portable progress journal scaffold, without embedded personal data
+
+2026-09-08T13:32:34+00:00
+
+Added a [portable progress-journal scaffold](../tools/progress-journal/README.md) for similar work in other repositories. It contains a standard-library Python journal generator, an optional connected-GitHub publisher, generic examples and three offline tests. No personal notes, account names, credentials or hardcoded workspace paths are embedded in the scaffold.
+
+It records only caller-supplied notes/images plus UTC timestamps, keeps publication paths inside the repository, excludes unrelated staged changes in the local Git route and never force-pushes. It does not automatically redact future note contents; normal Git commit identity still applies. The connected publisher takes workspace/repository/branch at runtime. This entry is prepared and published using the new scaffold itself.
+
+The [curved CAD package](cad_candidate/README.md) is published below: native FreeCAD, oriented STEP/STL, fit coupon and the 50.3 g Orca review project. Its unresolved structural findings remain visible in the validation report.
 
 ## Curved native CAD, accessible screws and 50.3 g Orca review package
+
 2026-09-08T13:23:16+00:00
 
 ## Current candidate: native CAD, screw access and actual Orca slice
@@ -19,13 +31,14 @@ Native reopen and hole-diameter 7→7.4→7 mm regeneration pass. Sampled insert
 **Strength gate remains open.** The actual CAD is checked with orthotropic print axes and shell/core-weighted stiffness. Across 2.5/1.8/1.2 mm meshes, the 30 N outward grab case gives 2.14/2.64/3.20 mm monitored-node movement and increasing local peak stresses. The results are not converged and do not establish a passing strength margin. This is a fit/print prototype, not an installation release. The [validation report](cad_candidate/VALIDATION.md) records the assumptions, raw results and next structural work; it does not reuse the earlier voxel result as proof.
 
 
-![Curved native CAD, accessible screws and 50.3 g Orca review package](../topology/cad_candidate/results/curved_bracket.jpg)
+![Progress image](cad_candidate/results/curved_bracket.jpg)
 
-![Curved native CAD, accessible screws and 50.3 g Orca review package](../topology/cad_candidate/results/screw_access.jpg)
+![Progress image](cad_candidate/results/screw_access.jpg)
 
-![Curved native CAD, accessible screws and 50.3 g Orca review package](../topology/cad_candidate/results/installed.jpg)
+![Progress image](cad_candidate/results/installed.jpg)
 
 ## Curved native CAD with real mounting and screwdriver access
+
 2026-09-08T13:03:02+00:00
 
 The blocky solver mesh has now become a native **FreeCAD 1.1.3 CAD candidate**. The model has a curved wall spine, two large openings, an upper sweeping brace, a diagonal rib, a tilted bottom seat and front retention rail. This is newly constructed CAD guided by the topology studies and the supplied rendering.
@@ -39,11 +52,12 @@ This follows the repository's preferred sequence: editable native CAD, named con
 The native model uses stock Sketcher/Part features. The curved profiles have editable control points; they are not yet fully constrained. Shared depth dimensions are expression-driven. Broader parameter edits require regeneration and renewed checks. Slicing and structural reanalysis of this new shape are underway; the previous voxel mesh's weight and deflections do not apply to it.
 
 
-![Curved native CAD with real mounting and screwdriver access](../topology/cad_candidate/results/curved_bracket.jpg)
+![Progress image](cad_candidate/results/curved_bracket.jpg)
 
-![Curved native CAD with real mounting and screwdriver access](../topology/cad_candidate/results/screw_access.jpg)
+![Progress image](cad_candidate/results/screw_access.jpg)
 
 ## Tilted 32 mm grasp-clearance candidate — layer-aware results
+
 2026-09-08T12:24:25+00:00
 
 The **4.20° tilted candidate** has finished its 50-iteration 3D search and a separate layer-aware recheck. It retains the agreed **32 mm minimum rear clearance across the upper 80 mm grasp region**, with approximately **21 mm at the laptop bottom and 37.9 mm at its top**. Slot width is 22 mm for the 20 mm reference laptop envelope.
@@ -72,9 +86,10 @@ Current evidence and source:
 The STL is an intermediate topology shape. Final screw holes, chamfers, pads/fit, PETG handling feel and an Orca slice are still outstanding. Hand clearance is a design target informed by the NASA drawing; personal fit is not yet tested.
 
 
-![Tilted 32 mm grasp-clearance candidate — layer-aware results](../topology/slot_up/tilted_grip/results/v30_supported.png)
+![Progress image](slot_up/tilted_grip/results/v30_supported.png)
 
 ## NASA-informed grip clearance and a 4.2 degree outward lean
+
 2026-09-08T12:20:51+00:00
 
 The user accepted a **32 mm grasp-clearance target**, informed by the NASA two-finger handle drawing, and suggested leaning the laptop slightly away from the wall. The updated geometry combines both: **4.20° tilt**, approximately **21.0 mm rear clearance at the bottom**, and **32.0–37.9 mm over the upper 80 mm grasp region**. This uses the repository's 230.3 mm laptop height. A 22 mm slot allows nominal 1 mm clearance on each face of the 20 mm reference laptop envelope.
@@ -91,9 +106,10 @@ The research and design rules are now in [HUMAN_FACTORS.md](HUMAN_FACTORS.md), w
 For this personal mount, the selected dimensions are informed engineering choices, not a claim of NASA compliance or verified human fit. Keep the upper side edges exposed, provide chamfered lead-ins and touch edges, and keep fingers above the closing seat gap. A supported spacer check and a small PETG fit coupon remain necessary before treating the shape as ready for use.
 
 
-![NASA-informed grip clearance and a 4.2 degree outward lean](../topology/slot_up/tilted_grip/results/grip_layout.png)
+![Progress image](slot_up/tilted_grip/results/grip_layout.png)
 
 ## Layer-aware screening — 8 mm gap superseded by hand-clearance requirement
+
 2026-09-08T12:12:24+00:00
 
 **Superseded clearance assumption:** the user identified that the 8 mm rear gap does not allow a comfortable fingers-behind grip. A 20 mm rear-gap trial is now running; the results below remain the 8 mm reference case. The larger gap must be included in the load lever arm.
@@ -121,9 +137,10 @@ Reproducible source: `slot_up/recheck.py`. Numeric results: `slot_up/near_wall/r
 The journal now also has a single prepare-and-publish entry point, `publish_progress.js`; usage is in `PUBLISHING.md`. This entry was published through that action.
 
 
-![Layer-aware screening — 8 mm gap superseded by hand-clearance requirement](../topology/slot_up/near_wall/results/v30_supported.png)
+![Progress image](slot_up/near_wall/results/v30_supported.png)
 
 ## Near-wall slot-inclusive search and one-action journal publishing
+
 2026-09-08T12:06:26+00:00
 
 The slot now rises from a seat just 6 mm above the bracket bottom. The near-wall trial reduces the laptop rear clearance from 28 mm to 8 mm. Top attachment pads sit near the slot top. The image below is the actual retained 3D finite-element geometry, not a generated product concept.
@@ -137,4 +154,4 @@ Visual references: [compact laptop wall holder](https://makerworld.com/en/models
 Journal publishing is now scripted: prepare an entry with `journal.py`, then execute `publish_in_cloud.js` through the connected GitHub app. It uploads notes and images together, preserves the branch's existing files, checks for concurrent edits, and never force-pushes. The printed journal URL is what goes into chat.
 
 
-![Near-wall slot-inclusive search and one-action journal publishing](../topology/slot_up/near_wall/results/live.png)
+![Progress image](slot_up/near_wall/results/live.png)

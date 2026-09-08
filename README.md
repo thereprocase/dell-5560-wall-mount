@@ -15,3 +15,5 @@
 - [Running journal](topology/JOURNAL.md)
 
 This branch follows the repository's native-CAD → fit/service checks → oriented parts → Orca review → physical verification workflow. The earlier [topology study](topology/README.md) is retained as history. The fan-cooled [Revision H on main](https://github.com/thereprocase/dell-5560-wall-mount/tree/main) is a separate baseline; its frozen printed arms and print settings do not define this fanless PETG candidate.
+
+Reusable tooling: [portable progress journal](tools/progress-journal/README.md), with generic source and no embedded project identity.

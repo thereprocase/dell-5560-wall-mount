@@ -41,3 +41,7 @@ Without `--push`, this prepares the journal and an explicit file manifest only.
 command expects a normal branch synchronized with the remote; it does not repair
 diverged history or force-push. Change the workspace root in the cloud scripts
 when moving the checkout to a different workspace.
+
+## Reuse in another repository
+
+The generic [portable scaffold](../tools/progress-journal/README.md) contains the Python journal generator and connected-GitHub publisher with destinations supplied at runtime. It includes no embedded account or workspace identity. Use that directory when starting similar work elsewhere.
