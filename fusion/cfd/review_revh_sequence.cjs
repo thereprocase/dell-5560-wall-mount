@@ -21,6 +21,9 @@ const output=process.argv[3]||'fusion/cfd/runs/revh_fourhour_08/browser-initial'
   if(badLinks.length)errors.push('Broken internal links');
   const video=page.locator('#flow-video');let meta=null;
   if(await video.count()){
+   // Python's local file server does not implement byte ranges. Decode its
+   // complete file as a blob locally; public checks use the real HTTPS source.
+   if(new URL(base).hostname==='127.0.0.1')await video.evaluate(async v=>{v.src=URL.createObjectURL(await (await fetch(v.querySelector('source').src)).blob());v.load();});
    await video.scrollIntoViewIfNeeded();await video.evaluate(v=>v.play());
    await page.waitForFunction(()=>document.querySelector('video').currentTime>.25);
    await video.evaluate(v=>v.pause());

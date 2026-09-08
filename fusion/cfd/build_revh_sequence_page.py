@@ -29,17 +29,26 @@ def main():
             assert report['hour_checkpoint']==hour
             reports.append(report)
     latest=reports[-1] if reports else None
+    early=PAGE/'early/progress.json'
+    if latest is None and early.is_file():
+        latest=json.loads(early.read_text())
+        assert not latest['preview_subsampled']
     ms=(latest['last_time_s'] if latest else state.get('latest_physical_time_s') or 0)*1000
     heading='Four hours of airflow, recorded.' if state['state']=='complete' else 'Four-hour airflow run.'
     video='''<div class="pending"><strong>The solver is running.</strong><p>The first hourly video is due around 1:12 p.m. Eastern on 8 September, plus rendering and publication time.</p></div>'''
     if latest:
         hour=latest['hour_checkpoint']
-        video=f'''<h2>Hour {hour}: latest cumulative video</h2>
-<figure><video id="flow-video" controls playsinline preload="metadata" poster="hour-{hour}/poster.png" aria-describedby="video-caption"><source src="hour-{hour}/flow.mp4" type="video/mp4"><a href="hour-{hour}/flow.mp4">Open the MP4</a>.</video>
-<figcaption id="video-caption">{latest['source_frames']} actual sampled states, from {latest['first_time_s']*1000:.4f} to {ms:.4f} ms. Playback lasts {latest['video_duration_s']:.2f} seconds at {latest['playback_slowdown']:.0f}× slow motion, rounded to 30 fps, with a half-second final hold. No intermediate CFD states are generated. <a href="hour-{hour}/flow.mp4">Open or download this video</a>.</figcaption></figure>'''
-        if (PAGE/f'hour-{hour}'/'history.png').exists():
-            video+=f'<figure><a href="hour-{hour}/history.png"><img src="hour-{hour}/history.png" alt="Recorded pressure, velocity and numerical diagnostics against physical time" loading="lazy"></a><figcaption>Recorded histories through this video checkpoint. Pressure uses the assumed air density of 1.2 kg/m³.</figcaption></figure>'
+        folder=f'hour-{hour}' if hour else 'early'
+        title=f'Hour {hour}: latest cumulative video' if hour else 'Current sequence, before the first full hour'
+        video=f'''<h2>{title}</h2>
+<figure><video id="flow-video" controls playsinline preload="metadata" poster="{folder}/poster.png" aria-describedby="video-caption"><source src="{folder}/flow.mp4" type="video/mp4"><a href="{folder}/flow.mp4">Open the MP4</a>.</video>
+<figcaption id="video-caption">{latest['source_frames']} actual sampled states, from {latest['first_time_s']*1000:.4f} to {ms:.4f} ms. Playback lasts {latest['video_duration_s']:.2f} seconds at {latest['playback_slowdown']:.0f}× slow motion, rounded to 30 fps, with a half-second final hold. No intermediate CFD states are generated. <a href="{folder}/flow.mp4">Open or download this video</a>.</figcaption></figure>'''
+        if (PAGE/folder/'history.png').exists():
+            video+=f'<figure><a href="{folder}/history.png"><img src="{folder}/history.png" alt="Recorded pressure, velocity and numerical diagnostics against physical time" loading="lazy"></a><figcaption>Recorded histories through this video checkpoint. Pressure uses the assumed air density of 1.2 kg/m³.</figcaption></figure>'
     rows=[]
+    if early.is_file():
+        r=json.loads(early.read_text())
+        rows.append(f'<tr><th scope="row">Early sequence</th><td>{r["compute_elapsed_seconds_at_snapshot"]/3600:.3f} h</td><td>{r["last_time_s"]*1000:.4f} ms</td><td>{r["source_frames"]}</td><td><a href="early/flow.mp4">MP4</a> · <a href="early/progress.json">Provenance</a></td></tr>')
     byhour={r['hour_checkpoint']:r for r in reports}
     for hour in range(1,5):
         r=byhour.get(hour)
