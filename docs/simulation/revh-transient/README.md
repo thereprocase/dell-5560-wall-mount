@@ -38,3 +38,16 @@ All fans remain nominal 10 Pa constant-force actuators. Laptop internals, grille
 - [Raw probes, local sections and diagnostics](commissioning-samples.zip) ([hashes](sample-hashes.json))
 
 Raw meshes, partitioned fields and unsuccessful trials are retained locally in the CFD worktree. This compact publication does not contain the full solver output.
+
+## Later GPU comparison
+
+The ten-step 3.2M-cell backend comparison took 178.31 seconds on CPU and
+219.86 seconds with CUDA pressure solves. The larger GPU result fails the
+preset maximum U/p field-error rule, despite passing RMS checks. CPU remains
+selected. This is a separate provisional mesh and a bounded startup benchmark,
+not a replacement long video or validation result.
+
+See the [benchmark measurements](gpu-benchmark/benchmark.json),
+[native double-precision field comparison](gpu-benchmark/field-comparison.json),
+and [method with failed trials](gpu-benchmark/METHOD.md). The
+[section locator](section-locator.png) shows the plotted locations on actual CAD.

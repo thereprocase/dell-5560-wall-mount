@@ -37,6 +37,11 @@ The collaborator owns the main GitHub Pages layout. CFD artifacts will be self-c
 
 ## GPU assessment, 8 September 2026
 
+The following is the initial inventory. The later isolated CUDA build and
+duct-mesh benchmark are in [the GPU assessment](gpu-benchmark/METHOD.md).
+The tested GPU backend was 23.3% slower and failed the preset maximum-field-error
+criterion; CPU remains selected. This original study is preserved as evidence.
+
 Live inventory: NVIDIA RTX 3080 Ti, 12,288 MiB VRAM; the installed BARAM OpenFOAM library directory has no PETSc, AmgX or CUDA backend. WSL's compiler reports CUDA 12.4.131, but no installed OpenFOAM PETSc/AmgX bridge was found in the queried library paths. The queried OpenFOAM installation has the runtime library directory but no `src` or `wmake` directories. These observations do not establish a working GPU CFD runtime.
 
 A new two-process WSL `hostname` MPI smoke test reproduced the previously recorded pre-worker launch hang. Its eight-second timeout did not terminate cleanly; the exact new test process group was identified and stopped after roughly one minute. The Windows mesher was unaffected. No unrelated MPI sessions were stopped. A GPU deployment would need to resolve that runtime path as well as installing and verifying the solver bridge.

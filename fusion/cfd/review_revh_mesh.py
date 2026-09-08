@@ -20,9 +20,10 @@ BASE=Path(__file__).resolve().parent
 ROOT=BASE.parents[1]
 parser=argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--case',type=Path,default=BASE/'runs/revh_transient_04')
+parser.add_argument('--output',type=Path,default=ROOT/'docs/simulation/revh-transient')
 args=parser.parse_args()
 case=args.case.resolve()
-out=ROOT/'docs/simulation/revh-transient'
+out=args.output.resolve()
 out.mkdir(parents=True,exist_ok=True)
 reader=vtk.vtkOpenFOAMReader()
 reader.SetFileName(str(case/'case.foam'));reader.CreateCellToPointOff()
@@ -31,8 +32,14 @@ mesh=reader.GetOutput().GetBlock(0)
 assert isinstance(mesh,vtk.vtkUnstructuredGrid)
 print('Read',mesh.GetNumberOfCells(),'cells',flush=True)
 def read_set(name):
-    text=(case/'constant/polyMesh/sets'/name).read_text()
-    match=re.search(r'\n\s*(\d+)\s*\n\(\s*\n([\d\s]+)\)',text)
+    path=case/'constant/polyMesh/sets'/name
+    if not path.exists():
+        check=(case/'log.checkMesh.expanded').read_text()
+        assert name=='underdeterminedCells' and 'Cell determinant' in check and 'Cells with small determinant' not in check
+        return np.empty(0,dtype=np.int64)
+    text=path.read_text()
+    match=re.search(r'\n\s*(\d+)\s*\(\s*([\d\s]*)\)',text)
+    assert match, 'Unrecognized cell-set list: '+name
     ids=np.fromstring(match[2],dtype=np.int64,sep=' ')
     assert len(ids)==int(match[1])
     return ids
@@ -43,10 +50,10 @@ for cell_id in bad_ids:
     cell=mesh.GetCell(int(cell_id))
     points=vtk_to_numpy(cell.GetPoints().GetData())
     bad.append([int(cell_id),*points.mean(axis=0),*np.ptp(points,axis=0)])
-bad=np.array(bad)
+bad=np.array(bad).reshape(-1,7)
 np.savetxt(out/'underdetermined-cell-locations.csv',bad,delimiter=',',header='cell_id,x_m,y_m,z_m,span_x_m,span_y_m,span_z_m',comments='',fmt=['%d']+['%.10g']*6)
-diagnostic={'count':len(bad),'center_bounds_m':[bad[:,1:4].min(axis=0).tolist(),bad[:,1:4].max(axis=0).tolist()],
-            'span_quantiles_m':np.quantile(bad[:,4:],[0,.01,.5,.99,1],axis=0).tolist(),
+diagnostic={'count':len(bad),'center_bounds_m':[bad[:,1:4].min(axis=0).tolist(),bad[:,1:4].max(axis=0).tolist()] if len(bad) else None,
+            'span_quantiles_m':np.quantile(bad[:,4:],[0,.01,.5,.99,1],axis=0).tolist() if len(bad) else None,
             'near_wall_plane_y_lt_2mm':int(np.sum(bad[:,2]<.002)),
             'front_lip_z_minus10_to30mm':int(np.sum((bad[:,3]>-.010)&(bad[:,3]<.030))),
             'hinge_z_210_to260mm':int(np.sum((bad[:,3]>.210)&(bad[:,3]<.260)))}
@@ -67,8 +74,7 @@ for point in bad[:,1:4]:
         candidates.append((float(dist2),name))
     d2,name=min(candidates);distances.append(np.sqrt(d2));closest.append(name)
 diagnostic['nearest_CAD_patch_counts']={name:closest.count(name) for name in surfaces}
-diagnostic['nearest_CAD_distance_quantiles_mm']=np.quantile(distances,[0,.01,.5,.99,1]).tolist()
-diagnostic['nearest_CAD_distance_quantiles_mm']=[1000*v for v in diagnostic['nearest_CAD_distance_quantiles_mm']]
+diagnostic['nearest_CAD_distance_quantiles_mm']=(1000*np.quantile(distances,[0,.01,.5,.99,1])).tolist() if distances else None
 diagnostic['distance_note']='Centroid approximated by mean of cell vertices; distance to the original tessellated CAD surface, not the snapped mesh wall.'
 (out/'mesh-defect-locations.json').write_text(json.dumps(diagnostic,indent=2)+'\n')
 
@@ -100,7 +106,7 @@ for ax,(title,ys,zs) in zip([*axs,overview_ax],views):
     ax.set(xlim=ys,ylim=zs,xlabel='Outward from wall Y [mm]',ylabel='Height Z [mm]',title=title,aspect='equal')
     checks.append({'title':title,'plane_x_mm':111,'y_bounds_mm':ys,'z_bounds_mm':zs,'cut_polygons':len(polys)})
     print(title,len(polys),flush=True)
-fig.suptitle('Revision H | actual mesh sections\nRequested edge cells: 0.25 mm; first layer: 0.06 mm. Achieved coverage requires the accompanying checks.',fontsize=13)
+fig.suptitle('Revision H | actual mesh sections | '+case.name+'\nCell targets and wall-layer prescription are recorded in the case manifest; inspect achieved coverage.',fontsize=13)
 fig.savefig(out/'mesh-sections.png',dpi=180);plt.close(fig)
 overview.savefig(out/'mesh-duct-overview.png',dpi=200);plt.close(overview)
 raw=(case/'log.checkMesh.standard').read_text(errors='replace')
