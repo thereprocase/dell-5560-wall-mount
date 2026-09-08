@@ -1,6 +1,37 @@
 # Cloud topology journal
 Latest update first. Images show actual geometry unless labeled as reference images or diagrams. Click a GitHub image to open it separately.
 
+## Tilted 32 mm grasp-clearance candidate — layer-aware results
+2026-09-08T12:24:25+00:00
+
+The **4.20° tilted candidate** has finished its 50-iteration 3D search and a separate layer-aware recheck. It retains the agreed **32 mm minimum rear clearance across the upper 80 mm grasp region**, with approximately **21 mm at the laptop bottom and 37.9 mm at its top**. Slot width is 22 mm for the 20 mm reference laptop envelope.
+
+| Geometry | Outer volume per bracket | Surface area per bracket | Estimated PETG per pair | Largest loaded-point displacement |
+|---|---:|---:|---:|---:|
+| Full tilted envelope | 45,297 mm³ | 15,208 mm² | 53.89 g | 0.346 mm |
+| Supported topology candidate | 22,568 mm³ | 13,563 mm² | 37.43 g | 0.462 mm |
+
+That is about **50% less outer volume but 31% less estimated plastic**. Mass counts 1.2 mm perimeter walls, five 0.2 mm top/bottom layers and 20% interior material layer by layer. The transformed element polygons are used in the material calculation. This remains a geometric estimate, not slicer G-code.
+
+The initial retained mesh needed 13 additional cells to support print columns and repair diagonal-only surface contacts. The rechecked shape is one face-connected component with a watertight, consistently wound surface; mesh volume agrees with summed element volumes. Its cross-section does not grow outward as print Z increases. This supports the conservative no-bridge/no-outward-overhang geometry objective, while leaving actual Orca toolpath verification open.
+
+The three rechecked load cases give maximum loaded-point displacements of **0.167 mm** for the 73.575 N downward case, **0.334 mm** for ordinary weight plus 30 N outward force, and **0.462 mm** for ordinary weight plus 20 N side force. These are results of the assumed orthotropic PETG model and ideal wall restraints, not experimentally verified stiffness or a strength rating. Long-term creep and explicit contact are not modeled.
+
+Current evidence and source:
+
+- [Dimensions and grip diagram](slot_up/tilted_grip/results/grip_layout.png)
+- [Numeric screening results](slot_up/tilted_grip/results/screening.json)
+- [Layer-by-layer areas](slot_up/tilted_grip/results/v30_layers.csv)
+- [Retained element states](slot_up/tilted_grip/results/v30_final_states.csv)
+- [Intermediate screening STL](slot_up/tilted_grip/results/v30_screening.stl)
+- [Reproduction instructions](slot_up/README.md)
+- [Human-factors references and selected constraints](HUMAN_FACTORS.md)
+
+The STL is an intermediate topology shape. Final screw holes, chamfers, pads/fit, PETG handling feel and an Orca slice are still outstanding. Hand clearance is a design target informed by the NASA drawing; personal fit is not yet tested.
+
+
+![Tilted 32 mm grasp-clearance candidate — layer-aware results](../topology/slot_up/tilted_grip/results/v30_supported.png)
+
 ## NASA-informed grip clearance and a 4.2 degree outward lean
 2026-09-08T12:20:51+00:00
 

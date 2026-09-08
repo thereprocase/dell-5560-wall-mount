@@ -1,0 +1,156 @@
+{
+  "method": "Layer geometry approximation, not Orca toolpaths; orthotropic stiffness screening, not a strength rating",
+  "layer_mm": 0.2,
+  "wall_mm": 1.2,
+  "top_bottom_layers": 5,
+  "infill": 0.2,
+  "density_g_mm3": 0.00127,
+  "stress_order": [
+    "xx",
+    "yy",
+    "zz",
+    "xy",
+    "xz",
+    "yz"
+  ],
+  "cases": {
+    "envelope": {
+      "raw_elements": 5112,
+      "supported_elements": 5112,
+      "added_for_support_and_surface_repair": 0,
+      "connected_components": 1,
+      "watertight": true,
+      "external_volume_mm3": 40896.0,
+      "surface_area_mm2": 14112.0,
+      "estimated_polymer_mm3": 19461.120000000003,
+      "estimated_pair_mass_g": 49.43124480000001,
+      "loads": [
+        {
+          "max_loaded_displacement_mm": 0.09917983982606597,
+          "max_abs_stress_MPa": [
+            2.54265,
+            4.212796,
+            0.9094688,
+            2.013028,
+            0.4897289,
+            0.7771577
+          ]
+        },
+        {
+          "max_loaded_displacement_mm": 0.19956077699792787,
+          "max_abs_stress_MPa": [
+            2.497518,
+            1.816209,
+            0.601055,
+            0.791898,
+            0.6082998,
+            0.3794569
+          ]
+        },
+        {
+          "max_loaded_displacement_mm": 0.25716270926783263,
+          "max_abs_stress_MPa": [
+            3.07794,
+            2.51631,
+            1.052436,
+            1.668545,
+            0.8094482,
+            0.2704997
+          ]
+        }
+      ]
+    },
+    "v45": {
+      "raw_elements": 3155,
+      "supported_elements": 3156,
+      "added_for_support_and_surface_repair": 1,
+      "connected_components": 1,
+      "watertight": true,
+      "external_volume_mm3": 25248.0,
+      "surface_area_mm2": 13520.0,
+      "estimated_polymer_mm3": 15518.848000000002,
+      "estimated_pair_mass_g": 39.417873920000005,
+      "loads": [
+        {
+          "max_loaded_displacement_mm": 0.12434956502499275,
+          "max_abs_stress_MPa": [
+            3.193851,
+            3.788473,
+            0.9079722,
+            1.991269,
+            0.5083918,
+            0.770259
+          ]
+        },
+        {
+          "max_loaded_displacement_mm": 0.2503219189728616,
+          "max_abs_stress_MPa": [
+            2.557125,
+            1.831902,
+            1.163627,
+            0.9275633,
+            0.7532222,
+            0.4898148
+          ]
+        },
+        {
+          "max_loaded_displacement_mm": 0.29178508925801555,
+          "max_abs_stress_MPa": [
+            3.251707,
+            2.515088,
+            1.100436,
+            1.838133,
+            0.6858884,
+            0.2917842
+          ]
+        }
+      ]
+    },
+    "v30": {
+      "raw_elements": 2621,
+      "supported_elements": 2634,
+      "added_for_support_and_surface_repair": 13,
+      "connected_components": 1,
+      "watertight": true,
+      "external_volume_mm3": 21072.0,
+      "surface_area_mm2": 13312.0,
+      "estimated_polymer_mm3": 14215.936000000003,
+      "estimated_pair_mass_g": 36.10847744000001,
+      "loads": [
+        {
+          "max_loaded_displacement_mm": 0.1446667717830919,
+          "max_abs_stress_MPa": [
+            3.58758,
+            3.504918,
+            0.9084345,
+            2.028529,
+            0.4994697,
+            0.7714344
+          ]
+        },
+        {
+          "max_loaded_displacement_mm": 0.30944820183747973,
+          "max_abs_stress_MPa": [
+            2.460917,
+            1.886454,
+            1.433709,
+            1.101084,
+            0.7457344,
+            0.5494334
+          ]
+        },
+        {
+          "max_loaded_displacement_mm": 0.33680248165888,
+          "max_abs_stress_MPa": [
+            3.559115,
+            1.996462,
+            1.223915,
+            1.667258,
+            0.7889282,
+            0.4100928
+          ]
+        }
+      ]
+    }
+  }
+}

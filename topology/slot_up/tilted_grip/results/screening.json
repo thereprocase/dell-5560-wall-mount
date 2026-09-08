@@ -1,0 +1,110 @@
+{
+  "method": "Layer geometry approximation, not Orca toolpaths; orthotropic stiffness screening, not a strength rating",
+  "layer_mm": 0.2,
+  "wall_mm": 1.2,
+  "top_bottom_layers": 5,
+  "infill": 0.2,
+  "density_g_mm3": 0.00127,
+  "stress_order": [
+    "xx",
+    "yy",
+    "zz",
+    "xy",
+    "xz",
+    "yz"
+  ],
+  "cases": {
+    "envelope": {
+      "raw_elements": 5220,
+      "supported_elements": 5220,
+      "added_for_support_and_surface_repair": 0,
+      "connected_components": 1,
+      "watertight": true,
+      "external_volume_mm3": 45297.30522070965,
+      "surface_area_mm2": 15207.62357377956,
+      "estimated_polymer_mm3": 21215.959742138624,
+      "estimated_pair_mass_g": 53.88853774503211,
+      "loads": [
+        {
+          "max_loaded_displacement_mm": 0.10593661100420997,
+          "max_abs_stress_MPa": [
+            2.747897,
+            4.612464,
+            0.8206459,
+            2.130381,
+            0.5319751,
+            0.7524279
+          ]
+        },
+        {
+          "max_loaded_displacement_mm": 0.21568239398349973,
+          "max_abs_stress_MPa": [
+            2.523623,
+            1.72695,
+            0.5934523,
+            0.7776583,
+            0.6207135,
+            0.3870044
+          ]
+        },
+        {
+          "max_loaded_displacement_mm": 0.3455428952481807,
+          "max_abs_stress_MPa": [
+            3.535208,
+            2.722952,
+            1.075136,
+            1.899457,
+            0.7920983,
+            0.271807
+          ]
+        }
+      ]
+    },
+    "v30": {
+      "raw_elements": 2664,
+      "supported_elements": 2677,
+      "added_for_support_and_surface_repair": 13,
+      "connected_components": 1,
+      "watertight": true,
+      "external_volume_mm3": 22568.342500077782,
+      "surface_area_mm2": 13562.607935201457,
+      "estimated_polymer_mm3": 14737.801783658588,
+      "estimated_pair_mass_g": 37.43401653049281,
+      "loads": [
+        {
+          "max_loaded_displacement_mm": 0.1668132831960276,
+          "max_abs_stress_MPa": [
+            3.754504,
+            4.325868,
+            0.8088743,
+            1.917581,
+            0.5399622,
+            0.7351718
+          ]
+        },
+        {
+          "max_loaded_displacement_mm": 0.3337209792011747,
+          "max_abs_stress_MPa": [
+            2.43871,
+            2.009751,
+            1.555368,
+            1.134436,
+            0.8850935,
+            0.6048239
+          ]
+        },
+        {
+          "max_loaded_displacement_mm": 0.4617823275971457,
+          "max_abs_stress_MPa": [
+            4.08994,
+            2.294822,
+            1.25232,
+            1.948132,
+            0.7743972,
+            0.3209603
+          ]
+        }
+      ]
+    }
+  }
+}

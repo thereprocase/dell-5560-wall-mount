@@ -15,9 +15,24 @@ def index(m,e):
 
 def close_columns(m,ids):
     full=set(m.grid()[1]);out=set(ids)
-    for e in ids:
-        i,j,k=index(m,e)
-        out.update(m.en(i,j,z) for z in range(k+1))
+    changed=True
+    while changed:
+        before=len(out)
+        for e in list(out):
+            i,j,k=index(m,e)
+            out.update(m.en(i,j,z) for z in range(k+1))
+        # Opposite diagonal voxels share an edge but produce a non-manifold
+        # surface. Fill one permitted neighbour, then support its column too.
+        for k in range(m.NZ):
+            for j in range(m.NY-1):
+                for i in range(m.NX-1):
+                    q=[m.en(i,j,k),m.en(i+1,j,k),m.en(i,j+1,k),m.en(i+1,j+1,k)]
+                    bits=[e in out for e in q]
+                    if bits in ([True,False,False,True],[False,True,True,False]):
+                        available=[e for e in q if e not in out and e in full]
+                        if not available:raise RuntimeError('Cannot repair edge contact without filling slot')
+                        out.add(available[0])
+        changed=len(out)>before
     assert out<=full,'Projection would fill laptop void'
     return out
 
@@ -76,6 +91,7 @@ def main():
     trials={'envelope':set(m.grid()[1])}
     for name in ['v45','v30']:
         states=sorted((folder/'work'/name).glob('file*.csv'))
+        if not states and (folder/'results'/(name+'_final_states.csv')).exists():states=[folder/'results'/(name+'_final_states.csv')]
         if states:trials[name]=read_ids(states[-1])
     for name,raw in trials.items():
         ids=close_columns(m,raw)
@@ -96,7 +112,7 @@ def main():
         with (work/'console.log').open('w') as log:
             subprocess.run([str(runtime/'usr/bin/ccx'),'-i','check'],cwd=work,env=env,stdout=log,stderr=subprocess.STDOUT,check=True)
         results=parse_dat(work/'check.dat')
-        report['cases'][name]={'raw_elements':len(raw),'supported_elements':len(ids),'added_for_support':len(ids)-len(raw),'connected_components':components,'watertight':bool(mesh.is_watertight),'external_volume_mm3':float(mesh.volume),'surface_area_mm2':float(mesh.area),'estimated_polymer_mm3':volume,'estimated_pair_mass_g':2*volume*.00127,'loads':results}
+        report['cases'][name]={'raw_elements':len(raw),'supported_elements':len(ids),'added_for_support_and_surface_repair':len(ids)-len(raw),'connected_components':components,'watertight':bool(mesh.is_watertight),'external_volume_mm3':float(mesh.volume),'surface_area_mm2':float(mesh.area),'estimated_polymer_mm3':volume,'estimated_pair_mass_g':2*volume*.00127,'loads':results}
         print(name,report['cases'][name],flush=True)
     (out/'screening.json').write_text(json.dumps(report,indent=2)+'\n')
 
