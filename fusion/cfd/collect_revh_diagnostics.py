@@ -23,20 +23,23 @@ def main():
     progress=json.loads((out/'progress.json').read_text());end=progress['last_time_s']
     manifest=json.loads((args.case/'case_manifest.json').read_text())
     warm=manifest.get('initialization_kind')=='steady_solver'
-    start_folder='0' if warm else '0.0001'
     raw=out/'diagnostic-raw';raw.mkdir(exist_ok=False)
     excerpts={};hashes={};unavailable=[]
     for function,files in {'probes':['p','U'],'extrema':['fieldMinMax.dat'],
                            'ambient_flux':['surfaceFieldValue.dat'],
                            'ambient_abs_flux':['surfaceFieldValue.dat'],'yPlus':['yPlus.dat']}.items():
         for name in files:
-            source=args.case/'postProcessing'/function/start_folder/name
-            if function=='yPlus' and not source.is_file():
+            source_root=args.case/'postProcessing'/function
+            sources=sorted(source_root.glob('*/'+name),key=lambda path:float(path.parent.name))
+            if function=='yPlus' and not sources:
                 unavailable.append('yPlus: no full-field write yet');continue
+            assert sources, 'Missing diagnostic: '+function+'/'+name
             selected=[]
-            for line in source.read_text().splitlines():
-                if line.startswith('#') or not line.strip():selected.append(line)
-                elif float(line.split()[0])<=end+1e-13:selected.append(line)
+            for source in sources:
+                if float(source.parent.name)>end+1e-13:continue
+                for line in source.read_text().splitlines():
+                    if line.startswith('#') or not line.strip():selected.append(line)
+                    elif float(line.split()[0])<=end+1e-13:selected.append(line)
             text='\n'.join(selected)+'\n';destination=raw/(function+'-'+name+'.txt')
             destination.write_text(text)
             excerpts[(function,name)]=text
@@ -76,6 +79,7 @@ def main():
             rows.append(values)
         probe_data[field]=rows
     assert [r[0] for r in probe_data['p']]==[r[0] for r in probe_data['U']]
+    assert all(a[0]<b[0] for a,b in zip(probe_data['p'],probe_data['p'][1:])), 'Restart probe times must remain strictly increasing'
     assert abs(probe_data['p'][-1][0]-end)<1e-12
     probes=[]
     for i,location in enumerate(manifest['probes']):
@@ -86,6 +90,8 @@ def main():
     bounds=[{'field':field,'minimum':float(value)} for field,value in re.findall(r'^bounding (\w+), min: ('+NUMBER+')',log,re.M)]
     report={'captured_utc':datetime.now(timezone.utc).isoformat(),'through_time_s':end,
             'initialization_kind':manifest.get('initialization_kind','native_transient_startup'),
+            'mpi_worker_history':manifest.get('mpi_worker_history',[]),
+            'solver_clock_time_basis':'OpenFOAM ClockTime is local to each MPI launch and resets at a rank restart; physical time remains continuous.',
             'unavailable_diagnostics':unavailable,
             'hour_checkpoint':progress['hour_checkpoint'],'density_kg_m3':1.2,
             'history':history,'probe_times_s':[r[0] for r in probe_data['p']],'probes':probes,

@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Revision H CPU scaling check</title>
+<style>*{box-sizing:border-box}body{margin:0;background:#f5f7f7;color:#162c36;font:17px/1.6 system-ui,sans-serif}main{max-width:1000px;margin:auto;padding:32px 24px 60px}a{color:#17686b}h1{font-size:clamp(32px,5vw,48px);line-height:1.15}table{border-collapse:collapse;width:100%;background:white}th,td{text-align:left;padding:12px;border-bottom:1px solid #d9e2e5}.table{overflow-x:auto}.notice{padding:18px;border-left:4px solid #a5661b;background:#fff3df}nav,footer{font-size:14px}footer{margin-top:32px}</style>
+<main><nav><a href="../flowing/">Flowing-air transient</a> · <a href="../">Original startup</a></nav>
+<h1>Eight workers produce about 31% more timesteps per minute in this short check.</h1>
+<p>The Ryzen 7 5800X3D has eight physical cores and sixteen logical threads. This WSL instance exposes twelve logical threads. An independent four-worker startup simulation continued throughout these tests; the flowing production workers were suspended during each timed solve.</p>
+<div class="table"><table><thead><tr><th>Workers tested</th><th>Total active CFD workers</th><th>Seconds per step</th><th>Relative throughput</th></tr></thead><tbody>
+<tr><th>4</th><td>8</td><td>21.33</td><td>1.00×</td></tr>
+<tr><th>6</th><td>10</td><td>19.00</td><td>1.12×</td></tr>
+<tr><th>8</th><td>12</td><td>16.33</td><td>1.31×</td></tr>
+</tbody></table></div>
+<p>All candidates used the same 3.19-million-cell mesh, fan forcing, fields from steady iteration 300, two outer correction passes, output cadence, and four timesteps of 12.5 µs. The timing averages the last three steps, excluding initialization and the first step. The eight-worker trial uses logical CPU slots with affinity disabled, as in the other trials.</p>
+<p>Both larger worker counts passed the predeclared field comparison against four workers: RMS error below 0.1% and maximum error below 1% of the corresponding reference magnitude, each with a 10<sup>−6</sup> absolute allowance. The maximum velocity-component difference for eight workers was 0.000167 m/s; maximum pressure difference was 0.00572 Pa at the assumed density. All trials had maximum Courant number 0.367 and no turbulence bounding messages.</p>
+<div class="notice">This is a short throughput and solver-equivalence check. It does not establish mesh independence, timestep independence, periodic vortex shedding, or long-run performance. Increasing the worker count does not improve the mesh itself.</div>
+<p><a href="rank-scaling.json">Complete benchmark, criteria and input hashes</a> · <a href="rank-handoff.json">Production checkpoint and native-history preservation checks</a></p>
+<footer>Recorded September 8, 2026. The four-hour production deadline is unchanged.</footer></main></html>

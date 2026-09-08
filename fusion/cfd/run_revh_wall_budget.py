@@ -1,7 +1,7 @@
 """Run CPU CFD within a wall budget; mirror complete samples for live videos.
 
 Use OpenFOAM's per-process stopAtWriteNowSignal. No dictionary reloads or
-global installation changes. Signal only the four verified workers in this
+global installation changes. Signal only the verified workers in this
 fresh case. The fallback terminates only this runner's process descendants.
 """
 import argparse
@@ -49,11 +49,13 @@ def main():
     p.add_argument('--case',type=Path,required=True)
     p.add_argument('--mirror',type=Path,required=True)
     p.add_argument('--seconds',type=int,default=14400)
+    p.add_argument('--ranks',type=int,choices=[4,6,8],default=4)
+    p.add_argument('--resume',action='store_true',help='Continue a deliberately checkpointed run within its original deadline')
     args=p.parse_args();case=args.case.resolve();mirror=args.mirror.resolve()
     assert 5<=args.seconds<=14400
     assert os.environ.get('WM_PROJECT_VERSION')=='v2412'
     log_path=case/'log.pimpleFoam.fourhour'
-    assert not log_path.exists()
+    assert log_path.exists() if args.resume else not log_path.exists()
     manifest=json.loads((case/'case_manifest.json').read_text())
     warm=manifest.get('initialization_kind')=='steady_solver'
     state={'case':case.name,'state':'starting','started_utc':utc(),
@@ -61,9 +63,19 @@ def main():
            'scope':('Exploratory transient from a steady-solver iterate; initial field is not claimed converged.' if warm
                     else 'Extended exploratory startup; mesh and timestep independence not established.'),
            'initialization_kind':manifest.get('initialization_kind','native_transient_startup')}
-    started=time.monotonic();last_notice=0;stop_sent=None;sample_count=0
-    command=['mpirun','--bind-to','none','-np','4','pimpleFoam','-parallel','-opt-switch','stopAtWriteNowSignal=12']
-    with log_path.open('w') as log:
+    elapsed_before=0
+    if args.resume:
+        previous=json.loads((case/'run-status.json').read_text())
+        assert previous['state']=='restarting_after_rank_change'
+        assert previous['budget_seconds']==args.seconds and not workers(case)
+        state.update(previous)
+        state.pop('error',None)
+        elapsed_before=(datetime.now(timezone.utc)-datetime.fromisoformat(state['started_utc'])).total_seconds()
+        assert elapsed_before<args.seconds
+    started=time.monotonic()-elapsed_before;last_notice=elapsed_before;stop_sent=None;sample_count=0
+    command=['mpirun','--use-hwthread-cpus','--bind-to','none','-np',str(args.ranks),'pimpleFoam','-parallel','-opt-switch','stopAtWriteNowSignal=12']
+    state['cpu_workers']=args.ranks
+    with log_path.open('a' if args.resume else 'w') as log:
         proc=subprocess.Popen(command,cwd=case,stdout=log,stderr=subprocess.STDOUT,
                               stdin=subprocess.DEVNULL,start_new_session=True)
         state.update(state='running',mpi_pid=proc.pid,command=command)
@@ -82,7 +94,7 @@ def main():
                 if re.search(r'=\s*[-+]?(?:nan|inf)\b',tail,re.I):reason='Non-finite field diagnostic'
                 speed=re.findall(r'max\(mag\(U\)\) = ([\d.eE+-]+)',tail)
                 if speed and float(speed[-1])>100:reason='Velocity exceeds 100 m/s commissioning guard'
-            if reason and stop_sent is None and len(ids)==4:
+            if reason and stop_sent is None and len(ids)==args.ranks:
                 # Only workers have the handler; never send USR2 to mpirun.
                 for pid in ids:os.kill(pid,signal.SIGUSR2)
                 stop_sent=elapsed

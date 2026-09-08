@@ -19,7 +19,7 @@ def digest(path):
     return h.hexdigest()
 
 
-def fields(case,time):
+def fields(case,time,names=None):
     # Read original doubles directly. VTK can round cell fields to float32,
     # even when its point-coordinate option Use64BitFloats is enabled.
     folders=[]
@@ -30,7 +30,7 @@ def fields(case,time):
             except ValueError:pass
     assert len(folders)==1, 'Saved time missing or ambiguous'
     data={}
-    for name in ['U','p','k','omega','nut']:
+    for name in (names if names is not None else ['U','p','k','omega','nut']):
         raw=(folders[0]/name).read_bytes()
         match=re.search(rb'internalField\s+nonuniform\s+List<(scalar|vector)>\s*(\d+)\s*\(',raw)
         assert match, 'Expected a nonuniform scalar/vector field: '+name

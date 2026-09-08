@@ -627,5 +627,19 @@
     "scope": "Six-step field comparison at 12.5 microseconds; not temporal or spatial independence.",
     "timing_caveat": "Competing workload changed between measurements; the wall-time ratio is not an isolated speed benchmark."
   },
-  "initial_field_disposition": "Use the last complete sampled full-field checkpoint, iteration 400 of 403. The steady convergence policy was not satisfied; this is a provisional flowing initialization."
+  "initial_field_disposition": "Use the last complete sampled full-field checkpoint, iteration 400 of 403. The steady convergence policy was not satisfied; this is a provisional flowing initialization.",
+  "mpi_worker_history": [
+    {
+      "physical_time_s": 0,
+      "workers": 4
+    },
+    {
+      "physical_time_s": 0.002969290867,
+      "workers": 8,
+      "changed_utc": "2026-09-08T19:14:25.038893+00:00",
+      "reason": "Measured CPU throughput improvement with unchanged field comparison",
+      "native_time_history_preserved": true
+    }
+  ],
+  "cpu_workers": 8
 }

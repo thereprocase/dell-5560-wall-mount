@@ -1,0 +1,88 @@
+{
+  "created_utc": "2026-09-08T18:59:13.503739+00:00",
+  "source_case": "revh_flowing_12",
+  "steady_iteration": null,
+  "transient_time_s": 0.001546810911,
+  "time_kind": "physical_seconds_after_flowing_initialization",
+  "vtp_time_metadata": {
+    "front_mouth": 0.001546810963191092,
+    "upward_channel": 0.001546810963191092
+  },
+  "converged": false,
+  "scope": "Integrate saved 3-D sampled velocity across explicitly bounded opening cuts.\n\nThese are central-span plane integrals, not a closed device control volume or\na calibrated fan flow measurement. Input triangles contain only meshed fluid.\n",
+  "definitions": {
+    "front_mouth": {
+      "span_x_m": [
+        -0.14,
+        0.14
+      ],
+      "gap_endpoints_m": [
+        [
+          0.0,
+          0.04,
+          0.0
+        ],
+        [
+          0.0,
+          0.048129883,
+          0.004663238
+        ]
+      ],
+      "positive_normal": [
+        0.0,
+        0.49755314317590477,
+        -0.8674334958460951
+      ],
+      "positive_meaning": "Outward through the front opening"
+    },
+    "upward_channel": {
+      "span_x_m": [
+        -0.14,
+        0.14
+      ],
+      "range_y_m": [
+        1e-05,
+        0.045
+      ],
+      "height_z_m": 0.020001,
+      "positive_normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "positive_meaning": "Upward in the laptop-side passage"
+    }
+  },
+  "source_sha256": {
+    "front_mouth": "06cc53a5c17c195470355e1bd8e7b405bd4833cd829930a93295fe0600eb39ef",
+    "upward_channel": "237505fbe941cf85d4311049ca2daad88c1606969fc2461c5494927c4113ec15"
+  },
+  "results": {
+    "front_mouth": {
+      "positive_area_m2": 0.0015967604704201221,
+      "positive_flow_L_s": 2.91260728106945,
+      "negative_area_m2": 0.0010274978121742606,
+      "negative_flow_L_s": 0.32591825260680657,
+      "fluid_area_m2": 0.0026242583990097046,
+      "net_flow_L_s": 2.5866890270104763,
+      "normal_velocity_range_m_s": [
+        -0.9092690585220208,
+        4.111462295392336
+      ]
+    },
+    "upward_channel": {
+      "positive_area_m2": 0.011353051289916039,
+      "positive_flow_L_s": 19.51696001148224,
+      "negative_area_m2": 9.080247400561348e-05,
+      "negative_flow_L_s": 0.0194207379487672,
+      "fluid_area_m2": 0.011443854309618473,
+      "net_flow_L_s": 19.497539273122722,
+      "normal_velocity_range_m_s": [
+        -0.835211992263794,
+        2.3913979530334473
+      ]
+    }
+  },
+  "upward_to_net_front_flow_ratio": 7.537643322999938,
+  "method": "Clip sampled fluid triangles to stated bounds. Integrate linearly interpolated normal velocity over triangle area; split at zero normal velocity for inward and outward components."
+}
