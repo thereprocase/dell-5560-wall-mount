@@ -11,11 +11,13 @@ import json
 import math
 from pathlib import Path
 import re
+from run_revh_wall_budget import lower_priority
 
 NUMBER=r'[-+]?(?:\d*\.)?\d+(?:[eE][-+]?\d+)?'
 
 
 def main():
+    lower_priority()
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--case',type=Path,required=True)
     parser.add_argument('--output',type=Path,required=True)

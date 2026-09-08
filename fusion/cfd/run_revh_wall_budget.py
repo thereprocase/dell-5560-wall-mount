@@ -20,6 +20,11 @@ from revh_checkpoint import describe as describe_checkpoint
 def utc():return datetime.now(timezone.utc).isoformat()
 
 
+def lower_priority():
+    os.setpriority(os.PRIO_PROCESS,0,max(os.getpriority(os.PRIO_PROCESS,0),15))
+    subprocess.run(['ionice','-c','3','-p',str(os.getpid())],check=True)
+
+
 def workers(case):
     result=[]
     for path in Path('/proc').iterdir():
@@ -53,6 +58,7 @@ def main():
     p.add_argument('--ranks',type=int,choices=[4,6,8],default=4)
     p.add_argument('--resume',action='store_true',help='Continue a deliberately checkpointed run within its original deadline')
     args=p.parse_args();case=args.case.resolve();mirror=args.mirror.resolve()
+    lower_priority()
     assert 5<=args.seconds<=31*86400
     assert os.environ.get('WM_PROJECT_VERSION')=='v2412'
     log_path=case/'log.pimpleFoam.fourhour'
@@ -79,6 +85,8 @@ def main():
     state['wall_time_accounting']='Cumulative supervised wall time; idle gaps between completed sessions are excluded.'
     command=['mpirun','--use-hwthread-cpus','--bind-to','none','-np',str(args.ranks),'pimpleFoam','-parallel','-opt-switch','stopAtWriteNowSignal=12']
     state['cpu_workers']=args.ranks
+    state['cpu_nice']=os.getpriority(os.PRIO_PROCESS,0)
+    state['io_priority']='idle'
     with log_path.open('a' if args.resume else 'w') as log:
         proc=subprocess.Popen(command,cwd=case,stdout=log,stderr=subprocess.STDOUT,
                               stdin=subprocess.DEVNULL,start_new_session=True)

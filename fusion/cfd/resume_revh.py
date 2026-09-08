@@ -21,7 +21,7 @@ import subprocess
 import sys
 import time
 from revh_checkpoint import describe
-from run_revh_wall_budget import workers,mirror_samples
+from run_revh_wall_budget import workers,mirror_samples,lower_priority
 
 
 def now():return datetime.now(timezone.utc)
@@ -35,6 +35,7 @@ def main():
     duration.add_argument('--seconds',type=int)
     duration.add_argument('--until',help='An explicit ISO-8601 UTC deadline')
     args=parser.parse_args();case=args.case.resolve();mirror=args.mirror.resolve()
+    lower_priority()
     assert case.name in ['revh_fourhour_08','revh_flowing_12'] and mirror.name==case.name
     assert os.environ.get('WM_PROJECT_VERSION')=='v2412'
     os.environ['HWLOC_COMPONENTS']='linux,stop';os.environ['OMP_NUM_THREADS']='1'

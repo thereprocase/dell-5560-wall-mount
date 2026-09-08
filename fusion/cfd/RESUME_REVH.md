@@ -4,6 +4,11 @@ Both production cases are scheduled through **2026-09-09 12:00 UTC (8 a.m. EDT)*
 The original startup uses four MPI workers; the transient initialized from a
 flowing steady-solver iterate uses eight. Their physical clocks remain separate.
 
+CFD supervisors and solver workers use CPU nice +15 and idle disk-I/O priority.
+The Windows hourly publisher and its rendering jobs use Below Normal priority;
+new WSL diagnostic jobs also use nice +15 and idle I/O. These settings preserve
+the processor counts and 8 a.m. deadline while yielding to other work.
+
 The WSL cases live under `/home/repro/code/dell5560-cfd-gpu-20260908`:
 
 - `revh_fourhour_08`: original startup, native continuation from 0.1 ms.
