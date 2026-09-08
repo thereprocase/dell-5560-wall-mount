@@ -4,23 +4,23 @@
   "started_utc": "2026-09-08T17:03:43.194635+00:00",
   "budget_seconds": 3600,
   "converged": false,
-  "completed_iterations": 237,
-  "updated_utc": "2026-09-08T17:36:54.419264+00:00",
-  "elapsed_seconds": 1991.19,
-  "latest_iteration": 237,
-  "bounding_events": 107,
+  "completed_iterations": 305,
+  "updated_utc": "2026-09-08T17:46:16.992049+00:00",
+  "elapsed_seconds": 2553.74,
+  "latest_iteration": 305,
+  "bounding_events": 152,
   "last_50_max_initial_residuals": {
-    "p": 0.0009966920807,
-    "Ux": 0.01010068441,
-    "Uy": 0.005284838382,
-    "Uz": 0.003117061527,
-    "k": 0.004701871885,
-    "omega": 0.0002138412653
+    "p": 0.0008477941135,
+    "Ux": 0.008462733031,
+    "Uy": 0.004193117805,
+    "Uz": 0.002479405739,
+    "k": 0.003000427065,
+    "omega": 0.0001624189132
   },
   "probe_window_relative_range": {
-    "p": 0.1392695154358279,
-    "U": 0.5205304896727719
+    "p": 0.19326941912323886,
+    "U": 0.381918664047729
   },
-  "last_50_max_flux_ratio": 5.5828361091520754e-05,
-  "latest_max_speed_m_s": 5.658493171
+  "last_50_max_flux_ratio": 2.742680082302187e-05,
+  "latest_max_speed_m_s": 5.606050014
 }
