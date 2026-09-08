@@ -8,3 +8,4 @@
 *.FCStd -text
 *.zip -text
 *.png -text
+/revh_retention/print/*.step -text -diff

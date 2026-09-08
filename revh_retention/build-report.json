@@ -1,0 +1,26 @@
+{
+  "revision": "H-R1 prototype",
+  "source_native_sha256": "01d41e0c91873dc18e7d3b6a6384f2ad8b988a5ccb8d5be0353a2aec8a0cecb3",
+  "new_fully_constrained_sketches": 19,
+  "unchanged_original_parts": 14,
+  "legacy_invalid_joints_removed_from_copy": 14,
+  "parts": {
+    "15_left_side_retainer": {
+      "volume_mm3": 28552.586227511278,
+      "cad_ASA_g": 29.98021553888684
+    },
+    "16_right_side_retainer": {
+      "volume_mm3": 28552.58622751128,
+      "cad_ASA_g": 29.980215538886842
+    },
+    "17_left_retainer_keeper": {
+      "volume_mm3": 326.3499999999998,
+      "cad_ASA_g": 0.3426674999999998
+    },
+    "18_right_retainer_keeper": {
+      "volume_mm3": 326.3499999999998,
+      "cad_ASA_g": 0.3426674999999998
+    }
+  },
+  "native_sha256": "c18dd31d5447042b5cd1252cb648c024785d85229add152d20199a06cdf4c4a8"
+}

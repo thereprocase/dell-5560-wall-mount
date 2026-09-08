@@ -88,6 +88,22 @@ The original `print_ready/`, root STEP, CadQuery source and Fusion/Onshape
 ports remain **Revision F history/baselines**. Rev H's arm geometry is preserved
 as prototype history; it is not a permanent constraint on later designs.
 
+### H-R1: removable retention for your printed arms
+
+[Interactive model and installation guide](https://thereprocase.github.io/dell-5560-wall-mount/revh-retainers.html) ·
+[Four-part add-on and fit coupon](docs/downloads/Precision_5560_RevH_Removable_Retainers_R1.zip) ·
+[Editable native model and engineering notes](revh_retention/)
+
+Two external side bars and two keyed keepers retain the ducts and upper rails
+without changing any of the fourteen Rev H parts. They engage existing arm
+windows, so the already printed arms need no drilling or reprinting. Removing
+one side bar releases both its duct and rail; support both while servicing.
+
+![Rev H with orange removable side bars and green keepers](docs/assets/revh-retainers-installed.png)
+
+Start with the short right-arm fit coupon. This is a CAD-checked prototype;
+physical retention, bar stiffness and warm ASA creep still need testing.
+
 ## How the shape was developed
 
 The design story and its working images belong here alongside the finished
