@@ -1,0 +1,183 @@
+{
+  "status": "Fit/print prototype; structural qualification unresolved",
+  "orca_embedded_settings_verified": {
+    "wall_loops": "3",
+    "line_width": "0.4",
+    "outer_wall_line_width": "0.4",
+    "inner_wall_line_width": "0.4",
+    "sparse_infill_density": "20%",
+    "sparse_infill_pattern": "gyroid",
+    "top_shell_layers": "5",
+    "bottom_shell_layers": "5",
+    "top_shell_thickness": "1",
+    "bottom_shell_thickness": "1",
+    "layer_height": "0.2",
+    "initial_layer_print_height": "0.2",
+    "ensure_vertical_shell_thickness": "ensure_all",
+    "enable_support": "0"
+  },
+  "orca_embedded_gcode_matches_audited_gcode": true,
+  "pair_mass_g": 50.28,
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 6001,
+      "sha256": "cc7d8f1ff16e4a0d1ac46c6ed5ea84e1be09fb8e95f2e97ba45d949dbc4da664"
+    },
+    {
+      "path": "VALIDATION.md",
+      "bytes": 4302,
+      "sha256": "245cbccbd71b0cf349b0d8d7712959ed4e311fde24cc7f134e39dfc0d1809ae9"
+    },
+    {
+      "path": "build_native.py",
+      "bytes": 11836,
+      "sha256": "5a36fdcc34bc5f1eea31f89f14925a4fb89772756b52f0f00545a19646f00848"
+    },
+    {
+      "path": "check_layers.py",
+      "bytes": 2955,
+      "sha256": "7efc7521f972fb85e5ff4759640a31bb5e33f5f827cbfdb4cef2caa9be6c844e"
+    },
+    {
+      "path": "check_structure.py",
+      "bytes": 5709,
+      "sha256": "f03b1f6ab5c6de6b2b0348bd0f3d81b35ac365b425e3cc965f9385b8ba2b3161"
+    },
+    {
+      "path": "finalize_native.py",
+      "bytes": 1709,
+      "sha256": "c9ff0129a1d98d33eacd7d27deb668d05b598e648d9f2e907c5ac146c15b6701"
+    },
+    {
+      "path": "orca/curved_review.3mf",
+      "bytes": 2476787,
+      "sha256": "5bdf841ef34d5deb94c0a17039559e475173c29ee42e3ad9c73ba151c6c189da"
+    },
+    {
+      "path": "orca/filament.json",
+      "bytes": 5620,
+      "sha256": "bbf70e0d7eb1071cc72abc5a8f3e62f0fe7a9863256db4852e4606339bb835cc"
+    },
+    {
+      "path": "orca/machine.json",
+      "bytes": 19964,
+      "sha256": "25158f6ceb1cf812178e83121b85d6c3f7c366b570586938c6a1274986fb9136"
+    },
+    {
+      "path": "orca/process.json",
+      "bytes": 6771,
+      "sha256": "2a83d3aee3bee7ea3b45505bce130b6f48d3708b93914d0a81906841630129c3"
+    },
+    {
+      "path": "orca/result.json",
+      "bytes": 347,
+      "sha256": "4bd7c3c244bc127ef0684d479dd589e7d79abb0ed5f194fb75d4acd8831b5b4e"
+    },
+    {
+      "path": "prepare_orca.py",
+      "bytes": 2404,
+      "sha256": "eb3d896b9909fac8473ab8bcf86212565dec66bd05a8ee37caa0e191b5114e05"
+    },
+    {
+      "path": "render_review.py",
+      "bytes": 4231,
+      "sha256": "415949fb453616a3daf96f04d22892cd74c704abd354ea76605261eb5d3448a0"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 110,
+      "sha256": "1916da7a41dc5287ecf7e6aba183787f602da5a52f42c6ba684fa591559d0286"
+    },
+    {
+      "path": "results/Fanless_Curved.FCStd",
+      "bytes": 858464,
+      "sha256": "1f52b09eac06f503858155aba40ebaa3da4b84f5a939def6f13274483a3f2dad"
+    },
+    {
+      "path": "results/cad_validation.json",
+      "bytes": 1308,
+      "sha256": "afd9f266cc3aa6cba98ff33ec412add789bc898237b31f352c5b02f5bcb78f52"
+    },
+    {
+      "path": "results/curved_bracket.jpg",
+      "bytes": 111212,
+      "sha256": "6e94e4c48fda1026af92c2d2c579475463d12f4fb69517f251d994a649a24650"
+    },
+    {
+      "path": "results/fit_coupon.step",
+      "bytes": 233924,
+      "sha256": "099868bc870f2087b8af7250ca50eb1617e3f6eee3a9c297debf8a455d1397e2"
+    },
+    {
+      "path": "results/fit_coupon.stl",
+      "bytes": 234184,
+      "sha256": "0cda8dfa4a823d64b8a3cb5406a3dbf30ef206424f632fca196f321ebe2addac"
+    },
+    {
+      "path": "results/installed.jpg",
+      "bytes": 100389,
+      "sha256": "efd14f2d20fa18fcdbd4a25c8710f49ab519d9bb3632941414d33ef9cca7057c"
+    },
+    {
+      "path": "results/layer_validation.json",
+      "bytes": 712,
+      "sha256": "3b66ab2713fa1fc7e9091ac1f3db103036eb6ee634eeddabd609e96c952055c9"
+    },
+    {
+      "path": "results/layers.csv",
+      "bytes": 9651,
+      "sha256": "dcabec2a0d83fb48929bbc1981af532629ac101d359b7ddab6c34dfba34a8471"
+    },
+    {
+      "path": "results/left.step",
+      "bytes": 421055,
+      "sha256": "a84b07543d43419e782d1cd1fcc5f12fa609603e2461f56d90a6a21bb5b4406d"
+    },
+    {
+      "path": "results/left.stl",
+      "bytes": 618184,
+      "sha256": "f0af0f921101a7b477553e34f03d39e4ba4faa4c67c9b4c03607df7252521efa"
+    },
+    {
+      "path": "results/reopen_validation.json",
+      "bytes": 213,
+      "sha256": "7c9f7926c8d40c66e2860aadaf6af175024aa8301eafa0b58bf8eadea9643a9e"
+    },
+    {
+      "path": "results/right.step",
+      "bytes": 422335,
+      "sha256": "1ab71f9a36cd9f1d444c3e40e04fa8aa3448415988c0199731ce4d2aba89b6a3"
+    },
+    {
+      "path": "results/right.stl",
+      "bytes": 618184,
+      "sha256": "dd051d5934c388768d896627a961ed7ba34e46ffe4a793966abc5bac2ebf6198"
+    },
+    {
+      "path": "results/screw_access.jpg",
+      "bytes": 131707,
+      "sha256": "afdcb122e111d64bbcc2be6f19fa03eae43d14c643eb699e9c54882622d5934c"
+    },
+    {
+      "path": "results/structure_1.2.json",
+      "bytes": 2650,
+      "sha256": "c2bb786fba358244a7cedf664262409a70d90030efe1513ef809acbff00e508f"
+    },
+    {
+      "path": "results/structure_1.8.json",
+      "bytes": 2646,
+      "sha256": "fc2725c6525b17b5cff220f1e29526cf028eb7148883b0c05dc77c1f6ad7c1cb"
+    },
+    {
+      "path": "results/structure_2.5.json",
+      "bytes": 2639,
+      "sha256": "a546ede11c95115abe4eb53165e1f5ebaf8ba6489f7adaa7cd58237ed98a1ad5"
+    },
+    {
+      "path": "verify_package.py",
+      "bytes": 1700,
+      "sha256": "7db99bbb91f19628cca9e614375857978d0b65ed70adfc9f0b9e49b8c0472183"
+    }
+  ]
+}

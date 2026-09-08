@@ -1,0 +1,23 @@
+{
+  "mesh_watertight": true,
+  "mesh_volume_mm3": 33811.38189342654,
+  "orca_pair_mass_g": 50.28,
+  "geometric_pair_mass_g": 52.03876903435159,
+  "maximum_beyond_30deg_support_mm2": 0.0,
+  "total_beyond_30deg_support_mm2": 0.0,
+  "support_audit_tolerance_mm": 0.025,
+  "sample_plane_offset_mm": 0.0001,
+  "layers": 120,
+  "notes": "Geometric support audit uses successive mesh slices, with 0.025 mm chord/tessellation allowance. Infill skins naturally span the infill; this audit concerns external shape support.",
+  "tangent_crosscheck": {
+    "areas_mm2": [
+      1286.9835014704447,
+      1286.9265108596235,
+      1264.958989063809
+    ],
+    "next_layer_unsupported_mm2": [
+      0.0,
+      0.0
+    ]
+  }
+}

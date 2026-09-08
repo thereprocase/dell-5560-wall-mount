@@ -31,7 +31,7 @@ def render(name,camera,tools=False,laptop=False):
         f=vtk.vtkTransformPolyDataFilter();f.SetInputConnection(cube.GetOutputPort());f.SetTransform(t)
         mapper=vtk.vtkPolyDataMapper();mapper.SetInputConnection(f.GetOutputPort());a=vtk.vtkActor();a.SetMapper(mapper);a.GetProperty().SetColor(.67,.7,.74);a.GetProperty().SetSpecular(.4);ren.AddActor(a)
         other=mesh_actor(OUT/'left.stl');tr=vtk.vtkTransform();tr.Translate(0,0,355);tr.Scale(1,1,-1);other.SetUserTransform(tr);ren.AddActor(other)
-    cam=ren.GetActiveCamera();cam.SetPosition(*camera);cam.SetFocalPoint(28,112 if laptop else 74,25 if laptop else 10);cam.SetViewUp(0,1,0);cam.ParallelProjectionOn();cam.SetParallelScale(142 if laptop else 91)
+    cam=ren.GetActiveCamera();cam.SetPosition(*camera);cam.SetFocalPoint(28,115 if laptop else 74,177.5 if laptop else 10);cam.SetViewUp(0,1,0);cam.ParallelProjectionOn();cam.SetParallelScale(190 if laptop else 91)
     for pos,intensity in [((150,250,220),.8),((-100,130,100),.6),((50,-100,-150),.4)]:
         light=vtk.vtkLight();light.SetPosition(*pos);light.SetFocalPoint(25,70,8);light.SetIntensity(intensity);ren.AddLight(light)
     ren.ResetCameraClippingRange();rw.Render()

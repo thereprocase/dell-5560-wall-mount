@@ -12,6 +12,10 @@ sheet=doc.addObject('Spreadsheet::Sheet','Parameters');sheet.Label='Design param
 params={'Web':4.8,'ContactReach':16.,'PadReach':24.,'WallThickness':8.,'SlotWidth':22.,'RearDatum':20.,'SeatHeight':6.,'Tilt':4.198081958929171,'HoleDiameter':7.,'WasherDiameter':15.,'ToolDiameter':16.,'HoleLower':18.,'HoleUpper':132.,'CounterboreDepth':4.,'LipHeight':126.,'LaptopWidth':344.4,'LaptopHeight':230.3,'LaptopThickness':20.,'SideClearance':.5}
 for row,(name,value) in enumerate(params.items(),1):
     sheet.set('A'+str(row),name);sheet.set('B'+str(row),str(value)+(' deg' if name=='Tilt' else ' mm'));sheet.setAlias('B'+str(row),name)
+
+for row,(name,value) in enumerate(params.items(),1):
+    sheet.set('C'+str(row),'Native expression' if name in ['Web','ContactReach','PadReach','HoleDiameter','WasherDiameter','ToolDiameter','HoleLower','HoleUpper','WallThickness','CounterboreDepth'] else 'Reference only; edit geometry recipe')
+sheet.setColumnWidth('C',300)
 sheet.setColumnWidth('A',190);sheet.setColumnWidth('B',110)
 geometry=doc.addObject('App::DocumentObjectGroup','Construction');geometry.Label='Editable profiles and native operations'
 def add(kind,name):
@@ -68,6 +72,7 @@ upper_clipped=add('Part::Common','UpperContactClipped');upper_clipped.Base=conta
 pads=[]
 for label,cy in [('Lower',params['HoleLower']),('Upper',params['HoleUpper'])]:
     sk=sketch(label+'WallPadProfile',(0,cy-10),[(0,cy+10),((0,cy+12),(2,cy+12),(4,cy+12)),(8,cy+9),(8,cy-9),(4,cy-12),((2,cy-12),(0,cy-12),(0,cy-10))],False)
+    sk.setExpression('Placement.Base.y','Parameters.Hole'+label+' - '+str(cy)+' mm')
     pads.append(extrude(label+'WallPad',sk,params['PadReach'],'PadReach'))
 upper_rib=sketch('UpperSweepingRib',(6,139),[((10,114),(28,112),(43,122)),(46,115),((30,104),(12,106),(6,127)),(6,139)])
 upper_rib=extrude('UpperBrace',upper_rib,params['Web'],'Web')
@@ -93,7 +98,19 @@ def roof_tool(name,cy,r,x0,length):
     sk.addGeometry(Part.Arc(App.Vector(-r/2,-q,0),App.Vector(r,0,0),App.Vector(-r/2,q,0)),False)
     sk.addGeometry(Part.LineSegment(App.Vector(-r/2,q,0),App.Vector(-2*r,0,0)),False)
     sk.addGeometry(Part.LineSegment(App.Vector(-2*r,0,0),App.Vector(-r/2,-q,0)),False)
-    return extrude(name,sk,length)
+    alias='HoleDiameter' if name.endswith('BoltHole') else 'WasherDiameter' if name.endswith('WasherRecess') else 'ToolDiameter'
+    radius_expr='Parameters.'+alias+' / 2'
+    constraints=[Sketcher.Constraint('Coincident',0,3,-1,1),Sketcher.Constraint('Radius',0,r),Sketcher.Constraint('DistanceX',0,1,-r/2),Sketcher.Constraint('DistanceX',0,2,-r/2),Sketcher.Constraint('Coincident',1,1,0,2),Sketcher.Constraint('Coincident',2,2,0,1),Sketcher.Constraint('Coincident',1,2,2,1),Sketcher.Constraint('DistanceX',1,2,-2*r),Sketcher.Constraint('DistanceY',1,2,0.)]
+    for c in constraints:sk.addConstraint(c)
+    for i,expr in [(1,radius_expr),(2,'-('+radius_expr+') / 2'),(3,'-('+radius_expr+') / 2'),(7,'-2 * ('+radius_expr+')')]:sk.setExpression('Constraints['+str(i)+']',expr)
+    sk.setExpression('Placement.Base.y','Parameters.Hole'+('Lower' if cy==18 else 'Upper'))
+    sk.setExpression('Placement.Base.z','Parameters.PadReach / 2')
+    if name.endswith('WasherRecess'):sk.setExpression('Placement.Base.x','Parameters.WallThickness - Parameters.CounterboreDepth')
+    elif name.endswith('DriverCorridor'):sk.setExpression('Placement.Base.x','Parameters.WallThickness')
+    obj=extrude(name,sk,length)
+    if name.endswith('BoltHole'):obj.setExpression('LengthFwd','Parameters.WallThickness + 2 mm')
+    elif name.endswith('WasherRecess'):obj.setExpression('LengthFwd','Parameters.CounterboreDepth + 1 mm')
+    return obj
 tools=[]
 for label,cy in [('Lower',params['HoleLower']),('Upper',params['HoleUpper'])]:
     tools += [roof_tool(label+'BoltHole',cy,3.5,-1,10),roof_tool(label+'WasherRecess',cy,7.5,4,5),roof_tool(label+'DriverCorridor',cy,8,8,70)]

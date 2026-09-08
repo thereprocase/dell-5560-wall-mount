@@ -26,7 +26,7 @@ for name in dict.fromkeys(m['paths']):
  if not p.is_file():raise FileNotFoundError(p)
  if p.suffix in {'.md','.py','.js','.json','.csv','.txt','.svg'}:
   out.append({'path':name,'content':p.read_text()})
- else:out.append({'path':name})
+ else:out.append({'path':name,'size':p.stat().st_size})
 print(json.dumps({'message':m['message'],'files':out}))
 PY`);
 const ref = JSON.parse(payload(await tools.mcp__codex_apps__github_fetch({url:api+'/git/ref/heads/cloud-topo'})).content);
@@ -36,9 +36,14 @@ const entries=[];
 for (const f of files.files) {
   if('content' in f) {entries.push({path:f.path,mode:'100644',type:'blob',content:f.content});continue;}
   const quote=s=>"'"+String(s).replace(/'/g,"'\\''")+"'";
-  const binary=await tools.exec_command({cmd:'base64 -w0 -- '+quote(f.path),workdir:root,max_output_tokens:250000});
-  if(binary.exit_code!==0 || binary.original_token_count>250000) throw new Error('Binary read failed or too large: '+f.path);
-  const b=payload(await tools.mcp__codex_apps__github_create_blob({repository_full_name:repo,encoding:'base64',content:binary.output}));
+  let encoded='';
+  const block=96000;
+  for(let i=0;i<Math.ceil(f.size/block);i++) {
+    const binary=await tools.exec_command({cmd:'dd if='+quote(f.path)+' bs='+block+' skip='+i+' count=1 status=none | base64 -w0',workdir:root,max_output_tokens:150000});
+    if(binary.exit_code!==0 || binary.original_token_count>150000) throw new Error('Binary chunk read failed: '+f.path);
+    encoded+=binary.output.trim();
+  }
+  const b=payload(await tools.mcp__codex_apps__github_create_blob({repository_full_name:repo,encoding:'base64',content:encoded}));
   if (!b.sha) throw new Error('Missing blob SHA');
   entries.push({path:f.path,mode:'100644',type:'blob',sha:b.sha});
 }

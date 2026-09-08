@@ -1,6 +1,30 @@
 # Cloud topology journal
 Latest update first. Images show actual geometry unless labeled as reference images or diagrams. Click a GitHub image to open it separately.
 
+## Curved native CAD, accessible screws and 50.3 g Orca review package
+2026-09-08T13:23:16+00:00
+
+## Current candidate: native CAD, screw access and actual Orca slice
+
+Read the existing GitHub workflow and followed its native FreeCAD → fit/service checks → oriented parts → Orca review sequence. The branch README now leads to the fanless candidate; the separate fan-cooled Revision H remains on main.
+
+The curved frame replaces the voxel surface with editable cubic sketch profiles and stock native operations. It includes four Ø7 mm bolt holes, Ø15 mm washer envelopes, Ø16 mm room-side tool corridors, an upward-open 22 mm slot and the accepted 4.2° tilt / 32 mm upper-grasp clearance. The laptop bottom remains just above the seat. Images below are rendered from the exported CAD mesh, not an imagined concept.
+
+**Download/open:** [native FreeCAD](cad_candidate/results/Fanless_Curved.FCStd), [Orca review project](cad_candidate/orca/curved_review.3mf), [left STL](cad_candidate/results/left.stl), [right STL](cad_candidate/results/right.stl), [fit coupon](cad_candidate/results/fit_coupon.stl). See [candidate instructions](cad_candidate/README.md).
+
+Orca 2.4.2 successfully sliced the pair with three 0.4 mm walls, 20% gyroid, five 0.2 mm top and bottom layers, ensure shell thickness and supports off. **50.28 g PETG for the pair**, excluding the coupon. The geometric layer accounting estimates 52.04 g; the published mass comes from actual toolpaths. All 120 exterior layer transitions pass the 30° support-envelope audit with 0.025 mm tessellation allowance. The apparent unsupported transition at Z=8.5 mm was a mesh-section tangency artifact, independently checked with sample planes on both sides.
+
+Native reopen and hole-diameter 7→7.4→7 mm regeneration pass. Sampled insertion and exact circular hole/tool gauges have zero CAD intersection. Six tool sketches are fully constrained; ten frame sketches remain editable but unconstrained. Some spreadsheet entries are reference dimensions rather than automatic resizing controls.
+
+**Strength gate remains open.** The actual CAD is checked with orthotropic print axes and shell/core-weighted stiffness. Across 2.5/1.8/1.2 mm meshes, the 30 N outward grab case gives 2.14/2.64/3.20 mm monitored-node movement and increasing local peak stresses. The results are not converged and do not establish a passing strength margin. This is a fit/print prototype, not an installation release. The [validation report](cad_candidate/VALIDATION.md) records the assumptions, raw results and next structural work; it does not reuse the earlier voxel result as proof.
+
+
+![Curved native CAD, accessible screws and 50.3 g Orca review package](../topology/cad_candidate/results/curved_bracket.jpg)
+
+![Curved native CAD, accessible screws and 50.3 g Orca review package](../topology/cad_candidate/results/screw_access.jpg)
+
+![Curved native CAD, accessible screws and 50.3 g Orca review package](../topology/cad_candidate/results/installed.jpg)
+
 ## Curved native CAD with real mounting and screwdriver access
 2026-09-08T13:03:02+00:00
 

@@ -1,0 +1,141 @@
+{
+  "mesh_size_mm": 1.8,
+  "nodes": 10369,
+  "tetrahedra": 36867,
+  "mesh_volume_mm3": 33796.16168730317,
+  "group_nodes": {
+    "FIX": 135,
+    "SEAT": 70,
+    "FRONT": 100,
+    "REAR": 59,
+    "SIDE": 191
+  },
+  "group_centres_mm": {
+    "FIX": [
+      4.0,
+      77.28649432693425,
+      12.211244181957717
+    ],
+    "SEAT": [
+      30.66692042929508,
+      5.217029341221306,
+      10.143606358061856
+    ],
+    "FRONT": [
+      48.79620848546737,
+      97.78285030282665,
+      9.899053962770514
+    ],
+    "REAR": [
+      23.689283222066837,
+      56.26151379961553,
+      10.031260769641202
+    ],
+    "SIDE": [
+      36.25623215138521,
+      71.90322074697596,
+      4.799999999999985
+    ]
+  },
+  "loads_N": [
+    {
+      "SEAT": [
+        0,
+        -73.575,
+        0
+      ],
+      "FRONT": [
+        15.474882757801213,
+        0,
+        0
+      ],
+      "REAR": [
+        -15.474882757801213,
+        0,
+        0
+      ]
+    },
+    {
+      "SEAT": [
+        0,
+        -24.525,
+        0
+      ],
+      "FRONT": [
+        105.17201828029286,
+        0,
+        0
+      ],
+      "REAR": [
+        -75.17201828029286,
+        0,
+        0
+      ]
+    },
+    {
+      "SEAT": [
+        0,
+        -24.525,
+        0
+      ],
+      "FRONT": [
+        5.158294252600404,
+        0,
+        0
+      ],
+      "REAR": [
+        -5.158294252600404,
+        0,
+        0
+      ],
+      "SIDE": [
+        0,
+        0,
+        -20
+      ]
+    }
+  ],
+  "responses": [
+    {
+      "max_loaded_displacement_mm": 0.7607397117259159,
+      "max_abs_stress_MPa": [
+        10.18523,
+        13.02515,
+        6.852812,
+        6.044879,
+        3.570676,
+        3.113397
+      ]
+    },
+    {
+      "max_loaded_displacement_mm": 2.6378743651037007,
+      "max_abs_stress_MPa": [
+        40.63154,
+        21.50811,
+        8.000041,
+        13.45604,
+        6.009636,
+        8.950906
+      ]
+    },
+    {
+      "max_loaded_displacement_mm": 1.93811319126502,
+      "max_abs_stress_MPa": [
+        11.96379,
+        5.723451,
+        6.865952,
+        5.458737,
+        3.143655,
+        1.951643
+      ]
+    }
+  ],
+  "assumptions": [
+    "C3D4 linear tetrahedra; mesh refinement comparison required",
+    "Ideal fully fixed washer-bearing annuli; no anchor or friction rating",
+    "XY E=1800 MPa, Z E=900 MPa; directional shear scaled consistently",
+    "Element solid fraction from five sample points in 0.2 mm shell/core slices; infill stiffness factor 0.04",
+    "Outward pull moment balanced for a grip 190 mm above laptop base",
+    "Side case applies 20 N across the cheek contact region, not a full two-bracket contact simulation"
+  ]
+}
