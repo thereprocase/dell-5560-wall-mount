@@ -89,6 +89,9 @@ def main():
     out.mkdir(parents=True,exist_ok=False)
     state=json.loads((case/'run-status.json').read_text())
     manifest=json.loads((case/'case_manifest.json').read_text())
+    warm=manifest.get('initialization_kind')=='steady_solver'
+    phase='TRANSIENT FROM FLOWING FIELD' if warm else 'EXPLORATORY FLOW STARTUP'
+    clock_label='Time after flowing-field initialization' if warm else 'Physical time'
     assert not manifest.get('runtime_fixture',False), 'Do not publish the synthetic fixture as Rev H'
     folders=sorted([p for p in (case/'postProcessing/edge_sections').iterdir()
                     if p.is_dir() and not p.name.startswith('.') and (p/'right_section.vtp').is_file()
@@ -105,8 +108,8 @@ def main():
     locator=ROOT/'docs/simulation/revh-transient/section-locator.png'
     context=Image.open(locator).convert('RGB')
     lines=cad_sections()
-    style={'pressure_front_Pa':6,'pressure_hinge_Pa':12,'vorticity_per_s':2000,'speed_m_s':5,
-           'size_px':[1800,1100],'style_version':3}
+    style={'pressure_front_Pa':12 if warm else 6,'pressure_hinge_Pa':12,'vorticity_per_s':2000,'speed_m_s':6 if warm else 5,
+           'size_px':[1800,1100],'style_version':3,'phase':phase}
     signature=hashlib.sha256((json.dumps(style,sort_keys=True)+sha(Path(__file__))+sha(locator)).encode()).hexdigest()[:16]
     cache=case/'render-cache'/signature;cache.mkdir(parents=True,exist_ok=True)
     images=[];ranges=[];hashes={};started=time.monotonic()
@@ -144,10 +147,12 @@ def main():
                            xlabel='Y from wall [mm]',ylabel='Height Z [mm]',facecolor='#cdd5db')
                     fig.colorbar(im,ax=ax,fraction=.05,pad=.035,shrink=.85)
                     if row==0 and col==2:ax.quiverkey(q,.70,1.23,5,'5 m/s',labelpos='E',coordinates='axes',fontproperties={'size':11})
-            fig.text(.035,.95,'REVISION H  |  EXPLORATORY FLOW STARTUP',fontsize=23,fontweight='bold',color='#162c36')
-            fig.text(.035,.91,f'Physical time: {float(folder.name)*1000:.4f} ms    |    Sections at X = +111 mm',fontsize=18,color='#17686b')
+            fig.text(.035,.95,'REVISION H  |  '+phase,fontsize=23,fontweight='bold',color='#162c36')
+            fig.text(.035,.91,f'{clock_label}: {float(folder.name)*1000:.4f} ms    |    X = +111 mm',fontsize=18,color='#17686b')
             fig.text(.035,.052,'Arrows show in-plane velocity. Grey is solid or unsampled. Black lines are CAD surfaces. Colour scales stay fixed.',fontsize=13,color='#536772')
-            fig.text(.035,.025,'Known mesh limitations. These recorded frames do not by themselves establish periodic shedding or validated lip suction.',fontsize=12,color='#536772')
+            caveat=('Initial steady-solver field is not converged. Initial adjustment remains. Mesh and time-step independence are unproven.' if warm else
+                    'Known mesh limitations. These recorded frames do not by themselves establish periodic shedding or validated lip suction.')
+            fig.text(.035,.025,caveat,fontsize=12,color='#536772')
             fig.savefig(frame,dpi=100);plt.close(fig)
         images.append(frame)
         if index%20==0:print('Prepared',index+1,'/',len(folders),'frames',flush=True)
@@ -167,7 +172,10 @@ def main():
     for name,path in [('poster.png',images[-1]),('first-frame.png',images[0])]:
         with Image.open(path) as img:img.save(out/name)
     report={'created_utc':datetime.now(timezone.utc).isoformat(),'hour_checkpoint':args.hour,
-            'scope':'Exploratory startup on a provisional mesh; not validated shedding or suction.',
+            'scope':('Exploratory transient from a flowing steady-solver iterate; initial adjustment remains; not validated shedding or suction.' if warm else
+                     'Exploratory startup on a provisional mesh; not validated shedding or suction.'),
+            'initialization_kind':manifest.get('initialization_kind','native_transient_startup'),
+            'transient_initialization':manifest.get('transient_initialization'),
             'case':state['case'],'compute_elapsed_seconds_at_snapshot':state['elapsed_seconds'],
             'solver_state_at_snapshot':state['state'],'completed_steps_at_snapshot':state['completed_steps'],
             'source_sample_count_available':available,'source_frames':len(folders),'physical_times_s':times,

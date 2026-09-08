@@ -22,13 +22,17 @@ def main():
     args=parser.parse_args();out=args.output
     progress=json.loads((out/'progress.json').read_text());end=progress['last_time_s']
     manifest=json.loads((args.case/'case_manifest.json').read_text())
+    warm=manifest.get('initialization_kind')=='steady_solver'
+    start_folder='0' if warm else '0.0001'
     raw=out/'diagnostic-raw';raw.mkdir(exist_ok=False)
-    excerpts={};hashes={}
+    excerpts={};hashes={};unavailable=[]
     for function,files in {'probes':['p','U'],'extrema':['fieldMinMax.dat'],
                            'ambient_flux':['surfaceFieldValue.dat'],
                            'ambient_abs_flux':['surfaceFieldValue.dat'],'yPlus':['yPlus.dat']}.items():
         for name in files:
-            source=args.case/'postProcessing'/function/'0.0001'/name
+            source=args.case/'postProcessing'/function/start_folder/name
+            if function=='yPlus' and not source.is_file():
+                unavailable.append('yPlus: no full-field write yet');continue
             selected=[]
             for line in source.read_text().splitlines():
                 if line.startswith('#') or not line.strip():selected.append(line)
@@ -79,10 +83,16 @@ def main():
         velocity=[r[1+3*i:4+3*i] for r in probe_data['U']]
         probes.append({**location,'pressure_Pa':pressures,'velocity_m_s':velocity,
                        'speed_m_s':[math.sqrt(sum(v*v for v in row)) for row in velocity]})
+    bounds=[{'field':field,'minimum':float(value)} for field,value in re.findall(r'^bounding (\w+), min: ('+NUMBER+')',log,re.M)]
     report={'captured_utc':datetime.now(timezone.utc).isoformat(),'through_time_s':end,
+            'initialization_kind':manifest.get('initialization_kind','native_transient_startup'),
+            'unavailable_diagnostics':unavailable,
             'hour_checkpoint':progress['hour_checkpoint'],'density_kg_m3':1.2,
             'history':history,'probe_times_s':[r[0] for r in probe_data['p']],'probes':probes,
             'new_bounding_events':len(re.findall(r'^bounding ',log,re.M)),
+            'negative_value_bounding_events':sum(b['minimum']<0 for b in bounds),
+            'positive_floor_bounding_events':sum(b['minimum']>=0 for b in bounds),
+            'bounding_details':bounds,
             'final_diagnostics':history[-1],'raw_excerpt_sha256':hashes,
             'raw_excerpt_definition':'Complete text lines and solver time blocks through the last video sample; full source files preserved locally.'}
     (out/'diagnostics.json').write_text(json.dumps(report,indent=2)+'\n')

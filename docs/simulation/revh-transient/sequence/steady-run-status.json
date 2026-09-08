@@ -1,26 +1,29 @@
 {
   "case": "revh_steady_09",
-  "state": "running",
+  "state": "complete",
   "started_utc": "2026-09-08T17:03:43.194635+00:00",
   "budget_seconds": 3600,
   "converged": false,
-  "completed_iterations": 305,
-  "updated_utc": "2026-09-08T17:46:16.992049+00:00",
-  "elapsed_seconds": 2553.74,
-  "latest_iteration": 305,
-  "bounding_events": 152,
+  "completed_iterations": 403,
+  "updated_utc": "2026-09-08T18:04:11.268664+00:00",
+  "elapsed_seconds": 3628.02,
+  "latest_iteration": 403,
+  "bounding_events": 188,
   "last_50_max_initial_residuals": {
-    "p": 0.0008477941135,
-    "Ux": 0.008462733031,
-    "Uy": 0.004193117805,
-    "Uz": 0.002479405739,
-    "k": 0.003000427065,
-    "omega": 0.0001624189132
+    "p": 0.000686934392,
+    "Ux": 0.007219358212,
+    "Uy": 0.003117058029,
+    "Uz": 0.001837976159,
+    "k": 0.002238046957,
+    "omega": 0.000131432862
   },
   "probe_window_relative_range": {
-    "p": 0.19326941912323886,
-    "U": 0.381918664047729
+    "p": 0.13843956657400688,
+    "U": 0.22156914098913746
   },
-  "last_50_max_flux_ratio": 2.742680082302187e-05,
-  "latest_max_speed_m_s": 5.606050014
+  "last_50_max_flux_ratio": 2.108140919045562e-05,
+  "latest_max_speed_m_s": 5.675921868,
+  "stop_reason": "Steady preparation wall budget reached",
+  "exit_code": 0,
+  "finished_utc": "2026-09-08T18:04:11.272093+00:00"
 }

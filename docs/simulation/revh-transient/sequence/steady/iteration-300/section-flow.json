@@ -1,0 +1,92 @@
+{
+  "created_utc": "2026-09-08T17:54:01.418454+00:00",
+  "snapshot": "iteration-300",
+  "scope": "Integrate velocity across lines in actual sampled planes, per unit span.\n\nThis is a local section diagnostic. It is not a full-width flow rate or a\nconservative flow split for the three-dimensional device.\n",
+  "sections_x_m": [
+    -0.111,
+    0.111
+  ],
+  "source_sha256": {
+    "left": "2caf7dee022b8f6d8b4365263b7950667276e497a5c57c7c87b97ae404badbd4",
+    "right": "75f32198d6a35e1a2cd79ecee994ab8c69a67a6948d6abcf8fe948f62b5269b8"
+  },
+  "results": {
+    "left": {
+      "front_opening": {
+        "start_YZ_mm": [
+          40.0,
+          0.0
+        ],
+        "end_YZ_mm": [
+          48.129883,
+          4.663238
+        ],
+        "positive_normal_YZ": [
+          0.49755314317590477,
+          -0.8674334958460953
+        ],
+        "sampled_fluid_line_length_mm": 9.372341521075453,
+        "positive_flux_m2_s": 0.010694663809540917,
+        "negative_flux_m2_s": 0.0022748421871294096,
+        "net_flux_m2_s": 0.008419821622411507
+      },
+      "upward_channel_at_Z20": {
+        "start_YZ_mm": [
+          0.01,
+          20.001
+        ],
+        "end_YZ_mm": [
+          45.0,
+          20.001
+        ],
+        "positive_normal_YZ": [
+          0.0,
+          1.0
+        ],
+        "sampled_fluid_line_length_mm": 40.87063716888427,
+        "positive_flux_m2_s": 0.0630931875485575,
+        "negative_flux_m2_s": 0.0,
+        "net_flux_m2_s": 0.0630931875485575
+      }
+    },
+    "right": {
+      "front_opening": {
+        "start_YZ_mm": [
+          40.0,
+          0.0
+        ],
+        "end_YZ_mm": [
+          48.129883,
+          4.663238
+        ],
+        "positive_normal_YZ": [
+          0.49755314317590477,
+          -0.8674334958460953
+        ],
+        "sampled_fluid_line_length_mm": 9.37233707134339,
+        "positive_flux_m2_s": 0.009160704193252236,
+        "negative_flux_m2_s": 0.002614587595495996,
+        "net_flux_m2_s": 0.00654611659775624
+      },
+      "upward_channel_at_Z20": {
+        "start_YZ_mm": [
+          0.01,
+          20.001
+        ],
+        "end_YZ_mm": [
+          45.0,
+          20.001
+        ],
+        "positive_normal_YZ": [
+          0.0,
+          1.0
+        ],
+        "sampled_fluid_line_length_mm": 40.870638122558596,
+        "positive_flux_m2_s": 0.057215026836355536,
+        "negative_flux_m2_s": 0.0,
+        "net_flux_m2_s": 0.057215026836355536
+      }
+    }
+  },
+  "method": "Piecewise-linear sampled velocities integrated over intersected triangles. Front line joins the printed divider tip to the laptop nose shoulder in the CAD section."
+}

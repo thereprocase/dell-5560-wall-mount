@@ -1,0 +1,8 @@
+{
+  "rms_relative": 0.001,
+  "maximum_relative": 0.01,
+  "absolute": 1e-06,
+  "maximum_Courant": 0.5,
+  "maximum_boundary_flux_ratio": 0.0001,
+  "scope": "Six physical steps at 12.5 microseconds. Short-run coupling check only."
+}

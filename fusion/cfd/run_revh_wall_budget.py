@@ -54,9 +54,13 @@ def main():
     assert os.environ.get('WM_PROJECT_VERSION')=='v2412'
     log_path=case/'log.pimpleFoam.fourhour'
     assert not log_path.exists()
+    manifest=json.loads((case/'case_manifest.json').read_text())
+    warm=manifest.get('initialization_kind')=='steady_solver'
     state={'case':case.name,'state':'starting','started_utc':utc(),
            'budget_seconds':args.seconds,'hourly_updates_due_seconds':[n*3600 for n in range(1,5)],
-           'scope':'Extended exploratory startup; mesh and timestep independence not established.'}
+           'scope':('Exploratory transient from a steady-solver iterate; initial field is not claimed converged.' if warm
+                    else 'Extended exploratory startup; mesh and timestep independence not established.'),
+           'initialization_kind':manifest.get('initialization_kind','native_transient_startup')}
     started=time.monotonic();last_notice=0;stop_sent=None;sample_count=0
     command=['mpirun','--bind-to','none','-np','4','pimpleFoam','-parallel','-opt-switch','stopAtWriteNowSignal=12']
     with log_path.open('w') as log:

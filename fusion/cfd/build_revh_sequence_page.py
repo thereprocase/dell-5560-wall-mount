@@ -84,6 +84,8 @@ def main():
         (PAGE/'steady-case_manifest.json').write_text((steady_case/'case_manifest.json').read_text(),encoding='utf-8',newline='\n')
         convergence='The numerical convergence policy is satisfied.' if steady.get('converged') else 'Numerical convergence has not been established.'
         steady_note=f'''<h2>Parallel steady-state initialization</h2><p>A separate four-worker steady-state solve began at 1:03 p.m. Eastern, using the same Revision H geometry and fan forcing. At this publication snapshot it has completed {steady['completed_iterations']} iterations; its state is {escape(steady['state'].replace('_',' '))}. {convergence}</p><p>These iterations are numerical adjustments, not elapsed fluid time. The purpose is to prepare a settled starting field for another transient shedding run. Residuals, pressure and velocity stability, conservation and recent turbulence bounding are checked before accepting that field. The startup videos above remain the original transient record.</p><ul class="links"><li><a href="steady-run-status.json">Steady-solver diagnostics</a></li><li><a href="steady-case_manifest.json">Initialization and convergence policy</a></li></ul>'''
+        if (PAGE/'steady/history-final.json').is_file():
+            steady_note+='<p>The one-hour preparation stopped without meeting the steady convergence policy. Its flowing field is suitable only as a provisional transient initialization, with initial adjustment still to be observed. <a href="steady/history-final.png">See the final convergence history</a> · <a href="steady/history-final.json">Recorded history data</a>.</p>'
         images=sorted((PAGE/'steady').glob('iteration-*/images.json'),key=lambda p:int(p.parent.name.split('-')[-1]))
         if images:
             info=json.loads(images[-1].read_text());directory=images[-1].parent.relative_to(PAGE).as_posix()
@@ -91,6 +93,16 @@ def main():
             for filename,label in [('speed-arrows.png','Speed and flow direction'),('pressure-arrows.png','Static pressure and flow direction')]:
                 steady_note+=f'<figure><a href="{directory}/{filename}"><img src="{directory}/{filename}" alt="{label} on the actual Rev H air path and two lip sections" loading="lazy"></a><figcaption>{label}. <a href="{directory}/{filename}">Open the full-size arrow image</a>.</figcaption></figure>'
             steady_note+=f'<p><a href="{directory}/vorticity-arrows.png">Vorticity with velocity arrows</a> · <a href="{directory}/images.json">Image provenance</a> · <a href="{directory}/right-section.vtp">Raw sampled section</a></p></section>'
+            measurement=images[-1].parent/'section-flow.json'
+            if measurement.is_file():
+                measured=json.loads(measurement.read_text())
+                ratios=[v['upward_channel_at_Z20']['net_flux_m2_s']/v['front_opening']['net_flux_m2_s'] for v in measured['results'].values()]
+                steady_note+=f'<h2>Flow at the front opening</h2><p>At these two sampled side sections, upward channel flow is {min(ratios):.1f}–{max(ratios):.1f} times the net outward flow through the front opening. Both inward and outward flow occur across that opening. This is a line integral per unit span, not a full-width leakage fraction or a conservative three-dimensional flow split. The field remains unconverged.</p><p>Some outward flow could help cool the outer shell if it sweeps a warmer surface. This isothermal airflow model has no battery or heat-transfer solution, so it cannot quantify that benefit. A small smooth divider extension is a possible later comparison; the current geometry is unchanged.</p><p><a href="{directory}/section-flow.json">Opening-flow measurements and exact section definitions</a> · <a href="{directory}/left-section.vtp">Left sampled section</a></p>'
+    flowing_note=''
+    if (PAGE/'flowing/index.html').is_file():
+        flowing_note='<h2>Transient from an already flowing field</h2><p>A separate recorded sequence begins with the steady-solver field. Its physical clock starts at zero, and initial adjustment remains because the source field is unconverged. <a href="flowing/">Watch the flowing-field transient</a>.</p>'
+    elif (PAGE/'flowing-first-frame.png').is_file():
+        flowing_note='<h2>Transient from an already flowing field</h2><p>A separate four-worker transient began at 2:08 p.m. Eastern from steady iteration 400. It starts with moving air, and its physical clock resets to zero. Initial adjustment remains because the source field is unconverged. Its first video is being accumulated. <a href="flowing-first-frame.png">View the exact starting frame</a> · <a href="correction-check/">See the short correction-count comparison</a>.</p>'
     html=f'''<!doctype html>
 <html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Four-hour Rev H flow run · Precision 5560 mount</title>
@@ -115,6 +127,7 @@ def main():
 <p>The standard mesh check passes, but expanded checks identify four low-determinant cells and 71,820 concave cells; wall-layer coverage remains poor. Four nominal 10 Pa fan actuators drive isothermal SST URANS flow. Fan curves, grille resistance and laptop passages remain approximate. This is not an experimentally validated flow or temperature prediction.</p>
 <p>Complete planes at X = ±111 mm are saved every two solver steps, normally 50 µs apart. Full fields are checkpointed every half-hour of wall time. The solver records pressure and velocity probes, field bounds and ambient flux each step. A verified signal handler writes a final checkpoint at the four-hour limit.</p>
 {steady_note}
+{flowing_note}
 <ul class="links"><li><a href="run-status.json">Dated run status</a></li><li><a href="case_manifest.json">Inputs and solver settings</a></li><li><a href="quality-disposition.json">Mesh disposition</a></li><li><a href="../#gpu-benchmark">CPU/GPU evidence</a></li></ul>
 <footer class="small">Published status snapshot: {escape(public['published_snapshot_utc'])}. This static page updates with each published checkpoint; it is not a live solver connection. Raw fields and all sampled planes remain preserved locally.</footer>
 </main></html>

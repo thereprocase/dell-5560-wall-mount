@@ -1,0 +1,448 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2412                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _b8cf4d35-20260127 OPENFOAM=2412 patch=260127 version=2412
+Arch   : "LSB;label=32;scalar=64"
+Exec   : pimpleFoam -parallel
+Date   : Sep 08 2026
+Time   : 13:49:08
+Host   : BlackTower2
+PID    : 2792365
+I/O    : uncollated
+Case   : /home/repro/code/dell5560-cfd-gpu-20260908/revh_warm_outer3_10
+nProcs : 4
+Hosts  :
+(
+    (BlackTower2 4)
+)
+Pstream initialized with:
+    floatTransfer      : false
+    maxCommsSize       : 0
+    nProcsSimpleSum    : 0
+    nonBlockingExchange: 0 (tuning: 0)
+    exchange algorithm : 0
+    commsType          : nonBlocking
+    polling iterations : 0
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+
+PIMPLE: no residual control data found. Calculations will employ 3 corrector loops
+
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type RAS
+Selecting RAS turbulence model kOmegaSST
+Selecting patchDistMethod meshWave
+RAS
+{
+    RASModel        kOmegaSST;
+    turbulence      on;
+    printCoeffs     on;
+    alphaK1         0.85;
+    alphaK2         1;
+    alphaOmega1     0.5;
+    alphaOmega2     0.856;
+    gamma1          0.5555555556;
+    gamma2          0.44;
+    beta1           0.075;
+    beta2           0.0828;
+    betaStar        0.09;
+    a1              0.31;
+    b1              1;
+    c1              10;
+    F3              false;
+    decayControl    false;
+    kInf            0;
+    omegaInf        0;
+}
+
+No MRF models present
+
+Creating finite volume options from "constant/fvOptions"
+
+Selecting finite volume options type vectorSemiImplicitSource
+    Source: dell_fan_left
+    - selecting cells using cellZones (dell_fan_left)
+    - selected 4161 cell(s) with volume 4.153039463e-06
+Selecting finite volume options type vectorSemiImplicitSource
+    Source: dell_fan_right
+    - selecting cells using cellZones (dell_fan_right)
+    - selected 4152 cell(s) with volume 4.144696453e-06
+Selecting finite volume options type vectorSemiImplicitSource
+    Source: noctua_fan_left
+    - selecting cells using cellZones (noctua_fan_left)
+    - selected 3544 cell(s) with volume 8.987819066e-05
+Selecting finite volume options type vectorSemiImplicitSource
+    Source: noctua_fan_right
+    - selecting cells using cellZones (noctua_fan_right)
+    - selected 3513 cell(s) with volume 8.984059984e-05
+Courant Number mean: 0.0008966360683 max: 0.7332833914
+Courant Number mean: 0.0008966360683 max: 0.7332833914
+
+Starting time loop
+
+surfaceFieldValue ambient_flux:
+    operation     = sum
+
+
+surfaceFieldValue ambient_abs_flux:
+    operation     = sumMag
+
+
+Sampled surface:
+    right_section -> vtk
+        sampledCuttingPlane: right_section : plane:(1 0 0) (0.111 0 0) offsets:(0)
+    left_section -> vtk
+        sampledCuttingPlane: left_section : plane:(1 0 0) (-0.111 0 0) offsets:(0)
+
+Courant Number mean: 0.0008966360683 max: 0.7332833914
+Time = 2.5e-05
+
+PIMPLE: iteration 1
+smoothSolver:  Solving for Ux, Initial residual = 5.832041376e-05, Final residual = 1.813811258e-07, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 9.266228068e-06, Final residual = 2.796502128e-08, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 3.081601768e-06, Final residual = 8.857195018e-09, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.4590580602, Final residual = 0.006910099394, No Iterations 2
+GAMG:  Solving for p, Initial residual = 0.01876541734, Final residual = 0.0003826791818, No Iterations 3
+time step continuity errors : sum local = 3.225970919e-09, global = -1.172661984e-10, cumulative = -1.172661984e-10
+GAMG:  Solving for p, Initial residual = 0.004417406652, Final residual = 7.057128604e-05, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.001059333657, Final residual = 5.078462409e-09, No Iterations 16
+time step continuity errors : sum local = 4.351737732e-14, global = -4.751839593e-15, cumulative = -1.172709502e-10
+PIMPLE: iteration 2
+smoothSolver:  Solving for Ux, Initial residual = 4.116777883e-06, Final residual = 7.123880479e-09, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 1.119294232e-06, Final residual = 1.199192415e-09, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 2.928230436e-07, Final residual = 3.577307426e-10, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.001420135215, Final residual = 2.850799248e-05, No Iterations 2
+GAMG:  Solving for p, Initial residual = 0.0003232063774, Final residual = 4.729449373e-06, No Iterations 3
+time step continuity errors : sum local = 4.061669561e-11, global = 6.811446686e-13, cumulative = -1.165898056e-10
+GAMG:  Solving for p, Initial residual = 0.0001866660207, Final residual = 4.863707858e-06, No Iterations 2
+GAMG:  Solving for p, Initial residual = 0.0001125618156, Final residual = 8.920642851e-09, No Iterations 10
+time step continuity errors : sum local = 7.65956602e-14, global = 2.356020702e-15, cumulative = -1.165874495e-10
+PIMPLE: iteration 3
+smoothSolver:  Solving for Ux, Initial residual = 5.981042594e-08, Final residual = 2.736057287e-10, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 1.646132107e-08, Final residual = 5.993188131e-11, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 3.879660525e-09, Final residual = 3.879660525e-09, No Iterations 0
+GAMG:  Solving for p, Initial residual = 0.0001000888023, Final residual = 1.958342918e-06, No Iterations 2
+GAMG:  Solving for p, Initial residual = 6.189794476e-05, Final residual = 1.256187153e-06, No Iterations 2
+time step continuity errors : sum local = 1.078458536e-11, global = -7.761437003e-15, cumulative = -1.16595211e-10
+GAMG:  Solving for p, Initial residual = 4.896378983e-05, Final residual = 1.017037797e-06, No Iterations 2
+GAMG:  Solving for p, Initial residual = 3.862623555e-05, Final residual = 8.828237048e-09, No Iterations 8
+time step continuity errors : sum local = 7.579245304e-14, global = -3.441938552e-15, cumulative = -1.165986529e-10
+smoothSolver:  Solving for omega, Initial residual = 1.93089728e-07, Final residual = 1.298678957e-09, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 3.225786289e-06, Final residual = 1.322180002e-09, No Iterations 2
+ExecutionTime = 68.09 s  ClockTime = 72 s
+
+fieldMinMax extrema write:
+    min(mag(U)) = 0 in cell 34 at location (-0.1400000006 0.004925806992 0.05300056255) on processor 0
+    max(mag(U)) = 5.611222003 in cell 242611 at location (-0.09849871095 0.04727839877 0.2024999615) on processor 1
+    min(k) = 1.275522444e-15 in cell 638552 at location (0.1656242371 0.01651830978 -0.05917877827) on processor 2
+    max(k) = 1.118363116 in cell 286652 at location (-0.1094999998 0.04465134854 0.2125000351) on processor 1
+    min(omega) = 1.411609439 in cell 572430 at location (0.3936176336 0.4433714426 -0.1680017275) on processor 2
+    max(omega) = 16962368.36 in cell 629459 at location (0.1029131432 0.04726990384 0.006187995092) on processor 3
+    min(p) = -32.47598468 in cell 750936 at location (0.07003074833 0.06193653407 -0.1216327931) on processor 3
+    max(p) = 38.76436712 in cell 744687 at location (-0.06596981116 0.0537312101 -0.1220471243) on processor 2
+
+surfaceFieldValue ambient_flux write:
+    total faces   = 8098
+    total area    = 2.079998758
+
+    sum(ambient_openings) of phi = -3.923707337e-11
+
+surfaceFieldValue ambient_abs_flux write:
+    total faces   = 8098
+    total area    = 2.079998758
+
+    sumMag(ambient_openings) of phi = 0.1361708413
+
+Courant Number mean: 0.0008967351294 max: 0.732433196
+Time = 5e-05
+
+PIMPLE: iteration 1
+smoothSolver:  Solving for Ux, Initial residual = 0.00186052021, Final residual = 1.920489162e-07, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.0003714856443, Final residual = 4.326184508e-08, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 7.839536296e-05, Final residual = 8.738566614e-09, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.1599058911, Final residual = 0.003306791307, No Iterations 2
+GAMG:  Solving for p, Initial residual = 0.01323579997, Final residual = 0.0003271600627, No Iterations 3
+time step continuity errors : sum local = 1.698003555e-09, global = 3.227789574e-11, cumulative = -8.432075718e-11
+GAMG:  Solving for p, Initial residual = 0.003167448191, Final residual = 5.516301152e-05, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.0008059175073, Final residual = 8.360769966e-09, No Iterations 15
+time step continuity errors : sum local = 4.337846585e-14, global = -1.05139545e-15, cumulative = -8.432180857e-11
+PIMPLE: iteration 2
+smoothSolver:  Solving for Ux, Initial residual = 1.789459287e-06, Final residual = 2.096566316e-09, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 5.08279658e-07, Final residual = 3.171572972e-10, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 1.278629433e-07, Final residual = 9.879434167e-11, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.001054205483, Final residual = 2.051202985e-05, No Iterations 2
+GAMG:  Solving for p, Initial residual = 0.000213806283, Final residual = 3.4771991e-06, No Iterations 3
+time step continuity errors : sum local = 1.804845382e-11, global = 9.933071165e-14, cumulative = -8.422247786e-11
+GAMG:  Solving for p, Initial residual = 0.00011283537, Final residual = 3.162925388e-06, No Iterations 2
+GAMG:  Solving for p, Initial residual = 6.396126363e-05, Final residual = 9.358278099e-09, No Iterations 10
+time step continuity errors : sum local = 4.857586746e-14, global = 1.159397527e-15, cumulative = -8.422131846e-11
+PIMPLE: iteration 3
+smoothSolver:  Solving for Ux, Initial residual = 1.906355217e-08, Final residual = 5.188318234e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 5.789940435e-09, Final residual = 5.789940435e-09, No Iterations 0
+smoothSolver:  Solving for Uz, Initial residual = 1.316925467e-09, Final residual = 1.316925467e-09, No Iterations 0
+GAMG:  Solving for p, Initial residual = 5.623627047e-05, Final residual = 1.028229829e-06, No Iterations 2
+GAMG:  Solving for p, Initial residual = 3.242515044e-05, Final residual = 6.230650635e-07, No Iterations 2
+time step continuity errors : sum local = 3.233915977e-12, global = 1.377463026e-15, cumulative = -8.4219941e-11
+GAMG:  Solving for p, Initial residual = 2.494451739e-05, Final residual = 4.916806248e-07, No Iterations 2
+GAMG:  Solving for p, Initial residual = 1.931302328e-05, Final residual = 9.250027443e-09, No Iterations 7
+time step continuity errors : sum local = 4.801073161e-14, global = -1.229667587e-15, cumulative = -8.422117067e-11
+smoothSolver:  Solving for omega, Initial residual = 2.007461835e-07, Final residual = 6.535540445e-10, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 3.237350446e-06, Final residual = 3.837647288e-10, No Iterations 2
+ExecutionTime = 110.1 s  ClockTime = 116 s
+
+fieldMinMax extrema write:
+    min(mag(U)) = 0 in cell 34 at location (-0.1400000006 0.004925806992 0.05300056255) on processor 0
+    max(mag(U)) = 5.611057572 in cell 242611 at location (-0.09849871095 0.04727839877 0.2024999615) on processor 1
+    min(k) = 1.444101924e-15 in cell 638552 at location (0.1656242371 0.01651830978 -0.05917877827) on processor 2
+    max(k) = 1.118855093 in cell 286652 at location (-0.1094999998 0.04465134854 0.2125000351) on processor 1
+    min(omega) = 1.411608614 in cell 572430 at location (0.3936176336 0.4433714426 -0.1680017275) on processor 2
+    max(omega) = 16962368.34 in cell 629459 at location (0.1029131432 0.04726990384 0.006187995092) on processor 3
+    min(p) = -21.20526969 in cell 489454 at location (0.1767934521 0.04000916628 0.05499836775) on processor 2
+    max(p) = 25.20583305 in cell 450405 at location (0.1753724494 0.04038811242 0.1831212123) on processor 2
+
+surfaceFieldValue ambient_flux write:
+    sum(ambient_openings) of phi = -1.401790755e-11
+
+surfaceFieldValue ambient_abs_flux write:
+    sumMag(ambient_openings) of phi = 0.1361934601
+
+Courant Number mean: 0.0008967565518 max: 0.7327300049
+Time = 7.5e-05
+
+PIMPLE: iteration 1
+smoothSolver:  Solving for Ux, Initial residual = 0.001210174436, Final residual = 1.664001988e-07, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.0002511973634, Final residual = 3.5794989e-08, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 5.164254467e-05, Final residual = 7.021326261e-09, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.09928107907, Final residual = 0.001468505977, No Iterations 2
+GAMG:  Solving for p, Initial residual = 0.006988321439, Final residual = 0.0001237467916, No Iterations 3
+time step continuity errors : sum local = 5.472265563e-10, global = 3.564921594e-11, cumulative = -4.857195473e-11
+GAMG:  Solving for p, Initial residual = 0.001590079797, Final residual = 4.537174963e-05, No Iterations 2
+GAMG:  Solving for p, Initial residual = 0.0004176273537, Final residual = 6.964808373e-09, No Iterations 16
+time step continuity errors : sum local = 3.035729942e-14, global = 3.252704991e-15, cumulative = -4.856870203e-11
+PIMPLE: iteration 2
+smoothSolver:  Solving for Ux, Initial residual = 1.253979428e-06, Final residual = 1.687860851e-09, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 3.642893167e-07, Final residual = 2.761503306e-10, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 8.947523562e-08, Final residual = 8.293030359e-11, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.0008296850818, Final residual = 1.693659097e-05, No Iterations 2
+GAMG:  Solving for p, Initial residual = 0.0001497249182, Final residual = 2.655940282e-06, No Iterations 3
+time step continuity errors : sum local = 1.152912039e-11, global = -3.413617454e-13, cumulative = -4.891006377e-11
+GAMG:  Solving for p, Initial residual = 7.970166888e-05, Final residual = 1.123290323e-06, No Iterations 3
+GAMG:  Solving for p, Initial residual = 4.379708423e-05, Final residual = 9.354202824e-09, No Iterations 9
+time step continuity errors : sum local = 4.060870135e-14, global = -1.666813218e-15, cumulative = -4.891173059e-11
+PIMPLE: iteration 3
+smoothSolver:  Solving for Ux, Initial residual = 1.427870899e-08, Final residual = 4.248846688e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 4.455140125e-09, Final residual = 4.455140125e-09, No Iterations 0
+smoothSolver:  Solving for Uz, Initial residual = 9.881747984e-10, Final residual = 9.881747984e-10, No Iterations 0
+GAMG:  Solving for p, Initial residual = 4.223010675e-05, Final residual = 7.734474446e-07, No Iterations 2
+GAMG:  Solving for p, Initial residual = 2.279623036e-05, Final residual = 4.486103744e-07, No Iterations 2
+time step continuity errors : sum local = 1.947632966e-12, global = 3.863568631e-15, cumulative = -4.890786702e-11
+GAMG:  Solving for p, Initial residual = 1.760952711e-05, Final residual = 3.530142624e-07, No Iterations 2
+GAMG:  Solving for p, Initial residual = 1.354763582e-05, Final residual = 7.843866846e-09, No Iterations 7
+time step continuity errors : sum local = 3.405392354e-14, global = 1.269982771e-15, cumulative = -4.890659704e-11
+smoothSolver:  Solving for omega, Initial residual = 2.079326463e-07, Final residual = 6.542054128e-10, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 3.258968788e-06, Final residual = 3.8368476e-10, No Iterations 2
+ExecutionTime = 153.39 s  ClockTime = 161 s
+
+fieldMinMax extrema write:
+    min(mag(U)) = 0 in cell 34 at location (-0.1400000006 0.004925806992 0.05300056255) on processor 0
+    max(mag(U)) = 5.610894547 in cell 242611 at location (-0.09849871095 0.04727839877 0.2024999615) on processor 1
+    min(k) = 1.710620355e-15 in cell 638552 at location (0.1656242371 0.01651830978 -0.05917877827) on processor 2
+    max(k) = 1.119341066 in cell 286652 at location (-0.1094999998 0.04465134854 0.2125000351) on processor 1
+    min(omega) = 1.411607789 in cell 572430 at location (0.3936176336 0.4433714426 -0.1680017275) on processor 2
+    max(omega) = 16962368.34 in cell 629459 at location (0.1029131432 0.04726990384 0.006187995092) on processor 3
+    min(p) = -15.31477135 in cell 652427 at location (-0.1208877006 0.0872072692 -0.1234315371) on processor 2
+    max(p) = 19.69959973 in cell 717862 at location (0.06796191381 0.0838714623 -0.08364887702) on processor 3
+
+surfaceFieldValue ambient_flux write:
+    sum(ambient_openings) of phi = 1.447757727e-11
+
+surfaceFieldValue ambient_abs_flux write:
+    sumMag(ambient_openings) of phi = 0.136191648
+
+Courant Number mean: 0.0008967213522 max: 0.7331104721
+Time = 0.0001
+
+PIMPLE: iteration 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0008276189632, Final residual = 1.473101607e-07, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.0001737542759, Final residual = 2.961594761e-08, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 3.544181957e-05, Final residual = 6.190040528e-09, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.05511383964, Final residual = 0.0007534344804, No Iterations 2
+GAMG:  Solving for p, Initial residual = 0.003569444301, Final residual = 5.92886843e-05, No Iterations 3
+time step continuity errors : sum local = 2.352251857e-10, global = 3.374656489e-12, cumulative = -4.553194055e-11
+GAMG:  Solving for p, Initial residual = 0.000823823209, Final residual = 2.442144944e-05, No Iterations 2
+GAMG:  Solving for p, Initial residual = 0.0002324803984, Final residual = 8.350824471e-09, No Iterations 14
+time step continuity errors : sum local = 3.30850008e-14, global = 3.58031072e-15, cumulative = -4.552836024e-11
+PIMPLE: iteration 2
+smoothSolver:  Solving for Ux, Initial residual = 9.835910077e-07, Final residual = 1.459436706e-09, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 2.889881306e-07, Final residual = 2.496435372e-10, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 7.159551381e-08, Final residual = 7.6593732e-11, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.000677091159, Final residual = 1.489156441e-05, No Iterations 2
+GAMG:  Solving for p, Initial residual = 0.0001075482722, Final residual = 2.127075223e-06, No Iterations 3
+time step continuity errors : sum local = 8.418250774e-12, global = -1.739632607e-13, cumulative = -4.57023235e-11
+GAMG:  Solving for p, Initial residual = 5.676944073e-05, Final residual = 9.277424861e-07, No Iterations 3
+GAMG:  Solving for p, Initial residual = 2.917622092e-05, Final residual = 8.528029576e-09, No Iterations 9
+time step continuity errors : sum local = 3.3750825e-14, global = -2.233513247e-16, cumulative = -4.570254685e-11
+PIMPLE: iteration 3
+smoothSolver:  Solving for Ux, Initial residual = 1.167425917e-08, Final residual = 3.666940049e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 3.675301743e-09, Final residual = 3.675301743e-09, No Iterations 0
+smoothSolver:  Solving for Uz, Initial residual = 8.274541664e-10, Final residual = 8.274541664e-10, No Iterations 0
+GAMG:  Solving for p, Initial residual = 3.149790718e-05, Final residual = 5.668523021e-07, No Iterations 2
+GAMG:  Solving for p, Initial residual = 1.540547403e-05, Final residual = 3.116904212e-07, No Iterations 2
+time step continuity errors : sum local = 1.233565131e-12, global = 1.492997525e-15, cumulative = -4.570105385e-11
+GAMG:  Solving for p, Initial residual = 1.207204373e-05, Final residual = 2.473657034e-07, No Iterations 2
+GAMG:  Solving for p, Initial residual = 9.249896939e-06, Final residual = 8.827723624e-09, No Iterations 6
+time step continuity errors : sum local = 3.49371142e-14, global = 1.90342639e-15, cumulative = -4.569915042e-11
+smoothSolver:  Solving for omega, Initial residual = 2.123634864e-07, Final residual = 6.534022109e-10, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 3.274502858e-06, Final residual = 3.833162802e-10, No Iterations 2
+ExecutionTime = 193.91 s  ClockTime = 204 s
+
+fieldMinMax extrema write:
+    min(mag(U)) = 0 in cell 34 at location (-0.1400000006 0.004925806992 0.05300056255) on processor 0
+    max(mag(U)) = 5.610729032 in cell 242611 at location (-0.09849871095 0.04727839877 0.2024999615) on processor 1
+    min(k) = 2.104770309e-15 in cell 638552 at location (0.1656242371 0.01651830978 -0.05917877827) on processor 2
+    max(k) = 1.119818844 in cell 286652 at location (-0.1094999998 0.04465134854 0.2125000351) on processor 1
+    min(omega) = 1.411606963 in cell 572430 at location (0.3936176336 0.4433714426 -0.1680017275) on processor 2
+    max(omega) = 16962368.35 in cell 629459 at location (0.1029131432 0.04726990384 0.006187995092) on processor 3
+    min(p) = -15.59706223 in cell 652427 at location (-0.1208877006 0.0872072692 -0.1234315371) on processor 2
+    max(p) = 17.42018474 in cell 784207 at location (0.1175000001 0.04907198274 0.1715) on processor 1
+
+surfaceFieldValue ambient_flux write:
+    sum(ambient_openings) of phi = 2.169847458e-11
+
+surfaceFieldValue ambient_abs_flux write:
+    sumMag(ambient_openings) of phi = 0.1361836133
+
+Courant Number mean: 0.0008966749907 max: 0.7335617237
+Time = 0.000125
+
+PIMPLE: iteration 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0006525910681, Final residual = 1.348030485e-07, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.0001367881772, Final residual = 2.570845508e-08, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 2.81336539e-05, Final residual = 5.719777089e-09, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.03526100054, Final residual = 0.0004860780582, No Iterations 2
+GAMG:  Solving for p, Initial residual = 0.002284215624, Final residual = 3.950986928e-05, No Iterations 3
+time step continuity errors : sum local = 1.476741662e-10, global = -1.817176749e-12, cumulative = -4.751632717e-11
+GAMG:  Solving for p, Initial residual = 0.0005628307558, Final residual = 1.59920155e-05, No Iterations 2
+GAMG:  Solving for p, Initial residual = 0.0001667800892, Final residual = 7.280781206e-09, No Iterations 12
+time step continuity errors : sum local = 2.718608003e-14, global = -4.98285647e-16, cumulative = -4.751682546e-11
+PIMPLE: iteration 2
+smoothSolver:  Solving for Ux, Initial residual = 8.15525085e-07, Final residual = 1.334148001e-09, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 2.390745267e-07, Final residual = 2.285687567e-10, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 5.955576486e-08, Final residual = 7.347940013e-11, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.0005822992305, Final residual = 1.362626846e-05, No Iterations 2
+GAMG:  Solving for p, Initial residual = 8.878096588e-05, Final residual = 1.795689083e-06, No Iterations 3
+time step continuity errors : sum local = 6.704944201e-12, global = -1.437351094e-13, cumulative = -4.766056057e-11
+GAMG:  Solving for p, Initial residual = 4.709398406e-05, Final residual = 7.912223269e-07, No Iterations 3
+GAMG:  Solving for p, Initial residual = 2.32850421e-05, Final residual = 6.492318499e-09, No Iterations 9
+time step continuity errors : sum local = 2.42417281e-14, global = -4.400474943e-16, cumulative = -4.766100062e-11
+PIMPLE: iteration 3
+smoothSolver:  Solving for Ux, Initial residual = 1.020103597e-08, Final residual = 3.41258278e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 3.163259877e-09, Final residual = 3.163259877e-09, No Iterations 0
+smoothSolver:  Solving for Uz, Initial residual = 7.248373131e-10, Final residual = 7.248373131e-10, No Iterations 0
+GAMG:  Solving for p, Initial residual = 2.686031546e-05, Final residual = 4.838644773e-07, No Iterations 2
+GAMG:  Solving for p, Initial residual = 1.253623542e-05, Final residual = 2.590449125e-07, No Iterations 2
+time step continuity errors : sum local = 9.672610414e-13, global = 9.329880141e-16, cumulative = -4.766006763e-11
+GAMG:  Solving for p, Initial residual = 9.97203483e-06, Final residual = 2.055965881e-07, No Iterations 2
+GAMG:  Solving for p, Initial residual = 7.635616307e-06, Final residual = 7.380048749e-09, No Iterations 6
+time step continuity errors : sum local = 2.755674382e-14, global = 1.593762355e-15, cumulative = -4.765847387e-11
+smoothSolver:  Solving for omega, Initial residual = 2.151460364e-07, Final residual = 6.523542203e-10, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 3.285796241e-06, Final residual = 3.828483375e-10, No Iterations 2
+ExecutionTime = 235.64 s  ClockTime = 249 s
+
+fieldMinMax extrema write:
+    min(mag(U)) = 0 in cell 34 at location (-0.1400000006 0.004925806992 0.05300056255) on processor 0
+    max(mag(U)) = 5.610563986 in cell 242611 at location (-0.09849871095 0.04727839877 0.2024999615) on processor 1
+    min(k) = 2.557544922e-15 in cell 638552 at location (0.1656242371 0.01651830978 -0.05917877827) on processor 2
+    max(k) = 1.1202864 in cell 286652 at location (-0.1094999998 0.04465134854 0.2125000351) on processor 1
+    min(omega) = 1.411606138 in cell 572430 at location (0.3936176336 0.4433714426 -0.1680017275) on processor 2
+    max(omega) = 16962368.37 in cell 629459 at location (0.1029131432 0.04726990384 0.006187995092) on processor 3
+    min(p) = -15.77100238 in cell 652427 at location (-0.1208877006 0.0872072692 -0.1234315371) on processor 2
+    max(p) = 17.49047692 in cell 784207 at location (0.1175000001 0.04907198274 0.1715) on processor 1
+
+surfaceFieldValue ambient_flux write:
+    sum(ambient_openings) of phi = 1.816827054e-11
+
+surfaceFieldValue ambient_abs_flux write:
+    sumMag(ambient_openings) of phi = 0.1361763956
+
+Courant Number mean: 0.0008966350344 max: 0.7340699608
+Time = 0.00015
+
+PIMPLE: iteration 1
+smoothSolver:  Solving for Ux, Initial residual = 0.000548774086, Final residual = 1.265210987e-07, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.000114159924, Final residual = 2.304846137e-08, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 2.373744743e-05, Final residual = 5.406729409e-09, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.02539307674, Final residual = 0.0003286055989, No Iterations 2
+GAMG:  Solving for p, Initial residual = 0.001580615473, Final residual = 2.722017505e-05, No Iterations 3
+time step continuity errors : sum local = 9.743965825e-11, global = 1.219897664e-13, cumulative = -4.75364841e-11
+GAMG:  Solving for p, Initial residual = 0.0004051293685, Final residual = 1.110743882e-05, No Iterations 2
+GAMG:  Solving for p, Initial residual = 0.0001199759361, Final residual = 5.630831739e-09, No Iterations 13
+time step continuity errors : sum local = 2.012388685e-14, global = 2.038518073e-15, cumulative = -4.753444558e-11
+PIMPLE: iteration 2
+smoothSolver:  Solving for Ux, Initial residual = 7.044374421e-07, Final residual = 1.260533232e-09, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 2.048236065e-07, Final residual = 2.146741454e-10, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 5.129199888e-08, Final residual = 7.118144915e-11, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.0005137987478, Final residual = 1.285617813e-05, No Iterations 2
+GAMG:  Solving for p, Initial residual = 7.394108105e-05, Final residual = 1.570588915e-06, No Iterations 3
+time step continuity errors : sum local = 5.610197161e-12, global = -9.668143802e-14, cumulative = -4.763112702e-11
+GAMG:  Solving for p, Initial residual = 3.88296274e-05, Final residual = 6.939183782e-07, No Iterations 3
+GAMG:  Solving for p, Initial residual = 1.783210772e-05, Final residual = 9.143529737e-09, No Iterations 8
+time step continuity errors : sum local = 3.266115399e-14, global = -1.496022882e-15, cumulative = -4.763262304e-11
+PIMPLE: iteration 3
+smoothSolver:  Solving for Ux, Initial residual = 9.229066311e-09, Final residual = 9.229066311e-09, No Iterations 0
+smoothSolver:  Solving for Uy, Initial residual = 2.82021138e-09, Final residual = 2.82021138e-09, No Iterations 0
+smoothSolver:  Solving for Uz, Initial residual = 6.532416743e-10, Final residual = 6.532416743e-10, No Iterations 0
+GAMG:  Solving for p, Initial residual = 2.23791105e-05, Final residual = 3.975692314e-07, No Iterations 2
+GAMG:  Solving for p, Initial residual = 9.424416593e-06, Final residual = 2.052492388e-07, No Iterations 2
+time step continuity errors : sum local = 7.331720718e-13, global = -2.139943067e-15, cumulative = -4.763476298e-11
+GAMG:  Solving for p, Initial residual = 7.46569446e-06, Final residual = 1.607799016e-07, No Iterations 2
+GAMG:  Solving for p, Initial residual = 5.592042349e-06, Final residual = 5.862592801e-09, No Iterations 6
+time step continuity errors : sum local = 2.094179904e-14, global = 7.553812693e-16, cumulative = -4.76340076e-11
+smoothSolver:  Solving for omega, Initial residual = 2.170375697e-07, Final residual = 6.51360736e-10, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 3.294840209e-06, Final residual = 3.823462229e-10, No Iterations 2
+ExecutionTime = 275.36 s  ClockTime = 291 s
+
+fieldMinMax extrema write:
+    min(mag(U)) = 0 in cell 34 at location (-0.1400000006 0.004925806992 0.05300056255) on processor 0
+    max(mag(U)) = 5.610397015 in cell 242611 at location (-0.09849871095 0.04727839877 0.2024999615) on processor 1
+    min(k) = 3.043902124e-15 in cell 638552 at location (0.1656242371 0.01651830978 -0.05917877827) on processor 2
+    max(k) = 1.120740669 in cell 286652 at location (-0.1094999998 0.04465134854 0.2125000351) on processor 1
+    min(omega) = 1.411605313 in cell 572430 at location (0.3936176336 0.4433714426 -0.1680017275) on processor 2
+    max(omega) = 16962368.38 in cell 629459 at location (0.1029131432 0.04726990384 0.006187995092) on processor 3
+    min(p) = -15.8465019 in cell 652427 at location (-0.1208877006 0.0872072692 -0.1234315371) on processor 2
+    max(p) = 17.4866882 in cell 784207 at location (0.1175000001 0.04907198274 0.1715) on processor 1
+
+    functionObjects::vorticity vorticity writing field: vorticity
+    functionObjects::Q Q writing field: Q
+yPlus yPlus write:
+    writing field yPlus
+    patch printed y+ : min = 0.001769551871, max = 30.11899983, average = 4.582003483
+    patch laptop y+ : min = 0.009911659501, max = 27.53755616, average = 3.561772637
+    patch noctua y+ : min = 0.01195633566, max = 18.52602736, average = 3.533135071
+    patch wall_plane y+ : min = 0.002757151199, max = 58.39882609, average = 11.04124776
+surfaceFieldValue ambient_flux write:
+    sum(ambient_openings) of phi = 8.610955287e-12
+
+surfaceFieldValue ambient_abs_flux write:
+    sumMag(ambient_openings) of phi = 0.1361708158
+
+End
+
+Finalising parallel run
