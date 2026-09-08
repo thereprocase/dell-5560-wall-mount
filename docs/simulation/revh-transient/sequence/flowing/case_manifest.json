@@ -1,0 +1,631 @@
+{
+  "created_utc": "2026-09-08T18:08:14.700336+00:00",
+  "geometry_revision": "H",
+  "base_commit": "f47a03f",
+  "scope": "Transient response from a same-Rev-H steady-solver checkpoint; provisional mesh; convergence of the initial field requires separate assessment.",
+  "geometry_inputs": [
+    {
+      "path": "F:\\Code\\dell-5560-wall-mount-cfd\\freecad\\Precision_5560_Native.step",
+      "sha256": "0a60dceee211fdd028af1e63ea3fe9b9a0ae06f84d521ade9ebfe4b4f04ad8e3"
+    },
+    {
+      "path": "F:\\Code\\dell-5560-wall-mount-cfd\\fusion\\output\\native\\cfd_helpers_traced.json",
+      "sha256": "8a64f4f30f49a6af90d0ecd78bb1a10d7badb1c2a1080c375875a9ec4d61cf81"
+    },
+    {
+      "path": "F:\\Code\\dell-5560-wall-mount-cfd\\fusion\\output\\native\\cfd_helpers_traced.step",
+      "sha256": "6fa7e681562fb4f9ac68e63bbe39f1ce2a4039499740c63e80dbb2e0b972ded2"
+    }
+  ],
+  "laptop_geometry_uncertainty_mm": {
+    "profile": 2,
+    "intake_location": 4
+  },
+  "surface_sha256": "3b764f39413d86dbb3a16e0403ff4dc6650ef9b10f2a299969ebbd4aa0d502ed",
+  "numerical_surface_stabilization": {
+    "method": "Deterministic sub-micrometre vertex perturbation; domain planes fixed; native CAD unchanged",
+    "seed": 5560,
+    "max_displacement_m": 1.672497877524723e-08,
+    "flipped_normals": 0
+  },
+  "surface_deflection_mm": 0.025,
+  "base_cell_mm": 16,
+  "surface_cell_mm": {
+    "printed": 2,
+    "laptop": 2,
+    "noctua": 2
+  },
+  "refinement_boxes": {
+    "ductWake": {
+      "min_m": [
+        -0.145,
+        0.002,
+        -0.004
+      ],
+      "max_m": [
+        0.145,
+        0.042,
+        0.024
+      ],
+      "level": 4,
+      "cell_mm": 1.0
+    },
+    "ductOuterEdge": {
+      "min_m": [
+        -0.145,
+        0.034,
+        -0.004
+      ],
+      "max_m": [
+        0.145,
+        0.043,
+        0.01
+      ],
+      "level": 5,
+      "cell_mm": 0.5
+    },
+    "frontLip": {
+      "min_m": [
+        -0.174,
+        0.047,
+        -0.003
+      ],
+      "max_m": [
+        0.174,
+        0.058,
+        0.009
+      ],
+      "level": 5,
+      "cell_mm": 0.5
+    },
+    "frontLipWake": {
+      "min_m": [
+        -0.176,
+        0.042,
+        -0.002
+      ],
+      "max_m": [
+        0.176,
+        0.064,
+        0.022
+      ],
+      "level": 4,
+      "cell_mm": 1.0
+    },
+    "leftPassage": {
+      "min_m": [
+        -0.15,
+        0.037,
+        0.14
+      ],
+      "max_m": [
+        -0.073,
+        0.052,
+        0.238
+      ],
+      "level": 4,
+      "cell_mm": 1.0
+    },
+    "rightPassage": {
+      "min_m": [
+        0.073,
+        0.037,
+        0.14
+      ],
+      "max_m": [
+        0.15,
+        0.052,
+        0.238
+      ],
+      "level": 4,
+      "cell_mm": 1.0
+    },
+    "leftHingeLip": {
+      "min_m": [
+        -0.15,
+        0.037,
+        0.222
+      ],
+      "max_m": [
+        -0.073,
+        0.054,
+        0.237
+      ],
+      "level": 5,
+      "cell_mm": 0.5
+    },
+    "rightHingeLip": {
+      "min_m": [
+        0.073,
+        0.037,
+        0.222
+      ],
+      "max_m": [
+        0.15,
+        0.054,
+        0.237
+      ],
+      "level": 5,
+      "cell_mm": 0.5
+    },
+    "hingeWake": {
+      "min_m": [
+        -0.15,
+        0.033,
+        0.232
+      ],
+      "max_m": [
+        0.15,
+        0.061,
+        0.253
+      ],
+      "level": 4,
+      "cell_mm": 1.0
+    },
+    "leftDuctSide": {
+      "min_m": [
+        -0.145,
+        0.003,
+        -0.008
+      ],
+      "max_m": [
+        -0.136,
+        0.044,
+        0.014
+      ],
+      "level": 5,
+      "cell_mm": 0.5
+    },
+    "rightDuctSide": {
+      "min_m": [
+        0.136,
+        0.003,
+        -0.008
+      ],
+      "max_m": [
+        0.145,
+        0.044,
+        0.014
+      ],
+      "level": 5,
+      "cell_mm": 0.5
+    },
+    "left_ductOuterEdge_sample_strip": {
+      "min_m": [
+        -0.119,
+        0.034,
+        -0.004
+      ],
+      "max_m": [
+        -0.10300000000000001,
+        0.043,
+        0.01
+      ],
+      "level": 6,
+      "cell_mm": 0.25
+    },
+    "left_frontLip_sample_strip": {
+      "min_m": [
+        -0.119,
+        0.047,
+        -0.003
+      ],
+      "max_m": [
+        -0.10300000000000001,
+        0.058,
+        0.009
+      ],
+      "level": 6,
+      "cell_mm": 0.25
+    },
+    "left_leftHingeLip_sample_strip": {
+      "min_m": [
+        -0.119,
+        0.037,
+        0.222
+      ],
+      "max_m": [
+        -0.10300000000000001,
+        0.054,
+        0.237
+      ],
+      "level": 6,
+      "cell_mm": 0.25
+    },
+    "right_ductOuterEdge_sample_strip": {
+      "min_m": [
+        0.10300000000000001,
+        0.034,
+        -0.004
+      ],
+      "max_m": [
+        0.119,
+        0.043,
+        0.01
+      ],
+      "level": 6,
+      "cell_mm": 0.25
+    },
+    "right_frontLip_sample_strip": {
+      "min_m": [
+        0.10300000000000001,
+        0.047,
+        -0.003
+      ],
+      "max_m": [
+        0.119,
+        0.058,
+        0.009
+      ],
+      "level": 6,
+      "cell_mm": 0.25
+    },
+    "right_rightHingeLip_sample_strip": {
+      "min_m": [
+        0.10300000000000001,
+        0.037,
+        0.222
+      ],
+      "max_m": [
+        0.119,
+        0.054,
+        0.237
+      ],
+      "level": 6,
+      "cell_mm": 0.25
+    }
+  },
+  "requested_layers": {
+    "printed": 4,
+    "laptop": 4,
+    "noctua": 2,
+    "relative_sizes": true,
+    "final_layer_fraction": 0.3,
+    "minimum_total_thickness_fraction": 0.15,
+    "growth": 1.2
+  },
+  "requested_max_Co": 0.5,
+  "requested_max_deltaT_s": 2.5e-05,
+  "pilot_end_time_s": 0.0001,
+  "production_plan": "Measure mesh quality and cost on a bounded benchmark. Then establish flow startup duration and save hundreds of actual section samples; no invented in-between states. A longer run is not a mesh/time-step convergence test.",
+  "probes": [
+    {
+      "name": "duct_edge_x-0.111",
+      "point_m": [
+        -0.111,
+        0.039,
+        0.008
+      ]
+    },
+    {
+      "name": "duct_wake_x-0.111",
+      "point_m": [
+        -0.111,
+        0.039,
+        0.02
+      ]
+    },
+    {
+      "name": "front_lip_wallside_x-0.111",
+      "point_m": [
+        -0.111,
+        0.046,
+        0.004
+      ]
+    },
+    {
+      "name": "front_lip_outside_x-0.111",
+      "point_m": [
+        -0.111,
+        0.06,
+        0.004
+      ]
+    },
+    {
+      "name": "hinge_underside_x-0.111",
+      "point_m": [
+        -0.111,
+        0.037,
+        0.219
+      ]
+    },
+    {
+      "name": "hinge_exit_x-0.111",
+      "point_m": [
+        -0.111,
+        0.046,
+        0.239
+      ]
+    },
+    {
+      "name": "hinge_wake_x-0.111",
+      "point_m": [
+        -0.111,
+        0.046,
+        0.25
+      ]
+    },
+    {
+      "name": "duct_edge_x0.07",
+      "point_m": [
+        0.07,
+        0.039,
+        0.008
+      ]
+    },
+    {
+      "name": "duct_wake_x0.07",
+      "point_m": [
+        0.07,
+        0.039,
+        0.02
+      ]
+    },
+    {
+      "name": "front_lip_wallside_x0.07",
+      "point_m": [
+        0.07,
+        0.046,
+        0.004
+      ]
+    },
+    {
+      "name": "front_lip_outside_x0.07",
+      "point_m": [
+        0.07,
+        0.06,
+        0.004
+      ]
+    },
+    {
+      "name": "hinge_underside_x0.07",
+      "point_m": [
+        0.07,
+        0.037,
+        0.219
+      ]
+    },
+    {
+      "name": "hinge_exit_x0.07",
+      "point_m": [
+        0.07,
+        0.046,
+        0.239
+      ]
+    },
+    {
+      "name": "hinge_wake_x0.07",
+      "point_m": [
+        0.07,
+        0.046,
+        0.25
+      ]
+    },
+    {
+      "name": "duct_edge_x0.111",
+      "point_m": [
+        0.111,
+        0.039,
+        0.008
+      ]
+    },
+    {
+      "name": "duct_wake_x0.111",
+      "point_m": [
+        0.111,
+        0.039,
+        0.02
+      ]
+    },
+    {
+      "name": "front_lip_wallside_x0.111",
+      "point_m": [
+        0.111,
+        0.046,
+        0.004
+      ]
+    },
+    {
+      "name": "front_lip_outside_x0.111",
+      "point_m": [
+        0.111,
+        0.06,
+        0.004
+      ]
+    },
+    {
+      "name": "hinge_underside_x0.111",
+      "point_m": [
+        0.111,
+        0.037,
+        0.219
+      ]
+    },
+    {
+      "name": "hinge_exit_x0.111",
+      "point_m": [
+        0.111,
+        0.046,
+        0.239
+      ]
+    },
+    {
+      "name": "hinge_wake_x0.111",
+      "point_m": [
+        0.111,
+        0.046,
+        0.25
+      ]
+    },
+    {
+      "name": "ambient_reference",
+      "point_m": [
+        0,
+        0.25,
+        0.1
+      ]
+    }
+  ],
+  "interpretation": "Look for sustained traveling vorticity and reproducible pressure spectra; do not infer shedding from a still streamline image. Gauge p in Pa = 1.2 * p. Pressure depression alone does not establish a Bernoulli cause.",
+  "gates": {
+    "surface": false,
+    "mesh": false,
+    "layers": false,
+    "transient_pilot": false,
+    "spatial_convergence": false,
+    "temporal_convergence": false,
+    "hardware_validation": false
+  },
+  "mesh_profile": "focused_sequence_benchmark",
+  "benchmark": {
+    "fixed_deltaT_s": 1e-05,
+    "steps": 10,
+    "stop_condition": "Monitor logged Courant and field bounds; no automatic production extension."
+  },
+  "change_reason": "Four initialization snapshots cannot form a meaningful flow-evolution video. Reduce background and full-span cell cost while preserving 0.25 mm targets in the plotted lip regions; revisit wall layers.",
+  "continuation": {
+    "source_case": "duct_cpu_02",
+    "source_time_s": 0.0001,
+    "initialization": "Exact same-Rev-H CPU fields including U_0, phi_0, k_0, omega_0 and uniform time history; no Revision F mapping.",
+    "field_hashes": {
+      "0.0001/Q": "19479727a7d69c53663002288dd8940a3aed066ef7ec2c1f86098c5d265c89a7",
+      "0.0001/U": "9d245f6c957e6fb573bed4403511addb7ae8a0cca4d82103f069c5c6156f3439",
+      "0.0001/U_0": "a2d958f7ca2a03bbc0d8ba64a3a291bbd319cc7716bf3197d98adcfda20276a1",
+      "0.0001/k": "a138356855c430d6c52565fd1f6fe96c84d996809eac940e27b6ef589b4b2d51",
+      "0.0001/k_0": "446328ce9b93d8ff3adda4358449b3f944738843155d6d25d1507b073e4337e6",
+      "0.0001/nut": "1167986db9367c14f9fa882ae227452fe152eb837324d9e5c16a802690e4be63",
+      "0.0001/omega": "78a3af177e0762b41400bb44e3aff9cb0cb593fcf483c57cabad62e3de5b30fa",
+      "0.0001/omega_0": "2ff36f8940dd08520328cabece2d81b478554086cc560e3a1f85257e67508d79",
+      "0.0001/p": "b3a7e1ea21f75444459ba85cf19964e21e90d34808b2566edb561d47d089d6aa",
+      "0.0001/phi": "5451859c16d125909b54de0875218d2b1b5211f6b5d50fb2fcb0dacea60c75e8",
+      "0.0001/phi_0": "436c8b7e160426b0c6a627d8bdcc60aa64d79e51ea86f46cc8b2756a9a781d21",
+      "0.0001/uniform/cumulativeContErr": "60f55d0a9f246cd72dde1d7e321cac8f3ddd5c105222d177b1bc2d1fc52d4b94",
+      "0.0001/uniform/functionObjects/functionObjectProperties": "81f0f9e6cf63af5e8f76bb8c857348d419587f448ff5889f83ad210cce2d928c",
+      "0.0001/uniform/time": "7e911513fd660349719109cfa983c2e44f6d0f23e43a33cae6bb35aa76b15bd7",
+      "0.0001/vorticity": "7ae4d7e81c16f693b4962f268f5247a53e1e78b77fda6f979e525b2be900af90",
+      "0.0001/yPlus": "1bb1ffa6e94d7fb3c5fcd57ae65686178dbdc131b1ace52f01aba9aa30551ab9"
+    }
+  },
+  "mesh_source": "revh_sequence_05",
+  "ranks": 4,
+  "section_output": {
+    "planes": [
+      -0.111,
+      0.111
+    ],
+    "bounds": null,
+    "interval_steps": 2,
+    "fields": [
+      "p",
+      "U",
+      "vorticity",
+      "Q"
+    ],
+    "format": "VTK XML polydata"
+  },
+  "publication": "Hourly real-sample video checkpoints; no interpolated CFD states.",
+  "solver": "pimpleFoam",
+  "convergence_policy": {
+    "minimum_iterations": 200,
+    "window_iterations": 50,
+    "max_initial_residuals": {
+      "p": 1e-05,
+      "U": 1e-06,
+      "k": 1e-05,
+      "omega": 1e-05
+    },
+    "probe_window_relative_range": 0.005,
+    "net_to_absolute_boundary_flux": 1e-05,
+    "recent_turbulence_bounding_events": 0
+  },
+  "initialization_kind": "steady_solver",
+  "transient_initialization": {
+    "steady_case": "revh_steady_09",
+    "steady_iteration": 400,
+    "source_assessment": {
+      "case": "revh_steady_09",
+      "state": "complete",
+      "started_utc": "2026-09-08T17:03:43.194635+00:00",
+      "budget_seconds": 3600,
+      "converged": false,
+      "completed_iterations": 403,
+      "mpi_pid": 2701037,
+      "updated_utc": "2026-09-08T18:04:11.268664+00:00",
+      "elapsed_seconds": 3628.02,
+      "latest_iteration": 403,
+      "bounding_events": 188,
+      "worker_pids": [],
+      "last_50_max_initial_residuals": {
+        "p": 0.000686934392,
+        "Ux": 0.007219358212,
+        "Uy": 0.003117058029,
+        "Uz": 0.001837976159,
+        "k": 0.002238046957,
+        "omega": 0.000131432862
+      },
+      "probe_window_relative_range": {
+        "p": 0.13843956657400688,
+        "U": 0.22156914098913746
+      },
+      "last_50_max_flux_ratio": 2.108140919045562e-05,
+      "latest_max_speed_m_s": 5.675921868,
+      "stop_reason": "Steady preparation wall budget reached",
+      "exit_code": 0,
+      "finished_utc": "2026-09-08T18:04:11.272093+00:00"
+    },
+    "physical_start_time_s": 0,
+    "old_time_fields_copied": false,
+    "source_field_sha256": {
+      "U": "00aa3917c80e20e60d9052f8772bac9d02c2e0e2dfdeb05be916ac6fd9bc975a",
+      "p": "02a6290b7ea84cac04f6c3ad50bac5609e0a75dcdfc4a56f53a85d5c51820169",
+      "phi": "1cbb3ed18a1b7882e3926dd71bbabe9d6857dfe42abbe9e1e4a946f0186dc711",
+      "k": "92004fa42710e0c2cd58779e4f2546a60722a92ea0d4a1c76dbe894f361f4413",
+      "omega": "43f12d60e28b0b13d2e1cddf8e245eec26689d8aeb331b598f1db9afaf8fbd59",
+      "nut": "fc80c2fd937ae99b5f74f88f59bef16bf257d5ec6420121e32cf2f9536ad6620",
+      "processor0/U": "af08e299f587d3714a7ce3aa97aaaef46ee784f9e25e06073f677cdf19cbdc46",
+      "processor0/p": "bd35661879f9b9914d4c087905c5bc08004a54cc31e284c23b8d569c69749c98",
+      "processor0/phi": "8c2f65bbf52d467b28666f3a87b1b3eaeca6db059ae888e09606117103defcf2",
+      "processor0/k": "e6e6cd269e11fd334c35bf8a8a10fd94d593202adfa9dc9eabd5cac6b66a377e",
+      "processor0/omega": "cd0068b5ea1027e42eb2b1f731cfacc8e1ce4121b24abb63f0e05e10fc107a58",
+      "processor0/nut": "d38fb1ac6c310012c4b712cbd8dc57d0f8f995d4a9013abeb211c01a251bccff",
+      "processor1/U": "4888428ebccb29231dbd6fa66809d799ea48819c5edb18a84367cce1b44ce585",
+      "processor1/p": "c4a2222c5fdc05b71fc5763c1edd04968aa46456b3991ab4263fea4ac085e3d5",
+      "processor1/phi": "83dcf459907a163964a5b1d9f0236ce426a9676f460d6c104a2092451e42cbf8",
+      "processor1/k": "b3fd72501b7db34e545e0f2e0034cfe7817ff733c0164de4254505fc1a8f7ac7",
+      "processor1/omega": "deaecf507455f5900a18141884a3094b20176dec10b48194ce984e8f05d6d44a",
+      "processor1/nut": "745932776abf39a24525682636d2b591a72bfc8b1d683a22031236e3e3f3eebf",
+      "processor2/U": "1454e46b375c8ca681c74851c0f4eb79e2fa7b0f1210a02a9037214006537e0c",
+      "processor2/p": "a4da89fba46ea4bf0769630fc45eef1f9df818ee40d580c9c251b1772c9c5bbd",
+      "processor2/phi": "e31666b08b61c5fe9948d11565c0b774e57432400e901c6f6c9551c8b40d316f",
+      "processor2/k": "eea07364d4699a2eca0379a7a37af88488ced5804b2ee3437da7db44d7b85f84",
+      "processor2/omega": "ac67059464da9b5e3406bf0a0a188080cbf49e2869a5738e83cd3945008aea07",
+      "processor2/nut": "535bc42146236a23f2d72abfd919805f727ef454f68cce4b8c664fe8e9904362",
+      "processor3/U": "a68cd72cbfd82a16092260e3f8c6169a3bde9f4fb48efb354f2709e301b6a7d1",
+      "processor3/p": "f8b49fa3f1e54cf09b4e9dca96f9693cbb40d1cc8607e586e53ffb9dd40ef9d5",
+      "processor3/phi": "c0ee77bb3272c7ba057e9ac6f030f86253cd3db940abf70c5a7b7d5d207f37a0",
+      "processor3/k": "5b62882dd038aa4169beb6f7f3b6c5cb85e0e7dc1672e23d2a23280a2d6c2de2",
+      "processor3/omega": "57169b78b321c3fb40dc4654780b69197117148fa950f803e552898f5063eccb",
+      "processor3/nut": "9f0d50dc325c023f7dae7e608f11a2df77e577ec137342ea945f35566b8c655b"
+    },
+    "method": "Same mesh and forcing; reset physical clock; native backward-scheme initial Euler fallback. No quiescent fan startup is replayed."
+  },
+  "transient_controls": {
+    "initial_deltaT_s": 1.25e-05,
+    "max_deltaT_s": 2.5e-05,
+    "max_Co": 0.5,
+    "outer_correctors": 2,
+    "pressure_correctors": 2,
+    "nonorthogonal_correctors": 1
+  },
+  "benchmark_steps": 0,
+  "benchmark_dt_us": null,
+  "maximum_wall_seconds": 7454,
+  "overall_compute_deadline_utc": "2026-09-08T20:12:29.689449+00:00",
+  "correction_count_assessment": {
+    "comparison": "comparison.json",
+    "passed": true,
+    "scope": "Six-step field comparison at 12.5 microseconds; not temporal or spatial independence.",
+    "timing_caveat": "Competing workload changed between measurements; the wall-time ratio is not an isolated speed benchmark."
+  },
+  "initial_field_disposition": "Use the last complete sampled full-field checkpoint, iteration 400 of 403. The steady convergence policy was not satisfied; this is a provisional flowing initialization."
+}

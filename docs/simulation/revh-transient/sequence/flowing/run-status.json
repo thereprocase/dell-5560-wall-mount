@@ -1,0 +1,24 @@
+{
+  "case": "revh_flowing_12",
+  "state": "running",
+  "started_utc": "2026-09-08T18:08:14.929371+00:00",
+  "budget_seconds": 7454,
+  "hourly_updates_due_seconds": [
+    3600,
+    7200,
+    10800,
+    14400
+  ],
+  "scope": "Exploratory transient from a steady-solver iterate; initial field is not claimed converged.",
+  "initialization_kind": "steady_solver",
+  "updated_utc": "2026-09-08T18:31:42.685167+00:00",
+  "elapsed_seconds": 1407.36,
+  "completed_steps": 68,
+  "latest_physical_time_s": 0.001170344442,
+  "latest_deltaT_s": 1.714315742e-05,
+  "latest_Courant": 0.5000967258,
+  "max_logged_Courant": 0.5004524521,
+  "bounding_events": 5,
+  "complete_sample_frames": 35,
+  "published_snapshot_utc": "2026-09-08T18:31:44.955886+00:00"
+}

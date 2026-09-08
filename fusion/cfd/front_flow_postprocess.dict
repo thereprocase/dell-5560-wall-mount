@@ -1,0 +1,22 @@
+FoamFile {version 2.0; format ascii; class dictionary; object front_flow_postprocess;}
+application postProcess;
+startFrom startTime; startTime 400; stopAt endTime; endTime 400; deltaT 1;
+writeControl timeStep; writeInterval 1;
+functions {
+ front_flow_analysis {
+  type surfaces; libs (sampling); writeControl timeStep; writeInterval 1;
+  surfaceFormat vtk; interpolationScheme cellPoint; fields (U p);
+  surfaces {
+   front_mouth {
+    type cuttingPlane; planeType pointAndNormal;
+    pointAndNormalDict {point (0 .040 0); normal (0 .49755314317590477 -.8674334958460953);}
+    interpolate true;
+   }
+   upward_channel {
+    type cuttingPlane; planeType pointAndNormal;
+    pointAndNormalDict {point (0 0 .020001); normal (0 0 1);}
+    interpolate true;
+   }
+  }
+ }
+}

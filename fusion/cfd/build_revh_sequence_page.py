@@ -99,10 +99,16 @@ def main():
                 ratios=[v['upward_channel_at_Z20']['net_flux_m2_s']/v['front_opening']['net_flux_m2_s'] for v in measured['results'].values()]
                 steady_note+=f'<h2>Flow at the front opening</h2><p>At these two sampled side sections, upward channel flow is {min(ratios):.1f}–{max(ratios):.1f} times the net outward flow through the front opening. Both inward and outward flow occur across that opening. This is a line integral per unit span, not a full-width leakage fraction or a conservative three-dimensional flow split. The field remains unconverged.</p><p>Some outward flow could help cool the outer shell if it sweeps a warmer surface. This isothermal airflow model has no battery or heat-transfer solution, so it cannot quantify that benefit. A small smooth divider extension is a possible later comparison; the current geometry is unchanged.</p><p><a href="{directory}/section-flow.json">Opening-flow measurements and exact section definitions</a> · <a href="{directory}/left-section.vtp">Left sampled section</a></p>'
     flowing_note=''
+    flowing_intro=''
     if (PAGE/'flowing/index.html').is_file():
         flowing_note='<h2>Transient from an already flowing field</h2><p>A separate recorded sequence begins with the steady-solver field. Its physical clock starts at zero, and initial adjustment remains because the source field is unconverged. <a href="flowing/">Watch the flowing-field transient</a>.</p>'
+        flowing_intro='<p class="lede"><strong>Start with moving air:</strong> <a href="flowing/">Watch the separate transient initialized from the flowing field</a>. Its clock and checkpoints are kept separate from the original startup below.</p>'
     elif (PAGE/'flowing-first-frame.png').is_file():
         flowing_note='<h2>Transient from an already flowing field</h2><p>A separate four-worker transient began at 2:08 p.m. Eastern from steady iteration 400. It starts with moving air, and its physical clock resets to zero. Initial adjustment remains because the source field is unconverged. Its first video is being accumulated. <a href="flowing-first-frame.png">View the exact starting frame</a> · <a href="correction-check/">See the short correction-count comparison</a>.</p>'
+    wider=PAGE/'steady/opening-flow-400/opening-flow.json'
+    if wider.is_file():
+        measurement=json.loads(wider.read_text());front=measurement['results']['front_mouth'];up=measurement['results']['upward_channel']
+        steady_note+=f'<h2>Across the central 280 mm</h2><p>A wider integration through the actual sampled fluid gives {front["positive_flow_L_s"]:.2f} L/s outward and {front["negative_flow_L_s"]:.2f} L/s inward at the front opening: {front["net_flow_L_s"]:.2f} L/s net outward. The upward passage cut carries {up["net_flow_L_s"]:.2f} L/s net. These defined open cuts do not form a closed device flow balance; they are an unconverged model snapshot, not measured fan delivery.</p><p><a href="steady/opening-flow-400/opening-flow.png">See how the flow varies across the width</a> · <a href="steady/opening-flow-400/opening-flow.json">Surface-integral data and exact bounds</a>.</p>'
     html=f'''<!doctype html>
 <html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Four-hour Rev H flow run · Precision 5560 mount</title>
@@ -113,6 +119,7 @@ def main():
 <div class="eyebrow">Revision H · 8 September 2026 · {status}</div>
 <h1>{heading}</h1>
 <p class="lede">A four-hour CPU solve, with an actual-sample video published each hour. Close-ups follow the duct outlet, front laptop lip and hinge discharge. <a href="latest.mp4">Open the latest MP4</a>.</p>
+{flowing_intro}
 <div class="notice"><strong>Exploratory startup on a provisional mesh.</strong> This run does not yet establish periodic vortex shedding or settled lip suction. Mesh and timestep independence remain untested.</div>
 <div class="metrics"><div class="metric"><strong>{ms:.4f} ms</strong><span>physical time at latest {'video' if latest else 'status'} checkpoint</span></div><div class="metric"><strong>{latest['source_frames'] if latest else 0}</strong><span>actual CFD states in the latest published video</span></div><div class="metric"><strong>≤ 25 µs</strong><span>adaptive timestep · Courant limit 0.5</span></div></div>
 {video}
