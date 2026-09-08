@@ -8,6 +8,19 @@ arms, size range and airflow adjustment too.
 [Explore both designs](https://thereprocase.github.io/dell-5560-wall-mount/) ·
 [Print and assembly guide](https://thereprocase.github.io/dell-5560-wall-mount/minimalist-guide.html)
 
+## Rev H airflow videos - updated hourly
+
+| Simulation | Latest video | Progress and archived checkpoints |
+|:--|:--|:--|
+| Started from still air | [Watch latest MP4](https://thereprocase.github.io/dell-5560-wall-mount/simulation/revh-transient/sequence/latest.mp4) | [Startup sequence](https://thereprocase.github.io/dell-5560-wall-mount/simulation/revh-transient/sequence/) |
+| Started from an already flowing field | [Watch latest MP4](https://thereprocase.github.io/dell-5560-wall-mount/simulation/revh-transient/sequence/flowing/latest.mp4) | [Flowing-field sequence](https://thereprocase.github.io/dell-5560-wall-mount/simulation/revh-transient/sequence/flowing/) |
+
+These stable links always point to the latest published cumulative videos, with
+all sampled frames retained. Hourly updates are scheduled through **8 a.m. EDT
+on September 9, 2026**; reopen or reload the video to see a newer checkpoint.
+These are exploratory airflow simulations. The already flowing sequence starts
+from an unconverged steady-solver field.
+
 ## MakerWorld preparation package
 
 [Agent handoff](MAKERWORLD_HANDOFF.md) · [Dated package, gallery, and downloads](makerworld/2026-09-08/)
