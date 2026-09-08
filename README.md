@@ -1,3 +1,5 @@
+Latest cloud topology progress, images and limitations: [running journal](topology/JOURNAL.md).
+
 # Cloud topology experiment
 
 This branch explores a **fanless, low-plastic PETG mount**. [Read the topology study](topology/README.md) for actual solver results, print assumptions and reproduction instructions. Study meshes are not installation-ready parts.

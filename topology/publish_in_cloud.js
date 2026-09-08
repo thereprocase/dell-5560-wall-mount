@@ -17,14 +17,16 @@ async function readJson(cmd) {
   return JSON.parse(r.output);
 }
 const files = await readJson(`python3 - <<'PY'
-import json,base64
+import json
 from pathlib import Path
 r=Path.cwd();m=json.loads((r/'topology/publish_manifest.json').read_text())
 out=[]
 for name in dict.fromkeys(m['paths']):
  p=(r/name).resolve();p.relative_to(r)
  if not p.is_file():raise FileNotFoundError(p)
- out.append({'path':name,'content':base64.b64encode(p.read_bytes()).decode()})
+ if p.suffix in {'.md','.py','.js','.json','.csv','.txt','.svg'}:
+  out.append({'path':name,'content':p.read_text()})
+ else:out.append({'path':name})
 print(json.dumps({'message':m['message'],'files':out}))
 PY`);
 const ref = JSON.parse(payload(await tools.mcp__codex_apps__github_fetch({url:api+'/git/ref/heads/cloud-topo'})).content);
@@ -32,7 +34,11 @@ const parent = ref.object.sha;
 const commit = JSON.parse(payload(await tools.mcp__codex_apps__github_fetch({url:api+'/git/commits/'+parent})).content);
 const entries=[];
 for (const f of files.files) {
-  const b=payload(await tools.mcp__codex_apps__github_create_blob({repository_full_name:repo,encoding:'base64',content:f.content}));
+  if('content' in f) {entries.push({path:f.path,mode:'100644',type:'blob',content:f.content});continue;}
+  const quote=s=>"'"+String(s).replace(/'/g,"'\\''")+"'";
+  const binary=await tools.exec_command({cmd:'base64 -w0 -- '+quote(f.path),workdir:root,max_output_tokens:250000});
+  if(binary.exit_code!==0 || binary.original_token_count>250000) throw new Error('Binary read failed or too large: '+f.path);
+  const b=payload(await tools.mcp__codex_apps__github_create_blob({repository_full_name:repo,encoding:'base64',content:binary.output}));
   if (!b.sha) throw new Error('Missing blob SHA');
   entries.push({path:f.path,mode:'100644',type:'blob',sha:b.sha});
 }
