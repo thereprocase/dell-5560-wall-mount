@@ -1,8 +1,9 @@
 import * as THREE from 'three';
+import {SoftwareRenderer} from './desk-dock-software.js';
 import {OrbitControls} from './vendor/OrbitControls.js';
-const $=id=>document.getElementById(id),canvas=$('scene');
+const $=id=>document.getElementById(id);let canvas=$('scene');
 const scene=new THREE.Scene();scene.background=new THREE.Color('#182a31');
-const renderer=new THREE.WebGLRenderer({canvas,antialias:true});renderer.setPixelRatio(Math.min(devicePixelRatio,2));
+let renderer;try{renderer=new THREE.WebGLRenderer({canvas,antialias:true});}catch{const replacement=canvas.cloneNode();canvas.replaceWith(replacement);canvas=replacement;renderer=new SoftwareRenderer(canvas);$('air').disabled=true;$('air').parentElement.title='Airflow arrows require WebGL; the airflow path is described below.';}renderer.setPixelRatio(Math.min(devicePixelRatio,2));
 const camera=new THREE.PerspectiveCamera(36,1,1,4000);camera.up.set(0,0,1);
 const controls=new OrbitControls(camera,canvas);controls.enableDamping=true;
 scene.add(new THREE.HemisphereLight(0xeaf8ff,0x344247,2.5));
