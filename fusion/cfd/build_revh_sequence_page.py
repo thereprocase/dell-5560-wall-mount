@@ -1,0 +1,83 @@
+"""Build the existing GitHub Pages report from immutable hourly CFD artifacts."""
+import argparse
+from datetime import datetime, timezone
+from html import escape
+import json
+from pathlib import Path
+
+ROOT=Path(__file__).resolve().parents[2]
+PAGE=ROOT/'docs/simulation/revh-transient/sequence'
+
+
+def main():
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--case',type=Path,required=True)
+    args=parser.parse_args()
+    state=json.loads((args.case/'run-status.json').read_text())
+    PAGE.mkdir(parents=True,exist_ok=True)
+    public={k:v for k,v in state.items() if k not in ['mpi_pid','worker_pids','command']}
+    public['published_snapshot_utc']=datetime.now(timezone.utc).isoformat()
+    (PAGE/'run-status.json').write_text(json.dumps(public,indent=2)+'\n',encoding='utf-8',newline='\n')
+    for name in ['case_manifest.json','quality-disposition.json']:
+        (PAGE/name).write_text((args.case/name).read_text(),encoding='utf-8',newline='\n')
+    reports=[]
+    for hour in range(1,5):
+        path=PAGE/f'hour-{hour}'/'progress.json'
+        if path.is_file():
+            report=json.loads(path.read_text())
+            assert not report['preview_subsampled']
+            assert report['hour_checkpoint']==hour
+            reports.append(report)
+    latest=reports[-1] if reports else None
+    ms=(latest['last_time_s'] if latest else state.get('latest_physical_time_s') or 0)*1000
+    heading='Four hours of airflow, recorded.' if state['state']=='complete' else 'Four-hour airflow run.'
+    video='''<div class="pending"><strong>The solver is running.</strong><p>The first hourly video is due around 1:12 p.m. Eastern on 8 September, plus rendering and publication time.</p></div>'''
+    if latest:
+        hour=latest['hour_checkpoint']
+        video=f'''<h2>Hour {hour}: latest cumulative video</h2>
+<figure><video id="flow-video" controls playsinline preload="metadata" poster="hour-{hour}/poster.png" aria-describedby="video-caption"><source src="hour-{hour}/flow.mp4" type="video/mp4"><a href="hour-{hour}/flow.mp4">Open the MP4</a>.</video>
+<figcaption id="video-caption">{latest['source_frames']} actual sampled states, from {latest['first_time_s']*1000:.4f} to {ms:.4f} ms. Playback lasts {latest['video_duration_s']:.2f} seconds at {latest['playback_slowdown']:.0f}× slow motion, rounded to 30 fps, with a half-second final hold. No intermediate CFD states are generated. <a href="hour-{hour}/flow.mp4">Open or download this video</a>.</figcaption></figure>'''
+        if (PAGE/f'hour-{hour}'/'history.png').exists():
+            video+=f'<figure><a href="hour-{hour}/history.png"><img src="hour-{hour}/history.png" alt="Recorded pressure, velocity and numerical diagnostics against physical time" loading="lazy"></a><figcaption>Recorded histories through this video checkpoint. Pressure uses the assumed air density of 1.2 kg/m³.</figcaption></figure>'
+    rows=[]
+    byhour={r['hour_checkpoint']:r for r in reports}
+    for hour in range(1,5):
+        r=byhour.get(hour)
+        if r:
+            links=f'<a href="hour-{hour}/flow.mp4">MP4</a> · <a href="hour-{hour}/poster.png">Last frame</a> · <a href="hour-{hour}/progress.json">Provenance</a>'
+            if (PAGE/f'hour-{hour}'/'diagnostics.json').exists():links+=f' · <a href="hour-{hour}/diagnostics.json">Diagnostics</a>'
+            rows.append(f'<tr><th scope="row">Hour {hour}</th><td>{r["compute_elapsed_seconds_at_snapshot"]/3600:.3f} h</td><td>{r["last_time_s"]*1000:.4f} ms</td><td>{r["source_frames"]}</td><td>{links}</td></tr>')
+        else:rows.append(f'<tr><th scope="row">Hour {hour}</th><td>Due about {hour}:12 p.m. EDT</td><td>Pending</td><td>—</td><td>Not yet published</td></tr>')
+    status=escape(state['state'].replace('_',' '))
+    html=f'''<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Four-hour Rev H flow run · Precision 5560 mount</title>
+<style>
+:root{{color-scheme:light;--ink:#162c36;--muted:#536772;--line:#d9e2e5;--accent:#17686b}}*{{box-sizing:border-box}}body{{margin:0;background:#f5f7f7;color:var(--ink);font:17px/1.6 system-ui,sans-serif}}main{{max-width:1240px;margin:auto;padding:38px 24px 64px}}a{{color:var(--accent);text-underline-offset:3px}}nav,.small{{font-size:14px;color:var(--muted)}}nav{{margin-bottom:34px}}h1{{font-size:clamp(34px,5vw,58px);line-height:1.08;letter-spacing:-.035em;margin:12px 0 24px}}h2{{font-size:26px;line-height:1.3;margin:36px 0 15px}}p{{max-width:900px}}.eyebrow{{font-size:12px;text-transform:uppercase;letter-spacing:.12em;font-weight:750}}.lede{{font-size:20px;color:var(--muted)}}.notice{{border-left:4px solid #a5661b;background:#fff3df;padding:17px 22px;margin:25px 0}}.metrics{{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}}.metric,.pending{{padding:20px;background:white;border:1px solid var(--line)}}.metric strong{{display:block;font-size:28px}}.metric span{{font-size:14px;color:var(--muted)}}.pending{{margin-top:26px}}figure{{margin:24px 0;background:white;border:1px solid var(--line);padding:10px}}video,img{{display:block;width:100%;height:auto}}video{{background:#e8edf0}}figcaption{{padding:12px 8px;font-size:14px;color:var(--muted)}}table{{border-collapse:collapse;width:100%;background:white;font-size:15px}}th,td{{text-align:left;padding:13px;border-bottom:1px solid var(--line);vertical-align:top}}.table-wrap{{overflow-x:auto}}.links{{display:flex;flex-wrap:wrap;gap:10px 22px;list-style:none;padding:0}}footer{{border-top:1px solid var(--line);padding-top:18px;margin-top:34px}}@media(max-width:620px){{main{{padding:24px 16px 44px}}.metrics{{grid-template-columns:1fr}}th,td{{padding:9px}}}}
+</style><main>
+<nav><a href="../">← Revision H study and GPU benchmark</a> · <a href="../../../">Mount designs</a></nav>
+<div class="eyebrow">Revision H · 8 September 2026 · {status}</div>
+<h1>{heading}</h1>
+<p class="lede">A four-hour CPU solve, with an actual-sample video published each hour. Close-ups follow the duct outlet, front laptop lip and hinge discharge.</p>
+<div class="notice"><strong>Exploratory startup on a provisional mesh.</strong> This run does not yet establish periodic vortex shedding or settled lip suction. Mesh and timestep independence remain untested.</div>
+<div class="metrics"><div class="metric"><strong>{ms:.4f} ms</strong><span>physical time at latest {'video' if latest else 'status'} checkpoint</span></div><div class="metric"><strong>{latest['source_frames'] if latest else 0}</strong><span>actual CFD states in the latest published video</span></div><div class="metric"><strong>≤ 25 µs</strong><span>adaptive timestep · Courant limit 0.5</span></div></div>
+{video}
+<h2>Hourly checkpoints</h2>
+<p>Started at <time datetime="2026-09-08T16:12:29Z">12:12 p.m. Eastern</time>; the four-hour compute limit is about 4:12 p.m. Eastern. Videos are cumulative and use every completed section sample available at their capture time. Earlier hourly files stay unchanged.</p>
+<div class="table-wrap"><table><thead><tr><th scope="col">Checkpoint</th><th scope="col">Compute elapsed</th><th scope="col">Physical time</th><th scope="col">Sampled states</th><th scope="col">Files</th></tr></thead><tbody>{''.join(rows)}</tbody></table></div>
+<h2>How to read the video</h2>
+<p>The locator shows where the sections lie on the actual installed CAD. The whole air path is coloured by speed. Close-ups show static pressure and signed vorticity at X = +111 mm; arrows show the in-plane velocity. Black lines are CAD surfaces and grey areas are solid or unsampled. Pressure, speed and vorticity scales stay fixed across all four hourly videos. The physical timestamp is the simulation time; playback is deliberately slowed.</p>
+<p>Moving vorticity can reveal shear layers and vortices. A pressure depression near the lip would need to persist after startup before interpretation. A negative pressure alone does not identify a Bernoulli mechanism, and three apparent cycles would not establish converged shedding statistics.</p>
+<h2>What is being computed</h2>
+<p>This continuation uses the focused 3,193,565-cell Revision H mesh, with 0.25 mm targets in the sampled lip strips, and four CPU workers. It restarts at 0.1 ms from the same-geometry CPU benchmark, preserving the solver's time history. That benchmark started from quiet air. The older 18.2-million-cell, four-frame pilot is a separate record.</p>
+<p>The standard mesh check passes, but expanded checks identify four low-determinant cells and 71,820 concave cells; wall-layer coverage remains poor. Four nominal 10 Pa fan actuators drive isothermal SST URANS flow. Fan curves, grille resistance and laptop passages remain approximate. This is not an experimentally validated flow or temperature prediction.</p>
+<p>Complete planes at X = ±111 mm are saved every two solver steps, normally 50 µs apart. Full fields are checkpointed every half-hour of wall time. The solver records pressure and velocity probes, field bounds and ambient flux each step. A verified signal handler writes a final checkpoint at the four-hour limit.</p>
+<ul class="links"><li><a href="run-status.json">Dated run status</a></li><li><a href="case_manifest.json">Inputs and solver settings</a></li><li><a href="quality-disposition.json">Mesh disposition</a></li><li><a href="../#gpu-benchmark">CPU/GPU evidence</a></li></ul>
+<footer class="small">Published status snapshot: {escape(public['published_snapshot_utc'])}. This static page updates with each published checkpoint; it is not a live solver connection. Raw fields and all sampled planes remain preserved locally.</footer>
+</main></html>
+'''
+    (PAGE/'index.html').write_text(html,encoding='utf-8',newline='\n')
+    print(json.dumps({'page':str(PAGE),'published_hours':[r['hour_checkpoint'] for r in reports],'solver_state':state['state']}))
+
+
+if __name__=='__main__':main()

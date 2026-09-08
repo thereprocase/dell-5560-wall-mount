@@ -13,6 +13,8 @@
 <h1>A closer look at the airflow.</h1>
 <p class="lede">A new transient CFD study puts finer cells around the duct edges and laptop lips. The mesh is built. Initial solver diagnostics show that further mesh and runtime work is required before quantitative results.</p>
 <div class="notice"><strong>Commissioning only — validation is incomplete.</strong><br>The standard mesh check passes, but three expanded checks fail. Sustained vortex shedding and settled lip suction have not been established.</div>
+<section id="four-hour-run"><h2><a href="sequence/">Four-hour flow run: hourly video checkpoints</a></h2><p>A monitored CPU continuation started at 12:12 p.m. Eastern on 8 September, with a four-hour compute limit, adaptive timesteps capped at 25 µs and complete flow sections every two steps. <a href="sequence/">Follow the cumulative videos and dated progress</a>. This run uses the focused 3.2-million-cell mesh described in the GPU benchmark. The original 18.2-million-cell study below remains a separate commissioning record.</p></section>
+<h2>Original fine-mesh commissioning record</h2>
 <div class="metrics">
 <div class="metric"><strong>18.2 million</strong><span>actual volume cells · 21.8× the earlier study</span></div>
 <div class="metric"><strong>0.25 mm</strong><span>requested cells at selected edges and lips</span></div>
@@ -20,7 +22,7 @@
 </div>
 <h2>Where the sections sit</h2>
 <figure class="overview"><a href="section-locator.png"><img src="section-locator.png" alt="Revision H laptop and curved ducts, with orange front-lip and plum hinge sampling windows" loading="lazy"></a><figcaption>The coloured windows locate the right-side sections at X = 111 mm on the actual CFD geometry. Orange marks the duct outlet and front laptop lip; plum marks the hinge discharge. This locator shows geometry only.</figcaption></figure>
-<p><strong>A longer flow video is still in preparation.</strong> The existing movie below contains only four startup snapshots. The new CPU/GPU benchmark compares solver behaviour; it does not add a completed flow sequence or establish shedding.</p>
+<p>The existing movie below contains only four startup snapshots. <a href="sequence/">The new four-hour run and its hourly videos have a separate page</a>, with actual physical times, source-frame counts and mesh limitations.</p>
 <h2>The original fine mesh around the lips</h2>
 <figure><a href="mesh-sections.png"><img src="mesh-sections.png" alt="Actual CFD cell outlines at the duct outlet, front laptop lip and hinge discharge"></a><figcaption>Actual cut cells at X = 111 mm, with CAD boundaries in black. Five wall layers were requested on printed and laptop surfaces, beginning at 0.06 mm. Coverage varies locally; aggregate coverage does not establish y+ or lip accuracy.</figcaption></figure>
 <p>The geometry is the installed Revision H STEP export, including its curved duct transitions. This is separate from the earlier 836,278-cell Revision F study and the minimalist model. The laptop silhouette and internal passages remain approximations.</p>
@@ -54,7 +56,7 @@
 <tr><th scope="row">Maximum field-error check</th><td>Reference</td><td>Fails U/p limit</td></tr>
 </tbody></table>
 <p>The GPU passes all five field checks on a small control case. On the duct mesh, all RMS differences pass, but maximum local differences in pressure and velocity do not. The experimental GPU multigrid option crashes. These results do not justify switching the longer run to this GPU backend.</p>
-<p class="small">One sequential trial per backend on a shared desktop. The focused mesh has four low-determinant cells and poor wall-layer coverage, so this is a bounded backend comparison, not a validation mesh or design prediction. Three new mesh candidates remain provisional; no long production solve has started on them.</p>
+<p class="small">One sequential trial per backend on a shared desktop. The focused mesh has four low-determinant cells and poor wall-layer coverage, so this is a bounded backend comparison, not a validation mesh or design prediction. Three new mesh candidates remain provisional. A user-authorized <a href="sequence/">four-hour exploratory continuation</a> is now using the CPU checkpoint from this focused mesh.</p>
 <ul class="links"><li><a href="gpu-benchmark/benchmark.json">Benchmark measurements</a></li><li><a href="gpu-benchmark/field-comparison.json">Field comparison and input hashes</a></li><li><a href="gpu-benchmark/small-case-comparison.json">Small control-case comparison</a></li><li><a href="gpu-benchmark/cpu-pimpleFoam.txt">CPU solver log</a></li><li><a href="gpu-benchmark/gpu-pimpleFoam.txt">GPU solver log</a></li><li><a href="gpu-benchmark/METHOD.md">Method, failed trials and mesh candidates</a></li></ul>
 </section>
 <p class="small">Technical references: <a href="https://www.openfoam.com/news/main-news/openfoam-v20-06/numerics">OpenFOAM external solver interface</a> · <a href="https://petsc.org/release/overview/gpu_roadmap/">PETSc GPU support</a> · <a href="https://www.grc.nasa.gov/www/wind/valid/tutorial/tutorial.html">NASA verification and validation guidance</a></p>

@@ -1,0 +1,115 @@
+"""Run CPU CFD within a wall budget; mirror complete samples for live videos.
+
+Use OpenFOAM's per-process stopAtWriteNowSignal. No dictionary reloads or
+global installation changes. Signal only the four verified workers in this
+fresh case. The fallback terminates only this runner's process descendants.
+"""
+import argparse
+from datetime import datetime, timezone
+import json
+import os
+from pathlib import Path
+import re
+import shutil
+import signal
+import subprocess
+import time
+
+
+def utc():return datetime.now(timezone.utc).isoformat()
+
+
+def workers(case):
+    result=[]
+    for path in Path('/proc').iterdir():
+        if not path.name.isdigit():continue
+        try:
+            if (path/'comm').read_text().strip()=='pimpleFoam' and (path/'cwd').resolve()==case:
+                result.append(int(path.name))
+        except (OSError,ProcessLookupError):pass
+    return sorted(result)
+
+
+def mirror_samples(case,mirror):
+    source=case/'postProcessing/edge_sections';target=mirror/'postProcessing/edge_sections'
+    target.mkdir(parents=True,exist_ok=True)
+    if not source.is_dir():return 0
+    for folder in sorted(source.iterdir()):
+        if not folder.is_dir() or (target/folder.name).exists():continue
+        files=[folder/(n+'.vtp') for n in ['right_section','left_section']]
+        if not all(p.is_file() and p.read_bytes()[-128:].rstrip().endswith(b'</VTKFile>') for p in files):continue
+        temp=target/('.'+folder.name+'.partial');temp.mkdir(exist_ok=True)
+        for path in files:shutil.copy2(path,temp/path.name)
+        temp.rename(target/folder.name)
+    return len([p for p in target.iterdir() if p.is_dir() and not p.name.startswith('.')])
+
+
+def main():
+    p=argparse.ArgumentParser(description=__doc__)
+    p.add_argument('--case',type=Path,required=True)
+    p.add_argument('--mirror',type=Path,required=True)
+    p.add_argument('--seconds',type=int,default=14400)
+    args=p.parse_args();case=args.case.resolve();mirror=args.mirror.resolve()
+    assert 5<=args.seconds<=14400
+    assert os.environ.get('WM_PROJECT_VERSION')=='v2412'
+    log_path=case/'log.pimpleFoam.fourhour'
+    assert not log_path.exists()
+    state={'case':case.name,'state':'starting','started_utc':utc(),
+           'budget_seconds':args.seconds,'hourly_updates_due_seconds':[n*3600 for n in range(1,5)],
+           'scope':'Extended exploratory startup; mesh and timestep independence not established.'}
+    started=time.monotonic();last_notice=0;stop_sent=None;sample_count=0
+    command=['mpirun','--bind-to','none','-np','4','pimpleFoam','-parallel','-opt-switch','stopAtWriteNowSignal=12']
+    with log_path.open('w') as log:
+        proc=subprocess.Popen(command,cwd=case,stdout=log,stderr=subprocess.STDOUT,
+                              stdin=subprocess.DEVNULL,start_new_session=True)
+        state.update(state='running',mpi_pid=proc.pid,command=command)
+        while True:
+            elapsed=time.monotonic()-started
+            raw=log_path.read_text(errors='replace')
+            entries=re.findall(r'^Time = ([\d.eE+-]+)\s*\n(.*?)(?=^Time = |\Z)',raw,re.M|re.S)
+            complete=[(t,body) for t,body in entries if 'ExecutionTime =' in body]
+            co=re.findall(r'Courant Number mean: [^ ]+ max: ([\d.eE+-]+)',raw)
+            dt=re.findall(r'^deltaT = ([\d.eE+-]+)',raw,re.M)
+            ids=workers(case)
+            reason=None
+            if elapsed>=args.seconds:reason='Requested wall-time budget reached'
+            if complete:
+                tail=complete[-1][1]
+                if re.search(r'=\s*[-+]?(?:nan|inf)\b',tail,re.I):reason='Non-finite field diagnostic'
+                speed=re.findall(r'max\(mag\(U\)\) = ([\d.eE+-]+)',tail)
+                if speed and float(speed[-1])>100:reason='Velocity exceeds 100 m/s commissioning guard'
+            if reason and stop_sent is None and len(ids)==4:
+                # Only workers have the handler; never send USR2 to mpirun.
+                for pid in ids:os.kill(pid,signal.SIGUSR2)
+                stop_sent=elapsed
+                state.update(state='writing_final_checkpoint',stop_reason=reason,stop_signal_utc=utc(),worker_pids=ids)
+            if stop_sent is not None and elapsed-stop_sent>180 and proc.poll() is None:
+                for pid in workers(case):os.kill(pid,signal.SIGKILL)
+                os.killpg(proc.pid,signal.SIGKILL)
+                state.update(state='failed',error='Graceful stop exceeded 180-second checkpoint allowance')
+            try:sample_count=mirror_samples(case,mirror)
+            except OSError as exc:state['mirror_warning']=str(exc)
+            state.update(updated_utc=utc(),elapsed_seconds=round(elapsed,2),
+                         completed_steps=len(complete),latest_physical_time_s=float(complete[-1][0]) if complete else None,
+                         latest_deltaT_s=float(dt[-1]) if dt else None,
+                         latest_Courant=float(co[-1]) if co else None,
+                         max_logged_Courant=max(map(float,co),default=None),
+                         bounding_events=len(re.findall(r'^bounding ',raw,re.M)),
+                         complete_sample_frames=sample_count,worker_pids=ids)
+            code=proc.poll()
+            if code is not None:
+                state.update(state='complete' if code==0 and stop_sent is not None else 'failed',
+                             exit_code=code,finished_utc=utc())
+                if code==0 and stop_sent is None:state['error']='Exited before wall-budget stop'
+            for root in [case,mirror]:
+                tmp=root/'run-status.json.tmp';tmp.write_text(json.dumps(state,indent=2)+'\n');tmp.replace(root/'run-status.json')
+            if elapsed-last_notice>=60 or code is not None:
+                print(json.dumps({k:state.get(k) for k in ['state','elapsed_seconds','completed_steps','latest_physical_time_s','latest_Courant','complete_sample_frames']}),flush=True)
+                last_notice=elapsed
+            if code is not None:break
+            time.sleep(5)
+    shutil.copy2(log_path,mirror/log_path.name)
+    if state['state']!='complete':raise SystemExit(1)
+
+
+if __name__=='__main__':main()

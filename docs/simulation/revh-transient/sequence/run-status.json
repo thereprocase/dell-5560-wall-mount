@@ -1,0 +1,23 @@
+{
+  "case": "revh_fourhour_08",
+  "state": "running",
+  "started_utc": "2026-09-08T16:12:29.689449+00:00",
+  "budget_seconds": 14400,
+  "hourly_updates_due_seconds": [
+    3600,
+    7200,
+    10800,
+    14400
+  ],
+  "scope": "Extended exploratory startup; mesh and timestep independence not established.",
+  "updated_utc": "2026-09-08T16:26:35.305834+00:00",
+  "elapsed_seconds": 845.42,
+  "completed_steps": 53,
+  "latest_physical_time_s": 0.0013892992,
+  "latest_deltaT_s": 2.5e-05,
+  "latest_Courant": 0.06239430081,
+  "max_logged_Courant": 0.06239430081,
+  "bounding_events": 0,
+  "complete_sample_frames": 26,
+  "published_snapshot_utc": "2026-09-08T16:26:40.530493+00:00"
+}
