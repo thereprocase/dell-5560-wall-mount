@@ -43,7 +43,8 @@ def main():
     axes[1,1].set(title='Maximum Courant number',ylabel='Courant number',ylim=(0,.55))
     axes[1,1].legend(fontsize=10)
     for ax in axes.flat:ax.set_xlabel('Physical time [ms]');ax.grid(alpha=.16)
-    fig.text(.075,.945,f'REVISION H  |  HOUR {report["hour_checkpoint"]} MEASURED HISTORIES',fontsize=23,fontweight='bold',color='#162c36')
+    label=f'HOUR {report["hour_checkpoint"]}' if report['hour_checkpoint'] else 'CURRENT CHECKPOINT'
+    fig.text(.075,.945,f'REVISION H  |  {label} MEASURED HISTORIES',fontsize=23,fontweight='bold',color='#162c36')
     fig.text(.075,.903,f'Through {report["through_time_s"]*1000:.4f} ms • {len(h)} completed continuation steps • {report["new_bounding_events"]} new turbulence-bounding events',fontsize=15,color='#17686b')
     fig.text(.075,.055,'Startup on a provisional mesh. Curves show recorded solver outputs; periodic shedding and settled suction are not established.',fontsize=12,color='#536772')
     fig.text(.075,.025,'Right-side probes at X = +111 mm. Outer-boundary exchange is not a calibrated fan flow-rate measurement.',fontsize=12,color='#536772')

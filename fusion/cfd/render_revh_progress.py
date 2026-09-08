@@ -91,7 +91,8 @@ def main():
     manifest=json.loads((case/'case_manifest.json').read_text())
     assert not manifest.get('runtime_fixture',False), 'Do not publish the synthetic fixture as Rev H'
     folders=sorted([p for p in (case/'postProcessing/edge_sections').iterdir()
-                    if p.is_dir() and not p.name.startswith('.') and (p/'right_section.vtp').is_file()],key=lambda p:float(p.name))
+                    if p.is_dir() and not p.name.startswith('.') and (p/'right_section.vtp').is_file()
+                    and float(p.name)<=state['latest_physical_time_s']+1e-13],key=lambda p:float(p.name))
     available=len(folders)
     if args.max_frames and len(folders)>args.max_frames:
         folders=[folders[i] for i in np.unique(np.linspace(0,len(folders)-1,args.max_frames).round().astype(int))]

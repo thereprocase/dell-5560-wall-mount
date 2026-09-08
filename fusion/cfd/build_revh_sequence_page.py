@@ -4,6 +4,7 @@ from datetime import datetime, timezone
 from html import escape
 import json
 from pathlib import Path
+import shutil
 
 ROOT=Path(__file__).resolve().parents[2]
 PAGE=ROOT/'docs/simulation/revh-transient/sequence'
@@ -21,34 +22,50 @@ def main():
     for name in ['case_manifest.json','quality-disposition.json']:
         (PAGE/name).write_text((args.case/name).read_text(),encoding='utf-8',newline='\n')
     reports=[]
+    adhoc=[]
+    for directory in sorted(PAGE.glob('checkpoint-*')):
+        if (directory/'progress.json').is_file():
+            report=json.loads((directory/'progress.json').read_text())
+            assert not report['preview_subsampled']
+            report['_folder']=directory.name
+            adhoc.append(report)
+    early=PAGE/'early/progress.json'
+    if not adhoc and early.is_file():
+        report=json.loads(early.read_text());report['_folder']='early';adhoc.append(report)
     for hour in range(1,5):
         path=PAGE/f'hour-{hour}'/'progress.json'
         if path.is_file():
             report=json.loads(path.read_text())
             assert not report['preview_subsampled']
             assert report['hour_checkpoint']==hour
+            report['_folder']=f'hour-{hour}'
             reports.append(report)
-    latest=reports[-1] if reports else None
-    early=PAGE/'early/progress.json'
-    if latest is None and early.is_file():
-        latest=json.loads(early.read_text())
-        assert not latest['preview_subsampled']
+    latest=max(reports+adhoc,key=lambda r:r['last_time_s']) if reports or adhoc else None
+    if latest:
+        source=PAGE/latest['_folder']
+        shutil.copy2(source/'flow.mp4',PAGE/'latest.mp4')
+        (PAGE/'latest.json').write_text(json.dumps({k:latest[k] for k in ['_folder','created_utc','last_time_s','source_frames','video_sha256']},indent=2)+'\n',encoding='utf-8',newline='\n')
+        # Keep the already-shared early MP4 URL working as a current alias.
+        if latest['_folder']!='early':
+            (PAGE/'early').mkdir(exist_ok=True)
+            for name in ['flow.mp4','poster.png','first-frame.png','progress.json']:
+                shutil.copy2(source/name,PAGE/'early'/name)
     ms=(latest['last_time_s'] if latest else state.get('latest_physical_time_s') or 0)*1000
     heading='Four hours of airflow, recorded.' if state['state']=='complete' else 'Four-hour airflow run.'
     video='''<div class="pending"><strong>The solver is running.</strong><p>The first hourly video is due around 1:12 p.m. Eastern on 8 September, plus rendering and publication time.</p></div>'''
     if latest:
         hour=latest['hour_checkpoint']
-        folder=f'hour-{hour}' if hour else 'early'
-        title=f'Hour {hour}: latest cumulative video' if hour else 'Current sequence, before the first full hour'
+        folder=latest['_folder']
+        title=f'Hour {hour}: latest cumulative video' if hour else 'Latest requested checkpoint'
         video=f'''<h2>{title}</h2>
 <figure><video id="flow-video" controls playsinline preload="metadata" poster="{folder}/poster.png" aria-describedby="video-caption"><source src="{folder}/flow.mp4" type="video/mp4"><a href="{folder}/flow.mp4">Open the MP4</a>.</video>
 <figcaption id="video-caption">{latest['source_frames']} actual sampled states, from {latest['first_time_s']*1000:.4f} to {ms:.4f} ms. Playback lasts {latest['video_duration_s']:.2f} seconds at {latest['playback_slowdown']:.0f}× slow motion, rounded to 30 fps, with a half-second final hold. No intermediate CFD states are generated. <a href="{folder}/flow.mp4">Open or download this video</a>.</figcaption></figure>'''
         if (PAGE/folder/'history.png').exists():
             video+=f'<figure><a href="{folder}/history.png"><img src="{folder}/history.png" alt="Recorded pressure, velocity and numerical diagnostics against physical time" loading="lazy"></a><figcaption>Recorded histories through this video checkpoint. Pressure uses the assumed air density of 1.2 kg/m³.</figcaption></figure>'
     rows=[]
-    if early.is_file():
-        r=json.loads(early.read_text())
-        rows.append(f'<tr><th scope="row">Early sequence</th><td>{r["compute_elapsed_seconds_at_snapshot"]/3600:.3f} h</td><td>{r["last_time_s"]*1000:.4f} ms</td><td>{r["source_frames"]}</td><td><a href="early/flow.mp4">MP4</a> · <a href="early/progress.json">Provenance</a></td></tr>')
+    for number,r in enumerate(adhoc,1):
+        folder=r['_folder']
+        rows.append(f'<tr><th scope="row">Requested checkpoint {number}</th><td>{r["compute_elapsed_seconds_at_snapshot"]/3600:.3f} h</td><td>{r["last_time_s"]*1000:.4f} ms</td><td>{r["source_frames"]}</td><td><a href="{folder}/flow.mp4">MP4</a> · <a href="{folder}/progress.json">Provenance</a></td></tr>')
     byhour={r['hour_checkpoint']:r for r in reports}
     for hour in range(1,5):
         r=byhour.get(hour)
@@ -67,7 +84,7 @@ def main():
 <nav><a href="../">← Revision H study and GPU benchmark</a> · <a href="../../../">Mount designs</a></nav>
 <div class="eyebrow">Revision H · 8 September 2026 · {status}</div>
 <h1>{heading}</h1>
-<p class="lede">A four-hour CPU solve, with an actual-sample video published each hour. Close-ups follow the duct outlet, front laptop lip and hinge discharge.</p>
+<p class="lede">A four-hour CPU solve, with an actual-sample video published each hour. Close-ups follow the duct outlet, front laptop lip and hinge discharge. <a href="latest.mp4">Open the latest MP4</a>.</p>
 <div class="notice"><strong>Exploratory startup on a provisional mesh.</strong> This run does not yet establish periodic vortex shedding or settled lip suction. Mesh and timestep independence remain untested.</div>
 <div class="metrics"><div class="metric"><strong>{ms:.4f} ms</strong><span>physical time at latest {'video' if latest else 'status'} checkpoint</span></div><div class="metric"><strong>{latest['source_frames'] if latest else 0}</strong><span>actual CFD states in the latest published video</span></div><div class="metric"><strong>≤ 25 µs</strong><span>adaptive timestep · Courant limit 0.5</span></div></div>
 {video}
