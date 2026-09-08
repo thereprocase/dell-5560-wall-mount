@@ -10,14 +10,14 @@
     14400
   ],
   "scope": "Extended exploratory startup; mesh and timestep independence not established.",
-  "updated_utc": "2026-09-08T16:59:12.675973+00:00",
-  "elapsed_seconds": 2802.32,
-  "completed_steps": 178,
-  "latest_physical_time_s": 0.0045142992,
+  "updated_utc": "2026-09-08T17:14:59.595695+00:00",
+  "elapsed_seconds": 3748.65,
+  "completed_steps": 222,
+  "latest_physical_time_s": 0.0056142992,
   "latest_deltaT_s": 2.5e-05,
-  "latest_Courant": 0.1543628087,
-  "max_logged_Courant": 0.1543628087,
+  "latest_Courant": 0.183829871,
+  "max_logged_Courant": 0.183829871,
   "bounding_events": 0,
-  "complete_sample_frames": 89,
-  "published_snapshot_utc": "2026-09-08T16:59:15.157269+00:00"
+  "complete_sample_frames": 111,
+  "published_snapshot_utc": "2026-09-08T17:15:05.111228+00:00"
 }

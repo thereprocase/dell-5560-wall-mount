@@ -75,6 +75,15 @@ def main():
             rows.append(f'<tr><th scope="row">Hour {hour}</th><td>{r["compute_elapsed_seconds_at_snapshot"]/3600:.3f} h</td><td>{r["last_time_s"]*1000:.4f} ms</td><td>{r["source_frames"]}</td><td>{links}</td></tr>')
         else:rows.append(f'<tr><th scope="row">Hour {hour}</th><td>Due about {hour}:12 p.m. EDT</td><td>Pending</td><td>—</td><td>Not yet published</td></tr>')
     status=escape(state['state'].replace('_',' '))
+    steady_note=''
+    steady_case=args.case.parent/'revh_steady_09'
+    if (steady_case/'run-status.json').is_file():
+        steady=json.loads((steady_case/'run-status.json').read_text())
+        steady_public={k:v for k,v in steady.items() if k not in ['worker_pids','mpi_pid']}
+        (PAGE/'steady-run-status.json').write_text(json.dumps(steady_public,indent=2)+'\n',encoding='utf-8',newline='\n')
+        (PAGE/'steady-case_manifest.json').write_text((steady_case/'case_manifest.json').read_text(),encoding='utf-8',newline='\n')
+        convergence='The numerical convergence policy is satisfied.' if steady.get('converged') else 'Numerical convergence has not been established.'
+        steady_note=f'''<h2>Parallel steady-state initialization</h2><p>A separate four-worker steady-state solve began at 1:03 p.m. Eastern, using the same Revision H geometry and fan forcing. At this publication snapshot it has completed {steady['completed_iterations']} iterations; its state is {escape(steady['state'].replace('_',' '))}. {convergence}</p><p>These iterations are numerical adjustments, not elapsed fluid time. The purpose is to prepare a settled starting field for another transient shedding run. Residuals, pressure and velocity stability, conservation and recent turbulence bounding are checked before accepting that field. The startup videos above remain the original transient record.</p><ul class="links"><li><a href="steady-run-status.json">Steady-solver diagnostics</a></li><li><a href="steady-case_manifest.json">Initialization and convergence policy</a></li></ul>'''
     html=f'''<!doctype html>
 <html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Four-hour Rev H flow run · Precision 5560 mount</title>
@@ -98,6 +107,7 @@ def main():
 <p>This continuation uses the focused 3,193,565-cell Revision H mesh, with 0.25 mm targets in the sampled lip strips, and four CPU workers. It restarts at 0.1 ms from the same-geometry CPU benchmark, preserving the solver's time history. That benchmark started from quiet air. The older 18.2-million-cell, four-frame pilot is a separate record.</p>
 <p>The standard mesh check passes, but expanded checks identify four low-determinant cells and 71,820 concave cells; wall-layer coverage remains poor. Four nominal 10 Pa fan actuators drive isothermal SST URANS flow. Fan curves, grille resistance and laptop passages remain approximate. This is not an experimentally validated flow or temperature prediction.</p>
 <p>Complete planes at X = ±111 mm are saved every two solver steps, normally 50 µs apart. Full fields are checkpointed every half-hour of wall time. The solver records pressure and velocity probes, field bounds and ambient flux each step. A verified signal handler writes a final checkpoint at the four-hour limit.</p>
+{steady_note}
 <ul class="links"><li><a href="run-status.json">Dated run status</a></li><li><a href="case_manifest.json">Inputs and solver settings</a></li><li><a href="quality-disposition.json">Mesh disposition</a></li><li><a href="../#gpu-benchmark">CPU/GPU evidence</a></li></ul>
 <footer class="small">Published status snapshot: {escape(public['published_snapshot_utc'])}. This static page updates with each published checkpoint; it is not a live solver connection. Raw fields and all sampled planes remain preserved locally.</footer>
 </main></html>

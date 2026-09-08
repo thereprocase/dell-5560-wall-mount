@@ -1,0 +1,26 @@
+{
+  "case": "revh_steady_09",
+  "state": "running",
+  "started_utc": "2026-09-08T17:03:43.194635+00:00",
+  "budget_seconds": 3600,
+  "converged": false,
+  "completed_iterations": 79,
+  "updated_utc": "2026-09-08T17:15:02.135153+00:00",
+  "elapsed_seconds": 678.92,
+  "latest_iteration": 79,
+  "bounding_events": 49,
+  "last_50_max_initial_residuals": {
+    "p": 0.00198552815,
+    "Ux": 0.02335404682,
+    "Uy": 0.009542443471,
+    "Uz": 0.01073977941,
+    "k": 0.01745036132,
+    "omega": 0.0005185875975
+  },
+  "probe_window_relative_range": {
+    "p": 0.26187760391021714,
+    "U": 0.4448862850709673
+  },
+  "last_50_max_flux_ratio": 9.674288749897808e-05,
+  "latest_max_speed_m_s": 5.744543267
+}
