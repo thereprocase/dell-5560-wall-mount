@@ -1,0 +1,25 @@
+{
+  "native_sha256": "057d6fa4df9c726c07c029d8b4d1938a603ab8b5b7b5cd6065a0f3c1033c786f",
+  "pass": true,
+  "pin_axial_withdrawal_mm": 24,
+  "pin_parking_local_z_samples_mm": [
+    0,
+    5,
+    10,
+    15,
+    20
+  ],
+  "cover_local_y_samples_mm": [
+    0,
+    1,
+    5,
+    10,
+    15,
+    20,
+    25,
+    30,
+    35
+  ],
+  "pair_checks": 646,
+  "scope": "Sampled rigid poses after original split pins clear the sockets; split-crown flex and continuous physical handling are not simulated."
+}

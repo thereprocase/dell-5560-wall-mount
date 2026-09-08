@@ -44,3 +44,11 @@ cfd/*/*.log
 /revh_retention/slices/
 /revh_retention/browser/*.png
 /revh_retention/*.FCBak
+
+# H-C1 cable-management native backups and local review intermediates.
+/revh_cables/*.FCStd1
+/revh_cables/*.FCBak
+/revh_cables/slices/
+/revh_cables/browser/*.png
+/revh_cables/browser/review-ui.json
+/revh_cables/browser/review-live.json

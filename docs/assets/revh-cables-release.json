@@ -1,0 +1,80 @@
+{
+  "revision": "H-C1 prototype",
+  "native_sha256": "057d6fa4df9c726c07c029d8b4d1938a603ab8b5b7b5cd6065a0f3c1033c786f",
+  "replaced_part_ids": [
+    "05_left_fan_retainer",
+    "06_right_fan_retainer",
+    "09_left_fan_tray",
+    "10_right_fan_tray"
+  ],
+  "unchanged_installed_parts": 14,
+  "requires_H_R1_retainers": false,
+  "new_fully_constrained_sketches": 8,
+  "cad_ASA_g": 236.33,
+  "added_cad_ASA_g": 5.45,
+  "slicer": "OrcaSlicer 2.4.2",
+  "process": "P1S / ASA / 0.4 mm / 0.20 mm / 6 walls / 6 top and bottom / 100% rectilinear / Arachne / 8 mm outer brim / supports off",
+  "reviewed_cable_diameter_mm": 4,
+  "minimum_cable_clearance_mm": 0.5,
+  "tie_lugs_per_tray": 2,
+  "checked_tie_tail_cross_section_mm": [
+    1.5,
+    3.6
+  ],
+  "plates": {
+    "20_both_cable_covers": {
+      "estimated_filament_g": 50.61,
+      "total_estimated_seconds": 5839.0,
+      "source_3mf_sha256": "efcc633b95614dc5170cf96efa3ad4dc8625453171854e04e94a1eb5c348c11a",
+      "gcode_sha256": "2358446d5c60dfde59c5e5b54e1bf7cb44e1e276e58a6463fd99148f82575c84",
+      "disconnected_floating_components": 0,
+      "max_unsupported_bridge_span_mm": 0,
+      "max_unsupported_deposition_span_mm": 0.3983779612378143,
+      "bridge_directions": "automatic"
+    },
+    "09_left_fan_tray": {
+      "estimated_filament_g": 87.41,
+      "total_estimated_seconds": 10121.0,
+      "source_3mf_sha256": "cd15d2aba7ac69b47237ea1a206b86a2867d4eb5ea3673ac064f1f5d21548b4f",
+      "gcode_sha256": "b3cfcd2fd2dc27f0f739cc18da90f3515d0c16f00b5349c70becc9ededf96fd8",
+      "disconnected_floating_components": 0,
+      "max_unsupported_bridge_span_mm": 3.9000019855484953,
+      "max_unsupported_deposition_span_mm": 3.9000019855484953,
+      "bridge_directions": "automatic"
+    },
+    "10_right_fan_tray": {
+      "estimated_filament_g": 87.42,
+      "total_estimated_seconds": 10170.0,
+      "source_3mf_sha256": "e93dbdefb4feabdd263a2058fdb03135347748835d56f29ff027ab9048c9448b",
+      "gcode_sha256": "9dcb76cb228341700eb9b6dbe3442ef0a7a2fcd9cc0270524c47c8e1f31dc5dc",
+      "disconnected_floating_components": 0,
+      "max_unsupported_bridge_span_mm": 3.900000999999989,
+      "max_unsupported_deposition_span_mm": 3.900000999999989,
+      "bridge_directions": "automatic"
+    },
+    "00_cable_fit_coupon": {
+      "estimated_filament_g": 16.25,
+      "total_estimated_seconds": 4033.0,
+      "source_3mf_sha256": "65fad428492ff002849ea1603f7f72c777a4d3eb9f55b6bb01df3c299bc1495f",
+      "gcode_sha256": "55a0fe954cd8263d69f33c5d1425c331f58aee6c985a23662cbff8aec028bbfc",
+      "disconnected_floating_components": 0,
+      "max_unsupported_bridge_span_mm": 3.7719999999999914,
+      "max_unsupported_deposition_span_mm": 7.383537673783623,
+      "bridge_directions": "both 180 degrees; relative and align-to-model off"
+    }
+  },
+  "qualification": "Native and toolpath geometry checks only; physical fit, abrasion, tie-lug strength and warm ASA behavior untested.",
+  "replacement_set": {
+    "parts": 4,
+    "plates": 3,
+    "estimated_filament_g": 225.44,
+    "total_estimated_seconds": 26130.0
+  },
+  "download": {
+    "file": "Precision_5560_RevH_Cable_Management_C1.zip",
+    "bytes": 12898153,
+    "sha256": "1e2d6fc48dd60afa0e3eb8484ec0c3bc869e5b16bd15efcc0644b3a4f48037d7",
+    "members": 47,
+    "all_member_hashes_verified": true
+  }
+}

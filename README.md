@@ -113,6 +113,24 @@ one side bar releases both its duct and rail; support both while servicing.
 Start with the short right-arm fit coupon. This is a CAD-checked prototype;
 physical retention, bar stiffness and warm ASA creep still need testing.
 
+### H-C1: edge-open fan cable grooves and zip-tie anchors
+
+[Interactive cable-routing and print guide](https://thereprocase.github.io/dell-5560-wall-mount/revh-cables.html) ·
+[Four replacement prints and corner coupon](docs/downloads/Precision_5560_RevH_Cable_Management_C1.zip) ·
+[Editable native model and checks](revh_cables/)
+
+Lay the wire into a rounded groove at the cover's mating edge, then fit the
+cover. The tray closes the passage, so the connector stays outside. Two
+external tie anchors on each tray route the wire along the outside rail and
+remain in place when the cover is removed.
+
+![Native cutaway of the new cover and tray enclosing a reference cable](docs/assets/revh-cables-groove-closed.png)
+
+Replace covers **05/06** and trays **09/10**. The printed arms, ducts, rails,
+pins and optional H-R1 retainers are unchanged. Start with the corner coupon;
+the 4 mm wire envelope and tie-tail access pass geometric checks, while actual
+cable fit, abrasion and tie-lug strength remain untested. M1.1 is unchanged.
+
 ## How the shape was developed
 
 The design story and its working images belong here alongside the finished

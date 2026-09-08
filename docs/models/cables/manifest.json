@@ -1,0 +1,30 @@
+{
+  "revision": "H-C1 prototype",
+  "native_sha256": "057d6fa4df9c726c07c029d8b4d1938a603ab8b5b7b5cd6065a0f3c1033c786f",
+  "parts": [
+    {
+      "id": "05_left_fan_retainer",
+      "file": "05_left_fan_retainer.stl",
+      "side": "left",
+      "type": "cover"
+    },
+    {
+      "id": "06_right_fan_retainer",
+      "file": "06_right_fan_retainer.stl",
+      "side": "right",
+      "type": "cover"
+    },
+    {
+      "id": "09_left_fan_tray",
+      "file": "09_left_fan_tray.stl",
+      "side": "left",
+      "type": "tray"
+    },
+    {
+      "id": "10_right_fan_tray",
+      "file": "10_right_fan_tray.stl",
+      "side": "right",
+      "type": "tray"
+    }
+  ]
+}

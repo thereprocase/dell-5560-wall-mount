@@ -1,0 +1,9 @@
+{
+  "unique_payloads": 1460,
+  "text_payloads": 732,
+  "archive_payloads": 12,
+  "findings": [],
+  "pass": true,
+  "scope": "C1 source, native metadata, print exports, reports, guides, root entry points, model assets and nested download archive.",
+  "images": "Native CAD views, explicitly labeled reference cable and actual deposited-path plots; no application chrome."
+}

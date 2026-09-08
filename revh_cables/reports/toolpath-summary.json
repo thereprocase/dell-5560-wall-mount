@@ -1,0 +1,26 @@
+[
+  {
+    "plate": "20_both_cable_covers",
+    "floating_components": 0,
+    "bridge_max_mm": 0,
+    "all_feature_max_mm": 0.3983779612378143
+  },
+  {
+    "plate": "09_left_fan_tray",
+    "floating_components": 0,
+    "bridge_max_mm": 3.9000019855484953,
+    "all_feature_max_mm": 3.9000019855484953
+  },
+  {
+    "plate": "10_right_fan_tray",
+    "floating_components": 0,
+    "bridge_max_mm": 3.900000999999989,
+    "all_feature_max_mm": 3.900000999999989
+  },
+  {
+    "plate": "00_cable_fit_coupon",
+    "floating_components": 0,
+    "bridge_max_mm": 3.7719999999999914,
+    "all_feature_max_mm": 7.383537673783623
+  }
+]

@@ -1,0 +1,174 @@
+{
+  "revision": "H-C1 prototype",
+  "native_sha256": "057d6fa4df9c726c07c029d8b4d1938a603ab8b5b7b5cd6065a0f3c1033c786f",
+  "units": "mm",
+  "standard_3mf_contains_slicer_settings": false,
+  "parts": {
+    "05_left_fan_retainer": {
+      "orientation": "broad front face down; edge groove opens upward",
+      "volume_mm3": 24952.74987390171,
+      "dimensions_mm": [
+        139.00000000000006,
+        49.00000000000003,
+        13.000000000000107
+      ],
+      "bounds_mm": [
+        58.49999999999997,
+        103.5,
+        -4.973799150320701e-14,
+        197.50000000000003,
+        152.50000000000003,
+        13.000000000000057
+      ],
+      "closed_mesh": true,
+      "step_valid_solids": 1,
+      "step_roundtrip_difference_mm3": 0.0,
+      "bed_and_8mm_brim_clear": true,
+      "stock_cutter_and_brim_clear": true,
+      "sha256": {
+        ".stl": "f48a01adca8971837fd1115d762f154d0d6602fa592133fae4cb1be27bcb844e",
+        ".step": "88b462ca2d615fbe412615fa54b3f3de50b4de0bad81c98e364aec191f77ddc8",
+        ".3mf": "f1b4e0d92ddea144ff266e34737ee273e73908b0c9bf6b703e842b041ec9393a"
+      }
+    },
+    "06_right_fan_retainer": {
+      "orientation": "broad front face down; edge groove opens upward",
+      "volume_mm3": 24952.749873901746,
+      "dimensions_mm": [
+        139.00000000000006,
+        48.99999999999997,
+        13.000000000000114
+      ],
+      "bounds_mm": [
+        58.49999999999997,
+        103.50000000000003,
+        -2.842170943040401e-14,
+        197.50000000000003,
+        152.5,
+        13.000000000000085
+      ],
+      "closed_mesh": true,
+      "step_valid_solids": 1,
+      "step_roundtrip_difference_mm3": 0.0,
+      "bed_and_8mm_brim_clear": true,
+      "stock_cutter_and_brim_clear": true,
+      "sha256": {
+        ".stl": "696ca2db3c11929f96744156cf8c0899e470e3310f10566e4144064200c869c5",
+        ".step": "69856ec2696131ec77b2ec533cab5c7e68526203363d4b508758ea4c3a0c5b11",
+        ".3mf": "47e55b1ec0fcc10ae7a785d883556bd5bc0034d8c4fdccb3310b0583dfee8380"
+      }
+    },
+    "09_left_fan_tray": {
+      "orientation": "grille down; tie-lug undersides rise at 45 degrees",
+      "volume_mm3": 87584.40008866307,
+      "dimensions_mm": [
+        147.00000000000003,
+        131.70000000000007,
+        38.00000000000006
+      ],
+      "bounds_mm": [
+        54.49999999999997,
+        62.14999999999995,
+        0.0,
+        201.5,
+        193.85000000000002,
+        38.00000000000006
+      ],
+      "closed_mesh": true,
+      "step_valid_solids": 1,
+      "step_roundtrip_difference_mm3": 0.0,
+      "bed_and_8mm_brim_clear": true,
+      "stock_cutter_and_brim_clear": true,
+      "sha256": {
+        ".stl": "455902cabe4d224f456d8714c556196344c70ab8982d6f3c09d123cc3dd68e5f",
+        ".step": "e213ae3a06dcadb9595c059d024c247e5c6a3265adaf3af5341aedee6892eba7",
+        ".3mf": "cd15d2aba7ac69b47237ea1a206b86a2867d4eb5ea3673ac064f1f5d21548b4f"
+      }
+    },
+    "10_right_fan_tray": {
+      "orientation": "grille down; tie-lug undersides rise at 45 degrees",
+      "volume_mm3": 87584.40008866291,
+      "dimensions_mm": [
+        147.0,
+        131.70000000000005,
+        38.000000000000014
+      ],
+      "bounds_mm": [
+        54.499999999999986,
+        62.14999999999999,
+        -2.842170943040401e-14,
+        201.5,
+        193.85000000000002,
+        37.999999999999986
+      ],
+      "closed_mesh": true,
+      "step_valid_solids": 1,
+      "step_roundtrip_difference_mm3": 0.0,
+      "bed_and_8mm_brim_clear": true,
+      "stock_cutter_and_brim_clear": true,
+      "sha256": {
+        ".stl": "70230d38ea7cbb3e01719bccf383bb70746da9c8e02692d0397c39a255ba0a8f",
+        ".step": "1e6f5742779a6e7d49187fbec6bc288ccebe1393d6d55123cb037c331522fae3",
+        ".3mf": "e93dbdefb4feabdd263a2058fdb03135347748835d56f29ff027ab9048c9448b"
+      }
+    }
+  },
+  "plates": {
+    "20_both_cable_covers": {
+      "orientation": "both covers together; replaces individual cover files 05 and 06",
+      "volume_mm3": 49905.49974780346,
+      "dimensions_mm": [
+        139.00000000000006,
+        143.0,
+        13.000000000000142
+      ],
+      "bounds_mm": [
+        58.49999999999997,
+        53.5,
+        -5.684341886080802e-14,
+        197.50000000000003,
+        196.5,
+        13.000000000000085
+      ],
+      "closed_mesh": true,
+      "step_valid_solids": 2,
+      "step_roundtrip_difference_mm3": 0.0,
+      "bed_and_8mm_brim_clear": true,
+      "stock_cutter_and_brim_clear": true,
+      "sha256": {
+        ".stl": "4375dc323b1eb0afad64a8b966e3cbc5d19ec63b0f41c26c90b6c88ec9837a09",
+        ".step": "550f21bfb76749efeaa0a39b9001defb9f4e35683d78bca40f088cbf07a8d93a",
+        ".3mf": "efcc633b95614dc5170cf96efa3ad4dc8625453171854e04e94a1eb5c348c11a"
+      }
+    },
+    "00_cable_fit_coupon": {
+      "orientation": "TEST ONLY: duct coupon front mating face down; cover/tray/pin in full-part print directions",
+      "volume_mm3": 15774.902724074625,
+      "dimensions_mm": [
+        136.50000000000006,
+        88.49955240724108,
+        38.00000000000006
+      ],
+      "bounds_mm": [
+        53.99999999999997,
+        90.5,
+        -2.842170943040401e-14,
+        190.50000000000003,
+        178.99955240724108,
+        38.00000000000003
+      ],
+      "closed_mesh": true,
+      "step_valid_solids": 4,
+      "step_roundtrip_difference_mm3": 0.0,
+      "bed_and_8mm_brim_clear": true,
+      "stock_cutter_and_brim_clear": true,
+      "sha256": {
+        ".stl": "674aef9676f09576c89fc4e8a630b7dead96d92e8b0f583f8fe22b13a043dc47",
+        ".step": "7551ce7fe7b58ff5cfcc7bbb91ac11f0b7375189aeb7d76944b279abeb0eb7a8",
+        ".3mf": "65fad428492ff002849ea1603f7f72c777a4d3eb9f55b6bb01df3c299bc1495f"
+      }
+    }
+  },
+  "total_cad_ASA_g": 236.3280149213865,
+  "added_cad_ASA_g": 5.44632767218215
+}

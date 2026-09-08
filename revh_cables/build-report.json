@@ -1,0 +1,125 @@
+{
+  "revision": "H-C1 prototype",
+  "source_native_sha256": "c18dd31d5447042b5cd1252cb648c024785d85229add152d20199a06cdf4c4a8",
+  "changed_parts": {
+    "06_right_fan_retainer": {
+      "added_mm3": 247.3332563609688,
+      "removed_mm3": 129.12778684233797,
+      "volume_mm3": 24952.74987390159
+    },
+    "05_left_fan_retainer": {
+      "added_mm3": 247.33325636096728,
+      "removed_mm3": 129.1277868423379,
+      "volume_mm3": 24952.74987390154
+    },
+    "10_right_fan_tray": {
+      "added_mm3": 2475.283898242206,
+      "removed_mm3": 0.0,
+      "volume_mm3": 87584.40008866292
+    },
+    "09_left_fan_tray": {
+      "added_mm3": 2475.2838982422095,
+      "removed_mm3": 0.0,
+      "volume_mm3": 87584.40008866304
+    }
+  },
+  "unchanged_parts": {
+    "02_right_cradle": {
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "volume_mm3": 274206.95184201497
+    },
+    "01_left_cradle": {
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "volume_mm3": 274206.95184201526
+    },
+    "04_right_fan_duct": {
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "volume_mm3": 135751.5821915114
+    },
+    "03_left_fan_duct": {
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "volume_mm3": 135751.58219151132
+    },
+    "08_right_outlet_rail": {
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "volume_mm3": 74456.25469714392
+    },
+    "07_left_outlet_rail": {
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "volume_mm3": 74456.2546971439
+    },
+    "11_left_push_pin": {
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "volume_mm3": 204.56030211057197
+    },
+    "12_right_push_pin": {
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "volume_mm3": 204.56030211057194
+    },
+    "13_left_push_pin": {
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "volume_mm3": 204.56030211057208
+    },
+    "14_right_push_pin": {
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "volume_mm3": 204.56030211057208
+    },
+    "15_left_side_retainer": {
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "volume_mm3": 28552.586227511278
+    },
+    "16_right_side_retainer": {
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "volume_mm3": 28552.58622751128
+    },
+    "17_left_retainer_keeper": {
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "volume_mm3": 326.3499999999998
+    },
+    "18_right_retainer_keeper": {
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "volume_mm3": 326.3499999999998
+    }
+  },
+  "native_errors": [],
+  "groove_nominal": {
+    "outer_wall_height_mm": 7,
+    "floor_y": 140.7,
+    "rear_mate_y": 135.7,
+    "corner_radius_mm": 1.2
+  },
+  "tie_lugs": {
+    "per_tray": 2,
+    "outer_x_mm": 148,
+    "local_y_centers_mm": [
+      119,
+      51
+    ],
+    "slot_mm": [
+      4,
+      5.5
+    ],
+    "slot_corner_radius_mm": 0.8
+  },
+  "new_fully_constrained_sketches": 8,
+  "coupon_solids": {
+    "cover": 1,
+    "tray": 1,
+    "duct": 1
+  },
+  "native_sha256": "057d6fa4df9c726c07c029d8b4d1938a603ab8b5b7b5cd6065a0f3c1033c786f"
+}

@@ -9,3 +9,4 @@
 *.zip -text
 *.png -text
 /revh_retention/print/*.step -text -diff
+/revh_cables/print/*.step -text -diff
