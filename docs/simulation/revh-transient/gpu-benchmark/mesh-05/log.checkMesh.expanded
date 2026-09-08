@@ -1,0 +1,134 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2412                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 6467f461-20260821 OPENFOAM=2412 version=v2412
+Arch   : "LSB;label=32;scalar=64"
+Exec   : C:\Users\repro\AppData\Local\Programs\BARAM-26.3.0\solvers\openfoam\bin\checkMesh.exe -constant -allGeometry -allTopology
+Date   : Sep 08 2026
+Time   : 10:32:48
+Host   : BLACKTOWER2
+PID    : 21664
+I/O    : uncollated
+Case   : F:/Code/dell-5560-wall-mount-cfd/fusion/cfd/runs/revh_sequence_05
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 0, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = constant
+
+Check mesh...
+    Enabling all (cell, face, edge, point) topology checks.
+    Enabling all geometry checks.
+
+Time = constant
+
+Mesh stats 
+    points:           3554762
+    faces:            9936185
+    internal faces:   9613674
+    cells:            3193565
+    faces per cell:   6.121641175
+    boundary patches: 5
+    point zones:      1
+    face zones:       0
+    cell zones:       0
+
+Overall number of cells of each type:
+    hexahedra:     2981343
+    prisms:        48441
+    wedges:        276
+    pyramids:      0
+    tet wedges:    646
+    tetrahedra:    9
+    polyhedra:     162850
+    Breakdown of polyhedra by number of faces:
+        faces   number of cells
+            4   3531
+            5   4853
+            6   26158
+            7   6453
+            8   1052
+            9   100173
+           10   65
+           11   22
+           12   15470
+           13   1
+           14   6
+           15   4326
+           18   740
+
+Checking topology...
+    Boundary definition OK.
+    Cell to face addressing OK.
+    Point usage OK.
+    Upper triangular ordering OK.
+    Face vertices OK.
+    Topological cell zip-up check OK.
+    Face-face connectivity OK.
+    Number of regions: 1 (OK).
+
+Checking patch topology for multiply connected surfaces...
+                   Patch    Faces   Points  Surface topology  Bounding box
+                 printed   149401   155091  ok (non-closed singly connected) (-0.1841452696 -2.117582368e-22 -0.1603675406) (0.1841778906 0.1491738284 0.2320006675)
+                  laptop   139632   141743  ok (non-closed singly connected) (-0.173432633 0.03765713604 0.001999992892) (0.1735445599 0.05749367938 0.2322999988)
+                  noctua     9600    12488  ok (non-closed singly connected) (-0.1325327489 0.03024988288 -0.1512023508) (0.1325275629 0.1342558659 -0.04524750106)
+              wall_plane    15780    16908  ok (non-closed singly connected) (-0.400000006 -3.990357934e-05 -0.3000000119) (0.400000006 0.0009706306896 0.5)
+        ambient_openings     8098     8199  ok (non-closed singly connected) (-0.4000022428 -1.694065895e-21 -0.3000000119) (0.4000022455 0.4500054884 0.5)
+                    ".*"   322511   330722      ok (closed singly connected) (-0.4000022428 -3.990357934e-05 -0.3000000119) (0.4000022455 0.4500054884 0.5)
+
+
+Checking faceZone topology for multiply connected surfaces...
+    No faceZones found.
+
+Checking basic cellZone addressing...
+    No cellZones found.
+
+Checking basic pointZone addressing...
+               PointZone  PointsBoundingBox
+            frozenPoints       0(1e+150 1e+150 1e+150) (-1e+150 -1e+150 -1e+150)
+
+Checking geometry...
+    Overall domain bounding box (-0.4000022428 -3.990357934e-05 -0.3000000119) (0.4000022455 0.4500054884 0.5)
+    Mesh has 3 geometric (non-empty/wedge) directions (1 1 1)
+    Mesh has 3 solution (non-empty) directions (1 1 1)
+    Boundary openness (4.600347736e-16 2.106487038e-15 1.894081083e-16) OK.
+    Max cell openness = 4.250787493e-16 OK.
+    Max aspect ratio = 16.07901091 OK.
+    Minimum face area = 3.960451537e-09. Maximum face area = 0.000481866579.  Face area magnitudes OK.
+    Min volume = 4.955139584e-13. Max volume = 6.515778973e-06.  Total volume = 0.2849920242.  Cell volumes OK.
+    Mesh non-orthogonality Max: 64.99718374 average: 7.050646862
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 2.49933025 OK.
+    Coupled point location match (average 0) OK.
+    Face tets OK.
+   *Edges too small, min/max edge length = 9.576011326e-09 0.02900699249, number too small: 34
+  <<Writing 34 points on short edges to set shortEdges
+   *There are 3074 faces with concave angles between consecutive edges. Max concave angle = 79.8193363 degrees.
+  <<Writing 3074 faces with concave angles to set concaveFaces
+    Face flatness (1 = flat, 0 = butterfly) : min = 0.1904491489  average = 0.9998455612
+   *There are 205 faces with ratio between projected and actual area < 0.8
+    Minimum ratio (minimum flatness, maximum warpage) = 0.1904491489
+  <<Writing 205 warped faces to set warpedFaces
+    Cell determinant (wellposedness) : minimum: 0.0002217914504 average: 1.323742668
+ ***Cells with small determinant (< 0.001) found, number of cells: 4
+  <<Writing 4 under-determined cells to set underdeterminedCells
+ ***Concave cells (using face planes) found, number of cells: 71820
+  <<Writing 71820 concave cells to set concaveCells
+    Face interpolation weight : minimum: 0.0527181078 average: 0.4838426564
+    Face interpolation weight check OK.
+    Face volume ratio : minimum: 0.01018134697 average: 0.920056438
+    Face volume ratio check OK.
+
+Failed 2 mesh checks.
+
+End
+

@@ -1,0 +1,13 @@
+/* Generated for OpenCFD OpenFOAM v2412; setup only. */
+FoamFile
+{
+    version 2.0;
+    format ascii;
+    class dictionary;
+    object fvOptions;
+}
+
+dell_fan_left {type vectorSemiImplicitSource; active yes; selectionMode cellZone; cellZone dell_fan_left; volumeMode absolute; injectionRateSuSp {U ((0 0.0163624617374 0) 0);}}
+dell_fan_right {type vectorSemiImplicitSource; active yes; selectionMode cellZone; cellZone dell_fan_right; volumeMode absolute; injectionRateSuSp {U ((0 0.0163624617374 0) 0);}}
+noctua_fan_left {type vectorSemiImplicitSource; active yes; selectionMode cellZone; cellZone noctua_fan_left; volumeMode absolute; injectionRateSuSp {U ((0 -0.055998837033 0.055998837033) 0);}}
+noctua_fan_right {type vectorSemiImplicitSource; active yes; selectionMode cellZone; cellZone noctua_fan_right; volumeMode absolute; injectionRateSuSp {U ((0 -0.055998837033 0.055998837033) 0);}}

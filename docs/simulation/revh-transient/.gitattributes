@@ -3,3 +3,5 @@
 *.gif binary
 *.mp4 binary
 *.zip binary
+# Keep the mesher's emitted log spacing as evidence.
+gpu-benchmark/mesh-*/log.* -whitespace

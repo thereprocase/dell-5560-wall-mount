@@ -1,0 +1,85 @@
+{
+  "scope": "Backend commissioning benchmark only; source mesh is not accepted for validation.",
+  "source": "duct_cpu_02",
+  "backend": "cuda-bj",
+  "state": "completed_pending_field_comparison",
+  "started_utc": "2026-09-08T15:27:28.395863+00:00",
+  "ranks": 4,
+  "dt_s": 1e-05,
+  "steps": 10,
+  "timeout_s": 600,
+  "phases": {
+    "zones": {
+      "command": [
+        "topoSet"
+      ],
+      "wall_seconds": 2.7706724669988034,
+      "exit_code": 0
+    },
+    "solve": {
+      "command": [
+        "mpirun",
+        "--bind-to",
+        "none",
+        "-np",
+        "4",
+        "pimpleFoam",
+        "-parallel"
+      ],
+      "wall_seconds": 219.85855576000176,
+      "exit_code": 0
+    },
+    "reconstruct": {
+      "command": [
+        "reconstructPar",
+        "-latestTime"
+      ],
+      "wall_seconds": 5.528164271992864,
+      "exit_code": 0
+    }
+  },
+  "decomposition": "Copied exact CPU partition and initial fields",
+  "reported_clock_times_s": [
+    35.0,
+    59.0,
+    79.0,
+    100.0,
+    120.0,
+    140.0,
+    159.0,
+    179.0,
+    198.0,
+    218.0
+  ],
+  "physical_times_s": [
+    1e-05,
+    2e-05,
+    3e-05,
+    4e-05,
+    5e-05,
+    6e-05,
+    7e-05,
+    8e-05,
+    9e-05,
+    0.0001
+  ],
+  "pressure_iterations_total": 18907,
+  "pressure_iterations_max": 730,
+  "pressure_calls": 120,
+  "bounding_events": 5,
+  "courant_max_values": [
+    0.0,
+    0.0,
+    0.0,
+    0.0002193209466,
+    0.0004502444804,
+    0.0006895508797,
+    0.0009280246184,
+    0.001165549265,
+    0.001405158154,
+    0.001644951313,
+    0.001885001078,
+    0.002125211216
+  ],
+  "finished_utc": "2026-09-08T15:31:17.739785+00:00"
+}
