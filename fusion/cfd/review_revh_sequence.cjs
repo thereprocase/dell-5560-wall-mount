@@ -29,6 +29,8 @@ const output=process.argv[3]||'fusion/cfd/runs/revh_fourhour_08/browser-initial'
    await video.evaluate(v=>v.pause());
    const source=await video.locator('source').getAttribute('src');
    const report=await (await page.request.get(new URL('progress.json',new URL(source,base)).href)).json();
+   const expectedIndex=process.argv.indexOf('--expected-sha');
+   if(expectedIndex>=0&&report.video_sha256!==process.argv[expectedIndex+1])errors.push('Deployed checkpoint does not match the expected video SHA-256');
    for(const alias of (process.argv.includes('--no-early-alias')?['latest.mp4']:['latest.mp4','early/flow.mp4'])){
     const response=await page.request.get(new URL(alias+'?v='+report.video_sha256,base).href);
     if(!response.ok()||crypto.createHash('sha256').update(await response.body()).digest('hex')!==report.video_sha256)errors.push('Current-video alias mismatch: '+alias);

@@ -1,6 +1,7 @@
 """Stage a reviewed-source CFD checkpoint without replacing earlier archives."""
 import argparse
 import hashlib
+import gzip
 import json
 from pathlib import Path
 import re
@@ -12,10 +13,27 @@ FILES=['flow.mp4','poster.png','first-frame.png','progress.json','history.png','
 
 def copy(source,target):
     target.mkdir(exist_ok=False)
+    compressed={}
+    def pack(original,destination):
+        raw=original.read_bytes();data=gzip.compress(raw,compresslevel=9,mtime=0)
+        assert gzip.decompress(data)==raw
+        destination.parent.mkdir(parents=True,exist_ok=True);destination.write_bytes(data)
+        compressed[destination.relative_to(target).as_posix()]={
+            'uncompressed_sha256':hashlib.sha256(raw).hexdigest(),
+            'compressed_sha256':hashlib.sha256(data).hexdigest(),
+            'uncompressed_bytes':len(raw),'compressed_bytes':len(data)}
     for name in FILES:
         path=source/name
-        if path.is_dir():shutil.copytree(path,target/name)
+        if name=='diagnostics.json' and path.is_file():pack(path,target/'diagnostics.json.gz')
+        elif name=='diagnostic-raw' and path.is_dir():
+            for original in path.iterdir():
+                assert original.is_file();pack(original,target/name/(original.name+'.gz'))
+        elif path.is_dir():shutil.copytree(path,target/name)
         elif path.is_file():shutil.copy2(path,target/name)
+    if compressed:
+        (target/'diagnostic-compression.json').write_text(json.dumps({
+            'method':'Lossless gzip level 9; every decompressed byte verified before staging.',
+            'files':compressed},indent=2)+'\n')
 
 
 def main():
@@ -23,7 +41,7 @@ def main():
     parser.add_argument('--source',type=Path,required=True)
     parser.add_argument('--folder',required=True)
     args=parser.parse_args()
-    assert re.fullmatch(r'(hour-[1-4]|checkpoint-\d{2})',args.folder)
+    assert re.fullmatch(r'(hour-\d{1,3}|checkpoint-\d{2})',args.folder)
     report=json.loads((args.source/'progress.json').read_text())
     assert not report['preview_subsampled']
     assert report['source_frames']==report['source_sample_count_available']

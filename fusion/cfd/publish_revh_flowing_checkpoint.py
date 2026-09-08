@@ -10,6 +10,7 @@ import hashlib
 import json
 from pathlib import Path
 import shutil
+from stage_revh_checkpoint import copy as copy_checkpoint
 
 ROOT=Path(__file__).resolve().parents[2]
 PAGE=ROOT/'docs/simulation/revh-transient/sequence/flowing'
@@ -20,6 +21,7 @@ def main():
     p.add_argument('--case',type=Path,required=True)
     p.add_argument('--source',type=Path,required=True)
     p.add_argument('--checkpoint',type=int,required=True)
+    p.add_argument('--reuse',action='store_true',help='Refresh the page around an identical already-staged archive')
     args=p.parse_args();manifest=json.loads((args.case/'case_manifest.json').read_text())
     assert manifest['initialization_kind']=='steady_solver'
     report=json.loads((args.source/'progress.json').read_text())
@@ -28,10 +30,12 @@ def main():
     assert hashlib.sha256((args.source/'flow.mp4').read_bytes()).hexdigest()==report['video_sha256']
     diagnostics=json.loads((args.source/'diagnostics.json').read_text())
     assert abs(diagnostics['through_time_s']-report['last_time_s'])<1e-12
-    target=PAGE/f'checkpoint-{args.checkpoint:02d}';target.mkdir(parents=True,exist_ok=False)
-    for name in ['flow.mp4','poster.png','first-frame.png','progress.json','diagnostics.json','history.png']:
-        shutil.copy2(args.source/name,target/name)
-    shutil.copytree(args.source/'diagnostic-raw',target/'diagnostic-raw')
+    PAGE.mkdir(parents=True,exist_ok=True)
+    target=PAGE/f'checkpoint-{args.checkpoint:02d}'
+    if target.exists() and args.reuse:
+        assert json.loads((target/'progress.json').read_text())['video_sha256']==report['video_sha256']
+        assert hashlib.sha256((target/'flow.mp4').read_bytes()).hexdigest()==report['video_sha256']
+    else:copy_checkpoint(args.source,target)
     for name in ['case_manifest.json','quality-disposition.json']:shutil.copy2(args.case/name,PAGE/name)
     state=json.loads((args.case/'run-status.json').read_text())
     public={k:v for k,v in state.items() if k not in ['mpi_pid','worker_pids','command']}
@@ -45,7 +49,8 @@ def main():
     (PAGE/'latest.json').write_text(json.dumps({k:latest[k] for k in ['_folder','created_utc','last_time_s','source_frames','video_sha256']},indent=2)+'\n',encoding='utf-8')
     rows=[]
     for r in checkpoints:
-        d=r['_folder'];rows.append(f'<tr><th>{escape(d)}</th><td>{r["last_time_s"]*1000:.4f} ms</td><td>{r["source_frames"]}</td><td><a href="{d}/flow.mp4">Video</a> · <a href="{d}/progress.json">Provenance</a> · <a href="{d}/diagnostics.json">Diagnostics</a></td></tr>')
+        d=r['_folder'];diagnostic='diagnostics.json.gz' if (PAGE/d/'diagnostics.json.gz').is_file() else 'diagnostics.json'
+        rows.append(f'<tr><th>{escape(d)}</th><td>{r["last_time_s"]*1000:.4f} ms</td><td>{r["source_frames"]}</td><td><a href="{d}/flow.mp4">Video</a> · <a href="{d}/progress.json">Provenance</a> · <a href="{d}/{diagnostic}">Diagnostics{ " (gzip)" if diagnostic.endswith(".gz") else ""}</a></td></tr>')
     iteration=manifest['transient_initialization']['steady_iteration']
     outer=manifest['transient_controls']['outer_correctors']
     worker_count=state.get('cpu_workers',4)

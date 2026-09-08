@@ -2,7 +2,7 @@
   "case": "revh_fourhour_08",
   "state": "running",
   "started_utc": "2026-09-08T16:12:29.689449+00:00",
-  "budget_seconds": 14400,
+  "budget_seconds": 71247.599868,
   "hourly_updates_due_seconds": [
     3600,
     7200,
@@ -10,14 +10,20 @@
     14400
   ],
   "scope": "Extended exploratory startup; mesh and timestep independence not established.",
-  "updated_utc": "2026-09-08T19:15:52.247483+00:00",
-  "elapsed_seconds": 10999.79,
-  "completed_steps": 486,
-  "latest_physical_time_s": 0.0122142992,
+  "initialization_kind": "native_transient_startup",
+  "updated_utc": "2026-09-08T20:05:10.963925+00:00",
+  "elapsed_seconds": 13954.93,
+  "completed_steps": 561,
+  "latest_physical_time_s": 0.0140892992,
   "latest_deltaT_s": 2.5e-05,
-  "latest_Courant": 0.3270537428,
-  "max_logged_Courant": 0.3270537428,
+  "latest_Courant": 0.353685723,
+  "max_logged_Courant": 0.353685723,
   "bounding_events": 0,
-  "complete_sample_frames": 242,
-  "published_snapshot_utc": "2026-09-08T19:15:58.573623+00:00"
+  "complete_sample_frames": 280,
+  "resume_elapsed_seconds": 12929.259815000001,
+  "cpu_workers": 4,
+  "authorized_deadline_utc": "2026-09-09T12:00:00+00:00",
+  "session_started_utc": "2026-09-08T19:48:01.659947+00:00",
+  "wall_time_accounting": "Cumulative supervised wall time; idle gaps between completed sessions are excluded.",
+  "published_snapshot_utc": "2026-09-08T20:05:19.034939+00:00"
 }

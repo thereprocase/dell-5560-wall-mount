@@ -14,6 +14,7 @@ import shutil
 import signal
 import subprocess
 import time
+from revh_checkpoint import describe as describe_checkpoint
 
 
 def utc():return datetime.now(timezone.utc).isoformat()
@@ -52,7 +53,7 @@ def main():
     p.add_argument('--ranks',type=int,choices=[4,6,8],default=4)
     p.add_argument('--resume',action='store_true',help='Continue a deliberately checkpointed run within its original deadline')
     args=p.parse_args();case=args.case.resolve();mirror=args.mirror.resolve()
-    assert 5<=args.seconds<=14400
+    assert 5<=args.seconds<=31*86400
     assert os.environ.get('WM_PROJECT_VERSION')=='v2412'
     log_path=case/'log.pimpleFoam.fourhour'
     assert log_path.exists() if args.resume else not log_path.exists()
@@ -66,13 +67,16 @@ def main():
     elapsed_before=0
     if args.resume:
         previous=json.loads((case/'run-status.json').read_text())
-        assert previous['state']=='restarting_after_rank_change'
+        assert previous['state'] in ['restarting_after_rank_change','restarting_from_checkpoint']
         assert previous['budget_seconds']==args.seconds and not workers(case)
         state.update(previous)
         state.pop('error',None)
-        elapsed_before=(datetime.now(timezone.utc)-datetime.fromisoformat(state['started_utc'])).total_seconds()
+        elapsed_before=previous.get('resume_elapsed_seconds',(datetime.now(timezone.utc)-datetime.fromisoformat(state['started_utc'])).total_seconds())
         assert elapsed_before<args.seconds
     started=time.monotonic()-elapsed_before;last_notice=elapsed_before;stop_sent=None;sample_count=0
+    session_started=datetime.now(timezone.utc)
+    state['session_started_utc']=session_started.isoformat()
+    state['wall_time_accounting']='Cumulative supervised wall time; idle gaps between completed sessions are excluded.'
     command=['mpirun','--use-hwthread-cpus','--bind-to','none','-np',str(args.ranks),'pimpleFoam','-parallel','-opt-switch','stopAtWriteNowSignal=12']
     state['cpu_workers']=args.ranks
     with log_path.open('a' if args.resume else 'w') as log:
@@ -88,7 +92,19 @@ def main():
             dt=re.findall(r'^deltaT = ([\d.eE+-]+)',raw,re.M)
             ids=workers(case)
             reason=None
-            if elapsed>=args.seconds:reason='Requested wall-time budget reached'
+            effective_budget=args.seconds
+            control_path=case/'run-control.json'
+            if control_path.is_file():
+                control=json.loads(control_path.read_text())
+                if control.get('deadline_utc'):
+                    deadline=datetime.fromisoformat(control['deadline_utc'].replace('Z','+00:00'))
+                    effective_budget=elapsed_before+(deadline-session_started).total_seconds()
+                    state['authorized_deadline_utc']=deadline.isoformat()
+                if control.get('stop_requested'):reason='User requested a resumable stop'
+            state['budget_seconds']=effective_budget
+            if elapsed>=effective_budget:reason='Requested wall-time budget reached'
+            if min(shutil.disk_usage(root).free for root in [case,mirror])<5*1024**3:
+                reason='Checkpointing before available disk falls below 5 GiB'
             if complete:
                 tail=complete[-1][1]
                 if re.search(r'=\s*[-+]?(?:nan|inf)\b',tail,re.I):reason='Non-finite field diagnostic'
@@ -117,6 +133,14 @@ def main():
                 state.update(state='complete' if code==0 and stop_sent is not None else 'failed',
                              exit_code=code,finished_utc=utc())
                 if code==0 and stop_sent is None:state['error']='Exited before wall-budget stop'
+                if state['state']=='complete':
+                    try:
+                        checkpoint=describe_checkpoint(case,args.ranks)
+                        for root in [case,mirror]:
+                            (root/'resume-checkpoint.json').write_text(json.dumps(checkpoint,indent=2)+'\n')
+                        state['restart_checkpoint']={k:checkpoint[k] for k in ['physical_time_s','mpi_ranks','verified_utc','native_previous_step_fields_preserved']}
+                    except Exception as error:
+                        state.update(state='failed',error='Final restart checkpoint verification: '+str(error))
             for root in [case,mirror]:
                 tmp=root/'run-status.json.tmp';tmp.write_text(json.dumps(state,indent=2)+'\n');tmp.replace(root/'run-status.json')
             if elapsed-last_notice>=60 or code is not None:

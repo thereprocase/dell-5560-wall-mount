@@ -2,7 +2,7 @@
   "case": "revh_flowing_12",
   "state": "running",
   "started_utc": "2026-09-08T18:08:14.929371+00:00",
-  "budget_seconds": 7454,
+  "budget_seconds": 64303.928386,
   "hourly_updates_due_seconds": [
     3600,
     7200,
@@ -11,15 +11,15 @@
   ],
   "scope": "Exploratory transient from a steady-solver iterate; initial field is not claimed converged.",
   "initialization_kind": "steady_solver",
-  "updated_utc": "2026-09-08T19:15:31.238732+00:00",
-  "elapsed_seconds": 4035.43,
-  "completed_steps": 179,
-  "latest_physical_time_s": 0.003001450429,
-  "latest_deltaT_s": 1.607502546e-05,
-  "latest_Courant": 0.5000894579,
+  "updated_utc": "2026-09-08T20:05:16.572857+00:00",
+  "elapsed_seconds": 7017.59,
+  "completed_steps": 366,
+  "latest_physical_time_s": 0.006044949509,
+  "latest_deltaT_s": 1.699050466e-05,
+  "latest_Courant": 0.4997534359,
   "max_logged_Courant": 0.501243152,
   "bounding_events": 5,
-  "complete_sample_frames": 90,
+  "complete_sample_frames": 184,
   "rank_change": {
     "started_utc": "2026-09-08T19:13:13.343018+00:00",
     "from_ranks": 4,
@@ -61,5 +61,9 @@
     "resumed_ranks": 8
   },
   "cpu_workers": 8,
-  "published_snapshot_utc": "2026-09-08T19:15:34.174252+00:00"
+  "resume_elapsed_seconds": 5980.237748,
+  "authorized_deadline_utc": "2026-09-09T12:00:00+00:00",
+  "session_started_utc": "2026-09-08T19:47:56.309362+00:00",
+  "wall_time_accounting": "Cumulative supervised wall time; idle gaps between completed sessions are excluded.",
+  "published_snapshot_utc": "2026-09-08T20:05:18.454232+00:00"
 }
