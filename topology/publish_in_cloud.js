@@ -38,14 +38,25 @@ for (const f of files.files) {
   const quote=s=>"'"+String(s).replace(/'/g,"'\\''")+"'";
   let encoded='';
   const block=96000;
-  for(let i=0;i<Math.ceil(f.size/block);i++) {
-    const binary=await tools.exec_command({cmd:'dd if='+quote(f.path)+' bs='+block+' skip='+i+' count=1 status=none | base64 -w0',workdir:root,max_output_tokens:150000});
-    if(binary.exit_code!==0 || binary.original_token_count>150000) throw new Error('Binary chunk read failed: '+f.path);
-    encoded+=binary.output.trim();
+  const count=Math.ceil(f.size/block);
+  for(let start=0;start<count;start+=8) {
+    const batch=await Promise.allSettled(Array.from({length:Math.min(8,count-start)},async (_,j)=> {
+      const i=start+j;
+      const binary=await tools.exec_command({cmd:'dd if='+quote(f.path)+' bs='+block+' skip='+i+' count=1 status=none | base64 -w0',workdir:root,max_output_tokens:150000});
+      const data=binary.output.trim();
+      const expected=4*Math.ceil(Math.min(block,f.size-i*block)/3);
+      if(binary.exit_code!==0 || data.length!==expected || !/^[A-Za-z0-9+/]*={0,2}$/.test(data)) throw new Error('Binary chunk failed: '+f.path+' #'+i+' length '+data.length+' expected '+expected);
+      return data;
+    }));
+    for(const result of batch) {
+      if(result.status!=='fulfilled') throw result.reason;
+      encoded+=result.value;
+    }
   }
   const b=payload(await tools.mcp__codex_apps__github_create_blob({repository_full_name:repo,encoding:'base64',content:encoded}));
   if (!b.sha) throw new Error('Missing blob SHA');
   entries.push({path:f.path,mode:'100644',type:'blob',sha:b.sha});
+  text('Uploaded '+f.path);
 }
 const tree=payload(await tools.mcp__codex_apps__github_create_tree({repository_full_name:repo,base_tree_sha:commit.tree.sha,tree_elements:entries}));
 const next=payload(await tools.mcp__codex_apps__github_create_commit({repository_full_name:repo,parent_sha:parent,tree_sha:tree.sha,message:files.message}));
