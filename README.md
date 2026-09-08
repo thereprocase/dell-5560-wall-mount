@@ -8,6 +8,15 @@ arms, size range and airflow adjustment too.
 [Explore both designs](https://thereprocase.github.io/dell-5560-wall-mount/) ·
 [Print and assembly guide](https://thereprocase.github.io/dell-5560-wall-mount/minimalist-guide.html)
 
+## MakerWorld preparation package
+
+[Agent handoff](MAKERWORLD_HANDOFF.md) · [Dated package, gallery, and downloads](makerworld/2026-09-08/)
+
+Three listing drafts and sixty native Bambu Studio projects are archived while
+physical prints and lab photographs are completed. The new profiles use 20%
+gyroid infill and have virtual review only. All remain physically untested.
+
+
 ## Minimalist M1.1
 
 [5560 native + print package](docs/downloads/Minimalist_M1_5560.zip) ·
