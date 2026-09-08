@@ -84,6 +84,13 @@ def main():
         (PAGE/'steady-case_manifest.json').write_text((steady_case/'case_manifest.json').read_text(),encoding='utf-8',newline='\n')
         convergence='The numerical convergence policy is satisfied.' if steady.get('converged') else 'Numerical convergence has not been established.'
         steady_note=f'''<h2>Parallel steady-state initialization</h2><p>A separate four-worker steady-state solve began at 1:03 p.m. Eastern, using the same Revision H geometry and fan forcing. At this publication snapshot it has completed {steady['completed_iterations']} iterations; its state is {escape(steady['state'].replace('_',' '))}. {convergence}</p><p>These iterations are numerical adjustments, not elapsed fluid time. The purpose is to prepare a settled starting field for another transient shedding run. Residuals, pressure and velocity stability, conservation and recent turbulence bounding are checked before accepting that field. The startup videos above remain the original transient record.</p><ul class="links"><li><a href="steady-run-status.json">Steady-solver diagnostics</a></li><li><a href="steady-case_manifest.json">Initialization and convergence policy</a></li></ul>'''
+        images=sorted((PAGE/'steady').glob('iteration-*/images.json'),key=lambda p:int(p.parent.name.split('-')[-1]))
+        if images:
+            info=json.loads(images[-1].read_text());directory=images[-1].parent.relative_to(PAGE).as_posix()
+            steady_note+=f'<section id="steady-images"><h2>Steady-solver images with velocity arrows</h2><p>Actual sampled fields at iteration {info["iteration"]}. This snapshot is still unconverged; the arrows show local in-plane velocity.</p>'
+            for filename,label in [('speed-arrows.png','Speed and flow direction'),('pressure-arrows.png','Static pressure and flow direction')]:
+                steady_note+=f'<figure><a href="{directory}/{filename}"><img src="{directory}/{filename}" alt="{label} on the actual Rev H air path and two lip sections" loading="lazy"></a><figcaption>{label}. <a href="{directory}/{filename}">Open the full-size arrow image</a>.</figcaption></figure>'
+            steady_note+=f'<p><a href="{directory}/vorticity-arrows.png">Vorticity with velocity arrows</a> · <a href="{directory}/images.json">Image provenance</a> · <a href="{directory}/right-section.vtp">Raw sampled section</a></p></section>'
     html=f'''<!doctype html>
 <html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Four-hour Rev H flow run · Precision 5560 mount</title>

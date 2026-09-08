@@ -3,6 +3,7 @@
 *.gif binary
 *.mp4 binary
 *.zip binary
+*.vtp binary
 # Keep the mesher's emitted log spacing as evidence.
 gpu-benchmark/mesh-*/log.* -whitespace
 sequence/**/diagnostic-raw/** -whitespace
