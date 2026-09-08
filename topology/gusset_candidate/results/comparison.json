@@ -1,0 +1,62 @@
+{
+  "baseline": "../cad_candidate",
+  "pair_mass_g": 57.79,
+  "added_pair_mass_g": 7.509999999999998,
+  "cases": [
+    {
+      "mesh_mm": 1.8,
+      "case": "downward",
+      "before_mm": 0.7607397117259159,
+      "gusseted_mm": 0.48021170299426075,
+      "displacement_reduction_percent": 36.87568880757017,
+      "before_peak_absolute_component_MPa": 13.02515,
+      "gusseted_peak_absolute_component_MPa": 9.696225
+    },
+    {
+      "mesh_mm": 1.8,
+      "case": "outward_grab",
+      "before_mm": 2.6378743651037007,
+      "gusseted_mm": 2.13259722657646,
+      "displacement_reduction_percent": 19.154708245833273,
+      "before_peak_absolute_component_MPa": 40.63154,
+      "gusseted_peak_absolute_component_MPa": 38.22621
+    },
+    {
+      "mesh_mm": 1.8,
+      "case": "side",
+      "before_mm": 1.93811319126502,
+      "gusseted_mm": 1.143287369221966,
+      "displacement_reduction_percent": 41.01028905975639,
+      "before_peak_absolute_component_MPa": 11.96379,
+      "gusseted_peak_absolute_component_MPa": 12.39678
+    },
+    {
+      "mesh_mm": 1.2,
+      "case": "downward",
+      "before_mm": 0.9215641209045861,
+      "gusseted_mm": 0.5736899615210644,
+      "displacement_reduction_percent": 37.748231673999676,
+      "before_peak_absolute_component_MPa": 16.67788,
+      "gusseted_peak_absolute_component_MPa": 16.61052
+    },
+    {
+      "mesh_mm": 1.2,
+      "case": "outward_grab",
+      "before_mm": 3.2006765387475897,
+      "gusseted_mm": 2.638515959481816,
+      "displacement_reduction_percent": 17.563804791275295,
+      "before_peak_absolute_component_MPa": 66.53193,
+      "gusseted_peak_absolute_component_MPa": 66.27978
+    },
+    {
+      "mesh_mm": 1.2,
+      "case": "side",
+      "before_mm": 2.315131480775922,
+      "gusseted_mm": 1.379896659639922,
+      "displacement_reduction_percent": 40.39661802804192,
+      "before_peak_absolute_component_MPa": 16.01952,
+      "gusseted_peak_absolute_component_MPa": 16.1851
+    }
+  ],
+  "conclusion": "Gussets improve screened stiffness; peak grab stress remains essentially unchanged and mesh-sensitive. No strength rating."
+}

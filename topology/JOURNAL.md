@@ -2,6 +2,24 @@
 
 Latest update first.
 
+## Accepted curved gussets: current CAD and print package
+
+2026-09-08T14:37:39+00:00
+
+Accepted gusset geometry is now the current [minimal showcase](gusset_candidate/README.md). Six curved, inward-tapering native lofts per bracket reinforce the contact tabs, front rail ends and wall mounting pads. The two large openings, laptop travel and circular screw/tool clearances remain clear.
+
+Orca predicts **57.79 g per pair**, **7.51 g above** the previous candidate, using the same three 0.4 mm walls, 20% gyroid and five 0.2 mm top/bottom layers. All 120 external layers pass the slope audit with supports off. Native reopen and parameter restoration pass; the updated fit coupon and sliced Orca project are included.
+
+At the 1.2 mm mesh setting, the gussets reduce monitored movement from 0.922 to 0.574 mm under the downward case, 3.201 to 2.639 mm under the outward grab, and 2.315 to 1.380 mm under the side case: **38%, 18% and 40% reductions**, respectively. Both tested mesh sizes show the same direction of improvement. Peak grab stress remains approximately 66 MPa and mesh-sensitive, so this is improved screened stiffness, not a qualified strength rating. See the [comparison and limitations](gusset_candidate/VALIDATION.md).
+
+The branch README now points to the gusseted model. The earlier ungusseted candidate remains available as the comparison baseline.
+
+![Progress image](gusset_candidate/results/curved_bracket.jpg)
+
+![Progress image](gusset_candidate/results/screw_access.jpg)
+
+![Progress image](gusset_candidate/results/installed.jpg)
+
 ## Curved gussets: printable preview and mass check
 
 2026-09-08T14:34:53+00:00

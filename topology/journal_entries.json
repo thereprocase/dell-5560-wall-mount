@@ -1,5 +1,15 @@
 [
   {
+    "utc": "2026-09-08T14:37:39+00:00",
+    "title": "Accepted curved gussets: current CAD and print package",
+    "note": "Accepted gusset geometry is now the current [minimal showcase](gusset_candidate/README.md). Six curved, inward-tapering native lofts per bracket reinforce the contact tabs, front rail ends and wall mounting pads. The two large openings, laptop travel and circular screw/tool clearances remain clear.\n\nOrca predicts **57.79 g per pair**, **7.51 g above** the previous candidate, using the same three 0.4 mm walls, 20% gyroid and five 0.2 mm top/bottom layers. All 120 external layers pass the slope audit with supports off. Native reopen and parameter restoration pass; the updated fit coupon and sliced Orca project are included.\n\nAt the 1.2 mm mesh setting, the gussets reduce monitored movement from 0.922 to 0.574 mm under the downward case, 3.201 to 2.639 mm under the outward grab, and 2.315 to 1.380 mm under the side case: **38%, 18% and 40% reductions**, respectively. Both tested mesh sizes show the same direction of improvement. Peak grab stress remains approximately 66 MPa and mesh-sensitive, so this is improved screened stiffness, not a qualified strength rating. See the [comparison and limitations](gusset_candidate/VALIDATION.md).\n\nThe branch README now points to the gusseted model. The earlier ungusseted candidate remains available as the comparison baseline.",
+    "images": [
+      "topology/gusset_candidate/results/curved_bracket.jpg",
+      "topology/gusset_candidate/results/screw_access.jpg",
+      "topology/gusset_candidate/results/installed.jpg"
+    ]
+  },
+  {
     "utc": "2026-09-08T14:34:53+00:00",
     "title": "Curved gussets: printable preview and mass check",
     "note": "Added six native lofted gussets per bracket at the rear contact tabs, front rail ends and wall mounting pads. Curved root sections taper inward as printing rises, with all material outside the laptop slot. Exact CAD insertion/tool checks pass, native reopen/parameter restoration passes, and Orca slices the pair at 57.79 g (7.51 g above the previous candidate). All 120 external layers pass the 30-degree slope audit with the existing tessellation allowance. Structural comparison is in progress; this preview is not a strength qualification.",

@@ -1,0 +1,7 @@
+work/
+__pycache__/
+results/*.FCBak
+results/*.png
+results/debug.step
+orca/*.gcode
+orca/*.log
