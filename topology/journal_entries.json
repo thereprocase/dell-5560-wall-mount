@@ -1,5 +1,14 @@
 [
   {
+    "utc": "2026-09-08T14:34:53+00:00",
+    "title": "Curved gussets: printable preview and mass check",
+    "note": "Added six native lofted gussets per bracket at the rear contact tabs, front rail ends and wall mounting pads. Curved root sections taper inward as printing rises, with all material outside the laptop slot. Exact CAD insertion/tool checks pass, native reopen/parameter restoration passes, and Orca slices the pair at 57.79 g (7.51 g above the previous candidate). All 120 external layers pass the 30-degree slope audit with the existing tessellation allowance. Structural comparison is in progress; this preview is not a strength qualification.",
+    "images": [
+      "topology/gusset_candidate/results/curved_bracket.jpg",
+      "topology/gusset_candidate/results/screw_access.jpg"
+    ]
+  },
+  {
     "utc": "2026-09-08T13:32:34+00:00",
     "title": "Portable progress journal scaffold, without embedded personal data",
     "note": "Added a [portable progress-journal scaffold](../tools/progress-journal/README.md) for similar work in other repositories. It contains a standard-library Python journal generator, an optional connected-GitHub publisher, generic examples and three offline tests. No personal notes, account names, credentials or hardcoded workspace paths are embedded in the scaffold.\n\nIt records only caller-supplied notes/images plus UTC timestamps, keeps publication paths inside the repository, excludes unrelated staged changes in the local Git route and never force-pushes. It does not automatically redact future note contents; normal Git commit identity still applies. The connected publisher takes workspace/repository/branch at runtime. This entry is prepared and published using the new scaffold itself.\n\nThe [curved CAD package](cad_candidate/README.md) is published below: native FreeCAD, oriented STEP/STL, fit coupon and the 50.3 g Orca review project. Its unresolved structural findings remain visible in the validation report.",

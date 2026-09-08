@@ -2,6 +2,16 @@
 
 Latest update first.
 
+## Curved gussets: printable preview and mass check
+
+2026-09-08T14:34:53+00:00
+
+Added six native lofted gussets per bracket at the rear contact tabs, front rail ends and wall mounting pads. Curved root sections taper inward as printing rises, with all material outside the laptop slot. Exact CAD insertion/tool checks pass, native reopen/parameter restoration passes, and Orca slices the pair at 57.79 g (7.51 g above the previous candidate). All 120 external layers pass the 30-degree slope audit with the existing tessellation allowance. Structural comparison is in progress; this preview is not a strength qualification.
+
+![Progress image](gusset_candidate/results/curved_bracket.jpg)
+
+![Progress image](gusset_candidate/results/screw_access.jpg)
+
 ## Portable progress journal scaffold, without embedded personal data
 
 2026-09-08T13:32:34+00:00
