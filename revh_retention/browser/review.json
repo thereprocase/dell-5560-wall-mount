@@ -1,0 +1,22 @@
+{
+  "offlineGuideVerified": true,
+  "base": "local preview",
+  "pass": true,
+  "errors": [],
+  "parts": 18,
+  "rightSideParts": 9,
+  "phaseCheckpoints": [
+    0,
+    20,
+    40,
+    70,
+    100
+  ],
+  "reversePosesIdentical": true,
+  "originalHPartsStationary": true,
+  "downloadSha256Verified": true,
+  "mobileOverflow": false,
+  "guideImageFailures": [],
+  "originalViewersLoaded": true,
+  "releaseNativeSha256": "c18dd31d5447042b5cd1252cb648c024785d85229add152d20199a06cdf4c4a8"
+}

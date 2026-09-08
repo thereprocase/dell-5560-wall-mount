@@ -1,0 +1,173 @@
+{
+  "revision": "H-R1 prototype",
+  "native_sha256": "c18dd31d5447042b5cd1252cb648c024785d85229add152d20199a06cdf4c4a8",
+  "units": "mm",
+  "standard_3mf_contains_slicer_settings": false,
+  "parts": {
+    "15_left_side_retainer": {
+      "orientation": "flat outboard face down; long axis along plate Y",
+      "volume_mm3": 28552.58622751121,
+      "dimensions_mm": [
+        44.00304532856745,
+        231.00000000000009,
+        19.800000000000097
+      ],
+      "bounds_mm": [
+        105.99873228358638,
+        12.499999999999972,
+        -2.842170943040401e-14,
+        150.00177761215383,
+        243.50000000000006,
+        19.800000000000068
+      ],
+      "closed_mesh": true,
+      "step_valid_solids": 1,
+      "step_roundtrip_difference_mm3": 0.0,
+      "bed_and_8mm_brim_clear": true,
+      "stock_cutter_and_brim_clear": true,
+      "sha256": {
+        ".stl": "46b4a03dbb3aadd219d716735ac2c0be06e5bf20b5a03827370d4f70acbf5916",
+        ".step": "22bfdbaa50129d6d0bb4d63e5c08861b1a7d5710304da30aaab28cb0991824e3",
+        ".3mf": "eb7eafd2497dd3f3dbde070d1fd8fab7f31fb82e6a2787446baa26f2709be411"
+      }
+    },
+    "16_right_side_retainer": {
+      "orientation": "flat outboard face down; long axis along plate Y",
+      "volume_mm3": 28552.58622751125,
+      "dimensions_mm": [
+        44.00304532856748,
+        231.00000000000009,
+        19.800000000000097
+      ],
+      "bounds_mm": [
+        105.99873228358635,
+        12.499999999999972,
+        -2.842170943040401e-14,
+        150.00177761215383,
+        243.50000000000006,
+        19.800000000000068
+      ],
+      "closed_mesh": true,
+      "step_valid_solids": 1,
+      "step_roundtrip_difference_mm3": 0.0,
+      "bed_and_8mm_brim_clear": true,
+      "stock_cutter_and_brim_clear": true,
+      "sha256": {
+        ".stl": "4b997155d5dae7222ad2ad6a702506e9c89590df5518770e1b3fd8eb665bfc0f",
+        ".step": "08e17b956670954fa5857226af458a6343e595d0a31aba17424ef5eb326492e9",
+        ".3mf": "44b132427d2fc9e121a6ceb083fa09b023e342b2561bf2f1a101cdbcdca4e53d"
+      }
+    },
+    "17_left_retainer_keeper": {
+      "orientation": "catch foot down; split tip up",
+      "volume_mm3": 326.3500000000001,
+      "dimensions_mm": [
+        5.0,
+        14.899999999999977,
+        11.100000000000009
+      ],
+      "bounds_mm": [
+        125.5,
+        120.55000000000001,
+        0.0,
+        130.5,
+        135.45,
+        11.100000000000009
+      ],
+      "closed_mesh": true,
+      "step_valid_solids": 1,
+      "step_roundtrip_difference_mm3": 0.0,
+      "bed_and_8mm_brim_clear": true,
+      "stock_cutter_and_brim_clear": true,
+      "sha256": {
+        ".stl": "fd27233edc7151f9a3976889b4d8f2b02230104dec4bbcc58485fb6bc23cb01e",
+        ".step": "ad09cd11998f6cd686178a85df4a7ed71dd489627aa0a34421850163867b17f7",
+        ".3mf": "3b06e3fb201dcdac3be5f3e44ed92358c346dca33bd20d896d29b0394a393d07"
+      }
+    },
+    "18_right_retainer_keeper": {
+      "orientation": "catch foot down; split tip up",
+      "volume_mm3": 326.3500000000001,
+      "dimensions_mm": [
+        5.0,
+        14.899999999999977,
+        11.100000000000009
+      ],
+      "bounds_mm": [
+        125.5,
+        120.55000000000001,
+        0.0,
+        130.5,
+        135.45,
+        11.100000000000009
+      ],
+      "closed_mesh": true,
+      "step_valid_solids": 1,
+      "step_roundtrip_difference_mm3": 0.0,
+      "bed_and_8mm_brim_clear": true,
+      "stock_cutter_and_brim_clear": true,
+      "sha256": {
+        ".stl": "6cb87292c14ffe628d51f50b215cf7c59b4b94b829486ce6e3d036386cf4970e",
+        ".step": "9e59ddc5a1dd167278ffbf7926ea9435c9127973c3d317d102461345b31a7bf9",
+        ".3mf": "38cbeff76ca386b12ca44174d53d73a9409ddf4dc8805fdfb3e2706dd9774c5d"
+      }
+    }
+  },
+  "plates": {
+    "00_four_retainer_parts": {
+      "orientation": "all four add-on parts; replaces individual files 15-18",
+      "volume_mm3": 57757.87245502245,
+      "dimensions_mm": [
+        149.00304532856745,
+        231.00000000000009,
+        19.800000000000097
+      ],
+      "bounds_mm": [
+        52.99873228358637,
+        12.499999999999964,
+        -2.842170943040401e-14,
+        202.00177761215383,
+        243.50000000000006,
+        19.800000000000068
+      ],
+      "closed_mesh": true,
+      "step_valid_solids": 4,
+      "step_roundtrip_difference_mm3": 0.0,
+      "bed_and_8mm_brim_clear": true,
+      "stock_cutter_and_brim_clear": true,
+      "sha256": {
+        ".stl": "6b226325d5d9293a225a69a37d4d9f36dc29b52c5e76f6368afff63e11b04941",
+        ".step": "358e02682d8506a2fa4f6b63f8aa7d5a7b2e6e97c457992351d5ab79ee53ea31",
+        ".3mf": "a57201d4a5f25e1a73db306f6c2b94519401007e41d98f1acef912682fd676cd"
+      }
+    },
+    "01_right_arm_fit_test": {
+      "orientation": "TEST ONLY: short right-arm key plus keeper; do not install as the complete retainer",
+      "volume_mm3": 13411.764494800082,
+      "dimensions_mm": [
+        74.50126771641364,
+        76.10000000000002,
+        19.800000000000068
+      ],
+      "bounds_mm": [
+        82.99873228358636,
+        89.94999999999996,
+        0.0,
+        157.5,
+        166.04999999999998,
+        19.800000000000068
+      ],
+      "closed_mesh": true,
+      "step_valid_solids": 2,
+      "step_roundtrip_difference_mm3": 0.0,
+      "bed_and_8mm_brim_clear": true,
+      "stock_cutter_and_brim_clear": true,
+      "sha256": {
+        ".stl": "fb17e9da38a81ec3325114dde050768655252993c4890b0af69c7c44d2bdf1b0",
+        ".step": "57506aa3939b5f933432fcb5d2fbe040fb54608e93bcc56ada71d7a33da01eaa",
+        ".3mf": "562e226d2e48b5918641152061687c14f99288a78bacfd9845e32792b7e7ecb6"
+      }
+    }
+  },
+  "total_cad_ASA_g": 60.64576607777352
+}

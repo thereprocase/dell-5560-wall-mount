@@ -37,3 +37,10 @@ cfd/*/*.log
 /fusion/cfd/runs/
 /fusion/cfd/geometry_revh_prepare.log
 /freecad/ValidationSnapshot.FCStd
+
+# H-R1 retained native backups and local slicing intermediates.
+/revh_retention/*.FCStd1
+/revh_retention/*.[0-9]*.FCStd
+/revh_retention/slices/
+/revh_retention/browser/*.png
+/revh_retention/*.FCBak
