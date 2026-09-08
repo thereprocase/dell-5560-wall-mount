@@ -29,6 +29,10 @@ const output=process.argv[3]||'fusion/cfd/runs/revh_fourhour_08/browser-initial'
    await video.evaluate(v=>v.pause());
    const source=await video.locator('source').getAttribute('src');
    const report=await (await page.request.get(new URL('progress.json',new URL(source,base)).href)).json();
+   for(const alias of ['latest.mp4','early/flow.mp4']){
+    const response=await page.request.get(new URL(alias+'?v='+report.video_sha256,base).href);
+    if(!response.ok()||crypto.createHash('sha256').update(await response.body()).digest('hex')!==report.video_sha256)errors.push('Current-video alias mismatch: '+alias);
+   }
    meta=await video.evaluate(v=>({duration:v.duration,width:v.videoWidth,height:v.videoHeight,controls:v.controls,autoplay:v.autoplay,loop:v.loop,error:v.error}));
    const hashes=[],seekTimes=[];
    for(const fraction of [.15,.50,.85]){
