@@ -1,6 +1,25 @@
 # Cloud topology journal
 Latest update first. Images show actual geometry unless labeled as reference images or diagrams. Click a GitHub image to open it separately.
 
+## NASA-informed grip clearance and a 4.2 degree outward lean
+2026-09-08T12:20:51+00:00
+
+The user accepted a **32 mm grasp-clearance target**, informed by the NASA two-finger handle drawing, and suggested leaning the laptop slightly away from the wall. The updated geometry combines both: **4.20° tilt**, approximately **21.0 mm rear clearance at the bottom**, and **32.0–37.9 mm over the upper 80 mm grasp region**. This uses the repository's 230.3 mm laptop height. A 22 mm slot allows nominal 1 mm clearance on each face of the 20 mm reference laptop envelope.
+
+The seat and slot rotate together; wall attachment pads remain against the wall. Retrieval follows the tilted slot, requiring about 90 mm upward travel along it before the bottom clears the rails. The actual print build axis is unchanged. A slot-inclusive 3D BESO search is running with these coordinates and the three existing distributed load cases. The image is a dimensioned geometry diagram, not an optimized final shape.
+
+The research and design rules are now in [HUMAN_FACTORS.md](HUMAN_FACTORS.md), with machine-readable targets in [handling_requirements.json](handling_requirements.json). The useful sources are:
+
+- [NASA HIDH, Fig. 9.7-4, p. 833](https://www.nasa.gov/wp-content/uploads/2015/03/human_integration_design_handbook_revision_1.pdf#page=838): distinguishes a 19 mm fingertip opening from a 32 mm two-finger bar clearance and roughly 48–50 mm full-hand handle clearance. These shapes are different; none is a universal laptop-gap requirement.
+- [FAA HF-STD-001B, §§5.2.2.5–5.2.2.8](https://hf.tc.faa.gov/publications/2016-12-human-factors-design-standard/full_text.pdf): grasp locations, finger curl, clearance, and alignment guides/stops.
+- [U.S. Access Board, door hardware](https://www.access-board.gov/ada/guides/chapter-4-entrances-doors-and-gates/): 38.1 mm knuckle-clearance recommendation for pulls, useful as a comparison.
+- [CCOHS hand-tool design](https://www.ccohs.ca/oshanswers/ergonomics/handtools/tooldesign.html): grip force, neutral wrists, contact surfaces and friction.
+
+For this personal mount, the selected dimensions are informed engineering choices, not a claim of NASA compliance or verified human fit. Keep the upper side edges exposed, provide chamfered lead-ins and touch edges, and keep fingers above the closing seat gap. A supported spacer check and a small PETG fit coupon remain necessary before treating the shape as ready for use.
+
+
+![NASA-informed grip clearance and a 4.2 degree outward lean](../topology/slot_up/tilted_grip/results/grip_layout.png)
+
 ## Layer-aware screening — 8 mm gap superseded by hand-clearance requirement
 2026-09-08T12:12:24+00:00
 

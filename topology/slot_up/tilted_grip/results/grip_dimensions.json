@@ -1,0 +1,11 @@
+{
+  "tilt_deg": 4.198081958929171,
+  "laptop_height_mm": 230.3,
+  "grip_length_mm": 80,
+  "rear_clearance_bottom_mm": 20.997316928397183,
+  "rear_clearance_grip_start_mm": 32.0,
+  "rear_clearance_top_mm": 37.856384868451265,
+  "slot_width_normal_mm": 22,
+  "laptop_thickness_mm": 20,
+  "status": "geometric clearances; physical grip unverified"
+}

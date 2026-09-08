@@ -6,7 +6,7 @@ import sys,os,json,csv,subprocess
 from pathlib import Path
 import numpy as np
 from scipy.ndimage import label
-from shapely.geometry import box,GeometryCollection
+from shapely.geometry import Polygon,GeometryCollection
 from shapely.ops import unary_union
 from render_model import load_study,read_ids,mesh_from_ids,draw
 
@@ -23,8 +23,10 @@ def close_columns(m,ids):
 
 def layer_material(m,ids,out):
     slices=[];sparse=[];rows=[];scales={};cells={}
+    nodes,elements,_=m.grid()
     for e in ids:
-        i,j,k=index(m,e);cells[e]=box(2*i,2*j,2*i+2,2*j+2)
+        cells[e]=Polygon([nodes[n][:2] for n in elements[e][:4]])
+        assert cells[e].exterior.is_ccw and cells[e].is_valid
     for k in range(m.NZ):
         s=unary_union([cells[e] for e in ids if index(m,e)[2]==k])
         slices.extend([s]*10)
@@ -41,7 +43,7 @@ def layer_material(m,ids,out):
     for e in ids:
         k=index(m,e)[2]
         sparse_v=sum(sparse[l].intersection(cells[e]).area*.2 for l in range(k*10,(k+1)*10))
-        solid_fraction=1-sparse_v/8
+        solid_fraction=1-sparse_v/(cells[e].area*2)
         # Screening homogenization: solid skins in parallel with infill E~rho^2.
         scale=solid_fraction+(1-solid_fraction)*.2**2
         scales[e]=round(max(.025,round(scale/.025)*.025),3)
@@ -73,7 +75,8 @@ def main():
     report={'method':'Layer geometry approximation, not Orca toolpaths; orthotropic stiffness screening, not a strength rating','layer_mm':.2,'wall_mm':1.2,'top_bottom_layers':5,'infill':.2,'density_g_mm3':.00127,'stress_order':['xx','yy','zz','xy','xz','yz'],'cases':{}}
     trials={'envelope':set(m.grid()[1])}
     for name in ['v45','v30']:
-        states=sorted((folder/'work'/name).glob('file*.csv'));trials[name]=read_ids(states[-1])
+        states=sorted((folder/'work'/name).glob('file*.csv'))
+        if states:trials[name]=read_ids(states[-1])
     for name,raw in trials.items():
         ids=close_columns(m,raw)
         mask=np.zeros((m.NZ,m.NY,m.NX),bool)
@@ -82,7 +85,9 @@ def main():
         components=label(mask)[1];assert components==1,(name,components)
         mesh=mesh_from_ids(m,ids)
         if not mesh.is_watertight or not mesh.is_winding_consistent:raise RuntimeError('Invalid surface '+name)
-        assert abs(mesh.volume-len(ids)*8)<1e-5
+        nodes,elements,_=m.grid()
+        expected_volume=sum(Polygon([nodes[n][:2] for n in elements[e][:4]]).area*2 for e in ids)
+        assert abs(mesh.volume-expected_volume)<1e-5
         mesh.export(out/(name+'_screening.stl'))
         draw(m,ids,out/(name+'_supported.png'),name+' — column-supported screening geometry')
         volume,scales=layer_material(m,ids,out/(name+'_layers.csv'))

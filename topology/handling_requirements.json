@@ -1,0 +1,33 @@
+{
+  "status": "32 mm grip-zone target selected; tilted study geometry implements static clearance, dynamic human fit unverified",
+  "intended_use": "personal closed laptop mount; bare hands; two-handed retrieval available",
+  "grip_zone_clearance_mm": {
+    "trial_minimum": 32,
+    "generous_trial": 38
+  },
+  "clearance_measurement": "nearest obstruction to laptop rear surface at intended hand approach and grasp regions",
+  "previous_gap_trials_mm": {
+    "8": "rejected for fingers-behind retrieval",
+    "20": "compact structural comparison; ergonomically unvalidated"
+  },
+  "grip_location": "exposed upper side edges above centre of gravity",
+  "hand_swept_volume": "must be reserved as empty space through approach, lift and removal",
+  "current_vertical_release_travel_mm": 90,
+  "additional_release_margin": "to be established by physical handling check",
+  "contact_edge_chamfer_trial_mm": [
+    1,
+    2
+  ],
+  "sources_and_rationale": "HUMAN_FACTORS.md",
+  "required_verification": [
+    "supported spacer fit check",
+    "slot coupon and edge feel",
+    "hand-path collision check",
+    "structural recheck at selected offset",
+    "Orca toolpath inspection"
+  ],
+  "selected_study": "slot_up/tilted_grip/study.py",
+  "grip_zone_length_mm": 80,
+  "slot_width_mm": 22,
+  "retrieval_direction": "upward along the tilted slot"
+}
