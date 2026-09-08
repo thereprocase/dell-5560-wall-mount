@@ -1,0 +1,782 @@
+[
+  {
+    "family": "ducted",
+    "revision": "RevH",
+    "application": "BambuStudio-02.07.01.62",
+    "printer": "A1",
+    "material": "PETG",
+    "file": "Repro_RevH_ducted_A1_PETG_Complete.3mf",
+    "plates": 9,
+    "objects": 14,
+    "sha256": "0479710da54d0cf5c4a8423128ea123bff59c04c2810ec0a6201aa63fe921865",
+    "support_objects": [
+      "04_right_fan_duct.stl",
+      "03_left_fan_duct.stl"
+    ]
+  },
+  {
+    "family": "ducted",
+    "revision": "RevH",
+    "application": "BambuStudio-02.07.01.62",
+    "printer": "A1",
+    "material": "PLA",
+    "file": "Repro_RevH_ducted_A1_PLA_Complete.3mf",
+    "plates": 9,
+    "objects": 14,
+    "sha256": "d1b6dacdb2d985c87b49a73ead4790c0517b378cbe723ce06c19facb565b28cc",
+    "support_objects": [
+      "04_right_fan_duct.stl",
+      "03_left_fan_duct.stl"
+    ]
+  },
+  {
+    "family": "ducted",
+    "revision": "RevH",
+    "application": "BambuStudio-02.08.02.61",
+    "printer": "H2C",
+    "material": "ASA",
+    "file": "Repro_RevH_ducted_H2C_ASA_Complete.3mf",
+    "plates": 9,
+    "objects": 14,
+    "sha256": "3e693bf1b18968b5e84d133234e81bd1db6d6e94acd1867431b3361fe8b8e393",
+    "support_objects": [
+      "04_right_fan_duct.stl",
+      "03_left_fan_duct.stl"
+    ]
+  },
+  {
+    "family": "ducted",
+    "revision": "RevH",
+    "application": "BambuStudio-02.08.02.61",
+    "printer": "H2C",
+    "material": "PETG",
+    "file": "Repro_RevH_ducted_H2C_PETG_Complete.3mf",
+    "plates": 9,
+    "objects": 14,
+    "sha256": "9d62339d8e4b11f484218abcd75a8ce89d46eec7524d9e37d14437879222f63f",
+    "support_objects": [
+      "04_right_fan_duct.stl",
+      "03_left_fan_duct.stl"
+    ]
+  },
+  {
+    "family": "ducted",
+    "revision": "RevH",
+    "application": "BambuStudio-02.08.02.61",
+    "printer": "H2C",
+    "material": "PLA",
+    "file": "Repro_RevH_ducted_H2C_PLA_Complete.3mf",
+    "plates": 9,
+    "objects": 14,
+    "sha256": "edc4539f4302106bbeda34f461544cb9aea34a3baf8ffab372343cdd93fb1a24",
+    "support_objects": [
+      "04_right_fan_duct.stl",
+      "03_left_fan_duct.stl"
+    ]
+  },
+  {
+    "family": "ducted",
+    "revision": "RevH",
+    "application": "BambuStudio-02.08.02.61",
+    "printer": "H2D",
+    "material": "ASA",
+    "file": "Repro_RevH_ducted_H2D_ASA_Complete.3mf",
+    "plates": 9,
+    "objects": 14,
+    "sha256": "dda4fe27c5967d61d1126aa94c579e3b6a12b5fc0f738d7025da14c9073e7cfa",
+    "support_objects": [
+      "04_right_fan_duct.stl",
+      "03_left_fan_duct.stl"
+    ]
+  },
+  {
+    "family": "ducted",
+    "revision": "RevH",
+    "application": "BambuStudio-02.08.02.61",
+    "printer": "H2D",
+    "material": "PETG",
+    "file": "Repro_RevH_ducted_H2D_PETG_Complete.3mf",
+    "plates": 9,
+    "objects": 14,
+    "sha256": "f31ad3c4bcce28bd5aba4b81fda23a6360c3a1cf7e5c77fcda1db6f01436b5b3",
+    "support_objects": [
+      "04_right_fan_duct.stl",
+      "03_left_fan_duct.stl"
+    ]
+  },
+  {
+    "family": "ducted",
+    "revision": "RevH",
+    "application": "BambuStudio-02.08.02.61",
+    "printer": "H2D",
+    "material": "PLA",
+    "file": "Repro_RevH_ducted_H2D_PLA_Complete.3mf",
+    "plates": 9,
+    "objects": 14,
+    "sha256": "a88f0107f408f39dc553c1a00c3d148e25a5ec673ee92675d56c3a085860fd69",
+    "support_objects": [
+      "03_left_fan_duct.stl",
+      "04_right_fan_duct.stl"
+    ]
+  },
+  {
+    "family": "ducted",
+    "revision": "RevH",
+    "application": "BambuStudio-02.07.01.62",
+    "printer": "H2S",
+    "material": "ASA",
+    "file": "Repro_RevH_ducted_H2S_ASA_Complete.3mf",
+    "plates": 9,
+    "objects": 14,
+    "sha256": "06734d3922c0ae17fcc87c27a315a43adb5ad2d653bcd494c6d2cdeeaf043402",
+    "support_objects": [
+      "03_left_fan_duct.stl",
+      "04_right_fan_duct.stl"
+    ]
+  },
+  {
+    "family": "ducted",
+    "revision": "RevH",
+    "application": "BambuStudio-02.07.01.62",
+    "printer": "H2S",
+    "material": "PETG",
+    "file": "Repro_RevH_ducted_H2S_PETG_Complete.3mf",
+    "plates": 9,
+    "objects": 14,
+    "sha256": "b18d1ecb893b9ef212b6e55b0798482204872f33f6e84437d512dce7dbc95c18",
+    "support_objects": [
+      "03_left_fan_duct.stl",
+      "04_right_fan_duct.stl"
+    ]
+  },
+  {
+    "family": "ducted",
+    "revision": "RevH",
+    "application": "BambuStudio-02.07.01.62",
+    "printer": "H2S",
+    "material": "PLA",
+    "file": "Repro_RevH_ducted_H2S_PLA_Complete.3mf",
+    "plates": 9,
+    "objects": 14,
+    "sha256": "d602025538e270d09643140e1fcc1f9744d1c67431cc4f29fd0835617bd38d4d",
+    "support_objects": [
+      "04_right_fan_duct.stl",
+      "03_left_fan_duct.stl"
+    ]
+  },
+  {
+    "family": "ducted",
+    "revision": "RevH",
+    "application": "BambuStudio-02.07.01.62",
+    "printer": "P1S",
+    "material": "ASA",
+    "file": "Repro_RevH_ducted_P1S_ASA_Complete.3mf",
+    "plates": 9,
+    "objects": 14,
+    "sha256": "7f29861803c1f7fd160db6c561ca93a33d0c074aa8ff4f5c0a651063710c863a",
+    "support_objects": [
+      "03_left_fan_duct.stl",
+      "04_right_fan_duct.stl"
+    ]
+  },
+  {
+    "family": "ducted",
+    "revision": "RevH",
+    "application": "BambuStudio-02.07.01.62",
+    "printer": "P1S",
+    "material": "PETG",
+    "file": "Repro_RevH_ducted_P1S_PETG_Complete.3mf",
+    "plates": 9,
+    "objects": 14,
+    "sha256": "bc0335f527fac7c7496ad1a07fd7da691d881068923886a423746e344c1a458b",
+    "support_objects": [
+      "04_right_fan_duct.stl",
+      "03_left_fan_duct.stl"
+    ]
+  },
+  {
+    "family": "ducted",
+    "revision": "RevH",
+    "application": "BambuStudio-02.07.01.62",
+    "printer": "P1S",
+    "material": "PLA",
+    "file": "Repro_RevH_ducted_P1S_PLA_Complete.3mf",
+    "plates": 9,
+    "objects": 14,
+    "sha256": "24df76f6d7992336f0c6546cd0052b6703b4b0bcdb306810290d6a9545d6ee55",
+    "support_objects": [
+      "04_right_fan_duct.stl",
+      "03_left_fan_duct.stl"
+    ]
+  },
+  {
+    "family": "ducted",
+    "revision": "RevH",
+    "application": "BambuStudio-02.07.01.62",
+    "printer": "P2S",
+    "material": "ASA",
+    "file": "Repro_RevH_ducted_P2S_ASA_Complete.3mf",
+    "plates": 9,
+    "objects": 14,
+    "sha256": "d6b83544559d04e4e2bfa5fe15893ba3d79155686325ecdac459b2ddf4bf2242",
+    "support_objects": [
+      "03_left_fan_duct.stl",
+      "04_right_fan_duct.stl"
+    ]
+  },
+  {
+    "family": "ducted",
+    "revision": "RevH",
+    "application": "BambuStudio-02.07.01.62",
+    "printer": "P2S",
+    "material": "PETG",
+    "file": "Repro_RevH_ducted_P2S_PETG_Complete.3mf",
+    "plates": 9,
+    "objects": 14,
+    "sha256": "cb318e41530b445745a72fff8c307d168a65fe6df959cb495404c5d8392bf49e",
+    "support_objects": [
+      "03_left_fan_duct.stl",
+      "04_right_fan_duct.stl"
+    ]
+  },
+  {
+    "family": "ducted",
+    "revision": "RevH",
+    "application": "BambuStudio-02.07.01.62",
+    "printer": "P2S",
+    "material": "PLA",
+    "file": "Repro_RevH_ducted_P2S_PLA_Complete.3mf",
+    "plates": 9,
+    "objects": 14,
+    "sha256": "deb5b9cbcea0486977426b0e3cff133e9376b65ff68b2a3cbbaa5bfc38976b38",
+    "support_objects": [
+      "04_right_fan_duct.stl",
+      "03_left_fan_duct.stl"
+    ]
+  },
+  {
+    "family": "ducted",
+    "revision": "RevH",
+    "application": "BambuStudio-02.07.01.62",
+    "printer": "X1C",
+    "material": "ASA",
+    "file": "Repro_RevH_ducted_X1C_ASA_Complete.3mf",
+    "plates": 9,
+    "objects": 14,
+    "sha256": "3d5c448bc107543aaaf255cb2c55d5e3c78d8266afcf51ff273d653b841dd8f1",
+    "support_objects": [
+      "04_right_fan_duct.stl",
+      "03_left_fan_duct.stl"
+    ]
+  },
+  {
+    "family": "ducted",
+    "revision": "RevH",
+    "application": "BambuStudio-02.07.01.62",
+    "printer": "X1C",
+    "material": "PETG",
+    "file": "Repro_RevH_ducted_X1C_PETG_Complete.3mf",
+    "plates": 9,
+    "objects": 14,
+    "sha256": "23bac970f27fb878fa734edd3e15eb413d63d732375159169941d78ab3801151",
+    "support_objects": [
+      "03_left_fan_duct.stl",
+      "04_right_fan_duct.stl"
+    ]
+  },
+  {
+    "family": "ducted",
+    "revision": "RevH",
+    "application": "BambuStudio-02.07.01.62",
+    "printer": "X1C",
+    "material": "PLA",
+    "file": "Repro_RevH_ducted_X1C_PLA_Complete.3mf",
+    "plates": 9,
+    "objects": 14,
+    "sha256": "5bb01687dcf25ff993bed5eec13623fce722d2b96552a0e5df7dc8694e945db1",
+    "support_objects": [
+      "04_right_fan_duct.stl",
+      "03_left_fan_duct.stl"
+    ]
+  },
+  {
+    "family": "modular",
+    "revision": "M1.1",
+    "application": "BambuStudio-02.07.01.62",
+    "printer": "A1",
+    "material": "PETG",
+    "file": "Repro_M1.1_modular_A1_PETG.3mf",
+    "plates": 4,
+    "objects": 9,
+    "sha256": "640f3938e667454ed6080ec0ef2f9560e159769a11e4e22a5a49aa8380f6e4f0",
+    "support_objects": []
+  },
+  {
+    "family": "modular",
+    "revision": "M1.1",
+    "application": "BambuStudio-02.07.01.62",
+    "printer": "A1",
+    "material": "PLA",
+    "file": "Repro_M1.1_modular_A1_PLA.3mf",
+    "plates": 4,
+    "objects": 9,
+    "sha256": "ff9d669dadb58e56a572703ba92f2d2a5cdffb36e5d1d189a0ea5eecf24d2ec5",
+    "support_objects": []
+  },
+  {
+    "family": "modular",
+    "revision": "M1.1",
+    "application": "BambuStudio-02.07.01.62",
+    "printer": "H2C",
+    "material": "ASA",
+    "file": "Repro_M1.1_modular_H2C_ASA.3mf",
+    "plates": 3,
+    "objects": 9,
+    "sha256": "c1b77f2857d0d97e019681fc419a80b47abe0d99ac69a05b2e9a54e3930efbfb",
+    "support_objects": []
+  },
+  {
+    "family": "modular",
+    "revision": "M1.1",
+    "application": "BambuStudio-02.07.01.62",
+    "printer": "H2C",
+    "material": "PETG",
+    "file": "Repro_M1.1_modular_H2C_PETG.3mf",
+    "plates": 3,
+    "objects": 9,
+    "sha256": "a52c861105ea2fb52e16e9b1f1049c271a1bbef23a72ca08e9d9d58d95676ff2",
+    "support_objects": []
+  },
+  {
+    "family": "modular",
+    "revision": "M1.1",
+    "application": "BambuStudio-02.07.01.62",
+    "printer": "H2C",
+    "material": "PLA",
+    "file": "Repro_M1.1_modular_H2C_PLA.3mf",
+    "plates": 3,
+    "objects": 9,
+    "sha256": "769ae944949fdf942cf5c71e246245dc5895b6cd248fb513d66c2865e8cd17c3",
+    "support_objects": []
+  },
+  {
+    "family": "modular",
+    "revision": "M1.1",
+    "application": "BambuStudio-02.07.01.62",
+    "printer": "H2D",
+    "material": "ASA",
+    "file": "Repro_M1.1_modular_H2D_ASA.3mf",
+    "plates": 3,
+    "objects": 9,
+    "sha256": "b773936960c789ca75030d67fb9fe0bfd0cc63d31965de7a38777f318c9e3720",
+    "support_objects": []
+  },
+  {
+    "family": "modular",
+    "revision": "M1.1",
+    "application": "BambuStudio-02.07.01.62",
+    "printer": "H2D",
+    "material": "PETG",
+    "file": "Repro_M1.1_modular_H2D_PETG.3mf",
+    "plates": 3,
+    "objects": 9,
+    "sha256": "89fd6cef4f4a5a285eafbc0cdb5dac75027eae8c2fb092ef62302b7068053b53",
+    "support_objects": []
+  },
+  {
+    "family": "modular",
+    "revision": "M1.1",
+    "application": "BambuStudio-02.07.01.62",
+    "printer": "H2D",
+    "material": "PLA",
+    "file": "Repro_M1.1_modular_H2D_PLA.3mf",
+    "plates": 3,
+    "objects": 9,
+    "sha256": "7b7c889731401feb20c513dc750a2f268af623040e86b34083c7a549821cbc2c",
+    "support_objects": []
+  },
+  {
+    "family": "modular",
+    "revision": "M1.1",
+    "application": "BambuStudio-02.07.01.62",
+    "printer": "H2S",
+    "material": "ASA",
+    "file": "Repro_M1.1_modular_H2S_ASA.3mf",
+    "plates": 2,
+    "objects": 9,
+    "sha256": "19c47445d268c80609a9449d30a6f301725eb5541ca425c863e7f2bc15af78d9",
+    "support_objects": []
+  },
+  {
+    "family": "modular",
+    "revision": "M1.1",
+    "application": "BambuStudio-02.07.01.62",
+    "printer": "H2S",
+    "material": "PETG",
+    "file": "Repro_M1.1_modular_H2S_PETG.3mf",
+    "plates": 2,
+    "objects": 9,
+    "sha256": "0723b3ef3651582f7cdb14ee753561f8d3f797e728295a815f95d55eaa3eaf3a",
+    "support_objects": []
+  },
+  {
+    "family": "modular",
+    "revision": "M1.1",
+    "application": "BambuStudio-02.07.01.62",
+    "printer": "H2S",
+    "material": "PLA",
+    "file": "Repro_M1.1_modular_H2S_PLA.3mf",
+    "plates": 2,
+    "objects": 9,
+    "sha256": "aa3ce15edb8940d06ce9163133512e7eaf890254d734aa6677d39f16d4edecbd",
+    "support_objects": []
+  },
+  {
+    "family": "modular",
+    "revision": "M1.1",
+    "application": "BambuStudio-02.07.01.62",
+    "printer": "P1S",
+    "material": "ASA",
+    "file": "Repro_M1.1_modular_P1S_ASA.3mf",
+    "plates": 4,
+    "objects": 9,
+    "sha256": "507c06e896f69373217c9bd93adc1f11e74f0dd2b824d115d1b434bcbc283318",
+    "support_objects": []
+  },
+  {
+    "family": "modular",
+    "revision": "M1.1",
+    "application": "BambuStudio-02.07.01.62",
+    "printer": "P1S",
+    "material": "PETG",
+    "file": "Repro_M1.1_modular_P1S_PETG.3mf",
+    "plates": 4,
+    "objects": 9,
+    "sha256": "b404a17c0f063d0e7b38cc6a74eb0e721204d36f96903f5d8dc1cdef4ba97db5",
+    "support_objects": []
+  },
+  {
+    "family": "modular",
+    "revision": "M1.1",
+    "application": "BambuStudio-02.07.01.62",
+    "printer": "P1S",
+    "material": "PLA",
+    "file": "Repro_M1.1_modular_P1S_PLA.3mf",
+    "plates": 4,
+    "objects": 9,
+    "sha256": "7b7e4418fbc17e7bd2c0f9704a89ce89067455f736d0ca2a2f6865b271f37dd9",
+    "support_objects": []
+  },
+  {
+    "family": "modular",
+    "revision": "M1.1",
+    "application": "BambuStudio-02.07.01.62",
+    "printer": "P2S",
+    "material": "ASA",
+    "file": "Repro_M1.1_modular_P2S_ASA.3mf",
+    "plates": 4,
+    "objects": 9,
+    "sha256": "5bbb3f396693716ec12399f89f212b03e092cbed70564488d3574eb72a5bd5e5",
+    "support_objects": []
+  },
+  {
+    "family": "modular",
+    "revision": "M1.1",
+    "application": "BambuStudio-02.07.01.62",
+    "printer": "P2S",
+    "material": "PETG",
+    "file": "Repro_M1.1_modular_P2S_PETG.3mf",
+    "plates": 4,
+    "objects": 9,
+    "sha256": "be217d4b1404780778fd9518b0667da9f5d91c5f8331502a79062ee9532f9820",
+    "support_objects": []
+  },
+  {
+    "family": "modular",
+    "revision": "M1.1",
+    "application": "BambuStudio-02.07.01.62",
+    "printer": "P2S",
+    "material": "PLA",
+    "file": "Repro_M1.1_modular_P2S_PLA.3mf",
+    "plates": 4,
+    "objects": 9,
+    "sha256": "ad419df752b725053e309f9a6b513235ae4bc1a475ebeb2d54a78e19875ffbb0",
+    "support_objects": []
+  },
+  {
+    "family": "modular",
+    "revision": "M1.1",
+    "application": "BambuStudio-02.07.01.62",
+    "printer": "X1C",
+    "material": "ASA",
+    "file": "Repro_M1.1_modular_X1C_ASA.3mf",
+    "plates": 4,
+    "objects": 9,
+    "sha256": "f37c7e559fde6ab67d3026c380e14cc71425a017bdc17ecc30d3f89c55d618e0",
+    "support_objects": []
+  },
+  {
+    "family": "modular",
+    "revision": "M1.1",
+    "application": "BambuStudio-02.07.01.62",
+    "printer": "X1C",
+    "material": "PETG",
+    "file": "Repro_M1.1_modular_X1C_PETG.3mf",
+    "plates": 4,
+    "objects": 9,
+    "sha256": "c25ad0008b971f3f8ed9825ddae41a7b398305eca6cf5f046753c0b308d53c48",
+    "support_objects": []
+  },
+  {
+    "family": "modular",
+    "revision": "M1.1",
+    "application": "BambuStudio-02.07.01.62",
+    "printer": "X1C",
+    "material": "PLA",
+    "file": "Repro_M1.1_modular_X1C_PLA.3mf",
+    "plates": 4,
+    "objects": 9,
+    "sha256": "1f06d42e9f86b9fe6ef9c9bfe11f25daa58993b2254e101ba4ab2fd296dcd906",
+    "support_objects": []
+  },
+  {
+    "family": "fanless",
+    "revision": "Gusseted",
+    "application": "BambuStudio-02.07.01.62",
+    "printer": "A1",
+    "material": "PETG",
+    "file": "Repro_Gusseted_fanless_A1_PETG.3mf",
+    "plates": 1,
+    "objects": 2,
+    "sha256": "e20a204b597540ba379f7767b575ab0a16bad3af25f1ee78cc6952d6bef2a186",
+    "support_objects": []
+  },
+  {
+    "family": "fanless",
+    "revision": "Gusseted",
+    "application": "BambuStudio-02.07.01.62",
+    "printer": "A1",
+    "material": "PLA",
+    "file": "Repro_Gusseted_fanless_A1_PLA.3mf",
+    "plates": 1,
+    "objects": 2,
+    "sha256": "96efd1854a006d845dfe432ed4cdd9273facd2c6bd9d76cee126f33c839797f1",
+    "support_objects": []
+  },
+  {
+    "family": "fanless",
+    "revision": "Gusseted",
+    "application": "BambuStudio-02.07.01.62",
+    "printer": "H2C",
+    "material": "ASA",
+    "file": "Repro_Gusseted_fanless_H2C_ASA.3mf",
+    "plates": 1,
+    "objects": 2,
+    "sha256": "7e420580d8e8d81402fd79d33a85b4d7d0fb1ed2b71d0f2649ab54730ed21fb9",
+    "support_objects": []
+  },
+  {
+    "family": "fanless",
+    "revision": "Gusseted",
+    "application": "BambuStudio-02.07.01.62",
+    "printer": "H2C",
+    "material": "PETG",
+    "file": "Repro_Gusseted_fanless_H2C_PETG.3mf",
+    "plates": 1,
+    "objects": 2,
+    "sha256": "c2474dce0b5a2b3cb94eb1a0ee5bb93dd846a9a058ec4a6ddfd627659f4fb209",
+    "support_objects": []
+  },
+  {
+    "family": "fanless",
+    "revision": "Gusseted",
+    "application": "BambuStudio-02.07.01.62",
+    "printer": "H2C",
+    "material": "PLA",
+    "file": "Repro_Gusseted_fanless_H2C_PLA.3mf",
+    "plates": 1,
+    "objects": 2,
+    "sha256": "3510fa9daaf21937081a8e87fd18db783fcdace0d29022112be7829ff80e83f2",
+    "support_objects": []
+  },
+  {
+    "family": "fanless",
+    "revision": "Gusseted",
+    "application": "BambuStudio-02.07.01.62",
+    "printer": "H2D",
+    "material": "ASA",
+    "file": "Repro_Gusseted_fanless_H2D_ASA.3mf",
+    "plates": 1,
+    "objects": 2,
+    "sha256": "072d413e47a842d5d7670874c31cce3b0de875c93205748894f7828dc7791cd1",
+    "support_objects": []
+  },
+  {
+    "family": "fanless",
+    "revision": "Gusseted",
+    "application": "BambuStudio-02.07.01.62",
+    "printer": "H2D",
+    "material": "PETG",
+    "file": "Repro_Gusseted_fanless_H2D_PETG.3mf",
+    "plates": 1,
+    "objects": 2,
+    "sha256": "7e97a10d6f83e6bdd2d62101abcaea2c9e25fc18bd8c8fdb70ae07dcf3836ba9",
+    "support_objects": []
+  },
+  {
+    "family": "fanless",
+    "revision": "Gusseted",
+    "application": "BambuStudio-02.07.01.62",
+    "printer": "H2D",
+    "material": "PLA",
+    "file": "Repro_Gusseted_fanless_H2D_PLA.3mf",
+    "plates": 1,
+    "objects": 2,
+    "sha256": "e54bcb98ec08e5a820f8ede35d6522b260d894310a2b601cd92ab3b4ca24d4ed",
+    "support_objects": []
+  },
+  {
+    "family": "fanless",
+    "revision": "Gusseted",
+    "application": "BambuStudio-02.07.01.62",
+    "printer": "H2S",
+    "material": "ASA",
+    "file": "Repro_Gusseted_fanless_H2S_ASA.3mf",
+    "plates": 1,
+    "objects": 2,
+    "sha256": "fdfeb53e6420ba8ea70d2de9b58f928416b15f5518e17512d869a6ee47fc5825",
+    "support_objects": []
+  },
+  {
+    "family": "fanless",
+    "revision": "Gusseted",
+    "application": "BambuStudio-02.07.01.62",
+    "printer": "H2S",
+    "material": "PETG",
+    "file": "Repro_Gusseted_fanless_H2S_PETG.3mf",
+    "plates": 1,
+    "objects": 2,
+    "sha256": "83a3c30ecc4f3e4716e90d6cfd0cf6f2ac205d333b2fa887a6b4c8d505597fce",
+    "support_objects": []
+  },
+  {
+    "family": "fanless",
+    "revision": "Gusseted",
+    "application": "BambuStudio-02.07.01.62",
+    "printer": "H2S",
+    "material": "PLA",
+    "file": "Repro_Gusseted_fanless_H2S_PLA.3mf",
+    "plates": 1,
+    "objects": 2,
+    "sha256": "6c1deb5721ed4c573312f56b8cd0554301262fe5fbdb58bc5e7eb1cc11842d72",
+    "support_objects": []
+  },
+  {
+    "family": "fanless",
+    "revision": "Gusseted",
+    "application": "BambuStudio-02.07.01.62",
+    "printer": "P1S",
+    "material": "ASA",
+    "file": "Repro_Gusseted_fanless_P1S_ASA.3mf",
+    "plates": 1,
+    "objects": 2,
+    "sha256": "208822e448968c452ee4b071c624660992d2ad600f2e4989e39979f0c05a4208",
+    "support_objects": []
+  },
+  {
+    "family": "fanless",
+    "revision": "Gusseted",
+    "application": "BambuStudio-02.07.01.62",
+    "printer": "P1S",
+    "material": "PETG",
+    "file": "Repro_Gusseted_fanless_P1S_PETG.3mf",
+    "plates": 1,
+    "objects": 2,
+    "sha256": "e40241f95cd1b6278c8194de0b3d49daa1513c10dafae89a87dbe6858e968aab",
+    "support_objects": []
+  },
+  {
+    "family": "fanless",
+    "revision": "Gusseted",
+    "application": "BambuStudio-02.07.01.62",
+    "printer": "P1S",
+    "material": "PLA",
+    "file": "Repro_Gusseted_fanless_P1S_PLA.3mf",
+    "plates": 1,
+    "objects": 2,
+    "sha256": "659d9de8e18cd5bda12b121b04cf4418edf100d63dff37ce243af35a324aa633",
+    "support_objects": []
+  },
+  {
+    "family": "fanless",
+    "revision": "Gusseted",
+    "application": "BambuStudio-02.07.01.62",
+    "printer": "P2S",
+    "material": "ASA",
+    "file": "Repro_Gusseted_fanless_P2S_ASA.3mf",
+    "plates": 1,
+    "objects": 2,
+    "sha256": "e9e4a6f2b9ae0a2059b87ed7167247da7263af26caaf939eebcfa6f48716a4ad",
+    "support_objects": []
+  },
+  {
+    "family": "fanless",
+    "revision": "Gusseted",
+    "application": "BambuStudio-02.07.01.62",
+    "printer": "P2S",
+    "material": "PETG",
+    "file": "Repro_Gusseted_fanless_P2S_PETG.3mf",
+    "plates": 1,
+    "objects": 2,
+    "sha256": "adbc2e43e326c47d5955122ada2338d7867b28c0701a3ee7a7c4223f263445f3",
+    "support_objects": []
+  },
+  {
+    "family": "fanless",
+    "revision": "Gusseted",
+    "application": "BambuStudio-02.07.01.62",
+    "printer": "P2S",
+    "material": "PLA",
+    "file": "Repro_Gusseted_fanless_P2S_PLA.3mf",
+    "plates": 1,
+    "objects": 2,
+    "sha256": "c781acf2d7dee3bac3a7e9021128bada4af4f567cf566a38cda4a5c92c06ad10",
+    "support_objects": []
+  },
+  {
+    "family": "fanless",
+    "revision": "Gusseted",
+    "application": "BambuStudio-02.07.01.62",
+    "printer": "X1C",
+    "material": "ASA",
+    "file": "Repro_Gusseted_fanless_X1C_ASA.3mf",
+    "plates": 1,
+    "objects": 2,
+    "sha256": "ed1fe2319e2d8ca737f2e02ff331a5505f84e08dac8141b631ced2375c5bfb63",
+    "support_objects": []
+  },
+  {
+    "family": "fanless",
+    "revision": "Gusseted",
+    "application": "BambuStudio-02.07.01.62",
+    "printer": "X1C",
+    "material": "PETG",
+    "file": "Repro_Gusseted_fanless_X1C_PETG.3mf",
+    "plates": 1,
+    "objects": 2,
+    "sha256": "daefba1dbaa1650a55536087c7ec5cacb29e155bdcffbbe03e63a27d614d3db9",
+    "support_objects": []
+  },
+  {
+    "family": "fanless",
+    "revision": "Gusseted",
+    "application": "BambuStudio-02.07.01.62",
+    "printer": "X1C",
+    "material": "PLA",
+    "file": "Repro_Gusseted_fanless_X1C_PLA.3mf",
+    "plates": 1,
+    "objects": 2,
+    "sha256": "c1341bb3a81131f9e8422ed9ee09d03015dc544cd5ae86470cc52aa8b7e5892b",
+    "support_objects": []
+  }
+]
