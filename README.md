@@ -1,3 +1,11 @@
+# Cloud topology experiment
+
+This branch explores a **fanless, low-plastic PETG mount**. [Read the topology study](topology/README.md) for actual solver results, print assumptions and reproduction instructions. Study meshes are not installation-ready parts.
+
+![Topology study](topology/results/print_view.png)
+
+---
+
 # Precision 5560 wall mount
 
 **Revision H is the selected print model:** native FreeCAD, refined fit and finish,

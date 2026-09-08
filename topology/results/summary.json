@@ -1,0 +1,74 @@
+{
+  "solid": {
+    "area_mm2": 5400.0,
+    "perimeter_mm": 300.0,
+    "cad_volume_mm3": 54000.0,
+    "core_area_mm2": 5045.759999999999,
+    "polymer_volume_mm3": 21707.136000000002,
+    "estimated_pair_mass_g": 55.13612544000001,
+    "equivalent_solid_fraction": 0.40198400000000006,
+    "fea_cells": 1350,
+    "loadcase_max_displacement_mm": [
+      0.07944039727781452,
+      0.027813374119605768
+    ],
+    "peak_homogenized_von_mises_MPa": 1.578173775778345,
+    "mesh_area_difference_percent": 0.0,
+    "stl_watertight": true,
+    "stl_volume_mm3": 54000.0
+  },
+  "v40": {
+    "area_mm2": 2528.0,
+    "perimeter_mm": 464.0,
+    "cad_volume_mm3": 25280.0,
+    "core_area_mm2": 1965.4399999999973,
+    "polymer_volume_mm3": 12701.184000000016,
+    "estimated_pair_mass_g": 32.26100736000004,
+    "equivalent_solid_fraction": 0.5024202531645576,
+    "fea_cells": 632,
+    "loadcase_max_displacement_mm": [
+      0.10553011548023342,
+      0.03312582270803247
+    ],
+    "peak_homogenized_von_mises_MPa": 2.1064832526470956,
+    "mesh_area_difference_percent": 0.0,
+    "stl_watertight": true,
+    "stl_volume_mm3": 25280.0
+  },
+  "v25": {
+    "area_mm2": 1812.0,
+    "perimeter_mm": 464.0,
+    "cad_volume_mm3": 18120.0,
+    "core_area_mm2": 1255.1999999999994,
+    "polymer_volume_mm3": 10086.720000000005,
+    "estimated_pair_mass_g": 25.620268800000012,
+    "equivalent_solid_fraction": 0.5566622516556294,
+    "fea_cells": 453,
+    "loadcase_max_displacement_mm": [
+      0.14036417070849527,
+      0.04372767007442427
+    ],
+    "peak_homogenized_von_mises_MPa": 2.5411923072446303,
+    "mesh_area_difference_percent": 0.0,
+    "stl_watertight": true,
+    "stl_volume_mm3": 18120.0
+  },
+  "faceted25": {
+    "area_mm2": 1818.0,
+    "perimeter_mm": 418.36161753121837,
+    "cad_volume_mm3": 18180.0,
+    "core_area_mm2": 1316.0470858795177,
+    "polymer_volume_mm3": 9757.298650371087,
+    "estimated_pair_mass_g": 24.783538571942564,
+    "equivalent_solid_fraction": 0.5367050962800378,
+    "fea_cells": 459,
+    "loadcase_max_displacement_mm": [
+      0.14897825554443977,
+      0.04465434097381575
+    ],
+    "peak_homogenized_von_mises_MPa": 2.5514056697641245,
+    "mesh_area_difference_percent": 0.990099009900991,
+    "stl_watertight": true,
+    "stl_volume_mm3": 18180.0
+  }
+}

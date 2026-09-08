@@ -1,0 +1,128 @@
+[
+  {
+    "package": "calculix-ccx",
+    "version": "2.21-1",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/c/calculix-ccx/calculix-ccx_2.21-1_amd64.deb",
+    "sha256": "796f7e0c518817651c4b82d3fb14e38ceebc2b8d2cd503db9e5c2fec21ae2fd3"
+  },
+  {
+    "package": "libarpack2t64",
+    "version": "3.9.1-1.1build2",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/a/arpack/libarpack2t64_3.9.1-1.1build2_amd64.deb",
+    "sha256": "b9d203dd5fbbd8ce353c9ac366d02fe029f4e59d9e29554d8f63ef5674d62519"
+  },
+  {
+    "package": "libblas3",
+    "version": "3.12.0-3build1",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/l/lapack/libblas3_3.12.0-3build1_amd64.deb",
+    "sha256": "0a161e527a76597f8b65eff103f3871c6f441a91a8359adbe097015e0af3c154"
+  },
+  {
+    "package": "libevent-core-2.1-7t64",
+    "version": "2.1.12-stable-9ubuntu2",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/libe/libevent/libevent-core-2.1-7t64_2.1.12-stable-9ubuntu2_amd64.deb",
+    "sha256": "3da51e864e4067779a2ba3a87daf5e4d8030c0aaa6291a1ce12483d4f73bf752"
+  },
+  {
+    "package": "libevent-pthreads-2.1-7t64",
+    "version": "2.1.12-stable-9ubuntu2",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/libe/libevent/libevent-pthreads-2.1-7t64_2.1.12-stable-9ubuntu2_amd64.deb",
+    "sha256": "f9bf6e3681179df772eea7d04b98b597560c428c39b7fca05bfaf64691c327b1"
+  },
+  {
+    "package": "libfabric1",
+    "version": "1.17.0-3build2",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/libf/libfabric/libfabric1_1.17.0-3build2_amd64.deb",
+    "sha256": "804fe1206ed62d370bc5f5b1714ddb75264012c4181fb46e493e262d3102f5ca"
+  },
+  {
+    "package": "libgfortran5",
+    "version": "14-20240412-0ubuntu1",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/g/gcc-14/libgfortran5_14-20240412-0ubuntu1_amd64.deb",
+    "sha256": "86d85417b95626b45080550fc03c7a83a05f100454987b722901da20fc358682"
+  },
+  {
+    "package": "libhwloc15",
+    "version": "2.10.0-1build1",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/h/hwloc/libhwloc15_2.10.0-1build1_amd64.deb",
+    "sha256": "45acb4e6676f968d0f32ff1c5115cad0b61165931afa1a59282bda6f00d13c3b"
+  },
+  {
+    "package": "libibverbs1",
+    "version": "50.0-2build2",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/r/rdma-core/libibverbs1_50.0-2build2_amd64.deb",
+    "sha256": "731e9d88e498b1a8b03a4eaf6e3ed6227f1c4646b9931256f7e234b42ae618dd"
+  },
+  {
+    "package": "liblapack3",
+    "version": "3.12.0-3build1",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/l/lapack/liblapack3_3.12.0-3build1_amd64.deb",
+    "sha256": "02fb8be068c4e306a9e8138bfead1bc58f2b3c4d2306b4e0c66f1fbf42d72b73"
+  },
+  {
+    "package": "libmunge2",
+    "version": "0.5.15-4build1",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/m/munge/libmunge2_0.5.15-4build1_amd64.deb",
+    "sha256": "944e4d5b2c19c7351a3816daf569eda36cbd245102e8d33d178e54e6e560184f"
+  },
+  {
+    "package": "libnl-3-200",
+    "version": "3.7.0-0.3build1",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/libn/libnl3/libnl-3-200_3.7.0-0.3build1_amd64.deb",
+    "sha256": "0afff6a14f55122757db02ff7e11ad58f128465fd796e2e33a0b0fe5b45a09ed"
+  },
+  {
+    "package": "libnl-route-3-200",
+    "version": "3.7.0-0.3build1",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/libn/libnl3/libnl-route-3-200_3.7.0-0.3build1_amd64.deb",
+    "sha256": "8abfa9a87f78dbba7edc19ef4cfcb16b70dde562bccc3ff7550bdd3a0487e358"
+  },
+  {
+    "package": "libopenmpi3t64",
+    "version": "4.1.6-7ubuntu2",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/o/openmpi/libopenmpi3t64_4.1.6-7ubuntu2_amd64.deb",
+    "sha256": "4709aa89fd1064c6df3b8e7e460f530d8f2df24937a1d8df8fbf4948b391e99b"
+  },
+  {
+    "package": "libpmix2t64",
+    "version": "5.0.1-4.1build1",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/p/pmix/libpmix2t64_5.0.1-4.1build1_amd64.deb",
+    "sha256": "54874f3e936e9862c2fdc2785a61e6e7220739228f911c150d41dffd788bedd0"
+  },
+  {
+    "package": "libpsm-infinipath1",
+    "version": "3.3+20.604758e7-6.3build1",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/i/infinipath-psm/libpsm-infinipath1_3.3+20.604758e7-6.3build1_amd64.deb",
+    "sha256": "56e190ab22563014ed60bf9c15e20a46949dda21284ff32a5e5354addde6c6bc"
+  },
+  {
+    "package": "libpsm2-2",
+    "version": "11.2.185-2build1",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/libp/libpsm2/libpsm2-2_11.2.185-2build1_amd64.deb",
+    "sha256": "ff1c78b8feda2bb3537a8a2e93d5266be76c0c172b9e52dddc98509b7e18c420"
+  },
+  {
+    "package": "libquadmath0",
+    "version": "14-20240412-0ubuntu1",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/g/gcc-14/libquadmath0_14-20240412-0ubuntu1_amd64.deb",
+    "sha256": "be0bd561a1133ef6622f58112126687f6d3b768ca8b70ed485be4787828d5f1c"
+  },
+  {
+    "package": "librdmacm1t64",
+    "version": "50.0-2build2",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/r/rdma-core/librdmacm1t64_50.0-2build2_amd64.deb",
+    "sha256": "553a33a0ec101d2a0784d27b55288067048df80e87f8a63426813d0ffef40250"
+  },
+  {
+    "package": "libspooles2.2t64",
+    "version": "2.2-14.1build2",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/s/spooles/libspooles2.2t64_2.2-14.1build2_amd64.deb",
+    "sha256": "a468c54002b95c4ad358b4436c1efd58f189697b11fb67c257c0d4641ddc8e75"
+  },
+  {
+    "package": "libucx0",
+    "version": "1.16.0+ds-5ubuntu1",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/u/ucx/libucx0_1.16.0+ds-5ubuntu1_amd64.deb",
+    "sha256": "1138ee6dd436a0111a7d5dbbad38ec4d82f3245bf3b32782973426ebf9b05e15"
+  }
+]
