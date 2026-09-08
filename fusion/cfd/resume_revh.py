@@ -82,7 +82,8 @@ def main():
         deadline=now()+timedelta(seconds=remaining)
     control=case/'system/controlDict'
     text=re.sub(r'startFrom\s+\w+;','startFrom latestTime;',control.read_text(),count=1)
-    text=re.sub(r'writeCompression\s+\w+;','writeCompression on;',text,count=1)
+    # v2412 disables gzip for binary output. Keep exact binary precision.
+    text=re.sub(r'writeCompression\s+\w+;','writeCompression off;',text,count=1)
     control.write_text(text)
     state.update(state='restarting_from_checkpoint',resume_elapsed_seconds=baseline,
                  budget_seconds=math.ceil(baseline+remaining),cpu_workers=ranks,
@@ -94,7 +95,7 @@ def main():
            'authorized_deadline_utc':deadline.isoformat(),'idle_between_sessions_excluded':True,
            'native_previous_step_fields_preserved':True}
     manifest.setdefault('continuation_sessions',[]).append(entry)
-    manifest['checkpoint_compression']='Native OpenFOAM gzip, lossless binary fields; same precision and old-time history.'
+    manifest['checkpoint_compression']='Uncompressed native binary fields; OpenFOAM v2412 disables gzip for non-ascii output. Same precision and old-time history.'
     for root in [case,mirror]:
         (root/'case_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
         (root/'run-status.json').write_text(json.dumps(state,indent=2)+'\n')

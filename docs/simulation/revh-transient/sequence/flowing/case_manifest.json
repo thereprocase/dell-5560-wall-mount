@@ -653,5 +653,5 @@
       "native_previous_step_fields_preserved": true
     }
   ],
-  "checkpoint_compression": "Native OpenFOAM gzip, lossless binary fields; same precision and old-time history."
+  "checkpoint_compression": "Uncompressed native binary fields; OpenFOAM v2412 disables gzip for non-ascii output. Same precision and old-time history."
 }

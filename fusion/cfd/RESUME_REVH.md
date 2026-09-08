@@ -13,8 +13,9 @@ The WSL cases live under `/home/repro/code/dell5560-cfd-gpu-20260908`:
 
 `run-status.json` records progress and the authorized UTC deadline.
 `run-control.json` supplies that deadline and the graceful stop flag. Full native
-fields are written every half-hour, with `purgeWrite 0`. New writes use lossless
-OpenFOAM gzip. At a normal stop, `resume-checkpoint.json` records the latest time,
+fields are written every half-hour, with `purgeWrite 0`. They retain native binary
+precision: OpenFOAM v2412 disables gzip for non-ascii output. A separate lossless
+compression trial saved only about 5%. At a normal stop, `resume-checkpoint.json` records the latest time,
 worker count, mesh hashes, native time metadata, and hashes of the exact
 uncompressed current and previous-step field bytes. Older checkpoints remain.
 
