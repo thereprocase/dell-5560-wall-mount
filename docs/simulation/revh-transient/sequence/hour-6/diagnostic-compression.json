@@ -1,0 +1,53 @@
+{
+  "method": "Lossless gzip level 9; every decompressed byte verified before staging.",
+  "files": {
+    "diagnostics.json.gz": {
+      "uncompressed_sha256": "b5575306e9c94486bd8fb78ff252d5eebfa768eb49e4643ac1ac4fcb4b50693b",
+      "compressed_sha256": "f5e6ab4012139b5bef14373d75cdc6490192d7306df887ced57a6aad8807ca10",
+      "uncompressed_bytes": 2818717,
+      "compressed_bytes": 648527
+    },
+    "diagnostic-raw/ambient_abs_flux-surfaceFieldValue.dat.txt.gz": {
+      "uncompressed_sha256": "ef2fe69d96d893541c782f889d171cd3d1914f2ff4f508db9d20879a3870d6d6",
+      "compressed_sha256": "955ddcce7904ddcbfc4b9d6bf8d0d1bdc2af51e0a5f34149c25a056d3227c1ed",
+      "uncompressed_bytes": 27702,
+      "compressed_bytes": 7379
+    },
+    "diagnostic-raw/ambient_flux-surfaceFieldValue.dat.txt.gz": {
+      "uncompressed_sha256": "1d2dbc1a2c5c4ca2329acc4d33c49d94cbd63b18becabf770953d98180b3cca3",
+      "compressed_sha256": "efa8916bbb690c3859f8cdc3c0b1429c5322a3fe1d9817af87c0e4a06ff4bff0",
+      "uncompressed_bytes": 28105,
+      "compressed_bytes": 7726
+    },
+    "diagnostic-raw/extrema-fieldMinMax.dat.txt.gz": {
+      "uncompressed_sha256": "a009b1c35271e0e4a61c4b0e32a7a0c6e9263c6448a0426271fad3a5aeb5167b",
+      "compressed_sha256": "c9730bc373858face910bde3674b2cfbf5ede1c0c13d3d4ad8ab4aac30ed505a",
+      "uncompressed_bytes": 556349,
+      "compressed_bytes": 47452
+    },
+    "diagnostic-raw/probes-p.txt.gz": {
+      "uncompressed_sha256": "e627e6a95ccd1662a925423ca95b76a44278986ee45d05d50f365e7c201a5b46",
+      "compressed_sha256": "3be893a6edf5fef9556048257522ba09070dff025918dfc882c5f99cc887fcd4",
+      "uncompressed_bytes": 316780,
+      "compressed_bytes": 100558
+    },
+    "diagnostic-raw/probes-U.txt.gz": {
+      "uncompressed_sha256": "9783774c183d45c218bb27091d774de69d6d86960f321b425812e9faebd46276",
+      "compressed_sha256": "b1c16ce4de854faaa1b756110379a6edbe183403382cb65babedf6c32eba3097",
+      "uncompressed_bytes": 759217,
+      "compressed_bytes": 306489
+    },
+    "diagnostic-raw/solver-log.txt.gz": {
+      "uncompressed_sha256": "0994ab0dbfabb8e35efc04055bc5192b729d8ac4591466c2e3392a42208ddb27",
+      "compressed_sha256": "4ea42249dff1ed77e5d56908fca67b975af4d3e6480962b3953d3e38aed4083f",
+      "uncompressed_bytes": 3485602,
+      "compressed_bytes": 442659
+    },
+    "diagnostic-raw/yPlus-yPlus.dat.txt.gz": {
+      "uncompressed_sha256": "f11ff726bd58d9bef7ed6e54fed95fe530c93689f255e445d3a48c19b29e579c",
+      "compressed_sha256": "cb178e15f6bc699caa5b5d73b9e13913cffeabc9c87885ede1b2ac8ae4133c66",
+      "uncompressed_bytes": 3984,
+      "compressed_bytes": 1378
+    }
+  }
+}
