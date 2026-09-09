@@ -10,13 +10,15 @@ arms, size range and airflow adjustment too.
 
 ## Rev H airflow videos - updated hourly
 
-| Simulation | Latest video | Progress and archived checkpoints |
-|:--|:--|:--|
-| Started from still air | [Watch latest MP4](https://thereprocase.github.io/dell-5560-wall-mount/simulation/revh-transient/sequence/latest.mp4) | [Startup sequence](https://thereprocase.github.io/dell-5560-wall-mount/simulation/revh-transient/sequence/) |
-| Started from an already flowing field | [Watch latest MP4](https://thereprocase.github.io/dell-5560-wall-mount/simulation/revh-transient/sequence/flowing/latest.mp4) | [Flowing-field sequence](https://thereprocase.github.io/dell-5560-wall-mount/simulation/revh-transient/sequence/flowing/) |
+| Simulation | Original playback | 5× faster, 60 fps | Progress and archived checkpoints |
+|:--|:--|:--|:--|
+| Started from still air | [Latest MP4](https://thereprocase.github.io/dell-5560-wall-mount/simulation/revh-transient/sequence/latest.mp4) | [Latest 5× MP4](https://thereprocase.github.io/dell-5560-wall-mount/simulation/revh-transient/sequence/latest-5x.mp4) | [Startup sequence](https://thereprocase.github.io/dell-5560-wall-mount/simulation/revh-transient/sequence/) |
+| Started from an already flowing field | [Latest MP4](https://thereprocase.github.io/dell-5560-wall-mount/simulation/revh-transient/sequence/flowing/latest.mp4) | [Latest 5× MP4](https://thereprocase.github.io/dell-5560-wall-mount/simulation/revh-transient/sequence/flowing/latest-5x.mp4) | [Flowing-field sequence](https://thereprocase.github.io/dell-5560-wall-mount/simulation/revh-transient/sequence/flowing/) |
 
 These stable links always point to the latest published cumulative videos, with
-all sampled frames retained. Hourly updates are scheduled through **8 a.m. EDT
+all sampled frames retained in the originals. The 5× companions select existing
+frames at 60 fps without interpolation and refresh with each checkpoint.
+Hourly updates are scheduled through **8 a.m. EDT
 on September 9, 2026**; reopen or reload the video to see a newer checkpoint.
 These are exploratory airflow simulations. The already flowing sequence starts
 from an unconverged steady-solver field.

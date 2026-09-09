@@ -50,13 +50,35 @@ const output=process.argv[3]||'fusion/cfd/runs/revh_fourhour_08/browser-initial'
    if(Math.abs(meta.duration-report.video_duration_s)>.05||meta.width!==1800||meta.height!==1100||!meta.controls||meta.autoplay||meta.loop||meta.error)errors.push('Video presentation check failed');
    await video.screenshot({path:path.join(output,'video-desktop.png')});
   }
+  const fastVideo=page.locator('#flow-video-fast');let fastMeta=null;
+  if(await fastVideo.count()){
+   const report=await (await page.request.get(new URL('latest-5x.json',base).href)).json();
+   const latest=await (await page.request.get(new URL('latest.json',base).href)).json();
+   if(report.source_video_sha256!==latest.video_sha256)errors.push('5x video is from a different checkpoint');
+   const response=await page.request.get(new URL('latest-5x.mp4?v='+report.video_sha256,base).href);
+   if(!response.ok()||crypto.createHash('sha256').update(await response.body()).digest('hex')!==report.video_sha256)errors.push('5x video hash mismatch');
+   if(new URL(base).hostname==='127.0.0.1')await fastVideo.evaluate(async v=>{v.src=URL.createObjectURL(await (await fetch(v.querySelector('source').src)).blob());v.load();});
+   await fastVideo.scrollIntoViewIfNeeded();await fastVideo.evaluate(v=>v.play());
+   await page.waitForFunction(()=>document.querySelector('#flow-video-fast').currentTime>.25);
+   await fastVideo.evaluate(v=>v.pause());
+   fastMeta=await fastVideo.evaluate(v=>({duration:v.duration,width:v.videoWidth,height:v.videoHeight,error:v.error,controls:v.controls}));
+   const hashes=[];
+   for(const fraction of [.15,.50,.85]){
+    await fastVideo.evaluate((v,t)=>new Promise(resolve=>{v.addEventListener('seeked',()=>requestAnimationFrame(()=>requestAnimationFrame(resolve)),{once:true});v.currentTime=t;}),fastMeta.duration*fraction);
+    const frame=await fastVideo.evaluate(v=>{const c=document.createElement('canvas');c.width=900;c.height=750;c.getContext('2d').drawImage(v,600,170,1100,780,0,0,900,750);return c.toDataURL();});
+    hashes.push(crypto.createHash('sha256').update(frame).digest('hex'));
+   }
+   fastMeta={...fastMeta,playback_advanced:true,distinct_decoded_flow_regions:new Set(hashes).size,speed_multiplier:report.speed_multiplier};
+   if(new Set(hashes).size!==3||Math.abs(fastMeta.duration-report.source_video_duration_s/5)>.025||fastMeta.width!==1800||fastMeta.height!==1100||fastMeta.error||!fastMeta.controls)errors.push('5x playback check failed');
+   await fastVideo.screenshot({path:path.join(output,'video-5x-desktop.png')});
+  }
   await page.screenshot({path:path.join(output,'desktop.png'),fullPage:true});
   await page.setViewportSize({width:390,height:844});
   if(await video.count())await video.scrollIntoViewIfNeeded();
   const mobileOverflow=await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth);
   await page.screenshot({path:path.join(output,'mobile.png'),fullPage:true});
   if(mobileOverflow)errors.push('Mobile page overflow');
-  const result={checked_utc:new Date().toISOString(),url:base,video:meta,internal_links_checked:links.length,badLinks,mobile_overflow:mobileOverflow,errors};
+  const result={checked_utc:new Date().toISOString(),url:base,video:meta,fast_video:fastMeta,internal_links_checked:links.length,badLinks,mobile_overflow:mobileOverflow,errors};
   fs.writeFileSync(path.join(output,'review.json'),JSON.stringify(result,null,2)+'\n');console.log(JSON.stringify(result));
   if(errors.length)process.exitCode=1;
  }finally{await browser.close();}

@@ -1,0 +1,30 @@
+{
+  "created_utc": "2026-09-09T09:58:35.273650+00:00",
+  "source_checkpoint": "hour-17",
+  "source_video": "hour-17/flow.mp4",
+  "source_video_sha256": "25ed547f34e4a79bbc09366f70ab52c049d8d0c08f7dd9445ec12a2f4e100826",
+  "source_video_duration_s": 38.266667,
+  "source_encoded_frames": 1148,
+  "source_cfd_states": 872,
+  "first_time_s": 0.0001264,
+  "last_time_s": 0.03680220005,
+  "speed_multiplier": 5,
+  "playback_slowdown": 205.93922548108486,
+  "fps": 60,
+  "encoded_frames": 459,
+  "video_duration_s": 7.65,
+  "video_sha256": "5eec4b5454e626cea22c81af61bcd56bddf5b0b3678543bc677ef603cca5f9cb",
+  "video_bytes": 1052228,
+  "size_px": [
+    1800,
+    1100
+  ],
+  "encoding": {
+    "codec": "H.264",
+    "crf": 26,
+    "preset": "slow"
+  },
+  "timing": "Original presentation timestamps divided by 5, then rounded to 60 fps. Final hold also shortened by 5.",
+  "sampling": "Existing video frames selected at 60 fps; no blending or generated intermediate CFD states. Full sample sequence retained in the original video.",
+  "verification": "Source SHA-256 checked; dimensions, frame rate, decoded frame count and duration checked; complete error-fatal decode passed."
+}

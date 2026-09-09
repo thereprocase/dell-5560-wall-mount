@@ -5,6 +5,7 @@ from html import escape
 import json
 from pathlib import Path
 import shutil
+from make_revh_fast_video import make_fast_video, fast_video_html
 
 ROOT=Path(__file__).resolve().parents[2]
 PAGE=ROOT/'docs/simulation/revh-transient/sequence'
@@ -44,6 +45,7 @@ def main():
     latest=max(reports+adhoc,key=lambda r:r['last_time_s']) if reports or adhoc else None
     if latest:
         source=PAGE/latest['_folder']
+        fast=make_fast_video(PAGE,latest)
         shutil.copy2(source/'flow.mp4',PAGE/'latest.mp4')
         (PAGE/'latest.json').write_text(json.dumps({k:latest[k] for k in ['_folder','created_utc','last_time_s','source_frames','video_sha256']},indent=2)+'\n',encoding='utf-8',newline='\n')
         # Keep the already-shared early MP4 URL working as a current alias.
@@ -61,6 +63,7 @@ def main():
         video=f'''<h2>{title}</h2>
 <figure><video id="flow-video" controls playsinline preload="metadata" poster="{folder}/poster.png" aria-describedby="video-caption"><source src="{folder}/flow.mp4" type="video/mp4"><a href="{folder}/flow.mp4">Open the MP4</a>.</video>
 <figcaption id="video-caption">{latest['source_frames']} actual sampled states, from {latest['first_time_s']*1000:.4f} to {ms:.4f} ms. Playback lasts {latest['video_duration_s']:.2f} seconds at {latest['playback_slowdown']:.0f}× slow motion, rounded to 30 fps, with a half-second final hold. No intermediate CFD states are generated. <a href="{folder}/flow.mp4">Open or download this video</a>.</figcaption></figure>'''
+        video+=fast_video_html(fast,folder)
         if (PAGE/folder/'history.png').exists():
             video+=f'<figure><a href="{folder}/history.png"><img src="{folder}/history.png" alt="Recorded pressure, velocity and numerical diagnostics against physical time" loading="lazy"></a><figcaption>Recorded histories through this video checkpoint. Pressure uses the assumed air density of 1.2 kg/m³.</figcaption></figure>'
     rows=[]
