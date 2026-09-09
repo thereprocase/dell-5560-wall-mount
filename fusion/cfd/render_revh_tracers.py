@@ -227,7 +227,7 @@ def main():
         colors = np.tile([.04, .16, .20, 1.], (len(alpha), 1)); colors[:, 3] = alpha
         trails = LineCollection([], colors=colors, linewidths=1.5, animated=True)
         ax.add_collection(trails)
-        heads = ax.scatter([], [], s=16, facecolors='white', edgecolors='#17313c', linewidths=.6, animated=True)
+        heads = ax.scatter([], [], s=4, facecolors='black', edgecolors='none', linewidths=0, animated=True)
         ax.set(xlim=bounds[:2], ylim=bounds[2:], aspect='equal', title=title,
                xlabel='Y from wall [mm]', ylabel='Height Z [mm]', facecolor='#cdd5db')
         fig.colorbar(mesh, ax=ax, fraction=.045, pad=.03, shrink=.9, label='Static pressure [Pa]')

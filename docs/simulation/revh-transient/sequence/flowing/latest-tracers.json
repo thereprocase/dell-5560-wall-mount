@@ -1,5 +1,5 @@
 {
-  "created_utc": "2026-09-09T10:42:51.429135+00:00",
+  "created_utc": "2026-09-09T11:51:13.294838+00:00",
   "source_checkpoint": "checkpoint-17",
   "source_progress_sha256": "1823385f0c1fb068d8f10f6ba5579b4c1aae3827a8c921395492c5dfb2585da3",
   "source_video_sha256": "da63f0d7b6e58aa7670c25dfc10926fd7feb16ef3cd8d4da77eaddddf69a3302",
@@ -14,8 +14,8 @@
   "encoded_frames": 909,
   "video_duration_s": 15.15,
   "last_frame_file": "frame-0902.png",
-  "video_sha256": "8e04c4fcf5eb3e46649d6bfb3800375d9c5f358cca550c9c945de730e225cdd2",
-  "video_bytes": 3696300,
+  "video_sha256": "8b2f3a756b81aed7948b7bc082d84951d689c2bee2205d4576ee2bc5c57f0b95",
+  "video_bytes": 3349069,
   "size_px": [
     1800,
     1100
@@ -38,8 +38,8 @@
       "max_step_displacement_mm": 0.06387527487048085
     }
   ],
-  "render_seconds": 1120.8439999999828,
+  "render_seconds": 308.9529999999795,
   "preview": false,
-  "renderer_sha256": "f4c5749eaaa4bf8938ad9d94978a4c07395786309d7e48c2d2de7d89f40a1082",
+  "renderer_sha256": "0b9d9a9c49481e1a01386f217270a3791ef5bde73e0bcd0be619b4c8d4057bff",
   "verification": "All used CFD samples hash checked; complete source interval integrated; particle movement recorded; full video decode, dimensions, frame count and duration checked."
 }
