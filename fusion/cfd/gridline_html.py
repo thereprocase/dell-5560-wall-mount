@@ -7,7 +7,24 @@ from html import escape, unescape
 from pathlib import Path
 import re
 
-VERSION = '2026-09-09-r2'
+VERSION = '2026-09-09-sites'
+
+
+def project_identity(site: str) -> str:
+    """Project-specific identity and useful destinations, shared by every report."""
+    base = 'https://thereprocase.github.io/' + site + '/'
+    records = {
+        'dell-5560-wall-mount': ('DESIGN JOURNAL / CAD + FLOW', 'Laptop wall mount', 'Minimalist mounting and ducted cooling, with the geometry and airflow evidence together.', [('Explore the designs', base), ('Latest flow videos', base + 'simulation/revh-transient/sequence/')]),
+        '5680-dock': ('DESK HARDWARE / D8 PROTOTYPE', 'Precision 5680 dock', 'A serviceable printed dock: recessed fans, captured connectors and adjustable hardware.', [('Current D8 design', base), ('Open the CAD viewer', base + 'desk-dock.html?rev=D8#model')]),
+        'onshape-reference-align': ('CALIBRATION WORKBENCH / IMAGE + GEOMETRY', 'Reference Align', 'Known distances. Independent directions. Reference images placed with intent.', [('Download the app', base + '#downloads'), ('Read the setup guide', base + 'START-HERE.html')]),
+        'claude-usage': ('LOCAL TRANSCRIPT ANALYSIS / 90 DAYS', 'Claude Usage', 'Read your usage history from the data already on your machine.', [('Installation guide', base + '#gl-section-3'), ('Companion status line', 'https://thereprocase.github.io/claude-statusline/')]),
+    }
+    if site not in records:
+        return ''
+    kind, title, description, links = records[site]
+    return (f'<div class="gl-project-identity"><div><span class="gl-identity-type">{escape(kind)}</span>'
+            f'<strong>{escape(title)}</strong><p>{escape(description)}</p></div><nav class="gl-identity-actions" aria-label="Project resources">'
+            + ''.join(f'<a class="gl-button" href="{escape(url)}">{escape(label)} ↗</a>' for label, url in links) + '</nav></div>')
 
 
 def apply_gridline(document: str, page_path: Path, site='dell-5560-wall-mount', public_root=None) -> str:
@@ -38,6 +55,7 @@ def apply_gridline(document: str, page_path: Path, site='dell-5560-wall-mount', 
               f'<link rel="stylesheet" href="{prefix}gridline/legacy.css?v={VERSION}">\n'
               f'<link rel="stylesheet" href="{prefix}gridline/responsive.css?v={VERSION}">\n'
               f'<link rel="stylesheet" href="{prefix}gridline/interaction.css?v={VERSION}">\n'
+              f'<link rel="stylesheet" href="{prefix}gridline/themes.css?v={VERSION}">\n'
               f'<link rel="icon" type="image/svg+xml" href="{prefix}gridline/logo.svg">\n')
     document = re.sub(r'</head>', assets + '</head>', document, count=1, flags=re.I)
     document = re.sub(r'(<meta\b[^>]*name=["\']theme-color["\'][^>]*content=["\'])[^"\']+', r'\g<1>#0000A8', document, flags=re.I)
@@ -65,6 +83,7 @@ def apply_gridline(document: str, page_path: Path, site='dell-5560-wall-mount', 
               '<a href="https://thereprocase.github.io/#render-library">Renders</a>'
               '<a href="https://thereprocase.github.io/#airflow">Flow videos</a>'
               f'<a href="https://github.com/thereprocase/{escape(site)}">Source ↗</a></nav>')
+    chrome += project_identity(site)
     if outline:
         chrome += '<nav class="gl-outline" aria-label="On this page"><span>CONTENTS</span>' + ''.join(f'<a href="#{escape(ident)}">{escape(title)}</a>' for ident, title in outline[:10]) + '</nav>'
     def body(match):
@@ -73,7 +92,7 @@ def apply_gridline(document: str, page_path: Path, site='dell-5560-wall-mount', 
             attrs = re.sub(r'(\bclass=["\'])', rf'\1gridline {kind} ', attrs, count=1)
         else:
             attrs += f' class="gridline {kind}"'
-        return f'<body{attrs} data-gridline="{VERSION}">' + chrome + '<span id="gl-content" tabindex="-1"></span>'
+        return f'<body{attrs} data-gridline="{VERSION}" data-project="{escape(site)}">' + chrome + '<span id="gl-content" tabindex="-1"></span>'
     document = re.sub(r'<body\b([^>]*)>', body, document, count=1, flags=re.I)
     footer = (f'<div class="gl-global-footer" role="contentinfo"><span>{escape(site.upper())}</span>'
               '<span>GRIDLINE / PROJECT RECORD</span>'
