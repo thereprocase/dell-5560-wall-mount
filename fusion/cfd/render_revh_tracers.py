@@ -210,7 +210,7 @@ def main():
     warm = source['initialization_kind'] == 'steady_solver'
     phase = 'From already flowing air' if warm else 'Startup from still air'
     fig.text(.055, .945, 'REV H  |  FOLLOW THE MOVING AIR', fontsize=26, fontweight='bold', color='#162c36')
-    fig.text(.055, .9, f'{phase}  |  Moving tracers + fading trails  |  5x playback', fontsize=18, color='#17686b')
+    fig.text(.055, .9, f'{phase}  |  Moving tracers + fading trails  |  About 1/200th speed', fontsize=18, color='#17686b')
     timestamp = fig.text(.055, .852, '', fontsize=18, color='#162c36', animated=True)
     fig.text(.055, .112, 'Dots follow sampled in-plane velocity at X = +111 mm. Background: static pressure [Pa].', fontsize=16, color='#162c36')
     fig.text(.055, .073, 'Projected 2D visualization: velocity is interpolated between saved samples; out-of-plane motion is omitted.', fontsize=13, color='#536772')

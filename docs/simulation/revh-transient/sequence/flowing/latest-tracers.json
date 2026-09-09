@@ -14,8 +14,8 @@
   "encoded_frames": 909,
   "video_duration_s": 15.15,
   "last_frame_file": "frame-0902.png",
-  "video_sha256": "8b2f3a756b81aed7948b7bc082d84951d689c2bee2205d4576ee2bc5c57f0b95",
-  "video_bytes": 3349069,
+  "video_sha256": "b5870f4f0d38041b8cb8675f9c07bef4fc776f04e7bdb75703fcaa0d6dddcbad",
+  "video_bytes": 3463598,
   "size_px": [
     1800,
     1100
@@ -41,5 +41,16 @@
   "render_seconds": 308.9529999999795,
   "preview": false,
   "renderer_sha256": "0b9d9a9c49481e1a01386f217270a3791ef5bde73e0bcd0be619b4c8d4057bff",
-  "verification": "All used CFD samples hash checked; complete source interval integrated; particle movement recorded; full video decode, dimensions, frame count and duration checked."
+  "verification": "All used CFD samples hash checked; complete source interval integrated; particle movement recorded; full video decode, dimensions, frame count and duration checked.",
+  "presentation_revision": {
+    "created_utc": "2026-09-09T20:28:40.090547+00:00",
+    "label": "About 1/200th speed",
+    "previous_video_sha256": "8b2f3a756b81aed7948b7bc082d84951d689c2bee2205d4576ee2bc5c57f0b95",
+    "method": "Only the static subtitle band is replaced; original timestamps, frame count and frame pacing are retained.",
+    "encoder": "libx264",
+    "crf": 24,
+    "preset": "slow",
+    "gop_frames": 60,
+    "faststart": true
+  }
 }

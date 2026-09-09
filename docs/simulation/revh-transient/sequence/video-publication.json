@@ -1,0 +1,264 @@
+{
+  "state": "paused",
+  "display_speed": "About 1/200th speed",
+  "retained_videos": [
+    "latest-tracers.mp4",
+    "latest-5x.mp4",
+    "flowing/latest-tracers.mp4",
+    "flowing/latest-5x.mp4"
+  ],
+  "withdrawn_slow_videos": [
+    {
+      "path": "simulation/revh-transient/sequence/checkpoint-01/flow.mp4",
+      "bytes": 359617,
+      "sha256": "c7cd6076d358fa2308c8256780ccbf3bdfd22a1417d996cb05b9e7c5357ab4b4"
+    },
+    {
+      "path": "simulation/revh-transient/sequence/checkpoint-02/flow.mp4",
+      "bytes": 620977,
+      "sha256": "be7899ae86aaa6badde8b4a8e8bc06d82a9919cfe114d77081767334688c3b16"
+    },
+    {
+      "path": "simulation/revh-transient/sequence/checkpoint-03/flow.mp4",
+      "bytes": 3613163,
+      "sha256": "7894dd4f18b547de5b0c70e13630d509d7ba1834e377b073816bc1443d9672c5"
+    },
+    {
+      "path": "simulation/revh-transient/sequence/checkpoint-04/flow.mp4",
+      "bytes": 3814734,
+      "sha256": "90b840e7a7dc11f5d13ec69e88b9f93eb15342758f5d0563f2b940f36c5ae298"
+    },
+    {
+      "path": "simulation/revh-transient/sequence/checkpoint-05/flow.mp4",
+      "bytes": 5169475,
+      "sha256": "944d0f3d842adcedbecb61e1fbf2dd6f1fd7d40f3dfe745f5835ec0ad43ee794"
+    },
+    {
+      "path": "simulation/revh-transient/sequence/checkpoint-06/flow.mp4",
+      "bytes": 5938456,
+      "sha256": "1818f7c8b9fc73c088484015ed391dda7c578b084709da13eddf151934c7a0db"
+    },
+    {
+      "path": "simulation/revh-transient/sequence/checkpoint-07/flow.mp4",
+      "bytes": 6686795,
+      "sha256": "2df36f29572b975797dbc387e62c665484da82427f3d5c46a09c98cbfb4cb088"
+    },
+    {
+      "path": "simulation/revh-transient/sequence/checkpoint-08/flow.mp4",
+      "bytes": 7460640,
+      "sha256": "dff9fe493e792d7093a6afe002bbb912c679fb2f791a472a95c3316c847de163"
+    },
+    {
+      "path": "simulation/revh-transient/sequence/checkpoint-09/flow.mp4",
+      "bytes": 8168158,
+      "sha256": "8aca11ac3c27527eed6f42b3d580bf51d23a1b85833287f3debb139ea778c5d4"
+    },
+    {
+      "path": "simulation/revh-transient/sequence/checkpoint-10/flow.mp4",
+      "bytes": 8944928,
+      "sha256": "473ce5ed87c9535cf15c03337ee90bdf1c7980b76b092d81b8e8c7ced035b314"
+    },
+    {
+      "path": "simulation/revh-transient/sequence/checkpoint-11/flow.mp4",
+      "bytes": 9322563,
+      "sha256": "aefc0cb8ab7c186c57f0a67be99764d36a1586687c1073f36a7c585a3bfc7056"
+    },
+    {
+      "path": "simulation/revh-transient/sequence/checkpoint-12/flow.mp4",
+      "bytes": 9328457,
+      "sha256": "6a17158064e01347a6fd94e504d0edaed8e569eaab709d1de59f20a3200e27cf"
+    },
+    {
+      "path": "simulation/revh-transient/sequence/early/flow.mp4",
+      "bytes": 9328457,
+      "sha256": "6a17158064e01347a6fd94e504d0edaed8e569eaab709d1de59f20a3200e27cf"
+    },
+    {
+      "path": "simulation/revh-transient/sequence/flowing/checkpoint-01/flow.mp4",
+      "bytes": 310924,
+      "sha256": "66d94eb873ea0768d533cbe5e8c9b3454d0fda3625ff09ebeee5cc2be17b2c96"
+    },
+    {
+      "path": "simulation/revh-transient/sequence/flowing/checkpoint-02/flow.mp4",
+      "bytes": 662053,
+      "sha256": "23a9c6ff88c4c9a0cec2a81b3a43b655189acd2c52ce760a91eee88161102627"
+    },
+    {
+      "path": "simulation/revh-transient/sequence/flowing/checkpoint-03/flow.mp4",
+      "bytes": 800692,
+      "sha256": "586662ca996ba409feb861180301952c1941a14262c58d32a66823a1143be158"
+    },
+    {
+      "path": "simulation/revh-transient/sequence/flowing/checkpoint-04/flow.mp4",
+      "bytes": 1288771,
+      "sha256": "95f2379506a002001af1d72d99974f9fd64f26c8783eba2fddc91e35390772fe"
+    },
+    {
+      "path": "simulation/revh-transient/sequence/flowing/checkpoint-05/flow.mp4",
+      "bytes": 1726384,
+      "sha256": "672da917905ed7a91a7f669e84e7cee8851f7e7e86e51bb11a3e5c0bb23a6595"
+    },
+    {
+      "path": "simulation/revh-transient/sequence/flowing/checkpoint-06/flow.mp4",
+      "bytes": 2235459,
+      "sha256": "aa1b1de3b73a95fc4a5a4ba00e17d8d884a3d7d72a673a7c28a19e1d14590377"
+    },
+    {
+      "path": "simulation/revh-transient/sequence/flowing/checkpoint-07/flow.mp4",
+      "bytes": 2734149,
+      "sha256": "9da831a3e6e3e86cbdae61596d6c295f74e90054cb21828b1427d7bde26c734f"
+    },
+    {
+      "path": "simulation/revh-transient/sequence/flowing/checkpoint-08/flow.mp4",
+      "bytes": 3235354,
+      "sha256": "159f2e44f9bb6353ccf72d18b06c445f6eb09b8f1eb11efdd27505a168abacee"
+    },
+    {
+      "path": "simulation/revh-transient/sequence/flowing/checkpoint-09/flow.mp4",
+      "bytes": 3645243,
+      "sha256": "3bf8526dddd095e16ecbb70fb9c5657b2d34b1d71a20ad84fd2456c8d1bf3b9c"
+    },
+    {
+      "path": "simulation/revh-transient/sequence/flowing/checkpoint-10/flow.mp4",
+      "bytes": 4143218,
+      "sha256": "8d07b88e0e32c403bef15485be23d0af87f03e6c92cbcf0e64865b2ca448e24f"
+    },
+    {
+      "path": "simulation/revh-transient/sequence/flowing/checkpoint-11/flow.mp4",
+      "bytes": 4640920,
+      "sha256": "b1205069996bae1e350ee0e91e0a64103661cea45ef265d36932eb5cc24130ef"
+    },
+    {
+      "path": "simulation/revh-transient/sequence/flowing/checkpoint-12/flow.mp4",
+      "bytes": 5138521,
+      "sha256": "4fe74f1b3eccc966c56fcf98212b19a14b1b5b872348d2ffc01368c9c7c52811"
+    },
+    {
+      "path": "simulation/revh-transient/sequence/flowing/checkpoint-13/flow.mp4",
+      "bytes": 5637753,
+      "sha256": "0b57cfaa831749912505d3704229265cb1f4879c748de945cc414b868e39746a"
+    },
+    {
+      "path": "simulation/revh-transient/sequence/flowing/checkpoint-14/flow.mp4",
+      "bytes": 6136083,
+      "sha256": "1e2d9ac083d271418a1e4e0c0a1a35c8d932177d33b0aed3e35bc3e65654ab01"
+    },
+    {
+      "path": "simulation/revh-transient/sequence/flowing/checkpoint-15/flow.mp4",
+      "bytes": 6633172,
+      "sha256": "4005e00a271c51da76fcd69875d1a112def433ac5dcaae91fd72acf24bbc923c"
+    },
+    {
+      "path": "simulation/revh-transient/sequence/flowing/checkpoint-16/flow.mp4",
+      "bytes": 7126853,
+      "sha256": "2f4a4be74f789ad893ebf269ec5fd63f133d7737a42cc44852c281b84de1054d"
+    },
+    {
+      "path": "simulation/revh-transient/sequence/flowing/checkpoint-17/flow.mp4",
+      "bytes": 7617497,
+      "sha256": "da63f0d7b6e58aa7670c25dfc10926fd7feb16ef3cd8d4da77eaddddf69a3302"
+    },
+    {
+      "path": "simulation/revh-transient/sequence/flowing/latest.mp4",
+      "bytes": 7617497,
+      "sha256": "da63f0d7b6e58aa7670c25dfc10926fd7feb16ef3cd8d4da77eaddddf69a3302"
+    },
+    {
+      "path": "simulation/revh-transient/sequence/hour-1/flow.mp4",
+      "bytes": 757683,
+      "sha256": "160e58ae65e51ea5f57bf4ef98f790b7a63acd87c7a67c51b764008323a3a504"
+    },
+    {
+      "path": "simulation/revh-transient/sequence/hour-10/flow.mp4",
+      "bytes": 2297498,
+      "sha256": "6752424e609cdbe36c7516c991324b852f8e2769da68886c58bec1f7a22a0aab"
+    },
+    {
+      "path": "simulation/revh-transient/sequence/hour-11/flow.mp4",
+      "bytes": 2475791,
+      "sha256": "4d11dd9f91295d3dedd6691e49aca813193e7c19091eaa5d7e9076fdf5953bb6"
+    },
+    {
+      "path": "simulation/revh-transient/sequence/hour-12/flow.mp4",
+      "bytes": 2658863,
+      "sha256": "edeebbc2761f7638b1e75a47622faa0170e126afba99f74e9d60781225e1e87f"
+    },
+    {
+      "path": "simulation/revh-transient/sequence/hour-13/flow.mp4",
+      "bytes": 2835763,
+      "sha256": "579f0048987b5fcc07f93ce884f8b9a495355d1fc54a9322bffab743a09395ac"
+    },
+    {
+      "path": "simulation/revh-transient/sequence/hour-14/flow.mp4",
+      "bytes": 2953206,
+      "sha256": "075869dfefff9a8c2d568d570d98daaf5939e86f38898a087cc3d1e995bd8931"
+    },
+    {
+      "path": "simulation/revh-transient/sequence/hour-15/flow.mp4",
+      "bytes": 3128543,
+      "sha256": "97b5259b7458e92dfbee6f84e06d79315e1794c2cf538b9709190fb7383d843e"
+    },
+    {
+      "path": "simulation/revh-transient/sequence/hour-16/flow.mp4",
+      "bytes": 3244529,
+      "sha256": "8e4758a26f9af54f84f79e5ce7f0a0e65beb5555ba19ab1b704866db6c541bc6"
+    },
+    {
+      "path": "simulation/revh-transient/sequence/hour-17/flow.mp4",
+      "bytes": 3420668,
+      "sha256": "25ed547f34e4a79bbc09366f70ab52c049d8d0c08f7dd9445ec12a2f4e100826"
+    },
+    {
+      "path": "simulation/revh-transient/sequence/hour-18/flow.mp4",
+      "bytes": 3536583,
+      "sha256": "2469c1dabc82fbedb8eeddedcf5ffc0baeedf8810b16b481e4547982b064c2b6"
+    },
+    {
+      "path": "simulation/revh-transient/sequence/hour-2/flow.mp4",
+      "bytes": 1256854,
+      "sha256": "7ee910e747481df7ffccc925979c5830d74ad8152be8cd1ca08f81aec0e855b3"
+    },
+    {
+      "path": "simulation/revh-transient/sequence/hour-3/flow.mp4",
+      "bytes": 1705503,
+      "sha256": "c8bfe48c34eda9b6b3f62fec311313fd83d3799a49fe85893b301daf89af8f6c"
+    },
+    {
+      "path": "simulation/revh-transient/sequence/hour-4/flow.mp4",
+      "bytes": 1206942,
+      "sha256": "ef0f0b0a974c687c7ac04abe0053d9d6885cf45d07537cf1d312d8acb9c58c5f"
+    },
+    {
+      "path": "simulation/revh-transient/sequence/hour-5/flow.mp4",
+      "bytes": 1427354,
+      "sha256": "0c681ca6d99faff3ab93e2a03f8c59410e038b4f4be28e5241c55cc43ab4945f"
+    },
+    {
+      "path": "simulation/revh-transient/sequence/hour-6/flow.mp4",
+      "bytes": 1635888,
+      "sha256": "96b809f3d13de59cd7fe1014410871a4e4b0c1d073814bf9d4f456f59689b4d6"
+    },
+    {
+      "path": "simulation/revh-transient/sequence/hour-7/flow.mp4",
+      "bytes": 1823947,
+      "sha256": "daeaa666381c9904b40b8a09f3c73f24326fb445aa7bd18f63812e4808ea6846"
+    },
+    {
+      "path": "simulation/revh-transient/sequence/hour-8/flow.mp4",
+      "bytes": 2007632,
+      "sha256": "cd356a5f68bb0d46b0f69a6a4c7ec851602ee505c3c71ba3ddadd06322e1cc23"
+    },
+    {
+      "path": "simulation/revh-transient/sequence/hour-9/flow.mp4",
+      "bytes": 2186923,
+      "sha256": "7ecab636db2151576d63fc5e4ad610e23ac491ba8b82d5ffbf6099b482e4d4f0"
+    },
+    {
+      "path": "simulation/revh-transient/sequence/latest.mp4",
+      "bytes": 9328457,
+      "sha256": "6a17158064e01347a6fd94e504d0edaed8e569eaab709d1de59f20a3200e27cf"
+    }
+  ],
+  "preservation": "Original video copies and all recorded CFD samples remain local; historic provenance is unchanged.",
+  "resume_publication_policy": "Continue only on explicit request; preserve the final video labels and do not republish the withdrawn slower downloads."
+}

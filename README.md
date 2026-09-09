@@ -10,7 +10,7 @@ arms, size range and airflow adjustment too.
 
 ## Rev H airflow videos - recorded continuation
 
-**Moving particles and trails, at 5× playback:**
+**Moving particles and trails · about 1/200th speed · 60 fps:**
 [Startup](https://thereprocase.github.io/dell-5560-wall-mount/simulation/revh-transient/sequence/latest-tracers.mp4) ·
 [Already flowing](https://thereprocase.github.io/dell-5560-wall-mount/simulation/revh-transient/sequence/flowing/latest-tracers.mp4).
 
@@ -18,19 +18,23 @@ The startup continuation has stopped. Its native checkpoint and previous-step hi
 The startup video covers **96.2647 ms** of simulated flow.
 The separate flowing-air video remains at 68.0934 ms.
 
-| Simulation | Original playback | 5× faster, 60 fps | Progress and archives |
+| Simulation | Particle-flow video | Duration / download | Record |
 |:--|:--|:--|:--|
-| Startup | [MP4](https://thereprocase.github.io/dell-5560-wall-mount/simulation/revh-transient/sequence/latest.mp4) | [MP4](https://thereprocase.github.io/dell-5560-wall-mount/simulation/revh-transient/sequence/latest-5x.mp4) | [Startup page](https://thereprocase.github.io/dell-5560-wall-mount/simulation/revh-transient/sequence/) |
-| Already flowing | [MP4](https://thereprocase.github.io/dell-5560-wall-mount/simulation/revh-transient/sequence/flowing/latest.mp4) | [MP4](https://thereprocase.github.io/dell-5560-wall-mount/simulation/revh-transient/sequence/flowing/latest-5x.mp4) | [Flowing page](https://thereprocase.github.io/dell-5560-wall-mount/simulation/revh-transient/sequence/flowing/) |
+| Startup | [MP4](https://thereprocase.github.io/dell-5560-wall-mount/simulation/revh-transient/sequence/latest-tracers.mp4) | 19.92 s / 4.31 MB | [Startup page](https://thereprocase.github.io/dell-5560-wall-mount/simulation/revh-transient/sequence/) |
+| Already flowing | [MP4](https://thereprocase.github.io/dell-5560-wall-mount/simulation/revh-transient/sequence/flowing/latest-tracers.mp4) | 15.15 s / 3.46 MB | [Flowing page](https://thereprocase.github.io/dell-5560-wall-mount/simulation/revh-transient/sequence/flowing/) |
 
-These stable links serve the latest published cumulative videos. All recorded
-samples remain in the original playback. Particle views interpolate saved
+The videos use H.264 with fast-start metadata and one-second keyframes for
+quick loading and seeking. The rounded speed label describes slow motion relative
+to physical time; exact timing is recorded in each provenance file.
+
+These stable links serve the latest published cumulative videos. The slower downloads have been retired. All recorded
+samples and original videos remain preserved locally. Particle views interpolate saved
 in-plane velocity at 60 fps; they show projected 2D motion with fading trails.
 The visual continuation begins at the old 38.3188 ms video endpoint and uses
-fixed 80.93 microsecond steps, one step per 5× video frame, with 12 workers.
-CFD runs at idle priority under a shared 28 GiB RAM cap. Full native fields are
-saved every half hour and at the final stop. Earlier native branches and public
-archives remain preserved. Timestep accuracy is deferred for this visual run;
+fixed 80.93 microsecond steps, one step per 60 fps video frame, with 12 workers.
+CFD and video rendering are stopped. The run used idle priority and a shared
+28 GiB RAM cap. Full native fields were saved at the final stop. Earlier native
+branches and checkpoint provenance remain preserved. Timestep accuracy is deferred for this visual run;
 the separate flowing-air sequence starts from an unconverged steady field.
 
 ## MakerWorld preparation package
