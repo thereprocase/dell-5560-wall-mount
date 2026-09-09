@@ -19,11 +19,15 @@ def main():
     args=parser.parse_args()
     state=json.loads((args.case/'run-status.json').read_text())
     visual=state.get('visual_extension')
-    paused=state['state']=='complete' and state.get('stop_reason')=='User requested a resumable stop'
+    paused=state['state']=='complete' and bool(state.get('restart_checkpoint'))
     pause_note=''
     if paused:
         restart_ms=state['restart_checkpoint']['physical_time_s']*1000
         pause_note=f'<p class="notice"><strong>Simulation paused.</strong> The native restart checkpoint is preserved at {restart_ms:.4f} ms, with previous-step history. The videos below use the existing recorded samples. Automatic hourly publication is paused.</p>'
+    elif visual and state['state'] in ['running','writing_final_checkpoint'] and state.get('authorized_deadline_utc'):
+        from zoneinfo import ZoneInfo
+        deadline=datetime.fromisoformat(state['authorized_deadline_utc']).astimezone(ZoneInfo('America/New_York'))
+        pause_note=f'<p class="notice"><strong>Simulation running.</strong> Automatic hourly video updates are enabled through {deadline.strftime("%I:%M %p %Z on %B %d, %Y")}. A final update follows the native checkpoint and stop. These links always serve the latest published video.</p>'
     step_metric='<strong>≤ 25 µs</strong><span>adaptive timestep · Courant limit 0.5</span>'
     visual_note=''
     if visual:
@@ -46,7 +50,8 @@ def main():
     early=PAGE/'early/progress.json'
     if not adhoc and early.is_file():
         report=json.loads(early.read_text());report['_folder']='early';adhoc.append(report)
-    planned_hours=max(4,int(state['budget_seconds']//3600))
+    planned_hours=(max([int(p.name.split('-')[1]) for p in PAGE.glob('hour-*')],default=18)
+                   if visual else max(4,int(state['budget_seconds']//3600)))
     for hour in range(1,planned_hours+1):
         path=PAGE/f'hour-{hour}'/'progress.json'
         if path.is_file():

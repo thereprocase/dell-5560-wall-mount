@@ -62,7 +62,7 @@ def main():
     p.add_argument('--case',type=Path,required=True)
     p.add_argument('--mirror',type=Path,required=True)
     p.add_argument('--seconds',type=int,default=14400)
-    p.add_argument('--ranks',type=int,choices=[4,6,8],default=4)
+    p.add_argument('--ranks',type=int,choices=[4,6,8,12],default=4)
     p.add_argument('--resume',action='store_true',help='Continue a deliberately checkpointed run within its original deadline')
     args=p.parse_args();case=args.case.resolve();mirror=args.mirror.resolve()
     lower_priority()
@@ -94,6 +94,11 @@ def main():
     state['cpu_workers']=args.ranks
     state['cpu_nice']=os.getpriority(os.PRIO_PROCESS,0)
     state['io_priority']='idle'
+    group=Path('/sys/fs/cgroup')/Path('/proc/self/cgroup').read_text().strip().split('::')[1].lstrip('/')
+    slice_group=next(p for p in [group,*group.parents] if p.name=='cfd.slice')
+    cap=(slice_group/'memory.max').read_text().strip()
+    assert cap!='max' and int(cap)<=28*1024**3,'CFD memory cap is missing or exceeds 28 GiB'
+    state['memory_limit_bytes']=int(cap)
     with log_path.open('a' if args.resume else 'w') as log:
         proc=subprocess.Popen(command,cwd=case,stdout=log,stderr=subprocess.STDOUT,
                               stdin=subprocess.DEVNULL,start_new_session=True)
@@ -137,12 +142,16 @@ def main():
             try:sample_count=mirror_samples(case,mirror)
             except OSError as exc:state['mirror_warning']=str(exc)
             state.update(updated_utc=utc(),elapsed_seconds=round(elapsed,2),
-                         completed_steps=len(complete),latest_physical_time_s=float(complete[-1][0]) if complete else None,
-                         latest_deltaT_s=float(dt[-1]) if dt else None,
+                         completed_steps=state.get('completed_steps_before_log',0)+len(complete),latest_physical_time_s=float(complete[-1][0]) if complete else state.get('resume_from_s'),
+                         latest_deltaT_s=float(dt[-1]) if dt else manifest.get('fixed_deltaT_s'),
                          latest_Courant=float(co[-1]) if co else None,
                          max_logged_Courant=max(map(float,co),default=None),
                          bounding_events=len(re.findall(r'^bounding ',raw,re.M)),
                          complete_sample_frames=sample_count,worker_pids=ids)
+            state.update(memory_current_bytes=int((group/'memory.current').read_text()),
+                         memory_peak_bytes=int((group/'memory.peak').read_text()),
+                         memory_events=(group/'memory.events').read_text(),
+                         scheduler=os.sched_getscheduler(0))
             code=proc.poll()
             if code is not None:
                 state.update(state='complete' if code==0 and stop_sent is not None else 'failed',
