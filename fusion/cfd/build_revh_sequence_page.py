@@ -6,6 +6,7 @@ import json
 from pathlib import Path
 import shutil
 from make_revh_fast_video import make_fast_video, fast_video_html
+from publish_revh_tracers import make_tracer_video, tracer_video_html
 
 ROOT=Path(__file__).resolve().parents[2]
 PAGE=ROOT/'docs/simulation/revh-transient/sequence'
@@ -16,6 +17,11 @@ def main():
     parser.add_argument('--case',type=Path,required=True)
     args=parser.parse_args()
     state=json.loads((args.case/'run-status.json').read_text())
+    paused=state['state']=='complete' and state.get('stop_reason')=='User requested a resumable stop'
+    pause_note=''
+    if paused:
+        restart_ms=state['restart_checkpoint']['physical_time_s']*1000
+        pause_note=f'<p class="notice"><strong>Simulation paused.</strong> The native restart checkpoint is preserved at {restart_ms:.4f} ms, with previous-step history. The videos below use the existing recorded samples. Automatic hourly publication is paused.</p>'
     PAGE.mkdir(parents=True,exist_ok=True)
     public={k:v for k,v in state.items() if k not in ['mpi_pid','worker_pids','command']}
     public['published_snapshot_utc']=datetime.now(timezone.utc).isoformat()
@@ -46,6 +52,7 @@ def main():
     if latest:
         source=PAGE/latest['_folder']
         fast=make_fast_video(PAGE,latest)
+        tracers=make_tracer_video(PAGE,latest,args.case)
         shutil.copy2(source/'flow.mp4',PAGE/'latest.mp4')
         (PAGE/'latest.json').write_text(json.dumps({k:latest[k] for k in ['_folder','created_utc','last_time_s','source_frames','video_sha256']},indent=2)+'\n',encoding='utf-8',newline='\n')
         # Keep the already-shared early MP4 URL working as a current alias.
@@ -63,7 +70,7 @@ def main():
         video=f'''<h2>{title}</h2>
 <figure><video id="flow-video" controls playsinline preload="metadata" poster="{folder}/poster.png" aria-describedby="video-caption"><source src="{folder}/flow.mp4" type="video/mp4"><a href="{folder}/flow.mp4">Open the MP4</a>.</video>
 <figcaption id="video-caption">{latest['source_frames']} actual sampled states, from {latest['first_time_s']*1000:.4f} to {ms:.4f} ms. Playback lasts {latest['video_duration_s']:.2f} seconds at {latest['playback_slowdown']:.0f}× slow motion, rounded to 30 fps, with a half-second final hold. No intermediate CFD states are generated. <a href="{folder}/flow.mp4">Open or download this video</a>.</figcaption></figure>'''
-        video+=fast_video_html(fast,folder)
+        video=tracer_video_html(tracers)+video+fast_video_html(fast,folder)
         if (PAGE/folder/'history.png').exists():
             video+=f'<figure><a href="{folder}/history.png"><img src="{folder}/history.png" alt="Recorded pressure, velocity and numerical diagnostics against physical time" loading="lazy"></a><figcaption>Recorded histories through this video checkpoint. Pressure uses the assumed air density of 1.2 kg/m³.</figcaption></figure>'
     rows=[]
@@ -78,8 +85,8 @@ def main():
             diagnostic='diagnostics.json.gz' if (PAGE/f'hour-{hour}'/'diagnostics.json.gz').is_file() else 'diagnostics.json'
             if (PAGE/f'hour-{hour}'/diagnostic).exists():links+=f' · <a href="hour-{hour}/{diagnostic}">Diagnostics{ " (gzip)" if diagnostic.endswith(".gz") else ""}</a>'
             rows.append(f'<tr><th scope="row">Hour {hour}</th><td>{r["compute_elapsed_seconds_at_snapshot"]/3600:.3f} h</td><td>{r["last_time_s"]*1000:.4f} ms</td><td>{r["source_frames"]}</td><td>{links}</td></tr>')
-        else:rows.append(f'<tr><th scope="row">Hour {hour}</th><td>Scheduled hourly checkpoint</td><td>Pending</td><td>—</td><td>Not yet published</td></tr>')
-    status=escape(state['state'].replace('_',' '))
+        elif state['state']!='complete':rows.append(f'<tr><th scope="row">Hour {hour}</th><td>Scheduled hourly checkpoint</td><td>Pending</td><td>—</td><td>Not yet published</td></tr>')
+    status='paused' if paused else escape(state['state'].replace('_',' '))
     steady_note=''
     steady_case=args.case.parent/'revh_steady_09'
     if (steady_case/'run-status.json').is_file():
@@ -123,13 +130,14 @@ def main():
 <nav><a href="../">← Revision H study and GPU benchmark</a> · <a href="../../../">Mount designs</a></nav>
 <div class="eyebrow">Revision H · 8 September 2026 · {status}</div>
 <h1>{heading}</h1>
-<p class="lede">A continued CPU solve, with an actual-sample video published each hour. Close-ups follow the duct outlet, front laptop lip and hinge discharge. <a href="latest.mp4">Open the latest MP4</a>.</p>
+<p class="lede">Recorded airflow around the duct outlet, front laptop lip and hinge discharge. Moving particles follow the saved velocity fields; original arrow videos preserve the sampled states. <a href="latest-tracers.mp4">Open the moving-particle MP4</a>.</p>
+{pause_note}
 {flowing_intro}
 <div class="notice"><strong>Exploratory startup on a provisional mesh.</strong> This run does not yet establish periodic vortex shedding or settled lip suction. Mesh and timestep independence remain untested.</div>
 <div class="metrics"><div class="metric"><strong>{ms:.4f} ms</strong><span>physical time at latest {'video' if latest else 'status'} checkpoint</span></div><div class="metric"><strong>{latest['source_frames'] if latest else 0}</strong><span>actual CFD states in the latest published video</span></div><div class="metric"><strong>≤ 25 µs</strong><span>adaptive timestep · Courant limit 0.5</span></div></div>
 {video}
 <h2>Hourly checkpoints</h2>
-<p>Started at <time datetime="2026-09-08T16:12:29Z">12:12 p.m. Eastern on September 8</time>; the requested continuation runs through 8 a.m. Eastern on September 9 unless stopped earlier. Videos are cumulative and use every completed section sample available at their capture time. Earlier hourly files stay unchanged. Restart fields and their previous-step history are preserved for later continuation.</p>
+<p>Started at <time datetime="2026-09-08T16:12:29Z">12:12 p.m. Eastern on September 8</time>. The original videos are cumulative and use every completed section sample available at their capture time. Earlier hourly files stay unchanged. Restart fields and their previous-step history are preserved for later continuation.</p>
 <div class="table-wrap"><table><thead><tr><th scope="col">Checkpoint</th><th scope="col">Compute elapsed</th><th scope="col">Physical time</th><th scope="col">Sampled states</th><th scope="col">Files</th></tr></thead><tbody>{''.join(rows)}</tbody></table></div>
 <h2>How to read the video</h2>
 <p>The locator shows where the sections lie on the actual installed CAD. The whole air path is coloured by speed. Close-ups show static pressure and signed vorticity at X = +111 mm; arrows show the in-plane velocity. Black lines are CAD surfaces and grey areas are solid or unsampled. Pressure, speed and vorticity scales stay fixed across the hourly videos. The physical timestamp is the simulation time; playback is deliberately slowed.</p>

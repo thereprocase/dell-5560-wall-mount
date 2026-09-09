@@ -8,7 +8,16 @@ arms, size range and airflow adjustment too.
 [Explore both designs](https://thereprocase.github.io/dell-5560-wall-mount/) ·
 [Print and assembly guide](https://thereprocase.github.io/dell-5560-wall-mount/minimalist-guide.html)
 
-## Rev H airflow videos - updated hourly
+## Rev H airflow videos - simulation paused
+
+**Moving particles and trails, at 5× playback:**
+[Already flowing](https://thereprocase.github.io/dell-5560-wall-mount/simulation/revh-transient/sequence/flowing/latest-tracers.mp4) ·
+[Startup](https://thereprocase.github.io/dell-5560-wall-mount/simulation/revh-transient/sequence/latest-tracers.mp4).
+These 60 fps views advect visualization particles through the saved in-plane
+velocity fields, with pressure behind them. They show projected 2D motion,
+interpolated between saved samples; they are not full 3D particle trajectories.
+The current clips cover 68.0934 ms of the flowing-air run and 38.3188 ms of
+startup. Both use the existing recorded samples.
 
 | Simulation | Original playback | 5× faster, 60 fps | Progress and archived checkpoints |
 |:--|:--|:--|:--|
@@ -18,8 +27,10 @@ arms, size range and airflow adjustment too.
 These stable links always point to the latest published cumulative videos, with
 all sampled frames retained in the originals. The 5× companions select existing
 frames at 60 fps without interpolation and refresh with each checkpoint.
-Hourly updates are scheduled through **8 a.m. EDT
-on September 9, 2026**; reopen or reload the video to see a newer checkpoint.
+Both simulations were paused on **September 9, 2026**. Native restart fields
+and previous-step history are preserved at 69.4402 ms for the flowing-air run
+and 38.8331 ms for startup. More simulation can be added later; automatic
+hourly publication is paused too.
 These are exploratory airflow simulations. The already flowing sequence starts
 from an unconverged steady-solver field.
 

@@ -1,0 +1,45 @@
+{
+  "created_utc": "2026-09-09T10:42:51.429135+00:00",
+  "source_checkpoint": "checkpoint-17",
+  "source_progress_sha256": "1823385f0c1fb068d8f10f6ba5579b4c1aae3827a8c921395492c5dfb2585da3",
+  "source_video_sha256": "da63f0d7b6e58aa7670c25dfc10926fd7feb16ef3cd8d4da77eaddddf69a3302",
+  "source_cfd_states": 1966,
+  "samples_read_and_hash_verified": 1966,
+  "equivalent_sample_orderings": 2,
+  "first_time_s": 0.0,
+  "last_time_s": 0.06809336586,
+  "fps": 60,
+  "speed_multiplier": 5,
+  "playback_slowdown": 220.6569792886381,
+  "encoded_frames": 909,
+  "video_duration_s": 15.15,
+  "last_frame_file": "frame-0902.png",
+  "video_sha256": "8e04c4fcf5eb3e46649d6bfb3800375d9c5f358cca550c9c945de730e225cdd2",
+  "video_bytes": 3696300,
+  "size_px": [
+    1800,
+    1100
+  ],
+  "integration": "Second-order midpoint RK2; maximum 12.5 microseconds; original slice triangles for spatial interpolation; linear temporal interpolation of saved velocity.",
+  "visualization": "Projected 2D tracers follow U_y and U_z on X=+111 mm, not full 3D fluid paths. Pressure is interpolated for display. Random reseeding is visual only, not particle concentration.",
+  "particles_per_panel": 320,
+  "trail_frames": 11,
+  "clouds": [
+    {
+      "respawns_including_initial": 1670,
+      "integrated_particle_steps": 2126330,
+      "integrated_travel_mm": 12944.705810072071,
+      "max_step_displacement_mm": 0.048199031555800506
+    },
+    {
+      "respawns_including_initial": 1887,
+      "integrated_particle_steps": 2126113,
+      "integrated_travel_mm": 27613.477034821604,
+      "max_step_displacement_mm": 0.06387527487048085
+    }
+  ],
+  "render_seconds": 1120.8439999999828,
+  "preview": false,
+  "renderer_sha256": "f4c5749eaaa4bf8938ad9d94978a4c07395786309d7e48c2d2de7d89f40a1082",
+  "verification": "All used CFD samples hash checked; complete source interval integrated; particle movement recorded; full video decode, dimensions, frame count and duration checked."
+}

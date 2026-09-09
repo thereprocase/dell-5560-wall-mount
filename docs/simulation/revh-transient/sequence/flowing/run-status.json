@@ -1,6 +1,6 @@
 {
   "case": "revh_flowing_12",
-  "state": "running",
+  "state": "complete",
   "started_utc": "2026-09-08T18:08:14.929371+00:00",
   "budget_seconds": 64303.928386,
   "hourly_updates_due_seconds": [
@@ -11,15 +11,15 @@
   ],
   "scope": "Exploratory transient from a steady-solver iterate; initial field is not claimed converged.",
   "initialization_kind": "steady_solver",
-  "updated_utc": "2026-09-09T10:20:52.782704+00:00",
-  "elapsed_seconds": 58332.13,
-  "completed_steps": 3963,
-  "latest_physical_time_s": 0.06866561756,
-  "latest_deltaT_s": 1.728513878e-05,
-  "latest_Courant": 0.5000940387,
+  "updated_utc": "2026-09-09T10:32:12.771079+00:00",
+  "elapsed_seconds": 59021.71,
+  "completed_steps": 4007,
+  "latest_physical_time_s": 0.06942309361,
+  "latest_deltaT_s": 1.71424898e-05,
+  "latest_Courant": 0.5000935186,
   "max_logged_Courant": 0.501243152,
   "bounding_events": 5,
-  "complete_sample_frames": 1982,
+  "complete_sample_frames": 2004,
   "rank_change": {
     "started_utc": "2026-09-08T19:13:13.343018+00:00",
     "from_ranks": 4,
@@ -65,5 +65,15 @@
   "authorized_deadline_utc": "2026-09-09T12:00:00+00:00",
   "session_started_utc": "2026-09-08T19:47:56.309362+00:00",
   "wall_time_accounting": "Cumulative supervised wall time; idle gaps between completed sessions are excluded.",
-  "published_snapshot_utc": "2026-09-09T10:21:00.298922+00:00"
+  "stop_reason": "User requested a resumable stop",
+  "stop_signal_utc": "2026-09-09T10:31:35.932783+00:00",
+  "exit_code": 0,
+  "finished_utc": "2026-09-09T10:32:12.838625+00:00",
+  "restart_checkpoint": {
+    "physical_time_s": 0.0694402361,
+    "mpi_ranks": 8,
+    "verified_utc": "2026-09-09T10:32:13.703899+00:00",
+    "native_previous_step_fields_preserved": true
+  },
+  "published_snapshot_utc": "2026-09-09T10:47:00.188006+00:00"
 }

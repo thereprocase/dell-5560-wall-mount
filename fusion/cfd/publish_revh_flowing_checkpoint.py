@@ -12,6 +12,7 @@ from pathlib import Path
 import shutil
 from stage_revh_checkpoint import copy as copy_checkpoint
 from make_revh_fast_video import make_fast_video, fast_video_html
+from publish_revh_tracers import make_tracer_video, tracer_video_html
 
 ROOT=Path(__file__).resolve().parents[2]
 PAGE=ROOT/'docs/simulation/revh-transient/sequence/flowing'
@@ -39,6 +40,11 @@ def main():
     else:copy_checkpoint(args.source,target)
     for name in ['case_manifest.json','quality-disposition.json']:shutil.copy2(args.case/name,PAGE/name)
     state=json.loads((args.case/'run-status.json').read_text())
+    paused=state['state']=='complete' and state.get('stop_reason')=='User requested a resumable stop'
+    pause_note=''
+    if paused:
+        restart_ms=state['restart_checkpoint']['physical_time_s']*1000
+        pause_note=f'<p class="notice"><strong>Simulation paused.</strong> The native restart checkpoint is preserved at {restart_ms:.4f} ms, with previous-step history. These videos use the existing recorded samples. Automatic hourly publication is paused.</p>'
     public={k:v for k,v in state.items() if k not in ['mpi_pid','worker_pids','command']}
     public['published_snapshot_utc']=datetime.now(timezone.utc).isoformat()
     (PAGE/'run-status.json').write_text(json.dumps(public,indent=2)+'\n',encoding='utf-8')
@@ -47,6 +53,7 @@ def main():
         r=json.loads(path.read_text());r['_folder']=path.parent.name;checkpoints.append(r)
     checkpoints.sort(key=lambda r:r['last_time_s']);latest=checkpoints[-1];folder=latest['_folder']
     fast=make_fast_video(PAGE,latest)
+    tracers=make_tracer_video(PAGE,latest,args.case)
     shutil.copy2(PAGE/folder/'flow.mp4',PAGE/'latest.mp4')
     (PAGE/'latest.json').write_text(json.dumps({k:latest[k] for k in ['_folder','created_utc','last_time_s','source_frames','video_sha256']},indent=2)+'\n',encoding='utf-8')
     rows=[]
@@ -72,17 +79,19 @@ def main():
 </style><main><nav><a href="../">← Original startup and steady arrow images</a> · <a href="../../">Revision H study</a></nav>
 <h1>Air is already moving in the first frame.</h1>
 <p>This separate transient begins with the flowing field from steady-solver iteration {iteration}. Its clock starts at zero for this sequence. It is not appended to the original quiet-start simulation.</p>
+{pause_note}
 <div class="notice"><strong>The starting field is not converged.</strong> These are physical transient samples after switching from the steady solver; initial adjustment remains. The provisional mesh and timestep have not passed an independence study. Periodic shedding, settled lip suction and temperature benefits are not established.</div>
+{tracer_video_html(tracers)}
 <h2>Latest recorded flow</h2><figure><video id="flow-video" controls playsinline preload="metadata" poster="{folder}/poster.png"><source src="{folder}/flow.mp4" type="video/mp4"><a href="{folder}/flow.mp4">Open video</a></video>
 <figcaption>{latest['source_frames']} actual CFD states, from {latest['first_time_s']*1000:.4f} to {latest['last_time_s']*1000:.4f} ms after flowing-field initialization. {latest['video_duration_s']:.2f} seconds of playback at {latest['playback_slowdown']:.0f}× slow motion, rounded to 30 fps, with a half-second final hold. No intermediate CFD states are generated. <a href="latest.mp4">Open the latest MP4</a>.</figcaption></figure>
 {fast_video_html(fast,folder)}
 <figure><a href="{folder}/history.png"><img src="{folder}/history.png" alt="Pressure, speed, boundary flow and Courant histories against physical transient time" loading="lazy"></a><figcaption>Recorded probe histories. A steady-solver iteration is not counted as elapsed fluid time.</figcaption></figure>
 {opening_html}
 <h2>Preserved checkpoints</h2><div class="table"><table><thead><tr><th>Checkpoint</th><th>Transient time</th><th>Actual states</th><th>Files</th></tr></thead><tbody>{''.join(rows)}</tbody></table></div>
-<h2>How this run is initialized</h2><p>The geometry, mesh and fan forcing match the original Revision H case. Velocity, pressure and turbulence fields are copied from the saved steady iterate; old transient history is not copied at initialization. The backward time scheme uses its native initial Euler fallback. The solver currently uses {worker_count} CPU workers, {outer} outer correction passes, an initial 12.5 µs step, a maximum 25 µs step and an adaptive Courant target of 0.5.{rank_note}</p>
+<h2>How this run is initialized</h2><p>The geometry, mesh and fan forcing match the original Revision H case. Velocity, pressure and turbulence fields are copied from the saved steady iterate; old transient history is not copied at initialization. The backward time scheme uses its native initial Euler fallback. The solver configuration uses {worker_count} CPU workers, {outer} outer correction passes, an initial 12.5 µs step, a maximum 25 µs step and an adaptive Courant target of 0.5.{rank_note}</p>
 <p>Arrows show sampled in-plane velocity at X = +111 mm. Colour limits are fixed within this sequence: speed 0–6 m/s, pressure ±12 Pa and vorticity ±2000/s. The original startup sequence retains its own scales. Grey areas are solid or unsampled; black lines are CAD surfaces.</p>
 <p><a href="case_manifest.json">Initialization provenance and settings</a> · <a href="quality-disposition.json">Mesh limitations</a> · <a href="run-status.json">Dated solver status</a> · <a href="../correction-check/">Short correction-count comparison</a></p>
-<footer>Published {escape(public['published_snapshot_utc'])}. Solver state at publication: {escape(state['state'])}. This page is a published checkpoint, not a live connection.</footer></main></html>'''
+<footer>Published {escape(public['published_snapshot_utc'])}. Solver state at publication: {'paused' if paused else escape(state['state'])}. This page is a published checkpoint, not a live connection.</footer></main></html>'''
     (PAGE/'index.html').write_text(html,encoding='utf-8',newline='\n')
     print(json.dumps({'page':str(PAGE),'checkpoint':folder,'source_frames':latest['source_frames'],'last_time_s':latest['last_time_s']}))
 

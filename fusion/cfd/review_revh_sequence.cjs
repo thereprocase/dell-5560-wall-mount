@@ -25,7 +25,7 @@ const output=process.argv[3]||'fusion/cfd/runs/revh_fourhour_08/browser-initial'
    // complete file as a blob locally; public checks use the real HTTPS source.
    if(new URL(base).hostname==='127.0.0.1')await video.evaluate(async v=>{v.src=URL.createObjectURL(await (await fetch(v.querySelector('source').src)).blob());v.load();});
    await video.scrollIntoViewIfNeeded();await video.evaluate(v=>v.play());
-   await page.waitForFunction(()=>document.querySelector('video').currentTime>.25);
+   await page.waitForFunction(()=>document.querySelector('#flow-video').currentTime>.25);
    await video.evaluate(v=>v.pause());
    const source=await video.locator('source').getAttribute('src');
    const report=await (await page.request.get(new URL('progress.json',new URL(source,base)).href)).json();
@@ -72,13 +72,35 @@ const output=process.argv[3]||'fusion/cfd/runs/revh_fourhour_08/browser-initial'
    if(new Set(hashes).size!==3||Math.abs(fastMeta.duration-report.source_video_duration_s/5)>.025||fastMeta.width!==1800||fastMeta.height!==1100||fastMeta.error||!fastMeta.controls)errors.push('5x playback check failed');
    await fastVideo.screenshot({path:path.join(output,'video-5x-desktop.png')});
   }
+  const tracerVideo=page.locator('#flow-video-tracers');let tracerMeta=null;
+  if(await tracerVideo.count()){
+   const report=await (await page.request.get(new URL('latest-tracers.json',base).href)).json();
+   const latest=await (await page.request.get(new URL('latest.json',base).href)).json();
+   if(report.source_video_sha256!==latest.video_sha256||report.samples_read_and_hash_verified!==latest.source_frames||report.preview)errors.push('Tracer source checkpoint mismatch');
+   const response=await page.request.get(new URL('latest-tracers.mp4?v='+report.video_sha256,base).href);
+   if(!response.ok()||crypto.createHash('sha256').update(await response.body()).digest('hex')!==report.video_sha256)errors.push('Tracer video hash mismatch');
+   if(new URL(base).hostname==='127.0.0.1')await tracerVideo.evaluate(async v=>{v.src=URL.createObjectURL(await (await fetch(v.querySelector('source').src)).blob());v.load();});
+   await tracerVideo.scrollIntoViewIfNeeded();await tracerVideo.evaluate(v=>v.play());
+   await page.waitForFunction(()=>document.querySelector('#flow-video-tracers').currentTime>.25);
+   await tracerVideo.evaluate(v=>v.pause());
+   tracerMeta=await tracerVideo.evaluate(v=>({duration:v.duration,width:v.videoWidth,height:v.videoHeight,error:v.error,controls:v.controls}));
+   const hashes=[];
+   for(const fraction of [.15,.50,.85]){
+    await tracerVideo.evaluate((v,t)=>new Promise(resolve=>{v.addEventListener('seeked',()=>requestAnimationFrame(()=>requestAnimationFrame(resolve)),{once:true});v.currentTime=t;}),tracerMeta.duration*fraction);
+    const frame=await tracerVideo.evaluate(v=>{const c=document.createElement('canvas');c.width=1200;c.height=700;c.getContext('2d').drawImage(v,100,200,1550,700,0,0,1200,700);return c.toDataURL();});
+    hashes.push(crypto.createHash('sha256').update(frame).digest('hex'));
+   }
+   tracerMeta={...tracerMeta,playback_advanced:true,distinct_decoded_flow_regions:new Set(hashes).size,particle_transport:report.clouds};
+   if(new Set(hashes).size!==3||Math.abs(tracerMeta.duration-report.video_duration_s)>.025||tracerMeta.width!==1800||tracerMeta.height!==1100||tracerMeta.error||!tracerMeta.controls||report.clouds.some(c=>c.integrated_travel_mm<=0))errors.push('Moving-tracer playback check failed');
+   await tracerVideo.screenshot({path:path.join(output,'video-tracers-desktop.png')});
+  }
   await page.screenshot({path:path.join(output,'desktop.png'),fullPage:true});
   await page.setViewportSize({width:390,height:844});
   if(await video.count())await video.scrollIntoViewIfNeeded();
   const mobileOverflow=await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth);
   await page.screenshot({path:path.join(output,'mobile.png'),fullPage:true});
   if(mobileOverflow)errors.push('Mobile page overflow');
-  const result={checked_utc:new Date().toISOString(),url:base,video:meta,fast_video:fastMeta,internal_links_checked:links.length,badLinks,mobile_overflow:mobileOverflow,errors};
+  const result={checked_utc:new Date().toISOString(),url:base,video:meta,fast_video:fastMeta,tracer_video:tracerMeta,internal_links_checked:links.length,badLinks,mobile_overflow:mobileOverflow,errors};
   fs.writeFileSync(path.join(output,'review.json'),JSON.stringify(result,null,2)+'\n');console.log(JSON.stringify(result));
   if(errors.length)process.exitCode=1;
  }finally{await browser.close();}
