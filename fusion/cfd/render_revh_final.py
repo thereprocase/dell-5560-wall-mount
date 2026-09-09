@@ -87,7 +87,7 @@ def main():
             pressure=weighted(times,np.array(probe['pressure_Pa'])-ambient,start);speed=weighted(times,probe['speed_m_s'],start)
             stats.append({'probe':name,**{'pressure_relative_ambient_Pa_'+k:v for k,v in pressure.items()},**{'speed_m_s_'+k:v for k,v in speed.items()}})
         with (out/'probe-summary.csv').open('w',encoding='utf-8',newline='') as f:
-            w=csv.DictWriter(f,fieldnames=stats[0].keys());w.writeheader();w.writerows(stats)
+            w=csv.DictWriter(f,fieldnames=stats[0].keys(),lineterminator='\n');w.writeheader();w.writerows(stats)
         flux={}
         for side in ['left','right']:
             pts,tri,fields=read_plane(out/(side+'_section.vtp'));a=[40.,0.];b=[48.129883,4.663238];d=np.array(b)-a
@@ -98,7 +98,7 @@ def main():
                 'section_flux_scope':'Local line integrals at X = +/-111 mm, in m2/s (volume flux per unit span). Not full-width L/s or a closed 3D flow balance.',
                 'files_sha256':{p.name:sha(p) for p in out.iterdir() if p.is_file() and p.name!='summary.json'}}
         summary['phases'][phase]=result
-        (out/'summary.json').write_text(json.dumps(result,indent=2)+'\n',encoding='utf-8')
+        (out/'summary.json').write_text(json.dumps(result,indent=2)+'\n',encoding='utf-8',newline='\n')
         print(json.dumps({'phase':phase,'through_ms':end*1000,'lip_probe_means_Pa':[s['pressure_relative_ambient_Pa_mean'] for s in stats if 'front_lip_wallside' in s['probe']],'final_section_flux':flux}),flush=True)
-    (args.output/'summary.json').write_text(json.dumps(summary,indent=2)+'\n',encoding='utf-8')
+    (args.output/'summary.json').write_text(json.dumps(summary,indent=2)+'\n',encoding='utf-8',newline='\n')
 if __name__=='__main__':main()

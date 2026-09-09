@@ -38,17 +38,17 @@ parts.append(links([('Combined summary JSON','summary.json')]))
 for phase,label in [('startup','Startup'),('flowing','Already flowing')]:
     parts.append('<h3>'+label+'</h3>'+links([('Probe summary CSV',phase+'/probe-summary.csv'),('Full probes CSV · gzip',phase+'/probes.csv.gz'),('Solver history CSV · gzip',phase+'/solver-history.csv.gz'),('Diagnostics + source hashes · gzip',phase+'/diagnostics.json.gz')]))
 parts.append('<p>The <a href="../#gl-section-7">iteration-400 steady images</a>, <a href="../#gl-section-9">early full-width opening integrals</a> and <a href="../../../installed-airflow-2026-09-07/">earlier installed-airflow package</a> retain their original labels and provenance. They represent different numerical states or earlier geometry, so their numbers are not relabeled as these final transient results.</p><p>Older compressed diagnostic downloads were rebuilt where decompression failed, using original checkpoint files and their recorded content hashes. <a href="archive-repair.json">Archive repair record</a>.</p><footer class="small">Simulation remains stopped and resumable. This report reads preserved output only. Source scripts: <a href="https://github.com/thereprocase/dell-5560-wall-mount/tree/main/fusion/cfd">CFD post-processing tools</a>.</footer></main></body></html>')
-(OUT/'index.html').write_text(head+''.join(parts),encoding='utf-8')
+(OUT/'index.html').write_text(head+''.join(parts),encoding='utf-8',newline='\n')
 entry='<p class="notice"><strong>Final saved-data report:</strong> <a href="final/">Updated arrow maps, full histories, lip-flow measurements and downloadable data</a> through 96.26 ms startup and 69.44 ms flowing initialization.</p>'
 if 'href="final/"' not in original:
     original=original.replace('<h1>Revision H airflow, recorded.</h1>','<h1>Revision H airflow, recorded.</h1>'+entry)
     original=original.replace('<span>CONTENTS</span>','<span>CONTENTS</span><a href="final/">Final results &amp; data ↗</a>',1)
-    (SEQ/'index.html').write_text(original,encoding='utf-8')
+    (SEQ/'index.html').write_text(original,encoding='utf-8',newline='\n')
 p=SEQ/'flowing/index.html';text=p.read_text(encoding='utf-8')
 if 'href="../final/"' not in text:
-    text=text.replace('<main>','<main><p class="notice"><a href="../final/#flowing">Final saved-field plots and complete probe histories</a> now cover 69.44 ms, including the saved tail after this video.</p>',1);p.write_text(text,encoding='utf-8')
+    text=text.replace('<main>','<main><p class="notice"><a href="../final/#flowing">Final saved-field plots and complete probe histories</a> now cover 69.44 ms, including the saved tail after this video.</p>',1);p.write_text(text,encoding='utf-8',newline='\n')
 p=ROOT/'README.md';text=p.read_text(encoding='utf-8')
 if 'sequence/final/' not in text:
     text+='\n## Final CFD results\n\n[Final arrow maps, full probe histories and lip-flow data](https://thereprocase.github.io/dell-5560-wall-mount/simulation/revh-transient/sequence/final/) use preserved output through 96.26 ms startup and 69.44 ms flowing initialization. No further simulation was run. [Watch the final particle videos](https://thereprocase.github.io/dell-5560-wall-mount/simulation/revh-transient/sequence/).\n'
-    p.write_text(text,encoding='utf-8')
+    p.write_text(text,encoding='utf-8',newline='\n')
 print('Built final results page and existing landing links.')
