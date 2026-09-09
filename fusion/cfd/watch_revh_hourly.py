@@ -33,7 +33,7 @@ def main():
         temp=status_file.with_suffix('.tmp');temp.write_text(json.dumps(state,indent=2)+'\n');temp.replace(status_file)
     def run(command,log):
         result=subprocess.run(command,cwd=BASE.parents[1],stdout=log,stderr=subprocess.STDOUT,
-                              creationflags=subprocess.BELOW_NORMAL_PRIORITY_CLASS)
+                              creationflags=subprocess.IDLE_PRIORITY_CLASS)
         if result.returncode:raise RuntimeError('Artifact command failed: '+str(command[1]))
     save()
     try:

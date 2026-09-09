@@ -27,8 +27,8 @@ def now():return datetime.now(timezone.utc)
 
 def main():
     import ctypes
-    if not ctypes.windll.kernel32.SetPriorityClass(ctypes.c_void_p(-1),subprocess.BELOW_NORMAL_PRIORITY_CLASS):
-        raise OSError('Could not set the CFD publisher to Below Normal priority')
+    if not ctypes.windll.kernel32.SetPriorityClass(ctypes.c_void_p(-1),subprocess.IDLE_PRIORITY_CLASS):
+        raise OSError('Could not set the CFD publisher to Idle priority')
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('--until',required=True)
     p.add_argument('--state-root',type=Path,default=BASE/'runs/revh_overnight_16')
@@ -62,7 +62,7 @@ def main():
     def run(command,log,timeout=1800,check=True):
         result=subprocess.run(command,cwd=ROOT,stdout=subprocess.PIPE,stderr=subprocess.PIPE,text=True,
                               encoding='utf-8',errors='replace',timeout=timeout,
-                              creationflags=subprocess.BELOW_NORMAL_PRIORITY_CLASS|subprocess.CREATE_NO_WINDOW)
+                              creationflags=subprocess.IDLE_PRIORITY_CLASS|subprocess.CREATE_NO_WINDOW)
         log.write(result.stdout);log.write(result.stderr);log.flush()
         if check and result.returncode:raise RuntimeError(f'Command failed ({result.returncode}): {command[:3]}')
         return result
@@ -79,7 +79,7 @@ def main():
         output=parent/f'{job["label"]}-attempt-{attempt}'
         with (parent/f'{job["label"]}-attempt-{attempt}.log').open('w',encoding='utf-8') as log:
             run([RENDER_PYTHON,str(BASE/'render_revh_progress.py'),'--case',str(case),'--output',str(output),'--hour',str(job['hour'] if kind=='startup' else 0)],log)
-            run(['wsl.exe','-e','nice','-n','15','ionice','-c','3','python3',wsl_path(BASE/'collect_revh_diagnostics.py'),'--case',WSL_ROOT+'/'+case.name,'--output',wsl_path(output)],log)
+            run(['wsl.exe','-e','nice','-n','19','ionice','-c','3','python3',wsl_path(BASE/'collect_revh_diagnostics.py'),'--case',WSL_ROOT+'/'+case.name,'--output',wsl_path(output)],log)
             run([RENDER_PYTHON,str(BASE/'plot_revh_history.py'),'--output',str(output)],log)
             run([RENDER_PYTHON,str(BASE/'compress_revh_video.py'),'--case',str(case),'--source',str(output),'--crf','30','--apply'],log)
         if job['final']:

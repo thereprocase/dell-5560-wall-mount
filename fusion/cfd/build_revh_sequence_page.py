@@ -15,13 +15,20 @@ PAGE=ROOT/'docs/simulation/revh-transient/sequence'
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--case',type=Path,required=True)
+    parser.add_argument('--steady-case',type=Path)
     args=parser.parse_args()
     state=json.loads((args.case/'run-status.json').read_text())
+    visual=state.get('visual_extension')
     paused=state['state']=='complete' and state.get('stop_reason')=='User requested a resumable stop'
     pause_note=''
     if paused:
         restart_ms=state['restart_checkpoint']['physical_time_s']*1000
         pause_note=f'<p class="notice"><strong>Simulation paused.</strong> The native restart checkpoint is preserved at {restart_ms:.4f} ms, with previous-step history. The videos below use the existing recorded samples. Automatic hourly publication is paused.</p>'
+    step_metric='<strong>≤ 25 µs</strong><span>adaptive timestep · Courant limit 0.5</span>'
+    visual_note=''
+    if visual:
+        step_metric=f'<strong>{visual["video_frame_step_s"]*1e6:.2f} µs</strong><span>fixed step in the new visual extension · one sample per 60 fps video frame</span>'
+        visual_note=f'<p class="notice"><strong>Visual continuation from {visual["base_last_time_s"]*1000:.4f} ms.</strong> The original video is followed by {visual["new_frames"]} new samples using fixed {visual["video_frame_step_s"]*1e6:.2f} µs steps and 12 workers. This prioritizes temporal progress and appearance; timestep accuracy will be assessed later. The earlier checkpoints remain available.</p>'
     PAGE.mkdir(parents=True,exist_ok=True)
     public={k:v for k,v in state.items() if k not in ['mpi_pid','worker_pids','command']}
     public['published_snapshot_utc']=datetime.now(timezone.utc).isoformat()
@@ -51,6 +58,8 @@ def main():
     latest=max(reports+adhoc,key=lambda r:r['last_time_s']) if reports or adhoc else None
     if latest:
         source=PAGE/latest['_folder']
+        if visual and (source/'visual-run.json').is_file():
+            visual_note=visual_note.removesuffix('</p>')+f' <a href="{latest["_folder"]}/visual-run.json">Run timings, resource use and restart record</a>.</p>'
         fast=make_fast_video(PAGE,latest)
         tracers=make_tracer_video(PAGE,latest,args.case)
         shutil.copy2(source/'flow.mp4',PAGE/'latest.mp4')
@@ -88,7 +97,7 @@ def main():
         elif state['state']!='complete':rows.append(f'<tr><th scope="row">Hour {hour}</th><td>Scheduled hourly checkpoint</td><td>Pending</td><td>—</td><td>Not yet published</td></tr>')
     status='paused' if paused else escape(state['state'].replace('_',' '))
     steady_note=''
-    steady_case=args.case.parent/'revh_steady_09'
+    steady_case=args.steady_case or args.case.parent/'revh_steady_09'
     if (steady_case/'run-status.json').is_file():
         steady=json.loads((steady_case/'run-status.json').read_text())
         steady_public={k:v for k,v in steady.items() if k not in ['worker_pids','mpi_pid']}
@@ -132,9 +141,10 @@ def main():
 <h1>{heading}</h1>
 <p class="lede">Recorded airflow around the duct outlet, front laptop lip and hinge discharge. Moving particles follow the saved velocity fields; original arrow videos preserve the sampled states. <a href="latest-tracers.mp4">Open the moving-particle MP4</a>.</p>
 {pause_note}
+{visual_note}
 {flowing_intro}
 <div class="notice"><strong>Exploratory startup on a provisional mesh.</strong> This run does not yet establish periodic vortex shedding or settled lip suction. Mesh and timestep independence remain untested.</div>
-<div class="metrics"><div class="metric"><strong>{ms:.4f} ms</strong><span>physical time at latest {'video' if latest else 'status'} checkpoint</span></div><div class="metric"><strong>{latest['source_frames'] if latest else 0}</strong><span>actual CFD states in the latest published video</span></div><div class="metric"><strong>≤ 25 µs</strong><span>adaptive timestep · Courant limit 0.5</span></div></div>
+<div class="metrics"><div class="metric"><strong>{ms:.4f} ms</strong><span>physical time at latest {'video' if latest else 'status'} checkpoint</span></div><div class="metric"><strong>{latest['source_frames'] if latest else 0}</strong><span>actual CFD states in the latest published video</span></div><div class="metric">{step_metric}</div></div>
 {video}
 <h2>Hourly checkpoints</h2>
 <p>Started at <time datetime="2026-09-08T16:12:29Z">12:12 p.m. Eastern on September 8</time>. The original videos are cumulative and use every completed section sample available at their capture time. Earlier hourly files stay unchanged. Restart fields and their previous-step history are preserved for later continuation.</p>
@@ -143,9 +153,9 @@ def main():
 <p>The locator shows where the sections lie on the actual installed CAD. The whole air path is coloured by speed. Close-ups show static pressure and signed vorticity at X = +111 mm; arrows show the in-plane velocity. Black lines are CAD surfaces and grey areas are solid or unsampled. Pressure, speed and vorticity scales stay fixed across the hourly videos. The physical timestamp is the simulation time; playback is deliberately slowed.</p>
 <p>Moving vorticity can reveal shear layers and vortices. A pressure depression near the lip would need to persist after startup before interpretation. A negative pressure alone does not identify a Bernoulli mechanism, and three apparent cycles would not establish converged shedding statistics.</p>
 <h2>What is being computed</h2>
-<p>This continuation uses the focused 3,193,565-cell Revision H mesh, with 0.25 mm targets in the sampled lip strips, and four CPU workers. It restarts at 0.1 ms from the same-geometry CPU benchmark, preserving the solver's time history. That benchmark started from quiet air. The older 18.2-million-cell, four-frame pilot is a separate record.</p>
+<p>The original startup uses the focused 3,193,565-cell Revision H mesh, with 0.25 mm targets in the sampled lip strips, and four CPU workers. It restarted at 0.1 ms from the same-geometry CPU benchmark, preserving the solver's time history. That benchmark started from quiet air. The older 18.2-million-cell, four-frame pilot is a separate record.</p>
 <p>The standard mesh check passes, but expanded checks identify four low-determinant cells and 71,820 concave cells; wall-layer coverage remains poor. Four nominal 10 Pa fan actuators drive isothermal SST URANS flow. Fan curves, grille resistance and laptop passages remain approximate. This is not an experimentally validated flow or temperature prediction.</p>
-<p>Complete planes at X = ±111 mm are saved every two solver steps, normally 50 µs apart. Full fields are checkpointed every half-hour of wall time at native binary precision. OpenFOAM disables gzip for binary fields; a separate lossless compression trial saved only about 5%. The solver records pressure and velocity probes, field bounds and ambient flux each step. A verified signal handler writes a restart checkpoint at the requested stop. New diagnostic downloads use lossless gzip; MP4 compression retains every plotted flow state.</p>
+<p>In the original adaptive run, complete planes at X = ±111 mm were saved every two solver steps, up to 50 µs apart. The new fixed-step visual extension saves each step. Full fields retain native binary precision and previous-step history for continuation. OpenFOAM disables gzip for binary fields; a separate lossless compression trial saved only about 5%. The solver records pressure and velocity probes, field bounds and ambient flux each step. New diagnostic downloads use lossless gzip; MP4 compression retains every plotted flow state.</p>
 {steady_note}
 {flowing_note}
 <ul class="links"><li><a href="run-status.json">Dated run status</a></li><li><a href="case_manifest.json">Inputs and solver settings</a></li><li><a href="quality-disposition.json">Mesh disposition</a></li><li><a href="../#gpu-benchmark">CPU/GPU evidence</a></li></ul>

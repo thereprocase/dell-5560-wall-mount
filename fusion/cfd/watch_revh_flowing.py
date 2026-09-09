@@ -21,7 +21,7 @@ def main():
         state['updated_utc']=datetime.now(timezone.utc).isoformat();temp=status.with_suffix('.tmp')
         temp.write_text(json.dumps(state,indent=2)+'\n');temp.replace(status)
     def run(command,log):
-        result=subprocess.run(command,cwd=BASE.parents[1],stdout=log,stderr=subprocess.STDOUT,creationflags=subprocess.BELOW_NORMAL_PRIORITY_CLASS)
+        result=subprocess.run(command,cwd=BASE.parents[1],stdout=log,stderr=subprocess.STDOUT,creationflags=subprocess.IDLE_PRIORITY_CLASS)
         assert result.returncode==0,command
     save()
     try:

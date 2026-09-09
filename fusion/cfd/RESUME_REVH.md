@@ -1,13 +1,24 @@
 # Revision H continuation and restart
 
-Both production cases are scheduled through **2026-09-09 12:00 UTC (8 a.m. EDT)**.
-The original startup uses four MPI workers; the transient initialized from a
-flowing steady-solver iterate uses eight. Their physical clocks remain separate.
+All cases are paused. The former overnight deadline was **2026-09-09 12:00 UTC
+(8 a.m. EDT)**; it is not an active authorization or schedule.
 
-CFD supervisors and solver workers use CPU nice +15 and idle disk-I/O priority.
-The Windows hourly publisher and its rendering jobs use Below Normal priority;
-new WSL diagnostic jobs also use nice +15 and idle I/O. These settings preserve
-the processor counts and 8 a.m. deadline while yielding to other work.
+The latest published startup continuation uses the isolated 12-worker case
+`revh_visual_81us_20260909_a3`, saved at **0.038723499605432 s**. It replays the
+prior native checkpoint to the old video's 0.03831884948 s endpoint, then adds
+five fixed 80.930025 microsecond steps. Continue this native case to extend the
+new visual timeline. Preserve its `uniform/time`, previous-step fields and
+12-way decomposition. See [the continuation record](VISUAL_EXTENSION_20260909.md).
+
+The original four-worker startup and eight-worker flowing-field transient are
+also retained, with separate physical clocks. The original startup's later
+unpublished fields are not part of the new visual branch.
+
+CFD supervisors and solver workers use CPU nice +19 and idle disk-I/O priority.
+The Windows hourly publisher and its rendering jobs use Idle priority;
+new WSL diagnostic jobs also use nice +19 and idle I/O. New Linux launches also use SCHED_IDLE and the shared 28 GiB cfd.slice memory cap.
+These settings preserve worker counts and yield to other work; simulations remain
+paused until a new continuation is requested. See CFD_RESOURCES.md.
 
 The WSL cases live under `/home/repro/code/dell5560-cfd-gpu-20260908`:
 
@@ -39,7 +50,7 @@ Each supervisor asks its verified OpenFOAM workers to write and stop at the next
 completed step. Do not send the OpenFOAM signal to `mpirun`. The hourly publisher
 then records a final cumulative checkpoint.
 
-## Add another hour later
+## Add another hour to an original adaptive case later
 
 Source the same OpenFOAM environment, then run either case (or both in separate
 terminals). The helper checks the saved native fields and uses `latestTime` with
@@ -54,7 +65,8 @@ python3 /mnt/f/Code/dell-5560-wall-mount-cfd/fusion/cfd/resume_revh.py \
   --seconds 3600
 ```
 
-Replace both case names with `revh_fourhour_08` to continue the startup timeline.
+Replace both case names with `revh_fourhour_08` to continue the original adaptive
+startup branch, not the new visual continuation.
 An explicit `--until 2026-09-09T12:00:00Z` can replace `--seconds`. Running this on
 an active case first creates a native checkpoint. Keep the mesh, forcing,
 processor count, old-step fields, and `uniform/time` together; do not initialize a

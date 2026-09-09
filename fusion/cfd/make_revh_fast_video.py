@@ -26,7 +26,7 @@ def sha(path):
 def run(command):
     options = {}
     if os.name == 'nt':
-        options['creationflags'] = subprocess.BELOW_NORMAL_PRIORITY_CLASS | subprocess.CREATE_NO_WINDOW
+        options['creationflags'] = subprocess.IDLE_PRIORITY_CLASS | subprocess.CREATE_NO_WINDOW
     return subprocess.run(command, check=True, capture_output=True, text=True, **options)
 
 

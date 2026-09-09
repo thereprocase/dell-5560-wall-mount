@@ -156,7 +156,7 @@ def main():
     args = parser.parse_args()
     if os.name == 'nt':
         import ctypes
-        assert ctypes.windll.kernel32.SetPriorityClass(ctypes.c_void_p(-1), subprocess.BELOW_NORMAL_PRIORITY_CLASS)
+        assert ctypes.windll.kernel32.SetPriorityClass(ctypes.c_void_p(-1), subprocess.IDLE_PRIORITY_CLASS)
     args.output.mkdir(parents=True, exist_ok=False)
     report_path = args.page / args.checkpoint / 'progress.json'
     source = json.loads(report_path.read_text(encoding='utf-8'))
@@ -196,6 +196,10 @@ def main():
     second = load(1)
     slowdown = source['playback_slowdown'] / SPEED
     count = int(round((times[-1] - times[0]) * slowdown * FPS)) + 1
+    extension = source.get('visual_extension')
+    if extension:
+        assert abs(extension['video_frame_step_s'] - 1 / (FPS * slowdown)) < 1e-12
+        count = extension['base_motion_frames'] + extension['new_frames']
     if args.preview_frames:
         count = min(count, args.preview_frames)
     width, height = 1800, 1100
@@ -249,6 +253,8 @@ def main():
         try:
             for frame in range(count):
                 target = min(float(times[-1]), float(times[0] + frame / (FPS * slowdown)))
+                if extension and frame >= extension['base_motion_frames'] - 1:
+                    target = extension['base_last_time_s'] + (frame - extension['base_motion_frames'] + 1) * extension['video_frame_step_s']
                 if frame == count - 1 and not args.preview_frames:
                     target = float(times[-1])
                 while physical_time < target - 1e-14:
@@ -308,6 +314,8 @@ def main():
                     'integrated_travel_mm': c.travel_mm, 'max_step_displacement_mm': c.max_displacement_mm} for c in clouds],
         'render_seconds': time.monotonic() - started, 'preview': bool(args.preview_frames),
     }
+    if extension:
+        result['visual_extension'] = extension
     (args.output / 'tracers.json').write_text(json.dumps(result, indent=2) + '\n', encoding='utf-8')
     print(json.dumps(result), flush=True)
 

@@ -1,21 +1,21 @@
 {
-  "created_utc": "2026-09-09T11:48:50.482278+00:00",
-  "source_checkpoint": "hour-18",
-  "source_progress_sha256": "43dcd5524b315423a19f565f7513f5d876576e74c9074c50cbb9aba0dbcd5983",
-  "source_video_sha256": "2469c1dabc82fbedb8eeddedcf5ffc0baeedf8810b16b481e4547982b064c2b6",
-  "source_cfd_states": 918,
-  "samples_read_and_hash_verified": 918,
-  "equivalent_sample_orderings": 1,
+  "created_utc": "2026-09-09T13:07:16.806821+00:00",
+  "source_checkpoint": "checkpoint-03",
+  "source_progress_sha256": "4d0ecb69aca4c144641a512de934801a64cf9fc56abfa6bf150ed64ab778317d",
+  "source_video_sha256": "7894dd4f18b547de5b0c70e13630d509d7ba1834e377b073816bc1443d9672c5",
+  "source_cfd_states": 923,
+  "samples_read_and_hash_verified": 923,
+  "equivalent_sample_orderings": 2,
   "first_time_s": 0.0001264,
-  "last_time_s": 0.03831884948,
+  "last_time_s": 0.038723499605432,
   "fps": 60,
   "speed_multiplier": 5,
   "playback_slowdown": 205.93922548108486,
-  "encoded_frames": 479,
-  "video_duration_s": 7.983333333333333,
-  "last_frame_file": "frame-0472.png",
-  "video_sha256": "d050abbee497281dfab2c8e425312bafd5fd39ffaf8c7cfee04f56e140db45a3",
-  "video_bytes": 1481743,
+  "encoded_frames": 484,
+  "video_duration_s": 8.066666666666666,
+  "last_frame_file": "frame-0477.png",
+  "video_sha256": "daac2bc7547c30f6bb8e0e6503a4a8a28d39754e188e75a7582bab5b802e7b00",
+  "video_bytes": 1548012,
   "size_px": [
     1800,
     1100
@@ -26,20 +26,39 @@
   "trail_frames": 11,
   "clouds": [
     {
-      "respawns_including_initial": 904,
-      "integrated_particle_steps": 1173816,
-      "integrated_travel_mm": 5143.976770389405,
+      "respawns_including_initial": 918,
+      "integrated_particle_steps": 1186282,
+      "integrated_travel_mm": 5227.1757999263755,
       "max_step_displacement_mm": 0.05097691439094925
     },
     {
-      "respawns_including_initial": 852,
-      "integrated_particle_steps": 1173868,
-      "integrated_travel_mm": 2475.6020479166023,
+      "respawns_including_initial": 867,
+      "integrated_particle_steps": 1186333,
+      "integrated_travel_mm": 2542.4121505567255,
       "max_step_displacement_mm": 0.05264862231818142
     }
   ],
-  "render_seconds": 172.78100000001723,
+  "render_seconds": 140.57800000000861,
   "preview": false,
-  "renderer_sha256": "0b9d9a9c49481e1a01386f217270a3791ef5bde73e0bcd0be619b4c8d4057bff",
-  "verification": "All used CFD samples hash checked; complete source interval integrated; particle movement recorded; full video decode, dimensions, frame count and duration checked."
+  "visual_extension": {
+    "base_last_time_s": 0.03831884948,
+    "base_motion_frames": 473,
+    "base_tracer_sha256": "d050abbee497281dfab2c8e425312bafd5fd39ffaf8c7cfee04f56e140db45a3",
+    "base_arrow_sha256": "2469c1dabc82fbedb8eeddedcf5ffc0baeedf8810b16b481e4547982b064c2b6",
+    "base_source_frames": 918,
+    "base_progress_sha256": "43dcd5524b315423a19f565f7513f5d876576e74c9074c50cbb9aba0dbcd5983",
+    "new_frames": 5,
+    "video_frame_step_s": 8.09300250000089e-05,
+    "timestep_accuracy": "Deferred by user; fixed-step continuation for visualization.",
+    "replay_checkpoint_s": 0.03772391061,
+    "replay_steps": 36
+  },
+  "renderer_sha256": "5cb8f73a5dd5ab2bd34d9f89719d0bfd20b36e236a56dbf1b9e6b836869f9da8",
+  "verification": "All used CFD samples hash checked; complete source interval integrated; particle movement recorded; full video decode, dimensions, frame count and duration checked.",
+  "render_source_progress_sha256": "d4221201a73223b0638ff8b7a3e353eaebf8ec3f6142042ef46fd6a097ac1ba9",
+  "metadata_correction": "Completed solver-step counter corrected to native checkpoint index 1851 after rendering; CFD samples, timestamps and video unchanged.",
+  "source_video_reencoding": {
+    "previous_arrow_video_sha256": "62d2c2dedffbd555aec92c49bbec195cc149deb524b14ed616582e0bfda1123a",
+    "method": "Arrow video reencoded directly from the same lossless plots at CRF 30. All CFD hashes, times, frame durations, scales and visual-extension parameters compared equal; the particle video is unchanged."
+  }
 }

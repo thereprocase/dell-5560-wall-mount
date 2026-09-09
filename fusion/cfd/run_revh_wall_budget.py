@@ -13,6 +13,7 @@ import re
 import shutil
 import signal
 import subprocess
+import sys
 import time
 from revh_checkpoint import describe as describe_checkpoint
 
@@ -21,7 +22,13 @@ def utc():return datetime.now(timezone.utc).isoformat()
 
 
 def lower_priority():
-    os.setpriority(os.PRIO_PROCESS,0,max(os.getpriority(os.PRIO_PROCESS,0),15))
+    # A shared slice caps all concurrent CFD work together, including children.
+    # A scope keeps the current environment, cwd and terminal connection.
+    if '/cfd.slice/' not in Path('/proc/self/cgroup').read_text():
+        os.execvp('systemd-run', ['systemd-run','--user','--scope','--quiet',
+                                '--slice=cfd.slice','--',sys.executable,*sys.argv])
+    os.setpriority(os.PRIO_PROCESS,0,19)
+    os.sched_setscheduler(0,os.SCHED_IDLE,os.sched_param(0))
     subprocess.run(['ionice','-c','3','-p',str(os.getpid())],check=True)
 
 

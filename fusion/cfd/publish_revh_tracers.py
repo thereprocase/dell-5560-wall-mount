@@ -33,7 +33,7 @@ def make_tracer_video(page, latest, case):
     if not output.exists():
         options = {}
         if os.name == 'nt':
-            options['creationflags'] = subprocess.BELOW_NORMAL_PRIORITY_CLASS | subprocess.CREATE_NO_WINDOW
+            options['creationflags'] = subprocess.IDLE_PRIORITY_CLASS | subprocess.CREATE_NO_WINDOW
         command = [RENDER_PYTHON, str(renderer), '--case', str(case), '--page', str(page),
                    '--checkpoint', latest['_folder'], '--output', str(output)]
         with (parent / (output.name + '.log')).open('w', encoding='utf-8') as log:

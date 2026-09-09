@@ -16,8 +16,11 @@ arms, size range and airflow adjustment too.
 These 60 fps views advect visualization particles through the saved in-plane
 velocity fields, with pressure behind them. They show projected 2D motion,
 interpolated between saved samples; they are not full 3D particle trajectories.
-The current clips cover 68.0934 ms of the flowing-air run and 38.3188 ms of
-startup. Both use the existing recorded samples.
+The current clips cover 68.0934 ms of the flowing-air run and 38.7235 ms of
+startup. The startup clip now extends its previous 38.3188 ms endpoint by five
+frames, using fixed 80.93 microsecond solver steps matched to the video pacing.
+This continuation prioritizes appearance and temporal progress; timestep
+accuracy is deferred.
 
 | Simulation | Original playback | 5× faster, 60 fps | Progress and archived checkpoints |
 |:--|:--|:--|:--|
@@ -27,10 +30,12 @@ startup. Both use the existing recorded samples.
 These stable links always point to the latest published cumulative videos, with
 all sampled frames retained in the originals. The 5× companions select existing
 frames at 60 fps without interpolation and refresh with each checkpoint.
-Both simulations were paused on **September 9, 2026**. Native restart fields
-and previous-step history are preserved at 69.4402 ms for the flowing-air run
-and 38.8331 ms for startup. More simulation can be added later; automatic
-hourly publication is paused too.
+All simulations are paused as of **September 9, 2026**. The new visual startup
+branch has a native restart checkpoint at 38.7235 ms with previous-step history.
+The older startup checkpoint at 38.8331 ms and flowing-air checkpoint at
+69.4402 ms are retained separately. The visual extension used 12 workers at
+idle priority, peaked at 9.9 GiB RAM and stayed below the shared 28 GiB CFD cap.
+More simulation can be added later; automatic hourly publication is paused too.
 These are exploratory airflow simulations. The already flowing sequence starts
 from an unconverged steady-solver field.
 
