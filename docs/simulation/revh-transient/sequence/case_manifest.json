@@ -556,7 +556,7 @@
     "base_arrow_sha256": "2469c1dabc82fbedb8eeddedcf5ffc0baeedf8810b16b481e4547982b064c2b6",
     "base_source_frames": 918,
     "base_progress_sha256": "43dcd5524b315423a19f565f7513f5d876576e74c9074c50cbb9aba0dbcd5983",
-    "new_frames": 669,
+    "new_frames": 714,
     "video_frame_step_s": 8.09300250000089e-05,
     "timestep_accuracy": "Deferred by user; fixed-step continuation for visualization.",
     "replay_checkpoint_s": 0.03772391061,
