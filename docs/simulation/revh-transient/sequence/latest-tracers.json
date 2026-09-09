@@ -1,21 +1,21 @@
 {
-  "created_utc": "2026-09-09T13:07:16.806821+00:00",
-  "source_checkpoint": "checkpoint-03",
-  "source_progress_sha256": "4d0ecb69aca4c144641a512de934801a64cf9fc56abfa6bf150ed64ab778317d",
-  "source_video_sha256": "7894dd4f18b547de5b0c70e13630d509d7ba1834e377b073816bc1443d9672c5",
-  "source_cfd_states": 923,
-  "samples_read_and_hash_verified": 923,
+  "created_utc": "2026-09-09T13:37:43.742054+00:00",
+  "source_checkpoint": "checkpoint-04",
+  "source_progress_sha256": "0b627a62ea552fdc9270a1cadb8d9210722ea4d8a1e54b8fd4e622752ae773b0",
+  "source_video_sha256": "90b840e7a7dc11f5d13ec69e88b9f93eb15342758f5d0563f2b940f36c5ae298",
+  "source_cfd_states": 949,
+  "samples_read_and_hash_verified": 949,
   "equivalent_sample_orderings": 2,
   "first_time_s": 0.0001264,
-  "last_time_s": 0.038723499605432,
+  "last_time_s": 0.040827680255432,
   "fps": 60,
   "speed_multiplier": 5,
   "playback_slowdown": 205.93922548108486,
-  "encoded_frames": 484,
-  "video_duration_s": 8.066666666666666,
-  "last_frame_file": "frame-0477.png",
-  "video_sha256": "daac2bc7547c30f6bb8e0e6503a4a8a28d39754e188e75a7582bab5b802e7b00",
-  "video_bytes": 1548012,
+  "encoded_frames": 510,
+  "video_duration_s": 8.5,
+  "last_frame_file": "frame-0503.png",
+  "video_sha256": "2beeb7c1d2a794aba8d5e55d5b874c391e1c054de9c8af03cc4406cc40038096",
+  "video_bytes": 1626103,
   "size_px": [
     1800,
     1100
@@ -26,19 +26,19 @@
   "trail_frames": 11,
   "clouds": [
     {
-      "respawns_including_initial": 918,
-      "integrated_particle_steps": 1186282,
-      "integrated_travel_mm": 5227.1757999263755,
+      "respawns_including_initial": 968,
+      "integrated_particle_steps": 1252792,
+      "integrated_travel_mm": 5663.381786859692,
       "max_step_displacement_mm": 0.05097691439094925
     },
     {
-      "respawns_including_initial": 867,
-      "integrated_particle_steps": 1186333,
-      "integrated_travel_mm": 2542.4121505567255,
+      "respawns_including_initial": 909,
+      "integrated_particle_steps": 1252851,
+      "integrated_travel_mm": 2894.924057227941,
       "max_step_displacement_mm": 0.05264862231818142
     }
   ],
-  "render_seconds": 140.57800000000861,
+  "render_seconds": 266.9219999999914,
   "preview": false,
   "visual_extension": {
     "base_last_time_s": 0.03831884948,
@@ -47,18 +47,12 @@
     "base_arrow_sha256": "2469c1dabc82fbedb8eeddedcf5ffc0baeedf8810b16b481e4547982b064c2b6",
     "base_source_frames": 918,
     "base_progress_sha256": "43dcd5524b315423a19f565f7513f5d876576e74c9074c50cbb9aba0dbcd5983",
-    "new_frames": 5,
+    "new_frames": 31,
     "video_frame_step_s": 8.09300250000089e-05,
     "timestep_accuracy": "Deferred by user; fixed-step continuation for visualization.",
     "replay_checkpoint_s": 0.03772391061,
     "replay_steps": 36
   },
   "renderer_sha256": "5cb8f73a5dd5ab2bd34d9f89719d0bfd20b36e236a56dbf1b9e6b836869f9da8",
-  "verification": "All used CFD samples hash checked; complete source interval integrated; particle movement recorded; full video decode, dimensions, frame count and duration checked.",
-  "render_source_progress_sha256": "d4221201a73223b0638ff8b7a3e353eaebf8ec3f6142042ef46fd6a097ac1ba9",
-  "metadata_correction": "Completed solver-step counter corrected to native checkpoint index 1851 after rendering; CFD samples, timestamps and video unchanged.",
-  "source_video_reencoding": {
-    "previous_arrow_video_sha256": "62d2c2dedffbd555aec92c49bbec195cc149deb524b14ed616582e0bfda1123a",
-    "method": "Arrow video reencoded directly from the same lossless plots at CRF 30. All CFD hashes, times, frame durations, scales and visual-extension parameters compared equal; the particle video is unchanged."
-  }
+  "verification": "All used CFD samples hash checked; complete source interval integrated; particle movement recorded; full video decode, dimensions, frame count and duration checked."
 }

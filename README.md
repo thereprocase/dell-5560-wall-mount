@@ -8,36 +8,30 @@ arms, size range and airflow adjustment too.
 [Explore both designs](https://thereprocase.github.io/dell-5560-wall-mount/) ·
 [Print and assembly guide](https://thereprocase.github.io/dell-5560-wall-mount/minimalist-guide.html)
 
-## Rev H airflow videos - simulation paused
+## Rev H airflow videos - updating hourly
 
 **Moving particles and trails, at 5× playback:**
-[Already flowing](https://thereprocase.github.io/dell-5560-wall-mount/simulation/revh-transient/sequence/flowing/latest-tracers.mp4) ·
-[Startup](https://thereprocase.github.io/dell-5560-wall-mount/simulation/revh-transient/sequence/latest-tracers.mp4).
-These 60 fps views advect visualization particles through the saved in-plane
-velocity fields, with pressure behind them. They show projected 2D motion,
-interpolated between saved samples; they are not full 3D particle trajectories.
-The current clips cover 68.0934 ms of the flowing-air run and 38.7235 ms of
-startup. The startup clip now extends its previous 38.3188 ms endpoint by five
-frames, using fixed 80.93 microsecond solver steps matched to the video pacing.
-This continuation prioritizes appearance and temporal progress; timestep
-accuracy is deferred.
+[Startup](https://thereprocase.github.io/dell-5560-wall-mount/simulation/revh-transient/sequence/latest-tracers.mp4) ·
+[Already flowing](https://thereprocase.github.io/dell-5560-wall-mount/simulation/revh-transient/sequence/flowing/latest-tracers.mp4).
 
-| Simulation | Original playback | 5× faster, 60 fps | Progress and archived checkpoints |
+The startup continuation is running until **4 p.m. Eastern on September 9, 2026**. Videos update automatically each hour, with a final update after the checkpoint and stop.
+The startup video covers **40.8277 ms** of simulated flow.
+The separate flowing-air video remains at 68.0934 ms.
+
+| Simulation | Original playback | 5× faster, 60 fps | Progress and archives |
 |:--|:--|:--|:--|
-| Started from still air | [Latest MP4](https://thereprocase.github.io/dell-5560-wall-mount/simulation/revh-transient/sequence/latest.mp4) | [Latest 5× MP4](https://thereprocase.github.io/dell-5560-wall-mount/simulation/revh-transient/sequence/latest-5x.mp4) | [Startup sequence](https://thereprocase.github.io/dell-5560-wall-mount/simulation/revh-transient/sequence/) |
-| Started from an already flowing field | [Latest MP4](https://thereprocase.github.io/dell-5560-wall-mount/simulation/revh-transient/sequence/flowing/latest.mp4) | [Latest 5× MP4](https://thereprocase.github.io/dell-5560-wall-mount/simulation/revh-transient/sequence/flowing/latest-5x.mp4) | [Flowing-field sequence](https://thereprocase.github.io/dell-5560-wall-mount/simulation/revh-transient/sequence/flowing/) |
+| Startup | [MP4](https://thereprocase.github.io/dell-5560-wall-mount/simulation/revh-transient/sequence/latest.mp4) | [MP4](https://thereprocase.github.io/dell-5560-wall-mount/simulation/revh-transient/sequence/latest-5x.mp4) | [Startup page](https://thereprocase.github.io/dell-5560-wall-mount/simulation/revh-transient/sequence/) |
+| Already flowing | [MP4](https://thereprocase.github.io/dell-5560-wall-mount/simulation/revh-transient/sequence/flowing/latest.mp4) | [MP4](https://thereprocase.github.io/dell-5560-wall-mount/simulation/revh-transient/sequence/flowing/latest-5x.mp4) | [Flowing page](https://thereprocase.github.io/dell-5560-wall-mount/simulation/revh-transient/sequence/flowing/) |
 
-These stable links always point to the latest published cumulative videos, with
-all sampled frames retained in the originals. The 5× companions select existing
-frames at 60 fps without interpolation and refresh with each checkpoint.
-All simulations are paused as of **September 9, 2026**. The new visual startup
-branch has a native restart checkpoint at 38.7235 ms with previous-step history.
-The older startup checkpoint at 38.8331 ms and flowing-air checkpoint at
-69.4402 ms are retained separately. The visual extension used 12 workers at
-idle priority, peaked at 9.9 GiB RAM and stayed below the shared 28 GiB CFD cap.
-More simulation can be added later; automatic hourly publication is paused too.
-These are exploratory airflow simulations. The already flowing sequence starts
-from an unconverged steady-solver field.
+These stable links serve the latest published cumulative videos. All recorded
+samples remain in the original playback. Particle views interpolate saved
+in-plane velocity at 60 fps; they show projected 2D motion with fading trails.
+The visual continuation begins at the old 38.3188 ms video endpoint and uses
+fixed 80.93 microsecond steps, one step per 5× video frame, with 12 workers.
+CFD runs at idle priority under a shared 28 GiB RAM cap. Full native fields are
+saved every half hour and at the final stop. Earlier native branches and public
+archives remain preserved. Timestep accuracy is deferred for this visual run;
+the separate flowing-air sequence starts from an unconverged steady field.
 
 ## MakerWorld preparation package
 
