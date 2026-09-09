@@ -15,7 +15,7 @@ arms, size range and airflow adjustment too.
 [Already flowing](https://thereprocase.github.io/dell-5560-wall-mount/simulation/revh-transient/sequence/flowing/latest-tracers.mp4).
 
 The startup continuation is running until **4 p.m. Eastern on September 9, 2026**. Videos update automatically each hour, with a final update after the checkpoint and stop.
-The startup video covers **84.6108 ms** of simulated flow.
+The startup video covers **92.4610 ms** of simulated flow.
 The separate flowing-air video remains at 68.0934 ms.
 
 | Simulation | Original playback | 5× faster, 60 fps | Progress and archives |
