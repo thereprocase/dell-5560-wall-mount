@@ -1,13 +1,17 @@
 # Revision H continuation and restart
 
-All cases are paused. The former overnight deadline was **2026-09-09 12:00 UTC
-(8 a.m. EDT)**; it is not an active authorization or schedule.
+The visual startup is running through **2026-09-09 20:00 UTC (4 p.m. EDT)**,
+with automatic hourly publication and a final update after its checkpoint and
+stop. See [the current schedule and stop procedure](VISUAL_AUTORUN_20260909.md).
+The two original adaptive cases remain paused. Their former overnight deadline
+was 12:00 UTC (8 a.m. EDT); it is not their active schedule.
 
 The latest published startup continuation uses the isolated 12-worker case
-`revh_visual_81us_20260909_a3`, saved at **0.038723499605432 s**. It replays the
+`revh_visual_81us_20260909_a3`, resumed from **0.038723499605432 s**. The initial trial replayed the
 prior native checkpoint to the old video's 0.03831884948 s endpoint, then adds
-five fixed 80.930025 microsecond steps. Continue this native case to extend the
-new visual timeline. Preserve its `uniform/time`, previous-step fields and
+five fixed 80.930025 microsecond steps. New native checkpoints are written every
+half hour and at the final stop; consult its current `resume-checkpoint.json`
+and verify the native fields before a later resume. Preserve `uniform/time`, previous-step fields and
 12-way decomposition. See [the continuation record](VISUAL_EXTENSION_20260909.md).
 
 The original four-worker startup and eight-worker flowing-field transient are
@@ -17,8 +21,7 @@ unpublished fields are not part of the new visual branch.
 CFD supervisors and solver workers use CPU nice +19 and idle disk-I/O priority.
 The Windows hourly publisher and its rendering jobs use Idle priority;
 new WSL diagnostic jobs also use nice +19 and idle I/O. New Linux launches also use SCHED_IDLE and the shared 28 GiB cfd.slice memory cap.
-These settings preserve worker counts and yield to other work; simulations remain
-paused until a new continuation is requested. See CFD_RESOURCES.md.
+These settings preserve worker counts and yield to other work. See CFD_RESOURCES.md.
 
 The WSL cases live under `/home/repro/code/dell5560-cfd-gpu-20260908`:
 
@@ -35,7 +38,7 @@ compression trial saved only about 5%. At a normal stop, `resume-checkpoint.json
 worker count, mesh hashes, native time metadata, and hashes of the exact
 uncompressed current and previous-step field bytes. Older checkpoints remain.
 
-## Stop now, preserving a restart
+## Stop the original adaptive cases, preserving a restart
 
 Run this from WSL:
 
