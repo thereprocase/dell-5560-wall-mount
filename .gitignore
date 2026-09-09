@@ -52,3 +52,10 @@ cfd/*/*.log
 /revh_cables/browser/*.png
 /revh_cables/browser/review-ui.json
 /revh_cables/browser/review-live.json
+
+# D4 local package staging; checked projects and regression fixtures are tracked.
+/revh_duct_r4/package/
+/revh_duct_r4/release-assets/
+/revh_duct_r4/*.FCStd1
+/revh_duct_r4/*.FCBak
+/revh_duct_r4/browser/*.png

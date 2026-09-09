@@ -13,3 +13,9 @@
 *.webp -text
 /revh_retention/print/*.step -text -diff
 /revh_cables/print/*.step -text -diff
+
+/revh_duct_r4/**/*.step -text -diff
+/revh_duct_r4/**/*.json text eol=lf
+/revh_duct_r4/**/*.py text eol=lf
+/revh_duct_r4/**/*.md text eol=lf
+/revh_duct_r4/**/*.cjs text eol=lf

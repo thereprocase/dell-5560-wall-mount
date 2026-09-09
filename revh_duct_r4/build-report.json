@@ -1,0 +1,628 @@
+{
+  "socket_checks": [
+    {
+      "native_cutter": "Extrusion038",
+      "remaining_material_mm3": 0.0
+    },
+    {
+      "native_cutter": "Extrusion040",
+      "remaining_material_mm3": 0.0
+    }
+  ],
+  "parts": {
+    "02_right_cradle": {
+      "valid_single_solid": true,
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0
+    },
+    "01_left_cradle": {
+      "valid_single_solid": true,
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0
+    },
+    "04_right_fan_duct": {
+      "valid_single_solid": true,
+      "added_mm3": 0.0,
+      "removed_mm3": 42.08229519575594
+    },
+    "03_left_fan_duct": {
+      "valid_single_solid": true,
+      "added_mm3": 0.0,
+      "removed_mm3": 42.082295196081795
+    },
+    "06_right_fan_retainer": {
+      "valid_single_solid": true,
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0
+    },
+    "05_left_fan_retainer": {
+      "valid_single_solid": true,
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0
+    },
+    "08_right_outlet_rail": {
+      "valid_single_solid": true,
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0
+    },
+    "07_left_outlet_rail": {
+      "valid_single_solid": true,
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0
+    },
+    "10_right_fan_tray": {
+      "valid_single_solid": true,
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0
+    },
+    "09_left_fan_tray": {
+      "valid_single_solid": true,
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0
+    },
+    "11_left_push_pin": {
+      "valid_single_solid": true,
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0
+    },
+    "12_right_push_pin": {
+      "valid_single_solid": true,
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0
+    },
+    "13_left_push_pin": {
+      "valid_single_solid": true,
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0
+    },
+    "14_right_push_pin": {
+      "valid_single_solid": true,
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0
+    },
+    "15_left_side_retainer": {
+      "valid_single_solid": true,
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0
+    },
+    "16_right_side_retainer": {
+      "valid_single_solid": true,
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0
+    },
+    "17_left_retainer_keeper": {
+      "valid_single_solid": true,
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0
+    },
+    "18_right_retainer_keeper": {
+      "valid_single_solid": true,
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0
+    },
+    "20_right_rear_air_baffle": {
+      "valid_single_solid": true,
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0
+    },
+    "19_left_rear_air_baffle": {
+      "valid_single_solid": true,
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0
+    }
+  },
+  "pins": {
+    "11_left_push_pin": [
+      {
+        "outward_mm": 0,
+        "crown_overlap_mm3": 0.05482604668293074,
+        "overlap_outside_crown_mm3": 0.0
+      },
+      {
+        "outward_mm": 0.2,
+        "crown_overlap_mm3": 0.05482604668302681,
+        "overlap_outside_crown_mm3": 0.0
+      },
+      {
+        "outward_mm": 0.5,
+        "crown_overlap_mm3": 0.054826046682840926,
+        "overlap_outside_crown_mm3": 0.0
+      },
+      {
+        "outward_mm": 1,
+        "crown_overlap_mm3": 0.054826046682971724,
+        "overlap_outside_crown_mm3": 0.0
+      },
+      {
+        "outward_mm": 2,
+        "crown_overlap_mm3": 0.0,
+        "overlap_outside_crown_mm3": 0.0
+      },
+      {
+        "outward_mm": 3,
+        "crown_overlap_mm3": 0.0,
+        "overlap_outside_crown_mm3": 0.0
+      },
+      {
+        "outward_mm": 5,
+        "crown_overlap_mm3": 0.0,
+        "overlap_outside_crown_mm3": 0.0
+      },
+      {
+        "outward_mm": 8,
+        "crown_overlap_mm3": 0.0,
+        "overlap_outside_crown_mm3": 0.0
+      },
+      {
+        "outward_mm": 12,
+        "crown_overlap_mm3": 0.0,
+        "overlap_outside_crown_mm3": 0.0
+      }
+    ],
+    "12_right_push_pin": [
+      {
+        "outward_mm": 0,
+        "crown_overlap_mm3": 0.05482604808766781,
+        "overlap_outside_crown_mm3": 0.0
+      },
+      {
+        "outward_mm": 0.2,
+        "crown_overlap_mm3": 0.05482604808778637,
+        "overlap_outside_crown_mm3": 0.0
+      },
+      {
+        "outward_mm": 0.5,
+        "crown_overlap_mm3": 0.05482604808763853,
+        "overlap_outside_crown_mm3": 0.0
+      },
+      {
+        "outward_mm": 1,
+        "crown_overlap_mm3": 0.05482604808785195,
+        "overlap_outside_crown_mm3": 0.0
+      },
+      {
+        "outward_mm": 2,
+        "crown_overlap_mm3": 0.0,
+        "overlap_outside_crown_mm3": 0.0
+      },
+      {
+        "outward_mm": 3,
+        "crown_overlap_mm3": 0.0,
+        "overlap_outside_crown_mm3": 0.0
+      },
+      {
+        "outward_mm": 5,
+        "crown_overlap_mm3": 0.0,
+        "overlap_outside_crown_mm3": 0.0
+      },
+      {
+        "outward_mm": 8,
+        "crown_overlap_mm3": 0.0,
+        "overlap_outside_crown_mm3": 0.0
+      },
+      {
+        "outward_mm": 12,
+        "crown_overlap_mm3": 0.0,
+        "overlap_outside_crown_mm3": 0.0
+      }
+    ],
+    "13_left_push_pin": [
+      {
+        "outward_mm": 0,
+        "crown_overlap_mm3": 0.05482604666519676,
+        "overlap_outside_crown_mm3": 0.0
+      },
+      {
+        "outward_mm": 0.2,
+        "crown_overlap_mm3": 0.054826046673345216,
+        "overlap_outside_crown_mm3": 0.0
+      },
+      {
+        "outward_mm": 0.5,
+        "crown_overlap_mm3": 0.05482604670232973,
+        "overlap_outside_crown_mm3": 0.0
+      },
+      {
+        "outward_mm": 1,
+        "crown_overlap_mm3": 0.05482604668170801,
+        "overlap_outside_crown_mm3": 0.0
+      },
+      {
+        "outward_mm": 2,
+        "crown_overlap_mm3": 0.0,
+        "overlap_outside_crown_mm3": 0.0
+      },
+      {
+        "outward_mm": 3,
+        "crown_overlap_mm3": 0.0,
+        "overlap_outside_crown_mm3": 0.0
+      },
+      {
+        "outward_mm": 5,
+        "crown_overlap_mm3": 0.0,
+        "overlap_outside_crown_mm3": 0.0
+      },
+      {
+        "outward_mm": 8,
+        "crown_overlap_mm3": 0.0,
+        "overlap_outside_crown_mm3": 0.0
+      },
+      {
+        "outward_mm": 12,
+        "crown_overlap_mm3": 0.0,
+        "overlap_outside_crown_mm3": 0.0
+      }
+    ],
+    "14_right_push_pin": [
+      {
+        "outward_mm": 0,
+        "crown_overlap_mm3": 0.05482604808389883,
+        "overlap_outside_crown_mm3": 0.0
+      },
+      {
+        "outward_mm": 0.2,
+        "crown_overlap_mm3": 0.054826048096548126,
+        "overlap_outside_crown_mm3": 0.0
+      },
+      {
+        "outward_mm": 0.5,
+        "crown_overlap_mm3": 0.05482604808555353,
+        "overlap_outside_crown_mm3": 0.0
+      },
+      {
+        "outward_mm": 1,
+        "crown_overlap_mm3": 0.05482604810812172,
+        "overlap_outside_crown_mm3": 0.0
+      },
+      {
+        "outward_mm": 2,
+        "crown_overlap_mm3": 0.0,
+        "overlap_outside_crown_mm3": 0.0
+      },
+      {
+        "outward_mm": 3,
+        "crown_overlap_mm3": 0.0,
+        "overlap_outside_crown_mm3": 0.0
+      },
+      {
+        "outward_mm": 5,
+        "crown_overlap_mm3": 0.0,
+        "overlap_outside_crown_mm3": 0.0
+      },
+      {
+        "outward_mm": 8,
+        "crown_overlap_mm3": 0.0,
+        "overlap_outside_crown_mm3": 0.0
+      },
+      {
+        "outward_mm": 12,
+        "crown_overlap_mm3": 0.0,
+        "overlap_outside_crown_mm3": 0.0
+      }
+    ]
+  },
+  "removed_outside_original_bores_mm3": 0.0,
+  "passed": true,
+  "revision": "H-D4",
+  "source_sha256": "e99dbcf41201de00b4f97a3d8291fa300633912bd2a3b8d6f23c7684c5342163",
+  "original_object_names_preserved": true,
+  "native_cutter_diameter_mm": 4.1,
+  "native_blind_depth_mm": 7.7,
+  "reopened": {
+    "socket_checks": [
+      {
+        "native_cutter": "Extrusion038",
+        "remaining_material_mm3": 0.0
+      },
+      {
+        "native_cutter": "Extrusion040",
+        "remaining_material_mm3": 0.0
+      }
+    ],
+    "parts": {
+      "02_right_cradle": {
+        "valid_single_solid": true,
+        "added_mm3": 0.0,
+        "removed_mm3": 0.0
+      },
+      "01_left_cradle": {
+        "valid_single_solid": true,
+        "added_mm3": 0.0,
+        "removed_mm3": 0.0
+      },
+      "04_right_fan_duct": {
+        "valid_single_solid": true,
+        "added_mm3": 0.0,
+        "removed_mm3": 42.08229519594895
+      },
+      "03_left_fan_duct": {
+        "valid_single_solid": true,
+        "added_mm3": 0.0,
+        "removed_mm3": 42.08229519601658
+      },
+      "06_right_fan_retainer": {
+        "valid_single_solid": true,
+        "added_mm3": 0.0,
+        "removed_mm3": 0.0
+      },
+      "05_left_fan_retainer": {
+        "valid_single_solid": true,
+        "added_mm3": 0.0,
+        "removed_mm3": 0.0
+      },
+      "08_right_outlet_rail": {
+        "valid_single_solid": true,
+        "added_mm3": 0.0,
+        "removed_mm3": 0.0
+      },
+      "07_left_outlet_rail": {
+        "valid_single_solid": true,
+        "added_mm3": 0.0,
+        "removed_mm3": 0.0
+      },
+      "10_right_fan_tray": {
+        "valid_single_solid": true,
+        "added_mm3": 0.0,
+        "removed_mm3": 0.0
+      },
+      "09_left_fan_tray": {
+        "valid_single_solid": true,
+        "added_mm3": 0.0,
+        "removed_mm3": 0.0
+      },
+      "11_left_push_pin": {
+        "valid_single_solid": true,
+        "added_mm3": 0.0,
+        "removed_mm3": 0.0
+      },
+      "12_right_push_pin": {
+        "valid_single_solid": true,
+        "added_mm3": 0.0,
+        "removed_mm3": 0.0
+      },
+      "13_left_push_pin": {
+        "valid_single_solid": true,
+        "added_mm3": 0.0,
+        "removed_mm3": 0.0
+      },
+      "14_right_push_pin": {
+        "valid_single_solid": true,
+        "added_mm3": 0.0,
+        "removed_mm3": 0.0
+      },
+      "15_left_side_retainer": {
+        "valid_single_solid": true,
+        "added_mm3": 0.0,
+        "removed_mm3": 0.0
+      },
+      "16_right_side_retainer": {
+        "valid_single_solid": true,
+        "added_mm3": 0.0,
+        "removed_mm3": 0.0
+      },
+      "17_left_retainer_keeper": {
+        "valid_single_solid": true,
+        "added_mm3": 0.0,
+        "removed_mm3": 0.0
+      },
+      "18_right_retainer_keeper": {
+        "valid_single_solid": true,
+        "added_mm3": 0.0,
+        "removed_mm3": 0.0
+      },
+      "20_right_rear_air_baffle": {
+        "valid_single_solid": true,
+        "added_mm3": 0.0,
+        "removed_mm3": 0.0
+      },
+      "19_left_rear_air_baffle": {
+        "valid_single_solid": true,
+        "added_mm3": 0.0,
+        "removed_mm3": 0.0
+      }
+    },
+    "pins": {
+      "11_left_push_pin": [
+        {
+          "outward_mm": 0,
+          "crown_overlap_mm3": 0.05482604667108665,
+          "overlap_outside_crown_mm3": 0.0
+        },
+        {
+          "outward_mm": 0.2,
+          "crown_overlap_mm3": 0.0548260466725624,
+          "overlap_outside_crown_mm3": 0.0
+        },
+        {
+          "outward_mm": 0.5,
+          "crown_overlap_mm3": 0.054826046674162125,
+          "overlap_outside_crown_mm3": 0.0
+        },
+        {
+          "outward_mm": 1,
+          "crown_overlap_mm3": 0.054826046677492205,
+          "overlap_outside_crown_mm3": 0.0
+        },
+        {
+          "outward_mm": 2,
+          "crown_overlap_mm3": 0.0,
+          "overlap_outside_crown_mm3": 0.0
+        },
+        {
+          "outward_mm": 3,
+          "crown_overlap_mm3": 0.0,
+          "overlap_outside_crown_mm3": 0.0
+        },
+        {
+          "outward_mm": 5,
+          "crown_overlap_mm3": 0.0,
+          "overlap_outside_crown_mm3": 0.0
+        },
+        {
+          "outward_mm": 8,
+          "crown_overlap_mm3": 0.0,
+          "overlap_outside_crown_mm3": 0.0
+        },
+        {
+          "outward_mm": 12,
+          "crown_overlap_mm3": 0.0,
+          "overlap_outside_crown_mm3": 0.0
+        }
+      ],
+      "12_right_push_pin": [
+        {
+          "outward_mm": 0,
+          "crown_overlap_mm3": 0.0274130247078761,
+          "overlap_outside_crown_mm3": 0.0
+        },
+        {
+          "outward_mm": 0.2,
+          "crown_overlap_mm3": 0.02741302468379092,
+          "overlap_outside_crown_mm3": 0.0
+        },
+        {
+          "outward_mm": 0.5,
+          "crown_overlap_mm3": 0.02741302470165452,
+          "overlap_outside_crown_mm3": 0.0
+        },
+        {
+          "outward_mm": 1,
+          "crown_overlap_mm3": 0.02741302469550866,
+          "overlap_outside_crown_mm3": 0.0
+        },
+        {
+          "outward_mm": 2,
+          "crown_overlap_mm3": 0.0,
+          "overlap_outside_crown_mm3": 0.0
+        },
+        {
+          "outward_mm": 3,
+          "crown_overlap_mm3": 0.0,
+          "overlap_outside_crown_mm3": 0.0
+        },
+        {
+          "outward_mm": 5,
+          "crown_overlap_mm3": 0.0,
+          "overlap_outside_crown_mm3": 0.0
+        },
+        {
+          "outward_mm": 8,
+          "crown_overlap_mm3": 0.0,
+          "overlap_outside_crown_mm3": 0.0
+        },
+        {
+          "outward_mm": 12,
+          "crown_overlap_mm3": 0.0,
+          "overlap_outside_crown_mm3": 0.0
+        }
+      ],
+      "13_left_push_pin": [
+        {
+          "outward_mm": 0,
+          "crown_overlap_mm3": 0.054826046688875994,
+          "overlap_outside_crown_mm3": 0.0
+        },
+        {
+          "outward_mm": 0.2,
+          "crown_overlap_mm3": 0.054826046697088265,
+          "overlap_outside_crown_mm3": 0.0
+        },
+        {
+          "outward_mm": 0.5,
+          "crown_overlap_mm3": 0.05482604665672389,
+          "overlap_outside_crown_mm3": 0.0
+        },
+        {
+          "outward_mm": 1,
+          "crown_overlap_mm3": 0.05482604668262275,
+          "overlap_outside_crown_mm3": 0.0
+        },
+        {
+          "outward_mm": 2,
+          "crown_overlap_mm3": 0.0,
+          "overlap_outside_crown_mm3": 0.0
+        },
+        {
+          "outward_mm": 3,
+          "crown_overlap_mm3": 0.0,
+          "overlap_outside_crown_mm3": 0.0
+        },
+        {
+          "outward_mm": 5,
+          "crown_overlap_mm3": 0.0,
+          "overlap_outside_crown_mm3": 0.0
+        },
+        {
+          "outward_mm": 8,
+          "crown_overlap_mm3": 0.0,
+          "overlap_outside_crown_mm3": 0.0
+        },
+        {
+          "outward_mm": 12,
+          "crown_overlap_mm3": 0.0,
+          "overlap_outside_crown_mm3": 0.0
+        }
+      ],
+      "14_right_push_pin": [
+        {
+          "outward_mm": 0,
+          "crown_overlap_mm3": 0.054826048091201646,
+          "overlap_outside_crown_mm3": 0.0
+        },
+        {
+          "outward_mm": 0.2,
+          "crown_overlap_mm3": 0.05482604808490856,
+          "overlap_outside_crown_mm3": 0.0
+        },
+        {
+          "outward_mm": 0.5,
+          "crown_overlap_mm3": 0.05482604804018434,
+          "overlap_outside_crown_mm3": 0.0
+        },
+        {
+          "outward_mm": 1,
+          "crown_overlap_mm3": 0.05482604808655074,
+          "overlap_outside_crown_mm3": 0.0
+        },
+        {
+          "outward_mm": 2,
+          "crown_overlap_mm3": 0.0,
+          "overlap_outside_crown_mm3": 0.0
+        },
+        {
+          "outward_mm": 3,
+          "crown_overlap_mm3": 0.0,
+          "overlap_outside_crown_mm3": 0.0
+        },
+        {
+          "outward_mm": 5,
+          "crown_overlap_mm3": 0.0,
+          "overlap_outside_crown_mm3": 0.0
+        },
+        {
+          "outward_mm": 8,
+          "crown_overlap_mm3": 0.0,
+          "overlap_outside_crown_mm3": 0.0
+        },
+        {
+          "outward_mm": 12,
+          "crown_overlap_mm3": 0.0,
+          "overlap_outside_crown_mm3": 0.0
+        }
+      ]
+    },
+    "removed_outside_original_bores_mm3": 0.0,
+    "passed": true
+  },
+  "native_sha256": "9b423831ca0aa4c3d6507f46d4051cea1a1990736894ee7295f20d946d2cdf2c",
+  "gui_preservation": {
+    "geometry_archive_members_unchanged": 1941,
+    "gui_archive_members_restored": 2401,
+    "old_view_providers_retained": 897,
+    "new_hidden_view_providers": 3,
+    "document_xml_sha256": "dc9ef12c2d0f0e27ab4dd95423931f6c3f3e2af4781140bd42229652fd239d13",
+    "native_sha256": "9b423831ca0aa4c3d6507f46d4051cea1a1990736894ee7295f20d946d2cdf2c",
+    "passed": true,
+    "headless_native_sha256": "db66042dcc2d5c2f878ae8b5add61c0c6acd7f74884f1fb6c91d3cb6c4d164e4"
+  }
+}

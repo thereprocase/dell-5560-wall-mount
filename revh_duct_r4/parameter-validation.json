@@ -1,0 +1,294 @@
+{
+  "trials": [
+    {
+      "sheet": "Parameters",
+      "parameter": "pinSocketDiameter",
+      "trial_mm": 4.2,
+      "geometry_changed_mm3": 44.33723354150593,
+      "socket_checks": [
+        {
+          "native_cutter": "Extrusion038",
+          "remaining_material_mm3": 0.0
+        },
+        {
+          "native_cutter": "Extrusion040",
+          "remaining_material_mm3": 0.0
+        }
+      ],
+      "all_pins_checked": 4,
+      "passed": true,
+      "part_comparisons": {
+        "02_right_cradle": {
+          "geometry_difference_mm3": 0.0,
+          "method": "both directional cuts",
+          "before_mm3": 274206.9518421811,
+          "trial_mm3": 274206.41258847207
+        },
+        "01_left_cradle": {
+          "geometry_difference_mm3": 0.0,
+          "method": "both directional cuts",
+          "before_mm3": 274206.9518421812,
+          "trial_mm3": 274206.41258847207
+        },
+        "04_right_fan_duct": {
+          "geometry_difference_mm3": 10.038959324545754,
+          "method": "both directional cuts",
+          "before_mm3": 140123.89998702277,
+          "trial_mm3": 140113.861027699
+        },
+        "03_left_fan_duct": {
+          "geometry_difference_mm3": 10.038959324545537,
+          "method": "both directional cuts",
+          "before_mm3": 140123.8999870316,
+          "trial_mm3": 140113.86102769818
+        },
+        "06_right_fan_retainer": {
+          "geometry_difference_mm3": 0.0,
+          "method": "both directional cuts",
+          "before_mm3": 24952.749873901816,
+          "trial_mm3": 24952.749873901706
+        },
+        "05_left_fan_retainer": {
+          "geometry_difference_mm3": 0.0,
+          "method": "both directional cuts",
+          "before_mm3": 24952.749873901772,
+          "trial_mm3": 24952.749873901674
+        },
+        "08_right_outlet_rail": {
+          "geometry_difference_mm3": 0.0,
+          "method": "both directional cuts",
+          "before_mm3": 74456.2546971439,
+          "trial_mm3": 74456.2546971439
+        },
+        "07_left_outlet_rail": {
+          "geometry_difference_mm3": 0.0,
+          "method": "both directional cuts",
+          "before_mm3": 74456.2546971439,
+          "trial_mm3": 74456.2546971439
+        },
+        "10_right_fan_tray": {
+          "geometry_difference_mm3": 0.0,
+          "method": "both directional cuts",
+          "before_mm3": 88209.068408023,
+          "trial_mm3": 88209.06840802322
+        },
+        "09_left_fan_tray": {
+          "geometry_difference_mm3": 0.0,
+          "method": "both directional cuts",
+          "before_mm3": 88209.06840802348,
+          "trial_mm3": 88209.06840802351
+        },
+        "11_left_push_pin": {
+          "geometry_difference_mm3": 6.064828723103837,
+          "method": "both directional cuts",
+          "before_mm3": 204.56030211057197,
+          "trial_mm3": 210.6251308336325
+        },
+        "12_right_push_pin": {
+          "geometry_difference_mm3": 6.064828723103824,
+          "method": "both directional cuts",
+          "before_mm3": 204.56030211057194,
+          "trial_mm3": 210.62513083363257
+        },
+        "13_left_push_pin": {
+          "geometry_difference_mm3": 6.0648287231034885,
+          "method": "both directional cuts",
+          "before_mm3": 204.56030211057208,
+          "trial_mm3": 210.62513083363234
+        },
+        "14_right_push_pin": {
+          "geometry_difference_mm3": 6.0648287231034885,
+          "method": "both directional cuts",
+          "before_mm3": 204.56030211057208,
+          "trial_mm3": 210.62513083363234
+        },
+        "15_left_side_retainer": {
+          "geometry_difference_mm3": 0.0,
+          "method": "both directional cuts",
+          "before_mm3": 28703.018194157114,
+          "trial_mm3": 28703.018194157114
+        },
+        "16_right_side_retainer": {
+          "geometry_difference_mm3": 0.0,
+          "method": "both directional cuts",
+          "before_mm3": 28703.018194157117,
+          "trial_mm3": 28703.018194157117
+        },
+        "17_left_retainer_keeper": {
+          "geometry_difference_mm3": 0.0,
+          "method": "both directional cuts",
+          "before_mm3": 311.60561089903894,
+          "trial_mm3": 311.60561089903894
+        },
+        "18_right_retainer_keeper": {
+          "geometry_difference_mm3": 0.0,
+          "method": "both directional cuts",
+          "before_mm3": 311.6056108990391,
+          "trial_mm3": 311.6056108990391
+        },
+        "20_right_rear_air_baffle": {
+          "geometry_difference_mm3": 0.0,
+          "method": "both directional cuts",
+          "before_mm3": 7820.1122576214475,
+          "trial_mm3": 7820.1122576214475
+        },
+        "19_left_rear_air_baffle": {
+          "geometry_difference_mm3": 0.0,
+          "method": "both directional cuts",
+          "before_mm3": 7820.1122576214475,
+          "trial_mm3": 7820.1122576214475
+        }
+      }
+    },
+    {
+      "sheet": "RevHParameters",
+      "parameter": "ductSideRoot",
+      "trial_mm": 3.5,
+      "geometry_changed_mm3": 357.74941928172484,
+      "socket_checks": [
+        {
+          "native_cutter": "Extrusion038",
+          "remaining_material_mm3": 0.0
+        },
+        {
+          "native_cutter": "Extrusion040",
+          "remaining_material_mm3": 0.0
+        }
+      ],
+      "all_pins_checked": 4,
+      "passed": true,
+      "part_comparisons": {
+        "02_right_cradle": {
+          "geometry_difference_mm3": 0.0,
+          "method": "both directional cuts",
+          "before_mm3": 274206.9518421811,
+          "trial_mm3": 274206.4125876325
+        },
+        "01_left_cradle": {
+          "geometry_difference_mm3": 0.0,
+          "method": "both directional cuts",
+          "before_mm3": 274206.9518421812,
+          "trial_mm3": 274206.4125876325
+        },
+        "04_right_fan_duct": {
+          "geometry_difference_mm3": 178.8747209617868,
+          "common_mm3": 139944.9895991388,
+          "before_mm3": 140123.89998702277,
+          "trial_mm3": 139944.9539322166
+        },
+        "03_left_fan_duct": {
+          "geometry_difference_mm3": 178.87469831993803,
+          "common_mm3": 139944.98961046763,
+          "before_mm3": 140123.8999870316,
+          "trial_mm3": 139944.95393222358
+        },
+        "06_right_fan_retainer": {
+          "geometry_difference_mm3": 0.0,
+          "method": "both directional cuts",
+          "before_mm3": 24952.749873901816,
+          "trial_mm3": 24952.749873901706
+        },
+        "05_left_fan_retainer": {
+          "geometry_difference_mm3": 0.0,
+          "method": "both directional cuts",
+          "before_mm3": 24952.749873901772,
+          "trial_mm3": 24952.74987390168
+        },
+        "08_right_outlet_rail": {
+          "geometry_difference_mm3": 0.0,
+          "method": "both directional cuts",
+          "before_mm3": 74456.2546971439,
+          "trial_mm3": 74456.2546971439
+        },
+        "07_left_outlet_rail": {
+          "geometry_difference_mm3": 0.0,
+          "method": "both directional cuts",
+          "before_mm3": 74456.2546971439,
+          "trial_mm3": 74456.2546971439
+        },
+        "10_right_fan_tray": {
+          "geometry_difference_mm3": 0.0,
+          "method": "both directional cuts",
+          "before_mm3": 88209.068408023,
+          "trial_mm3": 88209.06840802319
+        },
+        "09_left_fan_tray": {
+          "geometry_difference_mm3": 0.0,
+          "method": "both directional cuts",
+          "before_mm3": 88209.06840802348,
+          "trial_mm3": 88209.06840802345
+        },
+        "11_left_push_pin": {
+          "geometry_difference_mm3": 0.0,
+          "method": "both directional cuts",
+          "before_mm3": 204.56030211057197,
+          "trial_mm3": 204.5603021105719
+        },
+        "12_right_push_pin": {
+          "geometry_difference_mm3": 0.0,
+          "method": "both directional cuts",
+          "before_mm3": 204.56030211057194,
+          "trial_mm3": 204.56030211057188
+        },
+        "13_left_push_pin": {
+          "geometry_difference_mm3": 0.0,
+          "method": "both directional cuts",
+          "before_mm3": 204.56030211057208,
+          "trial_mm3": 204.56030211057205
+        },
+        "14_right_push_pin": {
+          "geometry_difference_mm3": 0.0,
+          "method": "both directional cuts",
+          "before_mm3": 204.56030211057208,
+          "trial_mm3": 204.56030211057205
+        },
+        "15_left_side_retainer": {
+          "geometry_difference_mm3": 0.0,
+          "method": "both directional cuts",
+          "before_mm3": 28703.018194157114,
+          "trial_mm3": 28703.018194157114
+        },
+        "16_right_side_retainer": {
+          "geometry_difference_mm3": 0.0,
+          "method": "both directional cuts",
+          "before_mm3": 28703.018194157117,
+          "trial_mm3": 28703.018194157117
+        },
+        "17_left_retainer_keeper": {
+          "geometry_difference_mm3": 0.0,
+          "method": "both directional cuts",
+          "before_mm3": 311.60561089903894,
+          "trial_mm3": 311.6056108990391
+        },
+        "18_right_retainer_keeper": {
+          "geometry_difference_mm3": 0.0,
+          "method": "both directional cuts",
+          "before_mm3": 311.6056108990391,
+          "trial_mm3": 311.6056108990391
+        },
+        "20_right_rear_air_baffle": {
+          "geometry_difference_mm3": 0.0,
+          "method": "both directional cuts",
+          "before_mm3": 7820.1122576214475,
+          "trial_mm3": 7820.1122576214475
+        },
+        "19_left_rear_air_baffle": {
+          "geometry_difference_mm3": 0.0,
+          "method": "both directional cuts",
+          "before_mm3": 7820.1122576214475,
+          "trial_mm3": 7820.1122576214475
+        }
+      }
+    }
+  ],
+  "wall_mount_pattern_mm": {
+    "wallHoleHalfSpacing": 162.0,
+    "lowerWallHoleZ": -36.0,
+    "upperWallHoleZ": 174.0,
+    "wallHoleDiameter": 7.0
+  },
+  "all_defaults_restored": true,
+  "comparison_note": "Root-radius duct delta uses V(A)+V(B)-2V(common); other comparisons use both Cuts. Raw reverse Cut on the nearly coincident root fillets returned an inconsistent whole-solid volume in both D3 and D4; see boolean-probe.json and parameter-placement-probe.json. Final default restoration uses both Cuts.",
+  "shared_socket_parameter": "pinSocketDiameter sizes the four matching pins as well as the two ducts.",
+  "passed": true
+}

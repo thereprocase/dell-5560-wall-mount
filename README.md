@@ -1,5 +1,7 @@
 # Laptop wall mount — Minimalist M1 and ducted Rev H
 
+**9 September 2026 — Rev H D4 socket hotpatch:** [download and repair guide](https://thereprocase.github.io/dell-5560-wall-mount/revh-duct-d4.html). Corrects plastic crossing the four fan-cover pin sockets. Includes two Orca duct projects and the current editable CAD. Physical pin seating and removal still need confirmation. [Source and evidence](revh_duct_r4/README.md).
+
 Two independent prototypes: **Minimalist M1** uses lighter open arms and fan
 cradles with an optional indexed airflow dam; **Rev H** preserves the ducted
 prototype and its already-printed arms. Future ducted revisions can change the

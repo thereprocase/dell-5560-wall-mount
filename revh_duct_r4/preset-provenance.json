@@ -1,0 +1,17 @@
+{
+  "machine": {
+    "source": "revh_duct_r3/slices/profiles/machine.json",
+    "sha256": "9828e7ca19f8ef0f1a11e0b2ac83cce6a605d3090d8e2aecb3200a2f16be1a79",
+    "byte_identical": true
+  },
+  "process": {
+    "source": "revh_duct_r3/slices/profiles/process.json",
+    "sha256": "aa5ced4c55560e7209e6dcab42e4b316f88ad7696db03cfd6f1b61774915308a",
+    "byte_identical": true
+  },
+  "filament": {
+    "source": "revh_duct_r3/slices/profiles/filament.json",
+    "sha256": "ac8e3c6242bcf78cff6f71c632e0b6511bcbc4d1b7ae65f2fc89aa2dc76e1f1f",
+    "byte_identical": true
+  }
+}

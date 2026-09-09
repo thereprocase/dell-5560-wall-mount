@@ -1,0 +1,340 @@
+{
+  "baseline": {
+    "before": {
+      "C1OriginalDuctLocal": {
+        "placement": "Placement [Pos=(-0,82.0208,2.77312), Yaw-Pitch-Roll=(0,-0,-45)]",
+        "shape_placement": "Placement [Pos=(-0,82.0208,2.77312), Yaw-Pitch-Roll=(0,0,-45)]",
+        "bounds": [
+          0.9999999999999962,
+          3.9999999999998908,
+          -109.70000000000006,
+          175.5,
+          135.70000000703328,
+          -0.05530316557752002
+        ],
+        "volume": 135751.58219151103
+      },
+      "D3SideWallRootR4": {
+        "placement": "Placement [Pos=(0,0,0), Yaw-Pitch-Roll=(0,0,0)]",
+        "shape_placement": "Placement [Pos=(0,0,0), Yaw-Pitch-Roll=(0,0,0)]",
+        "bounds": [
+          0.9999999999999962,
+          3.9999999999998908,
+          -109.70000000000006,
+          175.5,
+          135.70000000703328,
+          -0.05530316557752002
+        ],
+        "volume": 136519.04095198368
+      },
+      "D3EndWallRootR1": {
+        "placement": "Placement [Pos=(0,0,0), Yaw-Pitch-Roll=(0,0,0)]",
+        "shape_placement": "Placement [Pos=(0,0,0), Yaw-Pitch-Roll=(0,0,0)]",
+        "bounds": [
+          0.9999999999999962,
+          3.9999999999998908,
+          -109.70000000000006,
+          175.5,
+          135.70000000703328,
+          -0.05530316557752002
+        ],
+        "volume": 140165.961890927
+      },
+      "D3RightDuct": {
+        "placement": "Placement [Pos=(0,-56.0366,-59.9584), Yaw-Pitch-Roll=(0,0,45)]",
+        "shape_placement": "Placement [Pos=(0,-56.0366,-59.9584), Yaw-Pitch-Roll=(0,0,45)]",
+        "bounds": [
+          0.9999999999999962,
+          3.9999999999999645,
+          -134.69955621107545,
+          175.5,
+          117.48742418169279,
+          1.6507756217284637
+        ],
+        "volume": 140165.96189092705
+      },
+      "D3LeftDuct": {
+        "placement": "Placement [Pos=(0,0,0), Yaw-Pitch-Roll=(0,0,0)]",
+        "shape_placement": "Placement [Pos=(0,0,0), Yaw-Pitch-Roll=(0,0,0)]",
+        "bounds": [
+          -175.5,
+          3.9999999999999716,
+          -134.69955621107545,
+          -0.9999999999999962,
+          117.48742418169276,
+          1.6507756217284353
+        ],
+        "volume": 140165.9618909263
+      },
+      "pins": {
+        "11_left_push_pin": 0.1303808626335183,
+        "12_right_push_pin": 0.10296784050394503,
+        "13_left_push_pin": 0.13038086261782836,
+        "14_right_push_pin": 0.13038086415350658
+      },
+      "difference": {
+        "04_right_fan_duct": 0.0,
+        "03_left_fan_duct": 0.0
+      }
+    },
+    "trial": {
+      "C1OriginalDuctLocal": {
+        "placement": "Placement [Pos=(-0,82.0208,2.77312), Yaw-Pitch-Roll=(0,-0,-45)]",
+        "shape_placement": "Placement [Pos=(-0,82.0208,2.77312), Yaw-Pitch-Roll=(0,0,-45)]",
+        "bounds": [
+          0.9999999999999962,
+          3.9999999999998908,
+          -109.70000000000006,
+          175.5,
+          135.70000000703328,
+          -0.05530316557752002
+        ],
+        "volume": 135751.58219151103
+      },
+      "D3SideWallRootR4": {
+        "placement": "Placement [Pos=(0,0,0), Yaw-Pitch-Roll=(0,0,0)]",
+        "shape_placement": "Placement [Pos=(0,0,0), Yaw-Pitch-Roll=(0,0,0)]",
+        "bounds": [
+          0.9999999999999962,
+          3.9999999999999476,
+          -109.70000000000006,
+          175.5,
+          135.70000000703334,
+          -0.05530316557751913
+        ],
+        "volume": 136339.47610559393
+      },
+      "D3EndWallRootR1": {
+        "placement": "Placement [Pos=(0,0,0), Yaw-Pitch-Roll=(0,0,0)]",
+        "shape_placement": "Placement [Pos=(0,0,0), Yaw-Pitch-Roll=(0,0,0)]",
+        "bounds": [
+          0.9999999999999962,
+          3.9999999999999476,
+          -109.70000000000006,
+          175.5,
+          135.70000000703334,
+          -0.05530316557751913
+        ],
+        "volume": 139987.0524456417
+      },
+      "D3RightDuct": {
+        "placement": "Placement [Pos=(0,-56.0366,-59.9584), Yaw-Pitch-Roll=(0,0,45)]",
+        "shape_placement": "Placement [Pos=(0,-56.0366,-59.9584), Yaw-Pitch-Roll=(0,0,45)]",
+        "bounds": [
+          0.9999999999999962,
+          4.0,
+          -134.6995562110755,
+          175.5,
+          117.48742418169282,
+          1.6521710895474868
+        ],
+        "volume": 139987.05244564154
+      },
+      "D3LeftDuct": {
+        "placement": "Placement [Pos=(0,0,0), Yaw-Pitch-Roll=(0,0,0)]",
+        "shape_placement": "Placement [Pos=(0,0,0), Yaw-Pitch-Roll=(0,0,0)]",
+        "bounds": [
+          -175.5,
+          3.9999999999999787,
+          -134.6995562110755,
+          -0.9999999999999962,
+          117.48742418169283,
+          1.6521710895474868
+        ],
+        "volume": 139987.05244562903
+      },
+      "pins": {
+        "11_left_push_pin": 0.13038086263258422,
+        "12_right_push_pin": 0.1303808641539113,
+        "13_left_push_pin": 0.1303808626367515,
+        "14_right_push_pin": 0.13038086417763325
+      },
+      "difference": {
+        "04_right_fan_duct": 140166.5160151313,
+        "03_left_fan_duct": 140166.51074850044
+      }
+    }
+  },
+  "D4": {
+    "before": {
+      "C1OriginalDuctLocal": {
+        "placement": "Placement [Pos=(-0,82.0208,2.77312), Yaw-Pitch-Roll=(0,-0,-45)]",
+        "shape_placement": "Placement [Pos=(-0,82.0208,2.77312), Yaw-Pitch-Roll=(0,0,-45)]",
+        "bounds": [
+          0.9999999999999962,
+          3.9999999999998908,
+          -109.70000000000006,
+          175.5,
+          135.70000000703328,
+          -0.05530316557752002
+        ],
+        "volume": 135751.58219151103
+      },
+      "D3SideWallRootR4": {
+        "placement": "Placement [Pos=(0,0,0), Yaw-Pitch-Roll=(0,0,0)]",
+        "shape_placement": "Placement [Pos=(0,0,0), Yaw-Pitch-Roll=(0,0,0)]",
+        "bounds": [
+          0.9999999999999962,
+          3.9999999999998908,
+          -109.70000000000006,
+          175.5,
+          135.70000000703328,
+          -0.05530316557752002
+        ],
+        "volume": 136519.04095198354
+      },
+      "D3EndWallRootR1": {
+        "placement": "Placement [Pos=(0,0,0), Yaw-Pitch-Roll=(0,0,0)]",
+        "shape_placement": "Placement [Pos=(0,0,0), Yaw-Pitch-Roll=(0,0,0)]",
+        "bounds": [
+          0.9999999999999962,
+          3.9999999999998908,
+          -109.70000000000006,
+          175.5,
+          135.70000000703328,
+          4.305800272544321
+        ],
+        "volume": 140165.96189092638
+      },
+      "D4ClearPinSockets": {
+        "placement": "Placement [Pos=(0,0,0), Yaw-Pitch-Roll=(0,0,0)]",
+        "shape_placement": "Placement [Pos=(0,0,0), Yaw-Pitch-Roll=(0,0,0)]",
+        "bounds": [
+          0.9999999999999962,
+          3.9999999999998908,
+          -109.70000000000006,
+          175.5,
+          135.70000000703328,
+          4.305800272544321
+        ],
+        "volume": 140123.89998702265
+      },
+      "D3RightDuct": {
+        "placement": "Placement [Pos=(0,-56.0366,-59.9584), Yaw-Pitch-Roll=(0,0,45)]",
+        "shape_placement": "Placement [Pos=(0,-56.0366,-59.9584), Yaw-Pitch-Roll=(0,0,45)]",
+        "bounds": [
+          0.9999999999999962,
+          3.9999999999999645,
+          -134.69955621107545,
+          175.5,
+          117.48742418169279,
+          8.251021003778831
+        ],
+        "volume": 140123.89998702286
+      },
+      "D3LeftDuct": {
+        "placement": "Placement [Pos=(0,0,0), Yaw-Pitch-Roll=(0,0,0)]",
+        "shape_placement": "Placement [Pos=(0,0,0), Yaw-Pitch-Roll=(0,0,0)]",
+        "bounds": [
+          -175.5,
+          3.9999999999999645,
+          -134.69955621107545,
+          -0.9999999999999962,
+          117.48742418169279,
+          8.251021003778803
+        ],
+        "volume": 140123.8999870316
+      },
+      "pins": {
+        "11_left_push_pin": 0.05482604668293074,
+        "12_right_push_pin": 0.05482604808766781,
+        "13_left_push_pin": 0.05482604666519676,
+        "14_right_push_pin": 0.05482604808389883
+      },
+      "difference": {
+        "04_right_fan_duct": 0.0,
+        "03_left_fan_duct": 0.0
+      }
+    },
+    "trial": {
+      "C1OriginalDuctLocal": {
+        "placement": "Placement [Pos=(-0,82.0208,2.77312), Yaw-Pitch-Roll=(0,-0,-45)]",
+        "shape_placement": "Placement [Pos=(-0,82.0208,2.77312), Yaw-Pitch-Roll=(0,0,-45)]",
+        "bounds": [
+          0.9999999999999962,
+          3.9999999999998908,
+          -109.70000000000006,
+          175.5,
+          135.70000000703328,
+          -0.05530316557752002
+        ],
+        "volume": 135751.58219151103
+      },
+      "D3SideWallRootR4": {
+        "placement": "Placement [Pos=(0,0,0), Yaw-Pitch-Roll=(0,0,0)]",
+        "shape_placement": "Placement [Pos=(0,0,0), Yaw-Pitch-Roll=(0,0,0)]",
+        "bounds": [
+          0.9999999999999962,
+          3.9999999999999476,
+          -109.70000000000006,
+          175.5,
+          135.70000000703334,
+          -0.05530316557751913
+        ],
+        "volume": 136339.4761055939
+      },
+      "D3EndWallRootR1": {
+        "placement": "Placement [Pos=(0,0,0), Yaw-Pitch-Roll=(0,0,0)]",
+        "shape_placement": "Placement [Pos=(0,0,0), Yaw-Pitch-Roll=(0,0,0)]",
+        "bounds": [
+          0.9999999999999962,
+          3.9999999999999476,
+          -109.70000000000006,
+          175.5,
+          135.70000000703334,
+          -0.05530316557751913
+        ],
+        "volume": 139987.0524456417
+      },
+      "D4ClearPinSockets": {
+        "placement": "Placement [Pos=(0,0,0), Yaw-Pitch-Roll=(0,0,0)]",
+        "shape_placement": "Placement [Pos=(0,0,0), Yaw-Pitch-Roll=(0,0,0)]",
+        "bounds": [
+          0.9999999999999962,
+          3.9999999999999476,
+          -109.70000000000006,
+          175.5,
+          135.70000000703334,
+          -0.05530316557751913
+        ],
+        "volume": 139944.95393222568
+      },
+      "D3RightDuct": {
+        "placement": "Placement [Pos=(0,-56.0366,-59.9584), Yaw-Pitch-Roll=(0,0,45)]",
+        "shape_placement": "Placement [Pos=(0,-56.0366,-59.9584), Yaw-Pitch-Roll=(0,0,45)]",
+        "bounds": [
+          0.9999999999999962,
+          4.0,
+          -134.6995562110755,
+          175.5,
+          117.48742418169282,
+          1.6521710895474868
+        ],
+        "volume": 139944.9539322256
+      },
+      "D3LeftDuct": {
+        "placement": "Placement [Pos=(0,0,0), Yaw-Pitch-Roll=(0,0,0)]",
+        "shape_placement": "Placement [Pos=(0,0,0), Yaw-Pitch-Roll=(0,0,0)]",
+        "bounds": [
+          -175.5,
+          3.9999999999999787,
+          -134.6995562110755,
+          -0.9999999999999962,
+          117.48742418169283,
+          1.6521710895474868
+        ],
+        "volume": 139944.95393221403
+      },
+      "pins": {
+        "11_left_push_pin": 0.05482604668293074,
+        "12_right_push_pin": 0.05482604808766781,
+        "13_left_push_pin": 0.05482604666519676,
+        "14_right_push_pin": 0.05482604808389883
+      },
+      "difference": {
+        "04_right_fan_duct": 140124.40946408862,
+        "03_left_fan_duct": 140124.41473210478
+      }
+    }
+  }
+}

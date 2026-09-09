@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "widths_checked": [
+    280,
+    390,
+    768,
+    1440,
+    2560,
+    3840
+  ],
+  "no_horizontal_overflow": true,
+  "project_cards": 2,
+  "images_loaded": true,
+  "page_errors": [],
+  "local_http_errors": []
+}
