@@ -1,0 +1,35 @@
+{
+  "state": "running",
+  "latest_physical_time_s": 0.054828574580434,
+  "completed_steps": 2050,
+  "latest_deltaT_s": 8.09300250000089e-05,
+  "max_logged_Courant": 2.427123503,
+  "bounding_events": 9,
+  "memory_peak_bytes": 7793074176,
+  "memory_limit_bytes": 30064771072,
+  "memory_events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+  "cpu_workers": 12,
+  "cpu_nice": 19,
+  "scheduler": 5,
+  "authorized_deadline_utc": "2026-09-09T20:00:00+00:00",
+  "visual_extension": {
+    "base_last_time_s": 0.03831884948,
+    "base_motion_frames": 473,
+    "base_tracer_sha256": "d050abbee497281dfab2c8e425312bafd5fd39ffaf8c7cfee04f56e140db45a3",
+    "base_arrow_sha256": "2469c1dabc82fbedb8eeddedcf5ffc0baeedf8810b16b481e4547982b064c2b6",
+    "base_source_frames": 918,
+    "base_progress_sha256": "43dcd5524b315423a19f565f7513f5d876576e74c9074c50cbb9aba0dbcd5983",
+    "new_frames": 204,
+    "video_frame_step_s": 8.09300250000089e-05,
+    "timestep_accuracy": "Deferred by user; fixed-step continuation for visualization.",
+    "replay_checkpoint_s": 0.03772391061,
+    "replay_steps": 36
+  },
+  "updated_utc": "2026-09-09T14:23:12.038252+00:00",
+  "restart_checkpoint": {
+    "physical_time_s": 0.038723499605432,
+    "mpi_ranks": 12,
+    "verified_utc": "2026-09-09T12:55:37.643357+00:00",
+    "native_previous_step_fields_preserved": true
+  }
+}
