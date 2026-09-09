@@ -1,21 +1,21 @@
 {
-  "created_utc": "2026-09-09T17:34:52.670472+00:00",
-  "source_checkpoint": "checkpoint-08",
-  "source_progress_sha256": "684aca3319393e45b3524771f6642424691386d26376c4d5080fb2899afae21b",
-  "source_video_sha256": "dff9fe493e792d7093a6afe002bbb912c679fb2f791a472a95c3316c847de163",
-  "source_cfd_states": 1401,
-  "samples_read_and_hash_verified": 1401,
+  "created_utc": "2026-09-09T18:35:24.795097+00:00",
+  "source_checkpoint": "checkpoint-09",
+  "source_progress_sha256": "5e12746f3b5ca0bb55eabbfab3120b93bbbf96c64eee7708d359ca5f91e42052",
+  "source_video_sha256": "8aca11ac3c27527eed6f42b3d580bf51d23a1b85833287f3debb139ea778c5d4",
+  "source_cfd_states": 1490,
+  "samples_read_and_hash_verified": 1490,
   "equivalent_sample_orderings": 2,
   "first_time_s": 0.0001264,
-  "last_time_s": 0.077408051555436,
+  "last_time_s": 0.084610823780437,
   "fps": 60,
   "speed_multiplier": 5,
   "playback_slowdown": 205.93922548108486,
-  "encoded_frames": 962,
-  "video_duration_s": 16.033333333333335,
-  "last_frame_file": "frame-0955.png",
-  "video_sha256": "b25e2ddf884bb8d25bc6eb868ec47164a9c5c06ff9f3881906ab30024339e130",
-  "video_bytes": 3317736,
+  "encoded_frames": 1051,
+  "video_duration_s": 17.516666666666666,
+  "last_frame_file": "frame-1044.png",
+  "video_sha256": "2c203976edecc2aa1522a50eaefbc79c3cee12f4aa50554abf9aff6392610d9a",
+  "video_bytes": 3636661,
   "size_px": [
     1800,
     1100
@@ -26,19 +26,19 @@
   "trail_frames": 11,
   "clouds": [
     {
-      "respawns_including_initial": 1776,
-      "integrated_particle_steps": 2409104,
-      "integrated_travel_mm": 13712.018265670718,
+      "respawns_including_initial": 1920,
+      "integrated_particle_steps": 2636800,
+      "integrated_travel_mm": 15344.584094613543,
       "max_step_displacement_mm": 0.05097691439094925
     },
     {
-      "respawns_including_initial": 1689,
-      "integrated_particle_steps": 2409191,
-      "integrated_travel_mm": 12760.753064589931,
-      "max_step_displacement_mm": 0.054272631916751614
+      "respawns_including_initial": 1844,
+      "integrated_particle_steps": 2636876,
+      "integrated_travel_mm": 15284.719112111725,
+      "max_step_displacement_mm": 0.06111562923397863
     }
   ],
-  "render_seconds": 345.98399999999674,
+  "render_seconds": 360.5309999999881,
   "preview": false,
   "visual_extension": {
     "base_last_time_s": 0.03831884948,
@@ -47,7 +47,7 @@
     "base_arrow_sha256": "2469c1dabc82fbedb8eeddedcf5ffc0baeedf8810b16b481e4547982b064c2b6",
     "base_source_frames": 918,
     "base_progress_sha256": "43dcd5524b315423a19f565f7513f5d876576e74c9074c50cbb9aba0dbcd5983",
-    "new_frames": 483,
+    "new_frames": 572,
     "video_frame_step_s": 8.09300250000089e-05,
     "timestep_accuracy": "Deferred by user; fixed-step continuation for visualization.",
     "replay_checkpoint_s": 0.03772391061,
