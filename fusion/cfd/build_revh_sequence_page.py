@@ -1,4 +1,5 @@
 """Build the existing GitHub Pages report from immutable hourly CFD artifacts."""
+from gridline_html import apply_gridline
 import argparse
 from datetime import datetime, timezone
 from html import escape
@@ -167,7 +168,7 @@ def main():
 <footer class="small">Published status snapshot: {escape(public['published_snapshot_utc'])}. This static page updates with each published checkpoint; it is not a live solver connection. Raw fields and all sampled planes remain preserved locally.</footer>
 </main></html>
 '''
-    (PAGE/'index.html').write_text(html,encoding='utf-8',newline='\n')
+    (PAGE/'index.html').write_text(apply_gridline(html, PAGE/'index.html'),encoding='utf-8',newline='\n')
     print(json.dumps({'page':str(PAGE),'published_hours':[r['hour_checkpoint'] for r in reports],'solver_state':state['state']}))
 
 

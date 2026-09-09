@@ -3,6 +3,7 @@
 No network writes: the existing GitHub Pages review and commit workflow follows.
 The reset physical clock is never merged with the quiet-start video's timeline.
 """
+from gridline_html import apply_gridline
 import argparse
 from datetime import datetime,timezone
 from html import escape
@@ -92,7 +93,7 @@ def main():
 <p>Arrows show sampled in-plane velocity at X = +111 mm. Colour limits are fixed within this sequence: speed 0–6 m/s, pressure ±12 Pa and vorticity ±2000/s. The original startup sequence retains its own scales. Grey areas are solid or unsampled; black lines are CAD surfaces.</p>
 <p><a href="case_manifest.json">Initialization provenance and settings</a> · <a href="quality-disposition.json">Mesh limitations</a> · <a href="run-status.json">Dated solver status</a> · <a href="../correction-check/">Short correction-count comparison</a></p>
 <footer>Published {escape(public['published_snapshot_utc'])}. Solver state at publication: {'paused' if paused else escape(state['state'])}. This page is a published checkpoint, not a live connection.</footer></main></html>'''
-    (PAGE/'index.html').write_text(html,encoding='utf-8',newline='\n')
+    (PAGE/'index.html').write_text(apply_gridline(html, PAGE/'index.html'),encoding='utf-8',newline='\n')
     print(json.dumps({'page':str(PAGE),'checkpoint':folder,'source_frames':latest['source_frames'],'last_time_s':latest['last_time_s']}))
 
 
