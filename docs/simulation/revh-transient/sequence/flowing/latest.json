@@ -1,7 +1,7 @@
 {
-  "_folder": "checkpoint-16",
-  "created_utc": "2026-09-09T09:18:42.862860+00:00",
-  "last_time_s": 0.06375431373,
-  "source_frames": 1841,
-  "video_sha256": "2f4a4be74f789ad893ebf269ec5fd63f133d7737a42cc44852c281b84de1054d"
+  "_folder": "checkpoint-17",
+  "created_utc": "2026-09-09T10:19:13.841775+00:00",
+  "last_time_s": 0.06809336586,
+  "source_frames": 1966,
+  "video_sha256": "da63f0d7b6e58aa7670c25dfc10926fd7feb16ef3cd8d4da77eaddddf69a3302"
 }
