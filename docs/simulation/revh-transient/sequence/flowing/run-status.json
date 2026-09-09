@@ -11,15 +11,15 @@
   ],
   "scope": "Exploratory transient from a steady-solver iterate; initial field is not claimed converged.",
   "initialization_kind": "steady_solver",
-  "updated_utc": "2026-09-09T05:19:17.469448+00:00",
-  "elapsed_seconds": 40247.48,
-  "completed_steps": 2667,
-  "latest_physical_time_s": 0.0461428321,
-  "latest_deltaT_s": 1.728899826e-05,
-  "latest_Courant": 0.4999931103,
+  "updated_utc": "2026-09-09T06:19:34.663453+00:00",
+  "elapsed_seconds": 43864.86,
+  "completed_steps": 2929,
+  "latest_physical_time_s": 0.05068613691,
+  "latest_deltaT_s": 1.742536019e-05,
+  "latest_Courant": 0.4999722649,
   "max_logged_Courant": 0.501243152,
   "bounding_events": 5,
-  "complete_sample_frames": 1334,
+  "complete_sample_frames": 1465,
   "rank_change": {
     "started_utc": "2026-09-08T19:13:13.343018+00:00",
     "from_ranks": 4,
@@ -65,5 +65,5 @@
   "authorized_deadline_utc": "2026-09-09T12:00:00+00:00",
   "session_started_utc": "2026-09-08T19:47:56.309362+00:00",
   "wall_time_accounting": "Cumulative supervised wall time; idle gaps between completed sessions are excluded.",
-  "published_snapshot_utc": "2026-09-09T05:19:27.490146+00:00"
+  "published_snapshot_utc": "2026-09-09T06:19:37.030700+00:00"
 }
