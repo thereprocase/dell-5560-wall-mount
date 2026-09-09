@@ -1,0 +1,980 @@
+{
+  "cause": "The transient-study .gitattributes applied text eol=lf to gzip files, allowing line-ending conversion to corrupt compressed bytes. Gzip is now explicitly binary in that directory.",
+  "method": "Rebuilt failed gzip downloads from the original checkpoint records. Raw excerpts match the SHA256 in the original diagnostic manifests. All current gzip downloads pass a complete decompression check.",
+  "repaired_count": 139,
+  "files": [
+    {
+      "file": "flowing/checkpoint-03/diagnostic-raw/probes-U.txt.gz",
+      "restored_content_sha256": "e4a486489e5f5d5dad16036dfcb7c2c3d68049300efc771834d083999b5b1373",
+      "gzip_sha256": "a9f534ebdb9c8c4ad0dc5bd6ecf134223b25ca9d1d80d102315c7d63ea420c24",
+      "source_case": "revh_flowing_12",
+      "checkpoint": "hour-4-attempt-1"
+    },
+    {
+      "file": "flowing/checkpoint-03/diagnostic-raw/solver-log.txt.gz",
+      "restored_content_sha256": "e072a9ebcf41d3be078b21266995f390c5fbbbdbbdfbde9aae2b7058a6852549",
+      "gzip_sha256": "a60d74342ec6f8bc962909e9460357265f5812f07ff5b9b939b76ef9fcafa764",
+      "source_case": "revh_flowing_12",
+      "checkpoint": "hour-4-attempt-1"
+    },
+    {
+      "file": "flowing/checkpoint-03/diagnostics.json.gz",
+      "restored_content_sha256": "322a203dd3e761ce62787b530a160ab67584e209db752e442a59eb2d2794aa3a",
+      "gzip_sha256": "a820bb4363246d31c2d5bdbfcc780d5d68a720efd84e5b881c569b64dbfc5e6a",
+      "source_case": "revh_flowing_12",
+      "checkpoint": "hour-4-attempt-1"
+    },
+    {
+      "file": "flowing/checkpoint-04/diagnostic-raw/probes-U.txt.gz",
+      "restored_content_sha256": "f5b976e7b165763ff32917de0c026c8263b1849150afc202279c4e31ace83d3e",
+      "gzip_sha256": "18198e64de11b8683595a8d11ec29993a60e49b31b4b6308a5bb17efa34f0e6e",
+      "source_case": "revh_flowing_12",
+      "checkpoint": "hour-5-attempt-1"
+    },
+    {
+      "file": "flowing/checkpoint-04/diagnostic-raw/solver-log.txt.gz",
+      "restored_content_sha256": "d303892e117c91ddf33a0c780ac48055170188c4b15483c89055cfe37aeafc08",
+      "gzip_sha256": "5f98f5dc767ac3d23f3d628fcb0b221ef8f803b0c36d7884eea343ed574d20fc",
+      "source_case": "revh_flowing_12",
+      "checkpoint": "hour-5-attempt-1"
+    },
+    {
+      "file": "flowing/checkpoint-04/diagnostics.json.gz",
+      "restored_content_sha256": "c7ba90dedd5c33ba397208b30a8922b741b0e9b12fd3b857638e86818d77a20c",
+      "gzip_sha256": "caa378a0cb7d48d9cfa93272da7bbbc8697d5085eb98fb9ef1331bdd038fa73d",
+      "source_case": "revh_flowing_12",
+      "checkpoint": "hour-5-attempt-1"
+    },
+    {
+      "file": "flowing/checkpoint-05/diagnostic-raw/probes-U.txt.gz",
+      "restored_content_sha256": "133a81a67b053b666aad7d262f048d363424bb7552177a9f508ff55dbba016f0",
+      "gzip_sha256": "17cb50f82c54909a8c95a8210921fc115770f9dcdeef46959d26bab60fced5ef",
+      "source_case": "revh_flowing_12",
+      "checkpoint": "hour-6-attempt-1"
+    },
+    {
+      "file": "flowing/checkpoint-05/diagnostic-raw/solver-log.txt.gz",
+      "restored_content_sha256": "6736ca77fd80dea5f6374669e92d04178a61a0896606bb81ed20c3e82fa93084",
+      "gzip_sha256": "d5106876848e1e447913d0ca9b5988c8cc8807a7f1f5d047809cdc18151ba8ba",
+      "source_case": "revh_flowing_12",
+      "checkpoint": "hour-6-attempt-1"
+    },
+    {
+      "file": "flowing/checkpoint-05/diagnostics.json.gz",
+      "restored_content_sha256": "f77a25ff103bc103b05c0b26712cd04482c631857d083706ef6c350234fe2d24",
+      "gzip_sha256": "358f89dd93a7a215fffef78c0a5f79155fee79d697fb2a122ea053a26965ca23",
+      "source_case": "revh_flowing_12",
+      "checkpoint": "hour-6-attempt-1"
+    },
+    {
+      "file": "flowing/checkpoint-06/diagnostic-raw/probes-U.txt.gz",
+      "restored_content_sha256": "e05d5d4c50c0380688e1f16dc45e429ec9ceaeae5c5819b3b193f9a608b50334",
+      "gzip_sha256": "180104dc039df5f218e7ec2ded5697cea9117657ebeaeb2a0346f0f3b132b144",
+      "source_case": "revh_flowing_12",
+      "checkpoint": "hour-7-attempt-1"
+    },
+    {
+      "file": "flowing/checkpoint-06/diagnostic-raw/solver-log.txt.gz",
+      "restored_content_sha256": "cc1908a93cceb88e4f220d199a47880330fe0de6b5fbfb1377795d25b14aac98",
+      "gzip_sha256": "1d87a6afd09aa7a318a2129886deb4c9e2c01556a325fa11bff0e314a290b9b8",
+      "source_case": "revh_flowing_12",
+      "checkpoint": "hour-7-attempt-1"
+    },
+    {
+      "file": "flowing/checkpoint-06/diagnostics.json.gz",
+      "restored_content_sha256": "af7e15f8653020a433ab0419596157f943c50557a9b0c431136d4ba198fb0c41",
+      "gzip_sha256": "9731d37c6b05549dc723acc8d4aaccddee9f45c9f42eeb819a9e6c0d7b060761",
+      "source_case": "revh_flowing_12",
+      "checkpoint": "hour-7-attempt-1"
+    },
+    {
+      "file": "flowing/checkpoint-07/diagnostic-raw/extrema-fieldMinMax.dat.txt.gz",
+      "restored_content_sha256": "f69498cb88950020d121d763b1f0c2181d8cab137ed63076bda8f4e416ca1796",
+      "gzip_sha256": "3647b9cea3b367fb1a66dfb923bb4841d463ad8c5e086aff2df7aaafc15a42f1",
+      "source_case": "revh_flowing_12",
+      "checkpoint": "hour-8-attempt-1"
+    },
+    {
+      "file": "flowing/checkpoint-07/diagnostic-raw/probes-p.txt.gz",
+      "restored_content_sha256": "dc38bbf49e4aa3f2696168ea2727f5f354e8c8e6c5298c98a51f04a69fc27dd8",
+      "gzip_sha256": "7267b9a0992bc42daa25ba4669cd494b80acc7bcac72d58bab247d24b0dd9169",
+      "source_case": "revh_flowing_12",
+      "checkpoint": "hour-8-attempt-1"
+    },
+    {
+      "file": "flowing/checkpoint-07/diagnostic-raw/probes-U.txt.gz",
+      "restored_content_sha256": "a64164e062aa828c1dac113bed696130f5bf90a658e3303b407d7c510398f4da",
+      "gzip_sha256": "707f01e87b1a7dbd66cada65b02d0e85a19a85c68f3cf650bb1361fccf1276ac",
+      "source_case": "revh_flowing_12",
+      "checkpoint": "hour-8-attempt-1"
+    },
+    {
+      "file": "flowing/checkpoint-07/diagnostic-raw/solver-log.txt.gz",
+      "restored_content_sha256": "b5ca99ce1ad0173017b279a0e40688da4dd289129f40e9dd03014071b433aa29",
+      "gzip_sha256": "22751eb6ae58cce634f5e6a2671001d3c651d5ea923faf0e304045506466f484",
+      "source_case": "revh_flowing_12",
+      "checkpoint": "hour-8-attempt-1"
+    },
+    {
+      "file": "flowing/checkpoint-07/diagnostics.json.gz",
+      "restored_content_sha256": "f74ad17cc8612622451b2743f3285923ec646ab864960fb8e90a2c3d9c25ee8f",
+      "gzip_sha256": "246db5c63137fe20a34d6185c6e204077567ff5b62731e0ae30ade85fc3a18d5",
+      "source_case": "revh_flowing_12",
+      "checkpoint": "hour-8-attempt-1"
+    },
+    {
+      "file": "flowing/checkpoint-08/diagnostic-raw/extrema-fieldMinMax.dat.txt.gz",
+      "restored_content_sha256": "eecea995e65e7f3c453497f7a2cf44fb2ae16a21539c6a3b497e2b490a675a2e",
+      "gzip_sha256": "dfd50d7b901f19f6903b40917c838140970bf2a03afb59d135ad42e9b4097b71",
+      "source_case": "revh_flowing_12",
+      "checkpoint": "hour-9-attempt-1"
+    },
+    {
+      "file": "flowing/checkpoint-08/diagnostic-raw/probes-U.txt.gz",
+      "restored_content_sha256": "ce44fb63b67ef14721ad9e9504684e8cbb770e805c4c448089f49870973dac18",
+      "gzip_sha256": "e3bb06bc2962a682c6d00c03790c315e7daac25af50e5854962b44a2e88b97e2",
+      "source_case": "revh_flowing_12",
+      "checkpoint": "hour-9-attempt-1"
+    },
+    {
+      "file": "flowing/checkpoint-08/diagnostic-raw/solver-log.txt.gz",
+      "restored_content_sha256": "0bb92c0115bafefef7b042a18456a6a75d36a37a5add78d5bb37169cd6bd0bab",
+      "gzip_sha256": "54b21e96f9dcbb39febbd429c5b36528d4409b9f76924b84b0529ad0d50be7b9",
+      "source_case": "revh_flowing_12",
+      "checkpoint": "hour-9-attempt-1"
+    },
+    {
+      "file": "flowing/checkpoint-08/diagnostics.json.gz",
+      "restored_content_sha256": "34205548801b766d76f96bd77f37612ff84e89c2a89b61562bc467d5b6774f92",
+      "gzip_sha256": "042004ffdf90543df215ea814825eb1e45a27d51f5c211bcee82158b2c6f01b1",
+      "source_case": "revh_flowing_12",
+      "checkpoint": "hour-9-attempt-1"
+    },
+    {
+      "file": "flowing/checkpoint-09/diagnostic-raw/ambient_abs_flux-surfaceFieldValue.dat.txt.gz",
+      "restored_content_sha256": "66b8ab7d9b584a7dc47efeba061c8344c675dc5290d379f8c0b2e6210f228a46",
+      "gzip_sha256": "ed7b9c18ed7ffb411033f6378f360b82e9dbdd889fa5fbe261191904b88baacb",
+      "source_case": "revh_flowing_12",
+      "checkpoint": "hour-10-attempt-1"
+    },
+    {
+      "file": "flowing/checkpoint-09/diagnostic-raw/extrema-fieldMinMax.dat.txt.gz",
+      "restored_content_sha256": "98a55e18b73c5c2351b24288c8b4f640afeedcc25d74514a3341e5a98a9d5433",
+      "gzip_sha256": "c6a84e75c66a94313760af0f96b08e78498e931bb0ba9a69fe5bc1f7e0d2733e",
+      "source_case": "revh_flowing_12",
+      "checkpoint": "hour-10-attempt-1"
+    },
+    {
+      "file": "flowing/checkpoint-09/diagnostic-raw/probes-U.txt.gz",
+      "restored_content_sha256": "82c5c6e52fbba7474cd52a1f04395700552ee2919e0ebaebce85d3adb0f86772",
+      "gzip_sha256": "17abd233da9c8663a16e1cc667c52be0f4e14097e8e544b6a421fcd0eea2c43d",
+      "source_case": "revh_flowing_12",
+      "checkpoint": "hour-10-attempt-1"
+    },
+    {
+      "file": "flowing/checkpoint-09/diagnostic-raw/solver-log.txt.gz",
+      "restored_content_sha256": "0808f90f480df5cc6f544485e0b0f8de7ad591314e392064e43db0d9e78b38e6",
+      "gzip_sha256": "558b6c0ca96c6b53774b0c99af5ea8bda96db7e29606f3cadb8f1c5acbeddd2f",
+      "source_case": "revh_flowing_12",
+      "checkpoint": "hour-10-attempt-1"
+    },
+    {
+      "file": "flowing/checkpoint-09/diagnostics.json.gz",
+      "restored_content_sha256": "80715112ff1f3753081ef91eca5bc02c3190ebdd6dbee930a8ce7d8f8adf4f23",
+      "gzip_sha256": "1fc87af03b9cefe3ddbc95bb499bdc83a68ff2116368f75e2b137b458943a88b",
+      "source_case": "revh_flowing_12",
+      "checkpoint": "hour-10-attempt-1"
+    },
+    {
+      "file": "flowing/checkpoint-10/diagnostic-raw/extrema-fieldMinMax.dat.txt.gz",
+      "restored_content_sha256": "23f8550e65c0226104fb53b26164e8572395d73da2de8d07377bcfe221e01594",
+      "gzip_sha256": "f150a92992e1df059ca4cfe384b979420c1bda3718d473a7ce8c93f44ce96536",
+      "source_case": "revh_flowing_12",
+      "checkpoint": "hour-11-attempt-1"
+    },
+    {
+      "file": "flowing/checkpoint-10/diagnostic-raw/probes-U.txt.gz",
+      "restored_content_sha256": "e9bb050b9bc91281a4caa177dc4ea866b717cf59bdfb200f5409f36a6e072b33",
+      "gzip_sha256": "3a1616ff067c46426ab9b328e28a9538806e772bb0666bc76568ad6d46300113",
+      "source_case": "revh_flowing_12",
+      "checkpoint": "hour-11-attempt-1"
+    },
+    {
+      "file": "flowing/checkpoint-10/diagnostic-raw/solver-log.txt.gz",
+      "restored_content_sha256": "816e7e9c1fab767bc80e5e0af8daeffa0f7ad0a0d4314ed30cf3a344ce76fd5f",
+      "gzip_sha256": "ef7cc4cf94cc55fc8f2cb8974258cb4188c372fd91713c6d13df20b3e80fa569",
+      "source_case": "revh_flowing_12",
+      "checkpoint": "hour-11-attempt-1"
+    },
+    {
+      "file": "flowing/checkpoint-10/diagnostics.json.gz",
+      "restored_content_sha256": "ea335378c93591c3ac8b17a94bddff8b371ccf157b11fd24ebe9eea5d58d53f4",
+      "gzip_sha256": "9c93377991d20fc352d92e0fd481c2bb8f6ab3bd2aaeeb96a1c854952d818e74",
+      "source_case": "revh_flowing_12",
+      "checkpoint": "hour-11-attempt-1"
+    },
+    {
+      "file": "flowing/checkpoint-11/diagnostic-raw/extrema-fieldMinMax.dat.txt.gz",
+      "restored_content_sha256": "063d0a83ea716edd0372e1c6c0b546841b4b303ce4a503338b6c0f1788e6cd5f",
+      "gzip_sha256": "c6151d890bb3fec4e611c7a34f70cad95ceebcbed0c5483bb9e02cb72f2cd084",
+      "source_case": "revh_flowing_12",
+      "checkpoint": "hour-12-attempt-1"
+    },
+    {
+      "file": "flowing/checkpoint-11/diagnostic-raw/probes-U.txt.gz",
+      "restored_content_sha256": "661e1a75890ea3ae814bbf908cebbb3bff81d5fee78643322043d1970140c7e1",
+      "gzip_sha256": "48ff26085f9903ac050a8ba2fbb356225d56904847d27bb9903c72dea6440b7d",
+      "source_case": "revh_flowing_12",
+      "checkpoint": "hour-12-attempt-1"
+    },
+    {
+      "file": "flowing/checkpoint-11/diagnostic-raw/solver-log.txt.gz",
+      "restored_content_sha256": "5e079eacc57a105895310a5abd70543eacef353a5a68f7f01f248c751ad02b91",
+      "gzip_sha256": "ee9e7a84be406e6dfb80f0fe5db30ca71017e786f1c1ae42664687e2b2a5d64a",
+      "source_case": "revh_flowing_12",
+      "checkpoint": "hour-12-attempt-1"
+    },
+    {
+      "file": "flowing/checkpoint-11/diagnostics.json.gz",
+      "restored_content_sha256": "6f2e9894e9fd9a6962bd6b229d2b7a16819f99ce09f60dad1ac5c1217532964b",
+      "gzip_sha256": "74e854a2d48396e13c4f716cfdc0f47c1bd3966705b7a1f255721feb5b44a0a4",
+      "source_case": "revh_flowing_12",
+      "checkpoint": "hour-12-attempt-1"
+    },
+    {
+      "file": "flowing/checkpoint-12/diagnostic-raw/extrema-fieldMinMax.dat.txt.gz",
+      "restored_content_sha256": "7182e942cf11cd1ff66208e47e8cd32765ab7fc77f8920af8116490b896dc463",
+      "gzip_sha256": "2fcf08f0f2318775301850a77c9dcab9b6d473686c8962e39bb8b4f2744aa35c",
+      "source_case": "revh_flowing_12",
+      "checkpoint": "hour-13-attempt-1"
+    },
+    {
+      "file": "flowing/checkpoint-12/diagnostic-raw/probes-U.txt.gz",
+      "restored_content_sha256": "1a8cbfa450621580346988c6383b5c1baab736ac36d3e3d944a1e99ecf97e953",
+      "gzip_sha256": "2da3e41c72d4bacae400570519e724d6fdcec1898133d763caea25d94f0c824b",
+      "source_case": "revh_flowing_12",
+      "checkpoint": "hour-13-attempt-1"
+    },
+    {
+      "file": "flowing/checkpoint-12/diagnostic-raw/solver-log.txt.gz",
+      "restored_content_sha256": "1f0351bb6312e1ecb4e71ceec3823e45b75662ec86da32ebf2e63dcf2c060f19",
+      "gzip_sha256": "1a76f22c7a601570334a60d294dedd229778835ae0a681c5edc027550b89c1c4",
+      "source_case": "revh_flowing_12",
+      "checkpoint": "hour-13-attempt-1"
+    },
+    {
+      "file": "flowing/checkpoint-12/diagnostics.json.gz",
+      "restored_content_sha256": "d4c665e4f26d9f45128cf74f47bdc34293c4b2c36c3dd954774d3b0d432b472f",
+      "gzip_sha256": "64de9ba5e5cbce18ffe0e040f8f90b47e6e141234191d1f53c4b08de07a153b4",
+      "source_case": "revh_flowing_12",
+      "checkpoint": "hour-13-attempt-1"
+    },
+    {
+      "file": "flowing/checkpoint-13/diagnostic-raw/extrema-fieldMinMax.dat.txt.gz",
+      "restored_content_sha256": "4dda39d6e30a489f52771658389776b3f7d8a9bae95bf05ccc880470f1907093",
+      "gzip_sha256": "6edeba7333c64ff2a3dfc1c2032ddea8de794e980b3fdc65e2cec1babb20c53e",
+      "source_case": "revh_flowing_12",
+      "checkpoint": "hour-14-attempt-1"
+    },
+    {
+      "file": "flowing/checkpoint-13/diagnostic-raw/probes-p.txt.gz",
+      "restored_content_sha256": "cf9a2af57de41b177681f46154c4cf0c83c2777096c22973dc5e640c7b278fa4",
+      "gzip_sha256": "c4edc11dab8c5b6cee688e3a68c31e3b9de6eb52bdbdd8d04691602dfb76ea74",
+      "source_case": "revh_flowing_12",
+      "checkpoint": "hour-14-attempt-1"
+    },
+    {
+      "file": "flowing/checkpoint-13/diagnostic-raw/probes-U.txt.gz",
+      "restored_content_sha256": "7bd5c1995b9b34f35c49a80e8f476b57b06e521d92f8f6a4c6216347aedc1da3",
+      "gzip_sha256": "41c90f6969f6ed026df13e19cde556c237f4b9c7a3c062cb2fd64966a24d5f73",
+      "source_case": "revh_flowing_12",
+      "checkpoint": "hour-14-attempt-1"
+    },
+    {
+      "file": "flowing/checkpoint-13/diagnostic-raw/solver-log.txt.gz",
+      "restored_content_sha256": "c43816de799b732e0ad488564928226240086fb720c699d49666d3a8df517ba8",
+      "gzip_sha256": "5bea9e51b5b332c84e2a0da169d4368dba2fe8a2580a3d28613ea81557e15aca",
+      "source_case": "revh_flowing_12",
+      "checkpoint": "hour-14-attempt-1"
+    },
+    {
+      "file": "flowing/checkpoint-13/diagnostics.json.gz",
+      "restored_content_sha256": "ddf4751fe411245a8d70370e8591d489b8ba9689de5f74deaa033ad703dca422",
+      "gzip_sha256": "1a219b43b6f66556ae9d5166cb92751484ad6d2e4887408a88a1f2363c88151c",
+      "source_case": "revh_flowing_12",
+      "checkpoint": "hour-14-attempt-1"
+    },
+    {
+      "file": "flowing/checkpoint-14/diagnostic-raw/extrema-fieldMinMax.dat.txt.gz",
+      "restored_content_sha256": "09bd1772f18b9b06ce54c58526882872320dfcad80f32267c0b9ad0400e28866",
+      "gzip_sha256": "fcb7d14ec672efe91982e1a79c5f383962187268d752db0620dc508c42fb723f",
+      "source_case": "revh_flowing_12",
+      "checkpoint": "hour-15-attempt-1"
+    },
+    {
+      "file": "flowing/checkpoint-14/diagnostic-raw/probes-p.txt.gz",
+      "restored_content_sha256": "cf06bf96b3e68e068174cc91ba6e3b72795b6a3d90802274bb5db440b4d7570d",
+      "gzip_sha256": "0006c379d752df88fe0d6026235d3e58c6f695bd2216033ed6eade60abce8a39",
+      "source_case": "revh_flowing_12",
+      "checkpoint": "hour-15-attempt-1"
+    },
+    {
+      "file": "flowing/checkpoint-14/diagnostic-raw/probes-U.txt.gz",
+      "restored_content_sha256": "e092f42b32ac37eccd54dcaf0995d62f0f432c65ae6752a7120f77e3462ec7f1",
+      "gzip_sha256": "3550347b932f7c3f821bc823fb36cf0a97fca7f652d3a77aaae4db13d30dc699",
+      "source_case": "revh_flowing_12",
+      "checkpoint": "hour-15-attempt-1"
+    },
+    {
+      "file": "flowing/checkpoint-14/diagnostic-raw/solver-log.txt.gz",
+      "restored_content_sha256": "2b896df5195251a6cdf223ad8e0ba4b8446271db8d197e23da2dea705ae425ae",
+      "gzip_sha256": "bd92d9b9a4d4600508a8d6c67163984218036ae08776801110b7368d4783551e",
+      "source_case": "revh_flowing_12",
+      "checkpoint": "hour-15-attempt-1"
+    },
+    {
+      "file": "flowing/checkpoint-14/diagnostics.json.gz",
+      "restored_content_sha256": "25c15369e9507cde0ac05ffb03bf8f6796054b4918087e8848a58fcc336b7b40",
+      "gzip_sha256": "f6c015967b804141edddad26f507a562c1bafe5e8b973e80eeeb38222e3efe7e",
+      "source_case": "revh_flowing_12",
+      "checkpoint": "hour-15-attempt-1"
+    },
+    {
+      "file": "flowing/checkpoint-15/diagnostic-raw/extrema-fieldMinMax.dat.txt.gz",
+      "restored_content_sha256": "f4b9897b590072c635e59c8af7627c9f4b2748fca93fc0796804dd910cf6e0fe",
+      "gzip_sha256": "953d88d1a75c007a85d6e7481ed84981b3dc9289665c67a5e941da5a26ad2ff4",
+      "source_case": "revh_flowing_12",
+      "checkpoint": "hour-16-attempt-1"
+    },
+    {
+      "file": "flowing/checkpoint-15/diagnostic-raw/probes-p.txt.gz",
+      "restored_content_sha256": "afbf5f284cb43b9addd9d2ee87982cb71a903a8d5ef5f29e652dc8affdfd05fc",
+      "gzip_sha256": "1bacf2b916817be677146ee3c41a473fb0138cd564a3db6c634adce091da5681",
+      "source_case": "revh_flowing_12",
+      "checkpoint": "hour-16-attempt-1"
+    },
+    {
+      "file": "flowing/checkpoint-15/diagnostic-raw/probes-U.txt.gz",
+      "restored_content_sha256": "4f0a428fc64afdbe6bb9504dab6ff472295128388520c6754b74b677810566b4",
+      "gzip_sha256": "bd3a5490a4eaab9fea2e0621d62b1ceda8e95f23de7b68809a51ca54ab2f7d9b",
+      "source_case": "revh_flowing_12",
+      "checkpoint": "hour-16-attempt-1"
+    },
+    {
+      "file": "flowing/checkpoint-15/diagnostic-raw/solver-log.txt.gz",
+      "restored_content_sha256": "2a98cb9278213895a76b8f5586fc7d763871aaa98dac805c146c7382dd39f332",
+      "gzip_sha256": "c0fa15759a26b13c99d054a94fa391b1df7d913add6ae31f2ac3f2af4b4250fe",
+      "source_case": "revh_flowing_12",
+      "checkpoint": "hour-16-attempt-1"
+    },
+    {
+      "file": "flowing/checkpoint-15/diagnostics.json.gz",
+      "restored_content_sha256": "e08e8d032a548bcd7aaa750abc7621eb4c5c0892a89e68017be3f9dab4156e7f",
+      "gzip_sha256": "75d45f3520f1023abde71c15845ef947f6e0b4082c31627f0e7065dea2617bd2",
+      "source_case": "revh_flowing_12",
+      "checkpoint": "hour-16-attempt-1"
+    },
+    {
+      "file": "flowing/checkpoint-16/diagnostic-raw/extrema-fieldMinMax.dat.txt.gz",
+      "restored_content_sha256": "7d1a3bdb45ca10030a610db19eac56f5f33627bbe97014ef9fe363909bd1c4c4",
+      "gzip_sha256": "1cd0ae6ccc12a6d743c7566082197995549c6f6d56d44f4c3a5bfcb766d27a4a",
+      "source_case": "revh_flowing_12",
+      "checkpoint": "hour-17-attempt-1"
+    },
+    {
+      "file": "flowing/checkpoint-16/diagnostic-raw/probes-p.txt.gz",
+      "restored_content_sha256": "2d4f8758b66256a5a8be85da379424c7f798b3f75d5ce402d8bab5873ffc1f9a",
+      "gzip_sha256": "4a3ec0228a100b7b5491e6b7c1480c52910f7138ad42ec09b6ba232350c1c551",
+      "source_case": "revh_flowing_12",
+      "checkpoint": "hour-17-attempt-1"
+    },
+    {
+      "file": "flowing/checkpoint-16/diagnostic-raw/probes-U.txt.gz",
+      "restored_content_sha256": "8aa63bf7bc3e95034c095e95822838262ebcfa3011776570e633594677ba423d",
+      "gzip_sha256": "694faa9ed251228477fce597e8bda6498194e8e4c64dc418dd4acbd33a1c6395",
+      "source_case": "revh_flowing_12",
+      "checkpoint": "hour-17-attempt-1"
+    },
+    {
+      "file": "flowing/checkpoint-16/diagnostic-raw/solver-log.txt.gz",
+      "restored_content_sha256": "44fbfeed8ec59cf75e770baacd69efb0843de3fd5a1fc6a893c9d41596157934",
+      "gzip_sha256": "d898bcaf759f8b97cdd4dc3f27c4cf6697afb5058f73c56809214418f1d9747f",
+      "source_case": "revh_flowing_12",
+      "checkpoint": "hour-17-attempt-1"
+    },
+    {
+      "file": "flowing/checkpoint-16/diagnostics.json.gz",
+      "restored_content_sha256": "20360f2ed6a6d8fe28b66395edc916ab9ea10e5bd99ccddb9d32046ac8a956f3",
+      "gzip_sha256": "090586690129b46337b89530e6590899320bb80599e5c043d530cf69cf8d1443",
+      "source_case": "revh_flowing_12",
+      "checkpoint": "hour-17-attempt-1"
+    },
+    {
+      "file": "flowing/checkpoint-17/diagnostic-raw/ambient_flux-surfaceFieldValue.dat.txt.gz",
+      "restored_content_sha256": "7ce36cc57238da6c4c860f5440c4d48c0a0aeb7c5fad29fe89805fa8395fe7f5",
+      "gzip_sha256": "9ef5dc1e663b447e3d3916cf10d6fd0908f02f8a96c2e3365490410a578f4226",
+      "source_case": "revh_flowing_12",
+      "checkpoint": "hour-18-attempt-1"
+    },
+    {
+      "file": "flowing/checkpoint-17/diagnostic-raw/extrema-fieldMinMax.dat.txt.gz",
+      "restored_content_sha256": "5aeafae16bb85e54e9288ab515f5f1db19c55e56a21decdd2742f1d8f44c46be",
+      "gzip_sha256": "d0cfe22f449ef546d7820a11a8bcf8e3159f701c42a2d5ec98ee5d7386544f00",
+      "source_case": "revh_flowing_12",
+      "checkpoint": "hour-18-attempt-1"
+    },
+    {
+      "file": "flowing/checkpoint-17/diagnostic-raw/probes-p.txt.gz",
+      "restored_content_sha256": "855197608cc2aaaf4a437eb4217be3f8977b0765a1d9bf000a5360c5b5325a90",
+      "gzip_sha256": "dbb028f5c03b3cc4508af03de40596b9b169ac70df67d186e16423bf1ae9b60f",
+      "source_case": "revh_flowing_12",
+      "checkpoint": "hour-18-attempt-1"
+    },
+    {
+      "file": "flowing/checkpoint-17/diagnostic-raw/probes-U.txt.gz",
+      "restored_content_sha256": "e1404df1eca6b29cd603865be906bc41140724feec376efae48f2e3157f1bc81",
+      "gzip_sha256": "df046ab6266cfb2b16266d74507de45e45c35080ae752e85ec55eb905cb7ece6",
+      "source_case": "revh_flowing_12",
+      "checkpoint": "hour-18-attempt-1"
+    },
+    {
+      "file": "flowing/checkpoint-17/diagnostic-raw/solver-log.txt.gz",
+      "restored_content_sha256": "98f819c7047998da93c0de9dcf0e15545a44c2a08b4db4108c0ac722af8360dc",
+      "gzip_sha256": "3cd8a388614dda2b6bde9a798b6ffa3733971c82730d4ca9bd717f8e855559c5",
+      "source_case": "revh_flowing_12",
+      "checkpoint": "hour-18-attempt-1"
+    },
+    {
+      "file": "flowing/checkpoint-17/diagnostics.json.gz",
+      "restored_content_sha256": "745f2eadb766d5c7f61e094bb7e34a70e047cb8c48e01aa7dbc8ee595d2d3f9d",
+      "gzip_sha256": "ee927047372877ede660261013c076bffa0113eec9a10197f0c99d79a97918ba",
+      "source_case": "revh_flowing_12",
+      "checkpoint": "hour-18-attempt-1"
+    },
+    {
+      "file": "hour-10/diagnostic-raw/extrema-fieldMinMax.dat.txt.gz",
+      "restored_content_sha256": "b45e06b154cea66856cfe50048ea0dabebfca729e739a339360081accdb15725",
+      "gzip_sha256": "df59fdc7bf2998f5a3c623b5d0493a2b687af65610ca6baeec4dd667ded238c9",
+      "source_case": "revh_fourhour_08",
+      "checkpoint": "hour-10-attempt-1"
+    },
+    {
+      "file": "hour-10/diagnostic-raw/probes-p.txt.gz",
+      "restored_content_sha256": "c4f887c561bd8b1bc50e17c014a20d143e45abe7de9128fe906861bedad0045c",
+      "gzip_sha256": "26d5759d4ee42e246518eb5062c26b072e0700f2d48a89c0c6ba7ccbb60771e3",
+      "source_case": "revh_fourhour_08",
+      "checkpoint": "hour-10-attempt-1"
+    },
+    {
+      "file": "hour-10/diagnostic-raw/probes-U.txt.gz",
+      "restored_content_sha256": "3fb59e7fb0f8f1b5068d7d4fe4115d26c75a02ca5905871a063cad069490f1f3",
+      "gzip_sha256": "d58139a34b9ca34a6b6302deac964ee23c3f35753eb170f02b141669a08ecd47",
+      "source_case": "revh_fourhour_08",
+      "checkpoint": "hour-10-attempt-1"
+    },
+    {
+      "file": "hour-10/diagnostic-raw/solver-log.txt.gz",
+      "restored_content_sha256": "c2272c83b88c1b91d157062589d6d48bdc872020ec1a156b892e393c0a117fa3",
+      "gzip_sha256": "28b7904818d6813351b295e0138a804f2cf9b4e157957c799d3982c29c5bdc96",
+      "source_case": "revh_fourhour_08",
+      "checkpoint": "hour-10-attempt-1"
+    },
+    {
+      "file": "hour-10/diagnostics.json.gz",
+      "restored_content_sha256": "05db392459ac7cb2a787b7789ead5fdc68431e12e861558ea5f57628fbbb4bb9",
+      "gzip_sha256": "7052c03fa941efe3375cec63d12d58632ed0782c1437bf5dea65d2cbe91847fd",
+      "source_case": "revh_fourhour_08",
+      "checkpoint": "hour-10-attempt-1"
+    },
+    {
+      "file": "hour-11/diagnostic-raw/extrema-fieldMinMax.dat.txt.gz",
+      "restored_content_sha256": "8d1557c226004bf55a41c67960e013adda72f0ac74d57b4967b304866f4ec8a0",
+      "gzip_sha256": "556d8d37ef5f694a1c833506d838e3aa930ef373da6bddaaf11c1cadb28c5cdd",
+      "source_case": "revh_fourhour_08",
+      "checkpoint": "hour-11-attempt-1"
+    },
+    {
+      "file": "hour-11/diagnostic-raw/probes-p.txt.gz",
+      "restored_content_sha256": "a076d48cffd12d93561ecceb7c01efca5c3ce33aa39c4453db93e7851ce10430",
+      "gzip_sha256": "53c7dbaf53303b06297d3a796f0af1c69098ca864e01a325e69eb17daf0a22ad",
+      "source_case": "revh_fourhour_08",
+      "checkpoint": "hour-11-attempt-1"
+    },
+    {
+      "file": "hour-11/diagnostic-raw/probes-U.txt.gz",
+      "restored_content_sha256": "13a242e028bf0fe470845065850c0715d533c26e907cf4339584e51e509b1726",
+      "gzip_sha256": "b585edd256c9580ee2a1048481a6c707239334e321381ab73750a9620e4553aa",
+      "source_case": "revh_fourhour_08",
+      "checkpoint": "hour-11-attempt-1"
+    },
+    {
+      "file": "hour-11/diagnostic-raw/solver-log.txt.gz",
+      "restored_content_sha256": "920c5224afb0dfcb424474fe48cb56d5cb8669ae7162d4c39c6cd1da77bc4206",
+      "gzip_sha256": "e5b682331c8000afe2cb204b32941574910f826ab88c55100d43c936b59fd9c0",
+      "source_case": "revh_fourhour_08",
+      "checkpoint": "hour-11-attempt-1"
+    },
+    {
+      "file": "hour-11/diagnostics.json.gz",
+      "restored_content_sha256": "35135ade79fcfbc2e71a8eb07437b7945a880d8a4593d0da9b83d394745fcf48",
+      "gzip_sha256": "7858ebd3f023b334945f773203781bed258ec5b7f42b9d9bc608c15065bb2ce0",
+      "source_case": "revh_fourhour_08",
+      "checkpoint": "hour-11-attempt-1"
+    },
+    {
+      "file": "hour-12/diagnostic-raw/extrema-fieldMinMax.dat.txt.gz",
+      "restored_content_sha256": "2969af007fcdbee94c36589c6341d96e90edc93e7f003a2f6437062f037ac160",
+      "gzip_sha256": "a0a95ab2dea305fec6dba3445575128429e303dd45d7af76c8e585d8e0689e02",
+      "source_case": "revh_fourhour_08",
+      "checkpoint": "hour-12-attempt-1"
+    },
+    {
+      "file": "hour-12/diagnostic-raw/probes-p.txt.gz",
+      "restored_content_sha256": "03d99bbced5cc67e78ab1ed4651f498f99992f9d085782f2c91cfeeebf50a31d",
+      "gzip_sha256": "1e6cc81e394bd19d4b1c866bd4897f7c8a2aebe7fefed9aadfe7cdc1ebc1426c",
+      "source_case": "revh_fourhour_08",
+      "checkpoint": "hour-12-attempt-1"
+    },
+    {
+      "file": "hour-12/diagnostic-raw/probes-U.txt.gz",
+      "restored_content_sha256": "1d3feef133e5411465710da14aa2e2eaf66b3e1e893b49e1ca8d19367c6f3b4d",
+      "gzip_sha256": "a9b1402e354241759f2a36c87e5636939686acf14842d4ac8f8f25c5797f5ab5",
+      "source_case": "revh_fourhour_08",
+      "checkpoint": "hour-12-attempt-1"
+    },
+    {
+      "file": "hour-12/diagnostic-raw/solver-log.txt.gz",
+      "restored_content_sha256": "73988df654cc00ede048d7ff5730b7bbf64e4d99a7d87e645420dc340c01a3a4",
+      "gzip_sha256": "2abcc8c1348684f0323fdca6376de35a08f8ccc472731523cebe07e88172b607",
+      "source_case": "revh_fourhour_08",
+      "checkpoint": "hour-12-attempt-1"
+    },
+    {
+      "file": "hour-12/diagnostics.json.gz",
+      "restored_content_sha256": "5719d76e6a717d299019d864da33c5566febb21ebf0390c82a1ca2102de05846",
+      "gzip_sha256": "bf79bd3f346651ab060b5053b9391bac9d9d488d02a682d97defd6bc24e9aa11",
+      "source_case": "revh_fourhour_08",
+      "checkpoint": "hour-12-attempt-1"
+    },
+    {
+      "file": "hour-13/diagnostic-raw/extrema-fieldMinMax.dat.txt.gz",
+      "restored_content_sha256": "f718e9b7eefaf3466d911b00094620cfdf4ddcecf85db5f9307fba535a612ed7",
+      "gzip_sha256": "f64f277cd0e405f7321ce7a7db799c72a34f62e1dbc126720311b35399072484",
+      "source_case": "revh_fourhour_08",
+      "checkpoint": "hour-13-attempt-1"
+    },
+    {
+      "file": "hour-13/diagnostic-raw/probes-p.txt.gz",
+      "restored_content_sha256": "27b2c342400c0ee1847bf7905fc5edec134bd5f2628826f619164e88a76ffc67",
+      "gzip_sha256": "e8700da2f6a52b4debd79c7c19096c119c14e4907079e20a72bc8926dc395841",
+      "source_case": "revh_fourhour_08",
+      "checkpoint": "hour-13-attempt-1"
+    },
+    {
+      "file": "hour-13/diagnostic-raw/probes-U.txt.gz",
+      "restored_content_sha256": "bd3fbff547222d9b9940ed5821afe33ebd286c3adc7f17969868a4f322da7b61",
+      "gzip_sha256": "2312b46d84dcf65403252f2fb70a2e1ba7d6b5962c70a27e2ab6e771312ad7cb",
+      "source_case": "revh_fourhour_08",
+      "checkpoint": "hour-13-attempt-1"
+    },
+    {
+      "file": "hour-13/diagnostic-raw/solver-log.txt.gz",
+      "restored_content_sha256": "7965d6eb3d5b5b3339faf2d8ebe413968edac45ff8d5c659ec7deeb25532f1d6",
+      "gzip_sha256": "2242dbabfb20b7ab429a837cd5d7e6714060336bad08884207fa59d0dc98eadb",
+      "source_case": "revh_fourhour_08",
+      "checkpoint": "hour-13-attempt-1"
+    },
+    {
+      "file": "hour-13/diagnostics.json.gz",
+      "restored_content_sha256": "2845a16c2a3a5d35eb7cb0f661179ef6f27adfd2f4eb6f05ff3005b5c9954346",
+      "gzip_sha256": "00237b89e21065945c2b77dec29704443804c99ce65c1b7086dd35e5e8d3b5cb",
+      "source_case": "revh_fourhour_08",
+      "checkpoint": "hour-13-attempt-1"
+    },
+    {
+      "file": "hour-14/diagnostic-raw/extrema-fieldMinMax.dat.txt.gz",
+      "restored_content_sha256": "5de1d4638d7bf96a184a3a58aff42cbaf68ae8adf0fa3ebdb4bd773d933aae87",
+      "gzip_sha256": "5f042ae6b58a7f35a73c0359fea343e1532bbffb34e4f828aaf1ff8b1d668a14",
+      "source_case": "revh_fourhour_08",
+      "checkpoint": "hour-14-attempt-1"
+    },
+    {
+      "file": "hour-14/diagnostic-raw/probes-p.txt.gz",
+      "restored_content_sha256": "f98dcd5363deddfadac52f01ee62f1dda01ce3c6dccea0d98b1a62ee417725db",
+      "gzip_sha256": "f758c84f98720fc9875d4cb1a3a5961962cf1116655e18099bfd8173f2abb990",
+      "source_case": "revh_fourhour_08",
+      "checkpoint": "hour-14-attempt-1"
+    },
+    {
+      "file": "hour-14/diagnostic-raw/probes-U.txt.gz",
+      "restored_content_sha256": "e0a1e7211b34d5f4c595a504b4ce05336ca097a84651f5a7ba1661ad08c6b80b",
+      "gzip_sha256": "b854a40a11a189270e1ef43b560818be3d1d0eb6cf3499899f9e9ca928346581",
+      "source_case": "revh_fourhour_08",
+      "checkpoint": "hour-14-attempt-1"
+    },
+    {
+      "file": "hour-14/diagnostic-raw/solver-log.txt.gz",
+      "restored_content_sha256": "a8a15c76c72a3983c3812472590b2c3658df5eb5578bab09c953e4d2d97dee7a",
+      "gzip_sha256": "b3dbb8506394f167b510848c721e8176262ec9f432bf64d64c712c723e37524e",
+      "source_case": "revh_fourhour_08",
+      "checkpoint": "hour-14-attempt-1"
+    },
+    {
+      "file": "hour-14/diagnostics.json.gz",
+      "restored_content_sha256": "4c0034c70308f5f629ebb0a6ae8d19b71eeb93fc20d21c324aa9ac6a6b1c7e44",
+      "gzip_sha256": "83f64c947a35875ea0d1610c6a0320f1170d3477bdbbf184741382fe9239e857",
+      "source_case": "revh_fourhour_08",
+      "checkpoint": "hour-14-attempt-1"
+    },
+    {
+      "file": "hour-15/diagnostic-raw/extrema-fieldMinMax.dat.txt.gz",
+      "restored_content_sha256": "22ebb31bd3193c12c184e52fa7b00f908227dbf5555bf7e2ff5622c4681a039e",
+      "gzip_sha256": "49e3677e4f007ce42be0572ff300d5d1d9046d7364141ac5690cb901abb11962",
+      "source_case": "revh_fourhour_08",
+      "checkpoint": "hour-15-attempt-1"
+    },
+    {
+      "file": "hour-15/diagnostic-raw/probes-p.txt.gz",
+      "restored_content_sha256": "8b948bb9f3dc582a41c897ac89e8c8f7c04c0f9cc79cb39b4b57cf6ce7b0d580",
+      "gzip_sha256": "2720f10fe770737097604794011e355eece8684d35f172d58ef0c78e3141e0d5",
+      "source_case": "revh_fourhour_08",
+      "checkpoint": "hour-15-attempt-1"
+    },
+    {
+      "file": "hour-15/diagnostic-raw/probes-U.txt.gz",
+      "restored_content_sha256": "9c804afd1f0c907b00fe176c1b1d41cda46bd15bc4d9d57fe33e5e786ac626f8",
+      "gzip_sha256": "a2d4e956515112d18b05e1416f725473fb79288bb51f4bbb700dec42ef9d7bb3",
+      "source_case": "revh_fourhour_08",
+      "checkpoint": "hour-15-attempt-1"
+    },
+    {
+      "file": "hour-15/diagnostic-raw/solver-log.txt.gz",
+      "restored_content_sha256": "c6c097dc94d8988581d2d2adde25eaab0b3698fbf9ec49cfeab0ee3ef6cb2b3d",
+      "gzip_sha256": "832046c7c921ff7c07f2b2b5c36ff53ffa0267fda39b0a0f6fe02aa70e4b96f4",
+      "source_case": "revh_fourhour_08",
+      "checkpoint": "hour-15-attempt-1"
+    },
+    {
+      "file": "hour-15/diagnostics.json.gz",
+      "restored_content_sha256": "67c1d175c7fdcb0225f7086031a168b129f909b4b802c469fc71c22ccb886b27",
+      "gzip_sha256": "3d3c500baa440fa8dd80119e391fe1a7eeb03e5418bd2c56cc08069e472772bb",
+      "source_case": "revh_fourhour_08",
+      "checkpoint": "hour-15-attempt-1"
+    },
+    {
+      "file": "hour-16/diagnostic-raw/extrema-fieldMinMax.dat.txt.gz",
+      "restored_content_sha256": "f2c41b7cca920e4a5862b54404e42ba26549bfa725bb684c8dd780ffedcffbdd",
+      "gzip_sha256": "0ca441380a1248ba33607e12e793a63c8a6de8c7c1a8b46f068a28b38939f6b4",
+      "source_case": "revh_fourhour_08",
+      "checkpoint": "hour-16-attempt-1"
+    },
+    {
+      "file": "hour-16/diagnostic-raw/probes-p.txt.gz",
+      "restored_content_sha256": "247da23422c6b522d1739b23db51e43ae9f408eaf47aaf07e3ab11952f217aca",
+      "gzip_sha256": "90f5a7ee2fc4302025db55eb344ecbedbed15048f642f99903f47758cfdd4fba",
+      "source_case": "revh_fourhour_08",
+      "checkpoint": "hour-16-attempt-1"
+    },
+    {
+      "file": "hour-16/diagnostic-raw/probes-U.txt.gz",
+      "restored_content_sha256": "d51363a775148d907a1a62ef959c667d1ed062572b2a0b85438dbe584f6ae250",
+      "gzip_sha256": "1aec5730f2f1571e8759b326efb802a2b884d59bbd818dc0d1a0db4c8d58cc95",
+      "source_case": "revh_fourhour_08",
+      "checkpoint": "hour-16-attempt-1"
+    },
+    {
+      "file": "hour-16/diagnostic-raw/solver-log.txt.gz",
+      "restored_content_sha256": "4e70ad8229460e640c45eed63a325892cd1b41530db260a763dcd8cc1cb1f319",
+      "gzip_sha256": "2357a721870883b3f075d0474ff94794c24eb1e5a37cc1919b5e246e2efce325",
+      "source_case": "revh_fourhour_08",
+      "checkpoint": "hour-16-attempt-1"
+    },
+    {
+      "file": "hour-16/diagnostics.json.gz",
+      "restored_content_sha256": "aecfb5ce98c43ea43ae4c8f901503dfb38808eacac7876249dcf9b3968278372",
+      "gzip_sha256": "e921ac248396a2d4b338512159198b8c62a877fe5b276fa88bfbc75ec41a8398",
+      "source_case": "revh_fourhour_08",
+      "checkpoint": "hour-16-attempt-1"
+    },
+    {
+      "file": "hour-17/diagnostic-raw/ambient_abs_flux-surfaceFieldValue.dat.txt.gz",
+      "restored_content_sha256": "3f15e6695319fff112adc7a125584478f30445b0a65df8270e551dbfa27959dc",
+      "gzip_sha256": "6d46324b65898bd60d7e647ce2bc14e3a65872ad2f2e29318bcb4b5fff542b38",
+      "source_case": "revh_fourhour_08",
+      "checkpoint": "hour-17-attempt-1"
+    },
+    {
+      "file": "hour-17/diagnostic-raw/extrema-fieldMinMax.dat.txt.gz",
+      "restored_content_sha256": "495a39a4abac9fff603d69786fc0e705d13f85c0a9541ea185a1b71f41e6d8c8",
+      "gzip_sha256": "40597de90c52e0a999f1de7f3b1b8e3ff2876040116a5b313ede9d92016e933f",
+      "source_case": "revh_fourhour_08",
+      "checkpoint": "hour-17-attempt-1"
+    },
+    {
+      "file": "hour-17/diagnostic-raw/probes-p.txt.gz",
+      "restored_content_sha256": "0d52e4024b6d8167eb0e5daa9a11e0d0e33d8342e10773c33567bdb1bacd1944",
+      "gzip_sha256": "27e43cd39e2fce0cc0d795091cac3131a953f62cb31a83558ef6fc44a0c795a3",
+      "source_case": "revh_fourhour_08",
+      "checkpoint": "hour-17-attempt-1"
+    },
+    {
+      "file": "hour-17/diagnostic-raw/probes-U.txt.gz",
+      "restored_content_sha256": "86775e41e0211c5fee8d878829334ff4890368c4ed6a18bc2e8e5524381e7f7a",
+      "gzip_sha256": "fbc507e8eda4a2d53446cf46e80bc20fdde0d20372ec349c43796ce7ff8e20c9",
+      "source_case": "revh_fourhour_08",
+      "checkpoint": "hour-17-attempt-1"
+    },
+    {
+      "file": "hour-17/diagnostic-raw/solver-log.txt.gz",
+      "restored_content_sha256": "c8e4bc182f946710d10e21a689a4bf8227e4a0dd7770348e7eeefb6710f0c95b",
+      "gzip_sha256": "555df8952e63faf7fb125bc87222028e934f15137e8a81597a5ae53c1ab0a21a",
+      "source_case": "revh_fourhour_08",
+      "checkpoint": "hour-17-attempt-1"
+    },
+    {
+      "file": "hour-17/diagnostics.json.gz",
+      "restored_content_sha256": "6b36c2e75a1557c087f509859b9db18068c63238feb4dc3a3a810ed8fc23815c",
+      "gzip_sha256": "a40e8784b72b304facec7f962f6d6d59e423ba595089be251e5c0833516f88d3",
+      "source_case": "revh_fourhour_08",
+      "checkpoint": "hour-17-attempt-1"
+    },
+    {
+      "file": "hour-18/diagnostic-raw/ambient_abs_flux-surfaceFieldValue.dat.txt.gz",
+      "restored_content_sha256": "184aca8c153eee7b2c97ba1da439f0149beb9929a3a349b2150332a78ac14b40",
+      "gzip_sha256": "c90352f3f60f2dddd513a4e4d07c8f22f3a836018fcba3d72ba0d9413c33d281",
+      "source_case": "revh_fourhour_08",
+      "checkpoint": "hour-18-attempt-1"
+    },
+    {
+      "file": "hour-18/diagnostic-raw/extrema-fieldMinMax.dat.txt.gz",
+      "restored_content_sha256": "17660875c3df7744906bfb18deac44be66224a6e612e0bd7af5738eb7131ae16",
+      "gzip_sha256": "9c85689b9b2b2ac5e6e67789d44cbf033cc4110629a106b0e380c789cdcd0c04",
+      "source_case": "revh_fourhour_08",
+      "checkpoint": "hour-18-attempt-1"
+    },
+    {
+      "file": "hour-18/diagnostic-raw/probes-p.txt.gz",
+      "restored_content_sha256": "43e34e1b131c0484e92e6d86df81b02a118ea15b5f27e1d0221ae94cbe572d7a",
+      "gzip_sha256": "7e7897342cac0060d4b61b2e442bb68ffa12eb3f4d0d0efdbc3710e42a4089d6",
+      "source_case": "revh_fourhour_08",
+      "checkpoint": "hour-18-attempt-1"
+    },
+    {
+      "file": "hour-18/diagnostic-raw/probes-U.txt.gz",
+      "restored_content_sha256": "d1b9c948b0e87cdb6b1f5eac9b81d2c3a1887a490fd129588b578eceb26bc03d",
+      "gzip_sha256": "c1ad38d3f2fbb3325489eb291467ceafc727505e44a938d0a3af25cdd09bc156",
+      "source_case": "revh_fourhour_08",
+      "checkpoint": "hour-18-attempt-1"
+    },
+    {
+      "file": "hour-18/diagnostic-raw/solver-log.txt.gz",
+      "restored_content_sha256": "e405708a4876228df8c16558079d0ec18d2dbc877934fe5eb96ba8d41b912184",
+      "gzip_sha256": "f5b2de7363aa879972a1a6b43f7d6b7e3b1d4f29d4e20ffbb194ac17139143d1",
+      "source_case": "revh_fourhour_08",
+      "checkpoint": "hour-18-attempt-1"
+    },
+    {
+      "file": "hour-18/diagnostics.json.gz",
+      "restored_content_sha256": "d68207a075022ec45d16903fac7834f6e1307b4043feda7887ae8c9e07be77da",
+      "gzip_sha256": "4a398e7a85ffa343dbc5d96fcbd17974db7e3307a404aaafd788559f2386784e",
+      "source_case": "revh_fourhour_08",
+      "checkpoint": "hour-18-attempt-1"
+    },
+    {
+      "file": "hour-4/diagnostic-raw/probes-p.txt.gz",
+      "restored_content_sha256": "a1199a7a6338bbb16b368b2d714eeeeafe390d78a7d5baf8ddf6c37916082aaa",
+      "gzip_sha256": "33688a8ec54c22d9a47ea0c67214d80f003f0e0bb5d9abee2f42d683f63fb4a6",
+      "source_case": "revh_fourhour_08",
+      "checkpoint": "hour-4-attempt-1"
+    },
+    {
+      "file": "hour-4/diagnostic-raw/probes-U.txt.gz",
+      "restored_content_sha256": "a6dccbea4e259fceb8697be7ba63497d87c202a93e6ced6e605ca149c6eb23cd",
+      "gzip_sha256": "52a208fa2b393a33a03928371f0d605fef67330f02c5c4051881a8991b6d8b8a",
+      "source_case": "revh_fourhour_08",
+      "checkpoint": "hour-4-attempt-1"
+    },
+    {
+      "file": "hour-4/diagnostic-raw/solver-log.txt.gz",
+      "restored_content_sha256": "b2ffe09ab281f07a8d526ddb61aec6763abcabec3e4a95285ddd86761ebfdfde",
+      "gzip_sha256": "64412371b8e5664650c0611652bbb49bf223617b5fa9defba16eb8820cdf1cb4",
+      "source_case": "revh_fourhour_08",
+      "checkpoint": "hour-4-attempt-1"
+    },
+    {
+      "file": "hour-4/diagnostics.json.gz",
+      "restored_content_sha256": "4939f09fe85cf123f2c22cb44b8057ece7e14721e8d7267cb4447934b0565aa6",
+      "gzip_sha256": "f45409bc40e5a7bd6d1b3c90a81314c60238ba60d65d8fceaa32ec87f562e038",
+      "source_case": "revh_fourhour_08",
+      "checkpoint": "hour-4-attempt-1"
+    },
+    {
+      "file": "hour-5/diagnostic-raw/ambient_abs_flux-surfaceFieldValue.dat.txt.gz",
+      "restored_content_sha256": "b2f05ec1d157771f21ac5ae9dfc2d2fef1ec122130ad596c06c04e417936bf35",
+      "gzip_sha256": "8bc2d6b2a58230a03ac46a4a3cc39126a54be1a075494e4a61a708f7050216d1",
+      "source_case": "revh_fourhour_08",
+      "checkpoint": "hour-5-attempt-1"
+    },
+    {
+      "file": "hour-5/diagnostic-raw/probes-p.txt.gz",
+      "restored_content_sha256": "da851f1e6c2efb147c74d8a9def68724ae72e6a8c60a42af99f2c583f7bd172d",
+      "gzip_sha256": "ede5c2eed13e68e7a1845481b3d50df0cc826c4c341448ab431f73499077a049",
+      "source_case": "revh_fourhour_08",
+      "checkpoint": "hour-5-attempt-1"
+    },
+    {
+      "file": "hour-5/diagnostic-raw/probes-U.txt.gz",
+      "restored_content_sha256": "b741c13135861589f7f481ab3347c4d839586a8e062a21a9304dc926a74b0682",
+      "gzip_sha256": "09693ef1ea2f8309bd1b3628e6843015c94bc0c57019e622acd092ba4d45dfac",
+      "source_case": "revh_fourhour_08",
+      "checkpoint": "hour-5-attempt-1"
+    },
+    {
+      "file": "hour-5/diagnostic-raw/solver-log.txt.gz",
+      "restored_content_sha256": "157192e810fdee402af1ff107f34660432f61401318fae5c399b44a3fcd767ab",
+      "gzip_sha256": "573722d8c0b643cf91e2e0d5728d2014b25516b3d28e970cf645b8bf48cbd6f7",
+      "source_case": "revh_fourhour_08",
+      "checkpoint": "hour-5-attempt-1"
+    },
+    {
+      "file": "hour-5/diagnostics.json.gz",
+      "restored_content_sha256": "d93b58f3281fe26fbca535abdf3b639f023a52cca277c1902656b56e0c28c883",
+      "gzip_sha256": "0ef50ebbf578a461264b87a59a0f2f17a5c7cf3cc133c4692a93b02680ee27b5",
+      "source_case": "revh_fourhour_08",
+      "checkpoint": "hour-5-attempt-1"
+    },
+    {
+      "file": "hour-6/diagnostic-raw/probes-p.txt.gz",
+      "restored_content_sha256": "e627e6a95ccd1662a925423ca95b76a44278986ee45d05d50f365e7c201a5b46",
+      "gzip_sha256": "3be893a6edf5fef9556048257522ba09070dff025918dfc882c5f99cc887fcd4",
+      "source_case": "revh_fourhour_08",
+      "checkpoint": "hour-6-attempt-1"
+    },
+    {
+      "file": "hour-6/diagnostic-raw/probes-U.txt.gz",
+      "restored_content_sha256": "9783774c183d45c218bb27091d774de69d6d86960f321b425812e9faebd46276",
+      "gzip_sha256": "b1c16ce4de854faaa1b756110379a6edbe183403382cb65babedf6c32eba3097",
+      "source_case": "revh_fourhour_08",
+      "checkpoint": "hour-6-attempt-1"
+    },
+    {
+      "file": "hour-6/diagnostic-raw/solver-log.txt.gz",
+      "restored_content_sha256": "0994ab0dbfabb8e35efc04055bc5192b729d8ac4591466c2e3392a42208ddb27",
+      "gzip_sha256": "4ea42249dff1ed77e5d56908fca67b975af4d3e6480962b3953d3e38aed4083f",
+      "source_case": "revh_fourhour_08",
+      "checkpoint": "hour-6-attempt-1"
+    },
+    {
+      "file": "hour-6/diagnostics.json.gz",
+      "restored_content_sha256": "b5575306e9c94486bd8fb78ff252d5eebfa768eb49e4643ac1ac4fcb4b50693b",
+      "gzip_sha256": "f5e6ab4012139b5bef14373d75cdc6490192d7306df887ced57a6aad8807ca10",
+      "source_case": "revh_fourhour_08",
+      "checkpoint": "hour-6-attempt-1"
+    },
+    {
+      "file": "hour-7/diagnostic-raw/extrema-fieldMinMax.dat.txt.gz",
+      "restored_content_sha256": "0686b6c61b237204644405c7ea7aab8610790e5fbb4608ef0e6196c20604caec",
+      "gzip_sha256": "566a8e82ac5b7e2f5d00e05816a8af789beb9d1785a9ff22287b4acce3b65c81",
+      "source_case": "revh_fourhour_08",
+      "checkpoint": "hour-7-attempt-1"
+    },
+    {
+      "file": "hour-7/diagnostic-raw/probes-p.txt.gz",
+      "restored_content_sha256": "cb7aa09866d3f648e76ff64e9c98880d6903dc26208c25c07fe1d9badddd3f69",
+      "gzip_sha256": "316d23f8373ed8368931ffab46b2c04173eb5e78c8dfe22ae426e0ee4f1dde17",
+      "source_case": "revh_fourhour_08",
+      "checkpoint": "hour-7-attempt-1"
+    },
+    {
+      "file": "hour-7/diagnostic-raw/probes-U.txt.gz",
+      "restored_content_sha256": "93242e21997c3bb6bbec8e653f1010100147306cb12367434f19bd595eefe54d",
+      "gzip_sha256": "974bbdfd42da218e19fdc916114aa9a1107c816b0851783b3508fa78ff9a6ddc",
+      "source_case": "revh_fourhour_08",
+      "checkpoint": "hour-7-attempt-1"
+    },
+    {
+      "file": "hour-7/diagnostic-raw/solver-log.txt.gz",
+      "restored_content_sha256": "6c4879ef79416e634b383e6f01332531da2ffeabe563d4fc0229f091aaf5843e",
+      "gzip_sha256": "28454a82470d8effe47fd91ddc2e329b874a622fe9f9925f425dac6dc02dd9f5",
+      "source_case": "revh_fourhour_08",
+      "checkpoint": "hour-7-attempt-1"
+    },
+    {
+      "file": "hour-7/diagnostics.json.gz",
+      "restored_content_sha256": "601986084120578e397833d72a2b06f3995562e4a1e444c964a382a387c69357",
+      "gzip_sha256": "646d5ab92c8fefc08c830ffc29cb0d9860ec4019679c8315179d14bc54db4519",
+      "source_case": "revh_fourhour_08",
+      "checkpoint": "hour-7-attempt-1"
+    },
+    {
+      "file": "hour-8/diagnostic-raw/extrema-fieldMinMax.dat.txt.gz",
+      "restored_content_sha256": "7c1fe9a70dd3272a33d29017faf8b3460536434cae201371c373a221afb6501d",
+      "gzip_sha256": "bfc9632f3b1fc5dcdd54a8de4b819891209c3bcf4766330218e4eb0d66cefd6d",
+      "source_case": "revh_fourhour_08",
+      "checkpoint": "hour-8-attempt-1"
+    },
+    {
+      "file": "hour-8/diagnostic-raw/probes-p.txt.gz",
+      "restored_content_sha256": "1ec855e6593da88cdfe217c5e30287a20b0112a65f7c25aaa01f27cc845fa7ea",
+      "gzip_sha256": "73b49dafe7718bf1444b6ab2fcea52f042f2a36527fb8775fb84f2843d6086b6",
+      "source_case": "revh_fourhour_08",
+      "checkpoint": "hour-8-attempt-1"
+    },
+    {
+      "file": "hour-8/diagnostic-raw/probes-U.txt.gz",
+      "restored_content_sha256": "340d3cf1431c4073921d69852b470ca48bb929cfc696076355b65c383bd31e61",
+      "gzip_sha256": "37f03f3f504eae7a604519ce1a8bc1e5dcaf5051196085c52e0e6c75e388ab2a",
+      "source_case": "revh_fourhour_08",
+      "checkpoint": "hour-8-attempt-1"
+    },
+    {
+      "file": "hour-8/diagnostic-raw/solver-log.txt.gz",
+      "restored_content_sha256": "e62989d986b2634ed0e17f594213ff1ea15e78b476b760d73c5098cadb5263b3",
+      "gzip_sha256": "ad7b3754947e27f2e8e9c2d120e5d074b54e556aea655292ef4c5b3e4121db9b",
+      "source_case": "revh_fourhour_08",
+      "checkpoint": "hour-8-attempt-1"
+    },
+    {
+      "file": "hour-8/diagnostics.json.gz",
+      "restored_content_sha256": "5b53d83602113acf9cb14d984e966aff4196902acea1b0262577cf906e53aa9c",
+      "gzip_sha256": "34534220acd9aaf5e531389d534cc19be7276ce9dd71d78e0764ce4a44a28cd5",
+      "source_case": "revh_fourhour_08",
+      "checkpoint": "hour-8-attempt-1"
+    },
+    {
+      "file": "hour-9/diagnostic-raw/extrema-fieldMinMax.dat.txt.gz",
+      "restored_content_sha256": "ab4a1b0857aa38992312176ff3fa4f4bc1c45de734de0731271e7a846c04105e",
+      "gzip_sha256": "8a440e1f19cdc837b2736793bfd0df986232af5cb74113ba19fd9e11b7130520",
+      "source_case": "revh_fourhour_08",
+      "checkpoint": "hour-9-attempt-1"
+    },
+    {
+      "file": "hour-9/diagnostic-raw/probes-p.txt.gz",
+      "restored_content_sha256": "b82d96f5402635130b08a0233f0314cfdaba761861300d490933f44d219130f2",
+      "gzip_sha256": "be3bbc0290bae1203db26b6e7e9b7f5da365121604eec8d0641cdea70a3550d6",
+      "source_case": "revh_fourhour_08",
+      "checkpoint": "hour-9-attempt-1"
+    },
+    {
+      "file": "hour-9/diagnostic-raw/probes-U.txt.gz",
+      "restored_content_sha256": "1d0611626c3cdb9ff289efe8c3e2be9a326ca3f9e8d37450bae87a8cb27ab254",
+      "gzip_sha256": "dbe59611cf31fe6dcddf4f509addc93129ae1c12357bbb7ee4319b0fa263b287",
+      "source_case": "revh_fourhour_08",
+      "checkpoint": "hour-9-attempt-1"
+    },
+    {
+      "file": "hour-9/diagnostic-raw/solver-log.txt.gz",
+      "restored_content_sha256": "f345f4b19ef677d4d6b7c2a7d4b3fdaa2f4bb0da62165ab482938d7e3c00d7e3",
+      "gzip_sha256": "ad50b7ebd29e1c6825ab87c63d3c679f368c0148251731b6f3d581e04d2285bb",
+      "source_case": "revh_fourhour_08",
+      "checkpoint": "hour-9-attempt-1"
+    },
+    {
+      "file": "hour-9/diagnostics.json.gz",
+      "restored_content_sha256": "3575a7a747024bbd89f81648e5b4e8b34d99646c420162dcc0b0a2aaa499ef5a",
+      "gzip_sha256": "5c9ef44e0685bee4c210fb2cd6c42aa0b09164e2f1eb746c5ca9cb4d6cce27be",
+      "source_case": "revh_fourhour_08",
+      "checkpoint": "hour-9-attempt-1"
+    }
+  ]
+}

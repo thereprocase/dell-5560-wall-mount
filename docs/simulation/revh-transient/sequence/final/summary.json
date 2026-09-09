@@ -1,0 +1,778 @@
+{
+  "created_utc": "2026-09-09T21:26:39.559367+00:00",
+  "method": "Existing sampled fields only. Probe means and RMS use exact piecewise-linear time integrals over the final 10 ms; boundary values are interpolated. RMS is fluctuation about that mean.",
+  "phases": {
+    "startup": {
+      "through_time_s": 0.096264747380438,
+      "probe_time_range_s": [
+        0.000112,
+        0.09626474738
+      ],
+      "probe_samples": 2552,
+      "solver_rows": 2552,
+      "window_s": [
+        0.08626474738,
+        0.09626474738
+      ],
+      "probe_statistics": [
+        {
+          "probe": "duct_edge_x-0.111",
+          "pressure_relative_ambient_Pa_mean": 4.16934618662073,
+          "pressure_relative_ambient_Pa_rms_fluctuation": 0.14024226644009588,
+          "pressure_relative_ambient_Pa_minimum": 3.951827486364,
+          "pressure_relative_ambient_Pa_maximum": 4.425121107788119,
+          "speed_m_s_mean": 2.404367152152843,
+          "speed_m_s_rms_fluctuation": 0.04931194195184249,
+          "speed_m_s_minimum": 2.3030326536626906,
+          "speed_m_s_maximum": 2.463537050725292
+        },
+        {
+          "probe": "duct_wake_x-0.111",
+          "pressure_relative_ambient_Pa_mean": 6.532359029859991,
+          "pressure_relative_ambient_Pa_rms_fluctuation": 0.027081136611701338,
+          "pressure_relative_ambient_Pa_minimum": 6.469860036825104,
+          "pressure_relative_ambient_Pa_maximum": 6.557695332048,
+          "speed_m_s_mean": 1.4022116782699323,
+          "speed_m_s_rms_fluctuation": 0.024676770708564322,
+          "speed_m_s_minimum": 1.3532218756803358,
+          "speed_m_s_maximum": 1.4353809632792696
+        },
+        {
+          "probe": "front_lip_wallside_x-0.111",
+          "pressure_relative_ambient_Pa_mean": -0.0708733739661817,
+          "pressure_relative_ambient_Pa_rms_fluctuation": 0.014867598319680375,
+          "pressure_relative_ambient_Pa_minimum": -0.09563605335599998,
+          "pressure_relative_ambient_Pa_maximum": -0.04119632609722693,
+          "speed_m_s_mean": 3.0855632186659445,
+          "speed_m_s_rms_fluctuation": 0.02254271658700242,
+          "speed_m_s_minimum": 3.040802865050154,
+          "speed_m_s_maximum": 3.121239722909744
+        },
+        {
+          "probe": "front_lip_outside_x-0.111",
+          "pressure_relative_ambient_Pa_mean": -0.1637938056024359,
+          "pressure_relative_ambient_Pa_rms_fluctuation": 0.02404200373422524,
+          "pressure_relative_ambient_Pa_minimum": -0.20855361120621568,
+          "pressure_relative_ambient_Pa_maximum": -0.12547644099599997,
+          "speed_m_s_mean": 0.36871960874633214,
+          "speed_m_s_rms_fluctuation": 0.010379009733983648,
+          "speed_m_s_minimum": 0.3496291634950162,
+          "speed_m_s_maximum": 0.385355855861182
+        },
+        {
+          "probe": "hinge_underside_x-0.111",
+          "pressure_relative_ambient_Pa_mean": 0.5382239555092121,
+          "pressure_relative_ambient_Pa_rms_fluctuation": 0.06165838812816033,
+          "pressure_relative_ambient_Pa_minimum": 0.444149680692,
+          "pressure_relative_ambient_Pa_maximum": 0.618035995572,
+          "speed_m_s_mean": 2.7714019890509154,
+          "speed_m_s_rms_fluctuation": 0.052472301631516866,
+          "speed_m_s_minimum": 2.6826375874659814,
+          "speed_m_s_maximum": 2.8608417022899233
+        },
+        {
+          "probe": "hinge_exit_x-0.111",
+          "pressure_relative_ambient_Pa_mean": -0.3478528641254685,
+          "pressure_relative_ambient_Pa_rms_fluctuation": 0.0860392235112565,
+          "pressure_relative_ambient_Pa_minimum": -0.4774747713959999,
+          "pressure_relative_ambient_Pa_maximum": -0.2119057444750673,
+          "speed_m_s_mean": 1.9618660576645792,
+          "speed_m_s_rms_fluctuation": 0.012975344032260371,
+          "speed_m_s_minimum": 1.941644376038018,
+          "speed_m_s_maximum": 1.992849028218268
+        },
+        {
+          "probe": "hinge_wake_x-0.111",
+          "pressure_relative_ambient_Pa_mean": -0.4955748968362121,
+          "pressure_relative_ambient_Pa_rms_fluctuation": 0.10915183297185213,
+          "pressure_relative_ambient_Pa_minimum": -0.6767824257959999,
+          "pressure_relative_ambient_Pa_maximum": -0.3135917027586208,
+          "speed_m_s_mean": 1.9999342433440834,
+          "speed_m_s_rms_fluctuation": 0.17553533749362507,
+          "speed_m_s_minimum": 1.7204135077937324,
+          "speed_m_s_maximum": 2.2744349807295396
+        },
+        {
+          "probe": "duct_edge_x0.07",
+          "pressure_relative_ambient_Pa_mean": 4.470420525040679,
+          "pressure_relative_ambient_Pa_rms_fluctuation": 0.19930208753569298,
+          "pressure_relative_ambient_Pa_minimum": 4.124180861964,
+          "pressure_relative_ambient_Pa_maximum": 4.8076275157413235,
+          "speed_m_s_mean": 2.29275390333054,
+          "speed_m_s_rms_fluctuation": 0.08009676484164548,
+          "speed_m_s_minimum": 2.146929434824081,
+          "speed_m_s_maximum": 2.4176086448297296
+        },
+        {
+          "probe": "duct_wake_x0.07",
+          "pressure_relative_ambient_Pa_mean": 6.67840763320129,
+          "pressure_relative_ambient_Pa_rms_fluctuation": 0.0399738800414492,
+          "pressure_relative_ambient_Pa_minimum": 6.619320334227545,
+          "pressure_relative_ambient_Pa_maximum": 6.754461013164,
+          "speed_m_s_mean": 1.269436746512434,
+          "speed_m_s_rms_fluctuation": 0.025501518137414053,
+          "speed_m_s_minimum": 1.223186618377103,
+          "speed_m_s_maximum": 1.3105955645924336
+        },
+        {
+          "probe": "front_lip_wallside_x0.07",
+          "pressure_relative_ambient_Pa_mean": -0.2769048623344654,
+          "pressure_relative_ambient_Pa_rms_fluctuation": 0.03412810072188378,
+          "pressure_relative_ambient_Pa_minimum": -0.306129913488,
+          "pressure_relative_ambient_Pa_maximum": -0.19952842359599998,
+          "speed_m_s_mean": 2.9321297485115805,
+          "speed_m_s_rms_fluctuation": 0.055102366448731635,
+          "speed_m_s_minimum": 2.8337415364387284,
+          "speed_m_s_maximum": 3.021945260385246
+        },
+        {
+          "probe": "front_lip_outside_x0.07",
+          "pressure_relative_ambient_Pa_mean": -0.14811789869871977,
+          "pressure_relative_ambient_Pa_rms_fluctuation": 0.016077034789830098,
+          "pressure_relative_ambient_Pa_minimum": -0.17166103278095546,
+          "pressure_relative_ambient_Pa_maximum": -0.11609741523599998,
+          "speed_m_s_mean": 0.21917057370370258,
+          "speed_m_s_rms_fluctuation": 0.003984337930471432,
+          "speed_m_s_minimum": 0.21195066683486216,
+          "speed_m_s_maximum": 0.22559911969120672
+        },
+        {
+          "probe": "hinge_underside_x0.07",
+          "pressure_relative_ambient_Pa_mean": -0.7493744834678984,
+          "pressure_relative_ambient_Pa_rms_fluctuation": 0.04011675437367356,
+          "pressure_relative_ambient_Pa_minimum": -0.802652711196,
+          "pressure_relative_ambient_Pa_maximum": -0.660287769408158,
+          "speed_m_s_mean": 3.0234833913749455,
+          "speed_m_s_rms_fluctuation": 0.07038872186777513,
+          "speed_m_s_minimum": 2.8914547706875,
+          "speed_m_s_maximum": 3.134504165343214
+        },
+        {
+          "probe": "hinge_exit_x0.07",
+          "pressure_relative_ambient_Pa_mean": -0.9393725616498133,
+          "pressure_relative_ambient_Pa_rms_fluctuation": 0.09062412715652436,
+          "pressure_relative_ambient_Pa_minimum": -1.1346968449378292,
+          "pressure_relative_ambient_Pa_maximum": -0.8014095057959999,
+          "speed_m_s_mean": 2.7770069119335488,
+          "speed_m_s_rms_fluctuation": 0.0034206294383510418,
+          "speed_m_s_minimum": 2.7674487506614143,
+          "speed_m_s_maximum": 2.7818721678688223
+        },
+        {
+          "probe": "hinge_wake_x0.07",
+          "pressure_relative_ambient_Pa_mean": -1.1374565808858867,
+          "pressure_relative_ambient_Pa_rms_fluctuation": 0.13190301293575304,
+          "pressure_relative_ambient_Pa_minimum": -1.24773897696,
+          "pressure_relative_ambient_Pa_maximum": -0.7610687341408415,
+          "speed_m_s_mean": 2.818220893863118,
+          "speed_m_s_rms_fluctuation": 0.07557911216050985,
+          "speed_m_s_minimum": 2.5966896560062476,
+          "speed_m_s_maximum": 2.912673853387819
+        },
+        {
+          "probe": "duct_edge_x0.111",
+          "pressure_relative_ambient_Pa_mean": 4.3192385681235725,
+          "pressure_relative_ambient_Pa_rms_fluctuation": 0.13531521197653285,
+          "pressure_relative_ambient_Pa_minimum": 4.128427526364,
+          "pressure_relative_ambient_Pa_maximum": 4.577763516546086,
+          "speed_m_s_mean": 2.3675446831036093,
+          "speed_m_s_rms_fluctuation": 0.05109121349260484,
+          "speed_m_s_minimum": 2.2647644636383193,
+          "speed_m_s_maximum": 2.43127072289615
+        },
+        {
+          "probe": "duct_wake_x0.111",
+          "pressure_relative_ambient_Pa_mean": 6.550786063301019,
+          "pressure_relative_ambient_Pa_rms_fluctuation": 0.03348422077011967,
+          "pressure_relative_ambient_Pa_minimum": 6.497025432851619,
+          "pressure_relative_ambient_Pa_maximum": 6.610859654364,
+          "speed_m_s_mean": 1.3915133017420203,
+          "speed_m_s_rms_fluctuation": 0.026027801059417505,
+          "speed_m_s_minimum": 1.3405691710431067,
+          "speed_m_s_maximum": 1.4272441429438492
+        },
+        {
+          "probe": "front_lip_wallside_x0.111",
+          "pressure_relative_ambient_Pa_mean": -0.02458301413136455,
+          "pressure_relative_ambient_Pa_rms_fluctuation": 0.007017545107156615,
+          "pressure_relative_ambient_Pa_minimum": -0.033100659936,
+          "pressure_relative_ambient_Pa_maximum": -0.004272030316098784,
+          "speed_m_s_mean": 3.088522464060987,
+          "speed_m_s_rms_fluctuation": 0.027025077138671205,
+          "speed_m_s_minimum": 3.0428857042934334,
+          "speed_m_s_maximum": 3.13254370955816
+        },
+        {
+          "probe": "front_lip_outside_x0.111",
+          "pressure_relative_ambient_Pa_mean": -0.1693274779379951,
+          "pressure_relative_ambient_Pa_rms_fluctuation": 0.028425865678218688,
+          "pressure_relative_ambient_Pa_minimum": -0.21354569937412368,
+          "pressure_relative_ambient_Pa_maximum": -0.115688431116,
+          "speed_m_s_mean": 0.36700419006087087,
+          "speed_m_s_rms_fluctuation": 0.00968380080675019,
+          "speed_m_s_minimum": 0.348191169103434,
+          "speed_m_s_maximum": 0.38184356215610854
+        },
+        {
+          "probe": "hinge_underside_x0.111",
+          "pressure_relative_ambient_Pa_mean": 0.5449007089851409,
+          "pressure_relative_ambient_Pa_rms_fluctuation": 0.05964135834302594,
+          "pressure_relative_ambient_Pa_minimum": 0.448275690372,
+          "pressure_relative_ambient_Pa_maximum": 0.6245379774406599,
+          "speed_m_s_mean": 2.755376375848599,
+          "speed_m_s_rms_fluctuation": 0.04980662418441148,
+          "speed_m_s_minimum": 2.671930243668826,
+          "speed_m_s_maximum": 2.8460933566859676
+        },
+        {
+          "probe": "hinge_exit_x0.111",
+          "pressure_relative_ambient_Pa_mean": -0.344358100525915,
+          "pressure_relative_ambient_Pa_rms_fluctuation": 0.0644526172090893,
+          "pressure_relative_ambient_Pa_minimum": -0.434714955756,
+          "pressure_relative_ambient_Pa_maximum": -0.2518700736163777,
+          "speed_m_s_mean": 1.9520360946644082,
+          "speed_m_s_rms_fluctuation": 0.0061802525641748325,
+          "speed_m_s_minimum": 1.9426746013420548,
+          "speed_m_s_maximum": 1.9631740700742226
+        },
+        {
+          "probe": "hinge_wake_x0.111",
+          "pressure_relative_ambient_Pa_mean": -0.5380312709788558,
+          "pressure_relative_ambient_Pa_rms_fluctuation": 0.10152949426017045,
+          "pressure_relative_ambient_Pa_minimum": -0.7224747741959999,
+          "pressure_relative_ambient_Pa_maximum": -0.35233244004486836,
+          "speed_m_s_mean": 1.9182608905421268,
+          "speed_m_s_rms_fluctuation": 0.14365459556060736,
+          "speed_m_s_minimum": 1.7195629651265323,
+          "speed_m_s_maximum": 2.1574420661571834
+        },
+        {
+          "probe": "ambient_reference",
+          "pressure_relative_ambient_Pa_mean": 0.0,
+          "pressure_relative_ambient_Pa_rms_fluctuation": 0.0,
+          "pressure_relative_ambient_Pa_minimum": 0.0,
+          "pressure_relative_ambient_Pa_maximum": 0.0,
+          "speed_m_s_mean": 0.021321150218996995,
+          "speed_m_s_rms_fluctuation": 6.801928573765776e-05,
+          "speed_m_s_minimum": 0.021165840245776002,
+          "speed_m_s_maximum": 0.021392048674845454
+        }
+      ],
+      "final_section_flux": {
+        "left": {
+          "front_opening": {
+            "start_YZ_mm": [
+              40.0,
+              0.0
+            ],
+            "end_YZ_mm": [
+              48.129883,
+              4.663238
+            ],
+            "positive_normal_YZ": [
+              0.49755314317590477,
+              -0.8674334958460953
+            ],
+            "sampled_fluid_line_length_mm": 9.372341521075457,
+            "positive_flux_m2_s": 0.010729956678996535,
+            "negative_flux_m2_s": 0.0020655594798555787,
+            "net_flux_m2_s": 0.008664397199140956
+          },
+          "upward_channel": {
+            "start_YZ_mm": [
+              0.01,
+              20.001
+            ],
+            "end_YZ_mm": [
+              45.0,
+              20.001
+            ],
+            "positive_normal_YZ": [
+              0.0,
+              1.0
+            ],
+            "sampled_fluid_line_length_mm": 40.87063716888427,
+            "positive_flux_m2_s": 0.05914038514984082,
+            "negative_flux_m2_s": 0.0,
+            "net_flux_m2_s": 0.05914038514984082
+          }
+        },
+        "right": {
+          "front_opening": {
+            "start_YZ_mm": [
+              40.0,
+              0.0
+            ],
+            "end_YZ_mm": [
+              48.129883,
+              4.663238
+            ],
+            "positive_normal_YZ": [
+              0.49755314317590477,
+              -0.8674334958460953
+            ],
+            "sampled_fluid_line_length_mm": 9.372337071343388,
+            "positive_flux_m2_s": 0.010754689722058747,
+            "negative_flux_m2_s": 0.002183856050571672,
+            "net_flux_m2_s": 0.008570833671487076
+          },
+          "upward_channel": {
+            "start_YZ_mm": [
+              0.01,
+              20.001
+            ],
+            "end_YZ_mm": [
+              45.0,
+              20.001
+            ],
+            "positive_normal_YZ": [
+              0.0,
+              1.0
+            ],
+            "sampled_fluid_line_length_mm": 40.870638122558596,
+            "positive_flux_m2_s": 0.058130541857998305,
+            "negative_flux_m2_s": 0.0,
+            "net_flux_m2_s": 0.058130541857998305
+          }
+        }
+      },
+      "field_plot_ranges": {
+        "speed-arrows/Complete air path": [
+          0.0,
+          5.206278324127197
+        ],
+        "speed-arrows/Front lip / duct outlet": [
+          0.0,
+          3.715940475463867
+        ],
+        "speed-arrows/Hinge discharge": [
+          0.0,
+          5.1563401222229
+        ],
+        "pressure-arrows/Complete air path": [
+          -9.61487865447998,
+          19.139923095703125
+        ],
+        "pressure-arrows/Front lip / duct outlet": [
+          -1.1977081298828125,
+          7.816649913787842
+        ],
+        "pressure-arrows/Hinge discharge": [
+          -3.5300376415252686,
+          4.482617378234863
+        ],
+        "vorticity-arrows/Complete air path": [
+          -23261.263671875,
+          21627.818359375
+        ],
+        "vorticity-arrows/Front lip / duct outlet": [
+          -11241.578125,
+          21627.818359375
+        ],
+        "vorticity-arrows/Hinge discharge": [
+          -20651.427734375,
+          4442.1650390625
+        ]
+      },
+      "section_flux_scope": "Local line integrals at X = +/-111 mm, in m2/s (volume flux per unit span). Not full-width L/s or a closed 3D flow balance.",
+      "files_sha256": {
+        "diagnostics.json.gz": "e9819f31b147dc3e44ed7b81a32dabf884b24ef2aff15d25355e32eda67b3949",
+        "history.png": "6731baa65fd1b7342611a1009198b656b23653b04eebe7c02374a715c3d34ebc",
+        "left_section.vtp": "6a2e29c7c92f73c8047b8805b1884240b08524dc724b0810ce912521d2d7a095",
+        "pressure-arrows.png": "41c1e2750f64e5c813dcd650b673ead1ac83eb6d8541e2ae3cf15bee4c267c3e",
+        "probe-summary.csv": "43ef3058a35003547b7d0d37d4db337ec393cdbb728cf73c606fd1864265a041",
+        "probes.csv.gz": "bac6e57010c2fef442835bf2e75170faaa75e03e96b88c22a601950e7835f23a",
+        "right_section.vtp": "8bd3ec11f3c3e49913ad9bf83d94fd7d2d4b550c9890cad1135ebcaa79a2646a",
+        "solver-history.csv.gz": "7782ab21cbb840584cd5263b142935984abcbc0843cce854e8b5843043bbb0d0",
+        "speed-arrows.png": "634cccb311c2c5480a8b34600ad7901e92ceae858565db63f8367926d7692087",
+        "vorticity-arrows.png": "713d1cef7a3aca1e29f1480208b82f00ad92ab309270cafb6773e00078849ccf"
+      }
+    },
+    "flowing": {
+      "through_time_s": 0.0694402361,
+      "probe_time_range_s": [
+        1.42361397e-05,
+        0.0694402361
+      ],
+      "probe_samples": 4008,
+      "solver_rows": 4008,
+      "window_s": [
+        0.059440236099999995,
+        0.0694402361
+      ],
+      "probe_statistics": [
+        {
+          "probe": "duct_edge_x-0.111",
+          "pressure_relative_ambient_Pa_mean": 2.1006516959127355,
+          "pressure_relative_ambient_Pa_rms_fluctuation": 0.10171846683856618,
+          "pressure_relative_ambient_Pa_minimum": 1.9592836647343648,
+          "pressure_relative_ambient_Pa_maximum": 2.3110682404415996,
+          "speed_m_s_mean": 2.6492754918313373,
+          "speed_m_s_rms_fluctuation": 0.005323488898031183,
+          "speed_m_s_minimum": 2.6365682499486294,
+          "speed_m_s_maximum": 2.6541351023233686
+        },
+        {
+          "probe": "duct_wake_x-0.111",
+          "pressure_relative_ambient_Pa_mean": 6.313297078585527,
+          "pressure_relative_ambient_Pa_rms_fluctuation": 0.0769727172424275,
+          "pressure_relative_ambient_Pa_minimum": 6.1692012760415995,
+          "pressure_relative_ambient_Pa_maximum": 6.44021312116752,
+          "speed_m_s_mean": 1.4118807995151839,
+          "speed_m_s_rms_fluctuation": 0.06622496074054762,
+          "speed_m_s_minimum": 1.3035931914186214,
+          "speed_m_s_maximum": 1.5307510911874642
+        },
+        {
+          "probe": "front_lip_wallside_x-0.111",
+          "pressure_relative_ambient_Pa_mean": -0.21890717251134914,
+          "pressure_relative_ambient_Pa_rms_fluctuation": 0.05916887642510358,
+          "pressure_relative_ambient_Pa_minimum": -0.31492429386769627,
+          "pressure_relative_ambient_Pa_maximum": -0.1185226278864,
+          "speed_m_s_mean": 2.5531956915136234,
+          "speed_m_s_rms_fluctuation": 0.025533701437635715,
+          "speed_m_s_minimum": 2.5301464048590323,
+          "speed_m_s_maximum": 2.632029387732726
+        },
+        {
+          "probe": "front_lip_outside_x-0.111",
+          "pressure_relative_ambient_Pa_mean": -0.116869193621613,
+          "pressure_relative_ambient_Pa_rms_fluctuation": 0.022196409443773994,
+          "pressure_relative_ambient_Pa_minimum": -0.15164946903195292,
+          "pressure_relative_ambient_Pa_maximum": -0.0789349976304,
+          "speed_m_s_mean": 0.25613987661728177,
+          "speed_m_s_rms_fluctuation": 0.002413068416564739,
+          "speed_m_s_minimum": 0.2507723306078604,
+          "speed_m_s_maximum": 0.25863783064224016
+        },
+        {
+          "probe": "hinge_underside_x-0.111",
+          "pressure_relative_ambient_Pa_mean": 0.5997454254472147,
+          "pressure_relative_ambient_Pa_rms_fluctuation": 0.008206847091770289,
+          "pressure_relative_ambient_Pa_minimum": 0.588598340874,
+          "pressure_relative_ambient_Pa_maximum": 0.6113401873848,
+          "speed_m_s_mean": 3.7518679226842573,
+          "speed_m_s_rms_fluctuation": 0.004242907918366119,
+          "speed_m_s_minimum": 3.747670114115523,
+          "speed_m_s_maximum": 3.759952457648895
+        },
+        {
+          "probe": "hinge_exit_x-0.111",
+          "pressure_relative_ambient_Pa_mean": -0.14585284005094112,
+          "pressure_relative_ambient_Pa_rms_fluctuation": 0.010797038842179169,
+          "pressure_relative_ambient_Pa_minimum": -0.16232398796519998,
+          "pressure_relative_ambient_Pa_maximum": -0.127261290114,
+          "speed_m_s_mean": 2.1586052726525486,
+          "speed_m_s_rms_fluctuation": 0.010322454602105409,
+          "speed_m_s_minimum": 2.1449035070557607,
+          "speed_m_s_maximum": 2.1726572370808444
+        },
+        {
+          "probe": "hinge_wake_x-0.111",
+          "pressure_relative_ambient_Pa_mean": -0.09728914854012337,
+          "pressure_relative_ambient_Pa_rms_fluctuation": 0.006896346612245365,
+          "pressure_relative_ambient_Pa_minimum": -0.10673814884039999,
+          "pressure_relative_ambient_Pa_maximum": -0.08194861341211841,
+          "speed_m_s_mean": 2.4499748569223994,
+          "speed_m_s_rms_fluctuation": 0.004417701944238677,
+          "speed_m_s_minimum": 2.437773082999743,
+          "speed_m_s_maximum": 2.462451731270524
+        },
+        {
+          "probe": "duct_edge_x0.07",
+          "pressure_relative_ambient_Pa_mean": 0.4358378478453161,
+          "pressure_relative_ambient_Pa_rms_fluctuation": 0.06590011502642318,
+          "pressure_relative_ambient_Pa_minimum": 0.3383967471216,
+          "pressure_relative_ambient_Pa_maximum": 0.5460776819176895,
+          "speed_m_s_mean": 1.9299537928516513,
+          "speed_m_s_rms_fluctuation": 0.025391403603056913,
+          "speed_m_s_minimum": 1.8643947073994038,
+          "speed_m_s_maximum": 1.9517234469788332
+        },
+        {
+          "probe": "duct_wake_x0.07",
+          "pressure_relative_ambient_Pa_mean": 7.388959461208035,
+          "pressure_relative_ambient_Pa_rms_fluctuation": 0.012874054514870373,
+          "pressure_relative_ambient_Pa_minimum": 7.372707003532799,
+          "pressure_relative_ambient_Pa_maximum": 7.407489703242,
+          "speed_m_s_mean": 0.8687757391855377,
+          "speed_m_s_rms_fluctuation": 0.021915372465158327,
+          "speed_m_s_minimum": 0.83224960795887,
+          "speed_m_s_maximum": 0.9073270669704938
+        },
+        {
+          "probe": "front_lip_wallside_x0.07",
+          "pressure_relative_ambient_Pa_mean": -0.577666177789024,
+          "pressure_relative_ambient_Pa_rms_fluctuation": 0.027759783070490388,
+          "pressure_relative_ambient_Pa_minimum": -0.605054631474,
+          "pressure_relative_ambient_Pa_maximum": -0.5226395690046305,
+          "speed_m_s_mean": 2.3738244474629773,
+          "speed_m_s_rms_fluctuation": 0.017455073040155183,
+          "speed_m_s_minimum": 2.352919761939624,
+          "speed_m_s_maximum": 2.403679435429742
+        },
+        {
+          "probe": "front_lip_outside_x0.07",
+          "pressure_relative_ambient_Pa_mean": -0.15842532435002027,
+          "pressure_relative_ambient_Pa_rms_fluctuation": 0.0027966515317454236,
+          "pressure_relative_ambient_Pa_minimum": -0.16265746902960002,
+          "pressure_relative_ambient_Pa_maximum": -0.14956049115839998,
+          "speed_m_s_mean": 0.36461209720117777,
+          "speed_m_s_rms_fluctuation": 0.0025468954038555987,
+          "speed_m_s_minimum": 0.3612437293187066,
+          "speed_m_s_maximum": 0.37006248765967525
+        },
+        {
+          "probe": "hinge_underside_x0.07",
+          "pressure_relative_ambient_Pa_mean": -0.8132744602332505,
+          "pressure_relative_ambient_Pa_rms_fluctuation": 0.007247743173608491,
+          "pressure_relative_ambient_Pa_minimum": -0.8217648256475999,
+          "pressure_relative_ambient_Pa_maximum": -0.8015558076984,
+          "speed_m_s_mean": 3.6974041472997397,
+          "speed_m_s_rms_fluctuation": 0.002266193127449179,
+          "speed_m_s_minimum": 3.69103551160061,
+          "speed_m_s_maximum": 3.700085024448709
+        },
+        {
+          "probe": "hinge_exit_x0.07",
+          "pressure_relative_ambient_Pa_mean": -0.2991781380137328,
+          "pressure_relative_ambient_Pa_rms_fluctuation": 0.06421904728142093,
+          "pressure_relative_ambient_Pa_minimum": -0.400053603474,
+          "pressure_relative_ambient_Pa_maximum": -0.18880882323839998,
+          "speed_m_s_mean": 2.2918044120150345,
+          "speed_m_s_rms_fluctuation": 0.07492495433329091,
+          "speed_m_s_minimum": 2.131321562401808,
+          "speed_m_s_maximum": 2.404656327602054
+        },
+        {
+          "probe": "hinge_wake_x0.07",
+          "pressure_relative_ambient_Pa_mean": -0.07285079877667021,
+          "pressure_relative_ambient_Pa_rms_fluctuation": 0.13812123954147662,
+          "pressure_relative_ambient_Pa_minimum": -0.30585649329479997,
+          "pressure_relative_ambient_Pa_maximum": 0.11242901000879998,
+          "speed_m_s_mean": 2.60113696810405,
+          "speed_m_s_rms_fluctuation": 0.15246024381555537,
+          "speed_m_s_minimum": 2.3912831574533637,
+          "speed_m_s_maximum": 2.822024915540646
+        },
+        {
+          "probe": "duct_edge_x0.111",
+          "pressure_relative_ambient_Pa_mean": 3.031853431018884,
+          "pressure_relative_ambient_Pa_rms_fluctuation": 0.006903437353092602,
+          "pressure_relative_ambient_Pa_minimum": 3.019309290996,
+          "pressure_relative_ambient_Pa_maximum": 3.0521732092415994,
+          "speed_m_s_mean": 2.889423941670166,
+          "speed_m_s_rms_fluctuation": 0.005632915932634676,
+          "speed_m_s_minimum": 2.8787174144056156,
+          "speed_m_s_maximum": 2.8988917768664684
+        },
+        {
+          "probe": "duct_wake_x0.111",
+          "pressure_relative_ambient_Pa_mean": 6.597303310951666,
+          "pressure_relative_ambient_Pa_rms_fluctuation": 0.02667757264948668,
+          "pressure_relative_ambient_Pa_minimum": 6.56337009342,
+          "pressure_relative_ambient_Pa_maximum": 6.638836168670913,
+          "speed_m_s_mean": 1.158255977681913,
+          "speed_m_s_rms_fluctuation": 0.013747644510344569,
+          "speed_m_s_minimum": 1.133043463637922,
+          "speed_m_s_maximum": 1.1802446040227923
+        },
+        {
+          "probe": "front_lip_wallside_x0.111",
+          "pressure_relative_ambient_Pa_mean": -0.35174519275985777,
+          "pressure_relative_ambient_Pa_rms_fluctuation": 0.007610764698271913,
+          "pressure_relative_ambient_Pa_minimum": -0.3607841675304,
+          "pressure_relative_ambient_Pa_maximum": -0.33902511889919995,
+          "speed_m_s_mean": 2.631363350347639,
+          "speed_m_s_rms_fluctuation": 0.0038713495527538436,
+          "speed_m_s_minimum": 2.6229115128633396,
+          "speed_m_s_maximum": 2.6357184284539366
+        },
+        {
+          "probe": "front_lip_outside_x0.111",
+          "pressure_relative_ambient_Pa_mean": -0.13233061238460728,
+          "pressure_relative_ambient_Pa_rms_fluctuation": 0.0050917336119215085,
+          "pressure_relative_ambient_Pa_minimum": -0.13838371647,
+          "pressure_relative_ambient_Pa_maximum": -0.12379831988397717,
+          "speed_m_s_mean": 0.2520321993960148,
+          "speed_m_s_rms_fluctuation": 0.0009175707759082686,
+          "speed_m_s_minimum": 0.25117522409811516,
+          "speed_m_s_maximum": 0.25468147583386913
+        },
+        {
+          "probe": "hinge_underside_x0.111",
+          "pressure_relative_ambient_Pa_mean": 0.6468251513533227,
+          "pressure_relative_ambient_Pa_rms_fluctuation": 0.0050756046110190444,
+          "pressure_relative_ambient_Pa_minimum": 0.6348336795216,
+          "pressure_relative_ambient_Pa_maximum": 0.6597737147643346,
+          "speed_m_s_mean": 3.638464813282929,
+          "speed_m_s_rms_fluctuation": 0.006320156646095662,
+          "speed_m_s_minimum": 3.630450964849725,
+          "speed_m_s_maximum": 3.650910654136867
+        },
+        {
+          "probe": "hinge_exit_x0.111",
+          "pressure_relative_ambient_Pa_mean": -0.15056284408333329,
+          "pressure_relative_ambient_Pa_rms_fluctuation": 0.0073151538882068766,
+          "pressure_relative_ambient_Pa_minimum": -0.1616170309356,
+          "pressure_relative_ambient_Pa_maximum": -0.13916918324879998,
+          "speed_m_s_mean": 2.120680312365125,
+          "speed_m_s_rms_fluctuation": 0.009806254004479513,
+          "speed_m_s_minimum": 2.108980869620308,
+          "speed_m_s_maximum": 2.136327610192158
+        },
+        {
+          "probe": "hinge_wake_x0.111",
+          "pressure_relative_ambient_Pa_mean": -0.19069898041343614,
+          "pressure_relative_ambient_Pa_rms_fluctuation": 0.015199086190400045,
+          "pressure_relative_ambient_Pa_minimum": -0.2286622386204182,
+          "pressure_relative_ambient_Pa_maximum": -0.1701336987516,
+          "speed_m_s_mean": 2.349322353586464,
+          "speed_m_s_rms_fluctuation": 0.0612528816912436,
+          "speed_m_s_minimum": 2.2834801204801227,
+          "speed_m_s_maximum": 2.4524638691301583
+        },
+        {
+          "probe": "ambient_reference",
+          "pressure_relative_ambient_Pa_mean": 0.0,
+          "pressure_relative_ambient_Pa_rms_fluctuation": 0.0,
+          "pressure_relative_ambient_Pa_minimum": 0.0,
+          "pressure_relative_ambient_Pa_maximum": 0.0,
+          "speed_m_s_mean": 0.13355492620601975,
+          "speed_m_s_rms_fluctuation": 6.30114624795468e-05,
+          "speed_m_s_minimum": 0.133448056171555,
+          "speed_m_s_maximum": 0.1336662156296503
+        }
+      ],
+      "final_section_flux": {
+        "left": {
+          "front_opening": {
+            "start_YZ_mm": [
+              40.0,
+              0.0
+            ],
+            "end_YZ_mm": [
+              48.129883,
+              4.663238
+            ],
+            "positive_normal_YZ": [
+              0.49755314317590477,
+              -0.8674334958460953
+            ],
+            "sampled_fluid_line_length_mm": 9.372341521075453,
+            "positive_flux_m2_s": 0.009427084411846465,
+            "negative_flux_m2_s": 0.00014821273001820888,
+            "net_flux_m2_s": 0.009278871681828256
+          },
+          "upward_channel": {
+            "start_YZ_mm": [
+              0.01,
+              20.001
+            ],
+            "end_YZ_mm": [
+              45.0,
+              20.001
+            ],
+            "positive_normal_YZ": [
+              0.0,
+              1.0
+            ],
+            "sampled_fluid_line_length_mm": 40.87063716888427,
+            "positive_flux_m2_s": 0.08122849257464354,
+            "negative_flux_m2_s": 0.0,
+            "net_flux_m2_s": 0.08122849257464354
+          }
+        },
+        "right": {
+          "front_opening": {
+            "start_YZ_mm": [
+              40.0,
+              0.0
+            ],
+            "end_YZ_mm": [
+              48.129883,
+              4.663238
+            ],
+            "positive_normal_YZ": [
+              0.49755314317590477,
+              -0.8674334958460953
+            ],
+            "sampled_fluid_line_length_mm": 9.37233707134339,
+            "positive_flux_m2_s": 0.009580861379601272,
+            "negative_flux_m2_s": 0.00011304710388473663,
+            "net_flux_m2_s": 0.009467814275716534
+          },
+          "upward_channel": {
+            "start_YZ_mm": [
+              0.01,
+              20.001
+            ],
+            "end_YZ_mm": [
+              45.0,
+              20.001
+            ],
+            "positive_normal_YZ": [
+              0.0,
+              1.0
+            ],
+            "sampled_fluid_line_length_mm": 40.870638122558596,
+            "positive_flux_m2_s": 0.056773222260283224,
+            "negative_flux_m2_s": 0.0,
+            "net_flux_m2_s": 0.056773222260283224
+          }
+        }
+      },
+      "field_plot_ranges": {
+        "speed-arrows/Complete air path": [
+          0.0,
+          5.262974739074707
+        ],
+        "speed-arrows/Front lip / duct outlet": [
+          0.0,
+          3.853149890899658
+        ],
+        "speed-arrows/Hinge discharge": [
+          0.0,
+          5.229711532592773
+        ],
+        "pressure-arrows/Complete air path": [
+          -9.510470390319824,
+          19.30348014831543
+        ],
+        "pressure-arrows/Front lip / duct outlet": [
+          -1.103061556816101,
+          7.5831685066223145
+        ],
+        "pressure-arrows/Hinge discharge": [
+          -7.121122360229492,
+          6.805093288421631
+        ],
+        "vorticity-arrows/Complete air path": [
+          -27909.095703125,
+          23358.140625
+        ],
+        "vorticity-arrows/Front lip / duct outlet": [
+          -9704.5029296875,
+          23358.140625
+        ],
+        "vorticity-arrows/Hinge discharge": [
+          -27909.095703125,
+          4914.3408203125
+        ]
+      },
+      "section_flux_scope": "Local line integrals at X = +/-111 mm, in m2/s (volume flux per unit span). Not full-width L/s or a closed 3D flow balance.",
+      "files_sha256": {
+        "diagnostics.json.gz": "90296ae3a562ef7e702f2e46ea36f4bec95c8105ac967a3b439f6ea560aa7e68",
+        "history.png": "848b8523fd7c73cec79bcee3d9c4e25715f1d5242ed946ec89a0c10e7f06f94f",
+        "left_section.vtp": "9ebc912c05d08bb7b332444fc8d7192d40256a36a981b8a8733185f930741a8a",
+        "pressure-arrows.png": "edca2bbb32561b4bc13a130a2059f3471af88177354463964a77275e2db60cb1",
+        "probe-summary.csv": "b93484dccb7d9abf89cbc75eb9607db48f27923fe3dac98f3a60eff34ad026d0",
+        "probes.csv.gz": "38181a5bd330b3bebb385132cf3f7f8303b0a69c9fd8b1163ba5cd6134241094",
+        "right_section.vtp": "a2502d6ba85b04077b97152bcedb759d4a7c9aad5477c600912484f7ad7bbeec",
+        "solver-history.csv.gz": "06a1d5aaf235f593afb57ddd90010077a29cec9ea6d7d164d9ee602a7b1d7c53",
+        "speed-arrows.png": "84c1cdfb86df9af2529f8d4906969ef3b752c6f8e3ed841025b0ffe69f1fafea",
+        "vorticity-arrows.png": "9106edc38a86fa590f445411a7a73c4f3ef39acc6618a129a57cc99abcb5b535"
+      }
+    }
+  }
+}

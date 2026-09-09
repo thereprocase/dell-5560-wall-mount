@@ -347,3 +347,7 @@ performance claim.
 MIT licensed project. Dell reference images are attributed separately in
 [SOURCES.md](SOURCES.md). Third-party viewer code retains its own MIT notice.
 This project is independent of Dell, Bambu Lab and Autodesk.
+
+## Final CFD results
+
+[Final arrow maps, full probe histories and lip-flow data](https://thereprocase.github.io/dell-5560-wall-mount/simulation/revh-transient/sequence/final/) use preserved output through 96.26 ms startup and 69.44 ms flowing initialization. No further simulation was run. [Watch the final particle videos](https://thereprocase.github.io/dell-5560-wall-mount/simulation/revh-transient/sequence/).

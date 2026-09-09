@@ -8,5 +8,8 @@
 *.FCStd -text
 *.zip -text
 *.png -text
+*.gz -text
+*.mp4 -text
+*.webp -text
 /revh_retention/print/*.step -text -diff
 /revh_cables/print/*.step -text -diff
