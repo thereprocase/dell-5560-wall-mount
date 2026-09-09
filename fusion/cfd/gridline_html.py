@@ -7,7 +7,7 @@ from html import escape, unescape
 from pathlib import Path
 import re
 
-VERSION = '2026-09-09'
+VERSION = '2026-09-09-r2'
 
 
 def apply_gridline(document: str, page_path: Path, site='dell-5560-wall-mount', public_root=None) -> str:
@@ -36,6 +36,8 @@ def apply_gridline(document: str, page_path: Path, site='dell-5560-wall-mount', 
     assets = (f'<meta name="gridline-version" content="{VERSION}">\n'
               f'<link rel="stylesheet" href="{prefix}gridline/gridline.css?v={VERSION}">\n'
               f'<link rel="stylesheet" href="{prefix}gridline/legacy.css?v={VERSION}">\n'
+              f'<link rel="stylesheet" href="{prefix}gridline/responsive.css?v={VERSION}">\n'
+              f'<link rel="stylesheet" href="{prefix}gridline/interaction.css?v={VERSION}">\n'
               f'<link rel="icon" type="image/svg+xml" href="{prefix}gridline/logo.svg">\n')
     document = re.sub(r'</head>', assets + '</head>', document, count=1, flags=re.I)
     document = re.sub(r'(<meta\b[^>]*name=["\']theme-color["\'][^>]*content=["\'])[^"\']+', r'\g<1>#0000A8', document, flags=re.I)

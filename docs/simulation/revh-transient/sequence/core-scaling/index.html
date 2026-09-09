@@ -3,9 +3,11 @@
 <title>Revision H CPU scaling check</title>
 <style>*{box-sizing:border-box}body{margin:0;background:#f5f7f7;color:#162c36;font:17px/1.6 system-ui,sans-serif}main{max-width:1000px;margin:auto;padding:32px 24px 60px}a{color:#17686b}h1{font-size:clamp(32px,5vw,48px);line-height:1.15}table{border-collapse:collapse;width:100%;background:white}th,td{text-align:left;padding:12px;border-bottom:1px solid #d9e2e5}.table{overflow-x:auto}.notice{padding:18px;border-left:4px solid #a5661b;background:#fff3df}nav,footer{font-size:14px}footer{margin-top:32px}</style>
 <meta name="gridline-version" content="2026-09-09">
-<link rel="stylesheet" href="../../../../gridline/gridline.css?v=2026-09-09">
-<link rel="stylesheet" href="../../../../gridline/legacy.css?v=2026-09-09">
+<link rel="stylesheet" href="../../../../gridline/gridline.css?v=2026-09-09-r2">
+<link rel="stylesheet" href="../../../../gridline/legacy.css?v=2026-09-09-r2">
 <link rel="icon" type="image/svg+xml" href="../../../../gridline/logo.svg">
+<link rel="stylesheet" href="../../../../gridline/responsive.css?v=2026-09-09-r2">
+<link rel="stylesheet" href="../../../../gridline/interaction.css?v=2026-09-09-r2">
 </head><body class="gridline gl-cfd" data-gridline="2026-09-09"><a class="gl-skip" href="#gl-content">Skip to content</a><div class="gl-global-header" role="banner"><a href="https://thereprocase.github.io/"><img src="../../../../gridline/logo-white.svg" width="20" height="20" alt="">thereprocase</a><span>LAPTOP WALL MOUNT / DESIGN JOURNAL</span></div><nav class="gl-global-menu" aria-label="Project network"><a href="https://thereprocase.github.io/">All projects</a><a href="../../../../index.html" aria-current="true">Project home</a><a href="https://thereprocase.github.io/#render-library">Renders</a><a href="https://thereprocase.github.io/#airflow">Flow videos</a><a href="https://github.com/thereprocase/dell-5560-wall-mount">Source ↗</a></nav><span id="gl-content" tabindex="-1"></span><main><nav><a href="../flowing/">Flowing-air transient</a> · <a href="../">Original startup</a></nav>
 <h1>Eight workers produce about 31% more timesteps per minute in this short check.</h1>
 <p>The Ryzen 7 5800X3D has eight physical cores and sixteen logical threads. This WSL instance exposes twelve logical threads. An independent four-worker startup simulation continued throughout these tests; the flowing production workers were suspended during each timed solve.</p>
