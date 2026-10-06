@@ -1,0 +1,17 @@
+{
+  "tabs": [
+    "SOLID",
+    "SURFACE",
+    "MESH",
+    "SHEET METAL",
+    "PLASTIC",
+    "MANAGE",
+    "UTILITIES",
+    "SKETCH"
+  ],
+  "button_count": 33,
+  "size": [
+    2560,
+    109
+  ]
+}

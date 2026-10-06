@@ -1,0 +1,33 @@
+{
+  "pass": true,
+  "uiOnly": false,
+  "base": "local preview",
+  "errors": [],
+  "changedParts": [
+    "05_left_fan_retainer",
+    "06_right_fan_retainer",
+    "09_left_fan_tray",
+    "10_right_fan_tray"
+  ],
+  "basePartCount": 14,
+  "withOptionalRetainers": 18,
+  "rightBasePartCount": 7,
+  "sampledServicePositions": [
+    0,
+    15,
+    25,
+    50,
+    75,
+    100
+  ],
+  "onlyCoversAndPinsMove": true,
+  "pinsParkAboveCoverPath": true,
+  "wireAndTrayPositionsFixed": true,
+  "reversePosesIdentical": true,
+  "downloadChecksumVerified": true,
+  "mobileOverflow": false,
+  "guideImageFailures": [],
+  "existingViewersLoaded": true,
+  "offlineGuideVerified": true,
+  "releaseNativeSha256": "057d6fa4df9c726c07c029d8b4d1938a603ab8b5b7b5cd6065a0f3c1033c786f"
+}

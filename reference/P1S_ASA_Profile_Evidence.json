@@ -1,0 +1,134 @@
+{
+  "release": "Bambu Studio v02.08.02.61",
+  "source": "https://github.com/bambulab/BambuStudio/releases/tag/v02.08.02.61",
+  "profiles": [
+    {
+      "path": "machine/Bambu Lab P1S 0.4 nozzle.json",
+      "sha256": "ce54a60c2b4677f6f64286e26967f133e2b54a91e2375cb5923940071ddee526",
+      "values": {
+        "name": "Bambu Lab P1S 0.4 nozzle",
+        "inherits": "fdm_bbl_3dp_001_common",
+        "bed_exclude_area": [
+          "0x0",
+          "18x0",
+          "18x28",
+          "0x28"
+        ]
+      }
+    },
+    {
+      "path": "filament/Bambu ASA @base.json",
+      "sha256": "310374247ba329f98e3fcfa3bdb5402943c2081ac0c2de2e50dda83870f02368",
+      "values": {
+        "name": "Bambu ASA @base",
+        "inherits": "fdm_filament_asa",
+        "nozzle_temperature": [
+          "270"
+        ],
+        "nozzle_temperature_initial_layer": [
+          "270"
+        ],
+        "textured_plate_temp": [
+          "100"
+        ],
+        "textured_plate_temp_initial_layer": [
+          "100"
+        ],
+        "hot_plate_temp": [
+          "100"
+        ],
+        "filament_max_volumetric_speed": [
+          "18"
+        ],
+        "fan_max_speed": [
+          "35"
+        ]
+      }
+    },
+    {
+      "path": "filament/Bambu ASA @BBL X1C 0.4 nozzle.json",
+      "sha256": "c17818a40061e8333ee4e48fa79d164b5027279c60c3bcfce0a0208e8af20ddd",
+      "values": {
+        "name": "Bambu ASA @BBL X1C 0.4 nozzle",
+        "inherits": "Bambu ASA @base",
+        "compatible_printers": [
+          "Bambu Lab X1 Carbon 0.4 nozzle",
+          "Bambu Lab X1 0.4 nozzle",
+          "Bambu Lab P1P 0.8 nozzle",
+          "Bambu Lab P1S 0.4 nozzle",
+          "Bambu Lab P1P 0.4 nozzle"
+        ],
+        "nozzle_temperature": [
+          "270",
+          "270"
+        ],
+        "nozzle_temperature_initial_layer": [
+          "270",
+          "270"
+        ],
+        "filament_max_volumetric_speed": [
+          "18",
+          "25"
+        ]
+      }
+    },
+    {
+      "path": "filament/Generic ASA @base.json",
+      "sha256": "a83bc6eff69a9f93f5707d6c48872244e9b0b8263c5e8fb105bf56837571f3e1",
+      "values": {
+        "name": "Generic ASA @base",
+        "inherits": "fdm_filament_asa",
+        "textured_plate_temp": [
+          "100"
+        ],
+        "textured_plate_temp_initial_layer": [
+          "100"
+        ],
+        "hot_plate_temp": [
+          "100"
+        ],
+        "filament_max_volumetric_speed": [
+          "12"
+        ]
+      }
+    },
+    {
+      "path": "filament/fdm_filament_asa.json",
+      "sha256": "f6afac86caf40a28530fe3594e733c92bd0fa9e5027ca8eb001fef03b3400e06",
+      "values": {
+        "name": "fdm_filament_asa",
+        "inherits": "fdm_filament_common",
+        "nozzle_temperature": [
+          "260"
+        ],
+        "nozzle_temperature_initial_layer": [
+          "260"
+        ],
+        "textured_plate_temp": [
+          "90"
+        ],
+        "textured_plate_temp_initial_layer": [
+          "90"
+        ],
+        "hot_plate_temp": [
+          "90"
+        ],
+        "filament_max_volumetric_speed": [
+          "28.6"
+        ],
+        "fan_min_speed": [
+          "10"
+        ],
+        "fan_max_speed": [
+          "80"
+        ],
+        "overhang_fan_speed": [
+          "80"
+        ],
+        "filament_type": [
+          "ASA"
+        ]
+      }
+    }
+  ]
+}

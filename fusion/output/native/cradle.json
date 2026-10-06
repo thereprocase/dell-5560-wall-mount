@@ -1,0 +1,487 @@
+{
+  "stage": "cradle",
+  "volume_mm3": 274207.0057672201,
+  "sketches": [
+    {
+      "name": "Backplate | R4 outline | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Laptop shelf | R2 outline | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Lower contact block | R4 outline | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Front retention tine | R2 outline | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Tine inboard taper cutter | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Lower side guide | R2 outline | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Shelf diagonal gusset | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Vertical spine | R4 outline | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Upper laptop contact | R4 outline | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Upper contact diagonal rib | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Lower joint receiver | R3 outline | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Outlet rail receiver | R3 outline | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Lower wall-anchor roofed clearance bore | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Lower wall-anchor roofed clearance roof | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Upper wall-anchor roofed clearance bore | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Upper wall-anchor roofed clearance roof | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Lower anchor driver access cutter bore | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Lower anchor driver access cutter roof | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Spine neutral-axis cavity | R4 outline | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Lower contact cavity 1 | R2 outline | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Lower contact cavity 2 | R2 outline | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Shelf cavity | R1.5 outline | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Tine cavity | R1.3 outline | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Retained tapered tine skin mask | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Triangular gusset window | R1.5 outline | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Guide window | R3 outline | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Outboard air skin | R2 outline | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Inward sealing lip | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Duct receiver 1 | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Duct receiver 2 | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Rail receiver 1 | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Rail receiver 2 | profile",
+      "fully_constrained": true
+    }
+  ],
+  "features": [
+    {
+      "name": "Backplate | R4 outline | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Backplate | R4 outline | section radii",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Laptop shelf | R2 outline | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Laptop shelf | R2 outline | section radii",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Lower contact block | R4 outline | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Lower contact block | R4 outline | section radii",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Front retention tine | R2 outline | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Front retention tine | R2 outline | section radii",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Tine inboard taper cutter | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Taper inboard tine face",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Lower side guide | R2 outline | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Lower side guide | R2 outline | section radii",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Shelf diagonal gusset | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Vertical spine | R4 outline | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Vertical spine | R4 outline | section radii",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Upper laptop contact | R4 outline | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Upper laptop contact | R4 outline | section radii",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Upper contact diagonal rib | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Lower joint receiver | R3 outline | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Lower joint receiver | R3 outline | section radii",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Outlet rail receiver | R3 outline | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Outlet rail receiver | R3 outline | section radii",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Unite load-bearing cradle",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Lower wall-anchor roofed clearance bore | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Lower wall-anchor roofed clearance roof | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Lower wall-anchor roofed clearance | printable bore",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Lower wall-anchor bore",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Upper wall-anchor roofed clearance bore | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Upper wall-anchor roofed clearance roof | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Upper wall-anchor roofed clearance | printable bore",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Upper wall-anchor bore",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Lower anchor driver access cutter bore | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Lower anchor driver access cutter roof | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Lower anchor driver access cutter | printable bore",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Lower anchor driver access",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Spine neutral-axis cavity | R4 outline | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Spine neutral-axis cavity | R4 outline | section radii",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Hollow spine",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Lower contact cavity 1 | R2 outline | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Lower contact cavity 1 | R2 outline | section radii",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Hollow lower contact 1",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Lower contact cavity 2 | R2 outline | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Lower contact cavity 2 | R2 outline | section radii",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Hollow lower contact 2",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Shelf cavity | R1.5 outline | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Shelf cavity | R1.5 outline | section radii",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Hollow laptop shelf",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Tine cavity | R1.3 outline | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Tine cavity | R1.3 outline | section radii",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Retained tapered tine skin mask | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Trim cavity to preserve inboard tine skin",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Hollow retention tine",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Triangular gusset window | R1.5 outline | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Triangular gusset window | R1.5 outline | section radii",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Open gusset shear-web window",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Guide window | R3 outline | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Guide window | R3 outline | section radii",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Open lower guide window",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Outboard air skin | R2 outline | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Outboard air skin | R2 outline | section radii",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Inward sealing lip | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Unite Revision F shroud and lip",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Duct receiver 1 | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Duct receiver 2 | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Open duct mortise 1",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Open duct mortise 2",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Rail receiver 1 | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Rail receiver 2 | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Open rail mortise 1",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Open rail mortise 2",
+      "health": 0,
+      "message": ""
+    }
+  ],
+  "bodies": 1
+}

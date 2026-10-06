@@ -1,0 +1,161 @@
+{
+  "source_gcode": "preview.gcode",
+  "layers": 548,
+  "method": "Model paths buffered by reported line width. Island support: previous layer plus 0.15 mm. A bridge bead is supported where it overlaps the prior-layer footprint by at least 0.05 mm: buffer that footprint by half the current bead width minus 0.05 mm. Report contiguous unsupported subsegments, not full move lengths. Same-layer anchoring order and physical sag are not proven.",
+  "floating_components": [],
+  "max_bridge_move_mm": 5.250999999999991,
+  "max_unsupported_bridge_span_mm": 5.189000000000007,
+  "bridge_path_count": 2208,
+  "bridge_layers": [
+    2.2,
+    9.0
+  ],
+  "longest_bridges": [
+    {
+      "z_mm": 2.2,
+      "move_length_mm": 5.189000000000007,
+      "unsupported_length_mm": 5.189000000000007,
+      "unsupported_total_mm": 5.189000000000007,
+      "feature": "Bridge"
+    },
+    {
+      "z_mm": 2.2,
+      "move_length_mm": 4.906000000000006,
+      "unsupported_length_mm": 4.906000000000006,
+      "unsupported_total_mm": 4.906000000000006,
+      "feature": "Bridge"
+    },
+    {
+      "z_mm": 2.2,
+      "move_length_mm": 4.866,
+      "unsupported_length_mm": 4.866,
+      "unsupported_total_mm": 4.866,
+      "feature": "Bridge"
+    },
+    {
+      "z_mm": 2.2,
+      "move_length_mm": 4.854000000000013,
+      "unsupported_length_mm": 4.854000000000013,
+      "unsupported_total_mm": 4.854000000000013,
+      "feature": "Bridge"
+    },
+    {
+      "z_mm": 2.2,
+      "move_length_mm": 4.854000000000013,
+      "unsupported_length_mm": 4.854000000000013,
+      "unsupported_total_mm": 4.854000000000013,
+      "feature": "Bridge"
+    },
+    {
+      "z_mm": 2.2,
+      "move_length_mm": 4.854000000000013,
+      "unsupported_length_mm": 4.854000000000013,
+      "unsupported_total_mm": 4.854000000000013,
+      "feature": "Bridge"
+    },
+    {
+      "z_mm": 2.2,
+      "move_length_mm": 4.854000000000013,
+      "unsupported_length_mm": 4.854000000000013,
+      "unsupported_total_mm": 4.854000000000013,
+      "feature": "Bridge"
+    },
+    {
+      "z_mm": 2.2,
+      "move_length_mm": 4.854000000000013,
+      "unsupported_length_mm": 4.854000000000013,
+      "unsupported_total_mm": 4.854000000000013,
+      "feature": "Bridge"
+    },
+    {
+      "z_mm": 2.2,
+      "move_length_mm": 4.854000000000013,
+      "unsupported_length_mm": 4.854000000000013,
+      "unsupported_total_mm": 4.854000000000013,
+      "feature": "Bridge"
+    },
+    {
+      "z_mm": 2.2,
+      "move_length_mm": 4.854000000000013,
+      "unsupported_length_mm": 4.854000000000013,
+      "unsupported_total_mm": 4.854000000000013,
+      "feature": "Bridge"
+    },
+    {
+      "z_mm": 2.2,
+      "move_length_mm": 4.854000000000013,
+      "unsupported_length_mm": 4.854000000000013,
+      "unsupported_total_mm": 4.854000000000013,
+      "feature": "Bridge"
+    },
+    {
+      "z_mm": 2.2,
+      "move_length_mm": 4.854000000000013,
+      "unsupported_length_mm": 4.854000000000013,
+      "unsupported_total_mm": 4.854000000000013,
+      "feature": "Bridge"
+    },
+    {
+      "z_mm": 2.2,
+      "move_length_mm": 4.854000000000013,
+      "unsupported_length_mm": 4.854000000000013,
+      "unsupported_total_mm": 4.854000000000013,
+      "feature": "Bridge"
+    },
+    {
+      "z_mm": 2.2,
+      "move_length_mm": 4.854000000000013,
+      "unsupported_length_mm": 4.854000000000013,
+      "unsupported_total_mm": 4.854000000000013,
+      "feature": "Bridge"
+    },
+    {
+      "z_mm": 2.2,
+      "move_length_mm": 4.854000000000013,
+      "unsupported_length_mm": 4.854000000000013,
+      "unsupported_total_mm": 4.854000000000013,
+      "feature": "Bridge"
+    },
+    {
+      "z_mm": 2.2,
+      "move_length_mm": 4.854000000000013,
+      "unsupported_length_mm": 4.854000000000013,
+      "unsupported_total_mm": 4.854000000000013,
+      "feature": "Bridge"
+    },
+    {
+      "z_mm": 2.2,
+      "move_length_mm": 4.854000000000013,
+      "unsupported_length_mm": 4.854000000000013,
+      "unsupported_total_mm": 4.854000000000013,
+      "feature": "Bridge"
+    },
+    {
+      "z_mm": 2.2,
+      "move_length_mm": 4.854000000000013,
+      "unsupported_length_mm": 4.854000000000013,
+      "unsupported_total_mm": 4.854000000000013,
+      "feature": "Bridge"
+    },
+    {
+      "z_mm": 2.2,
+      "move_length_mm": 4.854000000000013,
+      "unsupported_length_mm": 4.854000000000013,
+      "unsupported_total_mm": 4.854000000000013,
+      "feature": "Bridge"
+    },
+    {
+      "z_mm": 2.2,
+      "move_length_mm": 4.854000000000013,
+      "unsupported_length_mm": 4.854000000000013,
+      "unsupported_total_mm": 4.854000000000013,
+      "feature": "Bridge"
+    }
+  ],
+  "time_and_material_comments": [
+    "; model printing time: 3h 52m 40s; total estimated time: 3h 58m 55s",
+    "; filament used [mm] = 52646.32",
+    "; filament used [cm3] = 126.63",
+    "; filament used [g] = 132.96"
+  ]
+}

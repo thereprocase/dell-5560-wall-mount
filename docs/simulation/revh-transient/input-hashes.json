@@ -1,0 +1,77 @@
+[
+  {
+    "path": "freecad/Precision_5560_Native.FCStd",
+    "bytes": 5669395,
+    "sha256": "01d41e0c91873dc18e7d3b6a6384f2ad8b988a5ccb8d5be0353a2aec8a0cecb3"
+  },
+  {
+    "path": "freecad/Precision_5560_Native.step",
+    "bytes": 2017448,
+    "sha256": "0a60dceee211fdd028af1e63ea3fe9b9a0ae06f84d521ade9ebfe4b4f04ad8e3"
+  },
+  {
+    "path": "profile_reconstruction.json",
+    "bytes": 3313,
+    "sha256": "e74f3c245cd7c16d0ee7e9533757d6eb5b3cdc13ecee13177c1c2b04bb0a0e51"
+  },
+  {
+    "path": "fusion/cfd/runs/revh_transient_04/constant/triSurface/fluid_boundary.stl",
+    "bytes": 8737368,
+    "sha256": "3b764f39413d86dbb3a16e0403ff4dc6650ef9b10f2a299969ebbd4aa0d502ed"
+  },
+  {
+    "path": "fusion/cfd/runs/revh_transient_04/system/blockMeshDict",
+    "bytes": 536,
+    "sha256": "81cd22538e29c5016c836837a6bad62dc4682e28e92d82a30cf325d87420cd4d"
+  },
+  {
+    "path": "fusion/cfd/runs/revh_transient_04/system/controlDict",
+    "bytes": 2925,
+    "sha256": "8eba0ff72e5201428fe9a732ced3edfaea25a09c9c66d1352a7ef7d16ea5a34a"
+  },
+  {
+    "path": "fusion/cfd/runs/revh_transient_04/system/decomposeParDict",
+    "bytes": 193,
+    "sha256": "47aba4c5687faf37d7e8ed3ffa8f4e01495a4d7cd5499146977f64389808dfed"
+  },
+  {
+    "path": "fusion/cfd/runs/revh_transient_04/system/fvSchemes",
+    "bytes": 609,
+    "sha256": "4a9f534b8d7ef36d4ce9ff952684fc60699a8f9bff8b836de1bbbd6fee7c7f25"
+  },
+  {
+    "path": "fusion/cfd/runs/revh_transient_04/system/fvSolution",
+    "bytes": 575,
+    "sha256": "7ad9eb727d60cc3f456994509ca32cdb3d7df11cb381d662940b678997bdb1be"
+  },
+  {
+    "path": "fusion/cfd/runs/revh_transient_04/system/mapFieldsDict",
+    "bytes": 196,
+    "sha256": "6ef7062453d61668c2e839dbfd5b0ddc6ded6b99e983bcead1f19c567efb7d22"
+  },
+  {
+    "path": "fusion/cfd/runs/revh_transient_04/system/snappyHexMeshDict",
+    "bytes": 3391,
+    "sha256": "372ed0b7cc7298a4618eeda761f78978e4c72367dab3e9f1f4f9c30909289811"
+  },
+  {
+    "path": "fusion/cfd/runs/revh_transient_04/system/topoSetDict",
+    "bytes": 1313,
+    "sha256": "f0f0a40eb48835fb12dbe791c02c0516e75fd2546c0c7d9569437cd1e8eb24c3"
+  },
+  {
+    "path": "fusion/cfd/runs/revh_transient_04/constant/fvOptions",
+    "bytes": 906,
+    "sha256": "9cc43b8c29187dfa5c5aa5567f8170a249017560c64711c162ed53546288b84c"
+  },
+  {
+    "path": "fusion/cfd/runs/revh_transient_04/constant/transportProperties",
+    "bytes": 225,
+    "sha256": "1069a1ce6cb788eb2cd088aafe0a82be2c995e8789ef1f62aa8dddda58c9feac"
+  },
+  {
+    "path": "fusion/cfd/runs/revh_transient_04/constant/turbulenceProperties",
+    "bytes": 250,
+    "sha256": "cb6f3b7279dc6caf9e85294bdd89cf84cbe8eda756a6383850ab01bb380ee2de"
+  }
+]

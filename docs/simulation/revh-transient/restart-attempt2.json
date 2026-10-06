@@ -1,0 +1,9 @@
+{
+  "updated_utc": "2026-09-08T12:54:00.597086+00:00",
+  "reason": "First attempt completed four steps then aborted in ITstream::readRaw during parallel runtime dictionary reread. No volume checkpoint was written. Restart from mapped zero-time fields with immutable controls and every-step writes.",
+  "endpoint_s": 2e-05,
+  "runTimeModifiable": false,
+  "write_every_step": true,
+  "physics_changed": false,
+  "timestep_note": "Changing adjustableRunTime output to timeStep avoids rounding dt to output times; actual timestamps differ slightly from attempt 1. Do not combine trajectories."
+}

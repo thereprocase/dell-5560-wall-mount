@@ -1,0 +1,42 @@
+{
+  "case": "F:\\Code\\dell-5560-wall-mount\\fusion\\cfd\\cases\\OpenCFD_v2412\\installed_pressure10_v3",
+  "iteration": 1200,
+  "cells": 836278,
+  "section_units": "mm",
+  "speed_range_m_s": [
+    0,
+    5
+  ],
+  "pressure_range_Pa": [
+    -12,
+    12
+  ],
+  "pressure_conversion": "OpenFOAM kinematic p * rho=1.2 kg/m3",
+  "sections": {
+    "A": {
+      "axis": "X",
+      "mm": -111.017192
+    },
+    "B": {
+      "axis": "X",
+      "mm": 111.263897
+    },
+    "C": {
+      "axis": "Y",
+      "mm": 45
+    },
+    "D": {
+      "axis": "Z",
+      "mm": 171.11879
+    }
+  },
+  "residual_samples": 1200,
+  "final_initial_residuals": {
+    "Ux": 4.797171133e-05,
+    "Uy": 6.977204523e-05,
+    "Uz": 6.448655393e-05,
+    "p": 2.955183318e-05,
+    "k": 0.0001973785728,
+    "omega": 5.489873025e-06
+  }
+}

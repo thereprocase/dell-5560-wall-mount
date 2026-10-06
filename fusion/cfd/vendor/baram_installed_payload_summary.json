@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "verified_utc": "2026-09-07T21:21:35.004465+00:00",
+  "target": "C:\\Users\\USER\\AppData\\Local\\Programs\\BARAM-26.3.0",
+  "installation_evidence": {
+    "phase": "baram",
+    "sha256": "FF87AEA71706425F76A098BDBD3B648F3C2247F1B1D82E02A358B5FC126075BE",
+    "target": "C:\\Users\\USER\\AppData\\Local\\Programs\\BARAM-26.3.0",
+    "exit_code": 0
+  },
+  "method": "MSI File+Component+Directory mapping; SHA256 of all retained cabinet files versus installed counterparts. No application execution.",
+  "reference_msi_sha256": "ff87aea71706425f76a098bdbd3b648f3c2247f1b1d82e02a358b5fc126075be",
+  "script_sha256": "af44eccfeaf33b7515838c10c99e5efd042be63c42e0b6cf8d9c0b33c2a03b54",
+  "expected_count": 15186,
+  "unique_expected_paths": 15186,
+  "counts": {
+    "match": 15186
+  },
+  "extra_count": 0,
+  "mpi_published_digest_check": {
+    "provenance": {
+      "repository": "https://github.com/microsoft/winget-pkgs",
+      "commit": "f82e821082e59b30db90a0625a04f262c800e665",
+      "url": "https://raw.githubusercontent.com/microsoft/winget-pkgs/f82e821082e59b30db90a0625a04f262c800e665/manifests/m/Microsoft/msmpi/10.1.12498.18/Microsoft.msmpi.installer.yaml",
+      "captured_utc": "2026-09-07T21:17:37.8624883Z"
+    },
+    "manifest_sha256": "8d2fa0199fc68115da14618e0581a7a96c9d6eb40daf44e0dc81ede492155112",
+    "published_installer_sha256": "c305ce3f05d142d519f8dd800d83a4b894fc31bcad30512cefb557feaccbe8b4",
+    "bundled_installer_sha256": "c305ce3f05d142d519f8dd800d83a4b894fc31bcad30512cefb557feaccbe8b4",
+    "match": true,
+    "repository_scope": "Microsoft-hosted community WinGet repository; independent published package manifest plus separately checked Microsoft Authenticode signature.",
+    "installation_attempted_during_this_audit": false,
+    "prior_installation_attempt": "Root agent reports MPI elevation prompt canceled by user; no retry in this audit."
+  },
+  "limits": "Package fidelity only, not malware/CVE/source-equivalence or runtime certification. Extra files listed without deletion. Registry, PATH and shortcuts not compared here.",
+  "differences": [],
+  "extras": []
+}

@@ -1,0 +1,18 @@
+{
+  "status": 200,
+  "data": {
+    "rootAssembly": {
+      "patterns": [],
+      "parametricInstances": [],
+      "instances": [],
+      "fullConfiguration": "default",
+      "configuration": "default",
+      "documentId": "c452b7f3224726ea2f11cdda",
+      "elementId": "959913d7c8696541b603dc65",
+      "documentMicroversion": "a59cf6e40cad93318123b2d7"
+    },
+    "subAssemblies": [],
+    "parts": [],
+    "partStudioFeatures": []
+  }
+}

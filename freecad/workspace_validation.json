@@ -1,0 +1,14 @@
+{
+  "missing_commands": [],
+  "surface_filling": true,
+  "mesh_from_part": true,
+  "tabs": [
+    "SOLID",
+    "SURFACE",
+    "MESH",
+    "SHEET METAL",
+    "SKETCH",
+    "TOOLS"
+  ],
+  "tab_scroll_buttons": false
+}

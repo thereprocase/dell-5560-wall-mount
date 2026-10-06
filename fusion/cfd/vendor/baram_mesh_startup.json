@@ -1,0 +1,38 @@
+[
+  {
+    "Type": "Window",
+    "Name": "Help Improve BaramMesh"
+  },
+  {
+    "Type": "ControlType.Text",
+    "Name": "Help Improve BaramMesh"
+  },
+  {
+    "Type": "ControlType.Text",
+    "Name": "BaramMesh can send anonymous usage data and error reports so we can find bugs and improve the product. Your participation is optional. You can change your choice at any time in Help → Privacy Settings."
+  },
+  {
+    "Type": "ControlType.Text",
+    "Name": ""
+  },
+  {
+    "Type": "ControlType.Group",
+    "Name": ""
+  },
+  {
+    "Type": "ControlType.Group",
+    "Name": ""
+  },
+  {
+    "Type": "ControlType.ScrollBar",
+    "Name": ""
+  },
+  {
+    "Type": "ControlType.Button",
+    "Name": "Don't Allow"
+  },
+  {
+    "Type": "ControlType.Button",
+    "Name": "Allow"
+  }
+]

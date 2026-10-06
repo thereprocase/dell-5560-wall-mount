@@ -1,0 +1,132 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2412                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 6467f461-20260821 OPENFOAM=2412 version=v2412
+Arch   : "LSB;label=32;scalar=64"
+Exec   : C:\Users\USER\AppData\Local\Programs\BARAM-26.3.0\solvers\openfoam\bin\checkMesh.exe -constant -allGeometry -allTopology
+Date   : Sep 07 2026
+Time   : 18:10:58
+Host   : WORKSTATION
+PID    : 25760
+I/O    : uncollated
+Case   : F:/Code/dell-5560-wall-mount/fusion/cfd/cases/OpenCFD_v2412/installed_pressure10_v1
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 0, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = constant
+
+Check mesh...
+    Enabling all (cell, face, edge, point) topology checks.
+    Enabling all geometry checks.
+
+Time = constant
+
+Mesh stats 
+    points:           1035869
+    faces:            2708211
+    internal faces:   2492492
+    cells:            836467
+    faces per cell:   6.21746345
+    boundary patches: 5
+    point zones:      1
+    face zones:       0
+    cell zones:       0
+
+Overall number of cells of each type:
+    hexahedra:     744701
+    prisms:        21719
+    wedges:        0
+    pyramids:      0
+    tet wedges:    52
+    tetrahedra:    6
+    polyhedra:     69989
+    Breakdown of polyhedra by number of faces:
+        faces   number of cells
+            4   1366
+            5   2519
+            6   12841
+            7   2
+            8   7
+            9   41119
+           12   8076
+           15   3850
+           18   209
+
+Checking topology...
+    Boundary definition OK.
+    Cell to face addressing OK.
+    Point usage OK.
+    Upper triangular ordering OK.
+    Face vertices OK.
+    Topological cell zip-up check OK.
+    Face-face connectivity OK.
+    Number of regions: 1 (OK).
+
+Checking patch topology for multiply connected surfaces...
+                   Patch    Faces   Points  Surface topology  Bounding box
+                 printed    74411    76810  multiply connected (shared edge) (-0.1841852444 -6.776263578e-21 -0.1603675363) (0.1841852458 0.1491608592 0.2320471305)
+                  laptop   119429   119524  ok (non-closed singly connected) (-0.1733578222 0.03774158595 0.001999994841) (0.1732656777 0.05738112703 0.2323000133)
+                  noctua     5551     7404  ok (non-closed singly connected) (-0.1313330697 0.03093961499 -0.1515875698) (0.1313326959 0.1342799544 -0.04565974476)
+              wall_plane    11048    12014  ok (non-closed singly connected) (-0.400000006 -3.452927374e-05 -0.3000000119) (0.400000006 0.002000005437 0.5)
+        ambient_openings     5280     5361  ok (non-closed singly connected) (-0.400000006 0 -0.3000000119) (0.400000006 0.4499999881 0.5)
+                    ".*"   215719   218324  multiply connected (shared edge) (-0.400000006 -3.452927374e-05 -0.3000000119) (0.400000006 0.4499999881 0.5)
+
+Detected 18 bad edges (possibly relevant for finite-area)
+
+Checking faceZone topology for multiply connected surfaces...
+    No faceZones found.
+  <<Writing 36 conflicting points to set nonManifoldPoints
+
+Checking basic cellZone addressing...
+    No cellZones found.
+
+Checking basic pointZone addressing...
+               PointZone  PointsBoundingBox
+            frozenPoints       0(1e+150 1e+150 1e+150) (-1e+150 -1e+150 -1e+150)
+
+Checking geometry...
+    Overall domain bounding box (-0.400000006 -3.452927374e-05 -0.3000000119) (0.400000006 0.4499999881 0.5)
+    Mesh has 3 geometric (non-empty/wedge) directions (1 1 1)
+    Mesh has 3 solution (non-empty) directions (1 1 1)
+    Boundary openness (-8.53898645e-16 4.142297705e-15 -4.128396731e-16) OK.
+    Max cell openness = 3.341376461e-16 OK.
+    Max aspect ratio = 10.22957645 OK.
+    Minimum face area = 3.189804644e-09. Maximum face area = 0.0004676448772.  Face area magnitudes OK.
+    Min volume = 9.609094181e-11. Max volume = 9.553717971e-06.  Total volume = 0.2851099366.  Cell volumes OK.
+    Mesh non-orthogonality Max: 64.77857995 average: 9.119761626
+    Non-orthogonality check OK.
+    Face pyramids OK.
+ ***Max skewness = 5.933866434, 13 highly skew faces detected which may impair the quality of the results
+  <<Writing 13 skew faces to set skewFaces
+    Coupled point location match (average 0) OK.
+    Face tets OK.
+    Min/max edge length = 4.606945639e-06 0.02261828243 OK.
+   *There are 1943 faces with concave angles between consecutive edges. Max concave angle = 79.45105144 degrees.
+  <<Writing 1943 faces with concave angles to set concaveFaces
+    Face flatness (1 = flat, 0 = butterfly) : min = 0.4083921575  average = 0.999722199
+   *There are 125 faces with ratio between projected and actual area < 0.8
+    Minimum ratio (minimum flatness, maximum warpage) = 0.4083921575
+  <<Writing 125 warped faces to set warpedFaces
+    Cell determinant (wellposedness) : minimum: 0.0003578057384 average: 1.671551623
+ ***Cells with small determinant (< 0.001) found, number of cells: 5
+  <<Writing 5 under-determined cells to set underdeterminedCells
+ ***Concave cells (using face planes) found, number of cells: 25925
+  <<Writing 25925 concave cells to set concaveCells
+    Face interpolation weight : minimum: 0.08792942391 average: 0.4729444769
+    Face interpolation weight check OK.
+    Face volume ratio : minimum: 0.01830252567 average: 0.8645305724
+    Face volume ratio check OK.
+
+Failed 3 mesh checks.
+
+End
+

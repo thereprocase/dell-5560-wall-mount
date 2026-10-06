@@ -1,0 +1,53 @@
+{
+  "tag": "makerworld-prep-2026-09-08",
+  "assets": [
+    {
+      "name": "Repro_ducted_Bambu_Studio_Projects_UNTESTED.zip",
+      "bytes": 512545703,
+      "sha256": "e1ae5dfe98dcce1ef9840fb38579431777c5040193ab457e78b10675cedeebaa",
+      "url": "https://github.com/thereprocase/dell-5560-wall-mount/releases/download/makerworld-prep-2026-09-08/Repro_ducted_Bambu_Studio_Projects_UNTESTED.zip"
+    },
+    {
+      "name": "Repro_ducted_Model_Files.zip",
+      "bytes": 1133593,
+      "sha256": "ad5ffb64bdc715283a677203ce60c77a2cb0cfc8626629aadf1b8860b603d395",
+      "url": "https://github.com/thereprocase/dell-5560-wall-mount/releases/download/makerworld-prep-2026-09-08/Repro_ducted_Model_Files.zip"
+    },
+    {
+      "name": "Repro_fanless_Bambu_Studio_Projects_UNTESTED.zip",
+      "bytes": 84772775,
+      "sha256": "6f3b81a51f56b4463d2e5a0f99f5bfb655fce64a61f2f577b406394652aaaa1d",
+      "url": "https://github.com/thereprocase/dell-5560-wall-mount/releases/download/makerworld-prep-2026-09-08/Repro_fanless_Bambu_Studio_Projects_UNTESTED.zip"
+    },
+    {
+      "name": "Repro_fanless_Model_Files.zip",
+      "bytes": 3255738,
+      "sha256": "bb84500fcaa6567a9092ad26b21cfcca44a85cd12b528fec1d1ed047a94e919e",
+      "url": "https://github.com/thereprocase/dell-5560-wall-mount/releases/download/makerworld-prep-2026-09-08/Repro_fanless_Model_Files.zip"
+    },
+    {
+      "name": "Repro_MakerWorld_Listings_and_Gallery_2026-09-08.zip",
+      "bytes": 2570211,
+      "sha256": "f570d2177624b37d29fea765f1d2e430972883954a67e68fca76da00fb314c0d",
+      "url": "https://github.com/thereprocase/dell-5560-wall-mount/releases/download/makerworld-prep-2026-09-08/Repro_MakerWorld_Listings_and_Gallery_2026-09-08.zip"
+    },
+    {
+      "name": "Repro_modular_Bambu_Studio_Projects_UNTESTED.zip",
+      "bytes": 209171870,
+      "sha256": "dcf17b9842a0cec92965d952a649e86d7e319f6e2d82b05993cf0452d34a3d20",
+      "url": "https://github.com/thereprocase/dell-5560-wall-mount/releases/download/makerworld-prep-2026-09-08/Repro_modular_Bambu_Studio_Projects_UNTESTED.zip"
+    },
+    {
+      "name": "Repro_modular_Model_Files.zip",
+      "bytes": 13405242,
+      "sha256": "c223ad066bbccbfa3fee0b300f7e3f7921e3f6274393b33636cf878ba64449f2",
+      "url": "https://github.com/thereprocase/dell-5560-wall-mount/releases/download/makerworld-prep-2026-09-08/Repro_modular_Model_Files.zip"
+    },
+    {
+      "name": "Repro_Render_Sources_2026-09-08.zip",
+      "bytes": 2256776,
+      "sha256": "7e2b463272062ccd82fa850ef28d5bd67881aae9ac0fe29e6c3027e591640ed7",
+      "url": "https://github.com/thereprocase/dell-5560-wall-mount/releases/download/makerworld-prep-2026-09-08/Repro_Render_Sources_2026-09-08.zip"
+    }
+  ]
+}

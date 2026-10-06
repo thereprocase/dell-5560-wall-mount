@@ -1,0 +1,157 @@
+{
+  "feature": {
+    "btType": "BTMSketch-151",
+    "name": "Pin - axial profile (mm)",
+    "featureType": "newSketch",
+    "parameters": [
+      {
+        "btType": "BTMParameterQueryList-148",
+        "parameterId": "sketchPlane",
+        "queries": [
+          {
+            "btType": "BTMIndividualQuery-138",
+            "queryString": "query=qCreatedBy(makeId(\"Front\"), EntityType.FACE);"
+          }
+        ]
+      }
+    ],
+    "entities": [
+      {
+        "btType": "BTMSketchCurveSegment-155",
+        "entityId": "edge0",
+        "startPointId": "edge0.start",
+        "endPointId": "edge0.end",
+        "startParam": 0,
+        "endParam": 0.004,
+        "geometry": {
+          "btType": "BTCurveGeometryLine-117",
+          "pntX": 0.0,
+          "pntY": 0.0,
+          "dirX": 1.0,
+          "dirY": 0.0
+        }
+      },
+      {
+        "btType": "BTMSketchCurveSegment-155",
+        "entityId": "edge1",
+        "startPointId": "edge1.start",
+        "endPointId": "edge1.end",
+        "startParam": 0,
+        "endParam": 0.0014,
+        "geometry": {
+          "btType": "BTCurveGeometryLine-117",
+          "pntX": 0.004,
+          "pntY": 0.0,
+          "dirX": 0.0,
+          "dirY": 1.0
+        }
+      },
+      {
+        "btType": "BTMSketchCurveSegment-155",
+        "entityId": "edge2",
+        "startPointId": "edge2.start",
+        "endPointId": "edge2.end",
+        "startParam": 0,
+        "endParam": 0.0008485281374238571,
+        "geometry": {
+          "btType": "BTCurveGeometryLine-117",
+          "pntX": 0.004,
+          "pntY": 0.0014,
+          "dirX": -0.7071067811865476,
+          "dirY": 0.7071067811865476
+        }
+      },
+      {
+        "btType": "BTMSketchCurveSegment-155",
+        "entityId": "edge3",
+        "startPointId": "edge3.start",
+        "endPointId": "edge3.end",
+        "startParam": 0,
+        "endParam": 0.0014,
+        "geometry": {
+          "btType": "BTCurveGeometryLine-117",
+          "pntX": 0.0034,
+          "pntY": 0.002,
+          "dirX": -1.0,
+          "dirY": 0.0
+        }
+      },
+      {
+        "btType": "BTMSketchCurveSegment-155",
+        "entityId": "edge4",
+        "startPointId": "edge4.start",
+        "endPointId": "edge4.end",
+        "startParam": 0,
+        "endParam": 0.01,
+        "geometry": {
+          "btType": "BTCurveGeometryLine-117",
+          "pntX": 0.002,
+          "pntY": 0.002,
+          "dirX": 0.0,
+          "dirY": 1.0
+        }
+      },
+      {
+        "btType": "BTMSketchCurveSegment-155",
+        "entityId": "edge5",
+        "startPointId": "edge5.start",
+        "endPointId": "edge5.end",
+        "startParam": 0,
+        "endParam": 0.00010000000000000009,
+        "geometry": {
+          "btType": "BTCurveGeometryLine-117",
+          "pntX": 0.002,
+          "pntY": 0.012,
+          "dirX": 1.0,
+          "dirY": 0.0
+        }
+      },
+      {
+        "btType": "BTMSketchCurveSegment-155",
+        "entityId": "edge6",
+        "startPointId": "edge6.start",
+        "endPointId": "edge6.end",
+        "startParam": 0,
+        "endParam": 0.00206155281280883,
+        "geometry": {
+          "btType": "BTCurveGeometryLine-117",
+          "pntX": 0.0021000000000000003,
+          "pntY": 0.012,
+          "dirX": -0.24253562503633297,
+          "dirY": 0.9701425001453319
+        }
+      },
+      {
+        "btType": "BTMSketchCurveSegment-155",
+        "entityId": "edge7",
+        "startPointId": "edge7.start",
+        "endPointId": "edge7.end",
+        "startParam": 0,
+        "endParam": 0.0016,
+        "geometry": {
+          "btType": "BTCurveGeometryLine-117",
+          "pntX": 0.0016,
+          "pntY": 0.014,
+          "dirX": -1.0,
+          "dirY": 0.0
+        }
+      },
+      {
+        "btType": "BTMSketchCurveSegment-155",
+        "entityId": "edge8",
+        "startPointId": "edge8.start",
+        "endPointId": "edge8.end",
+        "startParam": 0,
+        "endParam": 0.014,
+        "geometry": {
+          "btType": "BTCurveGeometryLine-117",
+          "pntX": 0.0,
+          "pntY": 0.014,
+          "dirX": 0.0,
+          "dirY": -1.0
+        }
+      }
+    ],
+    "constraints": []
+  }
+}

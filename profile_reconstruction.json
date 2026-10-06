@@ -1,0 +1,169 @@
+{
+  "revision": "F",
+  "method": "Manual pixel picks scaled to published 230.3-mm depth and 344.4-mm width. Approximate external silhouette, not a manufacturer cross-section.",
+  "side_image_bounds_x_px": [
+    79,
+    1722
+  ],
+  "side_mm_per_pixel": 0.14017041996348145,
+  "side_outline_pixels": [
+    [
+      79,
+      171
+    ],
+    [
+      1697,
+      156
+    ],
+    [
+      1722,
+      240
+    ],
+    [
+      1690,
+      260
+    ],
+    [
+      1650,
+      280
+    ],
+    [
+      1630,
+      292
+    ],
+    [
+      1614,
+      291
+    ],
+    [
+      1594,
+      281
+    ],
+    [
+      400,
+      281
+    ],
+    [
+      347,
+      292
+    ],
+    [
+      334,
+      288
+    ],
+    [
+      213,
+      276
+    ],
+    [
+      150,
+      251
+    ],
+    [
+      98,
+      222
+    ]
+  ],
+  "profile_yz_mm": [
+    [
+      55.27857577601948,
+      2.0
+    ],
+    [
+      57.3811320754717,
+      228.795739500913
+    ],
+    [
+      45.606816798539256,
+      232.3
+    ],
+    [
+      42.80340839926963,
+      227.8145465611686
+    ],
+    [
+      40.0,
+      222.20772976262936
+    ],
+    [
+      38.31795496043822,
+      219.40432136335974
+    ],
+    [
+      38.458125380401704,
+      217.16159464394403
+    ],
+    [
+      39.85982958003652,
+      214.35818624467439
+    ],
+    [
+      39.85982958003652,
+      46.99470480827755
+    ],
+    [
+      38.31795496043822,
+      39.56567255021303
+    ],
+    [
+      38.87863664029215,
+      37.74345709068777
+    ],
+    [
+      40.56068167985393,
+      20.782836275106515
+    ],
+    [
+      44.06494217894096,
+      11.952099817407182
+    ],
+    [
+      48.12988435788192,
+      4.663237979306148
+    ]
+  ],
+  "profile_estimated_uncertainty_mm": 2,
+  "internal_case_bounds_pixels": [
+    80,
+    48,
+    1476,
+    974
+  ],
+  "internal_scale_x_mm_px": 0.24670487106017192,
+  "internal_scale_z_mm_px": 0.24870410367170628,
+  "effective_intake_windows": [
+    {
+      "x_mm": [
+        -146.04928366762175,
+        -75.98510028653294
+      ],
+      "z_mm": [
+        150.97375809935207,
+        191.26382289416847
+      ]
+    },
+    {
+      "x_mm": [
+        76.23180515759313,
+        146.29598853868197
+      ],
+      "z_mm": [
+        150.97375809935207,
+        191.26382289416847
+      ]
+    }
+  ],
+  "intake_location_uncertainty_mm": 4,
+  "CFD_foot_projection_mm": 2,
+  "CFD_foot_projection_uncertainty_mm": 1,
+  "published_height_caution": "Dell lists 7.70/11.65 mm; side-image closed silhouette is thicker. Do not treat those entries as verified closed assembly thickness. Keep 20-mm fit envelope.",
+  "source_urls": {
+    "side": "https://dl.dell.com/content/guides/public/html//prec5560_ss/images/GUID-C9E741CA-573F-4F5F-85BB-CD9ECC09733B-low.jpg",
+    "inside": "https://dl.dell.com/content/guides/public/Html/prec5560_sm/images/GUID-D9E7DDF5-01D6-4E98-B3FB-83A574C6A4BE-low.jpg"
+  },
+  "source_hashes": {
+    "Dell_5560_Right.jpg": "d65504f6200e847e33ffc7d85a00dd589dc65387eb1a268596aa8a912b849df3",
+    "Dell_5560_Left.jpg": "68a1bd0cd85f545000fd8dbc2285cbacbaf0e9f628b50b78aea6eeed7f71fbff",
+    "Dell_5560_Base_Inside.jpg": "0c04e0c10c650c34c9a671b89687c873c1817babcc510aba35c3eb4160f6a200"
+  }
+}

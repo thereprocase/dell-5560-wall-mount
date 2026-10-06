@@ -1,0 +1,271 @@
+{
+  "source_gcode": "preview.gcode",
+  "source_gcode_sha256": "d3f486fd55e64a175ef5655b464e5fca7db20c6247b04c10ffe46ffc541fc598",
+  "layers": 443,
+  "method": "Model paths buffered by reported line width. Island support: previous layer plus 0.15 mm. A deposited bead is supported where it overlaps the prior-layer footprint by at least 0.05 mm: buffer that footprint by half the current bead width minus 0.05 mm. Report contiguous unsupported subsegments, not full move lengths. Same-layer anchoring order and physical sag are not proven.",
+  "floating_components": [],
+  "unsupported_by_feature_mm": {
+    "Internal solid infill": 0.14212958506093892,
+    "Inner wall": 0.08472663380972278,
+    "Overhang wall": 8.987000000000009,
+    "Outer wall": 4.625000108108107,
+    "Bridge": 3.015000000000015
+  },
+  "max_bridge_move_mm": 3.015000000000015,
+  "max_unsupported_bridge_span_mm": 3.015000000000015,
+  "bridge_path_count": 14,
+  "bridge_layers": [
+    18.4
+  ],
+  "longest_bridges": [
+    {
+      "z_mm": 18.4,
+      "move_length_mm": 3.015000000000015,
+      "unsupported_length_mm": 3.015000000000015,
+      "unsupported_total_mm": 3.015000000000015,
+      "feature": "Bridge"
+    },
+    {
+      "z_mm": 18.4,
+      "move_length_mm": 3.0149999999999864,
+      "unsupported_length_mm": 3.0149999999999864,
+      "unsupported_total_mm": 3.0149999999999864,
+      "feature": "Bridge"
+    },
+    {
+      "z_mm": 18.4,
+      "move_length_mm": 2.8540000000000134,
+      "unsupported_length_mm": 2.8540000000000134,
+      "unsupported_total_mm": 2.8540000000000134,
+      "feature": "Bridge"
+    },
+    {
+      "z_mm": 18.4,
+      "move_length_mm": 2.8540000000000134,
+      "unsupported_length_mm": 2.8540000000000134,
+      "unsupported_total_mm": 2.8540000000000134,
+      "feature": "Bridge"
+    },
+    {
+      "z_mm": 18.4,
+      "move_length_mm": 2.8540000000000134,
+      "unsupported_length_mm": 2.8540000000000134,
+      "unsupported_total_mm": 2.8540000000000134,
+      "feature": "Bridge"
+    },
+    {
+      "z_mm": 18.4,
+      "move_length_mm": 2.8540000000000134,
+      "unsupported_length_mm": 2.8540000000000134,
+      "unsupported_total_mm": 2.8540000000000134,
+      "feature": "Bridge"
+    },
+    {
+      "z_mm": 18.4,
+      "move_length_mm": 0.3569999999999993,
+      "unsupported_length_mm": 0.3569999999999993,
+      "unsupported_total_mm": 0.3569999999999993,
+      "feature": "Bridge"
+    },
+    {
+      "z_mm": 18.4,
+      "move_length_mm": 0.3569999999999993,
+      "unsupported_length_mm": 0.3569999999999993,
+      "unsupported_total_mm": 0.3569999999999993,
+      "feature": "Bridge"
+    },
+    {
+      "z_mm": 18.4,
+      "move_length_mm": 0.3569999999999993,
+      "unsupported_length_mm": 0.3569999999999993,
+      "unsupported_total_mm": 0.3569999999999993,
+      "feature": "Bridge"
+    },
+    {
+      "z_mm": 18.4,
+      "move_length_mm": 0.3569999999999922,
+      "unsupported_length_mm": 0.3569999999999922,
+      "unsupported_total_mm": 0.3569999999999922,
+      "feature": "Bridge"
+    },
+    {
+      "z_mm": 18.4,
+      "move_length_mm": 0.3569999999999993,
+      "unsupported_length_mm": 0.1682457638109156,
+      "unsupported_total_mm": 0.1682457638109156,
+      "feature": "Bridge"
+    },
+    {
+      "z_mm": 18.4,
+      "move_length_mm": 0.3569999999999993,
+      "unsupported_length_mm": 0.16775509016520118,
+      "unsupported_total_mm": 0.16775509016520118,
+      "feature": "Bridge"
+    },
+    {
+      "z_mm": 18.4,
+      "move_length_mm": 3.015000000000015,
+      "unsupported_length_mm": 0,
+      "unsupported_total_mm": 0,
+      "feature": "Bridge"
+    },
+    {
+      "z_mm": 18.4,
+      "move_length_mm": 3.0149999999999864,
+      "unsupported_length_mm": 0,
+      "unsupported_total_mm": 0,
+      "feature": "Bridge"
+    }
+  ],
+  "max_unsupported_deposition_span_mm": 8.987000000000009,
+  "longest_unsupported_paths": [
+    {
+      "z_mm": 28.2,
+      "move_length_mm": 8.987000000000009,
+      "unsupported_length_mm": 8.987000000000009,
+      "unsupported_total_mm": 8.987000000000009,
+      "feature": "Overhang wall"
+    },
+    {
+      "z_mm": 27.6,
+      "move_length_mm": 8.986999999999995,
+      "unsupported_length_mm": 8.986999999999995,
+      "unsupported_total_mm": 8.986999999999995,
+      "feature": "Overhang wall"
+    },
+    {
+      "z_mm": 27.8,
+      "move_length_mm": 8.986999999999995,
+      "unsupported_length_mm": 8.986999999999995,
+      "unsupported_total_mm": 8.986999999999995,
+      "feature": "Overhang wall"
+    },
+    {
+      "z_mm": 28.4,
+      "move_length_mm": 8.986999999999995,
+      "unsupported_length_mm": 8.986999999999995,
+      "unsupported_total_mm": 8.986999999999995,
+      "feature": "Overhang wall"
+    },
+    {
+      "z_mm": 28.6,
+      "move_length_mm": 8.986999999999995,
+      "unsupported_length_mm": 8.986999999999995,
+      "unsupported_total_mm": 8.986999999999995,
+      "feature": "Overhang wall"
+    },
+    {
+      "z_mm": 29.0,
+      "move_length_mm": 8.986999999999995,
+      "unsupported_length_mm": 8.986999999999995,
+      "unsupported_total_mm": 8.986999999999995,
+      "feature": "Overhang wall"
+    },
+    {
+      "z_mm": 29.2,
+      "move_length_mm": 8.986999999999995,
+      "unsupported_length_mm": 8.986999999999995,
+      "unsupported_total_mm": 8.986999999999995,
+      "feature": "Overhang wall"
+    },
+    {
+      "z_mm": 28.8,
+      "move_length_mm": 8.986000000000018,
+      "unsupported_length_mm": 8.986000000000018,
+      "unsupported_total_mm": 8.986000000000018,
+      "feature": "Overhang wall"
+    },
+    {
+      "z_mm": 28.0,
+      "move_length_mm": 8.986000000000004,
+      "unsupported_length_mm": 8.986000000000004,
+      "unsupported_total_mm": 8.986000000000004,
+      "feature": "Overhang wall"
+    },
+    {
+      "z_mm": 29.0,
+      "move_length_mm": 8.867000000000019,
+      "unsupported_length_mm": 8.867000000000019,
+      "unsupported_total_mm": 8.867000000000019,
+      "feature": "Overhang wall"
+    },
+    {
+      "z_mm": 27.6,
+      "move_length_mm": 8.867000000000004,
+      "unsupported_length_mm": 8.867000000000004,
+      "unsupported_total_mm": 8.867000000000004,
+      "feature": "Overhang wall"
+    },
+    {
+      "z_mm": 27.8,
+      "move_length_mm": 8.867000000000004,
+      "unsupported_length_mm": 8.867000000000004,
+      "unsupported_total_mm": 8.867000000000004,
+      "feature": "Overhang wall"
+    },
+    {
+      "z_mm": 28.0,
+      "move_length_mm": 8.867000000000004,
+      "unsupported_length_mm": 8.867000000000004,
+      "unsupported_total_mm": 8.867000000000004,
+      "feature": "Overhang wall"
+    },
+    {
+      "z_mm": 28.4,
+      "move_length_mm": 8.86699999999999,
+      "unsupported_length_mm": 8.86699999999999,
+      "unsupported_total_mm": 8.86699999999999,
+      "feature": "Overhang wall"
+    },
+    {
+      "z_mm": 28.6,
+      "move_length_mm": 8.86699999999999,
+      "unsupported_length_mm": 8.86699999999999,
+      "unsupported_total_mm": 8.86699999999999,
+      "feature": "Overhang wall"
+    },
+    {
+      "z_mm": 29.2,
+      "move_length_mm": 8.86699999999999,
+      "unsupported_length_mm": 8.86699999999999,
+      "unsupported_total_mm": 8.86699999999999,
+      "feature": "Overhang wall"
+    },
+    {
+      "z_mm": 28.8,
+      "move_length_mm": 8.866000000000014,
+      "unsupported_length_mm": 8.866000000000014,
+      "unsupported_total_mm": 8.866000000000014,
+      "feature": "Overhang wall"
+    },
+    {
+      "z_mm": 28.2,
+      "move_length_mm": 8.866,
+      "unsupported_length_mm": 8.866,
+      "unsupported_total_mm": 8.866,
+      "feature": "Overhang wall"
+    },
+    {
+      "z_mm": 29.4,
+      "move_length_mm": 5.924999999999983,
+      "unsupported_length_mm": 5.924999999999983,
+      "unsupported_total_mm": 5.924999999999983,
+      "feature": "Overhang wall"
+    },
+    {
+      "z_mm": 29.4,
+      "move_length_mm": 5.804999999999978,
+      "unsupported_length_mm": 5.804999999999978,
+      "unsupported_total_mm": 5.804999999999978,
+      "feature": "Overhang wall"
+    }
+  ],
+  "time_and_material_comments": [
+    "; model printing time: 2h 4m 11s; total estimated time: 2h 10m 25s",
+    "; filament used [mm] = 20309.18",
+    "; filament used [cm3] = 48.85",
+    "; filament used [g] = 51.29"
+  ],
+  "analysis_geometry_sha256": "b63d5dfc3b2b1c33900322b6dd5425fb2face9e181d9ffceb7a8f7719140bf77",
+  "analysis_feature_scope": "All positive-extrusion model paths; bridge-tagged and all-feature maxima are reported separately."
+}

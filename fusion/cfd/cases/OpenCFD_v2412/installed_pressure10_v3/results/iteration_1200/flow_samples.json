@@ -1,0 +1,43 @@
+{
+  "iteration": 1200.0,
+  "cells": 836278,
+  "scope": "Uncalibrated constant-force four-fan airflow; 10 Pa nominal pressure assumptions; no thermal solution",
+  "sampled_flows": {
+    "dell_fan_left": {
+      "net_m3_s": 0.0025003310190039874,
+      "net_CFM": 5.297901397771546,
+      "valid_sample_fraction": 1.0,
+      "method": "Equal-area disk quadrature of interpolated velocity; inspect valid fraction before interpretation"
+    },
+    "dell_fan_right": {
+      "net_m3_s": 0.002493033334345177,
+      "net_CFM": 5.2824384796776815,
+      "valid_sample_fraction": 1.0,
+      "method": "Equal-area disk quadrature of interpolated velocity; inspect valid fraction before interpretation"
+    },
+    "noctua_fan_left": {
+      "net_m3_s": 0.013448410898089442,
+      "net_CFM": 28.495568927979825,
+      "valid_sample_fraction": 0.9869791666666666,
+      "method": "Equal-area disk quadrature of interpolated velocity; inspect valid fraction before interpretation"
+    },
+    "noctua_fan_right": {
+      "net_m3_s": 0.013539379731574102,
+      "net_CFM": 28.688320970173024,
+      "valid_sample_fraction": 0.9869791666666666,
+      "method": "Equal-area disk quadrature of interpolated velocity; inspect valid fraction before interpretation"
+    },
+    "intake_left": {
+      "net_m3_s": 0.001661215255476536,
+      "net_CFM": 3.5199157859883834,
+      "valid_sample_fraction": 1.0,
+      "method": "Rectangle quadrature at y=40.5mm, positive into laptop"
+    },
+    "intake_right": {
+      "net_m3_s": 0.0016734669169500332,
+      "net_CFM": 3.545875586491647,
+      "valid_sample_fraction": 1.0,
+      "method": "Rectangle quadrature at y=40.5mm, positive into laptop"
+    }
+  }
+}

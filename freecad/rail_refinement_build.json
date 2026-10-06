@@ -1,0 +1,19 @@
+{
+  "frozen_arms_difference": {
+    "02_right_cradle": 0.0,
+    "01_left_cradle": 0.0
+  },
+  "rail_parts": {
+    "08_right_outlet_rail": {
+      "valid": true,
+      "solids": 1,
+      "volume": 74459.68413742293
+    },
+    "07_left_outlet_rail": {
+      "valid": true,
+      "solids": 1,
+      "volume": 74459.68413742293
+    }
+  },
+  "new_sketches_fully_constrained": true
+}

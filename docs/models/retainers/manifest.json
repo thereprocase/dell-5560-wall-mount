@@ -1,0 +1,30 @@
+{
+  "revision": "H-R1 prototype",
+  "native_sha256": "c18dd31d5447042b5cd1252cb648c024785d85229add152d20199a06cdf4c4a8",
+  "parts": [
+    {
+      "id": "15_left_side_retainer",
+      "file": "15_left_side_retainer.stl",
+      "side": "left",
+      "type": "bar"
+    },
+    {
+      "id": "16_right_side_retainer",
+      "file": "16_right_side_retainer.stl",
+      "side": "right",
+      "type": "bar"
+    },
+    {
+      "id": "17_left_retainer_keeper",
+      "file": "17_left_retainer_keeper.stl",
+      "side": "left",
+      "type": "keeper"
+    },
+    {
+      "id": "18_right_retainer_keeper",
+      "file": "18_right_retainer_keeper.stl",
+      "side": "right",
+      "type": "keeper"
+    }
+  ]
+}

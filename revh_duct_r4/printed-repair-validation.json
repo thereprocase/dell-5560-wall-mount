@@ -1,0 +1,597 @@
+{
+  "diameter_mm": 4.1,
+  "maximum_tip_depth_from_socket_face_mm": 6.0,
+  "original_blind_depth_mm": 7.7,
+  "physical_result": null,
+  "cases": [
+    {
+      "drill_point_angle_degrees": 90,
+      "full_diameter_depth_mm": 3.9499999999999997,
+      "tip_to_blind_bottom_mm": 1.7,
+      "removed_outside_original_bores_mm3": 0.0,
+      "pins": {
+        "11_left_push_pin": [
+          {
+            "outward_mm": 0,
+            "crown_contact_mm3": 0.054927911880143176,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 0.2,
+            "crown_contact_mm3": 0.05466671815932724,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 0.5,
+            "crown_contact_mm3": 0.05466671815924501,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 1,
+            "crown_contact_mm3": 0.054666718159173754,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 2,
+            "crown_contact_mm3": 0.0,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 3,
+            "crown_contact_mm3": 0.0,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 5,
+            "crown_contact_mm3": 0.0,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 8,
+            "crown_contact_mm3": 0.0,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 12,
+            "crown_contact_mm3": 0.0,
+            "outside_crown_mm3": 0.0
+          }
+        ],
+        "12_right_push_pin": [
+          {
+            "outward_mm": 0,
+            "crown_contact_mm3": 0.05482604808651202,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 0.2,
+            "crown_contact_mm3": 0.054826048095815684,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 0.5,
+            "crown_contact_mm3": 0.054826048089165816,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 1,
+            "crown_contact_mm3": 0.05482604807316225,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 2,
+            "crown_contact_mm3": 0.0,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 3,
+            "crown_contact_mm3": 0.0,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 5,
+            "crown_contact_mm3": 0.0,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 8,
+            "crown_contact_mm3": 0.0,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 12,
+            "crown_contact_mm3": 0.0,
+            "outside_crown_mm3": 0.0
+          }
+        ],
+        "13_left_push_pin": [
+          {
+            "outward_mm": 0,
+            "crown_contact_mm3": 0.05492791188026455,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 0.2,
+            "crown_contact_mm3": 0.05466671815912428,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 0.5,
+            "crown_contact_mm3": 0.054666718159220265,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 1,
+            "crown_contact_mm3": 0.05466671815872827,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 2,
+            "crown_contact_mm3": 0.0,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 3,
+            "crown_contact_mm3": 0.0,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 5,
+            "crown_contact_mm3": 0.0,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 8,
+            "crown_contact_mm3": 0.0,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 12,
+            "crown_contact_mm3": 0.0,
+            "outside_crown_mm3": 0.0
+          }
+        ],
+        "14_right_push_pin": [
+          {
+            "outward_mm": 0,
+            "crown_contact_mm3": 0.05482604808781687,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 0.2,
+            "crown_contact_mm3": 0.054826048087689226,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 0.5,
+            "crown_contact_mm3": 0.05482604808738847,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 1,
+            "crown_contact_mm3": 0.05482604808767786,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 2,
+            "crown_contact_mm3": 0.0,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 3,
+            "crown_contact_mm3": 0.0,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 5,
+            "crown_contact_mm3": 0.0,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 8,
+            "crown_contact_mm3": 0.0,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 12,
+            "crown_contact_mm3": 0.0,
+            "outside_crown_mm3": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "drill_point_angle_degrees": 118,
+      "full_diameter_depth_mm": 4.768235730993501,
+      "tip_to_blind_bottom_mm": 1.7,
+      "removed_outside_original_bores_mm3": 0.0,
+      "pins": {
+        "11_left_push_pin": [
+          {
+            "outward_mm": 0,
+            "crown_contact_mm3": 0.054666718158889904,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 0.2,
+            "crown_contact_mm3": 0.0546667181589206,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 0.5,
+            "crown_contact_mm3": 0.05466671815880235,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 1,
+            "crown_contact_mm3": 0.05466671815928704,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 2,
+            "crown_contact_mm3": 0.0,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 3,
+            "crown_contact_mm3": 0.0,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 5,
+            "crown_contact_mm3": 0.0,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 8,
+            "crown_contact_mm3": 0.0,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 12,
+            "crown_contact_mm3": 0.0,
+            "outside_crown_mm3": 0.0
+          }
+        ],
+        "12_right_push_pin": [
+          {
+            "outward_mm": 0,
+            "crown_contact_mm3": 0.05482604808653545,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 0.2,
+            "crown_contact_mm3": 0.05482604809583234,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 0.5,
+            "crown_contact_mm3": 0.054826048089161375,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 1,
+            "crown_contact_mm3": 0.05482604807316336,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 2,
+            "crown_contact_mm3": 0.0,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 3,
+            "crown_contact_mm3": 0.0,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 5,
+            "crown_contact_mm3": 0.0,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 8,
+            "crown_contact_mm3": 0.0,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 12,
+            "crown_contact_mm3": 0.0,
+            "outside_crown_mm3": 0.0
+          }
+        ],
+        "13_left_push_pin": [
+          {
+            "outward_mm": 0,
+            "crown_contact_mm3": 0.054666718158509715,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 0.2,
+            "crown_contact_mm3": 0.05466671815893603,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 0.5,
+            "crown_contact_mm3": 0.05466671815941056,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 1,
+            "crown_contact_mm3": 0.054666718158904344,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 2,
+            "crown_contact_mm3": 0.0,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 3,
+            "crown_contact_mm3": 0.0,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 5,
+            "crown_contact_mm3": 0.0,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 8,
+            "crown_contact_mm3": 0.0,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 12,
+            "crown_contact_mm3": 0.0,
+            "outside_crown_mm3": 0.0
+          }
+        ],
+        "14_right_push_pin": [
+          {
+            "outward_mm": 0,
+            "crown_contact_mm3": 0.05482604808782042,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 0.2,
+            "crown_contact_mm3": 0.054826048087689115,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 0.5,
+            "crown_contact_mm3": 0.0548260480873878,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 1,
+            "crown_contact_mm3": 0.05482604808767753,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 2,
+            "crown_contact_mm3": 0.0,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 3,
+            "crown_contact_mm3": 0.0,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 5,
+            "crown_contact_mm3": 0.0,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 8,
+            "crown_contact_mm3": 0.0,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 12,
+            "crown_contact_mm3": 0.0,
+            "outside_crown_mm3": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "drill_point_angle_degrees": 135,
+      "full_diameter_depth_mm": 5.150862197135155,
+      "tip_to_blind_bottom_mm": 1.7,
+      "removed_outside_original_bores_mm3": 0.0,
+      "pins": {
+        "11_left_push_pin": [
+          {
+            "outward_mm": 0,
+            "crown_contact_mm3": 0.054666718159017,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 0.2,
+            "crown_contact_mm3": 0.054666718158917285,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 0.5,
+            "crown_contact_mm3": 0.05466671815878151,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 1,
+            "crown_contact_mm3": 0.05466671815926195,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 2,
+            "crown_contact_mm3": 0.0,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 3,
+            "crown_contact_mm3": 0.0,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 5,
+            "crown_contact_mm3": 0.0,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 8,
+            "crown_contact_mm3": 0.0,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 12,
+            "crown_contact_mm3": 0.0,
+            "outside_crown_mm3": 0.0
+          }
+        ],
+        "12_right_push_pin": [
+          {
+            "outward_mm": 0,
+            "crown_contact_mm3": 0.05482604808653545,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 0.2,
+            "crown_contact_mm3": 0.05482604809583234,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 0.5,
+            "crown_contact_mm3": 0.054826048089161375,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 1,
+            "crown_contact_mm3": 0.05482604807316336,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 2,
+            "crown_contact_mm3": 0.0,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 3,
+            "crown_contact_mm3": 0.0,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 5,
+            "crown_contact_mm3": 0.0,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 8,
+            "crown_contact_mm3": 0.0,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 12,
+            "crown_contact_mm3": 0.0,
+            "outside_crown_mm3": 0.0
+          }
+        ],
+        "13_left_push_pin": [
+          {
+            "outward_mm": 0,
+            "crown_contact_mm3": 0.05466671815881522,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 0.2,
+            "crown_contact_mm3": 0.05466671815886132,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 0.5,
+            "crown_contact_mm3": 0.05466671815840172,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 1,
+            "crown_contact_mm3": 0.054666718159375495,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 2,
+            "crown_contact_mm3": 0.0,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 3,
+            "crown_contact_mm3": 0.0,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 5,
+            "crown_contact_mm3": 0.0,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 8,
+            "crown_contact_mm3": 0.0,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 12,
+            "crown_contact_mm3": 0.0,
+            "outside_crown_mm3": 0.0
+          }
+        ],
+        "14_right_push_pin": [
+          {
+            "outward_mm": 0,
+            "crown_contact_mm3": 0.05482604808782042,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 0.2,
+            "crown_contact_mm3": 0.054826048087689115,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 0.5,
+            "crown_contact_mm3": 0.0548260480873878,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 1,
+            "crown_contact_mm3": 0.05482604808767753,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 2,
+            "crown_contact_mm3": 0.0,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 3,
+            "crown_contact_mm3": 0.0,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 5,
+            "crown_contact_mm3": 0.0,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 8,
+            "crown_contact_mm3": 0.0,
+            "outside_crown_mm3": 0.0
+          },
+          {
+            "outward_mm": 12,
+            "crown_contact_mm3": 0.0,
+            "outside_crown_mm3": 0.0
+          }
+        ]
+      }
+    }
+  ],
+  "passed": true
+}

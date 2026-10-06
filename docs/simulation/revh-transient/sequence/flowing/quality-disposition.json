@@ -1,0 +1,10 @@
+{
+  "case": "revh_flowing_12",
+  "disposition": "commissioning_only",
+  "validation_accepted": false,
+  "mesh": "revh_sequence_05, 3193565 cells",
+  "known_defects": "4 low-determinant cells, 71820 concave cells, poor wall-layer coverage",
+  "purpose": "Transient from a separately assessed steady-solver initialization; exploratory evidence.",
+  "guards": "Adaptive maxCo .5, maxDeltaT 25us, field extrema and flux histories, half-hour full checkpoints, wall-time stop.",
+  "interpretation": "Three visible cycles would be an observation, not established periodic statistics or hardware validation."
+}

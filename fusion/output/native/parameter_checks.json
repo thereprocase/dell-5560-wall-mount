@@ -1,0 +1,192 @@
+{
+  "nominal": {
+    "volumes_mm3": {
+      "duct RH": 137915.57480486337,
+      "cap RH": 24834.544404382996,
+      "cradle RH": 274207.0057672201,
+      "pin | reusable": 204.56030211132367,
+      "rail RH": 63831.94036891334,
+      "tray RH": 87444.07619047724
+    },
+    "issues": [],
+    "sketch_count": 111
+  },
+  "checks": [
+    {
+      "parameter": "outletGap",
+      "test_expression": "8 mm",
+      "volumes_mm3": {
+        "duct RH": 137915.57480486267,
+        "cap RH": 24834.544404382996,
+        "cradle RH": 274207.0057672201,
+        "pin | reusable": 204.56030211132367,
+        "rail RH": 65486.31118530095,
+        "tray RH": 87444.07619047706
+      },
+      "issues": [],
+      "sketch_count": 111,
+      "changed_components": [
+        "rail RH"
+      ],
+      "passed": true
+    },
+    {
+      "parameter": "outletGap",
+      "test_expression": "16 mm",
+      "volumes_mm3": {
+        "duct RH": 137915.57480486267,
+        "cap RH": 24834.544404382996,
+        "cradle RH": 274207.0057672201,
+        "pin | reusable": 204.56030211132367,
+        "rail RH": 62143.56720813892,
+        "tray RH": 87444.07619047706
+      },
+      "issues": [],
+      "sketch_count": 111,
+      "changed_components": [
+        "rail RH"
+      ],
+      "passed": true
+    },
+    {
+      "parameter": "pinHeadRadius",
+      "test_expression": "4.5 mm",
+      "volumes_mm3": {
+        "duct RH": 137915.57480486267,
+        "cap RH": 24834.544404382996,
+        "cradle RH": 274207.0057672201,
+        "pin | reusable": 230.69835298918952,
+        "rail RH": 63831.94036891334,
+        "tray RH": 87444.07619047706
+      },
+      "issues": [],
+      "sketch_count": 111,
+      "changed_components": [
+        "pin | reusable"
+      ],
+      "passed": true
+    },
+    {
+      "parameter": "pinSplitWidth",
+      "test_expression": "1.2 mm",
+      "volumes_mm3": {
+        "duct RH": 137915.57480486267,
+        "cap RH": 24834.544404382996,
+        "cradle RH": 274207.0057672201,
+        "pin | reusable": 196.99540062234828,
+        "rail RH": 63831.94036891334,
+        "tray RH": 87444.07619047724
+      },
+      "issues": [],
+      "sketch_count": 111,
+      "changed_components": [
+        "pin | reusable"
+      ],
+      "passed": true
+    },
+    {
+      "parameter": "pinSplitRoot",
+      "test_expression": "4.5 mm",
+      "volumes_mm3": {
+        "duct RH": 137915.57480486267,
+        "cap RH": 24834.544404382996,
+        "cradle RH": 274207.0057672201,
+        "pin | reusable": 206.5392689684438,
+        "rail RH": 63831.94036891334,
+        "tray RH": 87444.07619047724
+      },
+      "issues": [],
+      "sketch_count": 111,
+      "changed_components": [
+        "pin | reusable"
+      ],
+      "passed": true
+    },
+    {
+      "parameter": "keyClearance",
+      "test_expression": "0.35 mm",
+      "volumes_mm3": {
+        "duct RH": 137915.57480486267,
+        "cap RH": 24834.544404382996,
+        "cradle RH": 273998.6997676338,
+        "pin | reusable": 204.5603021113236,
+        "rail RH": 63831.94036891334,
+        "tray RH": 87444.07619047706
+      },
+      "issues": [],
+      "sketch_count": 111,
+      "changed_components": [
+        "cradle RH"
+      ],
+      "passed": true
+    },
+    {
+      "parameter": "TRAY_tray_height",
+      "test_expression": "38 mm",
+      "volumes_mm3": {
+        "duct RH": 137915.57480486267,
+        "cap RH": 24834.544404382996,
+        "cradle RH": 274207.0057672201,
+        "pin | reusable": 204.5603021113236,
+        "rail RH": 63831.94036891334,
+        "tray RH": 91872.07619047693
+      },
+      "issues": [],
+      "sketch_count": 111,
+      "changed_components": [
+        "tray RH"
+      ],
+      "passed": true
+    },
+    {
+      "parameter": "ductSkin",
+      "test_expression": "2.2 mm",
+      "volumes_mm3": {
+        "duct RH": 145654.07618891867,
+        "cap RH": 24834.544404382996,
+        "cradle RH": 274207.0057672201,
+        "pin | reusable": 204.5603021113236,
+        "rail RH": 63831.94036891334,
+        "tray RH": 87444.07619047709
+      },
+      "issues": [],
+      "sketch_count": 111,
+      "changed_components": [
+        "duct RH"
+      ],
+      "passed": true
+    },
+    {
+      "parameter": "CRADLE_tine_height",
+      "test_expression": "96 mm",
+      "volumes_mm3": {
+        "duct RH": 137915.57480480056,
+        "cap RH": 24834.544404382996,
+        "cradle RH": 274841.1443562205,
+        "pin | reusable": 204.5603021113236,
+        "rail RH": 63831.94036891334,
+        "tray RH": 87444.07619047692
+      },
+      "issues": [],
+      "sketch_count": 111,
+      "changed_components": [
+        "cradle RH"
+      ],
+      "passed": true
+    }
+  ],
+  "restored": {
+    "volumes_mm3": {
+      "duct RH": 137915.57480480056,
+      "cap RH": 24834.544404382996,
+      "cradle RH": 274207.0057672201,
+      "pin | reusable": 204.5603021113236,
+      "rail RH": 63831.94036891334,
+      "tray RH": 87444.07619047692
+    },
+    "issues": [],
+    "sketch_count": 111
+  },
+  "max_restore_volume_error_mm3": 6.280606612563133e-08,
+  "passed": true
+}

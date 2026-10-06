@@ -1,0 +1,147 @@
+{
+  "stage": "rail",
+  "volume_mm3": 63831.94036891334,
+  "sketches": [
+    {
+      "name": "Lower air panel | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Inclined outlet skin | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Diagonal joint arm | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Outer air cheek | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Laptop-side retaining lip | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Upper wall-side link | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Outlet end reinforcement | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Rail tenons 1 | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Rail tenons 2 | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Upper wall-driver clearance bore | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Upper wall-driver clearance roof | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Lower cheek clearance tool | profile",
+      "fully_constrained": true
+    }
+  ],
+  "features": [
+    {
+      "name": "Lower air panel | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Inclined outlet skin | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Join panel and continuous skin",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Diagonal joint arm | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Outer air cheek | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Laptop-side retaining lip | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Upper wall-side link | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Outlet end reinforcement | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Join cheek lip arm link and rib",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Rail tenons 1 | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Rail tenons 2 | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Join sloped rail tenons",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Upper wall-driver clearance bore | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Upper wall-driver clearance roof | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Upper wall-driver clearance | printable bore",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Cut printable driver passage",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Lower cheek clearance tool | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Open lower cheek for cradle joint",
+      "health": 0,
+      "message": ""
+    }
+  ],
+  "bodies": 1
+}

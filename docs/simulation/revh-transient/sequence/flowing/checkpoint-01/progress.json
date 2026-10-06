@@ -1,0 +1,1104 @@
+{
+  "created_utc": "2026-09-08T18:29:09.438833+00:00",
+  "hour_checkpoint": 0,
+  "scope": "Exploratory transient from a flowing steady-solver iterate; initial adjustment remains; not validated shedding or suction.",
+  "initialization_kind": "steady_solver",
+  "transient_initialization": {
+    "steady_case": "revh_steady_09",
+    "steady_iteration": 400,
+    "source_assessment": {
+      "case": "revh_steady_09",
+      "state": "complete",
+      "started_utc": "2026-09-08T17:03:43.194635+00:00",
+      "budget_seconds": 3600,
+      "converged": false,
+      "completed_iterations": 403,
+      "mpi_pid": 2701037,
+      "updated_utc": "2026-09-08T18:04:11.268664+00:00",
+      "elapsed_seconds": 3628.02,
+      "latest_iteration": 403,
+      "bounding_events": 188,
+      "worker_pids": [],
+      "last_50_max_initial_residuals": {
+        "p": 0.000686934392,
+        "Ux": 0.007219358212,
+        "Uy": 0.003117058029,
+        "Uz": 0.001837976159,
+        "k": 0.002238046957,
+        "omega": 0.000131432862
+      },
+      "probe_window_relative_range": {
+        "p": 0.13843956657400688,
+        "U": 0.22156914098913746
+      },
+      "last_50_max_flux_ratio": 2.108140919045562e-05,
+      "latest_max_speed_m_s": 5.675921868,
+      "stop_reason": "Steady preparation wall budget reached",
+      "exit_code": 0,
+      "finished_utc": "2026-09-08T18:04:11.272093+00:00"
+    },
+    "physical_start_time_s": 0,
+    "old_time_fields_copied": false,
+    "source_field_sha256": {
+      "U": "00aa3917c80e20e60d9052f8772bac9d02c2e0e2dfdeb05be916ac6fd9bc975a",
+      "p": "02a6290b7ea84cac04f6c3ad50bac5609e0a75dcdfc4a56f53a85d5c51820169",
+      "phi": "1cbb3ed18a1b7882e3926dd71bbabe9d6857dfe42abbe9e1e4a946f0186dc711",
+      "k": "92004fa42710e0c2cd58779e4f2546a60722a92ea0d4a1c76dbe894f361f4413",
+      "omega": "43f12d60e28b0b13d2e1cddf8e245eec26689d8aeb331b598f1db9afaf8fbd59",
+      "nut": "fc80c2fd937ae99b5f74f88f59bef16bf257d5ec6420121e32cf2f9536ad6620",
+      "processor0/U": "af08e299f587d3714a7ce3aa97aaaef46ee784f9e25e06073f677cdf19cbdc46",
+      "processor0/p": "bd35661879f9b9914d4c087905c5bc08004a54cc31e284c23b8d569c69749c98",
+      "processor0/phi": "8c2f65bbf52d467b28666f3a87b1b3eaeca6db059ae888e09606117103defcf2",
+      "processor0/k": "e6e6cd269e11fd334c35bf8a8a10fd94d593202adfa9dc9eabd5cac6b66a377e",
+      "processor0/omega": "cd0068b5ea1027e42eb2b1f731cfacc8e1ce4121b24abb63f0e05e10fc107a58",
+      "processor0/nut": "d38fb1ac6c310012c4b712cbd8dc57d0f8f995d4a9013abeb211c01a251bccff",
+      "processor1/U": "4888428ebccb29231dbd6fa66809d799ea48819c5edb18a84367cce1b44ce585",
+      "processor1/p": "c4a2222c5fdc05b71fc5763c1edd04968aa46456b3991ab4263fea4ac085e3d5",
+      "processor1/phi": "83dcf459907a163964a5b1d9f0236ce426a9676f460d6c104a2092451e42cbf8",
+      "processor1/k": "b3fd72501b7db34e545e0f2e0034cfe7817ff733c0164de4254505fc1a8f7ac7",
+      "processor1/omega": "deaecf507455f5900a18141884a3094b20176dec10b48194ce984e8f05d6d44a",
+      "processor1/nut": "745932776abf39a24525682636d2b591a72bfc8b1d683a22031236e3e3f3eebf",
+      "processor2/U": "1454e46b375c8ca681c74851c0f4eb79e2fa7b0f1210a02a9037214006537e0c",
+      "processor2/p": "a4da89fba46ea4bf0769630fc45eef1f9df818ee40d580c9c251b1772c9c5bbd",
+      "processor2/phi": "e31666b08b61c5fe9948d11565c0b774e57432400e901c6f6c9551c8b40d316f",
+      "processor2/k": "eea07364d4699a2eca0379a7a37af88488ced5804b2ee3437da7db44d7b85f84",
+      "processor2/omega": "ac67059464da9b5e3406bf0a0a188080cbf49e2869a5738e83cd3945008aea07",
+      "processor2/nut": "535bc42146236a23f2d72abfd919805f727ef454f68cce4b8c664fe8e9904362",
+      "processor3/U": "a68cd72cbfd82a16092260e3f8c6169a3bde9f4fb48efb354f2709e301b6a7d1",
+      "processor3/p": "f8b49fa3f1e54cf09b4e9dca96f9693cbb40d1cc8607e586e53ffb9dd40ef9d5",
+      "processor3/phi": "c0ee77bb3272c7ba057e9ac6f030f86253cd3db940abf70c5a7b7d5d207f37a0",
+      "processor3/k": "5b62882dd038aa4169beb6f7f3b6c5cb85e0e7dc1672e23d2a23280a2d6c2de2",
+      "processor3/omega": "57169b78b321c3fb40dc4654780b69197117148fa950f803e552898f5063eccb",
+      "processor3/nut": "9f0d50dc325c023f7dae7e608f11a2df77e577ec137342ea945f35566b8c655b"
+    },
+    "method": "Same mesh and forcing; reset physical clock; native backward-scheme initial Euler fallback. No quiescent fan startup is replayed."
+  },
+  "case": "revh_flowing_12",
+  "compute_elapsed_seconds_at_snapshot": 1204.1,
+  "solver_state_at_snapshot": "running",
+  "completed_steps_at_snapshot": 58,
+  "source_sample_count_available": 30,
+  "source_frames": 30,
+  "physical_times_s": [
+    0.0,
+    3.021280672e-05,
+    6.498408032e-05,
+    9.971116817e-05,
+    0.000134418889,
+    0.0001691130021,
+    0.000203792362,
+    0.0002384554205,
+    0.0002731025371,
+    0.0003077361327,
+    0.0003423595694,
+    0.0003769763083,
+    0.0004115892761,
+    0.0004462012165,
+    0.0004808144664,
+    0.0005154307046,
+    0.0005500511544,
+    0.0005846765113,
+    0.0006193069512,
+    0.0006539321231,
+    0.0006885277376,
+    0.0007230943975,
+    0.0007576328948,
+    0.0007921442381,
+    0.0008266296009,
+    0.0008610902814,
+    0.0008955276611,
+    0.0009299431599,
+    0.0009643381412,
+    0.000998713892
+  ],
+  "first_time_s": 0.0,
+  "last_time_s": 0.000998713892,
+  "physical_duration_s": 0.000998713892,
+  "encoded_frames": 48,
+  "fps": 30,
+  "video_duration_s": 1.6,
+  "playback_slowdown": 1103.2848964431905,
+  "timing": "Recorded intervals uniformly slowed, rounded to 30 fps; half-second final hold. No interpolation between CFD states.",
+  "source_frame_start_s": [
+    0.0,
+    0.03333333333333333,
+    0.06666666666666667,
+    0.1,
+    0.13333333333333333,
+    0.2,
+    0.23333333333333334,
+    0.26666666666666666,
+    0.3,
+    0.3333333333333333,
+    0.36666666666666664,
+    0.4,
+    0.4666666666666667,
+    0.5,
+    0.5333333333333333,
+    0.5666666666666667,
+    0.6,
+    0.6333333333333333,
+    0.6666666666666666,
+    0.7333333333333333,
+    0.7666666666666667,
+    0.8,
+    0.8333333333333334,
+    0.8666666666666667,
+    0.9,
+    0.9666666666666667,
+    1.0,
+    1.0333333333333334,
+    1.0666666666666667,
+    1.1
+  ],
+  "source_frame_duration_s": [
+    0.03333333333333333,
+    0.03333333333333333,
+    0.03333333333333333,
+    0.03333333333333333,
+    0.06666666666666667,
+    0.03333333333333333,
+    0.03333333333333333,
+    0.03333333333333333,
+    0.03333333333333333,
+    0.03333333333333333,
+    0.03333333333333333,
+    0.06666666666666667,
+    0.03333333333333333,
+    0.03333333333333333,
+    0.03333333333333333,
+    0.03333333333333333,
+    0.03333333333333333,
+    0.03333333333333333,
+    0.06666666666666667,
+    0.03333333333333333,
+    0.03333333333333333,
+    0.03333333333333333,
+    0.03333333333333333,
+    0.03333333333333333,
+    0.06666666666666667,
+    0.03333333333333333,
+    0.03333333333333333,
+    0.03333333333333333,
+    0.03333333333333333,
+    0.5
+  ],
+  "fixed_scales": {
+    "pressure_front_Pa": 12,
+    "pressure_hinge_Pa": 12,
+    "vorticity_per_s": 2000,
+    "speed_m_s": 6,
+    "size_px": [
+      1800,
+      1100
+    ],
+    "style_version": 3,
+    "phase": "TRANSIENT FROM FLOWING FIELD"
+  },
+  "sampled_ranges_for_newly_rendered_frames": [
+    {
+      "time_s": 3.021280672e-05,
+      "region": "Front lip / duct outlet",
+      "pressure_Pa": [
+        -1.3503731489181519,
+        7.71240758895874
+      ],
+      "speed_m_s": [
+        0.0,
+        3.792006492614746
+      ],
+      "vorticity_x_per_s": [
+        -10542.0087890625,
+        24395.935546875
+      ]
+    },
+    {
+      "time_s": 3.021280672e-05,
+      "region": "Hinge lip / discharge",
+      "pressure_Pa": [
+        -10.625207901000977,
+        7.378328323364258
+      ],
+      "speed_m_s": [
+        0.0,
+        5.226512908935547
+      ],
+      "vorticity_x_per_s": [
+        -26588.568359375,
+        4818.89501953125
+      ]
+    },
+    {
+      "time_s": 9.971116817e-05,
+      "region": "Front lip / duct outlet",
+      "pressure_Pa": [
+        -1.44517982006073,
+        7.515660285949707
+      ],
+      "speed_m_s": [
+        0.0,
+        3.803497552871704
+      ],
+      "vorticity_x_per_s": [
+        -10517.5322265625,
+        24191.55859375
+      ]
+    },
+    {
+      "time_s": 9.971116817e-05,
+      "region": "Hinge lip / discharge",
+      "pressure_Pa": [
+        -7.6005682945251465,
+        7.129580020904541
+      ],
+      "speed_m_s": [
+        0.0,
+        5.227501392364502
+      ],
+      "vorticity_x_per_s": [
+        -26738.62890625,
+        4853.0869140625
+      ]
+    },
+    {
+      "time_s": 0.0001691130021,
+      "region": "Front lip / duct outlet",
+      "pressure_Pa": [
+        -1.549554705619812,
+        7.4719696044921875
+      ],
+      "speed_m_s": [
+        0.0,
+        3.8135383129119873
+      ],
+      "vorticity_x_per_s": [
+        -10497.1357421875,
+        24060.583984375
+      ]
+    },
+    {
+      "time_s": 0.0001691130021,
+      "region": "Hinge lip / discharge",
+      "pressure_Pa": [
+        -7.424201965332031,
+        6.911623477935791
+      ],
+      "speed_m_s": [
+        0.0,
+        5.22857666015625
+      ],
+      "vorticity_x_per_s": [
+        -26717.46484375,
+        4868.77734375
+      ]
+    },
+    {
+      "time_s": 0.000203792362,
+      "region": "Front lip / duct outlet",
+      "pressure_Pa": [
+        -1.5878351926803589,
+        7.463441371917725
+      ],
+      "speed_m_s": [
+        0.0,
+        3.8181960582733154
+      ],
+      "vorticity_x_per_s": [
+        -10489.0205078125,
+        24011.00390625
+      ]
+    },
+    {
+      "time_s": 0.000203792362,
+      "region": "Hinge lip / discharge",
+      "pressure_Pa": [
+        -7.355823993682861,
+        6.867062568664551
+      ],
+      "speed_m_s": [
+        0.0,
+        5.229149341583252
+      ],
+      "vorticity_x_per_s": [
+        -26699.81640625,
+        4873.84375
+      ]
+    },
+    {
+      "time_s": 0.0002384554205,
+      "region": "Front lip / duct outlet",
+      "pressure_Pa": [
+        -1.620671033859253,
+        7.455610752105713
+      ],
+      "speed_m_s": [
+        0.0,
+        3.8226423263549805
+      ],
+      "vorticity_x_per_s": [
+        -10481.3994140625,
+        23968.423828125
+      ]
+    },
+    {
+      "time_s": 0.0002384554205,
+      "region": "Hinge lip / discharge",
+      "pressure_Pa": [
+        -7.3061299324035645,
+        6.838278293609619
+      ],
+      "speed_m_s": [
+        0.0,
+        5.229747295379639
+      ],
+      "vorticity_x_per_s": [
+        -26684.94140625,
+        4877.66796875
+      ]
+    },
+    {
+      "time_s": 0.0002731025371,
+      "region": "Front lip / duct outlet",
+      "pressure_Pa": [
+        -1.6461308002471924,
+        7.44805383682251
+      ],
+      "speed_m_s": [
+        0.0,
+        3.8268814086914062
+      ],
+      "vorticity_x_per_s": [
+        -10473.9287109375,
+        23931.259765625
+      ]
+    },
+    {
+      "time_s": 0.0002731025371,
+      "region": "Hinge lip / discharge",
+      "pressure_Pa": [
+        -7.267366409301758,
+        6.819902420043945
+      ],
+      "speed_m_s": [
+        0.0,
+        5.230365753173828
+      ],
+      "vorticity_x_per_s": [
+        -26674.0625,
+        4880.5419921875
+      ]
+    },
+    {
+      "time_s": 0.0003077361327,
+      "region": "Front lip / duct outlet",
+      "pressure_Pa": [
+        -1.665850043296814,
+        7.440202236175537
+      ],
+      "speed_m_s": [
+        0.0,
+        3.8309099674224854
+      ],
+      "vorticity_x_per_s": [
+        -10466.4501953125,
+        23898.45703125
+      ]
+    },
+    {
+      "time_s": 0.0003077361327,
+      "region": "Hinge lip / discharge",
+      "pressure_Pa": [
+        -7.237659931182861,
+        6.8069167137146
+      ],
+      "speed_m_s": [
+        0.0,
+        5.2309980392456055
+      ],
+      "vorticity_x_per_s": [
+        -26667.935546875,
+        4882.67333984375
+      ]
+    },
+    {
+      "time_s": 0.0003423595694,
+      "region": "Front lip / duct outlet",
+      "pressure_Pa": [
+        -1.6974890232086182,
+        7.433072566986084
+      ],
+      "speed_m_s": [
+        0.0,
+        3.834764003753662
+      ],
+      "vorticity_x_per_s": [
+        -10458.904296875,
+        23869.19921875
+      ]
+    },
+    {
+      "time_s": 0.0003423595694,
+      "region": "Hinge lip / discharge",
+      "pressure_Pa": [
+        -7.212884426116943,
+        6.798376083374023
+      ],
+      "speed_m_s": [
+        0.0,
+        5.231639862060547
+      ],
+      "vorticity_x_per_s": [
+        -26666.36328125,
+        4884.2119140625
+      ]
+    },
+    {
+      "time_s": 0.0003769763083,
+      "region": "Front lip / duct outlet",
+      "pressure_Pa": [
+        -1.7343816757202148,
+        7.4263505935668945
+      ],
+      "speed_m_s": [
+        0.0,
+        3.8384859561920166
+      ],
+      "vorticity_x_per_s": [
+        -10451.28515625,
+        23842.841796875
+      ]
+    },
+    {
+      "time_s": 0.0003769763083,
+      "region": "Hinge lip / discharge",
+      "pressure_Pa": [
+        -7.190426349639893,
+        6.793370723724365
+      ],
+      "speed_m_s": [
+        0.0,
+        5.232282638549805
+      ],
+      "vorticity_x_per_s": [
+        -26668.6640625,
+        4885.271484375
+      ]
+    },
+    {
+      "time_s": 0.0004115892761,
+      "region": "Front lip / duct outlet",
+      "pressure_Pa": [
+        -1.7657936811447144,
+        7.419434547424316
+      ],
+      "speed_m_s": [
+        0.0,
+        3.842104911804199
+      ],
+      "vorticity_x_per_s": [
+        -10443.61328125,
+        23818.78515625
+      ]
+    },
+    {
+      "time_s": 0.0004115892761,
+      "region": "Hinge lip / discharge",
+      "pressure_Pa": [
+        -7.170917987823486,
+        6.789563179016113
+      ],
+      "speed_m_s": [
+        0.0,
+        5.232919216156006
+      ],
+      "vorticity_x_per_s": [
+        -26674.15625,
+        4885.93994140625
+      ]
+    },
+    {
+      "time_s": 0.0004462012165,
+      "region": "Front lip / duct outlet",
+      "pressure_Pa": [
+        -1.7877403497695923,
+        7.41293478012085
+      ],
+      "speed_m_s": [
+        0.0,
+        3.8456411361694336
+      ],
+      "vorticity_x_per_s": [
+        -10435.931640625,
+        23796.583984375
+      ]
+    },
+    {
+      "time_s": 0.0004462012165,
+      "region": "Hinge lip / discharge",
+      "pressure_Pa": [
+        -7.15228796005249,
+        6.7877116203308105
+      ],
+      "speed_m_s": [
+        0.0,
+        5.233545780181885
+      ],
+      "vorticity_x_per_s": [
+        -26682.23046875,
+        4886.28955078125
+      ]
+    },
+    {
+      "time_s": 0.0004808144664,
+      "region": "Front lip / duct outlet",
+      "pressure_Pa": [
+        -1.8029149770736694,
+        7.40608024597168
+      ],
+      "speed_m_s": [
+        0.0,
+        3.849095106124878
+      ],
+      "vorticity_x_per_s": [
+        -10428.2822265625,
+        23775.8359375
+      ]
+    },
+    {
+      "time_s": 0.0004808144664,
+      "region": "Hinge lip / discharge",
+      "pressure_Pa": [
+        -7.135351657867432,
+        6.786139011383057
+      ],
+      "speed_m_s": [
+        0.0,
+        5.234154224395752
+      ],
+      "vorticity_x_per_s": [
+        -26692.322265625,
+        4886.37646484375
+      ]
+    },
+    {
+      "time_s": 0.0005154307046,
+      "region": "Front lip / duct outlet",
+      "pressure_Pa": [
+        -1.8088884353637695,
+        7.401045322418213
+      ],
+      "speed_m_s": [
+        0.0,
+        3.852430820465088
+      ],
+      "vorticity_x_per_s": [
+        -10420.7060546875,
+        23756.232421875
+      ]
+    },
+    {
+      "time_s": 0.0005154307046,
+      "region": "Hinge lip / discharge",
+      "pressure_Pa": [
+        -7.119900226593018,
+        6.785156726837158
+      ],
+      "speed_m_s": [
+        0.0,
+        5.234739303588867
+      ],
+      "vorticity_x_per_s": [
+        -26703.955078125,
+        4886.25048828125
+      ]
+    },
+    {
+      "time_s": 0.0005500511544,
+      "region": "Front lip / duct outlet",
+      "pressure_Pa": [
+        -1.8326772451400757,
+        7.3965301513671875
+      ],
+      "speed_m_s": [
+        0.0,
+        3.855647325515747
+      ],
+      "vorticity_x_per_s": [
+        -10413.236328125,
+        23737.52734375
+      ]
+    },
+    {
+      "time_s": 0.0005500511544,
+      "region": "Hinge lip / discharge",
+      "pressure_Pa": [
+        -7.105329990386963,
+        6.784492015838623
+      ],
+      "speed_m_s": [
+        0.0,
+        5.235294818878174
+      ],
+      "vorticity_x_per_s": [
+        -26716.736328125,
+        4885.951171875
+      ]
+    },
+    {
+      "time_s": 0.0005846765113,
+      "region": "Front lip / duct outlet",
+      "pressure_Pa": [
+        -1.869707465171814,
+        7.392186641693115
+      ],
+      "speed_m_s": [
+        0.0,
+        3.8587229251861572
+      ],
+      "vorticity_x_per_s": [
+        -10405.884765625,
+        23719.51953125
+      ]
+    },
+    {
+      "time_s": 0.0005846765113,
+      "region": "Hinge lip / discharge",
+      "pressure_Pa": [
+        -7.091540813446045,
+        6.784052848815918
+      ],
+      "speed_m_s": [
+        0.0,
+        5.235811710357666
+      ],
+      "vorticity_x_per_s": [
+        -26730.33984375,
+        4885.51123046875
+      ]
+    },
+    {
+      "time_s": 0.0006193069512,
+      "region": "Front lip / duct outlet",
+      "pressure_Pa": [
+        -1.8982871770858765,
+        7.387574672698975
+      ],
+      "speed_m_s": [
+        0.0,
+        3.8616440296173096
+      ],
+      "vorticity_x_per_s": [
+        -10398.6630859375,
+        23702.05078125
+      ]
+    },
+    {
+      "time_s": 0.0006193069512,
+      "region": "Hinge lip / discharge",
+      "pressure_Pa": [
+        -7.078573226928711,
+        6.783956527709961
+      ],
+      "speed_m_s": [
+        0.0,
+        5.236286640167236
+      ],
+      "vorticity_x_per_s": [
+        -26744.51953125,
+        4884.958984375
+      ]
+    },
+    {
+      "time_s": 0.0006539321231,
+      "region": "Front lip / duct outlet",
+      "pressure_Pa": [
+        -1.9176924228668213,
+        7.383239269256592
+      ],
+      "speed_m_s": [
+        0.0,
+        3.864393472671509
+      ],
+      "vorticity_x_per_s": [
+        -10391.5712890625,
+        23685.009765625
+      ]
+    },
+    {
+      "time_s": 0.0006539321231,
+      "region": "Hinge lip / discharge",
+      "pressure_Pa": [
+        -7.068026542663574,
+        6.784290790557861
+      ],
+      "speed_m_s": [
+        0.0,
+        5.236714839935303
+      ],
+      "vorticity_x_per_s": [
+        -26759.201171875,
+        4884.32421875
+      ]
+    },
+    {
+      "time_s": 0.0006885277376,
+      "region": "Front lip / duct outlet",
+      "pressure_Pa": [
+        -1.931302547454834,
+        7.378825664520264
+      ],
+      "speed_m_s": [
+        0.0,
+        3.8669800758361816
+      ],
+      "vorticity_x_per_s": [
+        -10384.6064453125,
+        23668.326171875
+      ]
+    },
+    {
+      "time_s": 0.0006885277376,
+      "region": "Hinge lip / discharge",
+      "pressure_Pa": [
+        -7.060859203338623,
+        6.784626007080078
+      ],
+      "speed_m_s": [
+        0.0,
+        5.237095355987549
+      ],
+      "vorticity_x_per_s": [
+        -26774.556640625,
+        4883.64794921875
+      ]
+    },
+    {
+      "time_s": 0.0007230943975,
+      "region": "Front lip / duct outlet",
+      "pressure_Pa": [
+        -1.9357272386550903,
+        7.374150276184082
+      ],
+      "speed_m_s": [
+        0.0,
+        3.869410753250122
+      ],
+      "vorticity_x_per_s": [
+        -10377.755859375,
+        23651.908203125
+      ]
+    },
+    {
+      "time_s": 0.0007230943975,
+      "region": "Hinge lip / discharge",
+      "pressure_Pa": [
+        -7.054025650024414,
+        6.784797668457031
+      ],
+      "speed_m_s": [
+        0.0,
+        5.237421989440918
+      ],
+      "vorticity_x_per_s": [
+        -26790.3359375,
+        4882.95166015625
+      ]
+    },
+    {
+      "time_s": 0.0007576328948,
+      "region": "Front lip / duct outlet",
+      "pressure_Pa": [
+        -1.9588428735733032,
+        7.369535446166992
+      ],
+      "speed_m_s": [
+        0.0,
+        3.8716886043548584
+      ],
+      "vorticity_x_per_s": [
+        -10370.99609375,
+        23635.669921875
+      ]
+    },
+    {
+      "time_s": 0.0007576328948,
+      "region": "Hinge lip / discharge",
+      "pressure_Pa": [
+        -7.0470733642578125,
+        6.78519868850708
+      ],
+      "speed_m_s": [
+        0.0,
+        5.237687587738037
+      ],
+      "vorticity_x_per_s": [
+        -26806.271484375,
+        4882.24462890625
+      ]
+    },
+    {
+      "time_s": 0.0007921442381,
+      "region": "Front lip / duct outlet",
+      "pressure_Pa": [
+        -1.980353832244873,
+        7.366090297698975
+      ],
+      "speed_m_s": [
+        0.0,
+        3.8738327026367188
+      ],
+      "vorticity_x_per_s": [
+        -10364.318359375,
+        23619.5546875
+      ]
+    },
+    {
+      "time_s": 0.0007921442381,
+      "region": "Hinge lip / discharge",
+      "pressure_Pa": [
+        -7.04043436050415,
+        6.7855353355407715
+      ],
+      "speed_m_s": [
+        0.0,
+        5.237891674041748
+      ],
+      "vorticity_x_per_s": [
+        -26822.19921875,
+        4881.53369140625
+      ]
+    },
+    {
+      "time_s": 0.0008266296009,
+      "region": "Front lip / duct outlet",
+      "pressure_Pa": [
+        -1.9941502809524536,
+        7.36224365234375
+      ],
+      "speed_m_s": [
+        0.0,
+        3.875856399536133
+      ],
+      "vorticity_x_per_s": [
+        -10357.7021484375,
+        23603.48828125
+      ]
+    },
+    {
+      "time_s": 0.0008266296009,
+      "region": "Hinge lip / discharge",
+      "pressure_Pa": [
+        -7.034301280975342,
+        6.785787582397461
+      ],
+      "speed_m_s": [
+        0.0,
+        5.238031387329102
+      ],
+      "vorticity_x_per_s": [
+        -26838.0078125,
+        4880.82568359375
+      ]
+    },
+    {
+      "time_s": 0.0008610902814,
+      "region": "Front lip / duct outlet",
+      "pressure_Pa": [
+        -1.9983047246932983,
+        7.357348918914795
+      ],
+      "speed_m_s": [
+        0.0,
+        3.877762794494629
+      ],
+      "vorticity_x_per_s": [
+        -10351.1328125,
+        23587.423828125
+      ]
+    },
+    {
+      "time_s": 0.0008610902814,
+      "region": "Hinge lip / discharge",
+      "pressure_Pa": [
+        -7.028622627258301,
+        6.786196231842041
+      ],
+      "speed_m_s": [
+        0.0,
+        5.238105773925781
+      ],
+      "vorticity_x_per_s": [
+        -26853.611328125,
+        4880.12646484375
+      ]
+    },
+    {
+      "time_s": 0.0008955276611,
+      "region": "Front lip / duct outlet",
+      "pressure_Pa": [
+        -1.9989664554595947,
+        7.352978229522705
+      ],
+      "speed_m_s": [
+        0.0,
+        3.8795547485351562
+      ],
+      "vorticity_x_per_s": [
+        -10344.5927734375,
+        23571.3046875
+      ]
+    },
+    {
+      "time_s": 0.0008955276611,
+      "region": "Hinge lip / discharge",
+      "pressure_Pa": [
+        -7.0235371589660645,
+        6.786459445953369
+      ],
+      "speed_m_s": [
+        0.0,
+        5.23835563659668
+      ],
+      "vorticity_x_per_s": [
+        -26868.94140625,
+        4879.44091796875
+      ]
+    },
+    {
+      "time_s": 0.0009299431599,
+      "region": "Front lip / duct outlet",
+      "pressure_Pa": [
+        -2.002990961074829,
+        7.348246097564697
+      ],
+      "speed_m_s": [
+        0.0,
+        3.881235361099243
+      ],
+      "vorticity_x_per_s": [
+        -10338.072265625,
+        23555.09765625
+      ]
+    },
+    {
+      "time_s": 0.0009299431599,
+      "region": "Hinge lip / discharge",
+      "pressure_Pa": [
+        -7.019119739532471,
+        6.786393165588379
+      ],
+      "speed_m_s": [
+        0.0,
+        5.239010810852051
+      ],
+      "vorticity_x_per_s": [
+        -26883.94921875,
+        4878.77294921875
+      ]
+    },
+    {
+      "time_s": 0.0009643381412,
+      "region": "Front lip / duct outlet",
+      "pressure_Pa": [
+        -2.031071662902832,
+        7.343873500823975
+      ],
+      "speed_m_s": [
+        0.0,
+        3.8828186988830566
+      ],
+      "vorticity_x_per_s": [
+        -10331.560546875,
+        23538.724609375
+      ]
+    },
+    {
+      "time_s": 0.0009643381412,
+      "region": "Hinge lip / discharge",
+      "pressure_Pa": [
+        -7.014771461486816,
+        6.786560535430908
+      ],
+      "speed_m_s": [
+        0.0,
+        5.239578723907471
+      ],
+      "vorticity_x_per_s": [
+        -26898.595703125,
+        4878.1240234375
+      ]
+    },
+    {
+      "time_s": 0.000998713892,
+      "region": "Front lip / duct outlet",
+      "pressure_Pa": [
+        -2.0509417057037354,
+        7.339261054992676
+      ],
+      "speed_m_s": [
+        0.0,
+        3.8843185901641846
+      ],
+      "vorticity_x_per_s": [
+        -10325.0595703125,
+        23522.109375
+      ]
+    },
+    {
+      "time_s": 0.000998713892,
+      "region": "Hinge lip / discharge",
+      "pressure_Pa": [
+        -7.01097297668457,
+        6.786590576171875
+      ],
+      "speed_m_s": [
+        0.0,
+        5.24005651473999
+      ],
+      "vorticity_x_per_s": [
+        -26912.84765625,
+        4877.49609375
+      ]
+    }
+  ],
+  "source_sha256": {
+    "0.0": "2dec9925109f71bea1d5ef6966530b1c79ea1d18f12e58e8836ff5026e271ba4",
+    "3.021280672e-05": "9ebcef046ae94f7ac382f6ae15734855853461dd3c5929a964304be25d44c3c4",
+    "6.498408032e-05": "e3ad0cd6b0471950799bd0dea69413d0de7aca238930733387a0ff8ee126df05",
+    "9.971116817e-05": "ac9beffb458c230488357b47fcd007cf0a8bfaf22c237e5edabfaf8b7441a74a",
+    "0.000134418889": "a92e00871e59a5d3043dd1d35ca49b62395d5a6bcc3507636850b6f5ceefdd6f",
+    "0.0001691130021": "18db2a5a9be9d69f1242aefb051691de654c1be0a0a993d3e0f9dd5b100cddca",
+    "0.000203792362": "3fd1c98e8320176a7b175897e3ce850a99ad8748cc14b0d2463c0affcb5869f0",
+    "0.0002384554205": "d9311b2b6c58bb0e9aba91121fb420b3a8436168bd5c3c4d1ab1f64d20f75977",
+    "0.0002731025371": "c8b185c461bdad1c3bd90c2ff1f689743369c3cbed8e1d526233f1f470a5e6cf",
+    "0.0003077361327": "62d0c142cf0050c23573d6a6d05c0128c4c00f6cba6e4f994f003eccceb6ede5",
+    "0.0003423595694": "350b9a9f9c7cc7178c76e8c73c6e0c4c17f770a49acaa951eb6849789f902b25",
+    "0.0003769763083": "b2ce9f961c624761b7ea5973d8d8fc5e46e71d4bcadb93d554c5e867acfca2f4",
+    "0.0004115892761": "89afbf07f3524f07635e6665b1a80102676662deaf8505d7e933e357515c0416",
+    "0.0004462012165": "54c2504730e52a7ccbc611a4130b2f23e4c10951bea664953afb0c880f5f820b",
+    "0.0004808144664": "3fbb6e1e951cdbb3345bb37728a8c59570f4293e0ba1ec73461e9c617f97f169",
+    "0.0005154307046": "19666bd565db0bf472fe988b66b53fb793b4cf8a41c39459cd9ab66d252c8349",
+    "0.0005500511544": "5fc3e05142f2cd79bd9d45b87caf5705eeea6bc92f57e3ea6f89d62e1e4250b3",
+    "0.0005846765113": "d68e55fdb1fcaf78bfb9aab18e3b1fca0934104608a62ad3bda962a79002ab20",
+    "0.0006193069512": "4d0785e38f1750545f45b1144080e051c88ff1e4df806b41364ffeb6d7b67732",
+    "0.0006539321231": "b4fce750ac65ce5e3f4d4764344d2772c85f52bf5eb7e1690b3ab9ef9a503f8c",
+    "0.0006885277376": "de3054b90fe9bd6a64480645446ee1306db363e14705da27dc166e5f25e585db",
+    "0.0007230943975": "654e4792967bd8145ac89aa1d7596aca03c6a34bac7c40bb491299d7efaa0e33",
+    "0.0007576328948": "26e399591d2ddcba9800d2ff1e43cc7308ea925557823ab3f126f13679a6e878",
+    "0.0007921442381": "5ddf0049352f75b6ba491ae5b878a1a4143b959ef1ca6e7478e95364d30cd255",
+    "0.0008266296009": "87f298802947757909be1c5d0c3b2628815a40307f7430c41aa9b332b0d2e0b2",
+    "0.0008610902814": "80de318757ac6e5575214a59eda515432fc01ebb2809d6e9e612aeb89c798ba8",
+    "0.0008955276611": "835077eb27be2eac2b581fe57177bac6b5632d04071a07e35bc9479f5ea9d312",
+    "0.0009299431599": "349c839955c8f06ffe5a237f65d3711e078d2d6cb8504e50d4a71d8337c191fb",
+    "0.0009643381412": "de9a0e4790ea806fa6cf609cd40ca07ec805bbd0ddb7e81f5566a5c639b2fcee",
+    "0.000998713892": "45fe1225ff41d250ebff497a81a8278ce176efe0fc532feaffc421280497398f"
+  },
+  "video_sha256": "66d94eb873ea0768d533cbe5e8c9b3454d0fda3625ff09ebeee5cc2be17b2c96",
+  "poster_sha256": "30b53a0152f1d6b8a22b6ccb5ce7d38c67b60b7ad22b8ac504e760ef3fdd41b8",
+  "render_wall_seconds": 47.64100000000326,
+  "max_logged_Courant": 0.5004524521,
+  "bounding_events": 5,
+  "density_kg_m3": 1.2,
+  "source_mesh": "revh_sequence_05 (3193565 cells); 4 low-determinant cells, poor wall-layer coverage",
+  "preview_subsampled": false
+}

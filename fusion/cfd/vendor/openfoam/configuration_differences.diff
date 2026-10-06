@@ -1,0 +1,47 @@
+--- authenticated-deb/bashrc
++++ installed/bashrc
+@@ -120,9 +120,9 @@
+ #    This can be removed if an absolute path is provided for WM_PROJECT_DIR
+ #    later on in this file
+ # --
+-projectDir="${BASH_SOURCE:-${ZSH_NAME:+$0}}";
+-[ -n "$projectDir" ] && projectDir="$(\cd $(dirname $projectDir)/.. && \pwd -L)" ||\
+-projectDir="$HOME/OpenFOAM/OpenFOAM-$WM_PROJECT_VERSION"
++##IGNORE## projectDir="${BASH_SOURCE:-${ZSH_NAME:+$0}}";
++##IGNORE## [ -n "$projectDir" ] && projectDir="$(\cd $(dirname $projectDir)/.. && \pwd -L)" ||\
++##IGNORE## projectDir="$HOME/OpenFOAM/OpenFOAM-$WM_PROJECT_VERSION"
+ # projectDir="/opt/openfoam/OpenFOAM-$WM_PROJECT_VERSION"
+ # projectDir="/usr/local/OpenFOAM/OpenFOAM-$WM_PROJECT_VERSION"
+ ################################################################################
+@@ -177,7 +177,7 @@
+     $FOAM_MODULE_APPBIN $FOAM_MODULE_LIBBIN"
+ 
+ # [WM_PROJECT_DIR] - Location of this OpenFOAM version
+-export WM_PROJECT_DIR="$projectDir"
++export WM_PROJECT_DIR="/usr/lib/openfoam/openfoam2412"
+ 
+ # [WM_PROJECT_USER_DIR] - Location of user files
+ export WM_PROJECT_USER_DIR="$HOME/$WM_PROJECT/${USER:-user}-$WM_PROJECT_VERSION"
+
+--- authenticated-deb/cshrc
++++ installed/cshrc
+@@ -122,8 +122,8 @@
+ # --
+ # If the directory naming does not match WM_PROJECT, need to change here
+ # Important! No line continuation in the lsof evaluation (#1668)
+-set projectName=openfoam  # debian
+-set projectDir=`lsof +p $$ |& sed -ne 's#^[^/]*##;\@/'"$projectName"'[^/]*/etc/cshrc@{s#/etc/cshrc.*##p;q; }'`
++##IGNORE## set projectName=openfoam  # debian
++##IGNORE## set projectDir=`lsof +p $$ |& sed -ne 's#^[^/]*##;\@/'"$projectName"'[^/]*/etc/cshrc@{s#/etc/cshrc.*##p;q; }'`
+ 
+ # set projectDir="$HOME/OpenFOAM/OpenFOAM-$WM_PROJECT_VERSION"
+ # set projectDir="/opt/openfoam/OpenFOAM-$WM_PROJECT_VERSION"
+@@ -197,7 +197,7 @@
+ endif
+ 
+ # [WM_PROJECT_DIR] - Location of this OpenFOAM version
+-setenv WM_PROJECT_DIR "$projectDir"
++setenv WM_PROJECT_DIR "/usr/lib/openfoam/openfoam2412"
+ 
+ # [WM_PROJECT_USER_DIR] - Location of user files
+ setenv WM_PROJECT_USER_DIR "$HOME/$WM_PROJECT/$LOGNAME-$WM_PROJECT_VERSION"

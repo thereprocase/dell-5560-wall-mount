@@ -1,0 +1,21 @@
+{
+  "unique_payloads": 1917,
+  "text_payloads": 956,
+  "archive_payloads": 13,
+  "findings": [],
+  "passed": true,
+  "native_metadata": [
+    {
+      "file": "Precision_5560_RevH_D4_Current.FCStd",
+      "public_author_metadata_checked": true,
+      "gui_data_present": true
+    },
+    {
+      "file": "baseline/Precision_5560_RevH_Current.FCStd",
+      "public_author_metadata_checked": true,
+      "gui_data_present": true
+    }
+  ],
+  "image_review": "CAD-only renders and actual toolpath plots; no application chrome or physical photographs.",
+  "scope": "D4 source and historical regression fixtures, native metadata, STEP/Orca payloads, root README, changed guides, new site assets and recursively unpacked release ZIP."
+}

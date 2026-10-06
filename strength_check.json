@@ -1,0 +1,113 @@
+{
+  "revision": "F",
+  "method": "Hand beam, bearing, bolt-group and anchor-demand screening; no FEA",
+  "assumptions": {
+    "laptop_mass_kg": 2.5,
+    "total_installed_mass_kg": 6.0,
+    "fan_module_mass_kg_each": 1.0,
+    "gravity_multiplier": 3.0,
+    "outward_pull_at_hinge_N": 50.0,
+    "normal_stress_screen_MPa": 5.0,
+    "shear_stress_screen_MPa": 2.0,
+    "effective_modulus_MPa": 1000.0,
+    "local_stress_multiplier": 1.5,
+    "critical_print_sections": "100% infill, sound fusion; cradle printed on side"
+  },
+  "estimated_solid_print_assembly_mass_kg": 4.409694334938679,
+  "components": {
+    "shelf_3g": {
+      "stress_MPa": 3.1236860795454895,
+      "screen_limit_MPa": 5.0,
+      "margin_to_screen_limit": 1.6006730102429252,
+      "force_N": 36.7875,
+      "maximum_at_station_mm": 10.2,
+      "sampled_span_deflection_mm": 0.34339458195575556,
+      "method": "CAD net sections; unsymmetric bending; 10% section allowance"
+    },
+    "tines_50N_hinge_pull": {
+      "stress_MPa": 3.8765507057517703,
+      "screen_limit_MPa": 5.0,
+      "margin_to_screen_limit": 1.2898064231641106,
+      "force_N": 65.42613636363636,
+      "maximum_at_station_mm": 15.199999999999998,
+      "sampled_span_deflection_mm": 1.0287323944266589,
+      "method": "CAD net sections; unsymmetric bending; 10% section allowance"
+    },
+    "rear_rail_combined": {
+      "stress_MPa": 4.189268435296846,
+      "screen_limit_MPa": 5.0,
+      "margin_to_screen_limit": 1.1935258093924714,
+      "force_N": 63.47261904761904,
+      "maximum_at_station_mm": 70.0,
+      "sampled_span_deflection_mm": 1.184032050498004,
+      "method": "CAD net sections; unsymmetric bending; 10% section allowance"
+    },
+    "rear_rail_upper_tail": {
+      "stress_MPa": 2.5966071428571422,
+      "screen_limit_MPa": 5.0,
+      "margin_to_screen_limit": 1.9255897118492542
+    },
+    "duct_key_lower_shoulder_bearing": {
+      "stress_MPa": 1.4111607142857143,
+      "screen_limit_MPa": 5.0,
+      "margin_to_screen_limit": 3.543182537171781,
+      "force_N": 142.245
+    },
+    "duct_key_root_shear": {
+      "stress_MPa": 0.6667734375000001,
+      "screen_limit_MPa": 2.0,
+      "margin_to_screen_limit": 2.999519608187751
+    },
+    "duct_saddle_root_bending": {
+      "stress_MPa": 1.506448125,
+      "screen_limit_MPa": 5.0,
+      "margin_to_screen_limit": 3.319065500513003
+    },
+    "fan_support_ledge": {
+      "stress_MPa": 0.337844387755102,
+      "screen_limit_MPa": 5.0,
+      "margin_to_screen_limit": 14.799713066787483
+    },
+    "rail_key_lower_shoulder_bearing": {
+      "stress_MPa": 0.46714285714285725,
+      "screen_limit_MPa": 5.0,
+      "margin_to_screen_limit": 10.703363914373087
+    },
+    "split_pin_shear": {
+      "stress_MPa": 1.17098249379862,
+      "screen_limit_MPa": 2.0,
+      "margin_to_screen_limit": 1.7079674637253377
+    },
+    "tray_dovetail_bearing": {
+      "stress_MPa": 0.24525,
+      "screen_limit_MPa": 5.0,
+      "margin_to_screen_limit": 20.387359836901123
+    },
+    "tray_dovetail_root_shear": {
+      "stress_MPa": 0.122625,
+      "screen_limit_MPa": 2.0,
+      "margin_to_screen_limit": 16.309887869520896
+    },
+    "wall_hole_bearing": {
+      "stress_MPa": 1.2743756461699276,
+      "screen_limit_MPa": 5.0,
+      "margin_to_screen_limit": 3.9234899183982765
+    },
+    "wall_washer_punching": {
+      "stress_MPa": 0.126274763405217,
+      "screen_limit_MPa": 2.0,
+      "margin_to_screen_limit": 15.838477507829332
+    }
+  },
+  "fastener_demands": {
+    "upper_wall_anchor_tension_N": 63.47261904761904,
+    "conservative_wall_anchor_shear_N": 89.20629523189493,
+    "duct_joint_outward_couple_force_N": 47.823750000000004,
+    "duct_key_peak_vertical_reaction_N": 142.245,
+    "printed_pin_retention_demand_N": 7.3575,
+    "CA_bond_strength_qualified": false,
+    "CA_note": "Fixed joints require a qualified adhesive bond for outward retention. Shoulder bearing does not establish glue pullout strength."
+  },
+  "smallest_screen_margin": 1.1935258093924714,
+  "status": "Meets stated analytical screen; conditional on print quality and the stated model. Physical proof pending."
+}

@@ -1,0 +1,54 @@
+/* Generated for OpenCFD OpenFOAM v2412; setup only. */
+FoamFile
+{
+    version 2.0;
+    format ascii;
+    class volVectorField;
+    location "0";
+    object U;
+}
+
+dimensions [0 1 -1 0 0 0 0];
+internalField uniform (0 0 0);
+boundaryField
+{
+    fan_left
+    {
+        type flowRateInletVelocity;
+        volumetricFlowRate constant 0.009438948864;
+        extrapolateProfile no;
+        value uniform (0 0 0);
+    }
+    fan_right
+    {
+        type flowRateInletVelocity;
+        volumetricFlowRate constant 0.009438948864;
+        extrapolateProfile no;
+        value uniform (0 0 0);
+    }
+    outlet
+    {
+        type pressureInletOutletVelocity;
+        value uniform (0 0 0);
+    }
+    laptop_shell
+    {
+        type noSlip;
+    }
+    wall_plane
+    {
+        type noSlip;
+    }
+    assumed_side_seals
+    {
+        type noSlip;
+    }
+    printed_or_model_walls
+    {
+        type noSlip;
+    }
+    backgroundBox
+    {
+        type noSlip;
+    }
+}

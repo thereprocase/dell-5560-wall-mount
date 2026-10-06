@@ -1,0 +1,263 @@
+{
+  "finding": "Duct shell intersects all four nominal cover-pin sockets; native model material, not removable support.",
+  "source_model_sha256": "e99dbcf41201de00b4f97a3d8291fa300633912bd2a3b8d6f23c7684c5342163",
+  "native_hole_diameter_mm": 4.1,
+  "blind_depth_from_socket_face_mm": 7.7,
+  "material_volume_inside_each_nominal_bore_mm3": 21.04116,
+  "pin_tip_overlap_with_that_material_each_mm3": 0.07555482,
+  "cause": "Socket cylinders were cut from the inlet deck/bosses before the duct shell was fused in. The shell adds material back inside the sockets. The same material exists in C1 and D3.",
+  "audit_gap": "freecad/validate_export.py classifies all overlaps involving push_pin as intentional without separating the designed crown interference from obstruction inside the bore. D3 preserved the existing pin interfaces, including this defect.",
+  "scope": "CAD geometry confirmed for all four installed pins. Physical appearance and print-specific dimensional effects remain unmeasured.",
+  "corrective_geometry": "Repeat the original 4.1 mm bore cuts through the final fused duct while preserving their existing blind bottoms.",
+  "changed_production_files": false,
+  "pin_measurements": {
+    "11_left_push_pin": {
+      "bounds_local": [
+        -9.0,
+        132.0,
+        -107.00000000000001,
+        -0.9999999999999991,
+        146.0,
+        -99.00000000000001
+      ],
+      "total_pin_duct_overlap_mm3": 0.1303808626335183,
+      "pin_overlap_with_material_inside_nominal_bore_mm3": 0.07555481598824995,
+      "nominal_bore_material_mm3": 21.041162015265062
+    },
+    "12_right_push_pin": {
+      "bounds_local": [
+        0.9999999999999991,
+        132.0,
+        -107.00000000000001,
+        9.0,
+        146.0,
+        -99.00000000000001
+      ],
+      "total_pin_duct_overlap_mm3": 0.10296784050394503,
+      "pin_overlap_with_material_inside_nominal_bore_mm3": 0.07555481598823492,
+      "nominal_bore_material_mm3": 21.041162015265755,
+      "insertion_samples": [
+        {
+          "outward_mm": 0,
+          "bore_obstruction_overlap_mm3": 0.07555481598823492,
+          "total_overlap_mm3": 0.10296784049133423
+        },
+        {
+          "outward_mm": 0.2,
+          "bore_obstruction_overlap_mm3": 0.0008502565507068161,
+          "total_overlap_mm3": 0.028263280579760658
+        },
+        {
+          "outward_mm": 0.5,
+          "bore_obstruction_overlap_mm3": 0.0,
+          "total_overlap_mm3": 0.02741302467962836
+        },
+        {
+          "outward_mm": 1,
+          "bore_obstruction_overlap_mm3": 0.0,
+          "total_overlap_mm3": 0.027413024684054044
+        },
+        {
+          "outward_mm": 2,
+          "bore_obstruction_overlap_mm3": 0.0,
+          "total_overlap_mm3": 0.0
+        },
+        {
+          "outward_mm": 3,
+          "bore_obstruction_overlap_mm3": 0.0,
+          "total_overlap_mm3": 0.0
+        },
+        {
+          "outward_mm": 5,
+          "bore_obstruction_overlap_mm3": 0.0,
+          "total_overlap_mm3": 0.0
+        },
+        {
+          "outward_mm": 8,
+          "bore_obstruction_overlap_mm3": 0.0,
+          "total_overlap_mm3": 0.0
+        },
+        {
+          "outward_mm": 12,
+          "bore_obstruction_overlap_mm3": 0.0,
+          "total_overlap_mm3": 0.0
+        }
+      ]
+    },
+    "13_left_push_pin": {
+      "bounds_local": [
+        -139.0,
+        132.0,
+        -107.00000000000001,
+        -131.0,
+        146.0,
+        -99.00000000000001
+      ],
+      "total_pin_duct_overlap_mm3": 0.13038086261782836,
+      "pin_overlap_with_material_inside_nominal_bore_mm3": 0.07555481598826377,
+      "nominal_bore_material_mm3": 21.041161011877122
+    },
+    "14_right_push_pin": {
+      "bounds_local": [
+        131.0,
+        132.0,
+        -107.00000000000001,
+        139.0,
+        146.0,
+        -99.00000000000001
+      ],
+      "total_pin_duct_overlap_mm3": 0.13038086415350658,
+      "pin_overlap_with_material_inside_nominal_bore_mm3": 0.07555481598823721,
+      "nominal_bore_material_mm3": 21.041161011877268,
+      "insertion_samples": [
+        {
+          "outward_mm": 0,
+          "bore_obstruction_overlap_mm3": 0.07555481598823721,
+          "total_overlap_mm3": 0.1303808641490677
+        },
+        {
+          "outward_mm": 0.2,
+          "bore_obstruction_overlap_mm3": 0.0008502565507069591,
+          "total_overlap_mm3": 0.05567630239371561
+        },
+        {
+          "outward_mm": 0.5,
+          "bore_obstruction_overlap_mm3": 0.0,
+          "total_overlap_mm3": 0.05482604808838237
+        },
+        {
+          "outward_mm": 1,
+          "bore_obstruction_overlap_mm3": 0.0,
+          "total_overlap_mm3": 0.054826048093281565
+        },
+        {
+          "outward_mm": 2,
+          "bore_obstruction_overlap_mm3": 0.0,
+          "total_overlap_mm3": 0.0
+        },
+        {
+          "outward_mm": 3,
+          "bore_obstruction_overlap_mm3": 0.0,
+          "total_overlap_mm3": 0.0
+        },
+        {
+          "outward_mm": 5,
+          "bore_obstruction_overlap_mm3": 0.0,
+          "total_overlap_mm3": 0.0
+        },
+        {
+          "outward_mm": 8,
+          "bore_obstruction_overlap_mm3": 0.0,
+          "total_overlap_mm3": 0.0
+        },
+        {
+          "outward_mm": 12,
+          "bore_obstruction_overlap_mm3": 0.0,
+          "total_overlap_mm3": 0.0
+        }
+      ]
+    }
+  },
+  "orca_toolpath_confirmation": {
+    "04_right_fan_duct": [
+      {
+        "plate_x_mm": 44.75,
+        "configured_extruder_offset_mm": [
+          0.0,
+          2.0
+        ],
+        "wall_patch_xy_bounds_mm": [
+          43.25,
+          188.04999999648342,
+          46.25,
+          189.54999999648342
+        ],
+        "z_levels_mm": [
+          6.4,
+          6.6,
+          6.8,
+          7.0
+        ],
+        "deposition_inside_wall_patch_mm": {
+          "Inner wall": 36.000001119315996,
+          "Outer wall": 9.0
+        }
+      },
+      {
+        "plate_x_mm": 174.75,
+        "configured_extruder_offset_mm": [
+          0.0,
+          2.0
+        ],
+        "wall_patch_xy_bounds_mm": [
+          173.25,
+          188.04999999648342,
+          176.25,
+          189.54999999648342
+        ],
+        "z_levels_mm": [
+          6.4,
+          6.6,
+          6.8,
+          7.0
+        ],
+        "deposition_inside_wall_patch_mm": {
+          "Inner wall": 36.00000153357382,
+          "Outer wall": 9.000000184026494
+        }
+      }
+    ],
+    "03_left_fan_duct": [
+      {
+        "plate_x_mm": 211.25,
+        "configured_extruder_offset_mm": [
+          0.0,
+          2.0
+        ],
+        "wall_patch_xy_bounds_mm": [
+          209.75,
+          188.04999999648342,
+          212.75,
+          189.54999999648342
+        ],
+        "z_levels_mm": [
+          6.4,
+          6.6,
+          6.8,
+          7.0
+        ],
+        "deposition_inside_wall_patch_mm": {
+          "Inner wall": 36.00000254710815,
+          "Outer wall": 9.0
+        }
+      },
+      {
+        "plate_x_mm": 81.25,
+        "configured_extruder_offset_mm": [
+          0.0,
+          2.0
+        ],
+        "wall_patch_xy_bounds_mm": [
+          79.75,
+          188.04999999648342,
+          82.75,
+          189.54999999648342
+        ],
+        "z_levels_mm": [
+          6.4,
+          6.6,
+          6.8,
+          7.0
+        ],
+        "deposition_inside_wall_patch_mm": {
+          "Inner wall": 36.000001086377424,
+          "Outer wall": 9.0
+        }
+      }
+    ]
+  },
+  "source_archives_sha256": {
+    "04_right_fan_duct": "9730839d2999b1b6bf1e7001d970a56d6fb41bfa5328dd308be24676b51bfd2d",
+    "03_left_fan_duct": "0218ddbf71fc33fb8373d36a3f92a8a613ef6528c648f89ec167faf4cfe5dac7"
+  }
+}

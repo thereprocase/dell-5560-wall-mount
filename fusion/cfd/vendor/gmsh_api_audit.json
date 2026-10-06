@@ -1,0 +1,11 @@
+{
+  "project": "gmsh",
+  "version": "4.15.0",
+  "source": "https://files.pythonhosted.org/packages/23/51/21175eb9c6a592431a5c87f288ce447af1cea68a6ad4169765dc7ab7a9e7/gmsh-4.15.0-py2.py3-none-win_amd64.whl",
+  "metadata": "https://pypi.org/pypi/gmsh/4.15.0/json",
+  "sha256": "a5b9867f88af59aff269a93abbd009551fbc263eb94a165a25a0c8072bae13db",
+  "published_sha256": "a5b9867f88af59aff269a93abbd009551fbc263eb94a165a25a0c8072bae13db",
+  "match": true,
+  "usage": "Python API wrapper only; existing FreeCAD-bundled Gmsh DLL",
+  "wrapper_sha256": "79cd4387d347060b188358670665bec1c237ba87949bff90d62bc4661b2deaca"
+}

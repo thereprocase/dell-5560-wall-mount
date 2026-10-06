@@ -1,0 +1,70 @@
+/* Generated for OpenCFD OpenFOAM v2412; setup only. */
+FoamFile
+{
+    version 2.0;
+    format ascii;
+    class dictionary;
+    object snappyHexMeshDict;
+}
+
+
+castellatedMesh true; snap true; addLayers true;
+geometry {
+ fluid_boundary.stl {type triSurfaceMesh; name fluid; regions {printed {name printed;}
+laptop {name laptop;}
+noctua {name noctua;}
+wall_plane {name wall_plane;}
+ambient_openings {name ambient_openings;}}}
+ ductWake {type searchableBox; min (-0.145 0.002 -0.004); max (0.145 0.042 0.024);}
+ductOuterEdge {type searchableBox; min (-0.145 0.034 -0.004); max (0.145 0.043 0.01);}
+frontLip {type searchableBox; min (-0.174 0.047 -0.003); max (0.174 0.058 0.009);}
+frontLipWake {type searchableBox; min (-0.176 0.042 -0.002); max (0.176 0.064 0.022);}
+leftPassage {type searchableBox; min (-0.15 0.037 0.14); max (-0.073 0.052 0.238);}
+rightPassage {type searchableBox; min (0.073 0.037 0.14); max (0.15 0.052 0.238);}
+leftHingeLip {type searchableBox; min (-0.15 0.037 0.222); max (-0.073 0.054 0.237);}
+rightHingeLip {type searchableBox; min (0.073 0.037 0.222); max (0.15 0.054 0.237);}
+hingeWake {type searchableBox; min (-0.15 0.033 0.232); max (0.15 0.061 0.253);}
+leftDuctSide {type searchableBox; min (-0.145 0.003 -0.008); max (-0.136 0.044 0.014);}
+rightDuctSide {type searchableBox; min (0.136 0.003 -0.008); max (0.145 0.044 0.014);}
+}
+castellatedMeshControls {
+ maxLocalCells 6000000; maxGlobalCells 24000000; minRefinementCells 0; maxLoadUnbalance .10;
+ nCellsBetweenLevels 3; features ();
+ refinementSurfaces {fluid {level (0 0); regions {printed {level (4 4); patchInfo {type wall;}}
+laptop {level (4 4); patchInfo {type wall;}}
+noctua {level (3 3); patchInfo {type wall;}}
+wall_plane {level (0 0); patchInfo {type wall;}}
+ambient_openings {level (0 0); patchInfo {type patch;}}}}}
+ resolveFeatureAngle 30;
+ refinementRegions {ductWake {mode inside; levels ((1e15 5));}
+ductOuterEdge {mode inside; levels ((1e15 6));}
+frontLip {mode inside; levels ((1e15 6));}
+frontLipWake {mode inside; levels ((1e15 5));}
+leftPassage {mode inside; levels ((1e15 5));}
+rightPassage {mode inside; levels ((1e15 5));}
+leftHingeLip {mode inside; levels ((1e15 6));}
+rightHingeLip {mode inside; levels ((1e15 6));}
+hingeWake {mode inside; levels ((1e15 5));}
+leftDuctSide {mode inside; levels ((1e15 6));}
+rightDuctSide {mode inside; levels ((1e15 6));}}
+ locationInMesh (0 .25 .1); allowFreeStandingZoneFaces true;
+}
+snapControls {nSmoothPatch 5; tolerance 1.5; nSolveIter 50; nRelaxIter 8;
+ nFeatureSnapIter 15; implicitFeatureSnap true; explicitFeatureSnap false; multiRegionFeatureSnap false;}
+addLayersControls {
+ relativeSizes false;
+ layers {printed {nSurfaceLayers 5;} laptop {nSurfaceLayers 5;} noctua {nSurfaceLayers 3;}}
+ expansionRatio 1.2; firstLayerThickness .00006; minThickness .00002;
+ nGrow 0; featureAngle 60; nRelaxIter 8;
+ nSmoothSurfaceNormals 1; nSmoothNormals 3; nSmoothThickness 10;
+ maxFaceThicknessRatio .5; maxThicknessToMedialRatio .3; minMedialAxisAngle 90;
+ nBufferCellsNoExtrude 1; nLayerIter 60;
+}
+meshQualityControls {
+ maxNonOrtho 65; maxBoundarySkewness 2.5; maxInternalSkewness 4;
+ maxConcave 80; minVol 1e-18; minTetQuality 1e-15; minArea -1;
+ minTwist .02; minDeterminant .01; minFaceWeight .05; minVolRatio .01;
+ minTriangleTwist -1; nSmoothScale 4; errorReduction .75;
+}
+writeFlags (scalarLevels layerSets layerFields);
+mergeTolerance 1e-7;

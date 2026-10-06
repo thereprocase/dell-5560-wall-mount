@@ -1,0 +1,14 @@
+Build           "6467f461-20260821";
+API             2412;
+Version         v2412;
+Arch            "LSB;label=32;scalar=64";
+Exec            C:\Users\USER\AppData\Local\Programs\BARAM-26.3.0\solvers\openfoam\bin\reconstructPar.exe;
+Command         "C:\Users\USER\AppData\Local\Programs\BARAM-26.3.0\solvers\openfoam\bin\reconstructPar.exe -latestTime";
+Date            "Sep 07 2026";
+Time            "18:22:11";
+Host            WORKSTATION;
+User            repro;
+PID             3664;
+Case            "F:/Code/dell-5560-wall-mount/fusion/cfd/cases/OpenCFD_v2412/installed_pressure10_v2";
+nProcs          1;
+State           running;

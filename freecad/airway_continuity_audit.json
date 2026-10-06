@@ -1,0 +1,27 @@
+{
+  "patch_intrusion_into_original_airway_mm3": [
+    0.0,
+    0.0
+  ],
+  "unexpected_material_inside_original_airway_mm3": 2.390621034464857e-11,
+  "unexpected_wall_loss_mm3": 3.410605131648481e-13,
+  "core_valid": true,
+  "core_solids": 1,
+  "duct_valid": true,
+  "arms_difference_mm3": {
+    "02_right_cradle": 0.0,
+    "01_left_cradle": 0.0
+  },
+  "fit_gaps_mm": {
+    "04_right_fan_duct / 06_right_fan_retainer": 0.3000000000000346,
+    "04_right_fan_duct / 10_right_fan_tray": 0.2999999999998891,
+    "06_right_fan_retainer / 10_right_fan_tray": 0.3000000000000346,
+    "03_left_fan_duct / 05_left_fan_retainer": 0.3000000000000346,
+    "03_left_fan_duct / 09_left_fan_tray": 0.2999999999998891,
+    "05_left_fan_retainer / 09_left_fan_tray": 0.3000000000000346
+  },
+  "intentional_flow_material_in_airway_mm3": 8.297316656220154,
+  "intentional_wall_relief_mm3": 362.53826972790864,
+  "pass": true,
+  "scope": "Geometric continuity and obstruction audit. Does not establish pressure loss, thermal performance, turbulence or physical print quality."
+}

@@ -1,0 +1,100 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2412                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _b8cf4d35-20260127 OPENFOAM=2412 patch=260127 version=2412
+Arch   : "LSB;label=32;scalar=64"
+Exec   : surfaceCheck -checkSelfIntersection fluid_stabilized_9.stl
+Date   : Sep 07 2026
+Time   : 18:06:01
+Host   : WORKSTATION
+PID    : 168911
+I/O    : uncollated
+Case   : /mnt/f/Code/dell-5560-wall-mount/fusion/cfd/geometry_traced_repaired
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Reading surface from "fluid_stabilized_9.stl" ...
+
+Statistics:
+Triangles    : 24852 in 5 region(s)
+Vertices     : 12230
+Bounding Box : (-0.4 0 -0.3) (0.4 0.45 0.5)
+
+Index	Region	Size
+-----	------	----
+0	printed	22996
+1	laptop	172
+2	noctua	1376
+3	wall_plane	298
+4	ambient_openings	10
+
+
+Surface has no illegal triangles.
+
+Triangle quality (equilateral=1, collapsed=0):
+    0 .. 0.05  : 0.507645
+    0.05 .. 0.1  : 0.120715
+    0.1 .. 0.15  : 0.0505392
+    0.15 .. 0.2  : 0.0253501
+    0.2 .. 0.25  : 0.0294141
+    0.25 .. 0.3  : 0.0200386
+    0.3 .. 0.35  : 0.0354901
+    0.35 .. 0.4  : 0.0168196
+    0.4 .. 0.45  : 0.0163367
+    0.45 .. 0.5  : 0.0208434
+    0.5 .. 0.55  : 0.0127153
+    0.55 .. 0.6  : 0.00591502
+    0.6 .. 0.65  : 0.00969741
+    0.65 .. 0.7  : 0.0466763
+    0.7 .. 0.75  : 0.0352487
+    0.75 .. 0.8  : 0.0166586
+    0.8 .. 0.85  : 0.00502978
+    0.85 .. 0.9  : 0.00635764
+    0.9 .. 0.95  : 0.00313858
+    0.95 .. 1  : 0.015371
+
+    min 1.05612e-07 for triangle 1333
+    max 0.998752 for triangle 5248
+
+Edges:
+    min 6.66974e-06 for edge 19693 points (-0.003 0.117907 -0.0415689)(-0.003 0.117912 -0.0415736)
+    max 1.13137 for edge 37272 points (-0.4 0.45 -0.3)(0.4 0.45 0.5)
+
+Checking for points less than 1e-6 of bounding box ((0.8 0.45 0.8) metre) apart.
+Found 0 nearby points.
+
+Surface is closed. All edges connected to two faces.
+
+Number of unconnected parts : 4
+Splitting surface into parts ...
+
+Wrote zoning to "./fluid_stabilized_9.vtp"
+
+writing part 0 size 23304 to "./fluid_stabilized_9_0.obj"
+writing part 1 size 172 to "./fluid_stabilized_9_1.obj"
+writing part 2 size 688 to "./fluid_stabilized_9_2.obj"
+writing part 3 size 688 to "./fluid_stabilized_9_3.obj"
+
+Number of zones (connected area with consistent normal) : 4
+More than one normal orientation.
+Wrote zoning to "./fluid_stabilized_9.vtp"
+
+writing part 0 size 23304 to "./fluid_stabilized_9_normal_0.obj"
+writing part 1 size 172 to "./fluid_stabilized_9_normal_1.obj"
+writing part 2 size 688 to "./fluid_stabilized_9_normal_2.obj"
+writing part 3 size 688 to "./fluid_stabilized_9_normal_3.obj"
+
+Checking self-intersection.
+Surface is self-intersecting at 32 locations.
+Writing intersection points to "selfInterPoints.obj"
+
+
+End
+

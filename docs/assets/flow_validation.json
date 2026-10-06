@@ -1,0 +1,43 @@
+{
+  "invalid": [],
+  "valid": true,
+  "solids": 1,
+  "small_faces": 0,
+  "gaps": {
+    "04_right_fan_duct / 06_right_fan_retainer": 0.29999999999998933,
+    "04_right_fan_duct / 10_right_fan_tray": 0.2999999999998803,
+    "06_right_fan_retainer / 10_right_fan_tray": 0.2999999999999994,
+    "03_left_fan_duct / 05_left_fan_retainer": 0.29999999999998933,
+    "03_left_fan_duct / 09_left_fan_tray": 0.2999999999998803,
+    "05_left_fan_retainer / 09_left_fan_tray": 0.2999999999999994
+  },
+  "interference": {},
+  "new_curves": [
+    {
+      "radius": 12.0,
+      "min_sampled_wall_mm": 1.7642761774326188,
+      "max_downward_overhang_from_vertical_deg": 29.44794253825932
+    },
+    {
+      "radius": 12.0,
+      "min_sampled_wall_mm": 1.9950595934555841,
+      "max_downward_overhang_from_vertical_deg": 6.951191311960967
+    },
+    {
+      "radius": 12.0,
+      "min_sampled_wall_mm": 1.6061009062260694,
+      "max_downward_overhang_from_vertical_deg": 39.813972066690944
+    },
+    {
+      "radius": 14.0,
+      "min_sampled_wall_mm": 1.6789044078517508,
+      "max_downward_overhang_from_vertical_deg": 0.0
+    },
+    {
+      "radius": 14.0,
+      "min_sampled_wall_mm": 1.8996219997369632,
+      "max_downward_overhang_from_vertical_deg": 32.644563278976385
+    }
+  ],
+  "pass": true
+}

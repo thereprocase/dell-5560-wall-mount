@@ -1,0 +1,9 @@
+{
+  "revision": "F",
+  "current_cm3": 1177.2844251763345,
+  "revision_E_cm3": 1164.1984795845137,
+  "revision_D_cm3": 1810.4370803731413,
+  "reduction_vs_D_percent": 34.97236452240088,
+  "change_vs_E_cm3": 13.085945591820746,
+  "method": "Solid CAD volumes at equal fill policy; excludes brims and process allowances."
+}

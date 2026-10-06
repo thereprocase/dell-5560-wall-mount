@@ -1,0 +1,6 @@
+{
+  "seed": 5560,
+  "max_vertex_displacement_m": 1.7095270923477365e-10,
+  "flipped_normals": 0,
+  "method": "Bounded deterministic sub-micrometre perturbation of interior boundary vertices; domain planes fixed; manufacturing CAD unchanged"
+}

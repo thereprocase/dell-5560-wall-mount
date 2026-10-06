@@ -1,0 +1,358 @@
+{
+  "revision": "H-C1 prototype",
+  "native_sha256": "057d6fa4df9c726c07c029d8b4d1938a603ab8b5b7b5cd6065a0f3c1033c786f",
+  "baseline_native_sha256": "c18dd31d5447042b5cd1252cb648c024785d85229add152d20199a06cdf4c4a8",
+  "native_errors": [],
+  "new_fully_constrained_sketches": 8,
+  "scope": "Native geometric support and sampled motions only; physical fit, cable abrasion and tie-lug strength untested",
+  "unchanged_parts": {
+    "02_right_cradle": {
+      "difference_mm3": 0.0,
+      "volume_mm3": 274207.00576756353
+    },
+    "01_left_cradle": {
+      "difference_mm3": 0.0,
+      "volume_mm3": 274207.00576756353
+    },
+    "04_right_fan_duct": {
+      "difference_mm3": 0.0,
+      "volume_mm3": 135751.58219151237
+    },
+    "03_left_fan_duct": {
+      "difference_mm3": 0.0,
+      "volume_mm3": 135751.58219151237
+    },
+    "08_right_outlet_rail": {
+      "difference_mm3": 0.0,
+      "volume_mm3": 74456.25469714389
+    },
+    "07_left_outlet_rail": {
+      "difference_mm3": 0.0,
+      "volume_mm3": 74456.25469714389
+    },
+    "11_left_push_pin": {
+      "difference_mm3": 0.0,
+      "volume_mm3": 204.56030211057194
+    },
+    "12_right_push_pin": {
+      "difference_mm3": 0.0,
+      "volume_mm3": 204.5603021105719
+    },
+    "13_left_push_pin": {
+      "difference_mm3": 0.0,
+      "volume_mm3": 204.56030211057208
+    },
+    "14_right_push_pin": {
+      "difference_mm3": 0.0,
+      "volume_mm3": 204.56030211057208
+    },
+    "15_left_side_retainer": {
+      "difference_mm3": 0.0,
+      "volume_mm3": 28552.586227511198
+    },
+    "16_right_side_retainer": {
+      "difference_mm3": 0.0,
+      "volume_mm3": 28552.586227511212
+    },
+    "17_left_retainer_keeper": {
+      "difference_mm3": 0.0,
+      "volume_mm3": 326.34999999999997
+    },
+    "18_right_retainer_keeper": {
+      "difference_mm3": 0.0,
+      "volume_mm3": 326.34999999999997
+    }
+  },
+  "replaced_parts": {
+    "06_right_fan_retainer": {
+      "difference_mm3": 376.4610432033112,
+      "volume_mm3": 24952.749873901706
+    },
+    "05_left_fan_retainer": {
+      "difference_mm3": 376.46104320331176,
+      "volume_mm3": 24952.749873901674
+    },
+    "10_right_fan_tray": {
+      "difference_mm3": 2475.2838982422063,
+      "volume_mm3": 87584.40008866318
+    },
+    "09_left_fan_tray": {
+      "difference_mm3": 2475.283898242204,
+      "volume_mm3": 87584.40008866345
+    }
+  },
+  "clearances": {
+    "05_left_fan_retainer": {
+      "01_left_cradle": {
+        "overlap_mm3": 0,
+        "gap_mm": 33.07088907755795
+      },
+      "03_left_fan_duct": {
+        "overlap_mm3": 0.0,
+        "gap_mm": 0.3000000000000296
+      },
+      "07_left_outlet_rail": {
+        "overlap_mm3": 0,
+        "gap_mm": 199.27791978444344
+      },
+      "09_left_fan_tray": {
+        "overlap_mm3": 0.0,
+        "gap_mm": 0.3000000000000346
+      },
+      "11_left_push_pin": {
+        "overlap_mm3": 0.0,
+        "gap_mm": 6.029155041345696e-14
+      },
+      "13_left_push_pin": {
+        "overlap_mm3": 0.0,
+        "gap_mm": 6.029155041345696e-14
+      },
+      "15_left_side_retainer": {
+        "overlap_mm3": 0,
+        "gap_mm": 63.96370647781234
+      },
+      "17_left_retainer_keeper": {
+        "overlap_mm3": 0,
+        "gap_mm": 66.21989557271358
+      }
+    },
+    "06_right_fan_retainer": {
+      "02_right_cradle": {
+        "overlap_mm3": 0,
+        "gap_mm": 33.07088907755792
+      },
+      "04_right_fan_duct": {
+        "overlap_mm3": 0.0,
+        "gap_mm": 0.3000000000000346
+      },
+      "08_right_outlet_rail": {
+        "overlap_mm3": 0,
+        "gap_mm": 199.2779197844434
+      },
+      "10_right_fan_tray": {
+        "overlap_mm3": 0.0,
+        "gap_mm": 0.30000000000004967
+      },
+      "12_right_push_pin": {
+        "overlap_mm3": 0.0,
+        "gap_mm": 6.029155041345696e-14
+      },
+      "14_right_push_pin": {
+        "overlap_mm3": 0.0,
+        "gap_mm": 6.029155041345696e-14
+      },
+      "16_right_side_retainer": {
+        "overlap_mm3": 0,
+        "gap_mm": 63.96370647781233
+      },
+      "18_right_retainer_keeper": {
+        "overlap_mm3": 0,
+        "gap_mm": 66.21989557271358
+      }
+    },
+    "09_left_fan_tray": {
+      "01_left_cradle": {
+        "overlap_mm3": 0.0,
+        "gap_mm": 43.76502256779982
+      },
+      "03_left_fan_duct": {
+        "overlap_mm3": 0.0,
+        "gap_mm": 0.2999999999998803
+      },
+      "05_left_fan_retainer": {
+        "overlap_mm3": 0.0,
+        "gap_mm": 0.3000000000000346
+      },
+      "07_left_outlet_rail": {
+        "overlap_mm3": 0,
+        "gap_mm": 212.22541242726575
+      },
+      "11_left_push_pin": {
+        "overlap_mm3": 0.0,
+        "gap_mm": 2.9603921945629112
+      },
+      "13_left_push_pin": {
+        "overlap_mm3": 0.0,
+        "gap_mm": 2.9603921945629112
+      },
+      "15_left_side_retainer": {
+        "overlap_mm3": 0,
+        "gap_mm": 67.83360896008932
+      },
+      "17_left_retainer_keeper": {
+        "overlap_mm3": 0,
+        "gap_mm": 62.898197307945274
+      }
+    },
+    "10_right_fan_tray": {
+      "02_right_cradle": {
+        "overlap_mm3": 0.0,
+        "gap_mm": 43.76502256779981
+      },
+      "04_right_fan_duct": {
+        "overlap_mm3": 0.0,
+        "gap_mm": 0.29999999999988763
+      },
+      "06_right_fan_retainer": {
+        "overlap_mm3": 0.0,
+        "gap_mm": 0.30000000000004967
+      },
+      "08_right_outlet_rail": {
+        "overlap_mm3": 0,
+        "gap_mm": 212.22541242726575
+      },
+      "12_right_push_pin": {
+        "overlap_mm3": 0.0,
+        "gap_mm": 2.960392194562906
+      },
+      "14_right_push_pin": {
+        "overlap_mm3": 0.0,
+        "gap_mm": 2.960392194562906
+      },
+      "16_right_side_retainer": {
+        "overlap_mm3": 0,
+        "gap_mm": 67.83360896008932
+      },
+      "18_right_retainer_keeper": {
+        "overlap_mm3": 0,
+        "gap_mm": 62.898197307945274
+      }
+    }
+  },
+  "cable_service": {
+    "right": {
+      "checked_round_cable_diameter_mm": 4,
+      "installed_gaps_mm": {
+        "04_right_fan_duct": 5.2449982746720005,
+        "06_right_fan_retainer": 0.5,
+        "10_right_fan_tray": 0.5000000000000284
+      },
+      "cover_removed_with_wire_stationary": true,
+      "cover_local_y_travel_samples_mm": [
+        0,
+        0.3,
+        1,
+        2,
+        4,
+        8,
+        12,
+        20,
+        30
+      ],
+      "closed_tunnel_stop_overlaps_mm3": {
+        "rear": 4.304218450059404,
+        "front": 4.304218450059406,
+        "up": 4.346002011420035,
+        "down": 4.346002011420948
+      },
+      "wire_lays_in_from_open_mating_face": true,
+      "tie_slots": [
+        {
+          "local_y_mm": 119,
+          "tail_cross_section_mm": [
+            1.5,
+            3.6
+          ],
+          "entry_and_exit_clear": true
+        },
+        {
+          "local_y_mm": 51,
+          "tail_cross_section_mm": [
+            1.5,
+            3.6
+          ],
+          "entry_and_exit_clear": true
+        }
+      ]
+    },
+    "left": {
+      "checked_round_cable_diameter_mm": 4,
+      "installed_gaps_mm": {
+        "03_left_fan_duct": 5.2449982746720005,
+        "05_left_fan_retainer": 0.5,
+        "09_left_fan_tray": 0.5
+      },
+      "cover_removed_with_wire_stationary": true,
+      "cover_local_y_travel_samples_mm": [
+        0,
+        0.3,
+        1,
+        2,
+        4,
+        8,
+        12,
+        20,
+        30
+      ],
+      "closed_tunnel_stop_overlaps_mm3": {
+        "rear": 4.304218450059343,
+        "front": 4.304218450059407,
+        "up": 4.346002011420857,
+        "down": 4.346002011420208
+      },
+      "wire_lays_in_from_open_mating_face": true,
+      "tie_slots": [
+        {
+          "local_y_mm": 119,
+          "tail_cross_section_mm": [
+            1.5,
+            3.6
+          ],
+          "entry_and_exit_clear": true
+        },
+        {
+          "local_y_mm": 51,
+          "tail_cross_section_mm": [
+            1.5,
+            3.6
+          ],
+          "entry_and_exit_clear": true
+        }
+      ]
+    }
+  },
+  "tray_removal": {
+    "right": {
+      "local_y_travel_samples_mm": [
+        0,
+        0.3,
+        1,
+        5,
+        10,
+        20,
+        40,
+        80,
+        120,
+        150
+      ],
+      "cover_and_pins_removed": true,
+      "fan_box_mm": [
+        120,
+        120,
+        27
+      ],
+      "interference_mm3": 0
+    },
+    "left": {
+      "local_y_travel_samples_mm": [
+        0,
+        0.3,
+        1,
+        5,
+        10,
+        20,
+        40,
+        80,
+        120,
+        150
+      ],
+      "cover_and_pins_removed": true,
+      "fan_box_mm": [
+        120,
+        120,
+        27
+      ],
+      "interference_mm3": 0
+    }
+  }
+}

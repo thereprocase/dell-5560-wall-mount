@@ -1,0 +1,65 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2412                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 6467f461-20260821 OPENFOAM=2412 version=v2412
+Arch   : "LSB;label=32;scalar=64"
+Exec   : C:\Users\USER\AppData\Local\Programs\BARAM-26.3.0\solvers\openfoam\bin\topoSet.exe
+Date   : Sep 07 2026
+Time   : 18:15:20
+Host   : WORKSTATION
+PID    : 11480
+I/O    : uncollated
+Case   : F:/Code/dell-5560-wall-mount/fusion/cfd/cases/OpenCFD_v2412/installed_pressure10_v2
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 0, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create polyMesh for time = 0
+
+Reading topoSetDict
+
+Time = 0
+    mesh not changed.
+Created cellSet dell_fan_left
+    Applying source cylinderToCell
+    Adding cells with centres within cylinder, with point1 = (-0.111017192 0.0432 0.1711187905), point2 = (-0.111017192 0.0452 0.1711187905), radius = 0.025
+    cellSet dell_fan_left now size 2438
+Created cellZoneSet dell_fan_left
+    Applying source setToCellZone
+    Adding all cells from cell set: dell_fan_left ...
+    cellZoneSet dell_fan_left now size 2438
+Created cellSet dell_fan_right
+    Applying source cylinderToCell
+    Adding cells with centres within cylinder, with point1 = (0.1112638968 0.0432 0.1711187905), point2 = (0.1112638968 0.0452 0.1711187905), radius = 0.025
+    cellSet dell_fan_right now size 2443
+Created cellZoneSet dell_fan_right
+    Applying source setToCellZone
+    Adding all cells from cell set: dell_fan_right ...
+    cellZoneSet dell_fan_right now size 2443
+Created cellSet noctua_fan_left
+    Applying source cylinderToCell
+    Adding cells with centres within cylinder, with point1 = (-0.07 0.0822027958 -0.0992027958), point2 = (-0.07 0.08078858223 -0.09778858223), radius = 0.055
+    cellSet noctua_fan_left now size 344
+Created cellZoneSet noctua_fan_left
+    Applying source setToCellZone
+    Adding all cells from cell set: noctua_fan_left ...
+    cellZoneSet noctua_fan_left now size 344
+Created cellSet noctua_fan_right
+    Applying source cylinderToCell
+    Adding cells with centres within cylinder, with point1 = (0.07 0.0822027958 -0.0992027958), point2 = (0.07 0.08078858223 -0.09778858223), radius = 0.055
+    cellSet noctua_fan_right now size 344
+Created cellZoneSet noctua_fan_right
+    Applying source setToCellZone
+    Adding all cells from cell set: noctua_fan_right ...
+    cellZoneSet noctua_fan_right now size 344
+
+End
+

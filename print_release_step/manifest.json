@@ -1,0 +1,220 @@
+{
+  "revision": "H prototype",
+  "source_native_sha256": "01d41e0c91873dc18e7d3b6a6384f2ad8b988a5ccb8d5be0353a2aec8a0cecb3",
+  "units": "mm",
+  "bed": "Bambu P1S 256 x 256 mm",
+  "source": "print_release/manifest.json",
+  "instructions": "Import one STEP at a time. Keep orientation; do not auto-orient or scale.",
+  "parts": {
+    "01_left_cradle": {
+      "file": "01_left_cradle.step",
+      "orientation": "outer side down, diagonal on plate (already printed)",
+      "dimensions_mm": [
+        180.56456326228093,
+        196.33304448274114,
+        44.00053716335805
+      ],
+      "z_min_mm": -1.3599147849485682e-15,
+      "solid_valid_after_step_reimport": true,
+      "roundtrip_symmetric_difference_mm3": 0.0,
+      "max_bounds_difference_from_released_stl_mm": 0.000537163358046655,
+      "8mm_brim_and_stock_cutter_clear": true,
+      "sha256": "67dfa47bc6919c7a9adeb766baed754410e21846445dc05c7d0e0e3728010f5d"
+    },
+    "02_right_cradle": {
+      "file": "02_right_cradle.step",
+      "orientation": "outer side down, diagonal on plate (already printed)",
+      "dimensions_mm": [
+        196.333044482741,
+        180.56456326228093,
+        44.00053716335805
+      ],
+      "z_min_mm": -1.3599147849485682e-15,
+      "solid_valid_after_step_reimport": true,
+      "roundtrip_symmetric_difference_mm3": 0.0,
+      "max_bounds_difference_from_released_stl_mm": 0.000537163358046655,
+      "8mm_brim_and_stock_cutter_clear": true,
+      "sha256": "8c410423db900e90b151402d6cb2c9a7c10f45f28f8ad4692931834d5fc4e802"
+    },
+    "03_left_fan_duct": {
+      "file": "03_left_fan_duct.step",
+      "orientation": "inclined inlet down",
+      "dimensions_mm": [
+        174.5,
+        131.70000000703342,
+        109.64469683442255
+      ],
+      "z_min_mm": 2.442490654175338e-15,
+      "solid_valid_after_step_reimport": true,
+      "roundtrip_symmetric_difference_mm3": 0.0,
+      "max_bounds_difference_from_released_stl_mm": 6.09999892731139e-06,
+      "8mm_brim_and_stock_cutter_clear": true,
+      "sha256": "6ba86f2711d78080b337d1409dfa2b3a4f9bf5b0e4cd00e130f0e9168a8693e8"
+    },
+    "04_right_fan_duct": {
+      "file": "04_right_fan_duct.step",
+      "orientation": "inclined inlet down",
+      "dimensions_mm": [
+        174.5,
+        131.70000000703342,
+        109.64469683442255
+      ],
+      "z_min_mm": 2.442490654175338e-15,
+      "solid_valid_after_step_reimport": true,
+      "roundtrip_symmetric_difference_mm3": 0.0,
+      "max_bounds_difference_from_released_stl_mm": 6.09999892731139e-06,
+      "8mm_brim_and_stock_cutter_clear": true,
+      "sha256": "56faf822fd1a424580b09c3073899d548c9630c496b52ebf7abfca86644025d4"
+    },
+    "05_left_fan_retainer": {
+      "file": "05_left_fan_retainer.step",
+      "orientation": "broad front face down",
+      "dimensions_mm": [
+        139.00000000000006,
+        49.00000000000004,
+        13.00000000000009
+      ],
+      "z_min_mm": -1.1102230246251565e-15,
+      "solid_valid_after_step_reimport": true,
+      "roundtrip_symmetric_difference_mm3": 0.0,
+      "max_bounds_difference_from_released_stl_mm": 8.881784197001252e-14,
+      "8mm_brim_and_stock_cutter_clear": true,
+      "sha256": "0f4d12d5976e0d89df06d08ebdf714e0b4aeb426b40cdd124326c295eeecb901"
+    },
+    "06_right_fan_retainer": {
+      "file": "06_right_fan_retainer.step",
+      "orientation": "broad front face down",
+      "dimensions_mm": [
+        139.00000000000006,
+        49.00000000000004,
+        13.000000000000064
+      ],
+      "z_min_mm": 2.398359288946497e-14,
+      "solid_valid_after_step_reimport": true,
+      "roundtrip_symmetric_difference_mm3": 0.0,
+      "max_bounds_difference_from_released_stl_mm": 8.881784197001252e-14,
+      "8mm_brim_and_stock_cutter_clear": true,
+      "sha256": "40aa7c2517d0c3e9d643bd5069d01337d235013910c89afe138233d0d488c36e"
+    },
+    "07_left_outlet_rail": {
+      "file": "07_left_outlet_rail.step",
+      "orientation": "lip down",
+      "dimensions_mm": [
+        183.80000000000015,
+        39.00000000000007,
+        78.00000000000001
+      ],
+      "z_min_mm": -1.2434497875801753e-14,
+      "solid_valid_after_step_reimport": true,
+      "roundtrip_symmetric_difference_mm3": 0.0,
+      "max_bounds_difference_from_released_stl_mm": 6.10351571594947e-06,
+      "8mm_brim_and_stock_cutter_clear": true,
+      "sha256": "27637552acf30ec1697e3e1c8491f54282130a1137ce8edf77a72a07de2f3e96"
+    },
+    "08_right_outlet_rail": {
+      "file": "08_right_outlet_rail.step",
+      "orientation": "lip down",
+      "dimensions_mm": [
+        183.80000000000018,
+        39.00000000000007,
+        78.00000000000001
+      ],
+      "z_min_mm": -1.2434497875801753e-14,
+      "solid_valid_after_step_reimport": true,
+      "roundtrip_symmetric_difference_mm3": 0.0,
+      "max_bounds_difference_from_released_stl_mm": 6.10351571594947e-06,
+      "8mm_brim_and_stock_cutter_clear": true,
+      "sha256": "9d2491780dc70b04e9a3b25e12fe65b60336990afb1fabe12fe2e955237ae643"
+    },
+    "09_left_fan_tray": {
+      "file": "09_left_fan_tray.step",
+      "orientation": "grille down",
+      "dimensions_mm": [
+        139.00000000000006,
+        131.7000000000001,
+        38.000000000000085
+      ],
+      "z_min_mm": -7.993605777301122e-16,
+      "solid_valid_after_step_reimport": true,
+      "roundtrip_symmetric_difference_mm3": 0.0,
+      "max_bounds_difference_from_released_stl_mm": 6.103515573840923e-06,
+      "8mm_brim_and_stock_cutter_clear": true,
+      "sha256": "9f2255770619e85fc8eace7f7e9788c898932811b12f8c7ade88dbd617b596cb"
+    },
+    "10_right_fan_tray": {
+      "file": "10_right_fan_tray.step",
+      "orientation": "grille down",
+      "dimensions_mm": [
+        139.00000000000006,
+        131.7000000000001,
+        38.000000000000085
+      ],
+      "z_min_mm": -7.993605777301122e-16,
+      "solid_valid_after_step_reimport": true,
+      "roundtrip_symmetric_difference_mm3": 0.0,
+      "max_bounds_difference_from_released_stl_mm": 6.103515573840923e-06,
+      "8mm_brim_and_stock_cutter_clear": true,
+      "sha256": "db56f313a5e69ae25c801568228b17a5c5b595be65541d68a6be757a99ed48e5"
+    },
+    "11_left_push_pin": {
+      "file": "11_left_push_pin.step",
+      "orientation": "button down, split tip up",
+      "dimensions_mm": [
+        8.0,
+        8.0,
+        14.000000000000002
+      ],
+      "z_min_mm": 0.0,
+      "solid_valid_after_step_reimport": true,
+      "roundtrip_symmetric_difference_mm3": 0.0,
+      "max_bounds_difference_from_released_stl_mm": 0.00124359130859375,
+      "8mm_brim_and_stock_cutter_clear": true,
+      "sha256": "4c38df357dea43cf7d1297a4b47866aaab430df4cf2548cc7ee69f464a31af6a"
+    },
+    "12_right_push_pin": {
+      "file": "12_right_push_pin.step",
+      "orientation": "button down, split tip up",
+      "dimensions_mm": [
+        8.0,
+        8.0,
+        14.000000000000002
+      ],
+      "z_min_mm": 0.0,
+      "solid_valid_after_step_reimport": true,
+      "roundtrip_symmetric_difference_mm3": 0.0,
+      "max_bounds_difference_from_released_stl_mm": 0.00124359130859375,
+      "8mm_brim_and_stock_cutter_clear": true,
+      "sha256": "fe8faef4b67813b507559ff8bb76ac46fbe0e7ceb077af48e07bc867e96a76cd"
+    },
+    "13_left_push_pin": {
+      "file": "13_left_push_pin.step",
+      "orientation": "button down, split tip up",
+      "dimensions_mm": [
+        8.0,
+        8.0,
+        14.000000000000002
+      ],
+      "z_min_mm": 0.0,
+      "solid_valid_after_step_reimport": true,
+      "roundtrip_symmetric_difference_mm3": 0.0,
+      "max_bounds_difference_from_released_stl_mm": 0.00124359130859375,
+      "8mm_brim_and_stock_cutter_clear": true,
+      "sha256": "194d98c53eec91c4ef72b5ee41367a3b66d1bdabbab9afcc515c9fa33c595fbd"
+    },
+    "14_right_push_pin": {
+      "file": "14_right_push_pin.step",
+      "orientation": "button down, split tip up",
+      "dimensions_mm": [
+        8.0,
+        8.0,
+        14.000000000000002
+      ],
+      "z_min_mm": 0.0,
+      "solid_valid_after_step_reimport": true,
+      "roundtrip_symmetric_difference_mm3": 0.0,
+      "max_bounds_difference_from_released_stl_mm": 0.00124359130859375,
+      "8mm_brim_and_stock_cutter_clear": true,
+      "sha256": "32491be70e7d96c8f1c1f8147f68d8beb1bcd775bab0d8990692f21b7e425614"
+    }
+  }
+}

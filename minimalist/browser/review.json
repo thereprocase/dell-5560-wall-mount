@@ -1,0 +1,13 @@
+{
+  "base": "local preview",
+  "errors": [],
+  "presets": 6,
+  "damLowestShiftMm": -96,
+  "optionalDamRemovedParts": 6,
+  "mobileOverflow": false,
+  "downloadChecks": 16,
+  "wallTransitionRevision": "M1.1",
+  "guideImageFailures": [],
+  "revhCommissioningLink": "simulation/revh-transient/",
+  "revhValidationAccepted": false
+}

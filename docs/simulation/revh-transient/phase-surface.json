@@ -1,0 +1,19 @@
+{
+  "phase": "surface",
+  "started_utc": "2026-09-08T11:10:11.941972+00:00",
+  "state": "complete",
+  "steps": [
+    {
+      "tool": "surfaceCheck",
+      "arguments": [
+        "-checkSelfIntersection",
+        "constant/triSurface/fluid_boundary.stl"
+      ],
+      "parallel": false,
+      "log": "log.surfaceCheck",
+      "exit_code": 0,
+      "wall_seconds": 0.8590000000040163
+    }
+  ],
+  "finished_utc": "2026-09-08T11:10:12.819247+00:00"
+}

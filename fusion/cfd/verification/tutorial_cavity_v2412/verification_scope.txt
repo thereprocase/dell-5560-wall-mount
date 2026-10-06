@@ -1,0 +1,1 @@
+Official cavity; modified only local endTime/writeInterval; 30 s per-command timeout.

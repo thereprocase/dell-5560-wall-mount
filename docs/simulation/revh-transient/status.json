@@ -1,0 +1,71 @@
+{
+  "updated_utc": "2026-09-08T13:13:06.361174+00:00",
+  "geometry_revision": "H",
+  "case": "revh_transient_04",
+  "native_geometry_check": true,
+  "phases": {
+    "surface": "complete",
+    "mesh": "complete",
+    "zones": "complete",
+    "initialize": "complete",
+    "pilot": "complete"
+  },
+  "cells": 18219444,
+  "requested_edge_cell_mm": 0.25,
+  "requested_wake_cell_mm": 0.5,
+  "requested_first_layer_mm": 0.06,
+  "standard_mesh_ok": true,
+  "expanded_mesh_ok": false,
+  "refinement_limit_hit": false,
+  "latest_started_time_s": 2.030843184e-05,
+  "latest_completed_time_s": 2.030843184e-05,
+  "completed_steps": 4,
+  "solver_log_source": "log.pimpleFoam.attempt2",
+  "maximum_logged_Courant": 1.111165236,
+  "shedding_demonstrated": false,
+  "lip_suction_demonstrated": false,
+  "mesh_independence_demonstrated": false,
+  "time_step_independence_demonstrated": false,
+  "hardware_validated": false,
+  "physics": "Isothermal transient SST URANS, four nominal 10 Pa constant-force actuators, traced laptop surrogate. No fan curves, grille/fin loss calibration or thermal solution.",
+  "interpretation": "A short commissioning pilot does not establish settled flow, sustained shedding or a Bernoulli cause for pressure depression.",
+  "mesh_quality_disposition": {
+    "case": "revh_transient_04",
+    "disposition": "commissioning_only",
+    "validation_accepted": false,
+    "standard_mesh_ok": true,
+    "expanded_failed_checks": 3,
+    "underdetermined_cells": 2998,
+    "low_weight_faces": 78,
+    "concave_cells": 396528,
+    "minimum_determinant": 7.746158709e-05,
+    "minimum_interpolation_weight": 0.0300932829,
+    "rationale": "Positive volumes and determinants, one connected region, bounded standard nonorthogonality/skew permit a monitored short stability test. Expanded failures prohibit a validation or mesh-independence claim; defects include lip regions. No quality thresholds were relaxed to accept this candidate.",
+    "required_before_interpretation": [
+      "stable timestep correctors",
+      "bounded Courant number",
+      "valid probes",
+      "positive turbulence fields",
+      "acceptable mass balance",
+      "local mesh-quality disposition or repair",
+      "startup removal and longer sampling",
+      "same-H grid and timestep comparisons"
+    ]
+  },
+  "Courant_note": "Maximum includes the mapped initial field before adaptive time-step adjustment; inspect the timestep log for actual advancement.",
+  "reported_layer_coverage_percent": 86.64832865,
+  "reported_layer_cells": 3598723,
+  "checkpoint_request": {
+    "changed_utc": "2026-09-08T12:48:36.423816+00:00",
+    "requested_stop": "writeNow",
+    "reason": "Measured 192 seconds for the second approximately 5 microsecond step; projected 2 ms startup about 20 hours at this throughput. Increasing k bounding and unresolved expanded mesh failures require a retained full checkpoint before further numerical changes. No mature-flow interpretation.",
+    "changes": [
+      "stopAt writeNow",
+      "field extrema and flux output every step",
+      "section output every step for checkpoint diagnosis"
+    ],
+    "physical_models_changed": false,
+    "intended_2ms_endpoint_completed": false
+  },
+  "intended_2ms_endpoint_completed": false
+}

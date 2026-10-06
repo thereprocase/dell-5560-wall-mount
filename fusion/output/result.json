@@ -1,0 +1,67 @@
+{
+  "status": "success",
+  "fusion_version": "2704.1.36",
+  "nominal": {
+    "solids": 1,
+    "volume_mm3": 204.56030211132358,
+    "bounds_mm": [
+      [
+        -4.0,
+        -4.0,
+        0.0
+      ],
+      [
+        4.0,
+        4.0,
+        14.0
+      ]
+    ]
+  },
+  "perturbed": {
+    "solids": 1,
+    "volume_mm3": 230.6983529891896,
+    "bounds_mm": [
+      [
+        -4.5,
+        -4.5,
+        0.0
+      ],
+      [
+        4.5,
+        4.5,
+        14.0
+      ]
+    ]
+  },
+  "restored": {
+    "solids": 1,
+    "volume_mm3": 204.56030211132364,
+    "bounds_mm": [
+      [
+        -4.0,
+        -4.0,
+        0.0
+      ],
+      [
+        4.0,
+        4.0,
+        14.0
+      ]
+    ]
+  },
+  "occurrences": 4,
+  "profile_fully_constrained": true,
+  "slot_fully_constrained": false,
+  "timeline_count": 8,
+  "features": [
+    {
+      "name": "Pin - full revolve",
+      "health": "0"
+    },
+    {
+      "name": "Pin - symmetric split cut",
+      "health": "0"
+    }
+  ],
+  "limitation": "Pin pilot only; split anchor nominal; occurrences positioned, not jointed. No human edit preservation test yet."
+}

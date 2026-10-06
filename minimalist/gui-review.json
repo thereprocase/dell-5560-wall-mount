@@ -1,0 +1,11 @@
+{
+  "model": "Laptop_Wall_Mount_Minimalist.FCStd",
+  "bad_features": [],
+  "constrained_sketches": 55,
+  "installed_parts": 20,
+  "assembly_state": [
+    "Up-to-date"
+  ],
+  "saved_native_modified": false,
+  "note": "The earlier H gallery snapshot logged inherited Assembly joint reference warnings. This M1 model uses native App::Part/Link placement without the inherited H joint solver."
+}

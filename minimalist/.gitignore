@@ -1,0 +1,9 @@
+queue/
+*.FCBak
+*.log
+*.running
+*.done
+*.failed
+*.FCStd.*
+snapshots/
+scratch/

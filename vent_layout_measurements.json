@@ -1,0 +1,38 @@
+{
+  "revision": "F",
+  "effective_intake_windows": [
+    {
+      "x_mm": [
+        -146.04928366762175,
+        -75.98510028653294
+      ],
+      "z_mm": [
+        150.97375809935207,
+        191.26382289416847
+      ]
+    },
+    {
+      "x_mm": [
+        76.23180515759313,
+        146.29598853868197
+      ],
+      "z_mm": [
+        150.97375809935207,
+        191.26382289416847
+      ]
+    }
+  ],
+  "intake_location_uncertainty_mm": 4,
+  "contraction_start_z_mm": 198,
+  "throat_z_mm": 226,
+  "exit_z_mm": 232,
+  "hinge_z_mm": 232.3,
+  "slot_gaps_mm": [
+    8,
+    12,
+    16
+  ],
+  "nominal_gap_mm": 12,
+  "foot_projection_estimate_mm": 2,
+  "method": "Scaled manufacturer imagery; CFD representative section. See profile_reconstruction.json."
+}

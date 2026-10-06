@@ -1,0 +1,17 @@
+[
+  {
+    "exit_code": 0,
+    "executable": "blockMesh",
+    "log": "F:\\Code\\dell-5560-wall-mount\\fusion\\cfd\\verification\\tutorial_cavity_baram_windows\\log.blockMesh"
+  },
+  {
+    "exit_code": 0,
+    "executable": "checkMesh",
+    "log": "F:\\Code\\dell-5560-wall-mount\\fusion\\cfd\\verification\\tutorial_cavity_baram_windows\\log.checkMesh"
+  },
+  {
+    "exit_code": 0,
+    "executable": "icoFoam",
+    "log": "F:\\Code\\dell-5560-wall-mount\\fusion\\cfd\\verification\\tutorial_cavity_baram_windows\\log.icoFoam"
+  }
+]

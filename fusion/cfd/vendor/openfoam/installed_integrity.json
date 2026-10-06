@@ -1,0 +1,613 @@
+{
+  "audited_at_utc": "2026-09-07T21:19:09.751092+00:00",
+  "scope": "27 packages in original authenticated-APT installation plan; read-only installed-file verification",
+  "package_audit_sha256": "f7fd8af37e3d8dbadd0fc84562c0089824ad488aa7d60048c2fd4549f726fac8",
+  "package_count": 27,
+  "openfoam_packages": [
+    "openfoam2412-common",
+    "openfoam2412-tools",
+    "openfoam2412-tutorials",
+    "openfoam2412"
+  ],
+  "all_installed_versions_match_archive_audit": true,
+  "all_dpkg_verifications_report_no_discrepancies": false,
+  "tracked_md5_entry_count": 12783,
+  "packages": [
+    {
+      "package": "libamd-comgr2",
+      "expected_version_from_archive_audit": "6.0+git20231212.4510c28+dfsg-3build2",
+      "installed_version": "6.0+git20231212.4510c28+dfsg-3build2",
+      "installed_status": "install ok installed",
+      "version_matches": true,
+      "query_exit_code": 0,
+      "query_stderr": "",
+      "verify_command": [
+        "dpkg",
+        "--verify",
+        "libamd-comgr2"
+      ],
+      "verify_exit_code": 0,
+      "verify_stdout": "",
+      "verify_stderr": "",
+      "no_discrepancies_reported": true,
+      "dpkg_md5sums_file": "/var/lib/dpkg/info/libamd-comgr2:amd64.md5sums",
+      "dpkg_md5sums_sha256": "e3fa5bd5f811a698ab2e579705245a5f79338ce7dffbf56cbb46b2af9cc893b9",
+      "tracked_md5_entries": 3
+    },
+    {
+      "package": "libamdhip64-5",
+      "expected_version_from_archive_audit": "5.7.1-3",
+      "installed_version": "5.7.1-3",
+      "installed_status": "install ok installed",
+      "version_matches": true,
+      "query_exit_code": 0,
+      "query_stderr": "",
+      "verify_command": [
+        "dpkg",
+        "--verify",
+        "libamdhip64-5"
+      ],
+      "verify_exit_code": 0,
+      "verify_stdout": "",
+      "verify_stderr": "",
+      "no_discrepancies_reported": true,
+      "dpkg_md5sums_file": "/var/lib/dpkg/info/libamdhip64-5.md5sums",
+      "dpkg_md5sums_sha256": "66dd2011d1c107216387122f78abd66d20912e4e743b8be6a7d3e324257b19c5",
+      "tracked_md5_entries": 3
+    },
+    {
+      "package": "libboost-system1.83.0",
+      "expected_version_from_archive_audit": "1.83.0-2.1ubuntu3.2",
+      "installed_version": "1.83.0-2.1ubuntu3.2",
+      "installed_status": "install ok installed",
+      "version_matches": true,
+      "query_exit_code": 0,
+      "query_stderr": "",
+      "verify_command": [
+        "dpkg",
+        "--verify",
+        "libboost-system1.83.0"
+      ],
+      "verify_exit_code": 0,
+      "verify_stdout": "",
+      "verify_stderr": "",
+      "no_discrepancies_reported": true,
+      "dpkg_md5sums_file": "/var/lib/dpkg/info/libboost-system1.83.0:amd64.md5sums",
+      "dpkg_md5sums_sha256": "a2442bfeb50d99a18ebfd3a9bef4ba5afe78e18d6a56ba1288c863908ece032c",
+      "tracked_md5_entries": 4
+    },
+    {
+      "package": "libevent-pthreads-2.1-7t64",
+      "expected_version_from_archive_audit": "2.1.12-stable-9ubuntu2.1",
+      "installed_version": "2.1.12-stable-9ubuntu2.1",
+      "installed_status": "install ok installed",
+      "version_matches": true,
+      "query_exit_code": 0,
+      "query_stderr": "",
+      "verify_command": [
+        "dpkg",
+        "--verify",
+        "libevent-pthreads-2.1-7t64"
+      ],
+      "verify_exit_code": 0,
+      "verify_stdout": "",
+      "verify_stderr": "",
+      "no_discrepancies_reported": true,
+      "dpkg_md5sums_file": "/var/lib/dpkg/info/libevent-pthreads-2.1-7t64:amd64.md5sums",
+      "dpkg_md5sums_sha256": "c9dd1412dde67f245483fab9ac044befbc25dd0c77dc2fe586918ab00cb7a505",
+      "tracked_md5_entries": 3
+    },
+    {
+      "package": "libfabric1",
+      "expected_version_from_archive_audit": "1.17.0-3build2",
+      "installed_version": "1.17.0-3build2",
+      "installed_status": "install ok installed",
+      "version_matches": true,
+      "query_exit_code": 0,
+      "query_stderr": "",
+      "verify_command": [
+        "dpkg",
+        "--verify",
+        "libfabric1"
+      ],
+      "verify_exit_code": 0,
+      "verify_stdout": "",
+      "verify_stderr": "",
+      "no_discrepancies_reported": true,
+      "dpkg_md5sums_file": "/var/lib/dpkg/info/libfabric1:amd64.md5sums",
+      "dpkg_md5sums_sha256": "5d3329b5cdce6f222bd270461d22abf02c73babe81032249f317c3cfab46a373",
+      "tracked_md5_entries": 6
+    },
+    {
+      "package": "libhsa-runtime64-1",
+      "expected_version_from_archive_audit": "5.7.1-2build1",
+      "installed_version": "5.7.1-2build1",
+      "installed_status": "install ok installed",
+      "version_matches": true,
+      "query_exit_code": 0,
+      "query_stderr": "",
+      "verify_command": [
+        "dpkg",
+        "--verify",
+        "libhsa-runtime64-1"
+      ],
+      "verify_exit_code": 0,
+      "verify_stdout": "",
+      "verify_stderr": "",
+      "no_discrepancies_reported": true,
+      "dpkg_md5sums_file": "/var/lib/dpkg/info/libhsa-runtime64-1.md5sums",
+      "dpkg_md5sums_sha256": "34b785504c0ffbca59392d6e1d7593722af8eff7764439d2d250e490fd1dd698",
+      "tracked_md5_entries": 3
+    },
+    {
+      "package": "libhsakmt1",
+      "expected_version_from_archive_audit": "5.7.0-1build1",
+      "installed_version": "5.7.0-1build1",
+      "installed_status": "install ok installed",
+      "version_matches": true,
+      "query_exit_code": 0,
+      "query_stderr": "",
+      "verify_command": [
+        "dpkg",
+        "--verify",
+        "libhsakmt1"
+      ],
+      "verify_exit_code": 0,
+      "verify_stdout": "",
+      "verify_stderr": "",
+      "no_discrepancies_reported": true,
+      "dpkg_md5sums_file": "/var/lib/dpkg/info/libhsakmt1:amd64.md5sums",
+      "dpkg_md5sums_sha256": "3c4819f6bffaf6625695027b63b990623669875d17b915f34f0e8766cb692d32",
+      "tracked_md5_entries": 3
+    },
+    {
+      "package": "libhwloc-plugins",
+      "expected_version_from_archive_audit": "2.10.0-1build1",
+      "installed_version": "2.10.0-1build1",
+      "installed_status": "install ok installed",
+      "version_matches": true,
+      "query_exit_code": 0,
+      "query_stderr": "",
+      "verify_command": [
+        "dpkg",
+        "--verify",
+        "libhwloc-plugins"
+      ],
+      "verify_exit_code": 0,
+      "verify_stdout": "",
+      "verify_stderr": "",
+      "no_discrepancies_reported": true,
+      "dpkg_md5sums_file": "/var/lib/dpkg/info/libhwloc-plugins:amd64.md5sums",
+      "dpkg_md5sums_sha256": "984b8ce81a27d8c67e5f5ceab376d5a68da3b9414121a6a55daa543db58c1a14",
+      "tracked_md5_entries": 5
+    },
+    {
+      "package": "libhwloc15",
+      "expected_version_from_archive_audit": "2.10.0-1build1",
+      "installed_version": "2.10.0-1build1",
+      "installed_status": "install ok installed",
+      "version_matches": true,
+      "query_exit_code": 0,
+      "query_stderr": "",
+      "verify_command": [
+        "dpkg",
+        "--verify",
+        "libhwloc15"
+      ],
+      "verify_exit_code": 0,
+      "verify_stdout": "",
+      "verify_stderr": "",
+      "no_discrepancies_reported": true,
+      "dpkg_md5sums_file": "/var/lib/dpkg/info/libhwloc15:amd64.md5sums",
+      "dpkg_md5sums_sha256": "fb524d4b9e60b589719b2fbe7129c6696dbd5c6586fda39c9b7dffc56d281d45",
+      "tracked_md5_entries": 3
+    },
+    {
+      "package": "libllvm17t64",
+      "expected_version_from_archive_audit": "1:17.0.6-9ubuntu1",
+      "installed_version": "1:17.0.6-9ubuntu1",
+      "installed_status": "install ok installed",
+      "version_matches": true,
+      "query_exit_code": 0,
+      "query_stderr": "",
+      "verify_command": [
+        "dpkg",
+        "--verify",
+        "libllvm17t64"
+      ],
+      "verify_exit_code": 0,
+      "verify_stdout": "",
+      "verify_stderr": "",
+      "no_discrepancies_reported": true,
+      "dpkg_md5sums_file": "/var/lib/dpkg/info/libllvm17t64:amd64.md5sums",
+      "dpkg_md5sums_sha256": "f8b335ac697668d28026230d09b4ea59947332ec919355d88a71b77d619cbd75",
+      "tracked_md5_entries": 4
+    },
+    {
+      "package": "libmunge2",
+      "expected_version_from_archive_audit": "0.5.15-4ubuntu0.1",
+      "installed_version": "0.5.15-4ubuntu0.1",
+      "installed_status": "install ok installed",
+      "version_matches": true,
+      "query_exit_code": 0,
+      "query_stderr": "",
+      "verify_command": [
+        "dpkg",
+        "--verify",
+        "libmunge2"
+      ],
+      "verify_exit_code": 0,
+      "verify_stdout": "",
+      "verify_stderr": "",
+      "no_discrepancies_reported": true,
+      "dpkg_md5sums_file": "/var/lib/dpkg/info/libmunge2:amd64.md5sums",
+      "dpkg_md5sums_sha256": "4a38b528ddaf71f6eaa254266dd17cfd9ae3b2d3ffcf9e6054600d6906a11a7d",
+      "tracked_md5_entries": 3
+    },
+    {
+      "package": "libopenmpi3t64",
+      "expected_version_from_archive_audit": "4.1.6-7ubuntu2",
+      "installed_version": "4.1.6-7ubuntu2",
+      "installed_status": "install ok installed",
+      "version_matches": true,
+      "query_exit_code": 0,
+      "query_stderr": "",
+      "verify_command": [
+        "dpkg",
+        "--verify",
+        "libopenmpi3t64"
+      ],
+      "verify_exit_code": 0,
+      "verify_stdout": "",
+      "verify_stderr": "",
+      "no_discrepancies_reported": true,
+      "dpkg_md5sums_file": "/var/lib/dpkg/info/libopenmpi3t64:amd64.md5sums",
+      "dpkg_md5sums_sha256": "f20cab321b56129bfcdcb0836721c268b931fe11233b0a088c5bce92e8086e6c",
+      "tracked_md5_entries": 146
+    },
+    {
+      "package": "libpmix2t64",
+      "expected_version_from_archive_audit": "5.0.1-4.1build1",
+      "installed_version": "5.0.1-4.1build1",
+      "installed_status": "install ok installed",
+      "version_matches": true,
+      "query_exit_code": 0,
+      "query_stderr": "",
+      "verify_command": [
+        "dpkg",
+        "--verify",
+        "libpmix2t64"
+      ],
+      "verify_exit_code": 0,
+      "verify_stdout": "",
+      "verify_stderr": "",
+      "no_discrepancies_reported": true,
+      "dpkg_md5sums_file": "/var/lib/dpkg/info/libpmix2t64:amd64.md5sums",
+      "dpkg_md5sums_sha256": "0dabd03979c024f439c6d4ead7deb93361c8208f27c261249e109093725a9544",
+      "tracked_md5_entries": 36
+    },
+    {
+      "package": "libpsm-infinipath1",
+      "expected_version_from_archive_audit": "3.3+20.604758e7-6.3build1",
+      "installed_version": "3.3+20.604758e7-6.3build1",
+      "installed_status": "install ok installed",
+      "version_matches": true,
+      "query_exit_code": 0,
+      "query_stderr": "",
+      "verify_command": [
+        "dpkg",
+        "--verify",
+        "libpsm-infinipath1"
+      ],
+      "verify_exit_code": 0,
+      "verify_stdout": "",
+      "verify_stderr": "",
+      "no_discrepancies_reported": true,
+      "dpkg_md5sums_file": "/var/lib/dpkg/info/libpsm-infinipath1.md5sums",
+      "dpkg_md5sums_sha256": "d48cbcee40b40822c9d339696fe4d0fc05c994736e016fb1b21016ce651ed7a8",
+      "tracked_md5_entries": 4
+    },
+    {
+      "package": "libpsm2-2",
+      "expected_version_from_archive_audit": "11.2.185-2build1",
+      "installed_version": "11.2.185-2build1",
+      "installed_status": "install ok installed",
+      "version_matches": true,
+      "query_exit_code": 0,
+      "query_stderr": "",
+      "verify_command": [
+        "dpkg",
+        "--verify",
+        "libpsm2-2"
+      ],
+      "verify_exit_code": 0,
+      "verify_stdout": "",
+      "verify_stderr": "",
+      "no_discrepancies_reported": true,
+      "dpkg_md5sums_file": "/var/lib/dpkg/info/libpsm2-2.md5sums",
+      "dpkg_md5sums_sha256": "d1fcd4e58e73ecc5e22c90d60add3c370d3ba11288f033ec50fdfd2e2204f7f1",
+      "tracked_md5_entries": 6
+    },
+    {
+      "package": "libptscotch-7.0",
+      "expected_version_from_archive_audit": "7.0.4-1ubuntu2",
+      "installed_version": "7.0.4-1ubuntu2",
+      "installed_status": "install ok installed",
+      "version_matches": true,
+      "query_exit_code": 0,
+      "query_stderr": "",
+      "verify_command": [
+        "dpkg",
+        "--verify",
+        "libptscotch-7.0"
+      ],
+      "verify_exit_code": 0,
+      "verify_stdout": "",
+      "verify_stderr": "",
+      "no_discrepancies_reported": true,
+      "dpkg_md5sums_file": "/var/lib/dpkg/info/libptscotch-7.0:amd64.md5sums",
+      "dpkg_md5sums_sha256": "f253d6f46c216d1247477ab89c5f575de10d3650c6df41e80b6be09b492aee77",
+      "tracked_md5_entries": 25
+    },
+    {
+      "package": "librdmacm1t64",
+      "expected_version_from_archive_audit": "50.0-2ubuntu0.2",
+      "installed_version": "50.0-2ubuntu0.2",
+      "installed_status": "install ok installed",
+      "version_matches": true,
+      "query_exit_code": 0,
+      "query_stderr": "",
+      "verify_command": [
+        "dpkg",
+        "--verify",
+        "librdmacm1t64"
+      ],
+      "verify_exit_code": 0,
+      "verify_stdout": "",
+      "verify_stderr": "",
+      "no_discrepancies_reported": true,
+      "dpkg_md5sums_file": "/var/lib/dpkg/info/librdmacm1t64:amd64.md5sums",
+      "dpkg_md5sums_sha256": "d5b897f9273a372146c452d97da9255714265b31da9f47b07de7caf8166e0796",
+      "tracked_md5_entries": 5
+    },
+    {
+      "package": "libscotch-7.0",
+      "expected_version_from_archive_audit": "7.0.4-1ubuntu2",
+      "installed_version": "7.0.4-1ubuntu2",
+      "installed_status": "install ok installed",
+      "version_matches": true,
+      "query_exit_code": 0,
+      "query_stderr": "",
+      "verify_command": [
+        "dpkg",
+        "--verify",
+        "libscotch-7.0"
+      ],
+      "verify_exit_code": 0,
+      "verify_stdout": "",
+      "verify_stderr": "",
+      "no_discrepancies_reported": true,
+      "dpkg_md5sums_file": "/var/lib/dpkg/info/libscotch-7.0:amd64.md5sums",
+      "dpkg_md5sums_sha256": "9c34264c84d1b871a4cbdb8f503393ddfd5b8d8719bb3581e7a382dc4ee93ce9",
+      "tracked_md5_entries": 28
+    },
+    {
+      "package": "libucx0",
+      "expected_version_from_archive_audit": "1.16.0+ds-5ubuntu1",
+      "installed_version": "1.16.0+ds-5ubuntu1",
+      "installed_status": "install ok installed",
+      "version_matches": true,
+      "query_exit_code": 0,
+      "query_stderr": "",
+      "verify_command": [
+        "dpkg",
+        "--verify",
+        "libucx0"
+      ],
+      "verify_exit_code": 0,
+      "verify_stdout": "",
+      "verify_stderr": "",
+      "no_discrepancies_reported": true,
+      "dpkg_md5sums_file": "/var/lib/dpkg/info/libucx0:amd64.md5sums",
+      "dpkg_md5sums_sha256": "b98b281e039642f379452f61021f08308e829f3cae0b0e64d149c5467c6cbba9",
+      "tracked_md5_entries": 14
+    },
+    {
+      "package": "libxnvctrl0",
+      "expected_version_from_archive_audit": "510.47.03-0ubuntu4.24.04.1",
+      "installed_version": "510.47.03-0ubuntu4.24.04.1",
+      "installed_status": "install ok installed",
+      "version_matches": true,
+      "query_exit_code": 0,
+      "query_stderr": "",
+      "verify_command": [
+        "dpkg",
+        "--verify",
+        "libxnvctrl0"
+      ],
+      "verify_exit_code": 0,
+      "verify_stdout": "",
+      "verify_stderr": "",
+      "no_discrepancies_reported": true,
+      "dpkg_md5sums_file": "/var/lib/dpkg/info/libxnvctrl0:amd64.md5sums",
+      "dpkg_md5sums_sha256": "bf5cc6164f5bba3e4d10d6e5824d5a8567151eb7435dcbda82d8714ec1c73d18",
+      "tracked_md5_entries": 3
+    },
+    {
+      "package": "mpi-default-bin",
+      "expected_version_from_archive_audit": "1.15build1",
+      "installed_version": "1.15build1",
+      "installed_status": "install ok installed",
+      "version_matches": true,
+      "query_exit_code": 0,
+      "query_stderr": "",
+      "verify_command": [
+        "dpkg",
+        "--verify",
+        "mpi-default-bin"
+      ],
+      "verify_exit_code": 0,
+      "verify_stdout": "",
+      "verify_stderr": "",
+      "no_discrepancies_reported": true,
+      "dpkg_md5sums_file": "/var/lib/dpkg/info/mpi-default-bin.md5sums",
+      "dpkg_md5sums_sha256": "c688e462ca06a640c60e9f4afb3d25c252220c3885baf3decc47fd0bb4b9edd0",
+      "tracked_md5_entries": 2
+    },
+    {
+      "package": "openfoam2412-common",
+      "expected_version_from_archive_audit": "2412.260127-1",
+      "installed_version": "2412.260127-1",
+      "installed_status": "install ok installed",
+      "version_matches": true,
+      "query_exit_code": 0,
+      "query_stderr": "",
+      "verify_command": [
+        "dpkg",
+        "--verify",
+        "openfoam2412-common"
+      ],
+      "verify_exit_code": 0,
+      "verify_stdout": "??5??????   /usr/lib/openfoam/openfoam2412/etc/bashrc\n??5??????   /usr/lib/openfoam/openfoam2412/etc/cshrc\n",
+      "verify_stderr": "",
+      "no_discrepancies_reported": false,
+      "dpkg_md5sums_file": "/var/lib/dpkg/info/openfoam2412-common.md5sums",
+      "dpkg_md5sums_sha256": "c2480b82486da443ab3a2e1224c22dceaef303df654ab8fcb85e0abd4b3b2000",
+      "tracked_md5_entries": 539
+    },
+    {
+      "package": "openfoam2412-tools",
+      "expected_version_from_archive_audit": "2412.260127-1",
+      "installed_version": "2412.260127-1",
+      "installed_status": "install ok installed",
+      "version_matches": true,
+      "query_exit_code": 0,
+      "query_stderr": "",
+      "verify_command": [
+        "dpkg",
+        "--verify",
+        "openfoam2412-tools"
+      ],
+      "verify_exit_code": 0,
+      "verify_stdout": "",
+      "verify_stderr": "",
+      "no_discrepancies_reported": true,
+      "dpkg_md5sums_file": "/var/lib/dpkg/info/openfoam2412-tools:amd64.md5sums",
+      "dpkg_md5sums_sha256": "4e8a1e6da087fc7a07163ca073090845a88e28cf2ede401cda9b6f7144e464da",
+      "tracked_md5_entries": 5
+    },
+    {
+      "package": "openfoam2412-tutorials",
+      "expected_version_from_archive_audit": "2412.260127-1",
+      "installed_version": "2412.260127-1",
+      "installed_status": "install ok installed",
+      "version_matches": true,
+      "query_exit_code": 0,
+      "query_stderr": "",
+      "verify_command": [
+        "dpkg",
+        "--verify",
+        "openfoam2412-tutorials"
+      ],
+      "verify_exit_code": 0,
+      "verify_stdout": "",
+      "verify_stderr": "",
+      "no_discrepancies_reported": true,
+      "dpkg_md5sums_file": "/var/lib/dpkg/info/openfoam2412-tutorials.md5sums",
+      "dpkg_md5sums_sha256": "3025f32cf49ab5b5bc1d21032ab95c686336ee924dffe92cb16ce920c9b4bff8",
+      "tracked_md5_entries": 11302
+    },
+    {
+      "package": "openfoam2412",
+      "expected_version_from_archive_audit": "2412.260127-1",
+      "installed_version": "2412.260127-1",
+      "installed_status": "install ok installed",
+      "version_matches": true,
+      "query_exit_code": 0,
+      "query_stderr": "",
+      "verify_command": [
+        "dpkg",
+        "--verify",
+        "openfoam2412"
+      ],
+      "verify_exit_code": 0,
+      "verify_stdout": "",
+      "verify_stderr": "",
+      "no_discrepancies_reported": true,
+      "dpkg_md5sums_file": "/var/lib/dpkg/info/openfoam2412:amd64.md5sums",
+      "dpkg_md5sums_sha256": "af1d77507eb2919184be316f6a34ee0ad5b5ed8d2305695e30f307f8169ce76b",
+      "tracked_md5_entries": 476
+    },
+    {
+      "package": "openmpi-bin",
+      "expected_version_from_archive_audit": "4.1.6-7ubuntu2",
+      "installed_version": "4.1.6-7ubuntu2",
+      "installed_status": "install ok installed",
+      "version_matches": true,
+      "query_exit_code": 0,
+      "query_stderr": "",
+      "verify_command": [
+        "dpkg",
+        "--verify",
+        "openmpi-bin"
+      ],
+      "verify_exit_code": 0,
+      "verify_stdout": "",
+      "verify_stderr": "",
+      "no_discrepancies_reported": true,
+      "dpkg_md5sums_file": "/var/lib/dpkg/info/openmpi-bin.md5sums",
+      "dpkg_md5sums_sha256": "613b5000a9e9a64eabf64053af63294e18ec4174e9bd276bc7e22f1e8409b7f1",
+      "tracked_md5_entries": 43
+    },
+    {
+      "package": "openmpi-common",
+      "expected_version_from_archive_audit": "4.1.6-7ubuntu2",
+      "installed_version": "4.1.6-7ubuntu2",
+      "installed_status": "install ok installed",
+      "version_matches": true,
+      "query_exit_code": 0,
+      "query_stderr": "",
+      "verify_command": [
+        "dpkg",
+        "--verify",
+        "openmpi-common"
+      ],
+      "verify_exit_code": 0,
+      "verify_stdout": "",
+      "verify_stderr": "",
+      "no_discrepancies_reported": true,
+      "dpkg_md5sums_file": "/var/lib/dpkg/info/openmpi-common.md5sums",
+      "dpkg_md5sums_sha256": "f2b359be283da5fbbbcb6e45faede1aed7e8555d398882a02082e2453e710da4",
+      "tracked_md5_entries": 109
+    }
+  ],
+  "repository_configuration": [
+    {
+      "path": "/usr/share/keyrings/dell5560-openfoam.gpg",
+      "sha256": "6d17d37b82fc840b8a5c767545703df7264cfa3e30f9cf74556ebb124bda1a93",
+      "content": "binary keyring; fingerprint in preinstall audit"
+    },
+    {
+      "path": "/etc/apt/sources.list.d/dell5560-openfoam.list",
+      "sha256": "a57af704bb590ae279fe5cd4ca0e12cacfa3ab07a11f19c378b63926e27791ca",
+      "content": "deb [arch=amd64 signed-by=/usr/share/keyrings/dell5560-openfoam.gpg] https://dl.openfoam.com/repos/deb noble main\n"
+    },
+    {
+      "path": "/etc/apt/preferences.d/dell5560-openfoam",
+      "sha256": "a0c710ca189740845e2cd0e4b46df7f683f05bb9a69edc79a489daaf90ff5ba7",
+      "content": "Package: *\nPin: origin dl.openfoam.com\nPin-Priority: 100\n\nPackage: openfoam*\nPin: origin dl.openfoam.com\nPin-Priority: 600\n"
+    }
+  ],
+  "retained_inrelease_signature_recheck": {
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": "gpgv: Signature made Mon Jun 22 10:14:01 2026 EDT\ngpgv:                using RSA key DC93C096174122E256DA24063386DD74948D208F\ngpgv:                issuer \"admin@opencfd.co.uk\"\ngpgv: Good signature from \"openfoam-com <admin@opencfd.co.uk>\"\n"
+  },
+  "limitations": [
+    "dpkg verification compares current files to local installed-package metadata, principally MD5 content records; it is not an independent signature check on each installed file.",
+    "Files absent from package checksum metadata, generated caches and every system configuration file are not comprehensively covered.",
+    "The archive SHA256 trust chain is recorded separately in package_audit.json; this report does not establish an independent publisher identity.",
+    "The OpenFOAM key was bootstrapped from the official HTTPS endpoint without separate out-of-band fingerprint authentication.",
+    "A content match is integrity evidence, not a malware audit or proof of numerical correctness."
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "status": "done",
+  "minimum_clearance_mm": {
+    "04_right_fan_duct / 06_right_fan_retainer": 0.3000000000000346,
+    "04_right_fan_duct / 10_right_fan_tray": 0.2999999999998891,
+    "06_right_fan_retainer / 10_right_fan_tray": 0.3000000000000346,
+    "03_left_fan_duct / 05_left_fan_retainer": 0.3000000000000346,
+    "03_left_fan_duct / 09_left_fan_tray": 0.2999999999998891,
+    "05_left_fan_retainer / 09_left_fan_tray": 0.3000000000000346
+  },
+  "arms_difference_mm3": 0,
+  "recomputes": 1,
+  "flank_normal_offset_mm": 0.3
+}

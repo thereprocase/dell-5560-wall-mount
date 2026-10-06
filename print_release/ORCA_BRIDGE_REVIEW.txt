@@ -1,0 +1,31 @@
+REVISION H PROTOTYPE - ORCASLICER BRIDGE CORRECTION
+
+Verified with OrcaSlicer 2.4.2, P1S 0.4 mm, ASA, 0.20 mm layers,
+6 walls / 6 top and bottom / 100% rectilinear / 8 mm outer brim / supports off.
+
+For both ducts (03 and 04), keep the supplied inlet-down orientation.
+Set Bridge direction to 180 degrees (Orca uses 0 for automatic).
+Set Internal bridge direction to 180 degrees too. Turn OFF Relative bridge
+angle and Align infill direction to model. In this baked orientation the
+bridge lines must cross the narrow dovetail slots, along plate X.
+
+At Z=2.2 mm inspect the long slots near the plate sides. Automatic direction
+creates unsupported lengthwise paths around 124 mm. The corrected slices
+have maximum unsupported spans of 5.19 mm and zero disconnected floating
+components in the deposited-path screen. A slicer floating-region warning
+may still appear: inspect the actual paths, especially the first slot roof.
+
+Reviewed estimated totals: left duct 132.96 g / 3h 58m 55s;
+right duct 132.98 g / 3h 55m 42s. These include the selected brim/settings.
+These are geometric toolpath checks, not an ASA bridge or retention test.
+Verify your actual filament temperatures and printer profile before printing.
+
+The two .gcode.3mf files are Orca PREVIEW artifacts with embedded G-code,
+not portable geometry-only models. Open for inspection; re-slice with your
+actual spool settings. They have not been sent to a printer.
+
+The STEP geometry is unchanged. All 14 parts remain the preserved Rev H
+prototype; future ducted designs and Minimalist use their own revisions.
+
+Orca setting reference:
+https://github.com/OrcaSlicer/OrcaSlicer/wiki/strength_settings_advanced

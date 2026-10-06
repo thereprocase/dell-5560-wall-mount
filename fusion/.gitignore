@@ -1,0 +1,26 @@
+__pycache__/
+cfd/vendor/downloads/
+cfd/vendor/openfoam/debs/
+cfd/cases/*/constant/polyMesh/
+cfd/cases/*/processor*/
+cfd/cases/*/postProcessing/
+cfd/cases/**/constant/polyMesh/
+cfd/cases/**/processor*/
+cfd/cases/**/postProcessing/
+# Retain the full MSI transaction locally; the concise result is tracked.
+cfd/vendor/baram_install.log
+# Generated solver fields and large rejected-mesher diagnostics remain local.
+cfd/cases/**/[1-9]*/
+cfd/cases/OpenCFD_v2412/installed_pressure10_v3/0/
+cfd/cases/**/constant/triSurface/*.obj
+cfd/cases/**/constant/triSurface/*.vtp
+cfd/geometry_traced_gmsh/*.stl
+cfd/geometry_traced_gmsh/*.msh
+cfd/geometry_traced_repaired/*.obj
+cfd/geometry_traced_repaired/*.vtp
+
+# Live bridge transport is local; native recipes and evidence remain versioned.
+queue/
+
+/output/desktop.png
+/output/native/simulation_access.png

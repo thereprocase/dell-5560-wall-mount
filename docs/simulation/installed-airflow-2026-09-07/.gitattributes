@@ -1,0 +1,4 @@
+*.pdf binary
+*.png binary
+*.zip binary
+*.json -text whitespace=cr-at-eol

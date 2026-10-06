@@ -1,0 +1,405 @@
+{
+  "created_utc": "2026-09-08T11:10:11.866319+00:00",
+  "geometry_revision": "H",
+  "base_commit": "f47a03f",
+  "scope": "Transient SST URANS verification candidate; uncalibrated fan forces and surrogate laptop; no heat transfer.",
+  "geometry_inputs": [
+    {
+      "path": "REPOSITORY\\freecad\\Precision_5560_Native.step",
+      "sha256": "0a60dceee211fdd028af1e63ea3fe9b9a0ae06f84d521ade9ebfe4b4f04ad8e3"
+    },
+    {
+      "path": "REPOSITORY\\fusion\\output\\native\\cfd_helpers_traced.json",
+      "sha256": "8a64f4f30f49a6af90d0ecd78bb1a10d7badb1c2a1080c375875a9ec4d61cf81"
+    },
+    {
+      "path": "REPOSITORY\\fusion\\output\\native\\cfd_helpers_traced.step",
+      "sha256": "6fa7e681562fb4f9ac68e63bbe39f1ce2a4039499740c63e80dbb2e0b972ded2"
+    }
+  ],
+  "surface_sha256": "3b764f39413d86dbb3a16e0403ff4dc6650ef9b10f2a299969ebbd4aa0d502ed",
+  "numerical_surface_stabilization": {
+    "method": "Deterministic sub-micrometre vertex perturbation; domain planes fixed; native CAD unchanged",
+    "seed": 5560,
+    "max_displacement_m": 1.672497877524723e-08,
+    "flipped_normals": 0
+  },
+  "surface_deflection_mm": 0.025,
+  "base_cell_mm": 16,
+  "surface_cell_mm": {
+    "printed": 1,
+    "laptop": 1,
+    "noctua": 2
+  },
+  "refinement_boxes": {
+    "ductWake": {
+      "min_m": [
+        -0.145,
+        0.002,
+        -0.004
+      ],
+      "max_m": [
+        0.145,
+        0.042,
+        0.024
+      ],
+      "level": 5,
+      "cell_mm": 0.5
+    },
+    "ductOuterEdge": {
+      "min_m": [
+        -0.145,
+        0.034,
+        -0.004
+      ],
+      "max_m": [
+        0.145,
+        0.043,
+        0.01
+      ],
+      "level": 6,
+      "cell_mm": 0.25
+    },
+    "frontLip": {
+      "min_m": [
+        -0.174,
+        0.047,
+        -0.003
+      ],
+      "max_m": [
+        0.174,
+        0.058,
+        0.009
+      ],
+      "level": 6,
+      "cell_mm": 0.25
+    },
+    "frontLipWake": {
+      "min_m": [
+        -0.176,
+        0.042,
+        -0.002
+      ],
+      "max_m": [
+        0.176,
+        0.064,
+        0.022
+      ],
+      "level": 5,
+      "cell_mm": 0.5
+    },
+    "leftPassage": {
+      "min_m": [
+        -0.15,
+        0.037,
+        0.14
+      ],
+      "max_m": [
+        -0.073,
+        0.052,
+        0.238
+      ],
+      "level": 5,
+      "cell_mm": 0.5
+    },
+    "rightPassage": {
+      "min_m": [
+        0.073,
+        0.037,
+        0.14
+      ],
+      "max_m": [
+        0.15,
+        0.052,
+        0.238
+      ],
+      "level": 5,
+      "cell_mm": 0.5
+    },
+    "leftHingeLip": {
+      "min_m": [
+        -0.15,
+        0.037,
+        0.222
+      ],
+      "max_m": [
+        -0.073,
+        0.054,
+        0.237
+      ],
+      "level": 6,
+      "cell_mm": 0.25
+    },
+    "rightHingeLip": {
+      "min_m": [
+        0.073,
+        0.037,
+        0.222
+      ],
+      "max_m": [
+        0.15,
+        0.054,
+        0.237
+      ],
+      "level": 6,
+      "cell_mm": 0.25
+    },
+    "hingeWake": {
+      "min_m": [
+        -0.15,
+        0.033,
+        0.232
+      ],
+      "max_m": [
+        0.15,
+        0.061,
+        0.253
+      ],
+      "level": 5,
+      "cell_mm": 0.5
+    },
+    "leftDuctSide": {
+      "min_m": [
+        -0.145,
+        0.003,
+        -0.008
+      ],
+      "max_m": [
+        -0.136,
+        0.044,
+        0.014
+      ],
+      "level": 6,
+      "cell_mm": 0.25
+    },
+    "rightDuctSide": {
+      "min_m": [
+        0.136,
+        0.003,
+        -0.008
+      ],
+      "max_m": [
+        0.145,
+        0.044,
+        0.014
+      ],
+      "level": 6,
+      "cell_mm": 0.25
+    }
+  },
+  "requested_layers": {
+    "printed": 5,
+    "laptop": 5,
+    "noctua": 3,
+    "first_layer_thickness_mm": 0.06,
+    "growth": 1.2
+  },
+  "requested_max_Co": 0.5,
+  "requested_max_deltaT_s": 2.5e-05,
+  "pilot_end_time_s": 0.002,
+  "production_plan": "Assess pilot runtime, probe validity, local mesh and yPlus; map coarse fields only as initialization. Extend through startup then >=20 measured shedding periods; halve time step and refine mesh before any convergence claim.",
+  "probes": [
+    {
+      "name": "duct_edge_x-0.111",
+      "point_m": [
+        -0.111,
+        0.039,
+        0.008
+      ]
+    },
+    {
+      "name": "duct_wake_x-0.111",
+      "point_m": [
+        -0.111,
+        0.039,
+        0.02
+      ]
+    },
+    {
+      "name": "front_lip_wallside_x-0.111",
+      "point_m": [
+        -0.111,
+        0.046,
+        0.004
+      ]
+    },
+    {
+      "name": "front_lip_outside_x-0.111",
+      "point_m": [
+        -0.111,
+        0.06,
+        0.004
+      ]
+    },
+    {
+      "name": "hinge_underside_x-0.111",
+      "point_m": [
+        -0.111,
+        0.037,
+        0.219
+      ]
+    },
+    {
+      "name": "hinge_exit_x-0.111",
+      "point_m": [
+        -0.111,
+        0.046,
+        0.239
+      ]
+    },
+    {
+      "name": "hinge_wake_x-0.111",
+      "point_m": [
+        -0.111,
+        0.046,
+        0.25
+      ]
+    },
+    {
+      "name": "duct_edge_x0.07",
+      "point_m": [
+        0.07,
+        0.039,
+        0.008
+      ]
+    },
+    {
+      "name": "duct_wake_x0.07",
+      "point_m": [
+        0.07,
+        0.039,
+        0.02
+      ]
+    },
+    {
+      "name": "front_lip_wallside_x0.07",
+      "point_m": [
+        0.07,
+        0.046,
+        0.004
+      ]
+    },
+    {
+      "name": "front_lip_outside_x0.07",
+      "point_m": [
+        0.07,
+        0.06,
+        0.004
+      ]
+    },
+    {
+      "name": "hinge_underside_x0.07",
+      "point_m": [
+        0.07,
+        0.037,
+        0.219
+      ]
+    },
+    {
+      "name": "hinge_exit_x0.07",
+      "point_m": [
+        0.07,
+        0.046,
+        0.239
+      ]
+    },
+    {
+      "name": "hinge_wake_x0.07",
+      "point_m": [
+        0.07,
+        0.046,
+        0.25
+      ]
+    },
+    {
+      "name": "duct_edge_x0.111",
+      "point_m": [
+        0.111,
+        0.039,
+        0.008
+      ]
+    },
+    {
+      "name": "duct_wake_x0.111",
+      "point_m": [
+        0.111,
+        0.039,
+        0.02
+      ]
+    },
+    {
+      "name": "front_lip_wallside_x0.111",
+      "point_m": [
+        0.111,
+        0.046,
+        0.004
+      ]
+    },
+    {
+      "name": "front_lip_outside_x0.111",
+      "point_m": [
+        0.111,
+        0.06,
+        0.004
+      ]
+    },
+    {
+      "name": "hinge_underside_x0.111",
+      "point_m": [
+        0.111,
+        0.037,
+        0.219
+      ]
+    },
+    {
+      "name": "hinge_exit_x0.111",
+      "point_m": [
+        0.111,
+        0.046,
+        0.239
+      ]
+    },
+    {
+      "name": "hinge_wake_x0.111",
+      "point_m": [
+        0.111,
+        0.046,
+        0.25
+      ]
+    },
+    {
+      "name": "ambient_reference",
+      "point_m": [
+        0,
+        0.25,
+        0.1
+      ]
+    }
+  ],
+  "interpretation": "Look for sustained traveling vorticity and reproducible pressure spectra; do not infer shedding from a still streamline image. Gauge p in Pa = 1.2 * p. Pressure depression alone does not establish a Bernoulli cause.",
+  "gates": {
+    "surface": false,
+    "mesh": false,
+    "layers": false,
+    "transient_pilot": false,
+    "spatial_convergence": false,
+    "temporal_convergence": false,
+    "hardware_validation": false
+  },
+  "section_output": {
+    "interval_s": 0.0001,
+    "fields": [
+      "p",
+      "U",
+      "vorticity",
+      "Q"
+    ],
+    "format": "VTK",
+    "planes": 4,
+    "purpose": "Local transient animation with actual recorded timestamps; complete 3D fields remain less frequent."
+  },
+  "laptop_geometry_uncertainty_mm": {
+    "profile": 2,
+    "intake_location": 4
+  }
+}

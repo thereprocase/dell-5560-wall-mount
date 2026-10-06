@@ -1,0 +1,28 @@
+{
+  "export_solids": 14,
+  "all_export_solids_valid": true,
+  "overlaps_mm3": {},
+  "intentional_pin_overlaps_mm3": {
+    "04_right_fan_duct / 12_right_push_pin": 0.13038083871567765,
+    "04_right_fan_duct / 14_right_push_pin": 0.13038083871230788,
+    "03_left_fan_duct / 11_left_push_pin": 0.13038083948685217,
+    "03_left_fan_duct / 13_left_push_pin": 0.1303808394844127
+  },
+  "laptop_interference_mm3": 0.0,
+  "fan_interference_mm3": 0.0,
+  "wall_driver_interference_mm3": {
+    "(-162, -36)": 0.0,
+    "(-162, 174)": 0.0,
+    "(162, -36)": 0.0,
+    "(162, 174)": 0.0
+  },
+  "duct_assembly_from_room_mm3": 0.0,
+  "rail_assembly_from_room_mm3": 0.0,
+  "tray_removal_mm3": 0.0,
+  "fan_removal_mm3": 0.0,
+  "laptop_vertical_lift_mm3": 0.0,
+  "lift_then_forward_mm3": 0.0,
+  "estimated_profile_interference_mm3": 0.0,
+  "all_checks_pass": true,
+  "limitations": "Discrete source service-path samples; intended crown interference retained. No physical load, adhesive, thermal, retention or printing test."
+}

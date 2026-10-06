@@ -1,0 +1,75 @@
+{
+  "scope": "Uncalibrated, coarse isothermal airflow exploration, not hardware performance or thermal prediction",
+  "fan_sources": [
+    {
+      "name": "dell_fan_left",
+      "assumed_pressure_Pa": 10,
+      "area_m2": 0.001963495408493621,
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "integrated_force_over_density": [
+        0.0,
+        0.01636246173744684,
+        0.0
+      ]
+    },
+    {
+      "name": "dell_fan_right",
+      "assumed_pressure_Pa": 10,
+      "area_m2": 0.001963495408493621,
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "integrated_force_over_density": [
+        0.0,
+        0.01636246173744684,
+        0.0
+      ]
+    },
+    {
+      "name": "noctua_fan_left",
+      "assumed_pressure_Pa": 10,
+      "area_m2": 0.009503317777109124,
+      "direction": [
+        0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "integrated_force_over_density": [
+        0.0,
+        -0.05599883703303774,
+        0.05599883703303774
+      ]
+    },
+    {
+      "name": "noctua_fan_right",
+      "assumed_pressure_Pa": 10,
+      "area_m2": 0.009503317777109124,
+      "direction": [
+        0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "integrated_force_over_density": [
+        0.0,
+        -0.05599883703303774,
+        0.05599883703303774
+      ]
+    }
+  ],
+  "grille_resistance": "Zero added resistance; traced gross active opening; unknown porosity",
+  "internal_ducts": "Assumed simplified paired internal flow passages",
+  "mesh": "No prism layers in first diagnostic run; wall resolution and mesh sensitivity unverified",
+  "density_kg_m3": 1.2,
+  "warm_start": "Previous thin-actuator exploratory run, iteration300",
+  "numerical_actuator_thickness_m": {
+    "noctua": 0.01,
+    "dell": 0.002
+  },
+  "momentum_scheme": "First-order bounded upwind for coarse exploratory steady run; discretization sensitivity unverified"
+}

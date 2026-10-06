@@ -1,0 +1,857 @@
+{
+  "occurrences": 14,
+  "joints": 13,
+  "components": [
+    {
+      "name": "01 Cradle | RH",
+      "bodies": 1
+    },
+    {
+      "name": "02 Fan duct | RH",
+      "bodies": 1
+    },
+    {
+      "name": "03 Outlet rail | RH",
+      "bodies": 1
+    },
+    {
+      "name": "04 Fan tray | RH",
+      "bodies": 1
+    },
+    {
+      "name": "05 Fan retainer | RH",
+      "bodies": 1
+    },
+    {
+      "name": "06 Push pin | shared x4",
+      "bodies": 1
+    },
+    {
+      "name": "01 Cradle | LH",
+      "bodies": 1
+    },
+    {
+      "name": "02 Fan duct | LH",
+      "bodies": 1
+    },
+    {
+      "name": "03 Outlet rail | LH",
+      "bodies": 1
+    },
+    {
+      "name": "04 Fan tray | LH",
+      "bodies": 1
+    },
+    {
+      "name": "05 Fan retainer | LH",
+      "bodies": 1
+    },
+    {
+      "name": "06 Push pin | shared x4",
+      "bodies": 1
+    },
+    {
+      "name": "06 Push pin | shared x4",
+      "bodies": 1
+    },
+    {
+      "name": "06 Push pin | shared x4",
+      "bodies": 1
+    }
+  ],
+  "parameters": [
+    {
+      "name": "outboardX",
+      "expression": "184 mm",
+      "comment": "LAYOUT | Outer cradle and rail face"
+    },
+    {
+      "name": "wallGap",
+      "expression": "40 mm",
+      "comment": "LAYOUT | Rear laptop air gap"
+    },
+    {
+      "name": "wallBoltX",
+      "expression": "162 mm",
+      "comment": "WALL INTERFACE | Bolt half spacing"
+    },
+    {
+      "name": "lowerWallBoltZ",
+      "expression": "-36 mm",
+      "comment": "WALL INTERFACE | Lower bolt elevation"
+    },
+    {
+      "name": "upperWallBoltZ",
+      "expression": "174 mm",
+      "comment": "WALL INTERFACE | Upper bolt elevation"
+    },
+    {
+      "name": "railBottomZ",
+      "expression": "154 mm",
+      "comment": "OUTLET | Lower keyed joint elevation"
+    },
+    {
+      "name": "outletZ",
+      "expression": "232 mm",
+      "comment": "OUTLET | Lip elevation"
+    },
+    {
+      "name": "outletGap",
+      "expression": "12 mm",
+      "comment": "OUTLET | Nominal 12 mm; verify 8 and 16 mm variants"
+    },
+    {
+      "name": "fanAngle",
+      "expression": "45 deg",
+      "comment": "FAN DATUM | Installed inclination"
+    },
+    {
+      "name": "fanCenterY",
+      "expression": "67 mm",
+      "comment": "FAN DATUM | Installed pivot outward from wall"
+    },
+    {
+      "name": "fanCenterZ",
+      "expression": "-84 mm",
+      "comment": "FAN DATUM | Installed pivot below shelf"
+    },
+    {
+      "name": "ductSkin",
+      "expression": "2 mm",
+      "comment": "AIR PATH | Normal station inset and side wall thickness"
+    },
+    {
+      "name": "keyClearance",
+      "expression": "0.3 mm",
+      "comment": "GLUED JOINTS | Mortise allowance per side"
+    },
+    {
+      "name": "pinSocketDiameter",
+      "expression": "4.1 mm",
+      "comment": "PIN INTERFACE | Duct socket bore"
+    },
+    {
+      "name": "pinPassageDiameter",
+      "expression": "4.5 mm",
+      "comment": "PIN INTERFACE | Cap clearance passage"
+    },
+    {
+      "name": "pinHeadRadius",
+      "expression": "4 mm",
+      "comment": "PIN | Head radius"
+    },
+    {
+      "name": "pinHeadHeight",
+      "expression": "2 mm",
+      "comment": "PIN | Head height"
+    },
+    {
+      "name": "pinHeadChamfer",
+      "expression": "0.6 mm",
+      "comment": "PIN | Head edge break"
+    },
+    {
+      "name": "pinShaftDiameter",
+      "expression": "4 mm",
+      "comment": "PIN | Shaft diameter"
+    },
+    {
+      "name": "pinShaftLength",
+      "expression": "10 mm",
+      "comment": "PIN | Shaft length"
+    },
+    {
+      "name": "pinCrownDiameter",
+      "expression": "4.2 mm",
+      "comment": "PIN | Retention crown diameter"
+    },
+    {
+      "name": "pinCrownHeight",
+      "expression": "2 mm",
+      "comment": "PIN | Tapered crown height"
+    },
+    {
+      "name": "pinTipRadius",
+      "expression": "1.6 mm",
+      "comment": "PIN | Tip radius"
+    },
+    {
+      "name": "pinSplitWidth",
+      "expression": "1 mm",
+      "comment": "PIN | Flexure slit width"
+    },
+    {
+      "name": "pinSplitRoot",
+      "expression": "4 mm",
+      "comment": "PIN | Flexure root elevation"
+    },
+    {
+      "name": "pinSplitOverrun",
+      "expression": "0.1 mm",
+      "comment": "PIN | Through-cut allowance"
+    },
+    {
+      "name": "CRADLE_width",
+      "expression": "44 mm",
+      "comment": "Cradle width inward from the outboard bed face"
+    },
+    {
+      "name": "CRADLE_tine_height",
+      "expression": "94 mm",
+      "comment": "Front retention tine tip height"
+    },
+    {
+      "name": "CRADLE_shroud_top_z",
+      "expression": "153.7 mm",
+      "comment": "Air shroud top; clearance below rail"
+    },
+    {
+      "name": "CRADLE_shroud_thickness",
+      "expression": "4 mm",
+      "comment": "Outboard air shroud thickness"
+    },
+    {
+      "name": "CRADLE_lip_inset",
+      "expression": "10.6 mm",
+      "comment": "Inward lip reach from outboard face"
+    },
+    {
+      "name": "RAIL_railCheekThickness",
+      "expression": "4 mm",
+      "comment": "Outer cheek and diagonal arm thickness"
+    },
+    {
+      "name": "RAIL_railPanelThickness",
+      "expression": "2 mm",
+      "comment": "Lower air panel thickness"
+    },
+    {
+      "name": "RAIL_railSkinInset",
+      "expression": "2.4 mm",
+      "comment": "Outlet skin horizontal inset"
+    },
+    {
+      "name": "RAIL_railDriverBridge",
+      "expression": "4 mm",
+      "comment": "Printable flat over the wall-driver passage"
+    },
+    {
+      "name": "TRAY_tray_height",
+      "expression": "36 mm",
+      "comment": "Tray depth below the fixed Z=-110 duct interface"
+    },
+    {
+      "name": "TRAY_fan_ledge_thickness",
+      "expression": "7 mm",
+      "comment": "Fan support ledge thickness"
+    },
+    {
+      "name": "TRAY_guard_thickness",
+      "expression": "3 mm",
+      "comment": "Printed fan finger-guard thickness"
+    },
+    {
+      "name": "TRAY_guard_rib_width",
+      "expression": "2.4 mm",
+      "comment": "Finger-guard crossbar and spine width"
+    },
+    {
+      "name": "TRAY_guard_rib_pitch",
+      "expression": "12 mm",
+      "comment": "Fan finger-guard crossbar spacing"
+    },
+    {
+      "name": "TRAY_side_vent_pitch",
+      "expression": "20 mm",
+      "comment": "Side ventilation window spacing"
+    },
+    {
+      "name": "TRAY_rear_vent_pitch",
+      "expression": "22 mm",
+      "comment": "Rear stop ventilation window spacing"
+    },
+    {
+      "name": "CAP_front_print_face_y",
+      "expression": "144 mm",
+      "comment": "Cap outer print-bed face, local Y"
+    },
+    {
+      "name": "CAP_cap_thickness",
+      "expression": "8 mm",
+      "comment": "Cap body depth before weight relief"
+    },
+    {
+      "name": "CAP_outer_face_thickness",
+      "expression": "2.4 mm",
+      "comment": "Continuous outer cap face"
+    }
+  ],
+  "sketches": [
+    {
+      "component": "05 Fan retainer | RH",
+      "name": "Cap outer plate | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "05 Fan retainer | RH",
+      "name": "Tray locating toe | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "05 Fan retainer | RH",
+      "name": "Outer V flute 1 profile tool | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "05 Fan retainer | RH",
+      "name": "Outer V flute 2 profile tool | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "05 Fan retainer | RH",
+      "name": "Rounded cable passage tool | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "05 Fan retainer | RH",
+      "name": "Inboard cap screw tool | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "05 Fan retainer | RH",
+      "name": "Outboard cap screw tool | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "05 Fan retainer | RH",
+      "name": "Locating toe relief 1 tool | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "05 Fan retainer | RH",
+      "name": "Locating toe relief 2 tool | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "05 Fan retainer | RH",
+      "name": "Locating toe relief 3 tool | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "05 Fan retainer | RH",
+      "name": "Lower cap rim and rib pocket 1 tool | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "05 Fan retainer | RH",
+      "name": "Lower cap rim and rib pocket 2 tool | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "05 Fan retainer | RH",
+      "name": "Lower cap rim and rib pocket 3 tool | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "05 Fan retainer | RH",
+      "name": "Upper cap weight relief tool | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "01 Cradle | RH",
+      "name": "Backplate | R4 outline | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "01 Cradle | RH",
+      "name": "Laptop shelf | R2 outline | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "01 Cradle | RH",
+      "name": "Lower contact block | R4 outline | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "01 Cradle | RH",
+      "name": "Front retention tine | R2 outline | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "01 Cradle | RH",
+      "name": "Tine inboard taper cutter | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "01 Cradle | RH",
+      "name": "Lower side guide | R2 outline | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "01 Cradle | RH",
+      "name": "Shelf diagonal gusset | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "01 Cradle | RH",
+      "name": "Vertical spine | R4 outline | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "01 Cradle | RH",
+      "name": "Upper laptop contact | R4 outline | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "01 Cradle | RH",
+      "name": "Upper contact diagonal rib | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "01 Cradle | RH",
+      "name": "Lower joint receiver | R3 outline | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "01 Cradle | RH",
+      "name": "Outlet rail receiver | R3 outline | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "01 Cradle | RH",
+      "name": "Lower wall-anchor roofed clearance bore | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "01 Cradle | RH",
+      "name": "Lower wall-anchor roofed clearance roof | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "01 Cradle | RH",
+      "name": "Upper wall-anchor roofed clearance bore | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "01 Cradle | RH",
+      "name": "Upper wall-anchor roofed clearance roof | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "01 Cradle | RH",
+      "name": "Lower anchor driver access cutter bore | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "01 Cradle | RH",
+      "name": "Lower anchor driver access cutter roof | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "01 Cradle | RH",
+      "name": "Spine neutral-axis cavity | R4 outline | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "01 Cradle | RH",
+      "name": "Lower contact cavity 1 | R2 outline | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "01 Cradle | RH",
+      "name": "Lower contact cavity 2 | R2 outline | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "01 Cradle | RH",
+      "name": "Shelf cavity | R1.5 outline | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "01 Cradle | RH",
+      "name": "Tine cavity | R1.3 outline | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "01 Cradle | RH",
+      "name": "Retained tapered tine skin mask | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "01 Cradle | RH",
+      "name": "Triangular gusset window | R1.5 outline | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "01 Cradle | RH",
+      "name": "Guide window | R3 outline | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "01 Cradle | RH",
+      "name": "Outboard air skin | R2 outline | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "01 Cradle | RH",
+      "name": "Inward sealing lip | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "01 Cradle | RH",
+      "name": "Duct receiver 1 | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "01 Cradle | RH",
+      "name": "Duct receiver 2 | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "01 Cradle | RH",
+      "name": "Rail receiver 1 | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "01 Cradle | RH",
+      "name": "Rail receiver 2 | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "06 Push pin | shared x4",
+      "name": "Pin axial section | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "06 Push pin | shared x4",
+      "name": "Pin centered split cutter | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "03 Outlet rail | RH",
+      "name": "Lower air panel | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "03 Outlet rail | RH",
+      "name": "Inclined outlet skin | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "03 Outlet rail | RH",
+      "name": "Diagonal joint arm | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "03 Outlet rail | RH",
+      "name": "Outer air cheek | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "03 Outlet rail | RH",
+      "name": "Laptop-side retaining lip | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "03 Outlet rail | RH",
+      "name": "Upper wall-side link | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "03 Outlet rail | RH",
+      "name": "Outlet end reinforcement | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "03 Outlet rail | RH",
+      "name": "Rail tenons 1 | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "03 Outlet rail | RH",
+      "name": "Rail tenons 2 | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "03 Outlet rail | RH",
+      "name": "Upper wall-driver clearance bore | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "03 Outlet rail | RH",
+      "name": "Upper wall-driver clearance roof | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "03 Outlet rail | RH",
+      "name": "Lower cheek clearance tool | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "02 Fan duct | RH",
+      "name": "Outer station 1 station | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "02 Fan duct | RH",
+      "name": "Outer station 1 | section",
+      "fully_constrained": true
+    },
+    {
+      "component": "02 Fan duct | RH",
+      "name": "Outer station 2 station | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "02 Fan duct | RH",
+      "name": "Outer station 2 | section",
+      "fully_constrained": true
+    },
+    {
+      "component": "02 Fan duct | RH",
+      "name": "Outer station 3 station | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "02 Fan duct | RH",
+      "name": "Outer station 3 | section",
+      "fully_constrained": true
+    },
+    {
+      "component": "02 Fan duct | RH",
+      "name": "Outer station 4 station | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "02 Fan duct | RH",
+      "name": "Outer station 4 | section",
+      "fully_constrained": true
+    },
+    {
+      "component": "02 Fan duct | RH",
+      "name": "Inner station 1 station | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "02 Fan duct | RH",
+      "name": "Inner station 1 | section",
+      "fully_constrained": true
+    },
+    {
+      "component": "02 Fan duct | RH",
+      "name": "Inner station 2 station | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "02 Fan duct | RH",
+      "name": "Inner station 2 | section",
+      "fully_constrained": true
+    },
+    {
+      "component": "02 Fan duct | RH",
+      "name": "Inner station 3 station | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "02 Fan duct | RH",
+      "name": "Inner station 3 | section",
+      "fully_constrained": true
+    },
+    {
+      "component": "02 Fan duct | RH",
+      "name": "Inner station 4 station | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "02 Fan duct | RH",
+      "name": "Inner station 4 | section",
+      "fully_constrained": true
+    },
+    {
+      "component": "02 Fan duct | RH",
+      "name": "Fan mounting deck | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "02 Fan duct | RH",
+      "name": "Fan inlet | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "02 Fan duct | RH",
+      "name": "Tray seat recess | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "02 Fan duct | RH",
+      "name": "Pin socket boss 1 | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "02 Fan duct | RH",
+      "name": "Pin socket boss 2 | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "02 Fan duct | RH",
+      "name": "Tray groove 1 | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "02 Fan duct | RH",
+      "name": "Pin socket 1 | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "02 Fan duct | RH",
+      "name": "Tray groove 2 | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "02 Fan duct | RH",
+      "name": "Pin socket 2 | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "02 Fan duct | RH",
+      "name": "Cradle joint saddle | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "02 Fan duct | RH",
+      "name": "Diagonal saddle buttress | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "02 Fan duct | RH",
+      "name": "Duct tenons 1 | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "02 Fan duct | RH",
+      "name": "Duct tenons 2 | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "02 Fan duct | RH",
+      "name": "Lower driver access bore | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "02 Fan duct | RH",
+      "name": "Lower driver access roof | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "02 Fan duct | RH",
+      "name": "Socket to channel boundary | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "02 Fan duct | RH",
+      "name": "Inboard socket junction relief | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "04 Fan tray | RH",
+      "name": "Inboard tray wall | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "04 Fan tray | RH",
+      "name": "Outboard tray wall | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "04 Fan tray | RH",
+      "name": "Rear fan insertion stop | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "04 Fan tray | RH",
+      "name": "Inboard fan support ledge | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "04 Fan tray | RH",
+      "name": "Outboard fan support ledge | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "04 Fan tray | RH",
+      "name": "Guard crossbar seed | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "04 Fan tray | RH",
+      "name": "Guard central spine | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "04 Fan tray | RH",
+      "name": "Inboard dovetail support beam | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "04 Fan tray | RH",
+      "name": "Outboard dovetail support beam | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "04 Fan tray | RH",
+      "name": "Inboard Rear dovetail support land | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "04 Fan tray | RH",
+      "name": "Inboard Front dovetail support land | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "04 Fan tray | RH",
+      "name": "Outboard Rear dovetail support land | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "04 Fan tray | RH",
+      "name": "Outboard Front dovetail support land | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "04 Fan tray | RH",
+      "name": "Inboard duct slide tongue | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "04 Fan tray | RH",
+      "name": "Outboard duct slide tongue | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "04 Fan tray | RH",
+      "name": "Inboard side vents seed tool | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "04 Fan tray | RH",
+      "name": "Outboard side vents seed tool | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "04 Fan tray | RH",
+      "name": "Rear stop vent seed tool | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "04 Fan tray | RH",
+      "name": "Inboard ledge relief tool | profile",
+      "fully_constrained": true
+    },
+    {
+      "component": "04 Fan tray | RH",
+      "name": "Outboard ledge relief tool | profile",
+      "fully_constrained": true
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,106 @@
+{
+  "parts": {
+    "02_right_cradle": {
+      "valid": true,
+      "solids": 1,
+      "small_faces": 2,
+      "short_edges": 0
+    },
+    "01_left_cradle": {
+      "valid": true,
+      "solids": 1,
+      "small_faces": 2,
+      "short_edges": 0
+    },
+    "04_right_fan_duct": {
+      "valid": true,
+      "solids": 1,
+      "small_faces": 0,
+      "short_edges": 0
+    },
+    "03_left_fan_duct": {
+      "valid": true,
+      "solids": 1,
+      "small_faces": 0,
+      "short_edges": 0
+    },
+    "06_right_fan_retainer": {
+      "valid": true,
+      "solids": 1,
+      "small_faces": 0,
+      "short_edges": 0
+    },
+    "05_left_fan_retainer": {
+      "valid": true,
+      "solids": 1,
+      "small_faces": 0,
+      "short_edges": 0
+    },
+    "08_right_outlet_rail": {
+      "valid": true,
+      "solids": 1,
+      "small_faces": 0,
+      "short_edges": 0
+    },
+    "07_left_outlet_rail": {
+      "valid": true,
+      "solids": 1,
+      "small_faces": 0,
+      "short_edges": 0
+    },
+    "10_right_fan_tray": {
+      "valid": true,
+      "solids": 1,
+      "small_faces": 0,
+      "short_edges": 0
+    },
+    "09_left_fan_tray": {
+      "valid": true,
+      "solids": 1,
+      "small_faces": 0,
+      "short_edges": 0
+    },
+    "11_left_push_pin": {
+      "valid": true,
+      "solids": 1,
+      "small_faces": 0,
+      "short_edges": 0
+    },
+    "12_right_push_pin": {
+      "valid": true,
+      "solids": 1,
+      "small_faces": 0,
+      "short_edges": 0
+    },
+    "13_left_push_pin": {
+      "valid": true,
+      "solids": 1,
+      "small_faces": 0,
+      "short_edges": 0
+    },
+    "14_right_push_pin": {
+      "valid": true,
+      "solids": 1,
+      "small_faces": 0,
+      "short_edges": 0
+    }
+  },
+  "fit_gaps_mm": {
+    "04_right_fan_duct / 06_right_fan_retainer": 0.3000000000000346,
+    "04_right_fan_duct / 10_right_fan_tray": 0.2999999999998891,
+    "06_right_fan_retainer / 10_right_fan_tray": 0.3000000000000346,
+    "08_right_outlet_rail / 02_right_cradle": 0.2999999999997349,
+    "03_left_fan_duct / 05_left_fan_retainer": 0.3000000000000346,
+    "03_left_fan_duct / 09_left_fan_tray": 0.2999999999998891,
+    "05_left_fan_retainer / 09_left_fan_tray": 0.3000000000000346,
+    "07_left_outlet_rail / 01_left_cradle": 0.2999999999997349
+  },
+  "frozen_arms_difference_mm3": {
+    "02_right_cradle": 0.0,
+    "01_left_cradle": 0.0
+  },
+  "fully_constrained_sketches": 176,
+  "intentional_flow_wall_relief_mm3": 362.538269727909,
+  "original_wall_loss_mm3": 0.0,
+  "release_revision": "H"
+}

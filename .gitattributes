@@ -1,0 +1,21 @@
+# Preserve CAD bytes across Windows and WSL. Review STEP geometry through the
+# roundtrip reports and native models; generated STEP spacing is significant
+# to published checksums and is not source-code whitespace.
+/print_release_step/*.step -text -diff
+/minimalist/**/*.step -text -diff
+*.stl -text
+*.3mf -text
+*.FCStd -text
+*.zip -text
+*.png -text
+*.gz -text
+*.mp4 -text
+*.webp -text
+/revh_retention/print/*.step -text -diff
+/revh_cables/print/*.step -text -diff
+
+/revh_duct_r4/**/*.step -text -diff
+/revh_duct_r4/**/*.json text eol=lf
+/revh_duct_r4/**/*.py text eol=lf
+/revh_duct_r4/**/*.md text eol=lf
+/revh_duct_r4/**/*.cjs text eol=lf

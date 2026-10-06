@@ -1,0 +1,308 @@
+{
+  "status": "done",
+  "document": "F:/Code/dell-5560-wall-mount-standby/freecad/Precision_5560_Native.FCStd",
+  "styled_sources": [
+    "PinBody",
+    "Compound015",
+    "Mirroring",
+    "Compound027",
+    "Mirroring001",
+    "Compound042",
+    "Mirroring002",
+    "Compound049",
+    "Mirroring003",
+    "Compound077",
+    "Mirroring005",
+    "Instance",
+    "Instance001",
+    "Instance002",
+    "Instance003",
+    "Instance004",
+    "Instance005",
+    "Instance006",
+    "Instance007",
+    "Instance008",
+    "Instance009"
+  ],
+  "invalid_features": [],
+  "camera": "Perspective",
+  "preferences": [
+    [
+      "String",
+      "GestureRollFwdCommand",
+      "Std_SelForward"
+    ],
+    [
+      "String",
+      "GestureRollBackCommand",
+      "Std_SelBack"
+    ],
+    [
+      "String",
+      "NavigationStyle",
+      "Gui::CADNavigationStyle"
+    ],
+    [
+      "Integer",
+      "AntiAliasing",
+      4
+    ],
+    [
+      "Integer",
+      "RenderCache",
+      0
+    ],
+    [
+      "Boolean",
+      "Gradient",
+      true
+    ],
+    [
+      "Boolean",
+      "RadialGradient",
+      false
+    ],
+    [
+      "Boolean",
+      "Simple",
+      false
+    ],
+    [
+      "Boolean",
+      "UseBackgroundColorMid",
+      false
+    ],
+    [
+      "Boolean",
+      "UseVBO",
+      true
+    ],
+    [
+      "Unsigned Long",
+      "AnnotationTextColor",
+      2914369023
+    ],
+    [
+      "Unsigned Long",
+      "AxisLetterColor",
+      3301229823
+    ],
+    [
+      "Unsigned Long",
+      "BackgroundColor",
+      522133503
+    ],
+    [
+      "Unsigned Long",
+      "BoundingBoxColor",
+      4059297279
+    ],
+    [
+      "Unsigned Long",
+      "CbLabelColor",
+      2914369023
+    ],
+    [
+      "Unsigned Long",
+      "ConstrainedDimColor",
+      4199699199
+    ],
+    [
+      "Unsigned Long",
+      "ConstrainedIcoColor",
+      4199699199
+    ],
+    [
+      "Unsigned Long",
+      "ConstructionColor",
+      865792255
+    ],
+    [
+      "Unsigned Long",
+      "CreateLineColor",
+      4059297279
+    ],
+    [
+      "Unsigned Long",
+      "CursorCrosshairColor",
+      4059297279
+    ],
+    [
+      "Unsigned Long",
+      "CursorTextColor",
+      2914369023
+    ],
+    [
+      "Unsigned Long",
+      "DeactivatedConstrDimColor",
+      2257491711
+    ],
+    [
+      "Unsigned Long",
+      "DefaultShapeColor",
+      1920565503
+    ],
+    [
+      "Unsigned Long",
+      "EditedEdgeColor",
+      4059297279
+    ],
+    [
+      "Unsigned Long",
+      "EditedVertexColor",
+      4199699199
+    ],
+    [
+      "Unsigned Long",
+      "ExprBasedConstrDimColor",
+      4252898559
+    ],
+    [
+      "Unsigned Long",
+      "ExternalColor",
+      3428706559
+    ],
+    [
+      "Unsigned Long",
+      "FullyConstrainedColor",
+      1958221567
+    ],
+    [
+      "Unsigned Long",
+      "FullyConstraintConstructionElementColor",
+      2462511359
+    ],
+    [
+      "Unsigned Long",
+      "FullyConstraintConstructionPointColor",
+      4205291519
+    ],
+    [
+      "Unsigned Long",
+      "FullyConstraintElementColor",
+      11173887
+    ],
+    [
+      "Unsigned Long",
+      "FullyConstraintInternalAlignmentColor",
+      2462511359
+    ],
+    [
+      "Unsigned Long",
+      "HighlightColor",
+      611232767
+    ],
+    [
+      "Unsigned Long",
+      "InternalAlignedGeoColor",
+      865792255
+    ],
+    [
+      "Unsigned Long",
+      "InvalidSketchColor",
+      4252898559
+    ],
+    [
+      "Unsigned Long",
+      "NonDrivingConstrDimColor",
+      865792255
+    ],
+    [
+      "Unsigned Long",
+      "SelectionColor",
+      899696639
+    ],
+    [
+      "Unsigned Long",
+      "SketchEdgeColor",
+      4059297279
+    ],
+    [
+      "Unsigned Long",
+      "SketchVertexColor",
+      4059297279
+    ],
+    [
+      "Unsigned Long",
+      "BackgroundColor2",
+      539504895
+    ],
+    [
+      "Unsigned Long",
+      "BackgroundColor3",
+      1449621247
+    ]
+  ],
+  "lights": [
+    [
+      "String",
+      "HeadlightDirection",
+      "(0.6841049,-0.12062616,-0.7193398)"
+    ],
+    [
+      "String",
+      "FillLightDirection",
+      "(-0.6403416,0.7631294,0.087155744)"
+    ],
+    [
+      "String",
+      "BacklightDirection",
+      "(-0.7544065,-0.63302225,-0.17364818)"
+    ],
+    [
+      "Integer",
+      "HeadlightIntensity",
+      85
+    ],
+    [
+      "Integer",
+      "FillLightIntensity",
+      30
+    ],
+    [
+      "Integer",
+      "BacklightIntensity",
+      65
+    ],
+    [
+      "Integer",
+      "AmbientLightIntensity",
+      18
+    ],
+    [
+      "Boolean",
+      "EnableHeadlight",
+      true
+    ],
+    [
+      "Boolean",
+      "EnableBacklight",
+      true
+    ],
+    [
+      "Boolean",
+      "EnableFillLight",
+      true
+    ],
+    [
+      "Unsigned Long",
+      "HeadlightColor",
+      4294240511
+    ],
+    [
+      "Unsigned Long",
+      "FillLightColor",
+      3588816895
+    ],
+    [
+      "Unsigned Long",
+      "BacklightColor",
+      3925082111
+    ],
+    [
+      "Unsigned Long",
+      "AmbientLightColor",
+      4294967295
+    ]
+  ]
+}

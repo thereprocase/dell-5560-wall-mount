@@ -1,0 +1,56 @@
+/* Generated for OpenCFD OpenFOAM v2412; setup only. */
+FoamFile
+{
+    version 2.0;
+    format ascii;
+    class volScalarField;
+    location "0";
+    object omega;
+}
+
+dimensions [0 0 -1 0 0 0 0];
+internalField uniform 12.4936070947;
+boundaryField
+{
+    fan_left
+    {
+        type fixedValue;
+        value uniform 12.4936070947;
+    }
+    fan_right
+    {
+        type fixedValue;
+        value uniform 12.4936070947;
+    }
+    outlet
+    {
+        type inletOutlet;
+        inletValue uniform 12.4936070947;
+        value uniform 12.4936070947;
+    }
+    laptop_shell
+    {
+        type omegaWallFunction;
+        value uniform 12.4936070947;
+    }
+    wall_plane
+    {
+        type omegaWallFunction;
+        value uniform 12.4936070947;
+    }
+    assumed_side_seals
+    {
+        type omegaWallFunction;
+        value uniform 12.4936070947;
+    }
+    printed_or_model_walls
+    {
+        type omegaWallFunction;
+        value uniform 12.4936070947;
+    }
+    backgroundBox
+    {
+        type omegaWallFunction;
+        value uniform 12.4936070947;
+    }
+}

@@ -1,0 +1,9 @@
+{
+  "status": 405,
+  "data": {
+    "message": "Method not allowed.",
+    "moreInfoUrl": "",
+    "status": 405,
+    "code": 0
+  }
+}

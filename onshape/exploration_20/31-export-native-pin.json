@@ -1,0 +1,20 @@
+{
+  "status": 200,
+  "data": {
+    "requestState": "ACTIVE",
+    "requestElementId": "cf9a24a5d90f7bf7ae0d3004",
+    "resultExternalDataIds": null,
+    "versionId": null,
+    "exportRuleFileName": null,
+    "documentId": "c452b7f3224726ea2f11cdda",
+    "workspaceId": "3231ffbfcf00782c1dba2494",
+    "resultElementIds": null,
+    "resultDocumentId": "c452b7f3224726ea2f11cdda",
+    "failureReason": null,
+    "correlationId": null,
+    "resultWorkspaceId": "3231ffbfcf00782c1dba2494",
+    "name": "Push pin - native",
+    "id": "6a9f13efba0e32fd442114bb",
+    "href": "https://cad.onshape.com/api/v16/translations/6a9f13efba0e32fd442114bb"
+  }
+}

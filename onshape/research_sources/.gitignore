@@ -1,0 +1,3 @@
+# Downloaded public SDK schema stays cached locally; source/hash are in provenance.json.
+openapi.yaml
+openapi.json

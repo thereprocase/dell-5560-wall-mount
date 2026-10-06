@@ -1,0 +1,38 @@
+{
+  "source": "https://raw.githubusercontent.com/onshape-public/go-client/master/onshape/api/openapi.yaml",
+  "retrieved_date": "2026-09-07",
+  "sha256": "36752645ce3c1ec85993b60e7000b6d3e9037c9453cbda8464c172efd9f4bd2f",
+  "bytes": 8240656,
+  "api_info": {
+    "contact": {
+      "email": "api-support@onshape.zendesk.com"
+    },
+    "description": "## Welcome to the Onshape REST API Explorer\n\n**See the [API Explorer Guide](https://onshape-public.github.io/docs/api-intro/explorer/) for help navigating this page.**\n\n### Using this page\n1. Sign in to your [Onshape](https://cad.onshape.com) account in another tab.\n2. Click the `Try it out` button below. It toggles to a `Cancel` button when selected.\n\n### Authenticating\nTo authenticate your calls, click the `Authorize` button. See [API Explorer Guide: Authentication](https://onshape-public.github.io/docs/api-intro/explorer/#authentication) for details. Calls made when authenticated via API Keys or OAuth count against your annual [API limits](https://onshape-public.github.io/docs/auth/limits/#annual-api-call-limits).\n* **Tip:** To ensure the current session isn't used when trying other authentication techniques, make sure to [remove the Onshape cookie](https://support.google.com/chrome/answer/95647#zippy=%2Cdelete-cookies-from-a-site) as per the instructions for your browser, or use a private or incognito window.\n\n### Additional resources\n\n* [Onshape API Guide](https://onshape-public.github.io/docs/): Our full suite of developer guides, to be used as an accompaniment to this API Explorer.\n* [Onshape Developer Portal](https://cad.onshape.com/appstore/dev-portal): The Onshape portal for managing your API keys, OAuth2 credentials, your Onshape applications, and your Onshape App Store entries.\n* [Authentication Guide](https://onshape-public.github.io/docs/auth/): Our guide to using API keys, request signatures, and OAuth2 in your Onshape applications.",
+    "license": {
+      "name": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    },
+    "termsOfService": "https://www.onshape.com/legal/terms-of-use",
+    "title": "Onshape REST API",
+    "version": "1.217.82464-38d03936c08d",
+    "x-logo": {
+      "url": "images/logo-onshape-gray-green-nav-bar.svg",
+      "backgroundColor": "#ffffff",
+      "altText": "Onshape",
+      "href": "images/logo-onshape-gray-green-nav-bar.svg"
+    },
+    "x-indeterministic-schemas": [
+      "BTDiffInfo",
+      "BTParameterSpecArray-2600",
+      "BTSplineDescription-2118",
+      "NodeModel",
+      "BTPFunctionDeclaration-246",
+      "BTPFunctionOrPredicateDeclaration-247",
+      "BTPExpression-9",
+      "SkinModel",
+      "BTMAnnotation-4664"
+    ],
+    "x-filter-info": "?restUserRole=PUBLIC"
+  },
+  "note": "Public SDK schema; v16 source. Successful requests used v9 plus v16 STEP export."
+}

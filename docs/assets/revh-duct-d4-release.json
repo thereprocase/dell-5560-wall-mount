@@ -1,0 +1,32 @@
+{
+  "revision": "H-D4 socket hotpatch",
+  "tag": "revh-d4-socket-hotpatch-2026-09-09",
+  "native_sha256": "9b423831ca0aa4c3d6507f46d4051cea1a1990736894ee7295f20d946d2cdf2c",
+  "source_prepatch_sha256": "e99dbcf41201de00b4f97a3d8291fa300633912bd2a3b8d6f23c7684c5342163",
+  "qualification": "CAD and toolpath checks passed; physical pin seating, retention and removal pending.",
+  "projects": [
+    {
+      "part": "03_left_fan_duct",
+      "file": "03_left_fan_duct_D4.3mf",
+      "estimated_time": "4h 26m 57s",
+      "estimated_grams": 133.64,
+      "sha256": "c5d83a00abfe1dfd5bc56e730b5683b61dca32cf27569c8623140a5189138073",
+      "max_unsupported_mm": 6.438000999999986
+    },
+    {
+      "part": "04_right_fan_duct",
+      "file": "04_right_fan_duct_D4.3mf",
+      "estimated_time": "4h 26m 1s",
+      "estimated_grams": 133.65,
+      "sha256": "f78d68b1851fe973e3c53951000ad53dd48cd2d4d83df6cf7b69706a712cc838",
+      "max_unsupported_mm": 6.437989814604975
+    }
+  ],
+  "download": {
+    "file": "Precision_5560_RevH_D4_Socket_Hotpatch.zip",
+    "bytes": 14409680,
+    "sha256": "ec95a1f127dfd5f4a84dd1c7950a7c8ae0a6f495b2aa520f41577f2627ee0b10",
+    "members": 42,
+    "all_member_hashes_verified": true
+  }
+}

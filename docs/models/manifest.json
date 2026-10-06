@@ -1,0 +1,86 @@
+[
+  {
+    "key": "02_right_cradle",
+    "label": "02 right cradle (installed)",
+    "volume": 274206.95184201497,
+    "frozen": true
+  },
+  {
+    "key": "01_left_cradle",
+    "label": "01 left cradle (installed)",
+    "volume": 274206.95184201526,
+    "frozen": true
+  },
+  {
+    "key": "04_right_fan_duct",
+    "label": "04 right fan duct (installed)",
+    "volume": 135751.58219151135,
+    "frozen": false
+  },
+  {
+    "key": "03_left_fan_duct",
+    "label": "03 left fan duct (installed)",
+    "volume": 135751.58219151132,
+    "frozen": false
+  },
+  {
+    "key": "06_right_fan_retainer",
+    "label": "06 right fan retainer (installed)",
+    "volume": 24834.544404383083,
+    "frozen": false
+  },
+  {
+    "key": "05_left_fan_retainer",
+    "label": "05 left fan retainer (installed)",
+    "volume": 24834.544404383076,
+    "frozen": false
+  },
+  {
+    "key": "08_right_outlet_rail",
+    "label": "08 right outlet rail (installed)",
+    "volume": 74456.25469714392,
+    "frozen": false
+  },
+  {
+    "key": "07_left_outlet_rail",
+    "label": "07 left outlet rail (installed)",
+    "volume": 74456.2546971439,
+    "frozen": false
+  },
+  {
+    "key": "10_right_fan_tray",
+    "label": "10 right fan tray (installed)",
+    "volume": 85109.1161904761,
+    "frozen": false
+  },
+  {
+    "key": "09_left_fan_tray",
+    "label": "09 left fan tray (installed)",
+    "volume": 85109.11619047618,
+    "frozen": false
+  },
+  {
+    "key": "11_left_push_pin",
+    "label": "11 left push pin (installed)",
+    "volume": 204.56030211057197,
+    "frozen": false
+  },
+  {
+    "key": "12_right_push_pin",
+    "label": "12 right push pin (installed)",
+    "volume": 204.56030211057194,
+    "frozen": false
+  },
+  {
+    "key": "13_left_push_pin",
+    "label": "13 left push pin (installed)",
+    "volume": 204.56030211057208,
+    "frozen": false
+  },
+  {
+    "key": "14_right_push_pin",
+    "label": "14 right push pin (installed)",
+    "volume": 204.56030211057208,
+    "frozen": false
+  }
+]

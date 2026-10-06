@@ -1,0 +1,220 @@
+{
+  "status": "native_pin_pilot_built_full_mount_pending",
+  "revision": "F",
+  "native_document_created": true,
+  "native_regeneration_tested": true,
+  "coordinates": {
+    "X": "across laptop",
+    "Y": "out from wall",
+    "Z": "up"
+  },
+  "parameters": [
+    {
+      "name": "laptopWidth",
+      "nominal": 344.4,
+      "unit": "mm",
+      "role": "Laptop width",
+      "source": "build_mount.py / base_geometry.py / TOLERANCES.md"
+    },
+    {
+      "name": "laptopHeight",
+      "nominal": 230.3,
+      "unit": "mm",
+      "role": "Front-to-hinge depth, vertical when mounted",
+      "source": "build_mount.py / base_geometry.py / TOLERANCES.md"
+    },
+    {
+      "name": "laptopThickness",
+      "nominal": 20,
+      "unit": "mm",
+      "role": "Conservative closed fit envelope",
+      "source": "build_mount.py / base_geometry.py / TOLERANCES.md"
+    },
+    {
+      "name": "wallGap",
+      "nominal": 40,
+      "unit": "mm",
+      "role": "Wall to nominal laptop underside",
+      "source": "build_mount.py / base_geometry.py / TOLERANCES.md"
+    },
+    {
+      "name": "bareSlot",
+      "nominal": 26,
+      "unit": "mm",
+      "role": "Unpadded retention slot",
+      "source": "build_mount.py / base_geometry.py / TOLERANCES.md"
+    },
+    {
+      "name": "tineHeight",
+      "nominal": 94,
+      "unit": "mm",
+      "role": "Front retention height",
+      "source": "build_mount.py / base_geometry.py / TOLERANCES.md"
+    },
+    {
+      "name": "wallHoleDiameter",
+      "nominal": 7,
+      "unit": "mm",
+      "role": "Wall-bolt clearance",
+      "source": "build_mount.py / base_geometry.py / TOLERANCES.md"
+    },
+    {
+      "name": "wallDriverDiameter",
+      "nominal": 16,
+      "unit": "mm",
+      "role": "Clear tool corridor",
+      "source": "build_mount.py / base_geometry.py / TOLERANCES.md"
+    },
+    {
+      "name": "wallHoleHalfSpacing",
+      "nominal": 162,
+      "unit": "mm",
+      "role": "Distance from symmetry plane to either wall-bolt line",
+      "source": "build_mount.py / base_geometry.py / TOLERANCES.md"
+    },
+    {
+      "name": "lowerWallHoleZ",
+      "nominal": -36,
+      "unit": "mm",
+      "role": "Lower wall-hole elevation",
+      "source": "build_mount.py / base_geometry.py / TOLERANCES.md"
+    },
+    {
+      "name": "upperWallHoleZ",
+      "nominal": 174,
+      "unit": "mm",
+      "role": "Upper wall-hole elevation",
+      "source": "build_mount.py / base_geometry.py / TOLERANCES.md"
+    },
+    {
+      "name": "outletGap",
+      "nominal": 12,
+      "unit": "mm",
+      "role": "Nominal upper outlet gap",
+      "source": "build_mount.py / base_geometry.py / TOLERANCES.md"
+    },
+    {
+      "name": "contractionStartZ",
+      "nominal": 198,
+      "unit": "mm",
+      "role": "Contraction starts above the estimated intake band",
+      "source": "build_mount.py / base_geometry.py / TOLERANCES.md"
+    },
+    {
+      "name": "throatZ",
+      "nominal": 226,
+      "unit": "mm",
+      "role": "Start of constant outlet width",
+      "source": "build_mount.py / base_geometry.py / TOLERANCES.md"
+    },
+    {
+      "name": "outletZ",
+      "nominal": 232,
+      "unit": "mm",
+      "role": "Outlet lip elevation",
+      "source": "build_mount.py / base_geometry.py / TOLERANCES.md"
+    },
+    {
+      "name": "fanFrameWidth",
+      "nominal": 120,
+      "unit": "mm",
+      "role": "Fan reference size",
+      "source": "build_mount.py / base_geometry.py / TOLERANCES.md"
+    },
+    {
+      "name": "fanThicknessNominal",
+      "nominal": 25,
+      "unit": "mm",
+      "role": "Fan reference thickness; existing accommodation 25\u201327 mm",
+      "source": "build_mount.py / base_geometry.py / TOLERANCES.md"
+    },
+    {
+      "name": "ductSkinNominal",
+      "nominal": 2,
+      "unit": "mm",
+      "role": "Duct section inset; preserve existing ruled construction",
+      "source": "build_mount.py / base_geometry.py / TOLERANCES.md"
+    },
+    {
+      "name": "keyClearance",
+      "nominal": 0.3,
+      "unit": "mm",
+      "role": "Nominal coordinate allowance per side of fixed keys",
+      "source": "build_mount.py / base_geometry.py / TOLERANCES.md"
+    },
+    {
+      "name": "trayHorizontalClearance",
+      "nominal": 0.3,
+      "unit": "mm",
+      "role": "Horizontal allowance per dovetail side",
+      "source": "build_mount.py / base_geometry.py / TOLERANCES.md"
+    },
+    {
+      "name": "trayRoofClearance",
+      "nominal": 0.3,
+      "unit": "mm",
+      "role": "Vertical crown clearance",
+      "source": "build_mount.py / base_geometry.py / TOLERANCES.md"
+    },
+    {
+      "name": "trayRootClearance",
+      "nominal": 0.2,
+      "unit": "mm",
+      "role": "Vertical root clearance",
+      "source": "build_mount.py / base_geometry.py / TOLERANCES.md"
+    },
+    {
+      "name": "pinShaftDiameter",
+      "nominal": 4,
+      "unit": "mm",
+      "role": "Printed pin shaft",
+      "source": "build_mount.py / base_geometry.py / TOLERANCES.md"
+    },
+    {
+      "name": "pinShaftDiametralClearance",
+      "nominal": 0.1,
+      "unit": "mm",
+      "role": "Socket diameter minus shaft diameter",
+      "source": "build_mount.py / base_geometry.py / TOLERANCES.md"
+    },
+    {
+      "name": "pinCrownDiametralInterference",
+      "nominal": 0.1,
+      "unit": "mm",
+      "role": "Crown diameter minus socket diameter",
+      "source": "build_mount.py / base_geometry.py / TOLERANCES.md"
+    },
+    {
+      "name": "fanAngle",
+      "nominal": 45,
+      "unit": "deg",
+      "role": "Airflow inclines upward and wallward; tray service direction rotates with it",
+      "source": "build_mount.py: tilt()"
+    },
+    {
+      "name": "pinSocketDiameter",
+      "nominal": 4.1,
+      "unit": "mm",
+      "role": "Duct retention socket",
+      "source": "build_mount.py: right_duct()",
+      "relationship": "pinShaftDiameter + pinShaftDiametralClearance"
+    },
+    {
+      "name": "pinCrownDiameter",
+      "nominal": 4.2,
+      "unit": "mm",
+      "role": "Split retaining crown",
+      "source": "build_mount.py: pin()",
+      "relationship": "pinSocketDiameter + pinCrownDiametralInterference"
+    }
+  ],
+  "configurations": {
+    "outletGap_mm": [
+      8,
+      12,
+      16
+    ]
+  },
+  "dependency_note": "These are target native design variables. The CadQuery source has additional hard-coded coordinates; they must be refactored into layout relationships, not blindly substituted. No parameter range has been validated in Onshape.",
+  "native_regeneration_scope": "Pin only; four features OK, head radius perturbation passed and restored. Full mount not rebuilt."
+}

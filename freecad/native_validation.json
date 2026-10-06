@@ -1,0 +1,162 @@
+{
+  "02_right_cradle": {
+    "object": "Compound015",
+    "valid": true,
+    "solids": 1,
+    "volume_mm3": 274207.0057675676,
+    "baseline_volume_mm3": 274207.00576756103,
+    "symmetric_difference_mm3": 0.0,
+    "bbox": [
+      139.99999999999991,
+      184.00000000000006,
+      -8.881784197001252e-16,
+      84.0,
+      -65.0,
+      184.0
+    ]
+  },
+  "01_left_cradle": {
+    "object": "Mirroring",
+    "valid": true,
+    "solids": 1,
+    "volume_mm3": 274207.0057675676,
+    "baseline_volume_mm3": 274207.0057675232,
+    "symmetric_difference_mm3": 0.0,
+    "bbox": [
+      -184.00000000000006,
+      -139.99999999999991,
+      -8.881784197001252e-16,
+      84.0,
+      -65.0,
+      184.0
+    ]
+  },
+  "04_right_fan_duct": {
+    "object": "Compound027",
+    "valid": true,
+    "solids": 1,
+    "volume_mm3": 137915.52535194164,
+    "baseline_volume_mm3": 137915.52526221197,
+    "symmetric_difference_mm3": 0.0,
+    "bbox": [
+      0.9999999999999996,
+      175.5,
+      4.0,
+      117.9116882454314,
+      -134.91168824543144,
+      0.0
+    ]
+  },
+  "03_left_fan_duct": {
+    "object": "Mirroring001",
+    "valid": true,
+    "solids": 1,
+    "volume_mm3": 137915.52535194164,
+    "baseline_volume_mm3": 137915.52525688734,
+    "symmetric_difference_mm3": 0.0,
+    "bbox": [
+      -175.5,
+      -0.9999999999999996,
+      4.0,
+      117.9116882454314,
+      -134.91168824543144,
+      0.0
+    ]
+  },
+  "06_right_fan_retainer": {
+    "object": "Compound042",
+    "valid": true,
+    "solids": 1,
+    "volume_mm3": 24834.544404382686,
+    "baseline_volume_mm3": 24834.544404383872,
+    "symmetric_difference_mm3": 0.0,
+    "bbox": [
+      0.9999999999999991,
+      140.0,
+      108.7193000900063,
+      149.02438661763955,
+      -67.02943725152285,
+      -26.724350723889643
+    ]
+  },
+  "05_left_fan_retainer": {
+    "object": "Mirroring002",
+    "valid": true,
+    "solids": 1,
+    "volume_mm3": 24834.544404382686,
+    "baseline_volume_mm3": 24834.54440437918,
+    "symmetric_difference_mm3": 0.0,
+    "bbox": [
+      -140.0,
+      -0.9999999999999991,
+      108.7193000900063,
+      149.02438661763955,
+      -67.02943725152285,
+      -26.724350723889643
+    ]
+  },
+  "08_right_outlet_rail": {
+    "object": "Compound049",
+    "valid": true,
+    "solids": 1,
+    "volume_mm3": 63831.94036874406,
+    "baseline_volume_mm3": 63831.940368737196,
+    "symmetric_difference_mm3": 0.0,
+    "bbox": [
+      0.19999999999998863,
+      184.0,
+      0.0,
+      39.0,
+      154.0,
+      232.00000000000006
+    ]
+  },
+  "07_left_outlet_rail": {
+    "object": "Mirroring003",
+    "valid": true,
+    "solids": 1,
+    "volume_mm3": 63831.94036874406,
+    "baseline_volume_mm3": 63831.94036815583,
+    "symmetric_difference_mm3": 0.0,
+    "bbox": [
+      -184.0,
+      -0.19999999999998863,
+      0.0,
+      39.0,
+      154.0,
+      232.00000000000006
+    ]
+  },
+  "10_right_fan_tray": {
+    "object": "Compound077",
+    "valid": true,
+    "solids": 1,
+    "volume_mm3": 87444.07619047657,
+    "baseline_volume_mm3": 87444.07619045906,
+    "symmetric_difference_mm3": 0.0,
+    "bbox": [
+      1.0,
+      140.0,
+      24.573593128807147,
+      143.36753236814715,
+      -160.36753236814712,
+      -40.512932957027346
+    ]
+  },
+  "09_left_fan_tray": {
+    "object": "Mirroring005",
+    "valid": true,
+    "solids": 1,
+    "volume_mm3": 87444.07619047652,
+    "baseline_volume_mm3": 87444.07619034142,
+    "symmetric_difference_mm3": 0.0,
+    "bbox": [
+      -140.0,
+      -1.0,
+      24.573593128807147,
+      143.36753236814715,
+      -160.36753236814712,
+      -40.512932957027346
+    ]
+  }
+}

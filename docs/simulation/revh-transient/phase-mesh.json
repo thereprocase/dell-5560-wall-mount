@@ -1,0 +1,66 @@
+{
+  "phase": "mesh",
+  "started_utc": "2026-09-08T11:10:12.884941+00:00",
+  "state": "complete",
+  "steps": [
+    {
+      "tool": "blockMesh",
+      "arguments": [],
+      "parallel": false,
+      "log": "log.blockMesh",
+      "exit_code": 0,
+      "wall_seconds": 0.31300000000192085
+    },
+    {
+      "tool": "decomposePar",
+      "arguments": [],
+      "parallel": false,
+      "log": "log.decomposeMesh",
+      "exit_code": 0,
+      "wall_seconds": 0.5
+    },
+    {
+      "tool": "snappyHexMesh",
+      "arguments": [
+        "-overwrite"
+      ],
+      "parallel": true,
+      "log": "log.snappyHexMesh",
+      "exit_code": 0,
+      "wall_seconds": 4334.233999999997
+    },
+    {
+      "tool": "reconstructParMesh",
+      "arguments": [
+        "-constant"
+      ],
+      "parallel": false,
+      "log": "log.reconstructMesh",
+      "exit_code": 0,
+      "wall_seconds": 32.95300000000134
+    },
+    {
+      "tool": "checkMesh",
+      "arguments": [
+        "-constant"
+      ],
+      "parallel": false,
+      "log": "log.checkMesh.standard",
+      "exit_code": 0,
+      "wall_seconds": 58.45300000000134
+    },
+    {
+      "tool": "checkMesh",
+      "arguments": [
+        "-constant",
+        "-allGeometry",
+        "-allTopology"
+      ],
+      "parallel": false,
+      "log": "log.checkMesh.expanded",
+      "exit_code": 0,
+      "wall_seconds": 223.5789999999979
+    }
+  ],
+  "finished_utc": "2026-09-08T12:27:42.962054+00:00"
+}

@@ -1,0 +1,18 @@
+{
+  "reference": "Original duct skin excluding the pre-existing socket intersection",
+  "missing_wall_before_mm3": 73.96253514632696,
+  "missing_wall_after_mm3": 0.0,
+  "restored_material_per_duct_mm3": 73.96251836990913,
+  "gaps_mm": {
+    "04_right_fan_duct / 06_right_fan_retainer": 0.3000000000000346,
+    "04_right_fan_duct / 10_right_fan_tray": 0.2999999999998891,
+    "06_right_fan_retainer / 10_right_fan_tray": 0.3000000000000346,
+    "03_left_fan_duct / 05_left_fan_retainer": 0.3000000000000346,
+    "03_left_fan_duct / 09_left_fan_tray": 0.2999999999998891,
+    "05_left_fan_retainer / 09_left_fan_tray": 0.3000000000000346
+  },
+  "arms_difference_mm3": {
+    "02_right_cradle": 0.0,
+    "01_left_cradle": 0.0
+  }
+}

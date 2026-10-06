@@ -1,0 +1,407 @@
+[
+  {
+    "label": "Create sketch",
+    "command": "Sketcher_NewSketch",
+    "workbench": "SketcherWorkbench"
+  },
+  {
+    "label": "Extrude (separate solid)",
+    "command": "Part_Extrude",
+    "workbench": "PartWorkbench"
+  },
+  {
+    "label": "Revolve",
+    "command": "Part_Revolve",
+    "workbench": "PartWorkbench"
+  },
+  {
+    "label": "Hole",
+    "command": "PartDesign_Hole",
+    "workbench": "PartDesignWorkbench"
+  },
+  {
+    "label": "Rectangular pattern",
+    "command": "PartDesign_LinearPattern",
+    "workbench": "PartDesignWorkbench"
+  },
+  {
+    "label": "New body",
+    "command": "PartDesign_Body",
+    "workbench": "PartDesignWorkbench"
+  },
+  {
+    "label": "Create sketch",
+    "command": "Sketcher_NewSketch",
+    "workbench": "SketcherWorkbench"
+  },
+  {
+    "label": "Extrude (separate solid)",
+    "command": "Part_Extrude",
+    "workbench": "PartWorkbench"
+  },
+  {
+    "label": "Extrude join (Pad)",
+    "command": "PartDesign_Pad",
+    "workbench": "PartDesignWorkbench"
+  },
+  {
+    "label": "Extrude cut (Pocket)",
+    "command": "PartDesign_Pocket",
+    "workbench": "PartDesignWorkbench"
+  },
+  {
+    "label": "Revolve",
+    "command": "Part_Revolve",
+    "workbench": "PartWorkbench"
+  },
+  {
+    "label": "Sweep",
+    "command": "Part_Sweep",
+    "workbench": "PartWorkbench"
+  },
+  {
+    "label": "Loft",
+    "command": "Part_Loft",
+    "workbench": "PartWorkbench"
+  },
+  {
+    "label": "Hole",
+    "command": "PartDesign_Hole",
+    "workbench": "PartDesignWorkbench"
+  },
+  {
+    "label": "New body",
+    "command": "PartDesign_Body",
+    "workbench": "PartDesignWorkbench"
+  },
+  {
+    "label": "New component (Part)",
+    "command": "Std_Part",
+    "workbench": null
+  },
+  {
+    "label": "Box",
+    "command": "Part_Box",
+    "workbench": "PartWorkbench"
+  },
+  {
+    "label": "Cylinder",
+    "command": "Part_Cylinder",
+    "workbench": "PartWorkbench"
+  },
+  {
+    "label": "Rectangular pattern",
+    "command": "PartDesign_LinearPattern",
+    "workbench": "PartDesignWorkbench"
+  },
+  {
+    "label": "Circular pattern",
+    "command": "PartDesign_PolarPattern",
+    "workbench": "PartDesignWorkbench"
+  },
+  {
+    "label": "Mirror",
+    "command": "Part_Mirror",
+    "workbench": "PartWorkbench"
+  },
+  {
+    "label": "Offset surface",
+    "command": "Part_Offset",
+    "workbench": "PartWorkbench"
+  },
+  {
+    "label": "Fillet",
+    "command": "Part_Fillet",
+    "workbench": "PartWorkbench"
+  },
+  {
+    "label": "Chamfer",
+    "command": "Part_Chamfer",
+    "workbench": "PartWorkbench"
+  },
+  {
+    "label": "Shell / thickness",
+    "command": "Part_Thickness",
+    "workbench": "PartWorkbench"
+  },
+  {
+    "label": "Combine: join",
+    "command": "Part_Fuse",
+    "workbench": "PartWorkbench"
+  },
+  {
+    "label": "Move / rotate",
+    "command": "Std_TransformManip",
+    "workbench": null
+  },
+  {
+    "label": "Split body",
+    "command": "Part_CompSplitFeatures",
+    "workbench": "PartWorkbench"
+  },
+  {
+    "label": "Fillet",
+    "command": "Part_Fillet",
+    "workbench": "PartWorkbench"
+  },
+  {
+    "label": "Chamfer",
+    "command": "Part_Chamfer",
+    "workbench": "PartWorkbench"
+  },
+  {
+    "label": "Combine: join",
+    "command": "Part_Fuse",
+    "workbench": "PartWorkbench"
+  },
+  {
+    "label": "Combine: cut",
+    "command": "Part_Cut",
+    "workbench": "PartWorkbench"
+  },
+  {
+    "label": "Combine: intersect",
+    "command": "Part_Common",
+    "workbench": "PartWorkbench"
+  },
+  {
+    "label": "Shell / thickness",
+    "command": "Part_Thickness",
+    "workbench": "PartWorkbench"
+  },
+  {
+    "label": "Draft",
+    "command": "PartDesign_Draft",
+    "workbench": "PartDesignWorkbench"
+  },
+  {
+    "label": "Scale",
+    "command": "Part_Scale",
+    "workbench": "PartWorkbench"
+  },
+  {
+    "label": "Move / rotate",
+    "command": "Std_TransformManip",
+    "workbench": null
+  },
+  {
+    "label": "Align",
+    "command": "Std_Alignment",
+    "workbench": null
+  },
+  {
+    "label": "Split body",
+    "command": "Part_CompSplitFeatures",
+    "workbench": "PartWorkbench"
+  },
+  {
+    "label": "Offset surface",
+    "command": "Part_Offset",
+    "workbench": "PartWorkbench"
+  },
+  {
+    "label": "Appearance",
+    "command": "Std_SetAppearance",
+    "workbench": null
+  },
+  {
+    "label": "Change parameters",
+    "command": "@parameters",
+    "workbench": null
+  },
+  {
+    "label": "Joint: fixed",
+    "command": "Assembly_CreateJointFixed",
+    "workbench": "AssemblyWorkbench"
+  },
+  {
+    "label": "New component",
+    "command": "Std_Part",
+    "workbench": null
+  },
+  {
+    "label": "Ground / unground",
+    "command": "Assembly_ToggleGrounded",
+    "workbench": "AssemblyWorkbench"
+  },
+  {
+    "label": "Joint: fixed",
+    "command": "Assembly_CreateJointFixed",
+    "workbench": "AssemblyWorkbench"
+  },
+  {
+    "label": "Joint: revolute",
+    "command": "Assembly_CreateJointRevolute",
+    "workbench": "AssemblyWorkbench"
+  },
+  {
+    "label": "Joint: slider",
+    "command": "Assembly_CreateJointSlider",
+    "workbench": "AssemblyWorkbench"
+  },
+  {
+    "label": "Joint: cylindrical",
+    "command": "Assembly_CreateJointCylindrical",
+    "workbench": "AssemblyWorkbench"
+  },
+  {
+    "label": "Joint: ball",
+    "command": "Assembly_CreateJointBall",
+    "workbench": "AssemblyWorkbench"
+  },
+  {
+    "label": "Ground / unground",
+    "command": "Assembly_ToggleGrounded",
+    "workbench": "AssemblyWorkbench"
+  },
+  {
+    "label": "New assembly",
+    "command": "Assembly_CreateAssembly",
+    "workbench": "AssemblyWorkbench"
+  },
+  {
+    "label": "Insert component",
+    "command": "Assembly_Insert",
+    "workbench": "AssemblyWorkbench"
+  },
+  {
+    "label": "Solve assembly",
+    "command": "Assembly_SolveAssembly",
+    "workbench": "AssemblyWorkbench"
+  },
+  {
+    "label": "Change parameters",
+    "command": "@parameters",
+    "workbench": null
+  },
+  {
+    "label": "New spreadsheet",
+    "command": "Spreadsheet_CreateSheet",
+    "workbench": "SpreadsheetWorkbench"
+  },
+  {
+    "label": "Document information",
+    "command": "Std_DlgProjectInformation",
+    "workbench": null
+  },
+  {
+    "label": "Change parameters",
+    "command": "@parameters",
+    "workbench": null
+  },
+  {
+    "label": "New spreadsheet",
+    "command": "Spreadsheet_CreateSheet",
+    "workbench": "SpreadsheetWorkbench"
+  },
+  {
+    "label": "Document information",
+    "command": "Std_DlgProjectInformation",
+    "workbench": null
+  },
+  {
+    "label": "Datum plane",
+    "command": "Part_DatumPlane",
+    "workbench": "PartWorkbench"
+  },
+  {
+    "label": "Datum plane",
+    "command": "Part_DatumPlane",
+    "workbench": "PartWorkbench"
+  },
+  {
+    "label": "Datum axis",
+    "command": "Part_DatumLine",
+    "workbench": "PartWorkbench"
+  },
+  {
+    "label": "Datum point",
+    "command": "Part_DatumPoint",
+    "workbench": "PartWorkbench"
+  },
+  {
+    "label": "Measure",
+    "command": "Std_Measure",
+    "workbench": null
+  },
+  {
+    "label": "Section analysis",
+    "command": "Part_SectionCut",
+    "workbench": "PartWorkbench"
+  },
+  {
+    "label": "Measure",
+    "command": "Std_Measure",
+    "workbench": null
+  },
+  {
+    "label": "Section analysis",
+    "command": "Part_SectionCut",
+    "workbench": "PartWorkbench"
+  },
+  {
+    "label": "Clip plane",
+    "command": "Std_ToggleClipPlane",
+    "workbench": null
+  },
+  {
+    "label": "Check geometry",
+    "command": "Part_CheckGeometry",
+    "workbench": "PartWorkbench"
+  },
+  {
+    "label": "Insert file",
+    "command": "Std_Import",
+    "workbench": null
+  },
+  {
+    "label": "Insert file",
+    "command": "Std_Import",
+    "workbench": null
+  },
+  {
+    "label": "Insert linked component",
+    "command": "Assembly_InsertLink",
+    "workbench": "AssemblyWorkbench"
+  },
+  {
+    "label": "Box selection",
+    "command": "Std_BoxSelection",
+    "workbench": null
+  },
+  {
+    "label": "Select all",
+    "command": "Std_SelectAll",
+    "workbench": null
+  },
+  {
+    "label": "Box selection",
+    "command": "Std_BoxSelection",
+    "workbench": null
+  },
+  {
+    "label": "Clarify selection",
+    "command": "Std_ClarifySelection",
+    "workbench": null
+  },
+  {
+    "label": "Faces only",
+    "command": "Part_FaceSelection",
+    "workbench": "PartWorkbench"
+  },
+  {
+    "label": "Edges only",
+    "command": "Part_EdgeSelection",
+    "workbench": "PartWorkbench"
+  },
+  {
+    "label": "Vertices only",
+    "command": "Part_VertexSelection",
+    "workbench": "PartWorkbench"
+  },
+  {
+    "label": "Clear selection filter",
+    "command": "Part_RemoveSelectionGate",
+    "workbench": "PartWorkbench"
+  }
+]

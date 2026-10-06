@@ -1,0 +1,44 @@
+{
+  "a_volume": 140123.89998702277,
+  "b_volume": 139944.9539322256,
+  "a_valid": true,
+  "b_valid": true,
+  "results": [
+    {
+      "tolerance": 0,
+      "common_volume": 139944.98960816453,
+      "a_minus_b_volume": 179.42890775699297,
+      "b_minus_a_volume": 139944.98055633163,
+      "common_valid": true,
+      "ab_valid": true,
+      "ba_valid": true
+    },
+    {
+      "tolerance": 1e-07,
+      "common_volume": 139944.98960816453,
+      "a_minus_b_volume": 179.42890775699297,
+      "b_minus_a_volume": 139944.98055633163,
+      "common_valid": true,
+      "ab_valid": true,
+      "ba_valid": true
+    },
+    {
+      "tolerance": 1e-05,
+      "common_volume": 139944.98960386412,
+      "a_minus_b_volume": 179.42891044383643,
+      "b_minus_a_volume": 139944.98055633137,
+      "common_valid": true,
+      "ab_valid": true,
+      "ba_valid": true
+    },
+    {
+      "tolerance": 0.001,
+      "common_volume": 0.0,
+      "a_minus_b_volume": 140123.9125392061,
+      "b_minus_a_volume": 139944.49347171158,
+      "common_valid": true,
+      "ab_valid": true,
+      "ba_valid": false
+    }
+  ]
+}

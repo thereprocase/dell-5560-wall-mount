@@ -1,0 +1,444 @@
+{
+  "scope": "Commissioning evidence only; no mature-flow, shedding or Bernoulli validation claim.",
+  "solver_log": "log.pimpleFoam.attempt2",
+  "completed_steps": 4,
+  "latest_completed_time_s": 2.030843184e-05,
+  "max_logged_Courant": 1.111165236,
+  "fatal_error": false,
+  "max_Courant_after_starting_loop": 0.5,
+  "Courant_note": "The raw maximum includes the mapped initial field before time-step adjustment. OpenFOAM logs Courant before adjusting the next step.",
+  "time_step_range_s": [
+    4.499780806e-06,
+    5.557145534e-06
+  ],
+  "turbulence_bounding_events": [
+    "bounding omega, min: -43.41211098 max: 16271443.43 average: 52414.31411",
+    "bounding k, min: -3.445834333e-07 max: 0.5979731795 average: 0.034634001",
+    "bounding k, min: -8.370465307e-11 max: 0.5979721281 average: 0.03465433312",
+    "bounding k, min: -3.151032094e-12 max: 0.5962742351 average: 0.03486640172",
+    "bounding k, min: -1.730402797e-05 max: 0.5962780259 average: 0.03491405469",
+    "bounding k, min: -0.0001040345522 max: 0.6061624902 average: 0.03492298796",
+    "bounding k, min: -0.001369623637 max: 0.7779168435 average: 0.03507241791",
+    "bounding k, min: -0.00115680047 max: 0.8238510013 average: 0.0351061699",
+    "bounding k, min: -0.001158724168 max: 0.8352830996 average: 0.03511197153",
+    "bounding k, min: -0.0001496844775 max: 0.9257571936 average: 0.03518238195",
+    "bounding k, min: -0.0001493203864 max: 0.9455215364 average: 0.03520186592",
+    "bounding k, min: -0.0001493256569 max: 0.9498317611 average: 0.03520496591"
+  ],
+  "probe_location_warning": false,
+  "linear_and_outer_convergence": "Retain and inspect the complete log; a successful linear solve does not establish temporal convergence.",
+  "pressure_unit": "Pa (kinematic p multiplied by assumed density 1.2 kg/m3)",
+  "ambient_mass_balance": [
+    {
+      "time_s": 4.499780806e-06,
+      "net_m3_s": 8.700518653e-11,
+      "sum_absolute_m3_s": 0.22465637183,
+      "net_relative_to_one_way_throughflow": 7.745623756074704e-10
+    },
+    {
+      "time_s": 9.441067454e-06,
+      "net_m3_s": 2.2028379311e-11,
+      "sum_absolute_m3_s": 0.2246340537,
+      "net_relative_to_one_way_throughflow": 1.961268022204596e-10
+    },
+    {
+      "time_s": 1.47512863e-05,
+      "net_m3_s": -8.4046826573e-13,
+      "sum_absolute_m3_s": 0.22463702333,
+      "net_relative_to_one_way_throughflow": 7.48290066589176e-12
+    },
+    {
+      "time_s": 2.030843184e-05,
+      "net_m3_s": 4.650971638e-12,
+      "sum_absolute_m3_s": 0.22463733405,
+      "net_relative_to_one_way_throughflow": 4.14087146971285e-11
+    }
+  ],
+  "mass_balance_definition": "abs(net flux) divided by half the sum of absolute boundary fluxes; assumes a closed incompressible balance with the ambient patch providing all external flow.",
+  "startup_yPlus": [
+    {
+      "time_s": 4.499780806e-06,
+      "patch": "printed",
+      "min": 0.00040479984582,
+      "max": 28.424443877,
+      "mean": 1.861044703
+    },
+    {
+      "time_s": 4.499780806e-06,
+      "patch": "laptop",
+      "min": 0.036418841864,
+      "max": 22.482119666,
+      "mean": 1.6621211677
+    },
+    {
+      "time_s": 4.499780806e-06,
+      "patch": "noctua",
+      "min": 0.024697840593,
+      "max": 18.64373789,
+      "mean": 3.0971742303
+    },
+    {
+      "time_s": 4.499780806e-06,
+      "patch": "wall_plane",
+      "min": 0.0010843313995,
+      "max": 46.42724603,
+      "mean": 6.0994696222
+    },
+    {
+      "time_s": 9.441067454e-06,
+      "patch": "printed",
+      "min": 0.00035365393323,
+      "max": 28.947342944,
+      "mean": 1.8346525925
+    },
+    {
+      "time_s": 9.441067454e-06,
+      "patch": "laptop",
+      "min": 0.038279200439,
+      "max": 22.513398941,
+      "mean": 1.6354903955
+    },
+    {
+      "time_s": 9.441067454e-06,
+      "patch": "noctua",
+      "min": 0.015651997989,
+      "max": 18.680847242,
+      "mean": 3.0886044265
+    },
+    {
+      "time_s": 9.441067454e-06,
+      "patch": "wall_plane",
+      "min": 0.00076200450328,
+      "max": 46.634090544,
+      "mean": 6.0825267594
+    },
+    {
+      "time_s": 1.47512863e-05,
+      "patch": "printed",
+      "min": 0.00035712240172,
+      "max": 29.184272836,
+      "mean": 1.8146798047
+    },
+    {
+      "time_s": 1.47512863e-05,
+      "patch": "laptop",
+      "min": 0.034390670702,
+      "max": 22.606213448,
+      "mean": 1.6101725072
+    },
+    {
+      "time_s": 1.47512863e-05,
+      "patch": "noctua",
+      "min": 0.027010327215,
+      "max": 18.714584287,
+      "mean": 3.0855020069
+    },
+    {
+      "time_s": 1.47512863e-05,
+      "patch": "wall_plane",
+      "min": 0.00072784576973,
+      "max": 46.711804657,
+      "mean": 6.075511484
+    },
+    {
+      "time_s": 2.030843184e-05,
+      "patch": "printed",
+      "min": 0.00035803906288,
+      "max": 29.307855782,
+      "mean": 1.797156088
+    },
+    {
+      "time_s": 2.030843184e-05,
+      "patch": "laptop",
+      "min": 0.031744371879,
+      "max": 22.716899008,
+      "mean": 1.5855856984
+    },
+    {
+      "time_s": 2.030843184e-05,
+      "patch": "noctua",
+      "min": 0.027800726984,
+      "max": 18.744819671,
+      "mean": 3.0838630004
+    },
+    {
+      "time_s": 2.030843184e-05,
+      "patch": "wall_plane",
+      "min": 0.0007751653717,
+      "max": 46.735245757,
+      "mean": 6.0717470672
+    }
+  ],
+  "yPlus_caution": "Startup y+ depends on the mapped initial flow and transient adjustment; it does not establish settled wall resolution.",
+  "probe_rows": 4,
+  "invalid_probe_indices": [],
+  "sampled_pressure": [
+    {
+      "name": "duct_edge_x-0.111",
+      "valid": true,
+      "mean_gauge_Pa": 47.2332122808,
+      "mean_relative_to_ambient_probe_Pa": 53.61930876674999,
+      "min_gauge_Pa": -183.97060008,
+      "max_gauge_Pa": 364.15986072
+    },
+    {
+      "name": "duct_wake_x-0.111",
+      "valid": true,
+      "mean_gauge_Pa": 57.339487362300005,
+      "mean_relative_to_ambient_probe_Pa": 63.72558384825001,
+      "min_gauge_Pa": -205.58166168,
+      "max_gauge_Pa": 418.57035084
+    },
+    {
+      "name": "front_lip_wallside_x-0.111",
+      "valid": true,
+      "mean_gauge_Pa": 36.55922326098001,
+      "mean_relative_to_ambient_probe_Pa": 42.945319746930004,
+      "min_gauge_Pa": -160.98782124,
+      "max_gauge_Pa": 305.64471888
+    },
+    {
+      "name": "front_lip_outside_x-0.111",
+      "valid": true,
+      "mean_gauge_Pa": 13.69698627783,
+      "mean_relative_to_ambient_probe_Pa": 20.083082763780006,
+      "min_gauge_Pa": -70.62075004799999,
+      "max_gauge_Pa": 124.80365891999999
+    },
+    {
+      "name": "hinge_underside_x-0.111",
+      "valid": true,
+      "mean_gauge_Pa": 66.76582181649,
+      "mean_relative_to_ambient_probe_Pa": 73.15191830244,
+      "min_gauge_Pa": -265.74759036,
+      "max_gauge_Pa": 535.77787416
+    },
+    {
+      "name": "hinge_exit_x-0.111",
+      "valid": true,
+      "mean_gauge_Pa": -51.473294383200006,
+      "mean_relative_to_ambient_probe_Pa": -45.08719789725001,
+      "min_gauge_Pa": -435.52093428,
+      "max_gauge_Pa": 233.61235824
+    },
+    {
+      "name": "hinge_wake_x-0.111",
+      "valid": true,
+      "mean_gauge_Pa": -70.05788052539998,
+      "mean_relative_to_ambient_probe_Pa": -63.671784039449996,
+      "min_gauge_Pa": -590.8687304399999,
+      "max_gauge_Pa": 314.00012616
+    },
+    {
+      "name": "duct_edge_x0.07",
+      "valid": true,
+      "mean_gauge_Pa": 45.9080260104,
+      "mean_relative_to_ambient_probe_Pa": 52.29412249635,
+      "min_gauge_Pa": -180.32515919999997,
+      "max_gauge_Pa": 355.4277522
+    },
+    {
+      "name": "duct_wake_x0.07",
+      "valid": true,
+      "mean_gauge_Pa": 55.6856849019,
+      "mean_relative_to_ambient_probe_Pa": 62.07178138784999,
+      "min_gauge_Pa": -201.0489384,
+      "max_gauge_Pa": 407.80211088
+    },
+    {
+      "name": "front_lip_wallside_x0.07",
+      "valid": true,
+      "mean_gauge_Pa": 33.52851667278,
+      "mean_relative_to_ambient_probe_Pa": 39.914613158730006,
+      "min_gauge_Pa": -151.87291584,
+      "max_gauge_Pa": 284.69021424
+    },
+    {
+      "name": "front_lip_outside_x0.07",
+      "valid": true,
+      "mean_gauge_Pa": 13.84215814221,
+      "mean_relative_to_ambient_probe_Pa": 20.22825462816,
+      "min_gauge_Pa": -73.461643896,
+      "max_gauge_Pa": 127.47201084
+    },
+    {
+      "name": "hinge_underside_x0.07",
+      "valid": true,
+      "mean_gauge_Pa": -23.471400812999995,
+      "mean_relative_to_ambient_probe_Pa": -17.085304327049997,
+      "min_gauge_Pa": -188.1970194,
+      "max_gauge_Pa": 102.29335656
+    },
+    {
+      "name": "hinge_exit_x0.07",
+      "valid": true,
+      "mean_gauge_Pa": -74.78160503099997,
+      "mean_relative_to_ambient_probe_Pa": -68.39550854504999,
+      "min_gauge_Pa": -623.1658919999999,
+      "max_gauge_Pa": 328.61786232
+    },
+    {
+      "name": "hinge_wake_x0.07",
+      "valid": true,
+      "mean_gauge_Pa": -81.72146586060003,
+      "mean_relative_to_ambient_probe_Pa": -75.33536937465004,
+      "min_gauge_Pa": -679.7394330000001,
+      "max_gauge_Pa": 356.99233103999995
+    },
+    {
+      "name": "duct_edge_x0.111",
+      "valid": true,
+      "mean_gauge_Pa": 45.16163945819999,
+      "mean_relative_to_ambient_probe_Pa": 51.54773594415,
+      "min_gauge_Pa": -176.73321059999998,
+      "max_gauge_Pa": 349.17531419999995
+    },
+    {
+      "name": "duct_wake_x0.111",
+      "valid": true,
+      "mean_gauge_Pa": 55.2218582256,
+      "mean_relative_to_ambient_probe_Pa": 61.60795471154999,
+      "min_gauge_Pa": -197.86394352,
+      "max_gauge_Pa": 402.7595844
+    },
+    {
+      "name": "front_lip_wallside_x0.111",
+      "valid": true,
+      "mean_gauge_Pa": 35.12555986479,
+      "mean_relative_to_ambient_probe_Pa": 41.51165635074,
+      "min_gauge_Pa": -155.67378852,
+      "max_gauge_Pa": 294.85232723999997
+    },
+    {
+      "name": "front_lip_outside_x0.111",
+      "valid": true,
+      "mean_gauge_Pa": 12.851685926460004,
+      "mean_relative_to_ambient_probe_Pa": 19.237782412410002,
+      "min_gauge_Pa": -67.228006344,
+      "max_gauge_Pa": 118.081149108
+    },
+    {
+      "name": "hinge_underside_x0.111",
+      "valid": true,
+      "mean_gauge_Pa": 65.58811283202,
+      "mean_relative_to_ambient_probe_Pa": 71.97420931797,
+      "min_gauge_Pa": -260.65222452,
+      "max_gauge_Pa": 526.08044232
+    },
+    {
+      "name": "hinge_exit_x0.111",
+      "valid": true,
+      "mean_gauge_Pa": -51.72901732439998,
+      "mean_relative_to_ambient_probe_Pa": -45.34292083845,
+      "min_gauge_Pa": -436.09557371999995,
+      "max_gauge_Pa": 233.11191108
+    },
+    {
+      "name": "hinge_wake_x0.111",
+      "valid": true,
+      "mean_gauge_Pa": -69.8764979532,
+      "mean_relative_to_ambient_probe_Pa": -63.49040146725001,
+      "min_gauge_Pa": -587.39682768,
+      "max_gauge_Pa": 311.27094888
+    },
+    {
+      "name": "ambient_reference",
+      "valid": true,
+      "mean_gauge_Pa": -6.38609648595,
+      "mean_relative_to_ambient_probe_Pa": 0.0,
+      "min_gauge_Pa": -53.657456532,
+      "max_gauge_Pa": 28.637785716
+    }
+  ],
+  "sampled_total_pressure": [
+    {
+      "name": "duct_edge_x-0.111",
+      "mean_gauge_total_Pa": 47.924288413121936
+    },
+    {
+      "name": "duct_wake_x-0.111",
+      "mean_gauge_total_Pa": 57.710315619559424
+    },
+    {
+      "name": "front_lip_wallside_x-0.111",
+      "mean_gauge_total_Pa": 39.27822827009406
+    },
+    {
+      "name": "front_lip_outside_x-0.111",
+      "mean_gauge_total_Pa": 13.720643182345674
+    },
+    {
+      "name": "hinge_underside_x-0.111",
+      "mean_gauge_total_Pa": 76.6624962177437
+    },
+    {
+      "name": "hinge_exit_x-0.111",
+      "mean_gauge_total_Pa": -46.258436383494086
+    },
+    {
+      "name": "hinge_wake_x-0.111",
+      "mean_gauge_total_Pa": -64.23010222639103
+    },
+    {
+      "name": "duct_edge_x0.07",
+      "mean_gauge_total_Pa": 46.77969990988728
+    },
+    {
+      "name": "duct_wake_x0.07",
+      "mean_gauge_total_Pa": 56.27069919085903
+    },
+    {
+      "name": "front_lip_wallside_x0.07",
+      "mean_gauge_total_Pa": 36.309995568064856
+    },
+    {
+      "name": "front_lip_outside_x0.07",
+      "mean_gauge_total_Pa": 13.887650960562304
+    },
+    {
+      "name": "hinge_underside_x0.07",
+      "mean_gauge_total_Pa": -13.67920793427254
+    },
+    {
+      "name": "hinge_exit_x0.07",
+      "mean_gauge_total_Pa": -70.51263826269808
+    },
+    {
+      "name": "hinge_wake_x0.07",
+      "mean_gauge_total_Pa": -77.37567127293828
+    },
+    {
+      "name": "duct_edge_x0.111",
+      "mean_gauge_total_Pa": 45.8500491373568
+    },
+    {
+      "name": "duct_wake_x0.111",
+      "mean_gauge_total_Pa": 55.60449948658906
+    },
+    {
+      "name": "front_lip_wallside_x0.111",
+      "mean_gauge_total_Pa": 37.79610864440172
+    },
+    {
+      "name": "front_lip_outside_x0.111",
+      "mean_gauge_total_Pa": 12.88449358021076
+    },
+    {
+      "name": "hinge_underside_x0.111",
+      "mean_gauge_total_Pa": 75.54654885535658
+    },
+    {
+      "name": "hinge_exit_x0.111",
+      "mean_gauge_total_Pa": -46.48989240969886
+    },
+    {
+      "name": "hinge_wake_x0.111",
+      "mean_gauge_total_Pa": -64.03013781006067
+    },
+    {
+      "name": "ambient_reference",
+      "mean_gauge_total_Pa": -6.030885874202583
+    }
+  ],
+  "total_pressure_caution": "p + 0.5 rho U squared at sample points; point pairs are not established to share a streamline. Do not attribute causality from this alone."
+}

@@ -1,0 +1,203 @@
+{
+  "status": 200,
+  "data": {
+    "btType": "BTFeatureDefinitionResponse-1617",
+    "rejectMicroversionSkew": false,
+    "microversionSkew": false,
+    "featureState": {
+      "btType": "BTFeatureState-1688",
+      "featureStatus": "OK",
+      "inactive": false
+    },
+    "feature": {
+      "btType": "BTMSketch-151",
+      "parameterLibraries": [],
+      "returnAfterSubfeatures": false,
+      "subFeatures": [],
+      "entities": [
+        {
+          "btType": "BTMSketchCurveSegment-155",
+          "geometry": {
+            "btType": "BTCurveGeometryLine-117",
+            "pntX": -0.0005,
+            "pntY": 0.004,
+            "dirX": 1.0,
+            "dirY": 0.0
+          },
+          "isConstruction": false,
+          "offsetCurveExtensions": [],
+          "startPointId": "edge0.start",
+          "endPointId": "edge0.end",
+          "startParam": 0.0,
+          "endParam": 0.001,
+          "centerId": "",
+          "isFromSplineHandle": false,
+          "internalIds": [],
+          "curvedTextIds": [],
+          "isFromSplineControlPolygon": false,
+          "isFromEndpointSplineHandle": false,
+          "namespace": "",
+          "name": "",
+          "index": 1,
+          "parameters": [],
+          "nodeId": "MbBmbN1ah6GUYOZPp",
+          "entityId": "edge0"
+        },
+        {
+          "btType": "BTMSketchCurveSegment-155",
+          "geometry": {
+            "btType": "BTCurveGeometryLine-117",
+            "pntX": 0.0005,
+            "pntY": 0.004,
+            "dirX": 0.0,
+            "dirY": 1.0
+          },
+          "isConstruction": false,
+          "offsetCurveExtensions": [],
+          "startPointId": "edge1.start",
+          "endPointId": "edge1.end",
+          "startParam": 0.0,
+          "endParam": 0.0101,
+          "centerId": "",
+          "isFromSplineHandle": false,
+          "internalIds": [],
+          "curvedTextIds": [],
+          "isFromSplineControlPolygon": false,
+          "isFromEndpointSplineHandle": false,
+          "namespace": "",
+          "name": "",
+          "index": 2,
+          "parameters": [],
+          "nodeId": "MxczCt5ERmFLB86kl",
+          "entityId": "edge1"
+        },
+        {
+          "btType": "BTMSketchCurveSegment-155",
+          "geometry": {
+            "btType": "BTCurveGeometryLine-117",
+            "pntX": 0.0005,
+            "pntY": 0.0141,
+            "dirX": -1.0,
+            "dirY": 0.0
+          },
+          "isConstruction": false,
+          "offsetCurveExtensions": [],
+          "startPointId": "edge2.start",
+          "endPointId": "edge2.end",
+          "startParam": 0.0,
+          "endParam": 0.001,
+          "centerId": "",
+          "isFromSplineHandle": false,
+          "internalIds": [],
+          "curvedTextIds": [],
+          "isFromSplineControlPolygon": false,
+          "isFromEndpointSplineHandle": false,
+          "namespace": "",
+          "name": "",
+          "index": 3,
+          "parameters": [],
+          "nodeId": "MNqN0mYTwCK7mhM9t",
+          "entityId": "edge2"
+        },
+        {
+          "btType": "BTMSketchCurveSegment-155",
+          "geometry": {
+            "btType": "BTCurveGeometryLine-117",
+            "pntX": -0.0005,
+            "pntY": 0.0141,
+            "dirX": 0.0,
+            "dirY": -1.0
+          },
+          "isConstruction": false,
+          "offsetCurveExtensions": [],
+          "startPointId": "edge3.start",
+          "endPointId": "edge3.end",
+          "startParam": 0.0,
+          "endParam": 0.0101,
+          "centerId": "",
+          "isFromSplineHandle": false,
+          "internalIds": [],
+          "curvedTextIds": [],
+          "isFromSplineControlPolygon": false,
+          "isFromEndpointSplineHandle": false,
+          "namespace": "",
+          "name": "",
+          "index": 4,
+          "parameters": [],
+          "nodeId": "MuFPdwoq/PBBFTu+U",
+          "entityId": "edge3"
+        }
+      ],
+      "constraints": [],
+      "namespace": "",
+      "name": "Pin - 1 mm split from z=4",
+      "parameters": [
+        {
+          "btType": "BTMParameterQueryList-148",
+          "libraryRelationType": "DEFAULT",
+          "queries": [
+            {
+              "btType": "BTMIndividualQuery-138",
+              "queryStatement": null,
+              "queryString": "query=qCreatedBy(makeId(\"Front\"), EntityType.FACE);",
+              "nodeId": "MbIuJzwcRx2hk4G4w",
+              "deterministicIds": [
+                "JCC"
+              ]
+            }
+          ],
+          "filter": {
+            "btType": "BTOrFilter-167",
+            "operand1": {
+              "btType": "BTOrFilter-167",
+              "operand1": {
+                "btType": "BTAndFilter-110",
+                "operand1": {
+                  "btType": "BTGeometryFilter-130",
+                  "geometryType": "PLANE"
+                },
+                "operand2": {
+                  "btType": "BTFlatSheetMetalFilter-3018",
+                  "allows": "MODEL_ONLY"
+                }
+              },
+              "operand2": {
+                "btType": "BTAndFilter-110",
+                "operand1": {
+                  "btType": "BTAndFilter-110",
+                  "operand1": {
+                    "btType": "BTSMDefinitionEntityTypeFilter-1651",
+                    "smDefinitionEntityType": "FACE"
+                  },
+                  "operand2": {
+                    "btType": "BTFlatSheetMetalFilter-3018",
+                    "allows": "MODEL_AND_FLATTENED"
+                  }
+                },
+                "operand2": {
+                  "btType": "BTGeometryFilter-130",
+                  "geometryType": "PLANE"
+                }
+              }
+            },
+            "operand2": {
+              "btType": "BTBodyTypeFilter-112",
+              "bodyType": "MATE_CONNECTOR"
+            }
+          },
+          "nodeId": "MA15WkKUI7YPpIlpE",
+          "parameterId": "sketchPlane",
+          "parameterName": ""
+        }
+      ],
+      "nodeId": "MUItHYTwJnkTDMd9K",
+      "featureId": "FqmwXx7eYeJWJUo_1",
+      "suppressed": false,
+      "featureType": "newSketch",
+      "suppressionState": null
+    },
+    "sourceMicroversion": "8aa552ff6f455bb93c1779a4",
+    "libraryVersion": 0,
+    "serializationVersion": "1.2.21"
+  }
+}

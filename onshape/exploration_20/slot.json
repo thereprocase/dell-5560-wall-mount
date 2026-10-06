@@ -1,0 +1,82 @@
+{
+  "feature": {
+    "btType": "BTMSketch-151",
+    "name": "Pin - 1 mm split from z=4",
+    "featureType": "newSketch",
+    "parameters": [
+      {
+        "btType": "BTMParameterQueryList-148",
+        "parameterId": "sketchPlane",
+        "queries": [
+          {
+            "btType": "BTMIndividualQuery-138",
+            "queryString": "query=qCreatedBy(makeId(\"Front\"), EntityType.FACE);"
+          }
+        ]
+      }
+    ],
+    "entities": [
+      {
+        "btType": "BTMSketchCurveSegment-155",
+        "entityId": "edge0",
+        "startPointId": "edge0.start",
+        "endPointId": "edge0.end",
+        "startParam": 0,
+        "endParam": 0.001,
+        "geometry": {
+          "btType": "BTCurveGeometryLine-117",
+          "pntX": -0.0005,
+          "pntY": 0.004,
+          "dirX": 1.0,
+          "dirY": 0.0
+        }
+      },
+      {
+        "btType": "BTMSketchCurveSegment-155",
+        "entityId": "edge1",
+        "startPointId": "edge1.start",
+        "endPointId": "edge1.end",
+        "startParam": 0,
+        "endParam": 0.0101,
+        "geometry": {
+          "btType": "BTCurveGeometryLine-117",
+          "pntX": 0.0005,
+          "pntY": 0.004,
+          "dirX": 0.0,
+          "dirY": 1.0
+        }
+      },
+      {
+        "btType": "BTMSketchCurveSegment-155",
+        "entityId": "edge2",
+        "startPointId": "edge2.start",
+        "endPointId": "edge2.end",
+        "startParam": 0,
+        "endParam": 0.001,
+        "geometry": {
+          "btType": "BTCurveGeometryLine-117",
+          "pntX": 0.0005,
+          "pntY": 0.0141,
+          "dirX": -1.0,
+          "dirY": 0.0
+        }
+      },
+      {
+        "btType": "BTMSketchCurveSegment-155",
+        "entityId": "edge3",
+        "startPointId": "edge3.start",
+        "endPointId": "edge3.end",
+        "startParam": 0,
+        "endParam": 0.0101,
+        "geometry": {
+          "btType": "BTCurveGeometryLine-117",
+          "pntX": -0.0005,
+          "pntY": 0.0141,
+          "dirX": 0.0,
+          "dirY": -1.0
+        }
+      }
+    ],
+    "constraints": []
+  }
+}

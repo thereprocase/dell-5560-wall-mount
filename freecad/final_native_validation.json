@@ -1,0 +1,119 @@
+{
+  "parts": {
+    "02_right_cradle": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 274206.41243421444,
+      "baseline_volume_mm3": 274207.00576756103,
+      "symmetric_difference_mm3": 0.0,
+      "boolean_results_valid": true
+    },
+    "01_left_cradle": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 274206.41243421444,
+      "baseline_volume_mm3": 274207.0057675232,
+      "symmetric_difference_mm3": 0.0,
+      "boolean_results_valid": true
+    },
+    "04_right_fan_duct": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 137915.52535193996,
+      "baseline_volume_mm3": 137915.52526221197,
+      "symmetric_difference_mm3": 0.0,
+      "boolean_results_valid": true
+    },
+    "03_left_fan_duct": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 137915.52535193993,
+      "baseline_volume_mm3": 137915.52525688734,
+      "symmetric_difference_mm3": 0.0,
+      "boolean_results_valid": true
+    },
+    "06_right_fan_retainer": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 24834.544404383,
+      "baseline_volume_mm3": 24834.544404383872,
+      "symmetric_difference_mm3": 0.0,
+      "boolean_results_valid": true
+    },
+    "05_left_fan_retainer": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 24834.544404383,
+      "baseline_volume_mm3": 24834.54440437918,
+      "symmetric_difference_mm3": 0.0,
+      "boolean_results_valid": true
+    },
+    "08_right_outlet_rail": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 63831.94036874406,
+      "baseline_volume_mm3": 63831.940368737196,
+      "symmetric_difference_mm3": 0.0,
+      "boolean_results_valid": true
+    },
+    "07_left_outlet_rail": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 63831.94036874406,
+      "baseline_volume_mm3": 63831.94036815583,
+      "symmetric_difference_mm3": 0.0,
+      "boolean_results_valid": true
+    },
+    "10_right_fan_tray": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 87444.07619047645,
+      "baseline_volume_mm3": 87444.07619045906,
+      "symmetric_difference_mm3": 0.0,
+      "boolean_results_valid": true
+    },
+    "09_left_fan_tray": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 87444.07619047647,
+      "baseline_volume_mm3": 87444.07619034142,
+      "symmetric_difference_mm3": 0.0,
+      "boolean_results_valid": true
+    },
+    "11_left_push_pin": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 204.56030211057194,
+      "baseline_volume_mm3": 204.56030211039442,
+      "symmetric_difference_mm3": 0.0,
+      "boolean_results_valid": true
+    },
+    "12_right_push_pin": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 204.5603021105719,
+      "baseline_volume_mm3": 204.56030211045658,
+      "symmetric_difference_mm3": 0.0,
+      "boolean_results_valid": true
+    },
+    "13_left_push_pin": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 204.56030211057208,
+      "baseline_volume_mm3": 204.56030211039425,
+      "symmetric_difference_mm3": 0.0,
+      "boolean_results_valid": true
+    },
+    "14_right_push_pin": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 204.56030211057208,
+      "baseline_volume_mm3": 204.56030211045646,
+      "symmetric_difference_mm3": 0.0,
+      "boolean_results_valid": true
+    }
+  },
+  "sketch_count": 158,
+  "underconstrained_sketches": [],
+  "feature_errors": []
+}

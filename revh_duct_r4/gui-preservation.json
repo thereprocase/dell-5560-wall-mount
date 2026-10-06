@@ -1,0 +1,10 @@
+{
+  "geometry_archive_members_unchanged": 1941,
+  "gui_archive_members_restored": 2401,
+  "old_view_providers_retained": 897,
+  "new_hidden_view_providers": 3,
+  "document_xml_sha256": "dc9ef12c2d0f0e27ab4dd95423931f6c3f3e2af4781140bd42229652fd239d13",
+  "native_sha256": "9b423831ca0aa4c3d6507f46d4051cea1a1990736894ee7295f20d946d2cdf2c",
+  "passed": true,
+  "headless_native_sha256": "db66042dcc2d5c2f878ae8b5add61c0c6acd7f74884f1fb6c91d3cb6c4d164e4"
+}

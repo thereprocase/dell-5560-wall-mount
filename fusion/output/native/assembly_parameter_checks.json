@@ -1,0 +1,135 @@
+{
+  "nominal": {
+    "volumes_mm3": {
+      "03 Outlet rail | LH": 63831.94036891334,
+      "01 Cradle | LH": 274207.0057672205,
+      "04 Fan tray | LH": 87444.07619047718,
+      "05 Fan retainer | RH": 24834.544404382996,
+      "05 Fan retainer | LH": 24834.54440438298,
+      "01 Cradle | RH": 274207.0057672201,
+      "06 Push pin | shared x4": 204.5603021113319,
+      "03 Outlet rail | RH": 63831.94036891334,
+      "02 Fan duct | LH": 137915.52524050057,
+      "02 Fan duct | RH": 137915.52524049842,
+      "04 Fan tray | RH": 87444.07619047692
+    },
+    "issues": [],
+    "sketch_count": 113
+  },
+  "checks": [
+    {
+      "parameter": "outletGap",
+      "test_expression": "8 mm",
+      "volumes_mm3": {
+        "03 Outlet rail | LH": 65486.31118530096,
+        "01 Cradle | LH": 274207.0057672205,
+        "04 Fan tray | LH": 87444.07619047718,
+        "05 Fan retainer | RH": 24834.544404382996,
+        "05 Fan retainer | LH": 24834.54440438298,
+        "01 Cradle | RH": 274207.0057672201,
+        "06 Push pin | shared x4": 204.5603021113319,
+        "03 Outlet rail | RH": 65486.31118530095,
+        "02 Fan duct | LH": 137915.5252404982,
+        "02 Fan duct | RH": 137915.52524049842,
+        "04 Fan tray | RH": 87444.07619047692
+      },
+      "issues": [],
+      "sketch_count": 113,
+      "changed_components": [
+        "03 Outlet rail | LH",
+        "03 Outlet rail | RH"
+      ],
+      "passed": true
+    },
+    {
+      "parameter": "outletGap",
+      "test_expression": "16 mm",
+      "volumes_mm3": {
+        "03 Outlet rail | LH": 62143.56720813895,
+        "01 Cradle | LH": 274207.0057672205,
+        "04 Fan tray | LH": 87444.07619047718,
+        "05 Fan retainer | RH": 24834.544404382996,
+        "05 Fan retainer | LH": 24834.54440438298,
+        "01 Cradle | RH": 274207.0057672201,
+        "06 Push pin | shared x4": 204.5603021113319,
+        "03 Outlet rail | RH": 62143.56720813892,
+        "02 Fan duct | LH": 137915.5252404982,
+        "02 Fan duct | RH": 137915.52524049842,
+        "04 Fan tray | RH": 87444.07619047692
+      },
+      "issues": [],
+      "sketch_count": 113,
+      "changed_components": [
+        "03 Outlet rail | LH",
+        "03 Outlet rail | RH"
+      ],
+      "passed": true
+    },
+    {
+      "parameter": "pinSplitWidth",
+      "test_expression": "1.2 mm",
+      "volumes_mm3": {
+        "03 Outlet rail | LH": 63831.94036891334,
+        "01 Cradle | LH": 274207.0057672205,
+        "04 Fan tray | LH": 87444.07619047737,
+        "05 Fan retainer | RH": 24834.544404382996,
+        "05 Fan retainer | LH": 24834.54440438298,
+        "01 Cradle | RH": 274207.0057672201,
+        "06 Push pin | shared x4": 196.9954006223566,
+        "03 Outlet rail | RH": 63831.94036891334,
+        "02 Fan duct | LH": 137915.5252404982,
+        "02 Fan duct | RH": 137915.52524049842,
+        "04 Fan tray | RH": 87444.07619047709
+      },
+      "issues": [],
+      "sketch_count": 113,
+      "changed_components": [
+        "06 Push pin | shared x4"
+      ],
+      "passed": true
+    },
+    {
+      "parameter": "ductSkin",
+      "test_expression": "2.2 mm",
+      "volumes_mm3": {
+        "03 Outlet rail | LH": 63831.94036891334,
+        "01 Cradle | LH": 274207.0057672205,
+        "04 Fan tray | LH": 87444.07619047718,
+        "05 Fan retainer | RH": 24834.544404382996,
+        "05 Fan retainer | LH": 24834.54440438298,
+        "01 Cradle | RH": 274207.0057672201,
+        "06 Push pin | shared x4": 204.5603021113319,
+        "03 Outlet rail | RH": 63831.94036891334,
+        "02 Fan duct | LH": 145653.5964832841,
+        "02 Fan duct | RH": 145653.5964832845,
+        "04 Fan tray | RH": 87444.07619047692
+      },
+      "issues": [],
+      "sketch_count": 113,
+      "changed_components": [
+        "02 Fan duct | LH",
+        "02 Fan duct | RH"
+      ],
+      "passed": true
+    }
+  ],
+  "restored": {
+    "volumes_mm3": {
+      "03 Outlet rail | LH": 63831.94036891334,
+      "01 Cradle | LH": 274207.0057672205,
+      "04 Fan tray | LH": 87444.07619047718,
+      "05 Fan retainer | RH": 24834.544404382996,
+      "05 Fan retainer | LH": 24834.54440438298,
+      "01 Cradle | RH": 274207.0057672201,
+      "06 Push pin | shared x4": 204.5603021113319,
+      "03 Outlet rail | RH": 63831.94036891334,
+      "02 Fan duct | LH": 137915.52524043623,
+      "02 Fan duct | RH": 137915.52524043637,
+      "04 Fan tray | RH": 87444.07619047692
+    },
+    "issues": [],
+    "sketch_count": 113
+  },
+  "max_restore_volume_error_mm3": 6.434856913983822e-08,
+  "passed": true
+}

@@ -1,0 +1,117 @@
+{
+  "helper_component": "90 CFD helpers | NOT PRINTED",
+  "roles": [
+    {
+      "name": "WALL | solid obstacle; face Y=0",
+      "role": "solid_wall",
+      "assumption": "Arbitrary finite extent; wall plane is source datum",
+      "volume_mm3": 12800000.0
+    },
+    {
+      "name": "LAPTOP | vented airflow surrogate",
+      "role": "laptop_shell",
+      "assumption": "Topology from Dell manuals; internal cavity, vent dimensions, fin losses and leakage are unmeasured",
+      "volume_mm3": 1012109.2586842342
+    },
+    {
+      "name": "LH DELL FAN | actuator zone; NOT solid",
+      "role": "fan_actuator_zone",
+      "assumption": "Separate internal blower; axial intake +Y then hinge discharge +Z. Pressure-flow curve and RPM unknown",
+      "volume_mm3": 3926.9908169874125
+    },
+    {
+      "name": "RH DELL FAN | actuator zone; NOT solid",
+      "role": "fan_actuator_zone",
+      "assumption": "Separate internal blower; axial intake +Y then hinge discharge +Z. Pressure-flow curve and RPM unknown",
+      "volume_mm3": 3926.9908169874125
+    },
+    {
+      "name": "INTAKE GRILLE | porous interface; NOT solid",
+      "role": "porous_interface_zone",
+      "assumption": "Open area and pressure-loss law unmeasured; do not treat this marker as an impermeable wall",
+      "volume_mm3": 869.9999999999815
+    }
+  ],
+  "fully_constrained": true,
+  "features_healthy": true,
+  "parameters": [
+    {
+      "name": "CFD_laptopWidth",
+      "expression": "344.4 mm",
+      "comment": "DELL DOCUMENTED | Exterior width"
+    },
+    {
+      "name": "CFD_laptopHeight",
+      "expression": "230.3 mm",
+      "comment": "DELL DOCUMENTED | Hinge-to-front dimension"
+    },
+    {
+      "name": "CFD_laptopEnvelopeThickness",
+      "expression": "20 mm",
+      "comment": "CLEARANCE ENVELOPE | Source model thickness; not measured internal chassis"
+    },
+    {
+      "name": "CFD_surrogateCaseSkin",
+      "expression": "1.2 mm",
+      "comment": "ASSUMED | Laptop surrogate wall thickness"
+    },
+    {
+      "name": "CFD_internalAirDepth",
+      "expression": "8 mm",
+      "comment": "ASSUMED | Simplified internal intake/turning space"
+    },
+    {
+      "name": "CFD_ventBandWidth",
+      "expression": "290 mm",
+      "comment": "UNMEASURED | Long underside intake grille width"
+    },
+    {
+      "name": "CFD_ventBandHeight",
+      "expression": "30 mm",
+      "comment": "UNMEASURED | Intake band height toward hinge"
+    },
+    {
+      "name": "CFD_ventHingeSetback",
+      "expression": "35 mm",
+      "comment": "UNMEASURED | Intake centre below hinge"
+    },
+    {
+      "name": "CFD_dellBlowerOffset",
+      "expression": "110 mm",
+      "comment": "UNMEASURED | Symmetric blower centre offset"
+    },
+    {
+      "name": "CFD_dellBlowerSetback",
+      "expression": "45 mm",
+      "comment": "UNMEASURED | Blower centre below hinge"
+    },
+    {
+      "name": "CFD_dellBlowerInletDiameter",
+      "expression": "50 mm",
+      "comment": "UNMEASURED | Surrogate actuator disk diameter"
+    },
+    {
+      "name": "CFD_hingeExhaustWidth",
+      "expression": "65 mm",
+      "comment": "UNMEASURED | Hinge exhaust width per blower"
+    },
+    {
+      "name": "CFD_hingeExhaustHeight",
+      "expression": "5 mm",
+      "comment": "UNMEASURED | Hinge opening depth normal to underside"
+    },
+    {
+      "name": "CFD_wallHalfWidth",
+      "expression": "400 mm",
+      "comment": "CFD DOMAIN | Wall lateral extent, sensitivity test required"
+    },
+    {
+      "name": "CFD_wallThickness",
+      "expression": "20 mm",
+      "comment": "CFD REFERENCE | Solid wall lies entirely behind Y=0"
+    }
+  ],
+  "printed_occurrences": 14,
+  "total_root_occurrences": 15,
+  "solver_status": "Geometry surrogates only; Dell blower curve, grille/fin resistance, and heat load are unset"
+}

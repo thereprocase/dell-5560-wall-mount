@@ -1,0 +1,10 @@
+{
+  "04_right_fan_duct": {
+    "faces_below_0_1_mm2": 0,
+    "short_edges_below_0_05_mm": 0
+  },
+  "03_left_fan_duct": {
+    "faces_below_0_1_mm2": 0,
+    "short_edges_below_0_05_mm": 0
+  }
+}

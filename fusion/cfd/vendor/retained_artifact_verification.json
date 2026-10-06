@@ -1,0 +1,108 @@
+{
+  "scope": "Retained acquisition artifacts; no payload execution or new publisher authentication",
+  "all_match": true,
+  "files": [
+    {
+      "path": "downloads/BARAM-26.3.0-setup.exe",
+      "expected_sha256": "18f81640de73891248e3ed147483f96d4c70359da1f5df5f06e6cc6a8294fb72",
+      "actual_sha256": "18f81640de73891248e3ed147483f96d4c70359da1f5df5f06e6cc6a8294fb72",
+      "matches": true
+    },
+    {
+      "path": "downloads/baram-extracted/$TEMP/BARAM-26.3.0-win64.msi",
+      "expected_sha256": "ff87aea71706425f76a098bdbd3b648f3c2247f1b1d82e02a358b5fc126075be",
+      "actual_sha256": "ff87aea71706425f76a098bdbd3b648f3c2247f1b1d82e02a358b5fc126075be",
+      "matches": true
+    },
+    {
+      "path": "downloads/baram-extracted/$TEMP/msmpisetup.exe",
+      "expected_sha256": "c305ce3f05d142d519f8dd800d83a4b894fc31bcad30512cefb557feaccbe8b4",
+      "actual_sha256": "c305ce3f05d142d519f8dd800d83a4b894fc31bcad30512cefb557feaccbe8b4",
+      "matches": true
+    },
+    {
+      "path": "downloads/baram-inspected-payload/python311.dll",
+      "expected_sha256": "0817a2a657a24c0d5fbb60df56960f42fc66b3039d522ec952dab83e2d869364",
+      "actual_sha256": "0817a2a657a24c0d5fbb60df56960f42fc66b3039d522ec952dab83e2d869364",
+      "matches": true
+    },
+    {
+      "path": "downloads/baram-inspected-payload/Qt6Core.dll",
+      "expected_sha256": "393833b9d4deef7abd8bf475d38c15126c2f016058b03dd5eb27fa18198cfa75",
+      "actual_sha256": "393833b9d4deef7abd8bf475d38c15126c2f016058b03dd5eb27fa18198cfa75",
+      "matches": true
+    },
+    {
+      "path": "downloads/source-analytics-client.py",
+      "expected_sha256": "94ed09358cf5d25b134a11764f40559dbd533a893f19c30fad5c138629ee867d",
+      "actual_sha256": "94ed09358cf5d25b134a11764f40559dbd533a893f19c30fad5c138629ee867d",
+      "matches": true
+    },
+    {
+      "path": "downloads/source-analytics-consent.py",
+      "expected_sha256": "ad47695b072beaa5b7bdbe0de5522c090c2efce8ed0c417f1d52431edaa27a59",
+      "actual_sha256": "ad47695b072beaa5b7bdbe0de5522c090c2efce8ed0c417f1d52431edaa27a59",
+      "matches": true
+    },
+    {
+      "path": "downloads/source-app_properties.py",
+      "expected_sha256": "a19ed65466b4a5f6bfc2f7a6f6c9a78e814b4389b81bbef52fdcccb86783eb2b",
+      "actual_sha256": "a19ed65466b4a5f6bfc2f7a6f6c9a78e814b4389b81bbef52fdcccb86783eb2b",
+      "matches": true
+    },
+    {
+      "path": "downloads/source-LICENSE",
+      "expected_sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "actual_sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "matches": true
+    },
+    {
+      "path": "downloads/source-README.md",
+      "expected_sha256": "b95044d5fc248b794348b49dc8c1a2db5d8db750d0a5430835b868624d2ae5e9",
+      "actual_sha256": "b95044d5fc248b794348b49dc8c1a2db5d8db750d0a5430835b868624d2ae5e9",
+      "matches": true
+    },
+    {
+      "path": "downloads/source-requirements.txt",
+      "expected_sha256": "5fba4f87f7fc5c208ecd3bee6f9acc375f2307024e8294a4ea7eca7aede4dd9b",
+      "actual_sha256": "5fba4f87f7fc5c208ecd3bee6f9acc375f2307024e8294a4ea7eca7aede4dd9b",
+      "matches": true
+    },
+    {
+      "path": "openfoam/debs/openfoam2412-common_2412.260127-1_all.deb",
+      "expected_sha256": "8d734715802a207de0875ecfc2a2b44399c28cbd4a3f59471a682c56ddaf0310",
+      "actual_sha256": "8d734715802a207de0875ecfc2a2b44399c28cbd4a3f59471a682c56ddaf0310",
+      "matches": true
+    },
+    {
+      "path": "openfoam/debs/openfoam2412-tools_2412.260127-1_amd64.deb",
+      "expected_sha256": "f19b8fc2ec2a0b25f8489bf9f3f3a7da8fb3451c6b76fab90cc6550608f52ed3",
+      "actual_sha256": "f19b8fc2ec2a0b25f8489bf9f3f3a7da8fb3451c6b76fab90cc6550608f52ed3",
+      "matches": true
+    },
+    {
+      "path": "openfoam/debs/openfoam2412-tutorials_2412.260127-1_all.deb",
+      "expected_sha256": "a11835f716b90d0aeda93d78f2d4dfe3fd7c7b74ff59b4892ca2eaa6d8dbca80",
+      "actual_sha256": "a11835f716b90d0aeda93d78f2d4dfe3fd7c7b74ff59b4892ca2eaa6d8dbca80",
+      "matches": true
+    },
+    {
+      "path": "openfoam/debs/openfoam2412_2412.260127-1_amd64.deb",
+      "expected_sha256": "7022b3d4d20fbda9198e7e85510785ce094d91424713233f7571e97cb0d1c80c",
+      "actual_sha256": "7022b3d4d20fbda9198e7e85510785ce094d91424713233f7571e97cb0d1c80c",
+      "matches": true
+    },
+    {
+      "path": "openfoam/pubkey.gpg",
+      "expected_sha256": "e6ddd89ed33131a4fc63460cb131ae7416a2a0062b590f4237121598626edf86",
+      "actual_sha256": "e6ddd89ed33131a4fc63460cb131ae7416a2a0062b590f4237121598626edf86",
+      "matches": true
+    },
+    {
+      "path": "openfoam/add-debian-repo.sh",
+      "expected_sha256": "f7fa288327e936b5a85e3e4a0b29bf039c06d214916f39400b830b63a3310b5b",
+      "actual_sha256": "f7fa288327e936b5a85e3e4a0b29bf039c06d214916f39400b830b63a3310b5b",
+      "matches": true
+    }
+  ]
+}

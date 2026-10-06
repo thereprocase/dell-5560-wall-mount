@@ -1,0 +1,98 @@
+
+FILE /mnt/f/Code/dell-5560-wall-mount/fusion/cfd/cases/OpenCFD_v2412/q50_coarse/0/U
+FoamFile
+dimensions
+internalField
+boundaryField
+
+FILE /mnt/f/Code/dell-5560-wall-mount/fusion/cfd/cases/OpenCFD_v2412/q50_coarse/0/k
+FoamFile
+dimensions
+internalField
+boundaryField
+
+FILE /mnt/f/Code/dell-5560-wall-mount/fusion/cfd/cases/OpenCFD_v2412/q50_coarse/0/nut
+FoamFile
+dimensions
+internalField
+boundaryField
+
+FILE /mnt/f/Code/dell-5560-wall-mount/fusion/cfd/cases/OpenCFD_v2412/q50_coarse/0/omega
+FoamFile
+dimensions
+internalField
+boundaryField
+
+FILE /mnt/f/Code/dell-5560-wall-mount/fusion/cfd/cases/OpenCFD_v2412/q50_coarse/0/p
+FoamFile
+dimensions
+internalField
+boundaryField
+
+FILE /mnt/f/Code/dell-5560-wall-mount/fusion/cfd/cases/OpenCFD_v2412/q50_coarse/constant/transportProperties
+FoamFile
+transportModel
+nu
+
+FILE /mnt/f/Code/dell-5560-wall-mount/fusion/cfd/cases/OpenCFD_v2412/q50_coarse/constant/turbulenceProperties
+FoamFile
+simulationType
+RAS
+
+FILE /mnt/f/Code/dell-5560-wall-mount/fusion/cfd/cases/OpenCFD_v2412/q50_coarse/system/blockMeshDict
+FoamFile
+scale
+vertices
+blocks
+edges
+boundary
+mergePatchPairs
+
+FILE /mnt/f/Code/dell-5560-wall-mount/fusion/cfd/cases/OpenCFD_v2412/q50_coarse/system/controlDict
+FoamFile
+application
+startFrom
+startTime
+stopAt
+endTime
+deltaT
+writeControl
+writeInterval
+purgeWrite
+writeFormat
+writePrecision
+writeCompression
+timeFormat
+timePrecision
+runTimeModifiable
+functions
+
+FILE /mnt/f/Code/dell-5560-wall-mount/fusion/cfd/cases/OpenCFD_v2412/q50_coarse/system/fvSchemes
+FoamFile
+ddtSchemes
+gradSchemes
+divSchemes
+laplacianSchemes
+interpolationSchemes
+snGradSchemes
+wallDist
+fluxRequired
+
+FILE /mnt/f/Code/dell-5560-wall-mount/fusion/cfd/cases/OpenCFD_v2412/q50_coarse/system/fvSolution
+FoamFile
+solvers
+SIMPLE
+relaxationFactors
+
+FILE /mnt/f/Code/dell-5560-wall-mount/fusion/cfd/cases/OpenCFD_v2412/q50_coarse/system/snappyHexMeshDict
+FoamFile
+castellatedMesh
+snap
+addLayers
+geometry
+castellatedMeshControls
+snapControls
+addLayersControls
+meshQualityControls
+writeFlags
+mergeTolerance

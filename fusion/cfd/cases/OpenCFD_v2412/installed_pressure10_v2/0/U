@@ -1,0 +1,39 @@
+/* Generated for OpenCFD OpenFOAM v2412; setup only. */
+FoamFile
+{
+    version 2.0;
+    format ascii;
+    class volVectorField;
+    location "0";
+    object U;
+}
+
+dimensions [0 1 -1 0 0 0 0];
+internalField uniform (0 0 0);
+boundaryField
+{
+    printed
+    {
+        type noSlip;
+    }
+    laptop
+    {
+        type noSlip;
+    }
+    noctua
+    {
+        type noSlip;
+    }
+    wall_plane
+    {
+        type noSlip;
+    }
+    ambient_openings
+    {
+        type pressureInletOutletVelocity; value uniform (0 0 0);
+    }
+    backgroundBox
+    {
+        type noSlip;
+    }
+}

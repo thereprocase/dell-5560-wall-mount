@@ -1,0 +1,85 @@
+{
+  "source_native_sha256": "49741ae916b0e06605d89b4b7a1499b0e4df74adb1221cf37320d93bb9474d57",
+  "parts": {
+    "05_left_fan_cap": {
+      "symmetric_difference_mm3": 0.0,
+      "pass": true
+    },
+    "06_right_fan_cap": {
+      "symmetric_difference_mm3": 0.0,
+      "pass": true
+    },
+    "09_left_fan_key": {
+      "symmetric_difference_mm3": 0.0,
+      "pass": true
+    },
+    "10_right_fan_key": {
+      "symmetric_difference_mm3": 0.0,
+      "pass": true
+    },
+    "13_left_fan_keeper": {
+      "symmetric_difference_mm3": 0.0,
+      "pass": true
+    },
+    "14_right_fan_keeper": {
+      "symmetric_difference_mm3": 0.0,
+      "pass": true
+    },
+    "11_left_dam_key": {
+      "symmetric_difference_mm3": 0.0,
+      "pass": true
+    },
+    "12_right_dam_key": {
+      "symmetric_difference_mm3": 0.0,
+      "pass": true
+    },
+    "15_left_dam_keeper": {
+      "symmetric_difference_mm3": 0.0,
+      "pass": true
+    },
+    "16_right_dam_keeper": {
+      "symmetric_difference_mm3": 0.0,
+      "pass": true
+    },
+    "17_left_cap_pin_1": {
+      "symmetric_difference_mm3": 0.0,
+      "pass": true
+    },
+    "18_right_cap_pin_1": {
+      "symmetric_difference_mm3": 0.0,
+      "pass": true
+    },
+    "19_left_cap_pin_2": {
+      "symmetric_difference_mm3": 0.0,
+      "pass": true
+    },
+    "20_right_cap_pin_2": {
+      "symmetric_difference_mm3": 0.0,
+      "pass": true
+    },
+    "03_left_fan_cage": {
+      "symmetric_difference_mm3": 0.0,
+      "pass": true
+    },
+    "04_right_fan_cage": {
+      "symmetric_difference_mm3": 0.0,
+      "pass": true
+    },
+    "01_left_arm": {
+      "symmetric_difference_mm3": 0.0,
+      "pass": true
+    },
+    "02_right_arm": {
+      "symmetric_difference_mm3": 0.0,
+      "pass": true
+    },
+    "07_left_dam": {
+      "symmetric_difference_mm3": 0.0,
+      "pass": true
+    },
+    "08_right_dam": {
+      "symmetric_difference_mm3": 0.0,
+      "pass": true
+    }
+  }
+}

@@ -1,0 +1,3 @@
+{
+  "script": "function(context is Context, queries) { var bodies = qAllModifiableSolidBodies(); var box = evBox3d(context, {\"topology\": bodies, \"tight\": true}); return {\"solidCount\": size(evaluateQuery(context, bodies)), \"volume_mm3\": evVolume(context, {\"entities\": bodies}) / millimeter^3, \"min_mm\": box.minCorner / millimeter, \"max_mm\": box.maxCorner / millimeter, \"partIds\": transientQueriesToStrings(evaluateQuery(context, bodies))}; }"
+}

@@ -1,0 +1,29 @@
+{
+  "phase": "initialize",
+  "started_utc": "2026-09-08T12:36:19.068527+00:00",
+  "state": "complete",
+  "steps": [
+    {
+      "tool": "mapFields",
+      "executable_sha256": "513886395b2d16c448a7e57692b5b293247b6be2ea7ad778947aac5c5142a083",
+      "arguments": [
+        "REPOSITORY/fusion/cfd/runs/revh_transient_04/mapping_source_1200",
+        "-sourceTime",
+        "1200",
+        "-mapMethod",
+        "interpolate"
+      ],
+      "parallel": false,
+      "log": "log.mapFields.attempt3",
+      "exit_code": 0,
+      "wall_seconds": 36.06300000000192
+    }
+  ],
+  "initialization": {
+    "source": "F:\\Code\\dell-5560-wall-mount\\fusion\\cfd\\cases\\OpenCFD_v2412\\installed_pressure10_v3",
+    "source_time": 1200,
+    "method": "interpolate",
+    "meaning": "Old Revision F fields mapped only to shorten startup; not a Revision H result. Uncovered cells retain initialized values."
+  },
+  "finished_utc": "2026-09-08T12:36:55.219870+00:00"
+}

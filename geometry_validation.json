@@ -1,0 +1,346 @@
+{
+  "revision": "F",
+  "parts": {
+    "01_left_cradle": {
+      "volume_cm3": 274.2070057675641,
+      "bbox": {
+        "xmin": -184.0,
+        "xmax": -140.0,
+        "ymin": -8.881784197001252e-16,
+        "ymax": 84.0,
+        "zmin": -65.0,
+        "zmax": 184.0,
+        "dimensions_mm": [
+          44.0,
+          84.0,
+          249.0
+        ]
+      }
+    },
+    "02_right_cradle": {
+      "volume_cm3": 274.2070057675641,
+      "bbox": {
+        "xmin": 140.0,
+        "xmax": 184.0,
+        "ymin": -8.881784197001252e-16,
+        "ymax": 84.0,
+        "zmin": -65.0,
+        "zmax": 184.0,
+        "dimensions_mm": [
+          44.0,
+          84.0,
+          249.0
+        ]
+      }
+    },
+    "03_left_fan_duct": {
+      "volume_cm3": 137.9155252527789,
+      "bbox": {
+        "xmin": -175.5,
+        "xmax": -0.9999998999999996,
+        "ymin": 3.9999999,
+        "ymax": 117.91168834543141,
+        "zmin": -134.9116882454314,
+        "zmax": 1e-07,
+        "dimensions_mm": [
+          174.5000001,
+          113.91168844543141,
+          134.9116883454314
+        ]
+      }
+    },
+    "04_right_fan_duct": {
+      "volume_cm3": 137.9155252527789,
+      "bbox": {
+        "xmin": 0.9999998999999996,
+        "xmax": 175.5,
+        "ymin": 3.9999999,
+        "ymax": 117.91168834543141,
+        "zmin": -134.9116882454314,
+        "zmax": 1e-07,
+        "dimensions_mm": [
+          174.5000001,
+          113.91168844543141,
+          134.9116883454314
+        ]
+      }
+    },
+    "05_left_fan_retainer": {
+      "volume_cm3": 24.834544404382925,
+      "bbox": {
+        "xmin": -140.0,
+        "xmax": -0.9999999999999991,
+        "ymin": 108.7193000900063,
+        "ymax": 149.02438661763952,
+        "zmin": -67.02943725152286,
+        "zmax": -26.72435072388965,
+        "dimensions_mm": [
+          139.0,
+          40.30508652763322,
+          40.305086527633215
+        ]
+      }
+    },
+    "06_right_fan_retainer": {
+      "volume_cm3": 24.834544404382925,
+      "bbox": {
+        "xmin": 0.9999999999999991,
+        "xmax": 140.0,
+        "ymin": 108.7193000900063,
+        "ymax": 149.02438661763952,
+        "zmin": -67.02943725152286,
+        "zmax": -26.72435072388965,
+        "dimensions_mm": [
+          139.0,
+          40.30508652763322,
+          40.305086527633215
+        ]
+      }
+    },
+    "07_left_outlet_rail": {
+      "volume_cm3": 63.83194036874406,
+      "bbox": {
+        "xmin": -184.0,
+        "xmax": -0.19999999999998863,
+        "ymin": -3.552713678800501e-15,
+        "ymax": 39.0,
+        "zmin": 154.0,
+        "zmax": 232.0,
+        "dimensions_mm": [
+          183.8,
+          39.0,
+          78.0
+        ]
+      }
+    },
+    "08_right_outlet_rail": {
+      "volume_cm3": 63.83194036874406,
+      "bbox": {
+        "xmin": 0.19999999999998863,
+        "xmax": 184.0,
+        "ymin": -3.552713678800501e-15,
+        "ymax": 39.0,
+        "zmin": 154.0,
+        "zmax": 232.0,
+        "dimensions_mm": [
+          183.8,
+          39.0,
+          78.0
+        ]
+      }
+    },
+    "09_left_fan_tray": {
+      "volume_cm3": 87.44407619047614,
+      "bbox": {
+        "xmin": -140.0,
+        "xmax": -1.0,
+        "ymin": 24.573593128807147,
+        "ymax": 143.36753236814712,
+        "zmin": -160.36753236814712,
+        "zmax": -40.51293295702733,
+        "dimensions_mm": [
+          139.0,
+          118.79393923933998,
+          119.85459941111979
+        ]
+      }
+    },
+    "10_right_fan_tray": {
+      "volume_cm3": 87.44407619047614,
+      "bbox": {
+        "xmin": 1.0,
+        "xmax": 140.0,
+        "ymin": 24.573593128807147,
+        "ymax": 143.36753236814712,
+        "zmin": -160.36753236814712,
+        "zmax": -40.51293295702733,
+        "dimensions_mm": [
+          139.0,
+          118.79393923933998,
+          119.85459941111979
+        ]
+      }
+    },
+    "11_left_push_pin": {
+      "volume_cm3": 0.20456030211054718,
+      "bbox": {
+        "xmin": -9.0,
+        "xmax": -1.0,
+        "ymin": 109.05880438936917,
+        "ymax": 122.86143571373725,
+        "zmin": -40.52698204825775,
+        "zmax": -26.724350723889657,
+        "dimensions_mm": [
+          8.0,
+          13.802631324368079,
+          13.802631324368093
+        ]
+      }
+    },
+    "12_right_push_pin": {
+      "volume_cm3": 0.20456030211054718,
+      "bbox": {
+        "xmin": 1.0,
+        "xmax": 9.0,
+        "ymin": 109.05880438936917,
+        "ymax": 122.86143571373725,
+        "zmin": -40.52698204825775,
+        "zmax": -26.724350723889657,
+        "dimensions_mm": [
+          8.0,
+          13.802631324368079,
+          13.802631324368093
+        ]
+      }
+    },
+    "13_left_push_pin": {
+      "volume_cm3": 0.2045603021105471,
+      "bbox": {
+        "xmin": -139.0,
+        "xmax": -131.0,
+        "ymin": 109.05880438936917,
+        "ymax": 122.86143571373725,
+        "zmin": -40.52698204825775,
+        "zmax": -26.724350723889657,
+        "dimensions_mm": [
+          8.0,
+          13.802631324368079,
+          13.802631324368093
+        ]
+      }
+    },
+    "14_right_push_pin": {
+      "volume_cm3": 0.2045603021105471,
+      "bbox": {
+        "xmin": 131.0,
+        "xmax": 139.0,
+        "ymin": 109.05880438936917,
+        "ymax": 122.86143571373725,
+        "zmin": -40.52698204825775,
+        "zmax": -26.724350723889657,
+        "dimensions_mm": [
+          8.0,
+          13.802631324368079,
+          13.802631324368093
+        ]
+      }
+    }
+  },
+  "overlaps_mm3": {
+    "03_left_fan_duct / 11_left_push_pin": 0.13038086899194679,
+    "03_left_fan_duct / 13_left_push_pin": 0.13038086899157417,
+    "04_right_fan_duct / 12_right_push_pin": 0.1303808689919434,
+    "04_right_fan_duct / 14_right_push_pin": 0.13038086899157428
+  },
+  "wall_fasteners": [
+    {
+      "kind": "wall_anchor",
+      "center": [
+        -162,
+        10,
+        -36.0
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "shaft_d_mm": 7,
+      "driver_d_mm": 16,
+      "head_plane_y": 10
+    },
+    {
+      "kind": "wall_anchor",
+      "center": [
+        -162,
+        10,
+        174.0
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "shaft_d_mm": 7,
+      "driver_d_mm": 16,
+      "head_plane_y": 10
+    },
+    {
+      "kind": "wall_anchor",
+      "center": [
+        162,
+        10,
+        -36.0
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "shaft_d_mm": 7,
+      "driver_d_mm": 16,
+      "head_plane_y": 10
+    },
+    {
+      "kind": "wall_anchor",
+      "center": [
+        162,
+        10,
+        174.0
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "shaft_d_mm": 7,
+      "driver_d_mm": 16,
+      "head_plane_y": 10
+    }
+  ],
+  "fan_axis": [
+    0,
+    -0.7071067811865476,
+    0.7071067811865476
+  ],
+  "laptop_interference_mm3": {
+    "01_left_cradle": 0.0,
+    "02_right_cradle": 0.0,
+    "03_left_fan_duct": 0.0,
+    "04_right_fan_duct": 0.0,
+    "05_left_fan_retainer": 0.0,
+    "06_right_fan_retainer": 0.0,
+    "07_left_outlet_rail": 0.0,
+    "08_right_outlet_rail": 0.0,
+    "09_left_fan_tray": 0.0,
+    "10_right_fan_tray": 0.0,
+    "11_left_push_pin": 0.0,
+    "12_right_push_pin": 0.0,
+    "13_left_push_pin": 0.0,
+    "14_right_push_pin": 0.0
+  },
+  "fan_interference_mm3": {
+    "01_left_cradle": 0.0,
+    "02_right_cradle": 0.0,
+    "03_left_fan_duct": 0.0,
+    "04_right_fan_duct": 0.0,
+    "05_left_fan_retainer": 0.0,
+    "06_right_fan_retainer": 0.0,
+    "07_left_outlet_rail": 0.0,
+    "08_right_outlet_rail": 0.0,
+    "09_left_fan_tray": 0.0,
+    "10_right_fan_tray": 0.0,
+    "11_left_push_pin": 0.0,
+    "12_right_push_pin": 0.0,
+    "13_left_push_pin": 0.0,
+    "14_right_push_pin": 0.0
+  },
+  "driver_interference_mm3": {
+    "[-162, 10, -36.0]": 0.0,
+    "[-162, 10, 174.0]": 0.0,
+    "[162, 10, -36.0]": 0.0,
+    "[162, 10, 174.0]": 0.0
+  },
+  "lift_out_interference_mm3": 0.0,
+  "step_reimport_solids": 14
+}

@@ -1,0 +1,243 @@
+{
+  "status": "generated_not_meshed_or_solved",
+  "distribution": "OpenCFD",
+  "version": "v2412",
+  "scope": "sealed_internal_flow_benchmark",
+  "per_fan_cfm_assumed": 50.0,
+  "per_fan_m3_s_assumed": 0.023597372159999998,
+  "total_m3_s_assumed": 0.047194744319999996,
+  "mesh_level": "coarse",
+  "mesh_settings": {
+    "base_cell_m": 0.008,
+    "surface_level": 3,
+    "outlet_level": 3,
+    "max_global_cells": 1500000,
+    "wall_layers": 3,
+    "purpose": "setup and topology check; nominal surface cells about 1 mm"
+  },
+  "inputs": {
+    "schema_version": 1,
+    "status": "setup_only_solver_unverified",
+    "openfoam_distribution": "OpenCFD",
+    "openfoam_version": "v2412",
+    "openfoam_package_target": "2412.260127-1",
+    "solver": "simpleFoam",
+    "scope": "sealed_internal_flow_benchmark",
+    "geometry_units": "m",
+    "geometry_directory": "geometry",
+    "patches": [
+      "fan_left",
+      "fan_right",
+      "outlet",
+      "laptop_shell",
+      "wall_plane",
+      "assumed_side_seals",
+      "printed_or_model_walls"
+    ],
+    "fan": {
+      "model": "Noctua NF-A12x25 PWM",
+      "variant": "standard original-generation 12 V PWM",
+      "identification": "user confirmed standard in session context",
+      "maximum_rpm": 2000,
+      "free_airflow_m3_h": 102.1,
+      "maximum_static_pressure_mm_H2O": 2.34,
+      "operating_rpm": null,
+      "fan_curve_points": null,
+      "source": "https://www.noctua.at/en/products/nf-a12x25-pwm/specifications"
+    },
+    "per_fan_flow_sweep_cfm": [
+      20,
+      35,
+      50
+    ],
+    "flow_provenance": "assumed delivered flow; not a measured or solved fan operating point",
+    "air": {
+      "kinematic_viscosity_m2_s": 1.5e-05,
+      "reference_density_kg_m3": 1.2,
+      "properties_provenance": "constant room-air engineering assumptions"
+    },
+    "turbulence": {
+      "model": "kOmegaSST",
+      "intensity": 0.05,
+      "length_scale_m": 0.008,
+      "provenance": "unmeasured inlet assumptions; sensitivity required"
+    },
+    "thermal": {
+      "enabled": false,
+      "laptop_heat_W": null,
+      "ambient_temperature_K": null
+    },
+    "nominal_outlet_gap_mm": 12,
+    "block_mesh_domain_m": {
+      "min": [
+        -0.2,
+        -0.02,
+        -0.16
+      ],
+      "max": [
+        0.2,
+        0.15,
+        0.25
+      ]
+    },
+    "location_in_mesh_m": [
+      0,
+      0.02,
+      0.1
+    ],
+    "outlet_refinement_box_m": {
+      "min": [
+        -0.185,
+        -0.002,
+        0.185
+      ],
+      "max": [
+        0.185,
+        0.045,
+        0.24
+      ]
+    },
+    "mesh_levels": {
+      "coarse": {
+        "base_cell_m": 0.008,
+        "surface_level": 3,
+        "outlet_level": 3,
+        "max_global_cells": 1500000,
+        "wall_layers": 3,
+        "purpose": "setup and topology check; nominal surface cells about 1 mm"
+      },
+      "medium": {
+        "base_cell_m": 0.006,
+        "surface_level": 3,
+        "outlet_level": 3,
+        "max_global_cells": 3000000,
+        "wall_layers": 3,
+        "purpose": "sensitivity candidate; nominal surface cells about 0.75 mm"
+      },
+      "fine": {
+        "base_cell_m": 0.004,
+        "surface_level": 3,
+        "outlet_level": 4,
+        "max_global_cells": 6000000,
+        "wall_layers": 4,
+        "purpose": "sensitivity candidate; nominal surface cells about 0.5 mm, outlet 0.25 mm"
+      }
+    },
+    "run_controls": {
+      "maximum_iterations": 2000,
+      "write_interval": 100
+    },
+    "excluded_physics": [
+      "ambient leakage",
+      "external recirculation",
+      "guard and fan intake loss upstream of truncated inlet",
+      "fan operating-point prediction",
+      "blade rotation and swirl",
+      "heat transfer",
+      "laptop internal fans",
+      "CPU temperature"
+    ]
+  },
+  "geometry": {
+    "patches": {
+      "fan_left": {
+        "file": "fan_left.stl",
+        "sha256": "fe6235469031cca8d8545cfe8c3c943b7057272e89c1fb130d6a3a3cc6903f15",
+        "triangle_count": 82,
+        "area_m2": 0.010558465589669018
+      },
+      "fan_right": {
+        "file": "fan_right.stl",
+        "sha256": "c1179d513bbfe9bbe9108ee5dc54099ac5ffb7fea8d9e8493929c4e2cab1535e",
+        "triangle_count": 82,
+        "area_m2": 0.010558465589669018
+      },
+      "outlet": {
+        "file": "outlet.stl",
+        "sha256": "fd88a818c7bd3e6d6a841ab5306bbbea56704fc331db05a139cfd159e46a2069",
+        "triangle_count": 12,
+        "area_m2": 0.004293599975584
+      },
+      "laptop_shell": {
+        "file": "laptop_shell.stl",
+        "sha256": "c126d6eea65a98965c986c7f918aae5d037442049fc92cc6f71f94057b4d4aca",
+        "triangle_count": 6,
+        "area_m2": 0.08328
+      },
+      "wall_plane": {
+        "file": "wall_plane.stl",
+        "sha256": "384cf9e2f1f3808f3334435f60a4f023be1c5cab4b9a6fe9c77de0c8cce53861",
+        "triangle_count": 142,
+        "area_m2": 0.04458225289962491
+      },
+      "assumed_side_seals": {
+        "file": "assumed_side_seals.stl",
+        "sha256": "21271a1e18a00f1819b1f31a98ae87c89134cd74acdb5c756327026cab0f385a",
+        "triangle_count": 236,
+        "area_m2": 0.005117272961092014
+      },
+      "printed_or_model_walls": {
+        "file": "printed_or_model_walls.stl",
+        "sha256": "5ddf377735071bb35b1a0d07bf3d922f7a99f1a67bef69ee018ef2b2717c0beb",
+        "triangle_count": 5544,
+        "area_m2": 0.18120603965406662
+      }
+    },
+    "bounds_m": [
+      [
+        -0.18,
+        0.0,
+        -0.129254837036
+      ],
+      [
+        0.18,
+        0.112254837036,
+        0.232
+      ]
+    ],
+    "signed_volume_m3": 0.004640441065943201,
+    "closed_edge_check": "passed",
+    "location_in_mesh_status": "inside bounding box; exact interior selected by geometry prep, mesher unverified"
+  },
+  "initialization_assumptions": {
+    "per_fan_bulk_speed_m_s": [
+      2.2349243798349794,
+      2.2349243798349794
+    ],
+    "per_fan_k_m2_s2": [
+      0.018730826188427876,
+      0.018730826188427876
+    ],
+    "per_fan_omega_s_1": [
+      31.234017736766084,
+      31.234017736766084
+    ]
+  },
+  "generator_sha256": "7f62fc1a35a4ef6946cd909aeeb37c0b2569df41950f8abe2d1a5ecdeffe71e0",
+  "inputs_sha256": "ba82134b2ce551ddcb70c16a3ef59bc89523c4e88532d363f4858bb3de1d5e1f",
+  "generated_file_sha256": {
+    "0/U": "126ba835d67bf78866438456d00ceb3987653bc8dfa653d1aac0b71b50fdbfd8",
+    "0/p": "2b56d98e82abd60779428667de8a04b0443b0cd5fc600630028dcb64f087dd0f",
+    "0/k": "9c8618e547d71226cdf31c6b38c92574a176124e0af52cf067851953687c9b2a",
+    "0/omega": "17cb27eeaa8d66cd78535f1e28cba4d124563fee8b6b361b1e8bbee41542a556",
+    "0/nut": "c5297b84f1759f25b251aee199e45b6f1380ee4b20a14ba32ec116fde158f8fd",
+    "constant/triSurface/fluid_boundary.stl": "5ee1444363aed3335b09c2a385b032419e27d0f7b5120ecf9cc03f471d823a41",
+    "constant/transportProperties": "0ec91674a975f43833944d8bff2628c9063b514b4f1c548637f08a3ac5bb8d3d",
+    "constant/turbulenceProperties": "e8c0ef2c1b0f1f1d32ac17e10f3bc65969881bb5023f4a817a072f0017f057c9",
+    "system/blockMeshDict": "1ee7cf03a33277bd2582fc49267620c0890972409526b3d7fc505c83691aedc6",
+    "system/snappyHexMeshDict": "cedbec28a53032099e3bc49c0f7ee7031263829964863639418a249f10ef9e55",
+    "system/controlDict": "cfac8a727c70baf12a8e88048c6253494c2230c2d3310c5d8460acaf5cc31970",
+    "system/fvSchemes": "0239b05f1dbfb3452d291c10333fe417ece1011e77ff2f056c641aa008e2d0f7",
+    "system/fvSolution": "d29c36bf77ff2976232063fdd01debb4e092bb6ea35f982b60a144d35a580255",
+    "Allrun": "77ae0d5f0e2d34b53afdd64104c0a227fb7917ec9e1f7717c0b55d3744aa8868",
+    "verify_mesh.py": "806c1daeb179bffbdd35b83b19181ffb35792cee46060ae3075cd04d00dd9ed0",
+    "case.foam": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "setup_validation_status": "OpenFOAM dictionaries parsed; source surface reports two self-intersections; meshing withheld",
+  "setup_patch_history": [
+    {
+      "change": "Reject surfaceCheck self-intersection diagnostics even when exit code is zero",
+      "previous_generator_sha256": "d4f18a540cfcff0c46e3635f4f5151f6d47864f0524630713f4506beb10eb39a"
+    }
+  ]
+}

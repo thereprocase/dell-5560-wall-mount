@@ -1,0 +1,1068 @@
+{
+  "revision": "D5",
+  "units": "mm",
+  "parts": [
+    {
+      "name": "01_foot_1.0_-20",
+      "color": [
+        31,
+        34,
+        37
+      ],
+      "reference": false,
+      "positionOffset": 0,
+      "vertexCount": 288,
+      "indexOffset": 3456,
+      "indexCount": 804,
+      "center": [
+        346.68,
+        -12.0,
+        1.5
+      ]
+    },
+    {
+      "name": "01_foot_1.0_84",
+      "color": [
+        31,
+        34,
+        37
+      ],
+      "reference": false,
+      "positionOffset": 6672,
+      "vertexCount": 288,
+      "indexOffset": 10128,
+      "indexCount": 804,
+      "center": [
+        346.68,
+        92.0,
+        1.5
+      ]
+    },
+    {
+      "name": "01_foot_156.8_-20",
+      "color": [
+        31,
+        34,
+        37
+      ],
+      "reference": false,
+      "positionOffset": 13344,
+      "vertexCount": 288,
+      "indexOffset": 16800,
+      "indexCount": 804,
+      "center": [
+        190.84,
+        -11.999999999999996,
+        1.5
+      ]
+    },
+    {
+      "name": "01_foot_156.8_84",
+      "color": [
+        31,
+        34,
+        37
+      ],
+      "reference": false,
+      "positionOffset": 20016,
+      "vertexCount": 288,
+      "indexOffset": 23472,
+      "indexCount": 804,
+      "center": [
+        190.84,
+        92.0,
+        1.5
+      ]
+    },
+    {
+      "name": "01_120x15_fan_frame",
+      "color": [
+        28,
+        31,
+        33
+      ],
+      "reference": true,
+      "positionOffset": 26688,
+      "vertexCount": 1558,
+      "indexOffset": 45384,
+      "indexCount": 4644,
+      "center": [
+        269.68,
+        95.0,
+        72.00000000000001
+      ]
+    },
+    {
+      "name": "01_fan_hub_struts",
+      "color": [
+        61,
+        65,
+        68
+      ],
+      "reference": true,
+      "positionOffset": 63960,
+      "vertexCount": 350,
+      "indexOffset": 68160,
+      "indexCount": 936,
+      "center": [
+        269.68,
+        100.3125920445899,
+        73.42350474806388
+      ]
+    },
+    {
+      "name": "01_blade_0",
+      "color": [
+        72,
+        76,
+        78
+      ],
+      "reference": true,
+      "positionOffset": 71904,
+      "vertexCount": 188,
+      "indexOffset": 74160,
+      "indexCount": 528,
+      "center": [
+        235.7241949225795,
+        94.77287966738704,
+        68.36861819187742
+      ]
+    },
+    {
+      "name": "01_blade_1",
+      "color": [
+        72,
+        76,
+        78
+      ],
+      "reference": true,
+      "positionOffset": 76272,
+      "vertexCount": 188,
+      "indexOffset": 78528,
+      "indexCount": 528,
+      "center": [
+        245.53756356426817,
+        87.23837649385985,
+        96.52913612635868
+      ]
+    },
+    {
+      "name": "01_blade_2",
+      "color": [
+        72,
+        76,
+        78
+      ],
+      "reference": true,
+      "positionOffset": 80640,
+      "vertexCount": 188,
+      "indexOffset": 82896,
+      "indexCount": 528,
+      "center": [
+        275.01155909783347,
+        85.27026287574023,
+        103.90998377218564
+      ]
+    },
+    {
+      "name": "01_blade_3",
+      "color": [
+        72,
+        76,
+        78
+      ],
+      "reference": true,
+      "positionOffset": 85008,
+      "vertexCount": 188,
+      "indexOffset": 87264,
+      "indexCount": 528,
+      "center": [
+        299.4594906805592,
+        89.0571366929366,
+        89.7715566314041
+      ]
+    },
+    {
+      "name": "01_blade_4",
+      "color": [
+        72,
+        76,
+        78
+      ],
+      "reference": true,
+      "positionOffset": 89376,
+      "vertexCount": 188,
+      "indexOffset": 91632,
+      "indexCount": 528,
+      "center": [
+        301.1344230573003,
+        97.35629127979198,
+        58.79869005339157
+      ]
+    },
+    {
+      "name": "01_blade_5",
+      "color": [
+        72,
+        76,
+        78
+      ],
+      "reference": true,
+      "positionOffset": 93744,
+      "vertexCount": 188,
+      "indexOffset": 96000,
+      "indexCount": 528,
+      "center": [
+        281.36175674484514,
+        102.29703880192648,
+        40.318199992326704
+      ]
+    },
+    {
+      "name": "01_blade_6",
+      "color": [
+        72,
+        76,
+        78
+      ],
+      "reference": true,
+      "positionOffset": 98112,
+      "vertexCount": 188,
+      "indexOffset": 100368,
+      "indexCount": 528,
+      "center": [
+        249.47610475620144,
+        101.20546210076644,
+        44.36189372663043
+      ]
+    },
+    {
+      "name": "01_outlet_guard",
+      "color": [
+        129,
+        139,
+        144
+      ],
+      "reference": false,
+      "positionOffset": 102480,
+      "vertexCount": 16100,
+      "indexOffset": 295680,
+      "indexCount": 86484,
+      "center": [
+        269.67803905626886,
+        109.48888739433605,
+        75.8822856765378
+      ]
+    },
+    {
+      "name": "01_rounded_fan_bezel",
+      "color": [
+        47,
+        55,
+        59
+      ],
+      "reference": false,
+      "positionOffset": 641616,
+      "vertexCount": 2334,
+      "indexOffset": 669624,
+      "indexCount": 7692,
+      "center": [
+        269.68000000000006,
+        104.90073971946296,
+        74.65289521230085
+      ]
+    },
+    {
+      "name": "02_foot_185.1_-20",
+      "color": [
+        31,
+        34,
+        37
+      ],
+      "reference": false,
+      "positionOffset": 700392,
+      "vertexCount": 288,
+      "indexOffset": 703848,
+      "indexCount": 804,
+      "center": [
+        162.54,
+        -11.999999999999996,
+        1.5
+      ]
+    },
+    {
+      "name": "02_foot_185.1_84",
+      "color": [
+        31,
+        34,
+        37
+      ],
+      "reference": false,
+      "positionOffset": 707064,
+      "vertexCount": 288,
+      "indexOffset": 710520,
+      "indexCount": 804,
+      "center": [
+        162.54,
+        92.0,
+        1.5
+      ]
+    },
+    {
+      "name": "02_foot_358.7_-20",
+      "color": [
+        31,
+        34,
+        37
+      ],
+      "reference": false,
+      "positionOffset": 713736,
+      "vertexCount": 288,
+      "indexOffset": 717192,
+      "indexCount": 804,
+      "center": [
+        -11.000000000000002,
+        -11.999999999999998,
+        1.5
+      ]
+    },
+    {
+      "name": "02_foot_358.7_84",
+      "color": [
+        31,
+        34,
+        37
+      ],
+      "reference": false,
+      "positionOffset": 720408,
+      "vertexCount": 288,
+      "indexOffset": 723864,
+      "indexCount": 804,
+      "center": [
+        -11.0,
+        92.0,
+        1.5
+      ]
+    },
+    {
+      "name": "02_120x15_fan_frame",
+      "color": [
+        28,
+        31,
+        33
+      ],
+      "reference": true,
+      "positionOffset": 727080,
+      "vertexCount": 1558,
+      "indexOffset": 745776,
+      "indexCount": 4644,
+      "center": [
+        84.0,
+        95.0,
+        72.00000000000001
+      ]
+    },
+    {
+      "name": "02_fan_hub_struts",
+      "color": [
+        61,
+        65,
+        68
+      ],
+      "reference": true,
+      "positionOffset": 764352,
+      "vertexCount": 350,
+      "indexOffset": 768552,
+      "indexCount": 936,
+      "center": [
+        84.0,
+        100.31259204458993,
+        73.4235047480639
+      ]
+    },
+    {
+      "name": "02_blade_0",
+      "color": [
+        72,
+        76,
+        78
+      ],
+      "reference": true,
+      "positionOffset": 772296,
+      "vertexCount": 188,
+      "indexOffset": 774552,
+      "indexCount": 528,
+      "center": [
+        50.04419492257948,
+        94.77287966738703,
+        68.36861819187742
+      ]
+    },
+    {
+      "name": "02_blade_1",
+      "color": [
+        72,
+        76,
+        78
+      ],
+      "reference": true,
+      "positionOffset": 776664,
+      "vertexCount": 188,
+      "indexOffset": 778920,
+      "indexCount": 528,
+      "center": [
+        59.857563564268204,
+        87.23837649385985,
+        96.52913612635868
+      ]
+    },
+    {
+      "name": "02_blade_2",
+      "color": [
+        72,
+        76,
+        78
+      ],
+      "reference": true,
+      "positionOffset": 781032,
+      "vertexCount": 188,
+      "indexOffset": 783288,
+      "indexCount": 528,
+      "center": [
+        89.33155909783346,
+        85.27026287574024,
+        103.90998377218563
+      ]
+    },
+    {
+      "name": "02_blade_3",
+      "color": [
+        72,
+        76,
+        78
+      ],
+      "reference": true,
+      "positionOffset": 785400,
+      "vertexCount": 188,
+      "indexOffset": 787656,
+      "indexCount": 528,
+      "center": [
+        113.77949068055922,
+        89.0571366929366,
+        89.7715566314041
+      ]
+    },
+    {
+      "name": "02_blade_4",
+      "color": [
+        72,
+        76,
+        78
+      ],
+      "reference": true,
+      "positionOffset": 789768,
+      "vertexCount": 188,
+      "indexOffset": 792024,
+      "indexCount": 528,
+      "center": [
+        115.45442305730029,
+        97.35629127979196,
+        58.79869005339157
+      ]
+    },
+    {
+      "name": "02_blade_5",
+      "color": [
+        72,
+        76,
+        78
+      ],
+      "reference": true,
+      "positionOffset": 794136,
+      "vertexCount": 188,
+      "indexOffset": 796392,
+      "indexCount": 528,
+      "center": [
+        95.68175674484515,
+        102.29703880192648,
+        40.31819999232669
+      ]
+    },
+    {
+      "name": "02_blade_6",
+      "color": [
+        72,
+        76,
+        78
+      ],
+      "reference": true,
+      "positionOffset": 798504,
+      "vertexCount": 188,
+      "indexOffset": 800760,
+      "indexCount": 528,
+      "center": [
+        63.79610475620144,
+        101.20546210076645,
+        44.36189372663043
+      ]
+    },
+    {
+      "name": "02_outlet_guard",
+      "color": [
+        129,
+        139,
+        144
+      ],
+      "reference": false,
+      "positionOffset": 802872,
+      "vertexCount": 16100,
+      "indexOffset": 996072,
+      "indexCount": 86484,
+      "center": [
+        83.99803905626882,
+        109.48888739433605,
+        75.8822856765378
+      ]
+    },
+    {
+      "name": "02_rounded_fan_bezel",
+      "color": [
+        47,
+        55,
+        59
+      ],
+      "reference": false,
+      "positionOffset": 1342008,
+      "vertexCount": 2334,
+      "indexOffset": 1370016,
+      "indexCount": 7692,
+      "center": [
+        84.0,
+        104.90073971946295,
+        74.65289521230085
+      ]
+    },
+    {
+      "name": "corner_pad_far",
+      "color": [
+        133,
+        140,
+        135
+      ],
+      "reference": false,
+      "positionOffset": 1400784,
+      "vertexCount": 336,
+      "indexOffset": 1404816,
+      "indexCount": 660,
+      "center": [
+        338.18,
+        1.976885168500402,
+        55.153609377091215
+      ]
+    },
+    {
+      "name": "corner_pad_near",
+      "color": [
+        133,
+        140,
+        135
+      ],
+      "reference": false,
+      "positionOffset": 1407456,
+      "vertexCount": 336,
+      "indexOffset": 1411488,
+      "indexCount": 660,
+      "center": [
+        -6.0,
+        1.9768851685004019,
+        55.153609377091215
+      ]
+    },
+    {
+      "name": "hinge_seal_42.0_-12.3",
+      "color": [
+        56,
+        80,
+        75
+      ],
+      "reference": false,
+      "positionOffset": 1414128,
+      "vertexCount": 24,
+      "indexOffset": 1414416,
+      "indexCount": 36,
+      "center": [
+        244.36,
+        -11.65,
+        51.8
+      ]
+    },
+    {
+      "name": "hinge_seal_177.3_-12.3",
+      "color": [
+        56,
+        80,
+        75
+      ],
+      "reference": false,
+      "positionOffset": 1414560,
+      "vertexCount": 24,
+      "indexOffset": 1414848,
+      "indexCount": 36,
+      "center": [
+        100.16999999999999,
+        -11.65,
+        51.8
+      ]
+    },
+    {
+      "name": "hinge_seal_42.0_11.0",
+      "color": [
+        56,
+        80,
+        75
+      ],
+      "reference": false,
+      "positionOffset": 1414992,
+      "vertexCount": 24,
+      "indexOffset": 1415280,
+      "indexCount": 36,
+      "center": [
+        244.36,
+        11.65,
+        51.8
+      ]
+    },
+    {
+      "name": "hinge_seal_177.3_11.0",
+      "color": [
+        56,
+        80,
+        75
+      ],
+      "reference": false,
+      "positionOffset": 1415424,
+      "vertexCount": 24,
+      "indexOffset": 1415712,
+      "indexCount": 36,
+      "center": [
+        100.16999999999999,
+        11.65,
+        51.8
+      ]
+    },
+    {
+      "name": "Z_height_carrier",
+      "color": [
+        146,
+        153,
+        157
+      ],
+      "reference": false,
+      "positionOffset": 1415856,
+      "vertexCount": 1100,
+      "indexOffset": 1429056,
+      "indexCount": 3240,
+      "center": [
+        388.88,
+        2.2332187939930357,
+        117.95101902095192
+      ]
+    },
+    {
+      "name": "Y_lateral_carrier",
+      "color": [
+        146,
+        153,
+        157
+      ],
+      "reference": false,
+      "positionOffset": 1442016,
+      "vertexCount": 1112,
+      "indexOffset": 1455360,
+      "indexCount": 3264,
+      "center": [
+        370.38105661696386,
+        2.215769045641787,
+        117.45132360744239
+      ]
+    },
+    {
+      "name": "X_depth_overmold_clamp",
+      "color": [
+        169,
+        144,
+        105
+      ],
+      "reference": false,
+      "positionOffset": 1468416,
+      "vertexCount": 2128,
+      "indexOffset": 1493952,
+      "indexCount": 6222,
+      "center": [
+        368.1300271773107,
+        3.3298518473978254,
+        117.26156875132745
+      ]
+    },
+    {
+      "name": "front_capture_clip_0p8mm_metal",
+      "color": [
+        175,
+        181,
+        185
+      ],
+      "reference": true,
+      "positionOffset": 1518840,
+      "vertexCount": 48,
+      "indexOffset": 1519416,
+      "indexCount": 96,
+      "center": [
+        354.48,
+        4.541653239920816,
+        119.87162580237651
+      ]
+    },
+    {
+      "name": "removable_plug_cap",
+      "color": [
+        169,
+        144,
+        105
+      ],
+      "reference": false,
+      "positionOffset": 1519800,
+      "vertexCount": 1224,
+      "indexOffset": 1534488,
+      "indexCount": 3636,
+      "center": [
+        368.1300271773107,
+        4.897628106286323,
+        130.06541223797132
+      ]
+    },
+    {
+      "name": "Dell_plug_overmold_REFERENCE",
+      "color": [
+        36,
+        38,
+        40
+      ],
+      "reference": true,
+      "positionOffset": 1549032,
+      "vertexCount": 550,
+      "indexOffset": 1555632,
+      "indexCount": 1578,
+      "center": [
+        367.6810539758205,
+        4.541653239920814,
+        119.87162580237654
+      ]
+    },
+    {
+      "name": "USB_C_shell_REFERENCE",
+      "color": [
+        191,
+        197,
+        200
+      ],
+      "reference": true,
+      "positionOffset": 1561944,
+      "vertexCount": 288,
+      "indexOffset": 1565400,
+      "indexCount": 804,
+      "center": [
+        351.855,
+        4.541653239920817,
+        119.87162580237651
+      ]
+    },
+    {
+      "name": "Z_M3x0p5_jack",
+      "color": [
+        175,
+        181,
+        185
+      ],
+      "reference": true,
+      "positionOffset": 1568616,
+      "vertexCount": 508,
+      "indexOffset": 1574712,
+      "indexCount": 1500,
+      "center": [
+        387.67825968970646,
+        1.0693205789646294,
+        92.59297593275815
+      ]
+    },
+    {
+      "name": "Z_lock_-24",
+      "color": [
+        175,
+        181,
+        185
+      ],
+      "reference": true,
+      "positionOffset": 1580712,
+      "vertexCount": 508,
+      "indexOffset": 1586808,
+      "indexCount": 1500,
+      "center": [
+        394.0308080012077,
+        -21.43910983956442,
+        127.78242820027617
+      ]
+    },
+    {
+      "name": "Z_lock_24",
+      "color": [
+        175,
+        181,
+        185
+      ],
+      "reference": true,
+      "positionOffset": 1592808,
+      "vertexCount": 508,
+      "indexOffset": 1598904,
+      "indexCount": 1500,
+      "center": [
+        394.0308080012077,
+        26.531649857352175,
+        126.10725235855614
+      ]
+    },
+    {
+      "name": "Y_lock_-21.0",
+      "color": [
+        175,
+        181,
+        185
+      ],
+      "reference": true,
+      "positionOffset": 1604904,
+      "vertexCount": 508,
+      "indexOffset": 1611000,
+      "indexCount": 1500,
+      "center": [
+        387.0308080012077,
+        -18.92953031234215,
+        113.68625813190133
+      ]
+    },
+    {
+      "name": "Y_lock_21.0",
+      "color": [
+        175,
+        181,
+        185
+      ],
+      "reference": true,
+      "positionOffset": 1617000,
+      "vertexCount": 508,
+      "indexOffset": 1623096,
+      "indexCount": 1500,
+      "center": [
+        387.0308080012077,
+        23.044884422459877,
+        112.22047927039628
+      ]
+    },
+    {
+      "name": "X_lock_-8.0",
+      "color": [
+        175,
+        181,
+        185
+      ],
+      "reference": true,
+      "positionOffset": 1629096,
+      "vertexCount": 508,
+      "indexOffset": 1635192,
+      "indexCount": 1500,
+      "center": [
+        367.67825968970646,
+        -6.507012076758125,
+        102.86608017656911
+      ]
+    },
+    {
+      "name": "X_lock_8.0",
+      "color": [
+        175,
+        181,
+        185
+      ],
+      "reference": true,
+      "positionOffset": 1641192,
+      "vertexCount": 508,
+      "indexOffset": 1647288,
+      "indexCount": 1500,
+      "center": [
+        367.67825968970646,
+        9.483241155547407,
+        102.3076882293291
+      ]
+    },
+    {
+      "name": "independent_M4_stop",
+      "color": [
+        175,
+        181,
+        185
+      ],
+      "reference": true,
+      "positionOffset": 1653288,
+      "vertexCount": 508,
+      "indexOffset": 1659384,
+      "indexCount": 1500,
+      "center": [
+        367.5304972315124,
+        0.3828502083058414,
+        64.99260291250239
+      ]
+    },
+    {
+      "name": "stop_soft_tip",
+      "color": [
+        56,
+        80,
+        75
+      ],
+      "reference": false,
+      "positionOffset": 1665384,
+      "vertexCount": 254,
+      "indexOffset": 1668432,
+      "indexCount": 744,
+      "center": [
+        354.18,
+        0.382775618632865,
+        64.99255318502328
+      ]
+    },
+    {
+      "name": "removable_adjustment_cover",
+      "color": [
+        47,
+        55,
+        59
+      ],
+      "reference": false,
+      "positionOffset": 1671408,
+      "vertexCount": 1438,
+      "indexOffset": 1688664,
+      "indexCount": 4146,
+      "center": [
+        380.03,
+        5.179042029996584,
+        116.34723429031578
+      ]
+    },
+    {
+      "name": "Precision_5680_REFERENCE",
+      "color": [
+        188,
+        192,
+        195
+      ],
+      "reference": true,
+      "positionOffset": 1705248,
+      "vertexCount": 1124,
+      "indexOffset": 1718736,
+      "indexCount": 2880,
+      "center": [
+        176.83934623941957,
+        4.193044260675603,
+        174.09114496816923
+      ]
+    },
+    {
+      "name": "RUBBER_FOOT_rear_strip",
+      "color": [
+        45,
+        48,
+        50
+      ],
+      "reference": true,
+      "positionOffset": 1730256,
+      "vertexCount": 24,
+      "indexOffset": 1730544,
+      "indexCount": 36,
+      "center": [
+        176.83994540121407,
+        -9.857910969960713,
+        72.96092129658936
+      ]
+    },
+    {
+      "name": "RUBBER_FOOT_front_left",
+      "color": [
+        45,
+        48,
+        50
+      ],
+      "reference": true,
+      "positionOffset": 1730688,
+      "vertexCount": 24,
+      "indexOffset": 1730976,
+      "indexCount": 36,
+      "center": [
+        301.69059851314876,
+        -3.382800973547659,
+        260.52559504367224
+      ]
+    },
+    {
+      "name": "RUBBER_FOOT_front_right",
+      "color": [
+        45,
+        48,
+        50
+      ],
+      "reference": true,
+      "positionOffset": 1731120,
+      "vertexCount": 24,
+      "indexOffset": 1731408,
+      "indexCount": 36,
+      "center": [
+        51.99061849262563,
+        -3.33571617827485,
+        260.52486219506125
+      ]
+    },
+    {
+      "name": "01_manifold_with_cradle",
+      "color": [
+        54,
+        62,
+        68
+      ],
+      "reference": false,
+      "positionOffset": 1731552,
+      "vertexCount": 10006,
+      "indexOffset": 1851624,
+      "indexCount": 37074,
+      "center": [
+        288.1577219430924,
+        38.658512480426,
+        69.80596685455927
+      ]
+    },
+    {
+      "name": "02_manifold_with_cradle",
+      "color": [
+        54,
+        62,
+        68
+      ],
+      "reference": false,
+      "positionOffset": 1999920,
+      "vertexCount": 8718,
+      "indexOffset": 2104536,
+      "indexCount": 33372,
+      "center": [
+        74.84500000000001,
+        40.80909242997571,
+        69.80596685455926
+      ]
+    }
+  ]
+}

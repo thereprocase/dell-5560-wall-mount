@@ -1,0 +1,535 @@
+{
+  "revision": "F",
+  "nozzle_mm": 0.4,
+  "layer_height_mm": 0.2,
+  "parts": {
+    "01_left_cradle": {
+      "family": "cradle",
+      "side": "left",
+      "print_dimensions_mm": [
+        180.56456326228093,
+        196.33304448274092,
+        44.00000000000003
+      ],
+      "print_bounds_mm": [
+        [
+          37.71771836885952,
+          29.833477758629527,
+          -4.4355428494798773e-16
+        ],
+        [
+          218.28228163114045,
+          226.16652224137044,
+          44.00000000000003
+        ]
+      ],
+      "8mm_brim_inside_256_plate": true,
+      "stock_18x28mm_cutter_exclusion_clear": true,
+      "watertight": true
+    },
+    "02_right_cradle": {
+      "family": "cradle",
+      "side": "right",
+      "print_dimensions_mm": [
+        196.33304448274095,
+        180.5645632622809,
+        44.00000000000003
+      ],
+      "print_bounds_mm": [
+        [
+          29.833477758629527,
+          37.717718368859536,
+          -4.4355428494798773e-16
+        ],
+        [
+          226.16652224137047,
+          218.28228163114045,
+          44.00000000000003
+        ]
+      ],
+      "8mm_brim_inside_256_plate": true,
+      "stock_18x28mm_cutter_exclusion_clear": true,
+      "watertight": true
+    },
+    "03_left_fan_duct": {
+      "family": "fan_duct",
+      "side": "left",
+      "print_dimensions_mm": [
+        174.5,
+        131.99999999999537,
+        109.94469683441642
+      ],
+      "print_bounds_mm": [
+        [
+          40.74999995000002,
+          61.99999995000232,
+          1.0000001449128604e-07
+        ],
+        [
+          215.24999995000002,
+          193.9999999499977,
+          109.94469693441643
+        ]
+      ],
+      "8mm_brim_inside_256_plate": true,
+      "stock_18x28mm_cutter_exclusion_clear": true,
+      "watertight": true
+    },
+    "04_right_fan_duct": {
+      "family": "fan_duct",
+      "side": "right",
+      "print_dimensions_mm": [
+        174.5,
+        131.99999999999537,
+        109.94469683441642
+      ],
+      "print_bounds_mm": [
+        [
+          40.75000005,
+          61.99999995000232,
+          1.0000001449128604e-07
+        ],
+        [
+          215.25000004999998,
+          193.9999999499977,
+          109.94469693441643
+        ]
+      ],
+      "8mm_brim_inside_256_plate": true,
+      "stock_18x28mm_cutter_exclusion_clear": true,
+      "watertight": true
+    },
+    "05_left_fan_retainer": {
+      "family": "fan_retainer",
+      "side": "left",
+      "print_dimensions_mm": [
+        139.0,
+        49.00000000000591,
+        13.000000000006914
+      ],
+      "print_bounds_mm": [
+        [
+          58.5,
+          103.49999999999619,
+          -8.871085698959755e-16
+        ],
+        [
+          197.5,
+          152.5000000000021,
+          13.000000000006914
+        ]
+      ],
+      "8mm_brim_inside_256_plate": true,
+      "stock_18x28mm_cutter_exclusion_clear": true,
+      "watertight": true
+    },
+    "06_right_fan_retainer": {
+      "family": "fan_retainer",
+      "side": "right",
+      "print_dimensions_mm": [
+        139.0,
+        49.00000000000591,
+        13.000000000006914
+      ],
+      "print_bounds_mm": [
+        [
+          58.5,
+          103.49999999999619,
+          -8.871085698959755e-16
+        ],
+        [
+          197.5,
+          152.5000000000021,
+          13.000000000006914
+        ]
+      ],
+      "8mm_brim_inside_256_plate": true,
+      "stock_18x28mm_cutter_exclusion_clear": true,
+      "watertight": true
+    },
+    "07_left_outlet_rail": {
+      "family": "outlet_rail",
+      "side": "left",
+      "print_dimensions_mm": [
+        183.8,
+        39.0,
+        78.0
+      ],
+      "print_bounds_mm": [
+        [
+          36.099999999999994,
+          108.49999999999957,
+          2.944489096989855e-11
+        ],
+        [
+          219.9,
+          147.49999999999957,
+          78.00000000002944
+        ]
+      ],
+      "8mm_brim_inside_256_plate": true,
+      "stock_18x28mm_cutter_exclusion_clear": true,
+      "watertight": true
+    },
+    "08_right_outlet_rail": {
+      "family": "outlet_rail",
+      "side": "right",
+      "print_dimensions_mm": [
+        183.8,
+        39.0,
+        78.0
+      ],
+      "print_bounds_mm": [
+        [
+          36.10000000000001,
+          108.49999999999957,
+          9.549694368615746e-12
+        ],
+        [
+          219.9,
+          147.49999999999957,
+          78.00000000000955
+        ]
+      ],
+      "8mm_brim_inside_256_plate": true,
+      "stock_18x28mm_cutter_exclusion_clear": true,
+      "watertight": true
+    },
+    "09_left_fan_tray": {
+      "family": "fan_tray",
+      "side": "left",
+      "print_dimensions_mm": [
+        139.0,
+        131.99999999998687,
+        38.00000000001794
+      ],
+      "print_bounds_mm": [
+        [
+          58.5,
+          62.000000000010104,
+          0.0
+        ],
+        [
+          197.5,
+          193.999999999997,
+          38.00000000001794
+        ]
+      ],
+      "8mm_brim_inside_256_plate": true,
+      "stock_18x28mm_cutter_exclusion_clear": true,
+      "watertight": true
+    },
+    "10_right_fan_tray": {
+      "family": "fan_tray",
+      "side": "right",
+      "print_dimensions_mm": [
+        139.0,
+        131.99999999998687,
+        38.00000000001794
+      ],
+      "print_bounds_mm": [
+        [
+          58.5,
+          62.000000000010104,
+          0.0
+        ],
+        [
+          197.5,
+          193.999999999997,
+          38.00000000001794
+        ]
+      ],
+      "8mm_brim_inside_256_plate": true,
+      "stock_18x28mm_cutter_exclusion_clear": true,
+      "watertight": true
+    },
+    "11_left_push_pin": {
+      "family": "push_pin",
+      "side": "left",
+      "print_dimensions_mm": [
+        8.0,
+        7.99751345600653,
+        14.0
+      ],
+      "print_bounds_mm": [
+        [
+          124.0,
+          124.00124327199673,
+          0.0
+        ],
+        [
+          132.0,
+          131.99875672800326,
+          14.0
+        ]
+      ],
+      "8mm_brim_inside_256_plate": true,
+      "stock_18x28mm_cutter_exclusion_clear": true,
+      "watertight": true
+    },
+    "12_right_push_pin": {
+      "family": "push_pin",
+      "side": "right",
+      "print_dimensions_mm": [
+        8.0,
+        7.99751345600653,
+        14.0
+      ],
+      "print_bounds_mm": [
+        [
+          124.0,
+          124.00124327199673,
+          0.0
+        ],
+        [
+          132.0,
+          131.99875672800326,
+          14.0
+        ]
+      ],
+      "8mm_brim_inside_256_plate": true,
+      "stock_18x28mm_cutter_exclusion_clear": true,
+      "watertight": true
+    },
+    "13_left_push_pin": {
+      "family": "push_pin",
+      "side": "left",
+      "print_dimensions_mm": [
+        8.0,
+        7.99751345600653,
+        14.0
+      ],
+      "print_bounds_mm": [
+        [
+          124.0,
+          124.00124327199673,
+          0.0
+        ],
+        [
+          132.0,
+          131.99875672800326,
+          14.0
+        ]
+      ],
+      "8mm_brim_inside_256_plate": true,
+      "stock_18x28mm_cutter_exclusion_clear": true,
+      "watertight": true
+    },
+    "14_right_push_pin": {
+      "family": "push_pin",
+      "side": "right",
+      "print_dimensions_mm": [
+        8.0,
+        7.99751345600653,
+        14.0
+      ],
+      "print_bounds_mm": [
+        [
+          124.0,
+          124.00124327199673,
+          0.0
+        ],
+        [
+          132.0,
+          131.99875672800326,
+          14.0
+        ]
+      ],
+      "8mm_brim_inside_256_plate": true,
+      "stock_18x28mm_cutter_exclusion_clear": true,
+      "watertight": true
+    },
+    "left_outlet_rail_gap_16mm": {
+      "family": "outlet_rail",
+      "side": "left",
+      "print_dimensions_mm": [
+        183.8,
+        39.0,
+        78.0
+      ],
+      "print_bounds_mm": [
+        [
+          36.099999999999994,
+          108.5,
+          0.0
+        ],
+        [
+          219.9,
+          147.5,
+          78.0
+        ]
+      ],
+      "8mm_brim_inside_256_plate": true,
+      "stock_18x28mm_cutter_exclusion_clear": true,
+      "watertight": true
+    },
+    "left_outlet_rail_gap_8mm": {
+      "family": "outlet_rail",
+      "side": "left",
+      "print_dimensions_mm": [
+        183.8,
+        39.0,
+        78.0
+      ],
+      "print_bounds_mm": [
+        [
+          36.099999999999994,
+          108.5,
+          2.000888343900442e-11
+        ],
+        [
+          219.9,
+          147.5,
+          78.00000000002001
+        ]
+      ],
+      "8mm_brim_inside_256_plate": true,
+      "stock_18x28mm_cutter_exclusion_clear": true,
+      "watertight": true
+    },
+    "right_outlet_rail_gap_16mm": {
+      "family": "outlet_rail",
+      "side": "right",
+      "print_dimensions_mm": [
+        183.8,
+        39.0,
+        78.0
+      ],
+      "print_bounds_mm": [
+        [
+          36.10000000000001,
+          108.5,
+          0.0
+        ],
+        [
+          219.9,
+          147.5,
+          78.0
+        ]
+      ],
+      "8mm_brim_inside_256_plate": true,
+      "stock_18x28mm_cutter_exclusion_clear": true,
+      "watertight": true
+    },
+    "right_outlet_rail_gap_8mm": {
+      "family": "outlet_rail",
+      "side": "right",
+      "print_dimensions_mm": [
+        183.8,
+        39.0,
+        78.0
+      ],
+      "print_bounds_mm": [
+        [
+          36.10000000000001,
+          108.5,
+          1.0032863428932615e-11
+        ],
+        [
+          219.9,
+          147.5,
+          78.00000000001003
+        ]
+      ],
+      "8mm_brim_inside_256_plate": true,
+      "stock_18x28mm_cutter_exclusion_clear": true,
+      "watertight": true
+    },
+    "FIT_COUPON_female_key": {
+      "family": "cradle",
+      "side": "right",
+      "print_dimensions_mm": [
+        28.991378028648455,
+        22.60767311904422,
+        14.0
+      ],
+      "print_bounds_mm": [
+        [
+          113.50431098567654,
+          116.69616344047787,
+          0.0
+        ],
+        [
+          142.495689014325,
+          139.3038365595221,
+          14.0
+        ]
+      ],
+      "8mm_brim_inside_256_plate": true,
+      "stock_18x28mm_cutter_exclusion_clear": true,
+      "watertight": true
+    },
+    "FIT_COUPON_male_key": {
+      "family": "cradle",
+      "side": "right",
+      "print_dimensions_mm": [
+        28.991378028648455,
+        28.991378028648455,
+        10.0
+      ],
+      "print_bounds_mm": [
+        [
+          113.50431098567577,
+          113.50431098567577,
+          0.0
+        ],
+        [
+          142.49568901432423,
+          142.49568901432423,
+          10.0
+        ]
+      ],
+      "8mm_brim_inside_256_plate": true,
+      "stock_18x28mm_cutter_exclusion_clear": true,
+      "watertight": true
+    },
+    "FIT_COUPON_push_pin": {
+      "family": "push_pin",
+      "side": "right",
+      "print_dimensions_mm": [
+        8.0,
+        7.99751345600653,
+        14.0
+      ],
+      "print_bounds_mm": [
+        [
+          124.0,
+          124.00124327199673,
+          0.0
+        ],
+        [
+          132.0,
+          131.99875672800326,
+          14.0
+        ]
+      ],
+      "8mm_brim_inside_256_plate": true,
+      "stock_18x28mm_cutter_exclusion_clear": true,
+      "watertight": true
+    },
+    "FIT_COUPON_pin_socket": {
+      "family": "coupon",
+      "side": "right",
+      "print_dimensions_mm": [
+        12.0,
+        12.0,
+        8.0
+      ],
+      "print_bounds_mm": [
+        [
+          122.0,
+          122.0,
+          0.0
+        ],
+        [
+          134.0,
+          134.0,
+          8.0
+        ]
+      ],
+      "8mm_brim_inside_256_plate": true,
+      "stock_18x28mm_cutter_exclusion_clear": true,
+      "watertight": true
+    }
+  }
+}

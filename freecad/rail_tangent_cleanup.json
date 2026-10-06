@@ -1,0 +1,14 @@
+{
+  "08_right_outlet_rail": {
+    "clearance_mm": 0.2999999999997349,
+    "insertion_max_overlap_mm3": 0.0,
+    "faces_below_0_1_mm2": 0,
+    "short_edges": 0
+  },
+  "07_left_outlet_rail": {
+    "clearance_mm": 0.2999999999997349,
+    "insertion_max_overlap_mm3": 0.0,
+    "faces_below_0_1_mm2": 0,
+    "short_edges": 0
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "changed_utc": "2026-09-08T12:48:36.423816+00:00",
+  "requested_stop": "writeNow",
+  "reason": "Measured 192 seconds for the second approximately 5 microsecond step; projected 2 ms startup about 20 hours at this throughput. Increasing k bounding and unresolved expanded mesh failures require a retained full checkpoint before further numerical changes. No mature-flow interpretation.",
+  "changes": [
+    "stopAt writeNow",
+    "field extrema and flux output every step",
+    "section output every step for checkpoint diagnosis"
+  ],
+  "physical_models_changed": false,
+  "intended_2ms_endpoint_completed": false
+}

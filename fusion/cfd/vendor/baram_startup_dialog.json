@@ -1,0 +1,18 @@
+[
+  {
+    "Name": "cx_Freeze: Python error in main script",
+    "Type": "Window"
+  },
+  {
+    "Name": "OK",
+    "Type": "ControlType.Pane"
+  },
+  {
+    "Name": "",
+    "Type": "ControlType.Pane"
+  },
+  {
+    "Name": "Traceback (most recent call last):\n  File \"C:\\Users\\USER\\Documents\\workspace\\baram-release\\venv\\Lib\\site-packages\\cx_Freeze\\initscripts\\__startup__.py\", line 141, in run\n  File \"C:\\Users\\USER\\Documents\\workspace\\baram-release\\venv\\Lib\\site-packages\\cx_Freeze\\initscripts\\console.py\", line 25, in run\n  File \"baramFlow\\main.py\", line 31, in <module>\n  File \"C:\\Users\\USER\\Documents\\workspace\\baram-release\\baramFlow\\app.py\", line 12, in <module>\n  File \"C:\\Users\\USER\\Documents\\workspace\\baram-release\\baramFlow\\coredb\\project.py\", line 13, in <module>\n  File \"C:\\Users\\USER\\Documents\\workspace\\baram-release\\baramFlow\\base\\graphic\\graphics_db.py\", line 8, in <module>\n  File \"C:\\Users\\USER\\Documents\\workspace\\baram-release\\baramFlow\\base\\graphic\\graphic.py\", line 23, in <module>\n  File \"C:\\Users\\USER\\Documents\\workspace\\baram-release\\libbaram\\colormap.py\", line 5, in <module>\n  File \"C:\\Users\\USER\\Documents\\workspace\\baram-release\\venv\\Lib\\site-packages\\matplotlib\\__init__.py\", line 990, in <module>\n  File \"C:\\Users\\USER\\Documents\\workspace\\baram-release\\venv\\Lib\\site-packages\\matplotlib\\__init__.py\", line 638, in matplotlib_fname\n  File \"C:\\Users\\USER\\Documents\\workspace\\baram-release\\venv\\Lib\\site-packages\\matplotlib\\__init__.py\", line 635, in gen_candidates\n  File \"C:\\Users\\USER\\Documents\\workspace\\baram-release\\venv\\Lib\\site-packages\\matplotlib\\__init__.py\", line 348, in wrapper\n  File \"C:\\Users\\USER\\Documents\\workspace\\baram-release\\venv\\Lib\\site-packages\\matplotlib\\__init__.py\", line 581, in get_configdir\n  File \"C:\\Users\\USER\\Documents\\workspace\\baram-release\\venv\\Lib\\site-packages\\matplotlib\\__init__.py\", line 536, in _get_config_or_cache_dir\n  File \"C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\pathlib.py\", line 914, in home\n  File \"C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\pathlib.py\", line 1385, in expanduser\nRuntimeError: Could not determine home directory.\n",
+    "Type": "ControlType.Pane"
+  }
+]

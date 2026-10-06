@@ -1,0 +1,12 @@
+{
+  "identical_stl_across_all_presets": false,
+  "solids_per_plate": 8,
+  "sha256": {
+    "13-inch-example": "8d9c072edf96b506f63ecf84f1db5b5a503010ba18b1c74bd3455e7792981aee",
+    "14-inch-example": "a26ad465571d7554a020749369b94a1a25c4b798c0142a842f4b64d95163d30c",
+    "15-6-inch-example": "f6292816b508b6ff015d9c04b7c1834992e53f4f7ac6a7b927b60e22acbb3d6d",
+    "16-inch-example": "f6292816b508b6ff015d9c04b7c1834992e53f4f7ac6a7b927b60e22acbb3d6d",
+    "17-inch-example": "7198a2e6b99396d4fb78a6f3f50c58fb2e449fbc72d6b5192836bfca29c3bffb",
+    "5560": "a26ad465571d7554a020749369b94a1a25c4b798c0142a842f4b64d95163d30c"
+  }
+}

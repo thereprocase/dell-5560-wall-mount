@@ -1,0 +1,77 @@
+{
+  "case": "revh_transient_04",
+  "cells": 18219444,
+  "standard_mesh_ok": true,
+  "expanded_mesh_ok": false,
+  "refinement_cell_limit_hit": false,
+  "sections": [
+    {
+      "title": "Duct outlet / front lip",
+      "plane_x_mm": 111,
+      "y_bounds_mm": [
+        30,
+        66
+      ],
+      "z_bounds_mm": [
+        -6,
+        28
+      ],
+      "cut_polygons": 6456
+    },
+    {
+      "title": "Front lip detail",
+      "plane_x_mm": 111,
+      "y_bounds_mm": [
+        43,
+        61
+      ],
+      "z_bounds_mm": [
+        -2,
+        14
+      ],
+      "cut_polygons": 2185
+    },
+    {
+      "title": "Hinge lip / discharge",
+      "plane_x_mm": 111,
+      "y_bounds_mm": [
+        32,
+        63
+      ],
+      "z_bounds_mm": [
+        213,
+        253
+      ],
+      "cut_polygons": 6814
+    },
+    {
+      "title": "Complete duct section / Revision H bends",
+      "plane_x_mm": 111,
+      "y_bounds_mm": [
+        -2,
+        155
+      ],
+      "z_bounds_mm": [
+        -150,
+        28
+      ],
+      "cut_polygons": 17427
+    }
+  ],
+  "rendering": "Cut-cell polygon outlines at X=111 mm. VTK may omit non-contourable cells; gaps are not filled.",
+  "quality_summary": [
+    "Number of regions: 1 (OK).",
+    "Mesh non-orthogonality Max: 64.99786161 average: 6.324554265",
+    "Non-orthogonality check OK.",
+    "Max skewness = 2.943765809 OK.",
+    "*There are 10298 faces with concave angles between consecutive edges. Max concave angle = 79.96913215 degrees.",
+    "<<Writing 10298 faces with concave angles to set concaveFaces",
+    "<<Writing 194 warped faces to set warpedFaces",
+    "Cell determinant (wellposedness) : minimum: 7.746158709e-05 average: 1.051279036",
+    "***Cells with small determinant (< 0.001) found, number of cells: 2998",
+    "***Concave cells (using face planes) found, number of cells: 396528",
+    "<<Writing 396528 concave cells to set concaveCells",
+    "***Faces with small interpolation weight (< 0.05) found, number of faces: 78",
+    "Failed 3 mesh checks."
+  ]
+}

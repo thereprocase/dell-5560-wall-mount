@@ -1,0 +1,102 @@
+{
+  "status": 200,
+  "data": {
+    "btType": "BTFeatureScriptEvalResponse-1859",
+    "rejectMicroversionSkew": false,
+    "microversionSkew": false,
+    "result": null,
+    "notices": [
+      {
+        "btType": "BTNotice-227",
+        "tryNode": null,
+        "expressionErrorInfo": null,
+        "type": "PARSE",
+        "stackTrace": [
+          {
+            "btType": "BTLocationInfo-226",
+            "endLine": 1,
+            "line": 1,
+            "endColumn": 90,
+            "character": 86,
+            "languageVersion": 0,
+            "parseNodeId": "",
+            "endCharacter": 89,
+            "column": 87,
+            "moduleIds": null,
+            "document": "",
+            "version": "",
+            "elementMicroversion": "",
+            "nodeId": "PYke7wQW1C5CiNUx",
+            "topLevel": ""
+          }
+        ],
+        "message": "mismatched input 'box' expecting ID",
+        "level": "ERROR",
+        "nodeId": "LEq4Q1jfeiX9sGbF",
+        "parameterId": ""
+      },
+      {
+        "btType": "BTNotice-227",
+        "tryNode": null,
+        "expressionErrorInfo": null,
+        "type": "PARSE",
+        "stackTrace": [
+          {
+            "btType": "BTLocationInfo-226",
+            "endLine": 1,
+            "line": 1,
+            "endColumn": 291,
+            "character": 287,
+            "languageVersion": 0,
+            "parseNodeId": "",
+            "endCharacter": 290,
+            "column": 288,
+            "moduleIds": null,
+            "document": "",
+            "version": "",
+            "elementMicroversion": "",
+            "nodeId": "JmWTi0mTtivXUQBm",
+            "topLevel": ""
+          }
+        ],
+        "message": "mismatched input 'box' expecting {'[', '+', '-', 'new', '!', '++', '--', '::', 'function', 'operator', 'undefined', 'try', 'in', 'switch', '{', '(', BOOLEAN, NUMBER, ID, BUILTIN, STRING}",
+        "level": "ERROR",
+        "nodeId": "hIy8Xm1tWB2IWSn/",
+        "parameterId": ""
+      },
+      {
+        "btType": "BTNotice-227",
+        "tryNode": null,
+        "expressionErrorInfo": null,
+        "type": "PARSE",
+        "stackTrace": [
+          {
+            "btType": "BTLocationInfo-226",
+            "endLine": 1,
+            "line": 1,
+            "endColumn": 315,
+            "character": 313,
+            "languageVersion": 0,
+            "parseNodeId": "",
+            "endCharacter": 314,
+            "column": 314,
+            "moduleIds": null,
+            "document": "",
+            "version": "",
+            "elementMicroversion": "",
+            "nodeId": "OkJgqWxUv+9rKz+N",
+            "topLevel": ""
+          }
+        ],
+        "message": "mismatched input ',' expecting {'[', '+', '-', '*', '/', '%', '^', '<', 'is', '.', '->', 'new', '?[', '!', '++', '--', '>', '<=', '>=', '==', '!=', 'as', '&&', '||', '??', '~', '?', '::', 'function', 'operator', 'undefined', 'try', 'in', 'switch', SEMI, '{', '(', '?.', BOOLEAN, NUMBER, ID, BUILTIN, STRING}",
+        "level": "ERROR",
+        "nodeId": "i2V745Yoi73vfuKk",
+        "parameterId": ""
+      }
+    ],
+    "sourceMicroversion": "a59cf6e40cad93318123b2d7",
+    "libraryVersion": 3070,
+    "serializationVersion": "1.2.21",
+    "console": ""
+  }
+}

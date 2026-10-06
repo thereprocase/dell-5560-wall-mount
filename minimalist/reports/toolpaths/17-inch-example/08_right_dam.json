@@ -1,0 +1,168 @@
+{
+  "source_gcode": "preview.gcode",
+  "source_gcode_sha256": "4504917a2222aa818d6c77548d5b417caa546383928a80c17394683b1e19bc94",
+  "layers": 690,
+  "method": "Model paths buffered by reported line width. Island support: previous layer plus 0.15 mm. A deposited bead is supported where it overlaps the prior-layer footprint by at least 0.05 mm: buffer that footprint by half the current bead width minus 0.05 mm. Report contiguous unsupported subsegments, not full move lengths. Same-layer anchoring order and physical sag are not proven.",
+  "floating_components": [],
+  "unsupported_by_feature_mm": {
+    "Inner wall": 0.049158500000018535,
+    "Overhang wall": 6.1200000000000045,
+    "Outer wall": 0.04000100000001794
+  },
+  "max_bridge_move_mm": 0,
+  "max_unsupported_bridge_span_mm": 0,
+  "bridge_path_count": 0,
+  "bridge_layers": [],
+  "longest_bridges": [],
+  "max_unsupported_deposition_span_mm": 6.1200000000000045,
+  "longest_unsupported_paths": [
+    {
+      "z_mm": 112.0,
+      "move_length_mm": 6.1200000000000045,
+      "unsupported_length_mm": 6.1200000000000045,
+      "unsupported_total_mm": 6.1200000000000045,
+      "feature": "Overhang wall"
+    },
+    {
+      "z_mm": 136.0,
+      "move_length_mm": 6.1200000000000045,
+      "unsupported_length_mm": 6.1200000000000045,
+      "unsupported_total_mm": 6.1200000000000045,
+      "feature": "Overhang wall"
+    },
+    {
+      "z_mm": 112.0,
+      "move_length_mm": 6.0,
+      "unsupported_length_mm": 6.0,
+      "unsupported_total_mm": 6.0,
+      "feature": "Overhang wall"
+    },
+    {
+      "z_mm": 112.0,
+      "move_length_mm": 6.0,
+      "unsupported_length_mm": 6.0,
+      "unsupported_total_mm": 6.0,
+      "feature": "Overhang wall"
+    },
+    {
+      "z_mm": 112.0,
+      "move_length_mm": 6.0,
+      "unsupported_length_mm": 6.0,
+      "unsupported_total_mm": 6.0,
+      "feature": "Overhang wall"
+    },
+    {
+      "z_mm": 136.0,
+      "move_length_mm": 6.0,
+      "unsupported_length_mm": 6.0,
+      "unsupported_total_mm": 6.0,
+      "feature": "Overhang wall"
+    },
+    {
+      "z_mm": 136.0,
+      "move_length_mm": 6.0,
+      "unsupported_length_mm": 6.0,
+      "unsupported_total_mm": 6.0,
+      "feature": "Overhang wall"
+    },
+    {
+      "z_mm": 136.0,
+      "move_length_mm": 6.0,
+      "unsupported_length_mm": 6.0,
+      "unsupported_total_mm": 6.0,
+      "feature": "Overhang wall"
+    },
+    {
+      "z_mm": 112.0,
+      "move_length_mm": 2.73299999999999,
+      "unsupported_length_mm": 2.73299999999999,
+      "unsupported_total_mm": 2.73299999999999,
+      "feature": "Overhang wall"
+    },
+    {
+      "z_mm": 136.0,
+      "move_length_mm": 2.7319999999999993,
+      "unsupported_length_mm": 2.7319999999999993,
+      "unsupported_total_mm": 2.7319999999999993,
+      "feature": "Overhang wall"
+    },
+    {
+      "z_mm": 112.0,
+      "move_length_mm": 2.3699999999999903,
+      "unsupported_length_mm": 2.3699999999999903,
+      "unsupported_total_mm": 2.3699999999999903,
+      "feature": "Overhang wall"
+    },
+    {
+      "z_mm": 136.0,
+      "move_length_mm": 2.3689999999999998,
+      "unsupported_length_mm": 2.3689999999999998,
+      "unsupported_total_mm": 2.3689999999999998,
+      "feature": "Overhang wall"
+    },
+    {
+      "z_mm": 112.0,
+      "move_length_mm": 2.333999999999989,
+      "unsupported_length_mm": 2.333999999999989,
+      "unsupported_total_mm": 2.333999999999989,
+      "feature": "Overhang wall"
+    },
+    {
+      "z_mm": 136.0,
+      "move_length_mm": 2.333999999999989,
+      "unsupported_length_mm": 2.333999999999989,
+      "unsupported_total_mm": 2.333999999999989,
+      "feature": "Overhang wall"
+    },
+    {
+      "z_mm": 112.0,
+      "move_length_mm": 2.323999999999998,
+      "unsupported_length_mm": 2.323999999999998,
+      "unsupported_total_mm": 2.323999999999998,
+      "feature": "Overhang wall"
+    },
+    {
+      "z_mm": 136.0,
+      "move_length_mm": 2.323999999999998,
+      "unsupported_length_mm": 2.323999999999998,
+      "unsupported_total_mm": 2.323999999999998,
+      "feature": "Overhang wall"
+    },
+    {
+      "z_mm": 112.0,
+      "move_length_mm": 1.740000000000009,
+      "unsupported_length_mm": 1.740000000000009,
+      "unsupported_total_mm": 1.740000000000009,
+      "feature": "Overhang wall"
+    },
+    {
+      "z_mm": 136.0,
+      "move_length_mm": 1.740000000000009,
+      "unsupported_length_mm": 1.740000000000009,
+      "unsupported_total_mm": 1.740000000000009,
+      "feature": "Overhang wall"
+    },
+    {
+      "z_mm": 112.0,
+      "move_length_mm": 1.7349999999999994,
+      "unsupported_length_mm": 1.7349999999999994,
+      "unsupported_total_mm": 1.7349999999999994,
+      "feature": "Overhang wall"
+    },
+    {
+      "z_mm": 136.0,
+      "move_length_mm": 1.7349999999999994,
+      "unsupported_length_mm": 1.7349999999999994,
+      "unsupported_total_mm": 1.7349999999999994,
+      "feature": "Overhang wall"
+    }
+  ],
+  "time_and_material_comments": [
+    "; model printing time: 1h 42m 33s; total estimated time: 1h 48m 48s",
+    "; filament used [mm] = 7935.95",
+    "; filament used [cm3] = 19.09",
+    "; filament used [g] = 20.04"
+  ],
+  "analysis_geometry_sha256": "e43d5f069bdc12b7a4c3e3605c8617f0fe7f9217a613f65c984bff7b35ab16f1",
+  "analysis_feature_scope": "All positive-extrusion model paths; bridge-tagged and all-feature maxima are reported separately."
+}

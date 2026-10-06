@@ -1,0 +1,23 @@
+{
+  "revision": "H",
+  "native_features": [
+    "FlowOuterSupport",
+    "FlowInnerBlend"
+  ],
+  "internal_radius_mm": 12,
+  "external_support_radius_mm": 14,
+  "bends_per_duct": 3,
+  "unchanged_inlet_and_outlet": true,
+  "gaps_mm": {
+    "04_right_fan_duct / 06_right_fan_retainer": 0.3000000000000346,
+    "04_right_fan_duct / 10_right_fan_tray": 0.2999999999998891,
+    "06_right_fan_retainer / 10_right_fan_tray": 0.3000000000000346,
+    "03_left_fan_duct / 05_left_fan_retainer": 0.3000000000000346,
+    "03_left_fan_duct / 09_left_fan_tray": 0.2999999999998891,
+    "05_left_fan_retainer / 09_left_fan_tray": 0.3000000000000346
+  },
+  "frozen_arms_difference_mm3": 0,
+  "net_material_change_per_duct_mm3": 176.7064293808653,
+  "added_to_original_airway_mm3": 8.297316656220154,
+  "removed_from_original_wall_mm3": 362.53826972790864
+}

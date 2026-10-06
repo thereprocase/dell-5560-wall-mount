@@ -1,0 +1,340 @@
+{
+  "schema_version": 1,
+  "product": "BARAM",
+  "version": "26.3.0",
+  "platform": "Windows x64",
+  "audit_utc": "2026-09-07T21:05:10.298840+00:00",
+  "scope": "Download, extraction and read-only static inspection; no installer or payload executed.",
+  "official_link_chain": [
+    "https://github.com/nextfoam/baram",
+    "https://baramcfd.org/en/download-en/",
+    "https://baramcfd.org/en/baram-download-en/",
+    "https://d3c6e16xufx1gb.cloudfront.net/baram/BARAM-26.3.0-setup.exe"
+  ],
+  "link_discovery": "CDN URL present in official form HTML; no personal information or form submission.",
+  "http": {
+    "status": 200,
+    "content_length": 623211563,
+    "last_modified": "Mon, 31 Aug 2026 10:48:05 GMT",
+    "etag": "601b146f8dd3e8a3a6d5200592a64d40-37",
+    "etag_is_publisher_digest": false,
+    "evidence": "downloads/BARAM-26.3.0-download-headers.txt"
+  },
+  "binaries": [
+    {
+      "path": "fusion/cfd/vendor/downloads/BARAM-26.3.0-setup.exe",
+      "size_bytes": 623211563,
+      "sha256": "18F81640DE73891248E3ED147483F96D4C70359DA1F5DF5F06E6CC6A8294FB72",
+      "status": "NotSigned",
+      "file_version": null,
+      "signer_subject": null,
+      "issuer": null,
+      "thumbprint": null,
+      "certificate_not_before": null,
+      "certificate_not_after": null,
+      "timestamp_subject": null
+    },
+    {
+      "path": "fusion/cfd/vendor/downloads/baram-extracted/$TEMP/BARAM-26.3.0-win64.msi",
+      "size_bytes": 615165952,
+      "sha256": "FF87AEA71706425F76A098BDBD3B648F3C2247F1B1D82E02A358B5FC126075BE",
+      "status": "NotSigned",
+      "file_version": null,
+      "signer_subject": null,
+      "issuer": null,
+      "thumbprint": null,
+      "certificate_not_before": null,
+      "certificate_not_after": null,
+      "timestamp_subject": null
+    },
+    {
+      "path": "fusion/cfd/vendor/downloads/baram-extracted/$TEMP/msmpisetup.exe",
+      "size_bytes": 7887688,
+      "sha256": "C305CE3F05D142D519F8DD800D83A4B894FC31BCAD30512CEFB557FEACCBE8B4",
+      "status": "Valid",
+      "file_version": "10.1.12498.18",
+      "signer_subject": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
+      "issuer": "CN=Microsoft Code Signing PCA, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
+      "thumbprint": "C82273A065EC470FB1EBDE846A91E6FFB29E9C12",
+      "certificate_not_before": "/Date(1556832032000)/",
+      "certificate_not_after": "/Date(1588454432000)/",
+      "timestamp_subject": "CN=Microsoft Time-Stamp Service, OU=Thales TSS ESN:AE2C-E32B-1AFC, OU=Microsoft America Operations, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+    },
+    {
+      "path": "fusion/cfd/vendor/downloads/baram-inspected-payload/python311.dll",
+      "size_bytes": 5800216,
+      "sha256": "0817A2A657A24C0D5FBB60DF56960F42FC66B3039D522EC952DAB83E2D869364",
+      "status": "Valid",
+      "file_version": "3.11.9",
+      "signer_subject": "CN=Python Software Foundation, O=Python Software Foundation, L=Beaverton, S=Oregon, C=US",
+      "issuer": "CN=DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA1, O=\"DigiCert, Inc.\", C=US",
+      "thumbprint": "36168EE17C1A240517388540C903BB6717DD2563",
+      "certificate_not_before": "/Date(1642377600000)/",
+      "certificate_not_after": "/Date(1736985599000)/",
+      "timestamp_subject": "CN=DigiCert Timestamp 2023, O=\"DigiCert, Inc.\", C=US"
+    },
+    {
+      "path": "fusion/cfd/vendor/downloads/baram-inspected-payload/Qt6Core.dll",
+      "size_bytes": 10025608,
+      "sha256": "393833B9D4DEEF7ABD8BF475D38C15126C2F016058B03DD5EB27FA18198CFA75",
+      "status": "Valid",
+      "file_version": "6.9.2.0",
+      "signer_subject": "CN=The Qt Company Oy, SERIALNUMBER=2637805-2, OID.2.5.4.15=Private Organization, O=The Qt Company Oy, OID.1.3.6.1.4.1.311.60.2.1.3=FI, L=Espoo, C=FI",
+      "issuer": "CN=Entrust Extended Validation Code Signing CA - EVCS2, O=\"Entrust, Inc.\", C=US",
+      "thumbprint": "1013009051124CA0EDE0A0363CF650146A272C0F",
+      "certificate_not_before": "/Date(1668755986000)/",
+      "certificate_not_after": "/Date(1764573586000)/",
+      "timestamp_subject": "CN=Entrust Timestamp Authority - TSA1, O=\"Entrust, Inc.\", C=US"
+    }
+  ],
+  "publisher_digest": {
+    "found": false,
+    "comparison_performed": false,
+    "searched": [
+      "official download and release notes",
+      "nextfoam/baram releases",
+      "web exact filename sha256"
+    ],
+    "interpretation": "SHA256 values are self-computed evidence identifiers, not publisher-verified checksums."
+  },
+  "source": {
+    "repository": "https://github.com/nextfoam/baram",
+    "commit": "be140c7a2eca79fc447606f321c121057737a9b7",
+    "app_version": "26.2.1",
+    "packaged_version": "26.3.0",
+    "matching_release_source_verified": false,
+    "github_releases": "No releases displayed",
+    "license": "GPL-3.0 repository license; complete binary-constituent license audit not performed",
+    "pinned_files": [
+      {
+        "path": "downloads/source-analytics-client.py",
+        "sha256": "94ed09358cf5d25b134a11764f40559dbd533a893f19c30fad5c138629ee867d"
+      },
+      {
+        "path": "downloads/source-analytics-consent.py",
+        "sha256": "ad47695b072beaa5b7bdbe0de5522c090c2efce8ed0c417f1d52431edaa27a59"
+      },
+      {
+        "path": "downloads/source-app_properties.py",
+        "sha256": "a19ed65466b4a5f6bfc2f7a6f6c9a78e814b4389b81bbef52fdcccb86783eb2b"
+      },
+      {
+        "path": "downloads/source-LICENSE",
+        "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+      },
+      {
+        "path": "downloads/source-README.md",
+        "sha256": "b95044d5fc248b794348b49dc8c1a2db5d8db750d0a5430835b868624d2ae5e9"
+      },
+      {
+        "path": "downloads/source-requirements.txt",
+        "sha256": "5fba4f87f7fc5c208ecd3bee6f9acc375f2307024e8294a4ea7eca7aede4dd9b"
+      }
+    ]
+  },
+  "msi": {
+    "properties": {
+      "UpgradeCode": "{32D8E4F2-832D-407F-B1F3-ABE5FC589188}",
+      "ProductName": "BARAM",
+      "ProductCode": "{3BB556D3-DAB2-44C7-9465-FB491D1FA1EF}",
+      "ProductVersion": "26.3.0",
+      "Manufacturer": "UNKNOWN",
+      "ProductLanguage": "1033",
+      "DistVersion": "26.3.0",
+      "DefaultUIFont": "DlgFont8",
+      "ErrorDialog": "ErrorDlg",
+      "Progress1": "Install",
+      "Progress2": "installs",
+      "MaintenanceForm_Action": "Repair",
+      "ALLUSERS": "2",
+      "MSIINSTALLPERUSER": "1",
+      "ARPPRODUCTICON": "InstallIcon",
+      "SecureCustomProperties": "TARGETDIR;REINSTALLMODE"
+    },
+    "summary": {
+      "3": "BARAM",
+      "5": "CFD",
+      "18": "Python MSI Library",
+      "12": null,
+      "2": "Installation Database",
+      "15": 2,
+      "9": "{E8EBC581-A375-4337-A2AF-4BB584520B6F}",
+      "14": 200,
+      "7": "x64;1033",
+      "6": "BARAM, CFD for Everyone",
+      "4": "nextfoam",
+      "19": null,
+      "13": null
+    },
+    "file_count": 15186,
+    "file_table_total_bytes": 2363569822,
+    "custom_actions": [
+      [
+        "A_SET_TARGET_DIR",
+        "307",
+        "TARGETDIR",
+        "[ProgramFiles64Folder]\\BARAM"
+      ],
+      [
+        "A_SET_REINSTALL_MODE",
+        "307",
+        "REINSTALLMODE",
+        "amus"
+      ]
+    ],
+    "environment": [
+      [
+        "E_PATH",
+        "Path",
+        "[~];[TARGETDIR]",
+        "TARGETDIR"
+      ]
+    ],
+    "shortcuts": [
+      [
+        "S_APP_0",
+        "ProgramMenuFolder",
+        "BaramFlow",
+        "TARGETDIR",
+        "[TARGETDIR]BaramFlow.exe",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "TARGETDIR"
+      ],
+      [
+        "S_APP_1",
+        "ProgramMenuFolder",
+        "BaramMesh",
+        "TARGETDIR",
+        "[TARGETDIR]BaramMesh.exe",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "TARGETDIR"
+      ],
+      [
+        "DesktopShortcutBaramFlow",
+        "DesktopFolder",
+        "BaramFlow",
+        "TARGETDIR",
+        "[TARGETDIR]BaramFlow.exe",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "TARGETDIR"
+      ],
+      [
+        "DesktopShortcutBaramMesh",
+        "DesktopFolder",
+        "BaramMesh",
+        "TARGETDIR",
+        "[TARGETDIR]BaramMesh.exe",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "TARGETDIR"
+      ]
+    ],
+    "registry": [],
+    "launch_conditions": [],
+    "evidence": "downloads/baram-msi-tables.json"
+  },
+  "bundled_dependencies": [
+    "CPython3.11.9",
+    "Qt6.9.2",
+    "PySide6",
+    "VTK9.4.2 DLLs",
+    "MinGW64",
+    "OpenFOAM/NextFOAM solvers",
+    "MS-MPI installer10.1.12498.18",
+    "analytics/PostHog modules",
+    "Microsoft C/C++ runtime DLLs"
+  ],
+  "external_dependencies": "ParaView separately installed. MSI does not itself install MPI; wrapper bundles MPI installer. Separate Python not needed for frozen binary based on bundled runtime; no launch test.",
+  "cve_scan_performed": false,
+  "analytics": {
+    "packaged": true,
+    "host": "https://eu.i.posthog.com",
+    "main_contains": "ensureConsent",
+    "source_behavior": "Consent defaults false; configured first launch prompts Allow or Don't Allow; init/capture guarded by consent.",
+    "binary_verification": "Packaged byte strings confirm matching consent methods/docstrings, analytics_consent.json and configured host; exact control flow and runtime network behavior not proven.",
+    "evidence": "downloads/baram-packaged-telemetry-strings.json"
+  },
+  "install_unexecuted": {
+    "msi": "downloads/baram-extracted/$TEMP/BARAM-26.3.0-win64.msi",
+    "mpi": "downloads/baram-extracted/$TEMP/msmpisetup.exe",
+    "launchers": [
+      "<TARGETDIR>/BaramFlow.exe",
+      "<TARGETDIR>/BaramMesh.exe"
+    ],
+    "msiexec_flags": [
+      "/i <absolute MSI>",
+      "/qn",
+      "/norestart",
+      "/L*v <absolute log>",
+      "TARGETDIR=<absolute user-local directory>",
+      "ALLUSERS=2",
+      "MSIINSTALLPERUSER=1"
+    ],
+    "privilege": "Per-user MSI properties present, but Summary WordCount2 lacks LUA/no-elevation bit; non-elevated install not guaranteed.",
+    "nsis": "Generic /S supported; nested MSI silence and /D forwarding not established. Do not use /NCRC.",
+    "application_cli_flags": "Not established; do not assume --help is side-effect free."
+  },
+  "unknowns": [
+    "No BARAM publisher signature or independent SHA256",
+    "Exact26.3.0 source-to-binary correspondence",
+    "Full constituent versions/CVE/licenses",
+    "Runtime installation/GUI/solver/network behavior",
+    "Release notes display September01 2025 while CDN timestamp is August31 2026"
+  ],
+  "installation_verification": {
+    "verified_utc": "2026-09-07T21:21:35.004465+00:00",
+    "target": "C:\\Users\\USER\\AppData\\Local\\Programs\\BARAM-26.3.0",
+    "installation_evidence": {
+      "phase": "baram",
+      "sha256": "FF87AEA71706425F76A098BDBD3B648F3C2247F1B1D82E02A358B5FC126075BE",
+      "target": "C:\\Users\\USER\\AppData\\Local\\Programs\\BARAM-26.3.0",
+      "exit_code": 0
+    },
+    "expected_count": 15186,
+    "counts": {
+      "match": 15186
+    },
+    "extra_count": 0,
+    "reference_msi_sha256": "ff87aea71706425f76a098bdbd3b648f3c2247f1b1d82e02a358b5fc126075be",
+    "manifest": "baram_installed_payload_manifest.json",
+    "manifest_sha256": "35949fb45b9acd521ffa2d16ab04a3ea2281df523293e58d04a3381f49ec49b1",
+    "summary": "baram_installed_payload_summary.json",
+    "verifier": "verify_baram_payload.py",
+    "case_collision_handling": "38 members in19 casefold-colliding CAB ID pairs hashed from exact-case7-Zip stdout; installed payload unchanged",
+    "limitations": "Package fidelity only, not malware/CVE/source-equivalence or runtime certification. Extra files listed without deletion. Registry, PATH and shortcuts not compared here."
+  },
+  "mpi_published_digest_check": {
+    "provenance": {
+      "repository": "https://github.com/microsoft/winget-pkgs",
+      "commit": "f82e821082e59b30db90a0625a04f262c800e665",
+      "url": "https://raw.githubusercontent.com/microsoft/winget-pkgs/f82e821082e59b30db90a0625a04f262c800e665/manifests/m/Microsoft/msmpi/10.1.12498.18/Microsoft.msmpi.installer.yaml",
+      "captured_utc": "2026-09-07T21:17:37.8624883Z"
+    },
+    "manifest_sha256": "8d2fa0199fc68115da14618e0581a7a96c9d6eb40daf44e0dc81ede492155112",
+    "published_installer_sha256": "c305ce3f05d142d519f8dd800d83a4b894fc31bcad30512cefb557feaccbe8b4",
+    "bundled_installer_sha256": "c305ce3f05d142d519f8dd800d83a4b894fc31bcad30512cefb557feaccbe8b4",
+    "match": true,
+    "repository_scope": "Microsoft-hosted community WinGet repository; independent published package manifest plus separately checked Microsoft Authenticode signature.",
+    "installation_attempted_during_this_audit": false,
+    "prior_installation_attempt": "Root agent reports MPI elevation prompt canceled by user; no retry in this audit."
+  }
+}

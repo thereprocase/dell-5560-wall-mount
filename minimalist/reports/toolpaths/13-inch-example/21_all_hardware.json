@@ -1,0 +1,168 @@
+{
+  "source_gcode": "preview.gcode",
+  "source_gcode_sha256": "3e142a515e923d141e7788fffcd6d7e71c3140ab215c71447c0137adaa11e965",
+  "layers": 167,
+  "method": "Model paths buffered by reported line width. Island support: previous layer plus 0.15 mm. A deposited bead is supported where it overlaps the prior-layer footprint by at least 0.05 mm: buffer that footprint by half the current bead width minus 0.05 mm. Report contiguous unsupported subsegments, not full move lengths. Same-layer anchoring order and physical sag are not proven.",
+  "floating_components": [],
+  "unsupported_by_feature_mm": {
+    "Outer wall": 2.51400000000001,
+    "Inner wall": 0.02500100000000316,
+    "Overhang wall": 0.7820000000000107
+  },
+  "max_bridge_move_mm": 0,
+  "max_unsupported_bridge_span_mm": 0,
+  "bridge_path_count": 0,
+  "bridge_layers": [],
+  "longest_bridges": [],
+  "max_unsupported_deposition_span_mm": 2.51400000000001,
+  "longest_unsupported_paths": [
+    {
+      "z_mm": 23.2,
+      "move_length_mm": 2.51400000000001,
+      "unsupported_length_mm": 2.51400000000001,
+      "unsupported_total_mm": 2.51400000000001,
+      "feature": "Outer wall"
+    },
+    {
+      "z_mm": 23.2,
+      "move_length_mm": 2.51400000000001,
+      "unsupported_length_mm": 2.51400000000001,
+      "unsupported_total_mm": 2.51400000000001,
+      "feature": "Outer wall"
+    },
+    {
+      "z_mm": 23.2,
+      "move_length_mm": 2.51400000000001,
+      "unsupported_length_mm": 2.51400000000001,
+      "unsupported_total_mm": 2.51400000000001,
+      "feature": "Outer wall"
+    },
+    {
+      "z_mm": 23.2,
+      "move_length_mm": 2.51400000000001,
+      "unsupported_length_mm": 2.51400000000001,
+      "unsupported_total_mm": 2.51400000000001,
+      "feature": "Outer wall"
+    },
+    {
+      "z_mm": 23.2,
+      "move_length_mm": 2.51400000000001,
+      "unsupported_length_mm": 2.51400000000001,
+      "unsupported_total_mm": 2.51400000000001,
+      "feature": "Outer wall"
+    },
+    {
+      "z_mm": 23.2,
+      "move_length_mm": 2.51400000000001,
+      "unsupported_length_mm": 2.51400000000001,
+      "unsupported_total_mm": 2.51400000000001,
+      "feature": "Outer wall"
+    },
+    {
+      "z_mm": 23.2,
+      "move_length_mm": 2.51400000000001,
+      "unsupported_length_mm": 2.51400000000001,
+      "unsupported_total_mm": 2.51400000000001,
+      "feature": "Outer wall"
+    },
+    {
+      "z_mm": 23.2,
+      "move_length_mm": 2.51400000000001,
+      "unsupported_length_mm": 2.51400000000001,
+      "unsupported_total_mm": 2.51400000000001,
+      "feature": "Outer wall"
+    },
+    {
+      "z_mm": 23.2,
+      "move_length_mm": 2.51400000000001,
+      "unsupported_length_mm": 2.51400000000001,
+      "unsupported_total_mm": 2.51400000000001,
+      "feature": "Outer wall"
+    },
+    {
+      "z_mm": 23.2,
+      "move_length_mm": 2.51400000000001,
+      "unsupported_length_mm": 2.51400000000001,
+      "unsupported_total_mm": 2.51400000000001,
+      "feature": "Outer wall"
+    },
+    {
+      "z_mm": 23.2,
+      "move_length_mm": 2.51400000000001,
+      "unsupported_length_mm": 2.51400000000001,
+      "unsupported_total_mm": 2.51400000000001,
+      "feature": "Outer wall"
+    },
+    {
+      "z_mm": 23.2,
+      "move_length_mm": 2.51400000000001,
+      "unsupported_length_mm": 2.51400000000001,
+      "unsupported_total_mm": 2.51400000000001,
+      "feature": "Outer wall"
+    },
+    {
+      "z_mm": 23.2,
+      "move_length_mm": 2.51400000000001,
+      "unsupported_length_mm": 2.51400000000001,
+      "unsupported_total_mm": 2.51400000000001,
+      "feature": "Outer wall"
+    },
+    {
+      "z_mm": 23.2,
+      "move_length_mm": 2.51400000000001,
+      "unsupported_length_mm": 2.51400000000001,
+      "unsupported_total_mm": 2.51400000000001,
+      "feature": "Outer wall"
+    },
+    {
+      "z_mm": 23.2,
+      "move_length_mm": 2.513999999999996,
+      "unsupported_length_mm": 2.513999999999996,
+      "unsupported_total_mm": 2.513999999999996,
+      "feature": "Outer wall"
+    },
+    {
+      "z_mm": 23.2,
+      "move_length_mm": 2.513999999999996,
+      "unsupported_length_mm": 2.513999999999996,
+      "unsupported_total_mm": 2.513999999999996,
+      "feature": "Outer wall"
+    },
+    {
+      "z_mm": 23.2,
+      "move_length_mm": 1.0330000000000013,
+      "unsupported_length_mm": 1.0330000000000013,
+      "unsupported_total_mm": 1.0330000000000013,
+      "feature": "Outer wall"
+    },
+    {
+      "z_mm": 23.2,
+      "move_length_mm": 1.0330000000000013,
+      "unsupported_length_mm": 1.0330000000000013,
+      "unsupported_total_mm": 1.0330000000000013,
+      "feature": "Outer wall"
+    },
+    {
+      "z_mm": 23.2,
+      "move_length_mm": 1.0330000000000013,
+      "unsupported_length_mm": 1.0330000000000013,
+      "unsupported_total_mm": 1.0330000000000013,
+      "feature": "Outer wall"
+    },
+    {
+      "z_mm": 23.2,
+      "move_length_mm": 1.0330000000000013,
+      "unsupported_length_mm": 1.0330000000000013,
+      "unsupported_total_mm": 1.0330000000000013,
+      "feature": "Outer wall"
+    }
+  ],
+  "time_and_material_comments": [
+    "; model printing time: 54m 47s; total estimated time: 1h 1m 2s",
+    "; filament used [mm] = 5578.48",
+    "; filament used [cm3] = 13.42",
+    "; filament used [g] = 14.09"
+  ],
+  "analysis_geometry_sha256": "c9d27d8b7e4ae3ef83991df89d00e1464c3a35f7e7ad09cb7f0d81c9d349797f",
+  "analysis_feature_scope": "All positive-extrusion model paths; bridge-tagged and all-feature maxima are reported separately."
+}

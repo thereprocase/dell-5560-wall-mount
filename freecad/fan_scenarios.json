@@ -1,0 +1,87 @@
+{
+  "snapshot_sha256": "60dcb7d7d6636aafcde7e2fb20d1408b386ff3aea8a5f2639ca37095bb57a293",
+  "cases": {
+    "fan_size": {
+      "values": {
+        "fanFrameWidth": 120.5,
+        "fanThicknessNominal": 25.5,
+        "ductSkinNominal": 2.2,
+        "grilleBarWidth": 2.6
+      },
+      "invalid_parts": [],
+      "feature_errors": [],
+      "valid": true,
+      "seconds": 43.63775825500488,
+      "keyed_joint_overlaps": {
+        "left fan_duct": {
+          "valid": true,
+          "volume_mm3": 180.81893133074126
+        },
+        "left outlet_rail": {
+          "valid": true,
+          "volume_mm3": 0.0
+        },
+        "right fan_duct": {
+          "valid": true,
+          "volume_mm3": 180.8189313307419
+        },
+        "right outlet_rail": {
+          "valid": true,
+          "volume_mm3": 0.0
+        }
+      },
+      "clearance_pass": false,
+      "restored_errors": []
+    },
+    "fan_pose": {
+      "values": {
+        "fanAngle": 46,
+        "fanCenterY": 67.5,
+        "fanCenterZ": -83.5
+      },
+      "invalid_parts": [],
+      "feature_errors": [],
+      "valid": true,
+      "seconds": 43.299065828323364,
+      "keyed_joint_overlaps": {
+        "left fan_duct": {
+          "valid": true,
+          "volume_mm3": 0.0
+        },
+        "left outlet_rail": {
+          "valid": true,
+          "volume_mm3": 0.0
+        },
+        "right fan_duct": {
+          "valid": true,
+          "volume_mm3": 0.0
+        },
+        "right outlet_rail": {
+          "valid": true,
+          "volume_mm3": 0.0
+        }
+      },
+      "clearance_pass": true,
+      "restored_errors": []
+    }
+  },
+  "restored_solid_validity": {
+    "02_right_cradle": true,
+    "01_left_cradle": true,
+    "04_right_fan_duct": true,
+    "03_left_fan_duct": true,
+    "06_right_fan_retainer": true,
+    "05_left_fan_retainer": true,
+    "08_right_outlet_rail": true,
+    "07_left_outlet_rail": true,
+    "10_right_fan_tray": true,
+    "09_left_fan_tray": true,
+    "11_left_push_pin": true,
+    "12_right_push_pin": true,
+    "13_left_push_pin": true,
+    "14_right_push_pin": true
+  },
+  "regeneration_pass": true,
+  "clearance_pass": false,
+  "all_pass": false
+}

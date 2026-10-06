@@ -1,0 +1,48 @@
+const { chromium }=require('../freecad/showcase/tooling/node_modules/playwright');
+const fs=require('fs');
+const path=require('path');
+const base=process.argv[2]||'http://127.0.0.1:8892/';
+const full=process.argv.includes('--full');
+(async()=>{
+  const browser=await chromium.launch({executablePath:'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe',headless:true,args:['--enable-webgl','--ignore-gpu-blocklist']});
+  const page=await browser.newPage({viewport:{width:1440,height:1000},deviceScaleFactor:1});
+  const errors=[];page.on('pageerror',e=>errors.push(e.message));page.on('response',r=>{if(r.status()>=400)errors.push(r.status()+' '+new URL(r.url()).pathname);});
+  const out=path.join(__dirname,'browser');fs.mkdirSync(out,{recursive:true});
+  await page.goto(base,{waitUntil:'networkidle'});
+  await page.waitForFunction(()=>window.minimalistReady&&window.showcaseReady,{timeout:60000});
+  await page.locator('#m1-reinforcement').screenshot({path:path.join(out,'reinforced-wall-junctions.png')});
+  const reinforcement=await page.locator('#m1-reinforcement').innerText();
+  if(!reinforcement.includes('M1.1')||!reinforcement.includes('416 mm²'))errors.push('Missing reinforced wall junction evidence');
+  await page.locator('#m1-model').screenshot({path:path.join(out,'desktop-model.png')});
+  const presets=await page.locator('#m1-preset option').evaluateAll(a=>a.map(x=>x.value));
+  for(const name of presets){await page.selectOption('#m1-preset',name);await page.waitForFunction(n=>window.minimalistPreset===n,name);}
+  await page.locator('#m1-index').fill('0');await page.locator('#m1-index').dispatchEvent('input');
+  const lowered=await page.evaluate(()=>window.minimalistState());
+  if(lowered.damZ!==-96)errors.push('Dam did not move to lowest index');
+  await page.locator('#m1-dam').uncheck();
+  if((await page.evaluate(()=>window.minimalistState())).visibleParts!==14)errors.push('Optional dam did not remove six parts');
+  await page.locator('#m1-dam').check();await page.locator('#m1-explode').fill('75');await page.locator('#m1-explode').dispatchEvent('input');
+  await page.locator('#m1-model').screenshot({path:path.join(out,'largest-exploded.png')});
+  await page.locator('#before').click();await page.selectOption('#focus','fan');await page.locator('#after').click();
+  await page.locator('[data-cfd="pressure"]').click();await page.locator('#cfd-zoom').click();await page.locator('#close-plot').click();
+  const downloads=new Set();
+  const cfdLink=await page.locator('#revh-cfd a').getAttribute('href');
+  if(cfdLink!=='simulation/revh-transient/')errors.push('Missing Rev H commissioning report link');
+  const cfdStatus=await (await page.request.get(new URL(cfdLink+'status.json',base).href)).json();
+  if(cfdStatus.expanded_mesh_ok!==false||cfdStatus.mesh_quality_disposition.validation_accepted!==false||cfdStatus.shedding_demonstrated!==false||cfdStatus.lip_suction_demonstrated!==false)errors.push('CFD commissioning boundary changed');
+  if(Math.abs(cfdStatus.latest_completed_time_s*1000-0.02030843184)>1e-9)errors.push('CFD elapsed-time mismatch');
+  if(full){for(const url of await page.locator('a[download]').evaluateAll(a=>a.map(x=>x.href)))downloads.add(url);await page.goto(new URL('minimalist-guide.html',base).href,{waitUntil:'networkidle'});for(const url of await page.locator('a[download]').evaluateAll(a=>a.map(x=>x.href)))downloads.add(url);for(const url of downloads){const response=await page.request.get(url);if(!response.ok())errors.push('Download failed '+new URL(url).pathname);}}
+  await page.setViewportSize({width:390,height:844});await page.goto(base,{waitUntil:'networkidle'});await page.waitForFunction(()=>window.minimalistReady&&window.showcaseReady);
+  const overflow=await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth);
+  if(overflow)errors.push('Mobile horizontal overflow');
+  await page.locator('#m1-model').screenshot({path:path.join(out,'mobile-model.png')});
+  await page.goto(new URL('minimalist-guide.html',base).href,{waitUntil:'networkidle'});
+  await page.locator('#reinforcement').scrollIntoViewIfNeeded();
+  const brokenImages=await page.locator('img').evaluateAll(a=>a.filter(x=>!x.complete||x.naturalWidth===0).map(x=>x.getAttribute('src')));
+  if(brokenImages.length)errors.push('Guide image failures: '+brokenImages.join(', '));
+  if(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth))errors.push('Guide mobile horizontal overflow');
+  await page.screenshot({path:path.join(out,'mobile-guide.png')});
+  const report={base:new URL(base).hostname==='127.0.0.1'?'local preview':base,errors,presets:presets.length,damLowestShiftMm:lowered.damZ,optionalDamRemovedParts:6,mobileOverflow:overflow,downloadChecks:downloads.size,wallTransitionRevision:'M1.1',guideImageFailures:brokenImages,revhCommissioningLink:cfdLink,revhValidationAccepted:false};
+  fs.writeFileSync(path.join(out,'review.json'),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report));
+  await browser.close();if(errors.length)process.exitCode=1;
+})().catch(e=>{console.error(e);process.exitCode=1;});

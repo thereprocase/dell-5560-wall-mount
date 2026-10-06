@@ -1,0 +1,123 @@
+{
+  "instances": 14,
+  "distinct_part_sources": 11,
+  "solve_result": "0",
+  "joint_types": {
+    "GroundedCradle": "Grounded",
+    "Joint": "Fixed",
+    "Joint001": "Fixed",
+    "Joint002": "Fixed",
+    "Joint003": "Slider",
+    "Joint004": "Fixed",
+    "Joint005": "Fixed",
+    "GroundedCradle001": "Grounded",
+    "Joint006": "Fixed",
+    "Joint007": "Fixed",
+    "Joint008": "Fixed",
+    "Joint009": "Slider",
+    "Joint010": "Fixed",
+    "Joint011": "Fixed"
+  },
+  "parts": {
+    "02_right_cradle": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 274207.0057675676,
+      "symmetric_difference_mm3": 0.0
+    },
+    "01_left_cradle": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 274207.0057675676,
+      "symmetric_difference_mm3": 0.0
+    },
+    "04_right_fan_duct": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 137915.52535194164,
+      "symmetric_difference_mm3": 0.0
+    },
+    "03_left_fan_duct": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 137915.52535194164,
+      "symmetric_difference_mm3": 0.0
+    },
+    "06_right_fan_retainer": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 24834.544404382686,
+      "symmetric_difference_mm3": 0.0
+    },
+    "05_left_fan_retainer": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 24834.544404382686,
+      "symmetric_difference_mm3": 0.0
+    },
+    "08_right_outlet_rail": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 63831.94036874406,
+      "symmetric_difference_mm3": 0.0
+    },
+    "07_left_outlet_rail": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 63831.94036874406,
+      "symmetric_difference_mm3": 0.0
+    },
+    "10_right_fan_tray": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 87444.07619047657,
+      "symmetric_difference_mm3": 0.0
+    },
+    "09_left_fan_tray": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 87444.07619047652,
+      "symmetric_difference_mm3": 0.0
+    },
+    "11_left_push_pin": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 204.56030211057194,
+      "symmetric_difference_mm3": 0.0
+    },
+    "12_right_push_pin": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 204.5603021105719,
+      "symmetric_difference_mm3": 0.0
+    },
+    "13_left_push_pin": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 204.56030211057208,
+      "symmetric_difference_mm3": 0.0
+    },
+    "14_right_push_pin": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 204.56030211057208,
+      "symmetric_difference_mm3": 0.0
+    }
+  },
+  "solver_translation_delta_mm": {
+    "02_right_cradle": 0.0,
+    "01_left_cradle": 0.0,
+    "04_right_fan_duct": 0.0,
+    "03_left_fan_duct": 0.0,
+    "06_right_fan_retainer": 0.0,
+    "05_left_fan_retainer": 0.0,
+    "08_right_outlet_rail": 0.0,
+    "07_left_outlet_rail": 0.0,
+    "10_right_fan_tray": 0.0,
+    "09_left_fan_tray": 0.0,
+    "11_left_push_pin": 0.0,
+    "12_right_push_pin": 0.0,
+    "13_left_push_pin": 0.0,
+    "14_right_push_pin": 0.0
+  }
+}

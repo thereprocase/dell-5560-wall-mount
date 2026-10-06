@@ -1,0 +1,13 @@
+{
+  "status": "done",
+  "navigation": "Revit",
+  "background": "#9EA6AD",
+  "toolbar": "StudioWorkflow",
+  "docks": {
+    "Selection view": false,
+    "Model": true,
+    "Python console": false,
+    "Report view": false,
+    "Tasks": true
+  }
+}

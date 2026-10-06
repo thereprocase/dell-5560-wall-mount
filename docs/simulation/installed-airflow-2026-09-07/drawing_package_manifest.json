@@ -1,0 +1,14 @@
+{
+  "pdf": "Precision_5560_CFD_Technical_Review.pdf",
+  "sha256": "cbc1060ab479091e0a1428df61aedfb57a6d95e624494db5be0a23dc40328037",
+  "pages": 7,
+  "page_format": "A3 landscape",
+  "render_qa": "MuPDF 1.28.2; per-sheet PNG inspection",
+  "sources": {
+    "fusion\\cfd\\cases\\OpenCFD_v2412\\installed_pressure10_v3\\log.simpleFoam_windows": "fd266f3359167c1bdaf45c08eee9c57f8dd9b64f7d6d03d165a693785a1f4458",
+    "fusion\\cfd\\cases\\OpenCFD_v2412\\installed_pressure10_v3\\results\\iteration_1200\\flow_samples.json": "e85ad481574e2fc9d57307a172540f06a91c2a6af3c4bc00c3fc33bbbeb0b7c9",
+    "output\\pdf\\assets_release\\plot_provenance.json": "f346b2425e52eb72d5006b1dd7af809487be972ba160ad2c4813ab940a6010b2",
+    "fusion\\cfd\\build_drawing_package.py": "34c339b5285328b06f6d0338235f770295b488dc90e3837460f72cc6aaafda64",
+    "fusion\\cfd\\drawing_assets.py": "9ae611e4b9859b5c033744ee92f1a3f0b9079b2f523feb4bd63b82a4e08ab075"
+  }
+}

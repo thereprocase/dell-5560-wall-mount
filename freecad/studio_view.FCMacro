@@ -1,0 +1,64 @@
+"""Reopen the native model with a persistent studio display preset."""
+from pathlib import Path
+import json,shutil,time
+import FreeCAD as App,FreeCADGui as Gui
+from PySide import QtCore,QtWidgets
+ROOT=Path('F:/Code/dell-5560-wall-mount-standby/freecad')
+try:
+    stamp=time.strftime('%Y%m%d-%H%M%S')
+    model=ROOT/'Precision_5560_Native.FCStd'
+    shutil.copy2(model,ROOT/('BeforeStudio-'+stamp+'.FCStd'))
+    prefs=App.ParamGet('User parameter:BaseApp/Preferences/View')
+    prefs.Export(str(ROOT/('display-before-'+stamp+'.FCParam')))
+    prefs.SetInt('AntiAliasing',4) # FreeCAD enum 4 means MSAA 8x, not sample count.
+    prefs.SetBool('UseVBO',True); prefs.SetInt('RenderCache',0)
+    App.ParamGet('User parameter:BaseApp/Preferences/OpenGL').SetBool('UseSoftwareOpenGL',False)
+    prefs.SetBool('Simple',False); prefs.SetBool('Gradient',True); prefs.SetBool('RadialGradient',False)
+    prefs.SetBool('UseBackgroundColorMid',False)
+    prefs.SetUnsigned('BackgroundColor2',0x202830FF); prefs.SetUnsigned('BackgroundColor3',0x566776FF)
+    light=prefs.GetGroup('LightSources')
+    for key in ['EnableHeadlight','EnableBacklight','EnableFillLight']: light.SetBool(key,True)
+    for key,value in {'HeadlightIntensity':85,'FillLightIntensity':30,'BacklightIntensity':65,'AmbientLightIntensity':18}.items(): light.SetInt(key,value)
+    for key,value in {'HeadlightColor':0xFFF4E8FF,'FillLightColor':0xD5E8FFFF,'BacklightColor':0xE9F3FFFF,'AmbientLightColor':0xFFFFFFFF}.items(): light.SetUnsigned(key,value)
+    for key,value in {'HeadlightDirection':'(0.6841049,-0.12062616,-0.7193398)','FillLightDirection':'(-0.6403416,0.7631294,0.087155744)','BacklightDirection':'(-0.7544065,-0.63302225,-0.17364818)'}.items(): light.SetString(key,value)
+    App.saveParameter()
+    D=next((d for d in App.listDocuments().values() if d.FileName and Path(d.FileName).resolve()==model.resolve()),None)
+    if D is None: D=App.openDocument(str(model))
+    App.setActiveDocument(D.Name)
+    changed=[]
+    for o in D.Objects:
+        v=o.ViewObject
+        if hasattr(v,'Deviation'): v.Deviation=.05
+        if hasattr(v,'AngularDeflection'): v.AngularDeflection=5
+        if hasattr(v,'LineWidth'): v.LineWidth=1
+        if hasattr(v,'LineColor'): v.LineColor=(.07,.09,.11)
+        if hasattr(v,'DisplayMode') and 'Shaded' in v.listDisplayModes(): v.DisplayMode='Shaded'
+        if hasattr(v,'ShapeMaterial'):
+            material=v.ShapeMaterial
+            material.SpecularColor=(.55,.60,.65); material.Shininess=45
+            v.ShapeMaterial=material
+        if hasattr(o,'PartKey') or (o.TypeId=='PartDesign::Body' and 'pin' in o.Label.lower()):
+            key=getattr(o,'PartKey',o.Label).lower()
+            color=(.12,.53,.59) if any(k in key for k in ['duct','rail']) else ((.88,.59,.18) if 'pin' in key else (.46,.52,.59))
+            if hasattr(v,'ShapeColor'): v.ShapeColor=color
+            changed.append(o.Name)
+    for o in D.getObject('InstalledAssembly').Group:
+        if o.TypeId=='Assembly::JointGroup':
+            o.Visibility=False
+            for j in o.Group: j.Visibility=False
+    view=Gui.activeDocument().mdiViewsOfType('Gui::View3DInventor')[0]
+    view.setCameraType('Perspective')
+    view.setCameraOrientation(App.Rotation(App.Vector(0,0,1),210).multiply(App.Rotation(App.Vector(1,0,0),65)).Q)
+    view.fitAll(); Gui.activeDocument().activeView().redraw()
+    D.save()
+    for script in ['live_runner.FCMacro','capture_log.py']:
+        exec(compile((ROOT/script).read_text(encoding='utf-8-sig'),str(ROOT/script),'exec'),{'__name__':'__main__','__file__':str(ROOT/script)})
+    Gui.getMainWindow().showMaximized(); Gui.getMainWindow().raise_()
+    def capture():
+        view.saveImage(str(ROOT/'studio_preview.png'),1920,1440,'Current')
+        (ROOT/'studio_status.json').write_text(json.dumps({'status':'done','document':D.FileName,'styled_sources':changed,'invalid_features':[o.Name for o in D.Objects if 'Invalid' in o.State],'camera':view.getCameraType(),'preferences':prefs.GetContents(),'lights':light.GetContents()},indent=2),encoding='utf-8')
+    QtCore.QTimer.singleShot(2000,capture)
+except Exception:
+    import traceback
+    (ROOT/'studio_status.json').write_text(json.dumps({'status':'failed','error':traceback.format_exc()},indent=2),encoding='utf-8')
+    App.Console.PrintError(traceback.format_exc())

@@ -1,0 +1,131 @@
+{
+  "snapshot_sha256": "6d9c63a822968d1979d0fa302c43e6d8f6f583332d2b6c31b14a979491a976b1",
+  "cases": {
+    "layout": {
+      "values": {
+        "laptopWidth": 346.4,
+        "laptopHeight": 231.3,
+        "laptopThickness": 20.5,
+        "wallGap": 40.5,
+        "tineHeight": 95,
+        "wallHoleDiameter": 7.2,
+        "wallDriverDiameter": 16.2,
+        "lowerWallHoleZ": -35.5,
+        "upperWallHoleZ": 174.5
+      },
+      "invalid_parts": [],
+      "feature_errors": [],
+      "valid": true,
+      "seconds": 45.25008726119995,
+      "keyed_joint_overlaps": {
+        "left fan_duct": {
+          "valid": true,
+          "volume_mm3": 0.0
+        },
+        "left outlet_rail": {
+          "valid": true,
+          "volume_mm3": 0.0
+        },
+        "right fan_duct": {
+          "valid": true,
+          "volume_mm3": 0.0
+        },
+        "right outlet_rail": {
+          "valid": true,
+          "volume_mm3": 0.0
+        }
+      },
+      "restored_errors": [],
+      "clearance_pass": true
+    },
+    "fan_module": {
+      "values": {
+        "fanFrameWidth": 120.5,
+        "fanThicknessNominal": 25.5,
+        "fanAngle": 46,
+        "fanCenterY": 67.5,
+        "fanCenterZ": -83.5,
+        "ductSkinNominal": 2.2,
+        "grilleBarWidth": 2.6
+      },
+      "invalid_parts": [],
+      "feature_errors": [],
+      "valid": true,
+      "seconds": 45.820088624954224,
+      "keyed_joint_overlaps": {
+        "left fan_duct": {
+          "valid": true,
+          "volume_mm3": 180.81893133069437
+        },
+        "left outlet_rail": {
+          "valid": true,
+          "volume_mm3": 0.0
+        },
+        "right fan_duct": {
+          "valid": true,
+          "volume_mm3": 180.818931330695
+        },
+        "right outlet_rail": {
+          "valid": true,
+          "volume_mm3": 0.0
+        }
+      },
+      "restored_errors": [],
+      "clearance_pass": false
+    },
+    "fits": {
+      "values": {
+        "keyClearance": 0.35,
+        "trayHorizontalClearance": 0.35,
+        "trayRoofClearance": 0.35,
+        "trayRootClearance": 0.25,
+        "pinSocketDiameter": 4.2,
+        "capPinPassageDiameter": 4.6,
+        "pinSplitWidth": 1.2
+      },
+      "invalid_parts": [],
+      "feature_errors": [],
+      "valid": true,
+      "seconds": 44.30603337287903,
+      "keyed_joint_overlaps": {
+        "left fan_duct": {
+          "valid": true,
+          "volume_mm3": 0.0
+        },
+        "left outlet_rail": {
+          "valid": true,
+          "volume_mm3": 0.0
+        },
+        "right fan_duct": {
+          "valid": true,
+          "volume_mm3": 0.0
+        },
+        "right outlet_rail": {
+          "valid": true,
+          "volume_mm3": 0.0
+        }
+      },
+      "restored_errors": [],
+      "clearance_pass": true
+    }
+  },
+  "restored_solid_validity": {
+    "02_right_cradle": true,
+    "01_left_cradle": true,
+    "04_right_fan_duct": true,
+    "03_left_fan_duct": true,
+    "06_right_fan_retainer": true,
+    "05_left_fan_retainer": true,
+    "08_right_outlet_rail": true,
+    "07_left_outlet_rail": true,
+    "10_right_fan_tray": true,
+    "09_left_fan_tray": true,
+    "11_left_push_pin": true,
+    "12_right_push_pin": true,
+    "13_left_push_pin": true,
+    "14_right_push_pin": true
+  },
+  "all_pass": false,
+  "regeneration_pass": true,
+  "clearance_pass": false
+}

@@ -1,0 +1,91 @@
+{
+  "scope": "Backend commissioning benchmark only; source mesh is not accepted for validation.",
+  "source": "revh_sequence_05",
+  "backend": "cpu",
+  "state": "completed_pending_field_comparison",
+  "started_utc": "2026-09-08T15:23:44.146720+00:00",
+  "ranks": 4,
+  "dt_s": 1e-05,
+  "steps": 10,
+  "timeout_s": 600,
+  "phases": {
+    "zones": {
+      "command": [
+        "topoSet"
+      ],
+      "wall_seconds": 2.421044200003962,
+      "exit_code": 0
+    },
+    "decompose": {
+      "command": [
+        "decomposePar"
+      ],
+      "wall_seconds": 7.7864974969998,
+      "exit_code": 0
+    },
+    "solve": {
+      "command": [
+        "mpirun",
+        "--bind-to",
+        "none",
+        "-np",
+        "4",
+        "pimpleFoam",
+        "-parallel"
+      ],
+      "wall_seconds": 178.31437867099885,
+      "exit_code": 0
+    },
+    "reconstruct": {
+      "command": [
+        "reconstructPar",
+        "-latestTime"
+      ],
+      "wall_seconds": 4.781831423999392,
+      "exit_code": 0
+    }
+  },
+  "reported_clock_times_s": [
+    28.0,
+    46.0,
+    62.0,
+    79.0,
+    95.0,
+    111.0,
+    127.0,
+    143.0,
+    160.0,
+    176.0
+  ],
+  "physical_times_s": [
+    1e-05,
+    2e-05,
+    3e-05,
+    4e-05,
+    5e-05,
+    6e-05,
+    7e-05,
+    8e-05,
+    9e-05,
+    0.0001
+  ],
+  "pressure_iterations_total": 474,
+  "pressure_iterations_max": 16,
+  "pressure_calls": 120,
+  "bounding_events": 5,
+  "courant_max_values": [
+    0.0,
+    0.0,
+    0.0,
+    0.0002193208964,
+    0.0004502445162,
+    0.0006895508581,
+    0.0009280244824,
+    0.001165549322,
+    0.001405158218,
+    0.001644951262,
+    0.001885001066,
+    0.002125211215
+  ],
+  "finished_utc": "2026-09-08T15:27:00.844630+00:00"
+}

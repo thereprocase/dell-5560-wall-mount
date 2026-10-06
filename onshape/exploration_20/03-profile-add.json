@@ -1,0 +1,343 @@
+{
+  "status": 200,
+  "data": {
+    "btType": "BTFeatureDefinitionResponse-1617",
+    "rejectMicroversionSkew": false,
+    "microversionSkew": false,
+    "featureState": {
+      "btType": "BTFeatureState-1688",
+      "featureStatus": "OK",
+      "inactive": false
+    },
+    "feature": {
+      "btType": "BTMSketch-151",
+      "parameterLibraries": [],
+      "returnAfterSubfeatures": false,
+      "subFeatures": [],
+      "entities": [
+        {
+          "btType": "BTMSketchCurveSegment-155",
+          "geometry": {
+            "btType": "BTCurveGeometryLine-117",
+            "pntX": 0.0,
+            "pntY": 0.0,
+            "dirX": 1.0,
+            "dirY": 0.0
+          },
+          "isConstruction": false,
+          "offsetCurveExtensions": [],
+          "startPointId": "edge0.start",
+          "endPointId": "edge0.end",
+          "startParam": 0.0,
+          "endParam": 0.004,
+          "centerId": "",
+          "isFromSplineHandle": false,
+          "internalIds": [],
+          "curvedTextIds": [],
+          "isFromSplineControlPolygon": false,
+          "isFromEndpointSplineHandle": false,
+          "namespace": "",
+          "name": "",
+          "index": 1,
+          "parameters": [],
+          "nodeId": "MVJkGmw/e8VOoHbN6",
+          "entityId": "edge0"
+        },
+        {
+          "btType": "BTMSketchCurveSegment-155",
+          "geometry": {
+            "btType": "BTCurveGeometryLine-117",
+            "pntX": 0.004,
+            "pntY": 0.0,
+            "dirX": 0.0,
+            "dirY": 1.0
+          },
+          "isConstruction": false,
+          "offsetCurveExtensions": [],
+          "startPointId": "edge1.start",
+          "endPointId": "edge1.end",
+          "startParam": 0.0,
+          "endParam": 0.0014,
+          "centerId": "",
+          "isFromSplineHandle": false,
+          "internalIds": [],
+          "curvedTextIds": [],
+          "isFromSplineControlPolygon": false,
+          "isFromEndpointSplineHandle": false,
+          "namespace": "",
+          "name": "",
+          "index": 2,
+          "parameters": [],
+          "nodeId": "MdPN85yxi2CcnBjG2",
+          "entityId": "edge1"
+        },
+        {
+          "btType": "BTMSketchCurveSegment-155",
+          "geometry": {
+            "btType": "BTCurveGeometryLine-117",
+            "pntX": 0.004,
+            "pntY": 0.0014,
+            "dirX": -0.7071067811865476,
+            "dirY": 0.7071067811865476
+          },
+          "isConstruction": false,
+          "offsetCurveExtensions": [],
+          "startPointId": "edge2.start",
+          "endPointId": "edge2.end",
+          "startParam": 0.0,
+          "endParam": 0.0008485281374238571,
+          "centerId": "",
+          "isFromSplineHandle": false,
+          "internalIds": [],
+          "curvedTextIds": [],
+          "isFromSplineControlPolygon": false,
+          "isFromEndpointSplineHandle": false,
+          "namespace": "",
+          "name": "",
+          "index": 3,
+          "parameters": [],
+          "nodeId": "MvoKy2KmxF7TkGo89",
+          "entityId": "edge2"
+        },
+        {
+          "btType": "BTMSketchCurveSegment-155",
+          "geometry": {
+            "btType": "BTCurveGeometryLine-117",
+            "pntX": 0.0034,
+            "pntY": 0.002,
+            "dirX": -1.0,
+            "dirY": 0.0
+          },
+          "isConstruction": false,
+          "offsetCurveExtensions": [],
+          "startPointId": "edge3.start",
+          "endPointId": "edge3.end",
+          "startParam": 0.0,
+          "endParam": 0.0014,
+          "centerId": "",
+          "isFromSplineHandle": false,
+          "internalIds": [],
+          "curvedTextIds": [],
+          "isFromSplineControlPolygon": false,
+          "isFromEndpointSplineHandle": false,
+          "namespace": "",
+          "name": "",
+          "index": 4,
+          "parameters": [],
+          "nodeId": "Mis8Us9B2L46B1n07",
+          "entityId": "edge3"
+        },
+        {
+          "btType": "BTMSketchCurveSegment-155",
+          "geometry": {
+            "btType": "BTCurveGeometryLine-117",
+            "pntX": 0.002,
+            "pntY": 0.002,
+            "dirX": 0.0,
+            "dirY": 1.0
+          },
+          "isConstruction": false,
+          "offsetCurveExtensions": [],
+          "startPointId": "edge4.start",
+          "endPointId": "edge4.end",
+          "startParam": 0.0,
+          "endParam": 0.01,
+          "centerId": "",
+          "isFromSplineHandle": false,
+          "internalIds": [],
+          "curvedTextIds": [],
+          "isFromSplineControlPolygon": false,
+          "isFromEndpointSplineHandle": false,
+          "namespace": "",
+          "name": "",
+          "index": 5,
+          "parameters": [],
+          "nodeId": "MkbgRrEOO2MLTevPq",
+          "entityId": "edge4"
+        },
+        {
+          "btType": "BTMSketchCurveSegment-155",
+          "geometry": {
+            "btType": "BTCurveGeometryLine-117",
+            "pntX": 0.002,
+            "pntY": 0.012,
+            "dirX": 1.0,
+            "dirY": 0.0
+          },
+          "isConstruction": false,
+          "offsetCurveExtensions": [],
+          "startPointId": "edge5.start",
+          "endPointId": "edge5.end",
+          "startParam": 0.0,
+          "endParam": 0.00010000000000000009,
+          "centerId": "",
+          "isFromSplineHandle": false,
+          "internalIds": [],
+          "curvedTextIds": [],
+          "isFromSplineControlPolygon": false,
+          "isFromEndpointSplineHandle": false,
+          "namespace": "",
+          "name": "",
+          "index": 6,
+          "parameters": [],
+          "nodeId": "MKNKv5VZajc+6fiOV",
+          "entityId": "edge5"
+        },
+        {
+          "btType": "BTMSketchCurveSegment-155",
+          "geometry": {
+            "btType": "BTCurveGeometryLine-117",
+            "pntX": 0.0021000000000000003,
+            "pntY": 0.012,
+            "dirX": -0.24253562503633297,
+            "dirY": 0.9701425001453319
+          },
+          "isConstruction": false,
+          "offsetCurveExtensions": [],
+          "startPointId": "edge6.start",
+          "endPointId": "edge6.end",
+          "startParam": 0.0,
+          "endParam": 0.00206155281280883,
+          "centerId": "",
+          "isFromSplineHandle": false,
+          "internalIds": [],
+          "curvedTextIds": [],
+          "isFromSplineControlPolygon": false,
+          "isFromEndpointSplineHandle": false,
+          "namespace": "",
+          "name": "",
+          "index": 7,
+          "parameters": [],
+          "nodeId": "M7W5DrY2e4HmPeG+L",
+          "entityId": "edge6"
+        },
+        {
+          "btType": "BTMSketchCurveSegment-155",
+          "geometry": {
+            "btType": "BTCurveGeometryLine-117",
+            "pntX": 0.0016,
+            "pntY": 0.014,
+            "dirX": -1.0,
+            "dirY": 0.0
+          },
+          "isConstruction": false,
+          "offsetCurveExtensions": [],
+          "startPointId": "edge7.start",
+          "endPointId": "edge7.end",
+          "startParam": 0.0,
+          "endParam": 0.0016,
+          "centerId": "",
+          "isFromSplineHandle": false,
+          "internalIds": [],
+          "curvedTextIds": [],
+          "isFromSplineControlPolygon": false,
+          "isFromEndpointSplineHandle": false,
+          "namespace": "",
+          "name": "",
+          "index": 8,
+          "parameters": [],
+          "nodeId": "MzI7PfO7lVcEm7+Rp",
+          "entityId": "edge7"
+        },
+        {
+          "btType": "BTMSketchCurveSegment-155",
+          "geometry": {
+            "btType": "BTCurveGeometryLine-117",
+            "pntX": 0.0,
+            "pntY": 0.014,
+            "dirX": 0.0,
+            "dirY": -1.0
+          },
+          "isConstruction": false,
+          "offsetCurveExtensions": [],
+          "startPointId": "edge8.start",
+          "endPointId": "edge8.end",
+          "startParam": 0.0,
+          "endParam": 0.014,
+          "centerId": "",
+          "isFromSplineHandle": false,
+          "internalIds": [],
+          "curvedTextIds": [],
+          "isFromSplineControlPolygon": false,
+          "isFromEndpointSplineHandle": false,
+          "namespace": "",
+          "name": "",
+          "index": 9,
+          "parameters": [],
+          "nodeId": "MrQEfkb5tM3R1BUe/",
+          "entityId": "edge8"
+        }
+      ],
+      "constraints": [],
+      "namespace": "",
+      "name": "Pin - axial profile (mm)",
+      "parameters": [
+        {
+          "btType": "BTMParameterQueryList-148",
+          "libraryRelationType": "DEFAULT",
+          "queries": [
+            {
+              "btType": "BTMIndividualQuery-138",
+              "queryStatement": null,
+              "queryString": "query=qCreatedBy(makeId(\"Front\"), EntityType.FACE);",
+              "nodeId": "MnKI9FHIa0rhFzQp9",
+              "deterministicIds": [
+                "JCC"
+              ]
+            }
+          ],
+          "filter": {
+            "btType": "BTOrFilter-167",
+            "operand1": {
+              "btType": "BTOrFilter-167",
+              "operand1": {
+                "btType": "BTAndFilter-110",
+                "operand1": {
+                  "btType": "BTGeometryFilter-130",
+                  "geometryType": "PLANE"
+                },
+                "operand2": {
+                  "btType": "BTFlatSheetMetalFilter-3018",
+                  "allows": "MODEL_ONLY"
+                }
+              },
+              "operand2": {
+                "btType": "BTAndFilter-110",
+                "operand1": {
+                  "btType": "BTAndFilter-110",
+                  "operand1": {
+                    "btType": "BTSMDefinitionEntityTypeFilter-1651",
+                    "smDefinitionEntityType": "FACE"
+                  },
+                  "operand2": {
+                    "btType": "BTFlatSheetMetalFilter-3018",
+                    "allows": "MODEL_AND_FLATTENED"
+                  }
+                },
+                "operand2": {
+                  "btType": "BTGeometryFilter-130",
+                  "geometryType": "PLANE"
+                }
+              }
+            },
+            "operand2": {
+              "btType": "BTBodyTypeFilter-112",
+              "bodyType": "MATE_CONNECTOR"
+            }
+          },
+          "nodeId": "MQUWAKk38seZl72mw",
+          "parameterId": "sketchPlane",
+          "parameterName": ""
+        }
+      ],
+      "nodeId": "M0E9mSikcujjUvL4w",
+      "featureId": "FsccNllSqSt2GtL_0",
+      "suppressed": false,
+      "featureType": "newSketch",
+      "suppressionState": null
+    },
+    "sourceMicroversion": "26767acde6dede240a08c215",
+    "libraryVersion": 0,
+    "serializationVersion": "1.2.21"
+  }
+}

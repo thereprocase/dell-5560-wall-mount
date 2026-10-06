@@ -1,0 +1,376 @@
+{
+  "stage": "duct",
+  "volume_mm3": 137915.52524050078,
+  "sketches": [
+    {
+      "name": "Outer station 1 station | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Outer station 1 | section",
+      "fully_constrained": true
+    },
+    {
+      "name": "Outer station 2 station | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Outer station 2 | section",
+      "fully_constrained": true
+    },
+    {
+      "name": "Outer station 3 station | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Outer station 3 | section",
+      "fully_constrained": true
+    },
+    {
+      "name": "Outer station 4 station | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Outer station 4 | section",
+      "fully_constrained": true
+    },
+    {
+      "name": "Inner station 1 station | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Inner station 1 | section",
+      "fully_constrained": true
+    },
+    {
+      "name": "Inner station 2 station | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Inner station 2 | section",
+      "fully_constrained": true
+    },
+    {
+      "name": "Inner station 3 station | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Inner station 3 | section",
+      "fully_constrained": true
+    },
+    {
+      "name": "Inner station 4 station | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Inner station 4 | section",
+      "fully_constrained": true
+    },
+    {
+      "name": "Fan mounting deck | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Fan inlet | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Tray seat recess | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Pin socket boss 1 | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Pin socket boss 2 | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Tray groove 1 | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Pin socket 1 | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Tray groove 2 | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Pin socket 2 | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Cradle joint saddle | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Diagonal saddle buttress | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Duct tenons 1 | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Duct tenons 2 | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Lower driver access bore | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Lower driver access roof | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Socket to channel boundary | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Inboard socket junction relief | profile",
+      "fully_constrained": true
+    }
+  ],
+  "features": [
+    {
+      "name": "Ruled outer span 1",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Ruled outer span 2",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Ruled outer span 3",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Unite three ruled spans",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Ruled inner span 1",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Ruled inner span 2",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Ruled inner span 3",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Hollow air path | shared skin thickness",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Fan mounting deck | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Fan mounting deck | section radii",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Fan inlet | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Open circular fan inlet",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Tray seat recess | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Recess sliding tray seat",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Pin socket boss 1 | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Pin socket boss 1 | section radii",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Pin socket boss 2 | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Pin socket boss 2 | section radii",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Join socket bosses to deck",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Tray groove 1 | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Cut sliding groove 1",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Pin socket 1 | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Drill pin socket 1",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Tray groove 2 | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Cut sliding groove 2",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Pin socket 2 | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Drill pin socket 2",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Orient fan seat | fan pivot",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Orient fan seat | inclination",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Orient fan seat | installed datum",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Join fan seat to channel inlet",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Cradle joint saddle | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Diagonal saddle buttress | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Duct tenons 1 | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Duct tenons 2 | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Join saddle buttress and tenons",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Lower driver access bore | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Lower driver access roof | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Lower driver access | printable bore",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Open printable driver corridor",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Socket to channel boundary | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Inboard socket junction relief | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Limit relief to inner ruled wall",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Orient socket junction relief | fan pivot",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Orient socket junction relief | inclination",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Orient socket junction relief | installed datum",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Resolve source socket opening",
+      "health": 0,
+      "message": ""
+    }
+  ],
+  "bodies": 1
+}

@@ -1,0 +1,11 @@
+{
+  "autodeskProduct": "Fusion",
+  "type": "addin",
+  "id": "3f8973f8-6dc7-4db4-86f0-13b3e6bd0b42",
+  "author": "Local CAD collaboration pilot",
+  "description": {"": "One-shot native pin pilot; local outputs in the wall-mount workspace."},
+  "version": "0.1.0",
+  "runOnStartup": true,
+  "supportedOS": "windows",
+  "editEnabled": true
+}

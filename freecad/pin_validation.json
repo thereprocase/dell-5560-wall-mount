@@ -1,0 +1,24 @@
+{
+  "volume_mm3": 204.56030211057183,
+  "solids": 1,
+  "valid": true,
+  "sketch_dof": {
+    "PinButtonProfile": true,
+    "PinShaftProfile": true,
+    "PinCrownRoot": true,
+    "PinCrownTip": true,
+    "PinSplitProfile": true
+  },
+  "feature_types": {
+    "PinButtonProfile": "Sketcher::SketchObject",
+    "PinButton": "PartDesign::Pad",
+    "PinButtonChamfer": "PartDesign::Chamfer",
+    "PinShaftProfile": "Sketcher::SketchObject",
+    "PinShaft": "PartDesign::Pad",
+    "PinCrownRoot": "Sketcher::SketchObject",
+    "PinCrownTip": "Sketcher::SketchObject",
+    "PinCrown": "PartDesign::AdditiveLoft",
+    "PinSplitProfile": "Sketcher::SketchObject",
+    "PinSplit": "PartDesign::Pocket"
+  }
+}

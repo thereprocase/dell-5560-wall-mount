@@ -1,0 +1,9 @@
+{
+  "unique_payloads": 1354,
+  "text_payloads": 679,
+  "archive_payloads": 10,
+  "findings": [],
+  "pass": true,
+  "scope": "H-R1 source, native metadata, print files, reports, root README, main and retainer pages, model assets and nested delivery archive.",
+  "images": "Published images are native CAD renders and an actual deposited-path plot; reviewed without application chrome or personal data."
+}

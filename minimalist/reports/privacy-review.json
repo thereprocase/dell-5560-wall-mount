@@ -1,0 +1,9 @@
+{
+  "unique_payloads": 1752,
+  "text_payloads": 766,
+  "archive_payloads": 196,
+  "findings": [],
+  "pass": true,
+  "scope": "New Minimalist source/preset metadata, root README and journal, published M1 assets, nested delivery archives, and Rev H STEP/Orca supplement. Generated local scratch, logs and raw slicer working directories excluded from publication.",
+  "image_review": "New published images are native geometry renders, a vector schematic and a toolpath plot; visually reviewed without application chrome or personal data."
+}

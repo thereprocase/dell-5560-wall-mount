@@ -1,0 +1,17 @@
+{
+  "phase": "zones",
+  "started_utc": "2026-09-08T12:33:38.242795+00:00",
+  "state": "complete",
+  "steps": [
+    {
+      "tool": "topoSet",
+      "executable_sha256": "501cf1b52331bab67cf63ec0065030f4d1bceec3309a3ad994aa6b560575c74c",
+      "arguments": [],
+      "parallel": false,
+      "log": "log.topoSet",
+      "exit_code": 0,
+      "wall_seconds": 7.85899999999674
+    }
+  ],
+  "finished_utc": "2026-09-08T12:33:46.117340+00:00"
+}

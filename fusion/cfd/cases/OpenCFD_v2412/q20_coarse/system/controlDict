@@ -1,0 +1,111 @@
+/* Generated for OpenCFD OpenFOAM v2412; setup only. */
+FoamFile
+{
+    version 2.0;
+    format ascii;
+    class dictionary;
+    object controlDict;
+}
+
+application simpleFoam;
+startFrom startTime;
+startTime 0;
+stopAt endTime;
+endTime 2000;
+deltaT 1;
+writeControl timeStep;
+writeInterval 100;
+purgeWrite 0;
+writeFormat ascii;
+writePrecision 10;
+writeCompression off;
+timeFormat general;
+timePrecision 8;
+runTimeModifiable true;
+functions
+{
+    fan_left_phi
+    {
+        type surfaceFieldValue;
+        libs (fieldFunctionObjects);
+        regionType patch;
+        name fan_left;
+        operation sum;
+        fields (phi);
+        writeFields false;
+        log true;
+        writeControl timeStep;
+        writeInterval 10;
+    }
+    fan_left_p
+    {
+        type surfaceFieldValue;
+        libs (fieldFunctionObjects);
+        regionType patch;
+        name fan_left;
+        operation areaAverage;
+        fields (p);
+        writeFields false;
+        log true;
+        writeControl timeStep;
+        writeInterval 10;
+    }
+    fan_right_phi
+    {
+        type surfaceFieldValue;
+        libs (fieldFunctionObjects);
+        regionType patch;
+        name fan_right;
+        operation sum;
+        fields (phi);
+        writeFields false;
+        log true;
+        writeControl timeStep;
+        writeInterval 10;
+    }
+    fan_right_p
+    {
+        type surfaceFieldValue;
+        libs (fieldFunctionObjects);
+        regionType patch;
+        name fan_right;
+        operation areaAverage;
+        fields (p);
+        writeFields false;
+        log true;
+        writeControl timeStep;
+        writeInterval 10;
+    }
+    outlet_phi
+    {
+        type surfaceFieldValue;
+        libs (fieldFunctionObjects);
+        regionType patch;
+        name outlet;
+        operation sum;
+        fields (phi);
+        writeFields false;
+        log true;
+        writeControl timeStep;
+        writeInterval 10;
+    }
+    outlet_p
+    {
+        type surfaceFieldValue;
+        libs (fieldFunctionObjects);
+        regionType patch;
+        name outlet;
+        operation areaAverage;
+        fields (p);
+        writeFields false;
+        log true;
+        writeControl timeStep;
+        writeInterval 10;
+    }
+    wallResolution
+    {
+        type yPlus;
+        libs (fieldFunctionObjects);
+        writeControl writeTime;
+    }
+}

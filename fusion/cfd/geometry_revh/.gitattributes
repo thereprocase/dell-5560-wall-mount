@@ -1,0 +1,5 @@
+# Preserve the exact geometry and check evidence bytes recorded in manifests.
+* -text
+*.stl -diff
+*.step -diff
+*.brep -diff

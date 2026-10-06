@@ -1,0 +1,313 @@
+{
+  "source_gcode": "preview.gcode",
+  "source_gcode_sha256": "66fb47db39ca2c8f09ef75e1915b69542e636df2bbffd30b7f0c98a88d8cc1e0",
+  "layers": 150,
+  "method": "Model paths buffered by reported line width. Island support: previous layer plus 0.15 mm. A deposited bead is supported where it overlaps the prior-layer footprint by at least 0.05 mm: buffer that footprint by half the current bead width minus 0.05 mm. Report contiguous unsupported subsegments, not full move lengths. Same-layer anchoring order and physical sag are not proven.",
+  "floating_components": [],
+  "unsupported_by_feature_mm": {
+    "Internal solid infill": 0.10591667849749795,
+    "Top surface": 0.032919417569942405,
+    "Inner wall": 0.03327530342792433,
+    "Outer wall": 0.0634483274566851,
+    "Bridge": 0.08327430378801938
+  },
+  "max_bridge_move_mm": 7.603519250978458,
+  "max_unsupported_bridge_span_mm": 0.08327430378801938,
+  "bridge_path_count": 30,
+  "bridge_layers": [
+    23.2
+  ],
+  "longest_bridges": [
+    {
+      "z_mm": 23.2,
+      "move_length_mm": 7.603519250978458,
+      "unsupported_length_mm": 0.08327430378801938,
+      "unsupported_total_mm": 0.08327430378801938,
+      "feature": "Bridge"
+    },
+    {
+      "z_mm": 23.2,
+      "move_length_mm": 7.443005978769596,
+      "unsupported_length_mm": 0.08327430342792054,
+      "unsupported_total_mm": 0.08327430342792054,
+      "feature": "Bridge"
+    },
+    {
+      "z_mm": 23.2,
+      "move_length_mm": 7.443005978769596,
+      "unsupported_length_mm": 0.08327430342792054,
+      "unsupported_total_mm": 0.08327430342792054,
+      "feature": "Bridge"
+    },
+    {
+      "z_mm": 23.2,
+      "move_length_mm": 7.443005978769607,
+      "unsupported_length_mm": 0.08327430342792054,
+      "unsupported_total_mm": 0.08327430342792054,
+      "feature": "Bridge"
+    },
+    {
+      "z_mm": 23.2,
+      "move_length_mm": 7.602812111317766,
+      "unsupported_length_mm": 0.08327430342792054,
+      "unsupported_total_mm": 0.08327430342792054,
+      "feature": "Bridge"
+    },
+    {
+      "z_mm": 23.2,
+      "move_length_mm": 7.443005978769596,
+      "unsupported_length_mm": 0.08327430342791049,
+      "unsupported_total_mm": 0.08327430342791049,
+      "feature": "Bridge"
+    },
+    {
+      "z_mm": 23.2,
+      "move_length_mm": 7.443005978769596,
+      "unsupported_length_mm": 0.08327430342791049,
+      "unsupported_total_mm": 0.08327430342791049,
+      "feature": "Bridge"
+    },
+    {
+      "z_mm": 23.2,
+      "move_length_mm": 7.443005978769607,
+      "unsupported_length_mm": 0.08327430342790045,
+      "unsupported_total_mm": 0.08327430342790045,
+      "feature": "Bridge"
+    },
+    {
+      "z_mm": 23.2,
+      "move_length_mm": 7.442298905580188,
+      "unsupported_length_mm": 0.08256719701936806,
+      "unsupported_total_mm": 0.08256719701936806,
+      "feature": "Bridge"
+    },
+    {
+      "z_mm": 23.2,
+      "move_length_mm": 7.442298905580188,
+      "unsupported_length_mm": 0.08256719701936806,
+      "unsupported_total_mm": 0.08256719701936806,
+      "feature": "Bridge"
+    },
+    {
+      "z_mm": 23.2,
+      "move_length_mm": 7.442298905580188,
+      "unsupported_length_mm": 0.08256719701936806,
+      "unsupported_total_mm": 0.08256719701936806,
+      "feature": "Bridge"
+    },
+    {
+      "z_mm": 23.2,
+      "move_length_mm": 7.603519250978447,
+      "unsupported_length_mm": 0.08256719700373155,
+      "unsupported_total_mm": 0.08256719700373155,
+      "feature": "Bridge"
+    },
+    {
+      "z_mm": 23.2,
+      "move_length_mm": 7.603519250978447,
+      "unsupported_length_mm": 0.08256719700369136,
+      "unsupported_total_mm": 0.08256719700369136,
+      "feature": "Bridge"
+    },
+    {
+      "z_mm": 23.2,
+      "move_length_mm": 7.443005978769587,
+      "unsupported_length_mm": 0.08256719664669042,
+      "unsupported_total_mm": 0.08256719664669042,
+      "feature": "Bridge"
+    },
+    {
+      "z_mm": 23.2,
+      "move_length_mm": 7.443005978769607,
+      "unsupported_length_mm": 0.08256719664667032,
+      "unsupported_total_mm": 0.08256719664667032,
+      "feature": "Bridge"
+    },
+    {
+      "z_mm": 23.2,
+      "move_length_mm": 7.443005978769607,
+      "unsupported_length_mm": 0.08256719664667032,
+      "unsupported_total_mm": 0.08256719664667032,
+      "feature": "Bridge"
+    },
+    {
+      "z_mm": 23.2,
+      "move_length_mm": 0.3577960312804133,
+      "unsupported_length_mm": 0,
+      "unsupported_total_mm": 0,
+      "feature": "Bridge"
+    },
+    {
+      "z_mm": 23.2,
+      "move_length_mm": 0.3570896246042409,
+      "unsupported_length_mm": 0,
+      "unsupported_total_mm": 0,
+      "feature": "Bridge"
+    },
+    {
+      "z_mm": 23.2,
+      "move_length_mm": 0.35779603128037313,
+      "unsupported_length_mm": 0,
+      "unsupported_total_mm": 0,
+      "feature": "Bridge"
+    },
+    {
+      "z_mm": 23.2,
+      "move_length_mm": 0.357089624604261,
+      "unsupported_length_mm": 0,
+      "unsupported_total_mm": 0,
+      "feature": "Bridge"
+    }
+  ],
+  "max_unsupported_deposition_span_mm": 0.10591667849749795,
+  "longest_unsupported_paths": [
+    {
+      "z_mm": 3.0,
+      "move_length_mm": 4.895167004301278,
+      "unsupported_length_mm": 0.10591667849749795,
+      "unsupported_total_mm": 0.10591667849749795,
+      "feature": "Internal solid infill"
+    },
+    {
+      "z_mm": 11.4,
+      "move_length_mm": 4.895167004301278,
+      "unsupported_length_mm": 0.10591517846615543,
+      "unsupported_total_mm": 0.10591517846615543,
+      "feature": "Internal solid infill"
+    },
+    {
+      "z_mm": 23.2,
+      "move_length_mm": 7.603519250978458,
+      "unsupported_length_mm": 0.08327430378801938,
+      "unsupported_total_mm": 0.08327430378801938,
+      "feature": "Bridge"
+    },
+    {
+      "z_mm": 23.2,
+      "move_length_mm": 7.443005978769596,
+      "unsupported_length_mm": 0.08327430342792054,
+      "unsupported_total_mm": 0.08327430342792054,
+      "feature": "Bridge"
+    },
+    {
+      "z_mm": 23.2,
+      "move_length_mm": 7.443005978769596,
+      "unsupported_length_mm": 0.08327430342792054,
+      "unsupported_total_mm": 0.08327430342792054,
+      "feature": "Bridge"
+    },
+    {
+      "z_mm": 23.2,
+      "move_length_mm": 7.443005978769607,
+      "unsupported_length_mm": 0.08327430342792054,
+      "unsupported_total_mm": 0.08327430342792054,
+      "feature": "Bridge"
+    },
+    {
+      "z_mm": 23.2,
+      "move_length_mm": 7.602812111317766,
+      "unsupported_length_mm": 0.08327430342792054,
+      "unsupported_total_mm": 0.08327430342792054,
+      "feature": "Bridge"
+    },
+    {
+      "z_mm": 23.2,
+      "move_length_mm": 7.443005978769596,
+      "unsupported_length_mm": 0.08327430342791049,
+      "unsupported_total_mm": 0.08327430342791049,
+      "feature": "Bridge"
+    },
+    {
+      "z_mm": 23.2,
+      "move_length_mm": 7.443005978769596,
+      "unsupported_length_mm": 0.08327430342791049,
+      "unsupported_total_mm": 0.08327430342791049,
+      "feature": "Bridge"
+    },
+    {
+      "z_mm": 23.2,
+      "move_length_mm": 7.443005978769607,
+      "unsupported_length_mm": 0.08327430342790045,
+      "unsupported_total_mm": 0.08327430342790045,
+      "feature": "Bridge"
+    },
+    {
+      "z_mm": 23.2,
+      "move_length_mm": 7.442298905580188,
+      "unsupported_length_mm": 0.08256719701936806,
+      "unsupported_total_mm": 0.08256719701936806,
+      "feature": "Bridge"
+    },
+    {
+      "z_mm": 23.2,
+      "move_length_mm": 7.442298905580188,
+      "unsupported_length_mm": 0.08256719701936806,
+      "unsupported_total_mm": 0.08256719701936806,
+      "feature": "Bridge"
+    },
+    {
+      "z_mm": 23.2,
+      "move_length_mm": 7.442298905580188,
+      "unsupported_length_mm": 0.08256719701936806,
+      "unsupported_total_mm": 0.08256719701936806,
+      "feature": "Bridge"
+    },
+    {
+      "z_mm": 23.2,
+      "move_length_mm": 7.603519250978447,
+      "unsupported_length_mm": 0.08256719700373155,
+      "unsupported_total_mm": 0.08256719700373155,
+      "feature": "Bridge"
+    },
+    {
+      "z_mm": 23.2,
+      "move_length_mm": 7.603519250978447,
+      "unsupported_length_mm": 0.08256719700369136,
+      "unsupported_total_mm": 0.08256719700369136,
+      "feature": "Bridge"
+    },
+    {
+      "z_mm": 23.2,
+      "move_length_mm": 7.443005978769587,
+      "unsupported_length_mm": 0.08256719664669042,
+      "unsupported_total_mm": 0.08256719664669042,
+      "feature": "Bridge"
+    },
+    {
+      "z_mm": 23.2,
+      "move_length_mm": 7.443005978769607,
+      "unsupported_length_mm": 0.08256719664667032,
+      "unsupported_total_mm": 0.08256719664667032,
+      "feature": "Bridge"
+    },
+    {
+      "z_mm": 23.2,
+      "move_length_mm": 7.443005978769607,
+      "unsupported_length_mm": 0.08256719664667032,
+      "unsupported_total_mm": 0.08256719664667032,
+      "feature": "Bridge"
+    },
+    {
+      "z_mm": 1.8,
+      "move_length_mm": 4.885986594332826,
+      "unsupported_length_mm": 0.08081162985959363,
+      "unsupported_total_mm": 0.08081162985959363,
+      "feature": "Internal solid infill"
+    },
+    {
+      "z_mm": 2.2,
+      "move_length_mm": 4.885986594332826,
+      "unsupported_length_mm": 0.08081162985959363,
+      "unsupported_total_mm": 0.08081162985959363,
+      "feature": "Internal solid infill"
+    }
+  ],
+  "time_and_material_comments": [
+    "; model printing time: 3h 35m 10s; total estimated time: 3h 41m 25s",
+    "; filament used [mm] = 49768.48",
+    "; filament used [cm3] = 119.71",
+    "; filament used [g] = 125.69"
+  ],
+  "analysis_geometry_sha256": "1e8c34eb8514e5089bfffa01d9e86bd79426def95dfbf7840f76e81510eaca43",
+  "analysis_feature_scope": "All positive-extrusion model paths; bridge-tagged and all-feature maxima are reported separately."
+}

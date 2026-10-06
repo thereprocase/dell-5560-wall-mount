@@ -1,0 +1,39 @@
+/* Generated for OpenCFD OpenFOAM v2412; setup only. */
+FoamFile
+{
+    version 2.0;
+    format ascii;
+    class volScalarField;
+    location "0";
+    object p;
+}
+
+dimensions [0 2 -2 0 0 0 0];
+internalField uniform 0;
+boundaryField
+{
+    printed
+    {
+        type zeroGradient;
+    }
+    laptop
+    {
+        type zeroGradient;
+    }
+    noctua
+    {
+        type zeroGradient;
+    }
+    wall_plane
+    {
+        type zeroGradient;
+    }
+    ambient_openings
+    {
+        type fixedValue; value uniform 0;
+    }
+    backgroundBox
+    {
+        type zeroGradient;
+    }
+}

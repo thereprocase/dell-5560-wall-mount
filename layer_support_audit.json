@@ -1,0 +1,953 @@
+{
+  "revision": "F",
+  "layer_height_mm": 0.2,
+  "method": "Geometric layer audit at 0.20 mm. A support screen, not a printer test.\nChecks new islands and measures material beyond a 45-degree support envelope.\nReports bridge/edge regions and samples distance to supported material at 0.25 mm.\nBounding rectangles overstate the span of curved thin regions; use measured reach.\nThis geometric audit does not generate or validate Bambu Studio extrusion paths.\n",
+  "parts": {
+    "02_right_cradle": {
+      "layers": 220,
+      "new_islands_above_bed": [],
+      "max_short_span_beyond_45deg_envelope_mm": 17.589997837481757,
+      "maximum_sampled_reach_from_support_mm": 8.794998918740808,
+      "max_excess_region_area_mm2": 1769.5771594406094,
+      "regions_with_short_span_over_1mm": [
+        {
+          "z_mm": 32.3,
+          "bbox_short_span_mm": 1.504,
+          "maximum_sampled_reach_from_support_mm": 1.372,
+          "area_mm2": 5.878,
+          "region_bounds_mm": [
+            104.07862641504616,
+            187.65524506925348,
+            107.955281730155,
+            191.43216211835056
+          ]
+        },
+        {
+          "z_mm": 32.5,
+          "bbox_short_span_mm": 1.504,
+          "maximum_sampled_reach_from_support_mm": 1.452,
+          "area_mm2": 6.119,
+          "region_bounds_mm": [
+            102.7568195014965,
+            186.44673526242997,
+            106.74677210389959,
+            190.3369493584454
+          ]
+        },
+        {
+          "z_mm": 32.7,
+          "bbox_short_span_mm": 1.504,
+          "maximum_sampled_reach_from_support_mm": 1.355,
+          "area_mm2": 6.36,
+          "region_bounds_mm": [
+            101.4350125879468,
+            185.23822545560645,
+            105.53826229707607,
+            189.24173792408115
+          ]
+        },
+        {
+          "z_mm": 32.9,
+          "bbox_short_span_mm": 3.495,
+          "maximum_sampled_reach_from_support_mm": 1.788,
+          "area_mm2": 12.742,
+          "region_bounds_mm": [
+            61.28352391993781,
+            62.493986881308736,
+            66.33285666226669,
+            67.54332660372565
+          ]
+        },
+        {
+          "z_mm": 32.9,
+          "bbox_short_span_mm": 1.504,
+          "maximum_sampled_reach_from_support_mm": 1.435,
+          "area_mm2": 6.601,
+          "region_bounds_mm": [
+            100.11320567439715,
+            184.029715648783,
+            104.32975249025256,
+            188.1465264897169
+          ]
+        },
+        {
+          "z_mm": 32.9,
+          "bbox_short_span_mm": 17.59,
+          "maximum_sampled_reach_from_support_mm": 8.795,
+          "area_mm2": 1769.577,
+          "region_bounds_mm": [
+            116.94787302245317,
+            119.63972177733599,
+            199.09140116151664,
+            201.7832503024069
+          ]
+        },
+        {
+          "z_mm": 33.1,
+          "bbox_short_span_mm": 1.504,
+          "maximum_sampled_reach_from_support_mm": 1.339,
+          "area_mm2": 6.842,
+          "region_bounds_mm": [
+            98.79139876084744,
+            182.82120584195948,
+            103.1212426834291,
+            187.05131505535272
+          ]
+        },
+        {
+          "z_mm": 33.3,
+          "bbox_short_span_mm": 1.504,
+          "maximum_sampled_reach_from_support_mm": 1.419,
+          "area_mm2": 7.083,
+          "region_bounds_mm": [
+            97.46959184729775,
+            181.61269603513597,
+            101.91273287660559,
+            185.95610362098847
+          ]
+        },
+        {
+          "z_mm": 33.5,
+          "bbox_short_span_mm": 1.504,
+          "maximum_sampled_reach_from_support_mm": 1.499,
+          "area_mm2": 7.324,
+          "region_bounds_mm": [
+            96.1477849337481,
+            180.4041862283125,
+            100.70422306978207,
+            184.86089218662423
+          ]
+        },
+        {
+          "z_mm": 33.7,
+          "bbox_short_span_mm": 1.504,
+          "maximum_sampled_reach_from_support_mm": 1.402,
+          "area_mm2": 7.565,
+          "region_bounds_mm": [
+            94.82597802019842,
+            179.19567642148897,
+            99.4957132629586,
+            183.76568075226
+          ]
+        },
+        {
+          "z_mm": 33.9,
+          "bbox_short_span_mm": 1.504,
+          "maximum_sampled_reach_from_support_mm": 1.483,
+          "area_mm2": 7.806,
+          "region_bounds_mm": [
+            93.50417110664878,
+            177.9871666146655,
+            98.28720345613507,
+            182.67046931789577
+          ]
+        },
+        {
+          "z_mm": 34.1,
+          "bbox_short_span_mm": 1.504,
+          "maximum_sampled_reach_from_support_mm": 1.386,
+          "area_mm2": 8.047,
+          "region_bounds_mm": [
+            92.18236419309908,
+            176.778656807842,
+            97.07869364931162,
+            181.57525788353158
+          ]
+        },
+        {
+          "z_mm": 34.3,
+          "bbox_short_span_mm": 1.504,
+          "maximum_sampled_reach_from_support_mm": 1.466,
+          "area_mm2": 8.288,
+          "region_bounds_mm": [
+            90.86055727954937,
+            175.57014700101848,
+            95.8701838424881,
+            180.48004644916733
+          ]
+        },
+        {
+          "z_mm": 34.5,
+          "bbox_short_span_mm": 1.504,
+          "maximum_sampled_reach_from_support_mm": 1.369,
+          "area_mm2": 8.529,
+          "region_bounds_mm": [
+            89.53875036599973,
+            174.36163719419503,
+            94.66167403566459,
+            179.3848350148031
+          ]
+        },
+        {
+          "z_mm": 34.7,
+          "bbox_short_span_mm": 1.504,
+          "maximum_sampled_reach_from_support_mm": 1.449,
+          "area_mm2": 8.77,
+          "region_bounds_mm": [
+            88.21694345245002,
+            173.1531273873715,
+            93.45316422884112,
+            178.2896235804389
+          ]
+        },
+        {
+          "z_mm": 34.9,
+          "bbox_short_span_mm": 1.504,
+          "maximum_sampled_reach_from_support_mm": 1.353,
+          "area_mm2": 9.011,
+          "region_bounds_mm": [
+            86.8951365389004,
+            171.94461758054803,
+            92.2446544220176,
+            177.19441214607463
+          ]
+        },
+        {
+          "z_mm": 35.1,
+          "bbox_short_span_mm": 1.504,
+          "maximum_sampled_reach_from_support_mm": 1.433,
+          "area_mm2": 9.252,
+          "region_bounds_mm": [
+            85.5733296253507,
+            170.7361077737245,
+            91.03614461519413,
+            176.09920071171044
+          ]
+        },
+        {
+          "z_mm": 35.3,
+          "bbox_short_span_mm": 1.504,
+          "maximum_sampled_reach_from_support_mm": 1.336,
+          "area_mm2": 9.493,
+          "region_bounds_mm": [
+            84.251522711801,
+            169.527597966901,
+            89.82763480837062,
+            175.0039892773462
+          ]
+        },
+        {
+          "z_mm": 35.5,
+          "bbox_short_span_mm": 1.504,
+          "maximum_sampled_reach_from_support_mm": 1.416,
+          "area_mm2": 9.734,
+          "region_bounds_mm": [
+            82.92971579825137,
+            168.31908816007754,
+            88.6191250015471,
+            173.90877784298195
+          ]
+        },
+        {
+          "z_mm": 35.7,
+          "bbox_short_span_mm": 1.504,
+          "maximum_sampled_reach_from_support_mm": 1.496,
+          "area_mm2": 9.975,
+          "region_bounds_mm": [
+            81.60790888470166,
+            167.11057835325403,
+            87.41061519472363,
+            172.81356640861776
+          ]
+        },
+        {
+          "z_mm": 35.9,
+          "bbox_short_span_mm": 1.504,
+          "maximum_sampled_reach_from_support_mm": 1.4,
+          "area_mm2": 10.216,
+          "region_bounds_mm": [
+            80.28610197115201,
+            165.90206854643054,
+            86.20210538790012,
+            171.71835497425351
+          ]
+        },
+        {
+          "z_mm": 36.1,
+          "bbox_short_span_mm": 1.504,
+          "maximum_sampled_reach_from_support_mm": 1.48,
+          "area_mm2": 10.457,
+          "region_bounds_mm": [
+            78.96429505760233,
+            164.69355873960703,
+            84.99359558107665,
+            170.6231435398893
+          ]
+        },
+        {
+          "z_mm": 36.3,
+          "bbox_short_span_mm": 1.504,
+          "maximum_sampled_reach_from_support_mm": 1.383,
+          "area_mm2": 10.698,
+          "region_bounds_mm": [
+            77.64248814405262,
+            163.4850489327835,
+            83.78508577425313,
+            169.52793210552505
+          ]
+        },
+        {
+          "z_mm": 36.5,
+          "bbox_short_span_mm": 1.504,
+          "maximum_sampled_reach_from_support_mm": 1.463,
+          "area_mm2": 10.939,
+          "region_bounds_mm": [
+            76.32068123050298,
+            162.27653912596006,
+            82.57657596742962,
+            168.4327206711608
+          ]
+        },
+        {
+          "z_mm": 36.7,
+          "bbox_short_span_mm": 1.504,
+          "maximum_sampled_reach_from_support_mm": 1.367,
+          "area_mm2": 11.18,
+          "region_bounds_mm": [
+            74.99887431695328,
+            161.06802931913654,
+            81.36806616060615,
+            167.33750923679662
+          ]
+        },
+        {
+          "z_mm": 36.9,
+          "bbox_short_span_mm": 1.504,
+          "maximum_sampled_reach_from_support_mm": 1.447,
+          "area_mm2": 11.421,
+          "region_bounds_mm": [
+            73.67706740340363,
+            159.85951951231306,
+            80.15955635378263,
+            166.24229780243238
+          ]
+        },
+        {
+          "z_mm": 37.1,
+          "bbox_short_span_mm": 1.504,
+          "maximum_sampled_reach_from_support_mm": 1.35,
+          "area_mm2": 11.662,
+          "region_bounds_mm": [
+            72.35526048985395,
+            158.65100970548954,
+            78.95104654695916,
+            165.14708636806816
+          ]
+        },
+        {
+          "z_mm": 37.3,
+          "bbox_short_span_mm": 1.504,
+          "maximum_sampled_reach_from_support_mm": 1.43,
+          "area_mm2": 11.903,
+          "region_bounds_mm": [
+            71.03345357630427,
+            157.44249989866603,
+            77.74253674013565,
+            164.0518749337039
+          ]
+        },
+        {
+          "z_mm": 37.5,
+          "bbox_short_span_mm": 1.504,
+          "maximum_sampled_reach_from_support_mm": 1.334,
+          "area_mm2": 12.144,
+          "region_bounds_mm": [
+            69.7116466627546,
+            156.23399009184257,
+            76.53402693331213,
+            162.9566634993397
+          ]
+        },
+        {
+          "z_mm": 37.7,
+          "bbox_short_span_mm": 1.504,
+          "maximum_sampled_reach_from_support_mm": 1.414,
+          "area_mm2": 12.385,
+          "region_bounds_mm": [
+            68.38983974920491,
+            155.02548028501906,
+            75.32551712648866,
+            161.86145206497548
+          ]
+        },
+        {
+          "z_mm": 37.9,
+          "bbox_short_span_mm": 1.504,
+          "maximum_sampled_reach_from_support_mm": 1.494,
+          "area_mm2": 12.626,
+          "region_bounds_mm": [
+            67.06803283565527,
+            153.8169704781956,
+            74.11700731966515,
+            160.76624063061124
+          ]
+        },
+        {
+          "z_mm": 38.1,
+          "bbox_short_span_mm": 1.504,
+          "maximum_sampled_reach_from_support_mm": 1.397,
+          "area_mm2": 12.867,
+          "region_bounds_mm": [
+            65.74622592210557,
+            152.60846067137206,
+            72.90849751284169,
+            159.67102919624705
+          ]
+        },
+        {
+          "z_mm": 38.3,
+          "bbox_short_span_mm": 1.504,
+          "maximum_sampled_reach_from_support_mm": 1.477,
+          "area_mm2": 13.108,
+          "region_bounds_mm": [
+            64.42441900855587,
+            151.39995086454854,
+            71.69998770601818,
+            158.5758177618828
+          ]
+        },
+        {
+          "z_mm": 38.5,
+          "bbox_short_span_mm": 1.504,
+          "maximum_sampled_reach_from_support_mm": 1.381,
+          "area_mm2": 13.349,
+          "region_bounds_mm": [
+            63.10261209500622,
+            150.1914410577251,
+            70.49147789919466,
+            157.48060632751856
+          ]
+        },
+        {
+          "z_mm": 38.7,
+          "bbox_short_span_mm": 1.504,
+          "maximum_sampled_reach_from_support_mm": 1.461,
+          "area_mm2": 13.59,
+          "region_bounds_mm": [
+            61.78080518145655,
+            148.98293125090157,
+            69.28296809237119,
+            156.38539489315434
+          ]
+        },
+        {
+          "z_mm": 38.9,
+          "bbox_short_span_mm": 1.504,
+          "maximum_sampled_reach_from_support_mm": 1.364,
+          "area_mm2": 13.831,
+          "region_bounds_mm": [
+            60.458998267906885,
+            147.7744214440781,
+            68.07445828554768,
+            155.29018345879012
+          ]
+        },
+        {
+          "z_mm": 39.1,
+          "bbox_short_span_mm": 1.504,
+          "maximum_sampled_reach_from_support_mm": 1.444,
+          "area_mm2": 14.072,
+          "region_bounds_mm": [
+            59.13719135435719,
+            146.56591163725457,
+            66.8659484787242,
+            154.1949720244259
+          ]
+        },
+        {
+          "z_mm": 39.3,
+          "bbox_short_span_mm": 1.504,
+          "maximum_sampled_reach_from_support_mm": 1.347,
+          "area_mm2": 14.313,
+          "region_bounds_mm": [
+            57.815384440807506,
+            145.35740183043106,
+            65.65743867190069,
+            153.09976059006166
+          ]
+        },
+        {
+          "z_mm": 39.5,
+          "bbox_short_span_mm": 1.504,
+          "maximum_sampled_reach_from_support_mm": 1.428,
+          "area_mm2": 14.554,
+          "region_bounds_mm": [
+            56.49357752725787,
+            144.1488920236076,
+            64.44892886507718,
+            152.00454915569742
+          ]
+        },
+        {
+          "z_mm": 39.7,
+          "bbox_short_span_mm": 1.504,
+          "maximum_sampled_reach_from_support_mm": 1.331,
+          "area_mm2": 14.795,
+          "region_bounds_mm": [
+            55.17177061370816,
+            142.94038240214286,
+            63.24041905825371,
+            150.90933772133323
+          ]
+        },
+        {
+          "z_mm": 39.9,
+          "bbox_short_span_mm": 1.504,
+          "maximum_sampled_reach_from_support_mm": 1.411,
+          "area_mm2": 15.036,
+          "region_bounds_mm": [
+            53.84996370015852,
+            141.73187310414036,
+            62.03190943679117,
+            149.81412628696899
+          ]
+        },
+        {
+          "z_mm": 40.1,
+          "bbox_short_span_mm": 1.504,
+          "maximum_sampled_reach_from_support_mm": 0.87,
+          "area_mm2": 15.091,
+          "region_bounds_mm": [
+            52.8086117748789,
+            140.749412045718,
+            60.82340013878868,
+            148.71891485260477
+          ]
+        },
+        {
+          "z_mm": 41.7,
+          "bbox_short_span_mm": 9.59,
+          "maximum_sampled_reach_from_support_mm": 4.795,
+          "area_mm2": 290.588,
+          "region_bounds_mm": [
+            87.43550771780318,
+            94.37000206379771,
+            114.35991006784135,
+            121.29439800351007
+          ]
+        },
+        {
+          "z_mm": 41.7,
+          "bbox_short_span_mm": 9.59,
+          "maximum_sampled_reach_from_support_mm": 4.795,
+          "area_mm2": 290.587,
+          "region_bounds_mm": [
+            78.95022481504586,
+            102.85528495693899,
+            105.87462717470024,
+            129.77967327209018
+          ]
+        },
+        {
+          "z_mm": 41.7,
+          "bbox_short_span_mm": 3.59,
+          "maximum_sampled_reach_from_support_mm": 1.795,
+          "area_mm2": 165.816,
+          "region_bounds_mm": [
+            49.75174230482339,
+            87.09182670853711,
+            84.16142374131918,
+            121.50150715202248
+          ]
+        }
+      ]
+    },
+    "04_right_fan_duct": {
+      "layers": 550,
+      "new_islands_above_bed": [],
+      "max_short_span_beyond_45deg_envelope_mm": 6.232607093938604,
+      "maximum_sampled_reach_from_support_mm": 3.0950029153605954,
+      "max_excess_region_area_mm2": 786.7187274293316,
+      "regions_with_short_span_over_1mm": [
+        {
+          "z_mm": 2.5,
+          "bbox_short_span_mm": 6.191,
+          "maximum_sampled_reach_from_support_mm": 3.095,
+          "area_mm2": 786.719,
+          "region_bounds_mm": [
+            171.6549969482422,
+            66.90499694824219,
+            177.84599486222027,
+            194.0
+          ]
+        },
+        {
+          "z_mm": 2.5,
+          "bbox_short_span_mm": 6.233,
+          "maximum_sampled_reach_from_support_mm": 3.095,
+          "area_mm2": 786.605,
+          "region_bounds_mm": [
+            41.61239214189579,
+            66.90499694824219,
+            47.84499923706055,
+            194.0
+          ]
+        },
+        {
+          "z_mm": 6.1,
+          "bbox_short_span_mm": 2.0,
+          "maximum_sampled_reach_from_support_mm": 1.524,
+          "area_mm2": 6.097,
+          "region_bounds_mm": [
+            173.22560337737872,
+            188.1676615936738,
+            176.27439662703293,
+            190.16750908267127
+          ]
+        },
+        {
+          "z_mm": 6.1,
+          "bbox_short_span_mm": 2.0,
+          "maximum_sampled_reach_from_support_mm": 1.524,
+          "area_mm2": 6.097,
+          "region_bounds_mm": [
+            43.22549706679951,
+            188.1676609763303,
+            46.27437970284795,
+            190.16750908267127
+          ]
+        },
+        {
+          "z_mm": 6.1,
+          "bbox_short_span_mm": 1.627,
+          "maximum_sampled_reach_from_support_mm": 1.502,
+          "area_mm2": 192.985,
+          "region_bounds_mm": [
+            50.955,
+            188.16767142159597,
+            169.545,
+            189.795
+          ]
+        },
+        {
+          "z_mm": 6.1,
+          "bbox_short_span_mm": 1.622,
+          "maximum_sampled_reach_from_support_mm": 1.375,
+          "area_mm2": 192.366,
+          "region_bounds_mm": [
+            50.955,
+            66.205,
+            169.545,
+            67.82710745759435
+          ]
+        },
+        {
+          "z_mm": 9.1,
+          "bbox_short_span_mm": 1.128,
+          "maximum_sampled_reach_from_support_mm": 0.564,
+          "area_mm2": 5.918,
+          "region_bounds_mm": [
+            174.18579036144158,
+            188.75145605615896,
+            175.31423146416608,
+            194.0
+          ]
+        },
+        {
+          "z_mm": 9.1,
+          "bbox_short_span_mm": 1.128,
+          "maximum_sampled_reach_from_support_mm": 0.564,
+          "area_mm2": 5.918,
+          "region_bounds_mm": [
+            44.18577121433692,
+            188.75145605615896,
+            45.31423916375175,
+            194.0
+          ]
+        }
+      ]
+    },
+    "06_right_fan_retainer": {
+      "layers": 65,
+      "new_islands_above_bed": [],
+      "max_short_span_beyond_45deg_envelope_mm": 0,
+      "maximum_sampled_reach_from_support_mm": 0,
+      "max_excess_region_area_mm2": 0,
+      "regions_with_short_span_over_1mm": []
+    },
+    "08_right_outlet_rail": {
+      "layers": 390,
+      "new_islands_above_bed": [],
+      "max_short_span_beyond_45deg_envelope_mm": 3.674271240234134,
+      "maximum_sampled_reach_from_support_mm": 1.8371355884208072,
+      "max_excess_region_area_mm2": 14.697084708702048,
+      "regions_with_short_span_over_1mm": [
+        {
+          "z_mm": 70.3,
+          "bbox_short_span_mm": 3.674,
+          "maximum_sampled_reach_from_support_mm": 1.837,
+          "area_mm2": 14.697,
+          "region_bounds_mm": [
+            196.06285833976003,
+            117.19999694824219,
+            199.73712957999416,
+            121.19999694824219
+          ]
+        }
+      ]
+    },
+    "10_right_fan_tray": {
+      "layers": 190,
+      "new_islands_above_bed": [],
+      "max_short_span_beyond_45deg_envelope_mm": 4.11154160897064,
+      "maximum_sampled_reach_from_support_mm": 1.894999999999996,
+      "max_excess_region_area_mm2": 34.10999999999993,
+      "regions_with_short_span_over_1mm": [
+        {
+          "z_mm": 28.1,
+          "bbox_short_span_mm": 3.79,
+          "maximum_sampled_reach_from_support_mm": 1.895,
+          "area_mm2": 18.95,
+          "region_bounds_mm": [
+            85.605,
+            62.0,
+            89.395,
+            67.0
+          ]
+        },
+        {
+          "z_mm": 28.1,
+          "bbox_short_span_mm": 3.79,
+          "maximum_sampled_reach_from_support_mm": 1.895,
+          "area_mm2": 18.95,
+          "region_bounds_mm": [
+            107.605,
+            62.0,
+            111.395,
+            67.0
+          ]
+        },
+        {
+          "z_mm": 28.1,
+          "bbox_short_span_mm": 3.79,
+          "maximum_sampled_reach_from_support_mm": 1.895,
+          "area_mm2": 18.95,
+          "region_bounds_mm": [
+            129.60500000000002,
+            62.0,
+            133.39499999999998,
+            67.0
+          ]
+        },
+        {
+          "z_mm": 28.1,
+          "bbox_short_span_mm": 3.79,
+          "maximum_sampled_reach_from_support_mm": 1.895,
+          "area_mm2": 18.95,
+          "region_bounds_mm": [
+            151.60500000000002,
+            62.0,
+            155.39499999999998,
+            67.0
+          ]
+        },
+        {
+          "z_mm": 28.1,
+          "bbox_short_span_mm": 3.79,
+          "maximum_sampled_reach_from_support_mm": 1.895,
+          "area_mm2": 18.95,
+          "region_bounds_mm": [
+            173.60500000000002,
+            62.0,
+            177.39499999999998,
+            67.0
+          ]
+        },
+        {
+          "z_mm": 28.1,
+          "bbox_short_span_mm": 3.79,
+          "maximum_sampled_reach_from_support_mm": 1.891,
+          "area_mm2": 34.11,
+          "region_bounds_mm": [
+            188.5,
+            80.105,
+            197.5,
+            83.895
+          ]
+        },
+        {
+          "z_mm": 28.1,
+          "bbox_short_span_mm": 4.112,
+          "maximum_sampled_reach_from_support_mm": 1.827,
+          "area_mm2": 23.135,
+          "region_bounds_mm": [
+            191.39999999999998,
+            99.9442291955147,
+            197.5,
+            104.0557708044853
+          ]
+        },
+        {
+          "z_mm": 28.1,
+          "bbox_short_span_mm": 4.112,
+          "maximum_sampled_reach_from_support_mm": 1.827,
+          "area_mm2": 23.135,
+          "region_bounds_mm": [
+            191.39999999999998,
+            119.9442291955147,
+            197.5,
+            124.0557708044853
+          ]
+        },
+        {
+          "z_mm": 28.1,
+          "bbox_short_span_mm": 4.112,
+          "maximum_sampled_reach_from_support_mm": 1.827,
+          "area_mm2": 23.135,
+          "region_bounds_mm": [
+            191.39999999999998,
+            139.94422919551468,
+            197.5,
+            144.05577080448532
+          ]
+        },
+        {
+          "z_mm": 28.1,
+          "bbox_short_span_mm": 4.112,
+          "maximum_sampled_reach_from_support_mm": 1.827,
+          "area_mm2": 23.135,
+          "region_bounds_mm": [
+            191.39999999999998,
+            159.94422919551468,
+            197.5,
+            164.05577080448532
+          ]
+        },
+        {
+          "z_mm": 28.1,
+          "bbox_short_span_mm": 3.79,
+          "maximum_sampled_reach_from_support_mm": 1.875,
+          "area_mm2": 34.11,
+          "region_bounds_mm": [
+            188.5,
+            180.10500000000002,
+            197.5,
+            183.89499999999998
+          ]
+        },
+        {
+          "z_mm": 28.1,
+          "bbox_short_span_mm": 3.79,
+          "maximum_sampled_reach_from_support_mm": 1.891,
+          "area_mm2": 30.32,
+          "region_bounds_mm": [
+            58.5,
+            80.105,
+            66.5,
+            83.895
+          ]
+        },
+        {
+          "z_mm": 28.1,
+          "bbox_short_span_mm": 4.112,
+          "maximum_sampled_reach_from_support_mm": 1.826,
+          "area_mm2": 19.345,
+          "region_bounds_mm": [
+            58.5,
+            99.94422919551474,
+            63.60000000000001,
+            104.05577080448526
+          ]
+        },
+        {
+          "z_mm": 28.1,
+          "bbox_short_span_mm": 4.112,
+          "maximum_sampled_reach_from_support_mm": 1.826,
+          "area_mm2": 19.345,
+          "region_bounds_mm": [
+            58.5,
+            119.94422919551474,
+            63.60000000000001,
+            124.05577080448526
+          ]
+        },
+        {
+          "z_mm": 28.1,
+          "bbox_short_span_mm": 4.112,
+          "maximum_sampled_reach_from_support_mm": 1.826,
+          "area_mm2": 19.345,
+          "region_bounds_mm": [
+            58.5,
+            139.94422919551474,
+            63.60000000000001,
+            144.05577080448526
+          ]
+        },
+        {
+          "z_mm": 28.1,
+          "bbox_short_span_mm": 4.112,
+          "maximum_sampled_reach_from_support_mm": 1.826,
+          "area_mm2": 19.345,
+          "region_bounds_mm": [
+            58.5,
+            159.94422919551474,
+            63.60000000000001,
+            164.05577080448526
+          ]
+        },
+        {
+          "z_mm": 28.1,
+          "bbox_short_span_mm": 3.79,
+          "maximum_sampled_reach_from_support_mm": 1.875,
+          "area_mm2": 30.32,
+          "region_bounds_mm": [
+            58.5,
+            180.10500000000002,
+            66.5,
+            183.89499999999998
+          ]
+        }
+      ]
+    },
+    "right_outlet_rail_gap_8mm": {
+      "layers": 390,
+      "new_islands_above_bed": [],
+      "max_short_span_beyond_45deg_envelope_mm": 3.674271240234134,
+      "maximum_sampled_reach_from_support_mm": 1.8371355884208072,
+      "max_excess_region_area_mm2": 14.697084708702048,
+      "regions_with_short_span_over_1mm": [
+        {
+          "z_mm": 70.3,
+          "bbox_short_span_mm": 3.674,
+          "maximum_sampled_reach_from_support_mm": 1.837,
+          "area_mm2": 14.697,
+          "region_bounds_mm": [
+            196.06285833976003,
+            117.19999694824219,
+            199.73712957999416,
+            121.19999694824219
+          ]
+        }
+      ]
+    },
+    "right_outlet_rail_gap_16mm": {
+      "layers": 390,
+      "new_islands_above_bed": [],
+      "max_short_span_beyond_45deg_envelope_mm": 3.674271240234134,
+      "maximum_sampled_reach_from_support_mm": 1.8371355884208072,
+      "max_excess_region_area_mm2": 14.697084708702048,
+      "regions_with_short_span_over_1mm": [
+        {
+          "z_mm": 70.3,
+          "bbox_short_span_mm": 3.674,
+          "maximum_sampled_reach_from_support_mm": 1.837,
+          "area_mm2": 14.697,
+          "region_bounds_mm": [
+            196.06285833976003,
+            117.19999694824219,
+            199.73712957999416,
+            121.19999694824219
+          ]
+        }
+      ]
+    },
+    "12_right_push_pin": {
+      "layers": 70,
+      "new_islands_above_bed": [],
+      "max_short_span_beyond_45deg_envelope_mm": 0,
+      "maximum_sampled_reach_from_support_mm": 0,
+      "max_excess_region_area_mm2": 0,
+      "regions_with_short_span_over_1mm": []
+    }
+  }
+}

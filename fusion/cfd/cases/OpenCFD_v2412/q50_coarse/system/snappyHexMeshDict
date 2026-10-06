@@ -1,0 +1,125 @@
+/* Generated for OpenCFD OpenFOAM v2412; setup only. */
+FoamFile
+{
+    version 2.0;
+    format ascii;
+    class dictionary;
+    object snappyHexMeshDict;
+}
+
+castellatedMesh true;
+snap true;
+addLayers true;
+geometry
+{
+    fluid_boundary.stl
+    {
+        type triSurfaceMesh;
+        name fluid;
+        regions
+        {
+            fan_left { name fan_left; }
+            fan_right { name fan_right; }
+            outlet { name outlet; }
+            laptop_shell { name laptop_shell; }
+            wall_plane { name wall_plane; }
+            assumed_side_seals { name assumed_side_seals; }
+            printed_or_model_walls { name printed_or_model_walls; }
+        }
+    }
+    outletRefinement
+    {
+        type searchableBox;
+        min (-0.185 -0.002 0.185);
+        max (0.185 0.045 0.24);
+    }
+}
+castellatedMeshControls
+{
+    maxLocalCells 1500000;
+    maxGlobalCells 1500000;
+    minRefinementCells 0;
+    maxLoadUnbalance 0.1;
+    nCellsBetweenLevels 3;
+    features ();
+    refinementSurfaces
+    {
+        fluid
+        {
+            level (3 3);
+            patchInfo { type wall; }
+            regions
+            {
+                fan_left { level (3 3); patchInfo { type patch; } }
+                fan_right { level (3 3); patchInfo { type patch; } }
+                outlet { level (3 3); patchInfo { type patch; } }
+                laptop_shell { level (3 3); patchInfo { type wall; } }
+                wall_plane { level (3 3); patchInfo { type wall; } }
+                assumed_side_seals { level (3 3); patchInfo { type wall; } }
+                printed_or_model_walls { level (3 3); patchInfo { type wall; } }
+            }
+        }
+    }
+    resolveFeatureAngle 30;
+    refinementRegions
+    {
+        outletRefinement { mode inside; levels ((1e15 3)); }
+    }
+    locationInMesh (0 0.02 0.1);
+    allowFreeStandingZoneFaces true;
+}
+snapControls
+{
+    nSmoothPatch 3;
+    tolerance 2.0;
+    nSolveIter 30;
+    nRelaxIter 5;
+    nFeatureSnapIter 10;
+    implicitFeatureSnap true;
+    explicitFeatureSnap false;
+    multiRegionFeatureSnap false;
+}
+addLayersControls
+{
+    relativeSizes true;
+    layers
+    {
+        laptop_shell { nSurfaceLayers 3; }
+        wall_plane { nSurfaceLayers 3; }
+        assumed_side_seals { nSurfaceLayers 3; }
+        printed_or_model_walls { nSurfaceLayers 3; }
+    }
+    expansionRatio 1.2;
+    finalLayerThickness 0.3;
+    minThickness 0.1;
+    nGrow 0;
+    featureAngle 60;
+    nRelaxIter 5;
+    nSmoothSurfaceNormals 1;
+    nSmoothNormals 3;
+    nSmoothThickness 10;
+    maxFaceThicknessRatio 0.5;
+    maxThicknessToMedialRatio 0.3;
+    minMedialAxisAngle 90;
+    nBufferCellsNoExtrude 0;
+    nLayerIter 50;
+}
+meshQualityControls
+{
+    maxNonOrtho 65;
+    maxBoundarySkewness 20;
+    maxInternalSkewness 4;
+    maxConcave 80;
+    minVol 1e-18;
+    minTetQuality 1e-15;
+    minArea -1;
+    minTwist 0.02;
+    minDeterminant 0.001;
+    minFaceWeight 0.05;
+    minVolRatio 0.01;
+    minTriangleTwist -1;
+    nSmoothScale 4;
+    errorReduction 0.75;
+}
+writeFlags (scalarLevels layerSets layerFields);
+mergeTolerance 1e-6;

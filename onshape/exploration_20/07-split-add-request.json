@@ -1,0 +1,52 @@
+{
+  "feature": {
+    "btType": "BTMFeature-134",
+    "name": "Pin - split cut symmetric 6 mm",
+    "featureType": "extrude",
+    "parameters": [
+      {
+        "btType": "BTMParameterEnum-145",
+        "parameterId": "bodyType",
+        "enumName": "ExtendedToolBodyType",
+        "value": "SOLID"
+      },
+      {
+        "btType": "BTMParameterEnum-145",
+        "parameterId": "operationType",
+        "enumName": "NewBodyOperationType",
+        "value": "REMOVE"
+      },
+      {
+        "btType": "BTMParameterQueryList-148",
+        "parameterId": "entities",
+        "queries": [
+          {
+            "btType": "BTMIndividualQuery-138",
+            "queryString": "query=qSketchRegion(makeId(\"FqmwXx7eYeJWJUo_1\"));"
+          }
+        ]
+      },
+      {
+        "btType": "BTMParameterEnum-145",
+        "parameterId": "endBound",
+        "enumName": "BoundingType",
+        "value": "BLIND"
+      },
+      {
+        "btType": "BTMParameterQuantity-147",
+        "parameterId": "depth",
+        "expression": "6 mm"
+      },
+      {
+        "btType": "BTMParameterBoolean-144",
+        "parameterId": "symmetric",
+        "value": true
+      },
+      {
+        "btType": "BTMParameterBoolean-144",
+        "parameterId": "defaultScope",
+        "value": true
+      }
+    ]
+  }
+}

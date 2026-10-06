@@ -1,0 +1,549 @@
+{
+  "created_utc": "2026-09-08T14:39:15.695440+00:00",
+  "geometry_revision": "H",
+  "base_commit": "f47a03f",
+  "scope": "Focused-resolution transient commissioning candidate; no validation acceptance or settled-flow claim.",
+  "geometry_inputs": [
+    {
+      "path": "F:\\Code\\dell-5560-wall-mount-cfd\\freecad\\Precision_5560_Native.step",
+      "sha256": "0a60dceee211fdd028af1e63ea3fe9b9a0ae06f84d521ade9ebfe4b4f04ad8e3"
+    },
+    {
+      "path": "F:\\Code\\dell-5560-wall-mount-cfd\\fusion\\output\\native\\cfd_helpers_traced.json",
+      "sha256": "8a64f4f30f49a6af90d0ecd78bb1a10d7badb1c2a1080c375875a9ec4d61cf81"
+    },
+    {
+      "path": "F:\\Code\\dell-5560-wall-mount-cfd\\fusion\\output\\native\\cfd_helpers_traced.step",
+      "sha256": "6fa7e681562fb4f9ac68e63bbe39f1ce2a4039499740c63e80dbb2e0b972ded2"
+    }
+  ],
+  "laptop_geometry_uncertainty_mm": {
+    "profile": 2,
+    "intake_location": 4
+  },
+  "surface_sha256": "3b764f39413d86dbb3a16e0403ff4dc6650ef9b10f2a299969ebbd4aa0d502ed",
+  "numerical_surface_stabilization": {
+    "method": "Deterministic sub-micrometre vertex perturbation; domain planes fixed; native CAD unchanged",
+    "seed": 5560,
+    "max_displacement_m": 1.672497877524723e-08,
+    "flipped_normals": 0
+  },
+  "surface_deflection_mm": 0.025,
+  "base_cell_mm": 16,
+  "surface_cell_mm": {
+    "printed": 2,
+    "laptop": 2,
+    "noctua": 2
+  },
+  "refinement_boxes": {
+    "ductWake": {
+      "min_m": [
+        -0.145,
+        0.002,
+        -0.004
+      ],
+      "max_m": [
+        0.145,
+        0.042,
+        0.024
+      ],
+      "level": 4,
+      "cell_mm": 1.0
+    },
+    "ductOuterEdge": {
+      "min_m": [
+        -0.145,
+        0.034,
+        -0.004
+      ],
+      "max_m": [
+        0.145,
+        0.043,
+        0.01
+      ],
+      "level": 5,
+      "cell_mm": 0.5
+    },
+    "frontLip": {
+      "min_m": [
+        -0.174,
+        0.047,
+        -0.003
+      ],
+      "max_m": [
+        0.174,
+        0.058,
+        0.009
+      ],
+      "level": 5,
+      "cell_mm": 0.5
+    },
+    "frontLipWake": {
+      "min_m": [
+        -0.176,
+        0.042,
+        -0.002
+      ],
+      "max_m": [
+        0.176,
+        0.064,
+        0.022
+      ],
+      "level": 4,
+      "cell_mm": 1.0
+    },
+    "leftPassage": {
+      "min_m": [
+        -0.15,
+        0.037,
+        0.14
+      ],
+      "max_m": [
+        -0.073,
+        0.052,
+        0.238
+      ],
+      "level": 4,
+      "cell_mm": 1.0
+    },
+    "rightPassage": {
+      "min_m": [
+        0.073,
+        0.037,
+        0.14
+      ],
+      "max_m": [
+        0.15,
+        0.052,
+        0.238
+      ],
+      "level": 4,
+      "cell_mm": 1.0
+    },
+    "leftHingeLip": {
+      "min_m": [
+        -0.15,
+        0.037,
+        0.222
+      ],
+      "max_m": [
+        -0.073,
+        0.054,
+        0.237
+      ],
+      "level": 5,
+      "cell_mm": 0.5
+    },
+    "rightHingeLip": {
+      "min_m": [
+        0.073,
+        0.037,
+        0.222
+      ],
+      "max_m": [
+        0.15,
+        0.054,
+        0.237
+      ],
+      "level": 5,
+      "cell_mm": 0.5
+    },
+    "hingeWake": {
+      "min_m": [
+        -0.15,
+        0.033,
+        0.232
+      ],
+      "max_m": [
+        0.15,
+        0.061,
+        0.253
+      ],
+      "level": 4,
+      "cell_mm": 1.0
+    },
+    "leftDuctSide": {
+      "min_m": [
+        -0.145,
+        0.003,
+        -0.008
+      ],
+      "max_m": [
+        -0.136,
+        0.044,
+        0.014
+      ],
+      "level": 5,
+      "cell_mm": 0.5
+    },
+    "rightDuctSide": {
+      "min_m": [
+        0.136,
+        0.003,
+        -0.008
+      ],
+      "max_m": [
+        0.145,
+        0.044,
+        0.014
+      ],
+      "level": 5,
+      "cell_mm": 0.5
+    },
+    "left_ductOuterEdge_sample_strip": {
+      "min_m": [
+        -0.119,
+        0.034,
+        -0.004
+      ],
+      "max_m": [
+        -0.10300000000000001,
+        0.043,
+        0.01
+      ],
+      "level": 6,
+      "cell_mm": 0.25
+    },
+    "left_frontLip_sample_strip": {
+      "min_m": [
+        -0.119,
+        0.047,
+        -0.003
+      ],
+      "max_m": [
+        -0.10300000000000001,
+        0.058,
+        0.009
+      ],
+      "level": 6,
+      "cell_mm": 0.25
+    },
+    "left_leftHingeLip_sample_strip": {
+      "min_m": [
+        -0.119,
+        0.037,
+        0.222
+      ],
+      "max_m": [
+        -0.10300000000000001,
+        0.054,
+        0.237
+      ],
+      "level": 6,
+      "cell_mm": 0.25
+    },
+    "right_ductOuterEdge_sample_strip": {
+      "min_m": [
+        0.10300000000000001,
+        0.034,
+        -0.004
+      ],
+      "max_m": [
+        0.119,
+        0.043,
+        0.01
+      ],
+      "level": 6,
+      "cell_mm": 0.25
+    },
+    "right_frontLip_sample_strip": {
+      "min_m": [
+        0.10300000000000001,
+        0.047,
+        -0.003
+      ],
+      "max_m": [
+        0.119,
+        0.058,
+        0.009
+      ],
+      "level": 6,
+      "cell_mm": 0.25
+    },
+    "right_rightHingeLip_sample_strip": {
+      "min_m": [
+        0.10300000000000001,
+        0.037,
+        0.222
+      ],
+      "max_m": [
+        0.119,
+        0.054,
+        0.237
+      ],
+      "level": 6,
+      "cell_mm": 0.25
+    },
+    "repair_1674452": {
+      "min_m": [
+        0.175664814562,
+        -0.0025952524254,
+        0.1797567534275
+      ],
+      "max_m": [
+        0.18220921763800002,
+        0.0040583206216000004,
+        0.1885130997725
+      ],
+      "level": 5,
+      "cell_mm": 0.5
+    },
+    "repair_81175": {
+      "min_m": [
+        -0.15002698791465,
+        0.0345766081915,
+        -0.00210459349227
+      ],
+      "max_m": [
+        -0.14532338488535,
+        0.0392663866685,
+        0.0022294278877299997
+      ],
+      "level": 5,
+      "cell_mm": 0.5
+    },
+    "repair_3005048": {
+      "min_m": [
+        0.16045458167,
+        0.013886190683999999,
+        -0.021084646364750003
+      ],
+      "max_m": [
+        0.16866958373,
+        0.023376256236,
+        -0.01656226939525
+      ],
+      "level": 5,
+      "cell_mm": 0.5
+    },
+    "repair_3172745": {
+      "min_m": [
+        -0.167987038985,
+        0.015456624888499998,
+        -0.02090627108525
+      ],
+      "max_m": [
+        -0.160802362815,
+        0.0229258946115,
+        -0.01653726245475
+      ],
+      "level": 5,
+      "cell_mm": 0.5
+    }
+  },
+  "requested_layers": {
+    "printed": 3,
+    "laptop": 3,
+    "noctua": 2,
+    "relative_sizes": false,
+    "first_layer_thickness_mm": 0.1,
+    "minimum_total_thickness_mm": 0.04,
+    "growth": 1.2
+  },
+  "requested_max_Co": null,
+  "requested_max_deltaT_s": 1e-05,
+  "pilot_end_time_s": 0.0001,
+  "production_plan": "Measure mesh quality and cost on a bounded benchmark. Then establish flow startup duration and save hundreds of actual section samples; no invented in-between states. A longer run is not a mesh/time-step convergence test.",
+  "probes": [
+    {
+      "name": "duct_edge_x-0.111",
+      "point_m": [
+        -0.111,
+        0.039,
+        0.008
+      ]
+    },
+    {
+      "name": "duct_wake_x-0.111",
+      "point_m": [
+        -0.111,
+        0.039,
+        0.02
+      ]
+    },
+    {
+      "name": "front_lip_wallside_x-0.111",
+      "point_m": [
+        -0.111,
+        0.046,
+        0.004
+      ]
+    },
+    {
+      "name": "front_lip_outside_x-0.111",
+      "point_m": [
+        -0.111,
+        0.06,
+        0.004
+      ]
+    },
+    {
+      "name": "hinge_underside_x-0.111",
+      "point_m": [
+        -0.111,
+        0.037,
+        0.219
+      ]
+    },
+    {
+      "name": "hinge_exit_x-0.111",
+      "point_m": [
+        -0.111,
+        0.046,
+        0.239
+      ]
+    },
+    {
+      "name": "hinge_wake_x-0.111",
+      "point_m": [
+        -0.111,
+        0.046,
+        0.25
+      ]
+    },
+    {
+      "name": "duct_edge_x0.07",
+      "point_m": [
+        0.07,
+        0.039,
+        0.008
+      ]
+    },
+    {
+      "name": "duct_wake_x0.07",
+      "point_m": [
+        0.07,
+        0.039,
+        0.02
+      ]
+    },
+    {
+      "name": "front_lip_wallside_x0.07",
+      "point_m": [
+        0.07,
+        0.046,
+        0.004
+      ]
+    },
+    {
+      "name": "front_lip_outside_x0.07",
+      "point_m": [
+        0.07,
+        0.06,
+        0.004
+      ]
+    },
+    {
+      "name": "hinge_underside_x0.07",
+      "point_m": [
+        0.07,
+        0.037,
+        0.219
+      ]
+    },
+    {
+      "name": "hinge_exit_x0.07",
+      "point_m": [
+        0.07,
+        0.046,
+        0.239
+      ]
+    },
+    {
+      "name": "hinge_wake_x0.07",
+      "point_m": [
+        0.07,
+        0.046,
+        0.25
+      ]
+    },
+    {
+      "name": "duct_edge_x0.111",
+      "point_m": [
+        0.111,
+        0.039,
+        0.008
+      ]
+    },
+    {
+      "name": "duct_wake_x0.111",
+      "point_m": [
+        0.111,
+        0.039,
+        0.02
+      ]
+    },
+    {
+      "name": "front_lip_wallside_x0.111",
+      "point_m": [
+        0.111,
+        0.046,
+        0.004
+      ]
+    },
+    {
+      "name": "front_lip_outside_x0.111",
+      "point_m": [
+        0.111,
+        0.06,
+        0.004
+      ]
+    },
+    {
+      "name": "hinge_underside_x0.111",
+      "point_m": [
+        0.111,
+        0.037,
+        0.219
+      ]
+    },
+    {
+      "name": "hinge_exit_x0.111",
+      "point_m": [
+        0.111,
+        0.046,
+        0.239
+      ]
+    },
+    {
+      "name": "hinge_wake_x0.111",
+      "point_m": [
+        0.111,
+        0.046,
+        0.25
+      ]
+    },
+    {
+      "name": "ambient_reference",
+      "point_m": [
+        0,
+        0.25,
+        0.1
+      ]
+    }
+  ],
+  "interpretation": "Look for sustained traveling vorticity and reproducible pressure spectra; do not infer shedding from a still streamline image. Gauge p in Pa = 1.2 * p. Pressure depression alone does not establish a Bernoulli cause.",
+  "gates": {
+    "surface": false,
+    "mesh": false,
+    "layers": false,
+    "transient_pilot": false,
+    "spatial_convergence": false,
+    "temporal_convergence": false,
+    "hardware_validation": false
+  },
+  "mesh_profile": "focused_sequence_benchmark",
+  "benchmark": {
+    "fixed_deltaT_s": 1e-05,
+    "steps": 10,
+    "stop_condition": "Monitor logged Courant and field bounds; no automatic production extension."
+  },
+  "change_reason": "Four initialization snapshots cannot form a meaningful flow-evolution video. Reduce background and full-span cell cost while preserving 0.25 mm targets in the plotted lip regions; revisit wall layers.",
+  "defect_refinement": {
+    "source": "F:\\Code\\dell-5560-wall-mount-cfd\\fusion\\cfd\\runs\\revh_sequence_05\\review\\underdetermined-cell-locations.csv",
+    "sha256": "f6a922608fd9d22e7298c91a85225ff435af2c5b4487a7405b23c6603895988c",
+    "defect_regions": 4,
+    "padding_m": 0.002,
+    "cell_mm": 0.5
+  }
+}

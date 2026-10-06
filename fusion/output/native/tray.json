@@ -1,0 +1,254 @@
+{
+  "stage": "tray",
+  "volume_mm3": 87444.07619047724,
+  "sketches": [
+    {
+      "name": "Inboard tray wall | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Outboard tray wall | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Rear fan insertion stop | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Inboard fan support ledge | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Outboard fan support ledge | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Guard crossbar seed | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Guard central spine | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Inboard dovetail support beam | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Outboard dovetail support beam | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Inboard Rear dovetail support land | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Inboard Front dovetail support land | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Outboard Rear dovetail support land | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Outboard Front dovetail support land | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Inboard duct slide tongue | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Outboard duct slide tongue | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Inboard side vents seed tool | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Outboard side vents seed tool | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Rear stop vent seed tool | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Inboard ledge relief tool | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Outboard ledge relief tool | profile",
+      "fully_constrained": true
+    }
+  ],
+  "features": [
+    {
+      "name": "Inboard tray wall | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Outboard tray wall | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Rear fan insertion stop | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Inboard fan support ledge | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Outboard fan support ledge | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Guard crossbar seed | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Ten fan guard crossbars",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Guard central spine | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Inboard dovetail support beam | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Outboard dovetail support beam | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Inboard Rear dovetail support land | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Inboard Front dovetail support land | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Outboard Rear dovetail support land | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Outboard Front dovetail support land | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Inboard duct slide tongue | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Outboard duct slide tongue | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Join tray frame guard and slide tongues",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Inboard side vents seed tool | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Six inboard ventilation windows",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Inboard side vents",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Outboard side vents seed tool | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Six outboard ventilation windows",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Outboard side vents",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Rear stop vent seed tool | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Five rear stop ventilation windows",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Rear stop vents",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Inboard ledge relief tool | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Inboard ledge relief",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Outboard ledge relief tool | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Outboard ledge relief",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Installed fan placement | fan pivot",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Installed fan placement | inclination",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Installed fan placement | installed datum",
+      "health": 0,
+      "message": ""
+    }
+  ],
+  "bodies": 1
+}

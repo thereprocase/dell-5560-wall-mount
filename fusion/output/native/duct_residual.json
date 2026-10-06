@@ -1,0 +1,202 @@
+{
+  "native_sha256": "dd0cf43a03970084d921931acae40d4f88c1044796fbd3ca4d0d89c518d1c218",
+  "source_sha256": "21e4857dcba4724d9418739e32297985d4f7a9ac92256697d8584227669f5ede",
+  "freecad_version": [
+    "1",
+    "1",
+    "3",
+    "20260725 (Git shallow)",
+    "Unknown",
+    "2026/07/25 04:52:02",
+    "grafted,grafted",
+    "145529fe741292ff0b3977a01195bf0247425794"
+  ],
+  "occt_version": "7.8.1",
+  "native_volume_mm3": 137915.4212726492,
+  "source_volume_mm3": 137915.52526221197,
+  "raw_volume_delta_mm3": -0.10398956277640536,
+  "native_minus_source_mm3": 0.04956436436719891,
+  "source_minus_native_mm3": 0.0,
+  "residual_valid": true,
+  "residual_solids": 1,
+  "residual_bounds_installed_mm": [
+    2.95,
+    106.98688847609823,
+    -42.598897961527896,
+    3.0000000000011067,
+    108.9723554629971,
+    -40.61343097462909
+  ],
+  "residual_bounds_local_fan_mm": [
+    2.95,
+    127.99999999999963,
+    -103.45000000000027,
+    3.0000000000011067,
+    129.9078743405147,
+    -102.5499999999987
+  ],
+  "residual_faces_local": [
+    {
+      "surface": "Plane",
+      "area_mm2": 1.4832749545006738,
+      "bounds_mm": [
+        3.0,
+        127.99999999999963,
+        -103.45000000000027,
+        3.0,
+        129.90787434051467,
+        -102.54999999999968
+      ],
+      "radius_mm": null
+    },
+    {
+      "surface": "Cylinder",
+      "area_mm2": 1.4954529890586183,
+      "bounds_mm": [
+        2.95,
+        127.99999999999984,
+        -103.45000000000003,
+        3.0000000000011067,
+        129.9078743405147,
+        -102.5499999999987
+      ],
+      "radius_mm": 2.05
+    },
+    {
+      "surface": "Plane",
+      "area_mm2": 0.030073943965693906,
+      "bounds_mm": [
+        2.95,
+        127.99999999999963,
+        -103.44999999999986,
+        3.000000000001017,
+        128.00000000000037,
+        -102.54999999999956
+      ],
+      "radius_mm": null
+    },
+    {
+      "surface": "Plane",
+      "area_mm2": 0.03472584582850363,
+      "bounds_mm": [
+        2.95,
+        129.3882922250407,
+        -103.45000000000019,
+        3.0,
+        129.9078743405146,
+        -102.54999999999957
+      ],
+      "radius_mm": null
+    }
+  ],
+  "assessment": "Real localized extra cylindrical segment at first pin socket/channel junction, width 0.05 mm in X. Native fills a region left open in the source export. This is not merely a floating point volume discrepancy. Nominal recipes have matching operation order; exact reason for differing Boolean cleanup between kernels is not proven.",
+  "samples_local": [
+    {
+      "point_mm": [
+        2.999,
+        128.5,
+        -103
+      ],
+      "native_inside": true,
+      "source_inside": false,
+      "distance_to_source_mm": 0.04899999999999993
+    }
+  ],
+  "corrective_tool": {
+    "frame": "fan_local_before_tilt",
+    "cylinder": {
+      "radius_mm": 2.05,
+      "base_mm": [
+        5,
+        128,
+        -103
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "length_mm": 10
+    },
+    "clip_prism": {
+      "x_min_mm": 2.9,
+      "x_max_mm": 3,
+      "yz_polygon_mm": [
+        [
+          128.0,
+          -104.0
+        ],
+        [
+          130.22539674441492,
+          -104.0
+        ],
+        [
+          129.07076982114083,
+          -102.0
+        ],
+        [
+          128.0,
+          -102.0
+        ]
+      ]
+    },
+    "plane_provenance": "Upper Y clipping plane is first inner loft broad face, defined by first and second right inner section endpoints transformed to local fan coordinates. Express from section definitions for durable dependencies, not hardcoded sampled face IDs.",
+    "measured_tool_volume_mm3": 0.04956436430160421
+  },
+  "offline_corrected": {
+    "native_minus_source_mm3": 0.0,
+    "source_minus_native_mm3": 0.0,
+    "raw_volume_delta_mm3": -0.1524657846603077
+  },
+  "rejected_corrections": [
+    {
+      "tool": "Entire first pin cylinder redrill",
+      "extra_source_material_removed_mm3": 21.041162009503466
+    },
+    {
+      "tool": "Cylinder cap X<=3 truncated at Y130 without loft plane clip",
+      "extra_source_material_removed_mm3": 0.010583523634622555
+    }
+  ],
+  "tessellated_volume_evidence": [
+    {
+      "deflection_mm": 0.01,
+      "native_mm3": 137918.80409448218,
+      "source_mm3": 137918.75418035674,
+      "delta_mm3": 0.04991412544040941
+    },
+    {
+      "deflection_mm": 0.001,
+      "native_mm3": 137915.6913403117,
+      "source_mm3": 137915.6416821926,
+      "delta_mm3": 0.049658119096420705
+    },
+    {
+      "deflection_mm": 0.0001,
+      "native_mm3": 137915.60742222835,
+      "source_mm3": 137915.55778044893,
+      "delta_mm3": 0.04964177942019887
+    }
+  ],
+  "volume_assessment": "Independent tessellated volume differences converge near +0.049564 mm3 Boolean residual, while raw BRep volume delta is -0.103990 mm3. This strongly supports a raw volume-integration discrepancy. Do not relax geometric Boolean tolerance based on raw integration. After correction recheck mesh volumes independently if raw volume delta remains.",
+  "native_helper_recipe": {
+    "operation_order": [
+      "Create first pin-socket cylinder in local fan coordinates: radius pinSocketDiameter/2, base(5,128,-103), axis+Y, length10.",
+      "Subtract oversized box on X>=1 mm+ductSkin (to X8,Y127..139,Z-106..-100) to retain only inner-wall cap.",
+      "Subtract YZ wedge above first inner loft broad-face line, extruded across cylinder X extent. Use endpoints at Z=-106,-100 and outboard-Y boundary140.",
+      "Tilt resulting cutter with existing b.tilt and subtract from joined final duct. This removes only source-export cleanup residual."
+    ],
+    "first_inner_right_endpoint_local": {
+      "Y": "70 mm + 88 mm/sqrt(2) - ductSkin",
+      "Z": "-104 mm"
+    },
+    "second_inner_right_endpoint_local": {
+      "Y": "70 mm + 55 mm/sqrt(2) - ductSkin*110/sqrt(2)/sqrt(58^2+52^2)",
+      "Z": "-104 mm + 57 mm/sqrt(2) + ductSkin*6/sqrt(2)/sqrt(58^2+52^2)"
+    },
+    "clip_plane_formula": "Y(Z) = Y1 + (Y2-Y1)*(Z-Z1)/(Z2-Z1)",
+    "wedge_profile_YZ": "[(Y(-106),-106),(140,-106),(140,-100),(Y(-100),-100)]",
+    "nominal_plane_check": "Y=-0.5773134616370491*(Z+104)+130.225396744415",
+    "warning": "X clipping alone removes additional valid source material. Preserve both the pin cylinder and inner loft plane dependencies."
+  }
+}

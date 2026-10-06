@@ -1,0 +1,523 @@
+{
+  "revision": "D",
+  "units": "mm",
+  "tine_height_mm": 94.0,
+  "previous_tine_height_mm": 64,
+  "outlet_gap_mm": 12.0,
+  "gap_variants_mm": [
+    8,
+    12,
+    16
+  ],
+  "contraction_start_z_mm": 198.0,
+  "outlet_z_mm": 220.0,
+  "wall_gap_mm": 40,
+  "bare_slot_mm": 26,
+  "wall_hole_centers_xz_mm": [
+    [
+      -162,
+      -36.0
+    ],
+    [
+      -162,
+      174.0
+    ],
+    [
+      162,
+      -36.0
+    ],
+    [
+      162,
+      174.0
+    ]
+  ],
+  "fastener_interfaces": [
+    {
+      "kind": "wall_anchor",
+      "center": [
+        -162,
+        10,
+        -36.0
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "shaft_d_mm": 7,
+      "driver_d_mm": 16,
+      "head_plane_y": 10
+    },
+    {
+      "kind": "wall_anchor",
+      "center": [
+        -162,
+        10,
+        174.0
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "shaft_d_mm": 7,
+      "driver_d_mm": 16,
+      "head_plane_y": 10
+    },
+    {
+      "kind": "M4_duct_joint",
+      "center": [
+        -162,
+        36,
+        -19.0
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "shaft_d_mm": 4.5,
+      "driver_d_mm": 12,
+      "head_plane_y": 37
+    },
+    {
+      "kind": "M4_duct_joint",
+      "center": [
+        -162,
+        36,
+        -55.0
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "shaft_d_mm": 4.5,
+      "driver_d_mm": 12,
+      "head_plane_y": 37
+    },
+    {
+      "kind": "wall_anchor",
+      "center": [
+        162,
+        10,
+        -36.0
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "shaft_d_mm": 7,
+      "driver_d_mm": 16,
+      "head_plane_y": 10
+    },
+    {
+      "kind": "wall_anchor",
+      "center": [
+        162,
+        10,
+        174.0
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "shaft_d_mm": 7,
+      "driver_d_mm": 16,
+      "head_plane_y": 10
+    },
+    {
+      "kind": "M4_duct_joint",
+      "center": [
+        162,
+        36,
+        -19.0
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "shaft_d_mm": 4.5,
+      "driver_d_mm": 12,
+      "head_plane_y": 37
+    },
+    {
+      "kind": "M4_duct_joint",
+      "center": [
+        162,
+        36,
+        -55.0
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "shaft_d_mm": 4.5,
+      "driver_d_mm": 12,
+      "head_plane_y": 37
+    },
+    {
+      "kind": "M3_fan_retainer",
+      "center": [
+        -135,
+        144,
+        -103
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "shaft_d_mm": 3.5,
+      "driver_d_mm": 12,
+      "head_plane_y": 144
+    },
+    {
+      "kind": "M3_fan_retainer",
+      "center": [
+        -5,
+        144,
+        -103
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "shaft_d_mm": 3.5,
+      "driver_d_mm": 12,
+      "head_plane_y": 144
+    },
+    {
+      "kind": "M3_fan_retainer",
+      "center": [
+        5,
+        144,
+        -103
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "shaft_d_mm": 3.5,
+      "driver_d_mm": 12,
+      "head_plane_y": 144
+    },
+    {
+      "kind": "M3_fan_retainer",
+      "center": [
+        135,
+        144,
+        -103
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "shaft_d_mm": 3.5,
+      "driver_d_mm": 12,
+      "head_plane_y": 144
+    },
+    {
+      "kind": "M4_outlet_rail",
+      "center": [
+        -174,
+        30,
+        160
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "shaft_d_mm": 4.5,
+      "driver_d_mm": 12,
+      "head_plane_y": 31
+    },
+    {
+      "kind": "M4_outlet_rail",
+      "center": [
+        -150,
+        30,
+        160
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "shaft_d_mm": 4.5,
+      "driver_d_mm": 12,
+      "head_plane_y": 31
+    },
+    {
+      "kind": "M4_outlet_rail",
+      "center": [
+        150,
+        30,
+        160
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "shaft_d_mm": 4.5,
+      "driver_d_mm": 12,
+      "head_plane_y": 31
+    },
+    {
+      "kind": "M4_outlet_rail",
+      "center": [
+        174,
+        30,
+        160
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "shaft_d_mm": 4.5,
+      "driver_d_mm": 12,
+      "head_plane_y": 31
+    }
+  ],
+  "checks": {
+    "part_interference_mm3": {
+      "01_left_cradle / 02_right_cradle": 0.0,
+      "01_left_cradle / 03_left_fan_duct": 0.0,
+      "01_left_cradle / 04_right_fan_duct": 0.0,
+      "01_left_cradle / 05_left_fan_retainer": 0.0,
+      "01_left_cradle / 06_right_fan_retainer": 0.0,
+      "01_left_cradle / 07_left_outlet_rail": 0.0,
+      "01_left_cradle / 08_right_outlet_rail": 0.0,
+      "01_left_cradle / 09_left_fan_tray": 0.0,
+      "01_left_cradle / 10_right_fan_tray": 0.0,
+      "02_right_cradle / 03_left_fan_duct": 0.0,
+      "02_right_cradle / 04_right_fan_duct": 0.0,
+      "02_right_cradle / 05_left_fan_retainer": 0.0,
+      "02_right_cradle / 06_right_fan_retainer": 0.0,
+      "02_right_cradle / 07_left_outlet_rail": 0.0,
+      "02_right_cradle / 08_right_outlet_rail": 0.0,
+      "02_right_cradle / 09_left_fan_tray": 0.0,
+      "02_right_cradle / 10_right_fan_tray": 0.0,
+      "03_left_fan_duct / 04_right_fan_duct": 0.0,
+      "03_left_fan_duct / 05_left_fan_retainer": 0.0,
+      "03_left_fan_duct / 06_right_fan_retainer": 0.0,
+      "03_left_fan_duct / 07_left_outlet_rail": 0.0,
+      "03_left_fan_duct / 08_right_outlet_rail": 0.0,
+      "03_left_fan_duct / 09_left_fan_tray": 0.0,
+      "03_left_fan_duct / 10_right_fan_tray": 0.0,
+      "04_right_fan_duct / 05_left_fan_retainer": 0.0,
+      "04_right_fan_duct / 06_right_fan_retainer": 0.0,
+      "04_right_fan_duct / 07_left_outlet_rail": 0.0,
+      "04_right_fan_duct / 08_right_outlet_rail": 0.0,
+      "04_right_fan_duct / 09_left_fan_tray": 0.0,
+      "04_right_fan_duct / 10_right_fan_tray": 0.0,
+      "05_left_fan_retainer / 06_right_fan_retainer": 0.0,
+      "05_left_fan_retainer / 07_left_outlet_rail": 0.0,
+      "05_left_fan_retainer / 08_right_outlet_rail": 0.0,
+      "05_left_fan_retainer / 09_left_fan_tray": 0.0,
+      "05_left_fan_retainer / 10_right_fan_tray": 0.0,
+      "06_right_fan_retainer / 07_left_outlet_rail": 0.0,
+      "06_right_fan_retainer / 08_right_outlet_rail": 0.0,
+      "06_right_fan_retainer / 09_left_fan_tray": 0.0,
+      "06_right_fan_retainer / 10_right_fan_tray": 0.0,
+      "07_left_outlet_rail / 08_right_outlet_rail": 0.0,
+      "07_left_outlet_rail / 09_left_fan_tray": 0.0,
+      "07_left_outlet_rail / 10_right_fan_tray": 0.0,
+      "08_right_outlet_rail / 09_left_fan_tray": 0.0,
+      "08_right_outlet_rail / 10_right_fan_tray": 0.0,
+      "09_left_fan_tray / 10_right_fan_tray": 0.0
+    },
+    "105mm_lift_then_forward_removal_clear": true,
+    "all_16_screw_axes_normal_to_wall": true,
+    "all_16_front_driver_paths_clear": true,
+    "joint_and_fan_screw_envelopes_clear": true,
+    "M4_nuts_fit_and_load_from_accessible_outboard_slots": true,
+    "outlet_rail_nut_loading_clear": true,
+    "both_fans_slide_forward_without_removing_mount": true,
+    "both_dovetail_trays_slide_forward_with_caps_removed": true,
+    "duct_front_removal_clear": true,
+    "step_reimport_valid_solid_count": 10,
+    "all_parts_fit_256mm_volume": true,
+    "8_12_16mm_gap_variants_clear_laptop_and_mount": true,
+    "outlet_rail_clear_of_conservative_intake_band": true
+  },
+  "parts": {
+    "01_left_cradle": {
+      "volume_cm3": 383.063144312669,
+      "xmin": -184.0,
+      "xmax": -140.0,
+      "ymin": -8.881784197001252e-16,
+      "ymax": 84.0,
+      "zmin": -65.0,
+      "zmax": 184.0,
+      "dimensions_mm": [
+        44.0,
+        84.0,
+        249.0
+      ]
+    },
+    "02_right_cradle": {
+      "volume_cm3": 383.063144312669,
+      "xmin": 140.0,
+      "xmax": 184.0,
+      "ymin": -8.881784197001252e-16,
+      "ymax": 84.0,
+      "zmin": -65.0,
+      "zmax": 184.0,
+      "dimensions_mm": [
+        44.0,
+        84.0,
+        249.0
+      ]
+    },
+    "03_left_fan_duct": {
+      "volume_cm3": 224.21463957357605,
+      "xmin": -174.0000001,
+      "xmax": -0.9999998999999903,
+      "ymin": 3.9999929643154104,
+      "ymax": 136.0000001,
+      "zmin": -110.0000001,
+      "zmax": -9.999999899999986,
+      "dimensions_mm": [
+        173.00000020000002,
+        132.0000071356846,
+        100.0000002
+      ]
+    },
+    "04_right_fan_duct": {
+      "volume_cm3": 224.21463957357744,
+      "xmin": 0.9999998999999903,
+      "xmax": 174.0000001,
+      "ymin": 3.9999929643154104,
+      "ymax": 136.0000001,
+      "zmin": -110.0000001,
+      "zmax": -9.999999899999986,
+      "dimensions_mm": [
+        173.00000020000002,
+        132.0000071356846,
+        100.0000002
+      ]
+    },
+    "05_left_fan_retainer": {
+      "volume_cm3": 67.61880437488317,
+      "xmin": -140.0,
+      "xmax": -0.9999999999999991,
+      "ymin": 131.0,
+      "ymax": 144.0,
+      "zmin": -146.0,
+      "zmax": -97.0,
+      "dimensions_mm": [
+        139.0,
+        13.0,
+        49.0
+      ]
+    },
+    "06_right_fan_retainer": {
+      "volume_cm3": 67.61880437488317,
+      "xmin": 0.9999999999999991,
+      "xmax": 140.0,
+      "ymin": 131.0,
+      "ymax": 144.0,
+      "zmin": -146.0,
+      "zmax": -97.0,
+      "dimensions_mm": [
+        139.0,
+        13.0,
+        49.0
+      ]
+    },
+    "07_left_outlet_rail": {
+      "volume_cm3": 99.39920906829903,
+      "xmin": -184.0,
+      "xmax": -0.1999999999999882,
+      "ymin": 0.0,
+      "ymax": 30.0,
+      "zmin": 154.0,
+      "zmax": 220.0,
+      "dimensions_mm": [
+        183.8,
+        30.0,
+        66.0
+      ]
+    },
+    "08_right_outlet_rail": {
+      "volume_cm3": 99.39920906829903,
+      "xmin": 0.1999999999999882,
+      "xmax": 184.0,
+      "ymin": 0.0,
+      "ymax": 30.0,
+      "zmin": 154.0,
+      "zmax": 220.0,
+      "dimensions_mm": [
+        183.8,
+        30.0,
+        66.0
+      ]
+    },
+    "09_left_fan_tray": {
+      "volume_cm3": 130.92274285714262,
+      "xmin": -140.0,
+      "xmax": -1.0,
+      "ymin": 4.0,
+      "ymax": 136.0,
+      "zmin": -146.0,
+      "zmax": -108.0,
+      "dimensions_mm": [
+        139.0,
+        132.0,
+        38.0
+      ]
+    },
+    "10_right_fan_tray": {
+      "volume_cm3": 130.92274285714262,
+      "xmin": 1.0,
+      "xmax": 140.0,
+      "ymin": 4.0,
+      "ymax": 136.0,
+      "zmin": -146.0,
+      "zmax": -108.0,
+      "dimensions_mm": [
+        139.0,
+        132.0,
+        38.0
+      ]
+    }
+  },
+  "mount_bbox": {
+    "xmin": -184.0,
+    "xmax": 184.0,
+    "ymin": -8.881784197001252e-16,
+    "ymax": 144.0,
+    "zmin": -146.0,
+    "zmax": 220.0,
+    "dimensions_mm": [
+      368.0,
+      144.0,
+      366.0
+    ]
+  },
+  "installed_bbox": {
+    "xmin": -184.0,
+    "xmax": 184.0,
+    "ymin": -8.881784197001252e-16,
+    "ymax": 144.0,
+    "zmin": -146.0,
+    "zmax": 232.3,
+    "dimensions_mm": [
+      368.0,
+      144.0,
+      378.3
+    ]
+  },
+  "physical_testing": "Analytical screening only; physical fit, load, thermal and anchor tests pending."
+}

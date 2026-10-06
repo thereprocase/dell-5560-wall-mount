@@ -1,0 +1,9 @@
+{
+  "status": 400,
+  "data": {
+    "message": "Bad variable expression: #pinShaftDiameter + #pinShaftDiametralClearance",
+    "status": 400,
+    "code": 9999,
+    "moreInfoUrl": ""
+  }
+}

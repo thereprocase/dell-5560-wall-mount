@@ -1,0 +1,26 @@
+/* Generated for OpenCFD OpenFOAM v2412; setup only. */
+FoamFile
+{
+    version 2.0;
+    format ascii;
+    class dictionary;
+    object controlDict;
+}
+
+
+application simpleFoam;
+startFrom startTime; startTime 0; stopAt endTime; endTime 1200; deltaT 1;
+writeControl timeStep; writeInterval 100; purgeWrite 0;
+writeFormat binary; writePrecision 10; writeCompression off;
+timeFormat general; timePrecision 8; runTimeModifiable true;
+functions
+{
+ extrema {type fieldMinMax; libs (fieldFunctionObjects); fields (U p k omega); writeControl timeStep; writeInterval 20;}
+ yPlus {type yPlus; libs (fieldFunctionObjects); writeControl writeTime;}
+ ambient_flux {type surfaceFieldValue; libs (fieldFunctionObjects); regionType patch; name ambient_openings; operation sum; fields (phi); writeFields false; writeControl timeStep; writeInterval 20;}
+
+noctua_fan_left_mean {type volFieldValue; libs (fieldFunctionObjects); regionType cellZone; name noctua_fan_left; operation volAverage; fields (U p); writeFields false; writeControl timeStep; writeInterval 20;}
+noctua_fan_right_mean {type volFieldValue; libs (fieldFunctionObjects); regionType cellZone; name noctua_fan_right; operation volAverage; fields (U p); writeFields false; writeControl timeStep; writeInterval 20;}
+dell_fan_left_mean {type volFieldValue; libs (fieldFunctionObjects); regionType cellZone; name dell_fan_left; operation volAverage; fields (U p); writeFields false; writeControl timeStep; writeInterval 20;}
+dell_fan_right_mean {type volFieldValue; libs (fieldFunctionObjects); regionType cellZone; name dell_fan_right; operation volAverage; fields (U p); writeFields false; writeControl timeStep; writeInterval 20;}
+}

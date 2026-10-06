@@ -1,0 +1,36 @@
+{
+  "revision": "H-R1 prototype",
+  "native_sha256": "c18dd31d5447042b5cd1252cb648c024785d85229add152d20199a06cdf4c4a8",
+  "unchanged_original_parts": 14,
+  "added_parts": 4,
+  "new_fully_constrained_sketches": 19,
+  "cad_ASA_g": 60.65,
+  "slicer": "OrcaSlicer 2.4.2",
+  "process": "P1S 0.4 mm / 0.20 mm / ASA / 6 walls / 6 top and bottom / 100% rectilinear / Arachne / 8 mm outer brim / supports off",
+  "plates": {
+    "00_four_retainer_parts": {
+      "estimated_filament_g": 59.21,
+      "total_estimated_seconds": 8021.0,
+      "source_3mf_sha256": "a57201d4a5f25e1a73db306f6c2b94519401007e41d98f1acef912682fd676cd",
+      "gcode_sha256": "02ab9a40ad333a9e19906ae7fc64529e8b5ec41e1ae2f0d1ca1967cae55e52db",
+      "disconnected_floating_components": 0,
+      "max_unsupported_bridge_span_mm": 0,
+      "max_unsupported_deposition_span_mm": 3.2800020000000245
+    },
+    "01_right_arm_fit_test": {
+      "estimated_filament_g": 13.92,
+      "total_estimated_seconds": 2340.0,
+      "source_3mf_sha256": "562e226d2e48b5918641152061687c14f99288a78bacfd9845e32792b7e7ecb6",
+      "gcode_sha256": "9056983812858f1fbb55773b261c062c0bb2fe964bb2e8dae54c48407a665852",
+      "disconnected_floating_components": 0,
+      "max_unsupported_bridge_span_mm": 0,
+      "max_unsupported_deposition_span_mm": 3.2800020000000245
+    }
+  },
+  "qualification": "CAD, export and geometric toolpath screening only. Physical fit, retention, stiffness, layer adhesion and creep untested.",
+  "download": {
+    "file": "Precision_5560_RevH_Removable_Retainers_R1.zip",
+    "bytes": 8920095,
+    "sha256": "6c513ff27000da3a91d2c7dc5304087f835b3e3022bdc29dc8c5fee632bb7a66"
+  }
+}

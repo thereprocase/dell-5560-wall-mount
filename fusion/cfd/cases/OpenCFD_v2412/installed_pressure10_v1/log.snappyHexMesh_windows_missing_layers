@@ -1,0 +1,400 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2412                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 6467f461-20260821 OPENFOAM=2412 version=v2412
+Arch   : "LSB;label=32;scalar=64"
+Exec   : C:\Users\USER\AppData\Local\Programs\BARAM-26.3.0\solvers\openfoam\bin\snappyHexMesh.exe -parallel -overwrite
+Date   : Sep 07 2026
+Time   : 18:09:20
+Host   : WORKSTATION
+PID    : 8064
+I/O    : uncollated
+Case   : F:/Code/dell-5560-wall-mount/fusion/cfd/cases/OpenCFD_v2412/installed_pressure10_v1
+nProcs : 8
+Hosts  :
+(
+    (WORKSTATION 8)
+)
+Pstream initialized with:
+    floatTransfer      : false
+    maxCommsSize       : 0
+    nProcsSimpleSum    : 0
+    nonBlockingExchange: 0 (tuning: 0)
+    exchange algorithm : 0
+    commsType          : nonBlocking
+    polling iterations : 0
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 0, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+Read mesh in = 0.02 s
+[0] 
+[0] 
+[0] --> FOAM FATAL IO ERROR: 
+[1] 
+[2] 
+(openfoam-
+
+
+2412
+[1] 
+[2] 
+)
+
+
+
+[1] 
+[2] 
+[0] 
+--> FOAM FATAL IO ERROR: 
+Entry 'addLayersControls' not found (or not a dictionary) in dictionary "system/snappyHexMeshDict"
+(openfoam-
+[4] 
+[0] 
+2412
+[5] 
+[6] 
+[7] 
+
+[3] 
+--> FOAM FATAL IO ERROR: 
+
+)
+
+
+
+[4] 
+
+(openfoam-
+[0] 
+
+[5] 
+[6] 
+[7] 
+
+[3] 
+2412
+
+[2] 
+
+
+
+[4] 
+
+)
+[0] 
+Entry 'addLayersControls' not found (or not a dictionary) in dictionary "stream"
+[5] 
+[6] 
+[7] 
+--> FOAM FATAL IO ERROR: 
+[3] 
+
+file: 
+[2] 
+--> FOAM FATAL IO ERROR: 
+--> FOAM FATAL IO ERROR: 
+--> FOAM FATAL IO ERROR: 
+(openfoam-
+--> FOAM FATAL IO ERROR: 
+[1] 
+system/snappyHexMeshDict
+
+(openfoam-
+(openfoam-
+(openfoam-
+2412
+(openfoam-
+Entry 'addLayersControls' not found (or not a dictionary) in dictionary "stream"
+ at line 
+[2] 
+2412
+2412
+2412
+)
+2412
+[1] 
+11
+
+)
+)
+)
+
+)
+
+ to 
+[2] 
+
+
+
+[4] 
+
+[1] 
+51
+file: 
+[5] 
+[6] 
+[7] 
+Entry 'addLayersControls' not found (or not a dictionary) in dictionary "stream"
+[3] 
+
+.
+stream
+Entry 'addLayersControls' not found (or not a dictionary) in dictionary "stream"
+Entry 'addLayersControls' not found (or not a dictionary) in dictionary "stream"
+Entry 'addLayersControls' not found (or not a dictionary) in dictionary "stream"
+[4] 
+Entry 'addLayersControls' not found (or not a dictionary) in dictionary "stream"
+[1] 
+
+ at line 
+[5] 
+[6] 
+[7] 
+
+[3] 
+file: 
+[0] 
+0
+
+
+
+[4] 
+
+stream
+
+.
+[5] 
+[6] 
+[7] 
+
+[3] 
+ at line 
+[0] 
+
+
+
+
+[4] 
+
+0
+    From 
+[2] 
+[5] 
+[6] 
+[7] 
+file: 
+[3] 
+.
+static const Foam::dictionary& Foam::meshRefinement::subDict(const Foam::dictionary&, const Foam::word&, bool, Foam::keyType::option)
+
+file: 
+file: 
+file: 
+stream
+file: 
+
+
+[2] 
+stream
+stream
+stream
+ at line 
+stream
+[1] 
+[0] 
+    From 
+ at line 
+ at line 
+ at line 
+0
+ at line 
+
+    in file 
+static const Foam::dictionary& Foam::meshRefinement::subDict(const Foam::dictionary&, const Foam::word&, bool, Foam::keyType::option)
+0
+0
+0
+.
+0
+[1] 
+meshRefinement/meshRefinement.C
+
+.
+.
+.
+
+.
+    From 
+ at line 
+[2] 
+
+
+
+[4] 
+
+static const Foam::dictionary& Foam::meshRefinement::subDict(const Foam::dictionary&, const Foam::word&, bool, Foam::keyType::option)
+3865
+    in file 
+[5] 
+[6] 
+[7] 
+
+[3] 
+
+.
+meshRefinement/meshRefinement.C
+
+
+
+[4] 
+
+[1] 
+
+ at line 
+[5] 
+[6] 
+[7] 
+    From 
+[3] 
+    in file 
+[0] 
+3865
+    From 
+    From 
+    From 
+static const Foam::dictionary& Foam::meshRefinement::subDict(const Foam::dictionary&, const Foam::word&, bool, Foam::keyType::option)
+    From 
+meshRefinement/meshRefinement.C
+
+FOAM parallel run exiting
+.
+static const Foam::dictionary& Foam::meshRefinement::subDict(const Foam::dictionary&, const Foam::word&, bool, Foam::keyType::option)
+static const Foam::dictionary& Foam::meshRefinement::subDict(const Foam::dictionary&, const Foam::word&, bool, Foam::keyType::option)
+static const Foam::dictionary& Foam::meshRefinement::subDict(const Foam::dictionary&, const Foam::word&, bool, Foam::keyType::option)
+
+static const Foam::dictionary& Foam::meshRefinement::subDict(const Foam::dictionary&, const Foam::word&, bool, Foam::keyType::option)
+ at line 
+[0] 
+
+
+
+
+[4] 
+
+3865
+
+[2] 
+[5] 
+[6] 
+[7] 
+    in file 
+[3] 
+.
+
+FOAM parallel run exiting
+    in file 
+    in file 
+    in file 
+meshRefinement/meshRefinement.C
+    in file 
+
+[2] 
+meshRefinement/meshRefinement.C
+meshRefinement/meshRefinement.C
+meshRefinement/meshRefinement.C
+ at line 
+meshRefinement/meshRefinement.C
+[1] 
+
+ at line 
+ at line 
+ at line 
+3865
+ at line 
+
+FOAM parallel run exiting
+3865
+3865
+3865
+.
+3865
+[1] 
+.
+.
+.
+
+.
+
+
+
+
+[4] 
+
+[5] 
+[6] 
+[7] 
+
+FOAM parallel run exiting
+[3] 
+
+FOAM parallel run exiting
+
+FOAM parallel run exiting
+
+FOAM parallel run exiting
+[4] 
+
+FOAM parallel run exiting
+[5] 
+[6] 
+[7] 
+
+[3] 
+
+
+
+
+
+job aborted:
+[ranks] message
+
+[0] application aborted
+aborting MPI_COMM_WORLD (comm=0x44000000), error 1, comm rank 0
+
+[1] application aborted
+aborting MPI_COMM_WORLD (comm=0x44000000), error 1, comm rank 1
+
+[2] application aborted
+aborting MPI_COMM_WORLD (comm=0x44000000), error 1, comm rank 2
+
+[3] application aborted
+aborting MPI_COMM_WORLD (comm=0x44000000), error 1, comm rank 3
+
+[4] application aborted
+aborting MPI_COMM_WORLD (comm=0x44000000), error 1, comm rank 4
+
+[5] application aborted
+aborting MPI_COMM_WORLD (comm=0x44000000), error 1, comm rank 5
+
+[6] application aborted
+aborting MPI_COMM_WORLD (comm=0x44000000), error 1, comm rank 6
+
+[7] application aborted
+aborting MPI_COMM_WORLD (comm=0x44000000), error 1, comm rank 7
+
+---- error analysis -----
+
+[0-7] on WORKSTATION
+C:\Users\USER\AppData\Local\Programs\BARAM-26.3.0\solvers\openfoam\bin\snappyHexMesh.exe aborted the job. abort code 1
+
+---- error analysis -----

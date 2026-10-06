@@ -1,0 +1,249 @@
+{
+  "source_native_sha256": "109ac2fbadb0bf8c23e14b563b2e30ae69641a30d52d80c07a87c71e97400984",
+  "parts": {
+    "01_coupon_right_arm": {
+      "orientation": "outer flat side down",
+      "volume_mm3": 5370.239999999989,
+      "dimensions_mm": [
+        37.0,
+        16.00000000000003,
+        12.000000000000057
+      ],
+      "bounds_mm": [
+        46.50000000000003,
+        76.99999999999999,
+        2.842170943040401e-14,
+        83.50000000000003,
+        93.00000000000001,
+        12.000000000000085
+      ],
+      "closed_mesh": true,
+      "step_valid_solids": 1,
+      "step_roundtrip_difference_mm3": 0.0,
+      "bed_and_8mm_brim_clear": true,
+      "stock_cutter_and_brim_clear": true,
+      "sha256": {
+        ".stl": "2366f4201342c0609e7b065cce87cd207267a84cfd8463be4f3c05737686f1ee",
+        ".step": "05d8463d0d3227dfa2f930cb6e9a1930224906d582b9c280b63405a75bf2e6b0",
+        ".3mf": "6d584226ea964106de4537d6acd6cabbfce930c5d44ce35b266e96b44c0a9323"
+      }
+    },
+    "02_coupon_dam_carriage": {
+      "orientation": "lip down",
+      "volume_mm3": 1522.2810819146093,
+      "dimensions_mm": [
+        4.0,
+        14.000000000000014,
+        36.0
+      ],
+      "bounds_mm": [
+        105.0,
+        78.0,
+        0.0,
+        109.0,
+        92.00000000000001,
+        36.0
+      ],
+      "closed_mesh": true,
+      "step_valid_solids": 1,
+      "step_roundtrip_difference_mm3": 0.0,
+      "bed_and_8mm_brim_clear": true,
+      "stock_cutter_and_brim_clear": true,
+      "sha256": {
+        ".stl": "d6c349ddd1042ac868411a9f5446dc508d8e77b53dc37f59d8aab151b2e3238f",
+        ".step": "3c0fde4010a605f82a98ec915d85aef6b3ac7760e48b01f0c13c739824e43b87",
+        ".3mf": "94a150efcfbb713c2269024e2c20ac0f875912cc7abb5541553b34d56b466550"
+      }
+    },
+    "03_coupon_right_key": {
+      "orientation": "outer flat side down",
+      "volume_mm3": 2826.2123980236906,
+      "dimensions_mm": [
+        32.0,
+        12.0,
+        25.200000000000017
+      ],
+      "bounds_mm": [
+        133.0,
+        79.0,
+        0.0,
+        165.0,
+        91.0,
+        25.200000000000017
+      ],
+      "closed_mesh": true,
+      "step_valid_solids": 1,
+      "step_roundtrip_difference_mm3": 0.0,
+      "bed_and_8mm_brim_clear": true,
+      "stock_cutter_and_brim_clear": true,
+      "sha256": {
+        ".stl": "ee0608f213e10902174554095eec57ae4484f187dbcccb795a29f8a40769ce86",
+        ".step": "9c596661b7f83df50c7a0a41a7f70021d4829ded3adaa61f0e30c26ef93c83d0",
+        ".3mf": "70427ba59885d0290a9e1d7e5c0af7516e69b66c3aaf6f2d46d7f60e7ac63683"
+      }
+    },
+    "04_coupon_keeper": {
+      "orientation": "button down; split tip up",
+      "volume_mm3": 230.07661457352413,
+      "dimensions_mm": [
+        5.400000000000006,
+        6.997192270220353,
+        33.400000000000006
+      ],
+      "bounds_mm": [
+        104.30000000000001,
+        206.50140386488982,
+        -4.284544558371947e-16,
+        109.70000000000002,
+        213.49859613511018,
+        33.400000000000006
+      ],
+      "closed_mesh": true,
+      "step_valid_solids": 1,
+      "step_roundtrip_difference_mm3": 0.0,
+      "bed_and_8mm_brim_clear": true,
+      "stock_cutter_and_brim_clear": true,
+      "sha256": {
+        ".stl": "409e09d17b37a9bfb7169629d11a626553f5cd83287c2b7fbccb5649daedb22e",
+        ".step": "4a846d8e7a26ed7f20de2150cf0de174f6e339e3490bc2ead3044ad7214030fb",
+        ".3mf": "2e180e3c269cdedcb4b01cdffc76e5f5835c4cc4f6b418b9ae99b72cb7ef49c6"
+      }
+    },
+    "05_coupon_fan_cage": {
+      "orientation": "grille down",
+      "volume_mm3": 485.50082058761427,
+      "dimensions_mm": [
+        7.39835176317591,
+        11.000000000000028,
+        13.000000000000028
+      ],
+      "bounds_mm": [
+        61.30164823682411,
+        144.49999999999997,
+        -1.4210854715202004e-14,
+        68.70000000000002,
+        155.5,
+        13.000000000000014
+      ],
+      "closed_mesh": true,
+      "step_valid_solids": 1,
+      "step_roundtrip_difference_mm3": 0.0,
+      "bed_and_8mm_brim_clear": true,
+      "stock_cutter_and_brim_clear": true,
+      "sha256": {
+        ".stl": "f3fdf1b00171a150f59a85c8911cb425e644c5395f95ed4bf8c2d0cc3de53b14",
+        ".step": "ce9aaf8164405af9aa0c253e0311a400aeac4b97075b76f0c62a5a5c5a2edf10",
+        ".3mf": "f65c71467bcdbd80c63584d0d1d82140d38ee595f70da9822f2d8e7bf025a384"
+      }
+    },
+    "06_coupon_fan_cap": {
+      "orientation": "front face down",
+      "volume_mm3": 316.7429245875317,
+      "dimensions_mm": [
+        9.400000000000006,
+        13.0,
+        3.0000000000000426
+      ],
+      "bounds_mm": [
+        102.3,
+        143.5,
+        0.0,
+        111.7,
+        156.5,
+        3.0000000000000426
+      ],
+      "closed_mesh": true,
+      "step_valid_solids": 1,
+      "step_roundtrip_difference_mm3": 0.0,
+      "bed_and_8mm_brim_clear": true,
+      "stock_cutter_and_brim_clear": true,
+      "sha256": {
+        ".stl": "a51bdaf8f3897f4c337e937de5c910f1e4ff3a4e24bc4aaa3d97893034accf43",
+        ".step": "e3e9865e63009b42e47734f6bd6d993ead8df8eaa76d8419ca71d88c86a3e30b",
+        ".3mf": "368a5fc2aac1323311e511c1b1ad229350b4c3d606823414eaca2cd29dcf7c32"
+      }
+    },
+    "07_coupon_cap_pin": {
+      "orientation": "button down; split tip up",
+      "volume_mm3": 261.27977424477933,
+      "dimensions_mm": [
+        7.9982097291339755,
+        7.999104814482166,
+        15.400000000000006
+      ],
+      "bounds_mm": [
+        145.00179027086602,
+        146.00044759275895,
+        1.132459785423789e-14,
+        153.0,
+        153.9995524072411,
+        15.400000000000016
+      ],
+      "closed_mesh": true,
+      "step_valid_solids": 1,
+      "step_roundtrip_difference_mm3": 0.0,
+      "bed_and_8mm_brim_clear": true,
+      "stock_cutter_and_brim_clear": true,
+      "sha256": {
+        ".stl": "7e5c30ce0f07fe0c7ebb22511660b9841fde626dcd4e71158922fc20c7b03f32",
+        ".step": "3814879becfe01bd3447f55c26ee7243c92c942c677e9c05e91ed92d6a227eeb",
+        ".3mf": "5e7e2ab03deb17a2c52b1d79edaa597c0195c34980fe04c043c9c1f78615b490"
+      }
+    },
+    "08_coupon_fan_cage_hanger": {
+      "orientation": "grille down",
+      "volume_mm3": 23628.4881924015,
+      "dimensions_mm": [
+        15.0,
+        125.35382386916241,
+        88.68986283848349
+      ],
+      "bounds_mm": [
+        183.5,
+        82.32308776541878,
+        -1.4210854715202004e-14,
+        198.5,
+        207.6769116345812,
+        88.68986283848348
+      ],
+      "closed_mesh": true,
+      "step_valid_solids": 1,
+      "step_roundtrip_difference_mm3": 0.0,
+      "bed_and_8mm_brim_clear": true,
+      "stock_cutter_and_brim_clear": true,
+      "sha256": {
+        ".stl": "d3cd0770b3c735a60e09b088a57da7c79269326dab35f2aeba46bea003c3d7d4",
+        ".step": "32ae1aed26c0b49c68c08f08e7fe37bcf676c5ee4634cddce84e9af46785b309",
+        ".3mf": "11c239976538b440f4478e385eef12065d089e888cf99c8df2a27ea4a1a6bab6"
+      }
+    }
+  },
+  "purpose": "Fit samples only; not a load test or substitute assembly",
+  "plate": {
+    "orientation": "8 fit samples; do not also print the individual alternatives",
+    "volume_mm3": 34640.821862378965,
+    "dimensions_mm": [
+      151.99999999999997,
+      136.49859613511018,
+      88.68986283848349
+    ],
+    "bounds_mm": [
+      46.50000000000003,
+      76.99999999999999,
+      -1.4210854715202004e-14,
+      198.5,
+      213.49859613511018,
+      88.68986283848348
+    ],
+    "closed_mesh": true,
+    "step_valid_solids": 8,
+    "step_roundtrip_difference_mm3": 0.0,
+    "bed_and_8mm_brim_clear": true,
+    "stock_cutter_and_brim_clear": true,
+    "sha256": {
+      ".stl": "5bbbce3fdbf0f00009d4a29f3bd430a1446ddc3a826a0d4d9216baa9b8ca9167",
+      ".step": "62b9e806f43553e8ad958eca8e2dddc9393122067270e93853f070f5d371b34a",
+      ".3mf": "86460eb3d37cb330fef91836a357de230e7fbe45f52bee4cf5b92ed7c9803f99"
+    }
+  }
+}

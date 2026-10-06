@@ -1,0 +1,47 @@
+{
+  "feature": {
+    "btType": "BTMFeature-134",
+    "name": "Pin - revolve 360 degrees",
+    "featureType": "revolve",
+    "parameters": [
+      {
+        "btType": "BTMParameterEnum-145",
+        "parameterId": "bodyType",
+        "enumName": "ExtendedToolBodyType",
+        "value": "SOLID"
+      },
+      {
+        "btType": "BTMParameterEnum-145",
+        "parameterId": "operationType",
+        "enumName": "NewBodyOperationType",
+        "value": "NEW"
+      },
+      {
+        "btType": "BTMParameterQueryList-148",
+        "parameterId": "entities",
+        "queries": [
+          {
+            "btType": "BTMIndividualQuery-138",
+            "queryString": "query=qSketchRegion(makeId(\"FsccNllSqSt2GtL_0\"));"
+          }
+        ]
+      },
+      {
+        "btType": "BTMParameterQueryList-148",
+        "parameterId": "axis",
+        "queries": [
+          {
+            "btType": "BTMIndividualQuery-138",
+            "queryString": "query=qContainsPoint(qCreatedBy(makeId(\"FsccNllSqSt2GtL_0\"), EntityType.EDGE), vector(0,0,7)*millimeter);"
+          }
+        ]
+      },
+      {
+        "btType": "BTMParameterEnum-145",
+        "parameterId": "revolveType",
+        "enumName": "RevolveType",
+        "value": "FULL"
+      }
+    ]
+  }
+}

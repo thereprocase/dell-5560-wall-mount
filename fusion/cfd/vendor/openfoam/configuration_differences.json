@@ -1,0 +1,62 @@
+{
+  "audited_at_utc": "2026-09-07T21:21:19.250177+00:00",
+  "source_deb": "openfoam2412-common_2412.260127-1_all.deb",
+  "source_deb_sha256_verified": "8d734715802a207de0875ecfc2a2b44399c28cbd4a3f59471a682c56ddaf0310",
+  "files": [
+    {
+      "path": "/usr/lib/openfoam/openfoam2412/etc/bashrc",
+      "archive_sha256": "171e65f92ce60bc478e7d0f23d6d7e2b3f55af197fefd739a95a7f3d1b61f165",
+      "installed_sha256": "a1ab005aa6902d2000ee27389e6e90715a780e038c5657d126d56afa99f2bb67",
+      "diff": "--- authenticated-deb/bashrc\n+++ installed/bashrc\n@@ -120,9 +120,9 @@\n #    This can be removed if an absolute path is provided for WM_PROJECT_DIR\n #    later on in this file\n # --\n-projectDir=\"${BASH_SOURCE:-${ZSH_NAME:+$0}}\";\n-[ -n \"$projectDir\" ] && projectDir=\"$(\\cd $(dirname $projectDir)/.. && \\pwd -L)\" ||\\\n-projectDir=\"$HOME/OpenFOAM/OpenFOAM-$WM_PROJECT_VERSION\"\n+##IGNORE## projectDir=\"${BASH_SOURCE:-${ZSH_NAME:+$0}}\";\n+##IGNORE## [ -n \"$projectDir\" ] && projectDir=\"$(\\cd $(dirname $projectDir)/.. && \\pwd -L)\" ||\\\n+##IGNORE## projectDir=\"$HOME/OpenFOAM/OpenFOAM-$WM_PROJECT_VERSION\"\n # projectDir=\"/opt/openfoam/OpenFOAM-$WM_PROJECT_VERSION\"\n # projectDir=\"/usr/local/OpenFOAM/OpenFOAM-$WM_PROJECT_VERSION\"\n ################################################################################\n@@ -177,7 +177,7 @@\n     $FOAM_MODULE_APPBIN $FOAM_MODULE_LIBBIN\"\n \n # [WM_PROJECT_DIR] - Location of this OpenFOAM version\n-export WM_PROJECT_DIR=\"$projectDir\"\n+export WM_PROJECT_DIR=\"/usr/lib/openfoam/openfoam2412\"\n \n # [WM_PROJECT_USER_DIR] - Location of user files\n export WM_PROJECT_USER_DIR=\"$HOME/$WM_PROJECT/${USER:-user}-$WM_PROJECT_VERSION\"\n"
+    },
+    {
+      "path": "/usr/lib/openfoam/openfoam2412/etc/cshrc",
+      "archive_sha256": "7cdbec8564e507f5e0189b61f80ec9584ffdab99cd70cb08b29ba728590d72d0",
+      "installed_sha256": "fad754e48b1efbad541ce33fc7f3e2de1767eb865af6875a78e49cc68828a9b8",
+      "diff": "--- authenticated-deb/cshrc\n+++ installed/cshrc\n@@ -122,8 +122,8 @@\n # --\n # If the directory naming does not match WM_PROJECT, need to change here\n # Important! No line continuation in the lsof evaluation (#1668)\n-set projectName=openfoam  # debian\n-set projectDir=`lsof +p $$ |& sed -ne 's#^[^/]*##;\\@/'\"$projectName\"'[^/]*/etc/cshrc@{s#/etc/cshrc.*##p;q; }'`\n+##IGNORE## set projectName=openfoam  # debian\n+##IGNORE## set projectDir=`lsof +p $$ |& sed -ne 's#^[^/]*##;\\@/'\"$projectName\"'[^/]*/etc/cshrc@{s#/etc/cshrc.*##p;q; }'`\n \n # set projectDir=\"$HOME/OpenFOAM/OpenFOAM-$WM_PROJECT_VERSION\"\n # set projectDir=\"/opt/openfoam/OpenFOAM-$WM_PROJECT_VERSION\"\n@@ -197,7 +197,7 @@\n endif\n \n # [WM_PROJECT_DIR] - Location of this OpenFOAM version\n-setenv WM_PROJECT_DIR \"$projectDir\"\n+setenv WM_PROJECT_DIR \"/usr/lib/openfoam/openfoam2412\"\n \n # [WM_PROJECT_USER_DIR] - Location of user files\n setenv WM_PROJECT_USER_DIR \"$HOME/$WM_PROJECT/$LOGNAME-$WM_PROJECT_VERSION\"\n"
+    }
+  ],
+  "explanation": "Inspect against runtime postinst foamConfigurePaths -project-path and install.log; no installation changes made.",
+  "foamConfigurePaths_sha256": "2850fb9bd5b3c1e05e466b583ac2892d4b7d188a3bdac5c946db742c5dd0332b",
+  "foamConfigurePaths_relevant_source": [
+    "74: ",
+    "75: Basic",
+    "76:   -etc=[DIR]          set/unset FOAM_CONFIG_ETC for alternative project files",
+    "77:   -project-path DIR   specify 'WM_PROJECT_DIR' (eg, /opt/openfoam1806-patch1)",
+    "78:   -version VER        specify project version (eg, v1806)",
+    "79:   -sp | -SP | -float32 single precision (WM_PRECISION_OPTION)",
+    "80:   -dp | -DP | -float64 double precision (WM_PRECISION_OPTION)",
+    "81:   -spdp | -SPDP       mixed precision (WM_PRECISION_OPTION)",
+    "346:     echo \"    Remove automatic projectDir setting ($localFile)\"",
+    "347: ",
+    "348:     sed -i \\",
+    "349:         -e '/^ *#/!{/\\(BASH_SOURCE\\|projectDir=\\)/s/^/##IGNORE## /}' \\",
+    "350:         \"$file\"",
+    "351: }",
+    "352: ",
+    "353: ",
+    "373:     echo \"    Remove automatic projectDir setting ($localFile)\"",
+    "374: ",
+    "375:     sed -i \\",
+    "376:         -e '/^ *#/!{\\@\\(projectName=\\|projectDir=\\|/etc/cshrc\\)@s/^/##IGNORE## /}' \\",
+    "377:         \"$file\"",
+    "378: }",
+    "379: ",
+    "380: ",
+    "436:         ;;",
+    "437: ",
+    "438:    -project-path=* | -project-path)",
+    "439:         # Replace WM_PROJECT_DIR=...",
+    "440:         getOptionValue \"$@\"",
+    "441:         shift \"${nOptArgs:-0}\"",
+    "442: ",
+    "443:         if [ -n \"$optValue\" ]",
+    "444:         then",
+    "445:             replaceEtc     bashrc  WM_PROJECT_DIR \"\\\"$optValue\\\"\"",
+    "446:             replaceEtcCsh  cshrc   WM_PROJECT_DIR \"\\\"$optValue\\\"\"",
+    "447: ",
+    "448:             removeBashMagic \"$(_foamEtc bashrc)\"",
+    "449:             removeCshMagic  \"$(_foamEtc cshrc)\"",
+    "450:             adjusted=true"
+  ]
+}

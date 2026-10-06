@@ -1,0 +1,127 @@
+openfoam2412 ./postinst #!/bin/sh
+# Copyright (C) 2020 OpenCFD Ltd.
+# SPDX-License-Identifier: (GPL-3.0+)
+#
+# A postinst for openfoam2412 runtime - see dh_installdeb(1)
+# See http://www.debian.org/doc/debian-policy/ or
+# the debian-policy package
+
+prefix="/usr/lib/openfoam"
+package="${DPKG_MAINTSCRIPT_PACKAGE}"
+projectDir="$prefix/$package"
+selector="/usr/bin/openfoam-selector"
+
+set -e
+case "$1" in
+configure)
+    # Replace installation path with hard-coded value
+    if [ -d "$projectDir" ]
+    then
+    (
+        cd "$projectDir" || exit
+        echo "Update installation directory for $package"
+        bin/tools/foamConfigurePaths \
+            -project-path "$projectDir"
+    )
+    fi
+
+    # Register with openfoam-selector if possible
+    if [ -f "$selector" ] && [ -x "$selector" ]
+    then
+        if "$selector" \
+            --register "$package" \
+            --source-dir "$projectDir" \
+            --yes
+        then
+            echo "Registered '$package' with openfoam-selector"
+            selector="openfoam-selector --set $package"
+        else
+            echo "Failed to register '$package' with openfoam-selector"
+            selector="[openfoam-selector failed]"
+        fi
+    else
+        echo "Did not register '$package' [openfoam-selector missing]"
+        selector="[openfoam-selector missing]"
+    fi
+
+    echo "**"
+    echo "** Different ways to setup OpenFOAM (www.openfoam.com)"
+    echo "** - shell session:                 /usr/bin/$package"
+    echo "** - select for login shell:        $selector"
+    echo "** - source from ~/.bashrc file:  . $projectDir/etc/bashrc"
+    echo "**"
+    echo "** Upgrade information: www.openfoam.com/documentation/"
+    echo "**"
+    ;;
+
+abort-upgrade|abort-remove|abort-deconfigure)
+    ;;
+
+*)
+    #echo "postinst called with unknown argument '$1'" 1>&2
+    #exit 1
+    ;;
+esac
+
+
+
+exit 0 # clean exit
+
+# ---------------------------------------------------------------------------
+
+openfoam2412 ./postrm #!/bin/sh
+# Copyright (C) 2020 OpenCFD Ltd.
+# SPDX-License-Identifier: (GPL-3.0+)
+#
+# A postrm for openfoam2412 runtime - see dh_installdeb(1)
+# See http://www.debian.org/doc/debian-policy/ or
+# the debian-policy package
+
+prefix="/usr/lib/openfoam"
+package="${DPKG_MAINTSCRIPT_PACKAGE}"
+projectDir="$prefix/$package"
+selector="/usr/bin/openfoam-selector"
+
+case "$1" in
+remove | purge)
+    # Deregister from openfoam-selector as needed
+    if [ -f "$selector" ] && [ -x "$selector" ]
+    then
+        if [ "$($selector --system --query)" = "$package" ]
+        then
+            "$selector" --system --unset --yes
+        fi
+        if "$selector" --unregister "$package" --yes
+        then
+            echo "Unregistered '$package' from openfoam-selector"
+        else
+            echo "No '$package' to unregister from openfoam-selector"
+        fi
+    fi
+    echo "Removed OpenFOAM shell session: /usr/bin/$package"
+    echo "Removed OpenFOAM installation : $prefix/$package"
+
+    # Remind users about possible need to change ~/.bashrc
+    echo "**"
+    echo "** Update ~/.bashrc files to remove the following line:"
+    echo "**"
+    echo "**    . $projectDir/etc/bashrc"
+    echo "**"
+    ;;
+
+upgrade)
+    ;;
+
+*)
+    #echo "postrm called with unknown argument '$1'" 1>&2
+    #exit 1
+    ;;
+esac
+
+
+
+exit 0 # clean exit
+
+# ---------------------------------------------------------------------------
+
+Verified 27 package hashes against signed indexes; OpenFOAM InRelease signature valid.

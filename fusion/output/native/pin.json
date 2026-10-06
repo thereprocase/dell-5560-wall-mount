@@ -1,0 +1,32 @@
+{
+  "stage": "pin",
+  "volume_mm3": 204.56030211132367,
+  "sketches": [
+    {
+      "name": "Pin axial section | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Pin centered split cutter | profile",
+      "fully_constrained": true
+    }
+  ],
+  "features": [
+    {
+      "name": "Pin | full axial revolve",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Pin centered split cutter | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Pin | open compliant split",
+      "health": 0,
+      "message": ""
+    }
+  ],
+  "bodies": 1
+}

@@ -1,0 +1,554 @@
+{
+  "13-inch-example": {
+    "assumed_laptop_mass_kg": 3,
+    "vertical_acceleration_factor": 2,
+    "load_split": "equal between two arms",
+    "force_per_arm_N": 29.43,
+    "wall_to_load_mm": 48.0,
+    "moment_per_arm_Nmm": 1412.6399999999999,
+    "anchor_center_spacing_mm": 156.0,
+    "ideal_anchor_pair_tension_N": 9.055384615384614,
+    "upright_sections": [
+      {
+        "z_mm": 1,
+        "net_area_mm2": 596.9999999999696,
+        "Ixx_mm4": 204149.59021380873,
+        "extreme_fiber_mm": 36.439698743717614,
+        "nominal_axial_plus_bending_MPa": 0.30144578126401506
+      },
+      {
+        "z_mm": 12,
+        "net_area_mm2": 717.5999999999273,
+        "Ixx_mm4": 236745.83432082363,
+        "extreme_fiber_mm": 42.21404682273973,
+        "nominal_axial_plus_bending_MPa": 0.2928989301208528
+      },
+      {
+        "z_mm": 26,
+        "net_area_mm2": 499.1999999999079,
+        "Ixx_mm4": 161408.03879384056,
+        "extreme_fiber_mm": 44.826923076919904,
+        "nominal_axial_plus_bending_MPa": 0.4512786813269072
+      },
+      {
+        "z_mm": 47.2,
+        "net_area_mm2": 279.60000000009035,
+        "Ixx_mm4": 44661.18158999534,
+        "extreme_fiber_mm": 19.87553648068435,
+        "nominal_axial_plus_bending_MPa": 0.7339237675212165
+      },
+      {
+        "z_mm": 50,
+        "net_area_mm2": 208.80000000003326,
+        "Ixx_mm4": 33236.778546212045,
+        "extreme_fiber_mm": 22.862068965517288,
+        "nominal_axial_plus_bending_MPa": 1.112639111017581
+      },
+      {
+        "z_mm": 52.8,
+        "net_area_mm2": 260.39999999995615,
+        "Ixx_mm4": 43965.00346584417,
+        "extreme_fiber_mm": 19.71889400922126,
+        "nominal_axial_plus_bending_MPa": 0.7466064290234604
+      },
+      {
+        "z_mm": 74,
+        "net_area_mm2": 352.79999999993055,
+        "Ixx_mm4": 35028.119025299064,
+        "extreme_fiber_mm": 22.510204081632686,
+        "nominal_axial_plus_bending_MPa": 0.9912265962418866
+      },
+      {
+        "z_mm": 98,
+        "net_area_mm2": 208.79999999995903,
+        "Ixx_mm4": 33236.77854619977,
+        "extreme_fiber_mm": 22.862068965517267,
+        "nominal_axial_plus_bending_MPa": 1.1126391110179892
+      },
+      {
+        "z_mm": 122,
+        "net_area_mm2": 208.79999999995914,
+        "Ixx_mm4": 33236.7785462009,
+        "extreme_fiber_mm": 22.862068965517267,
+        "nominal_axial_plus_bending_MPa": 1.112639111017956
+      },
+      {
+        "z_mm": 146,
+        "net_area_mm2": 208.80000000010747,
+        "Ixx_mm4": 33236.77854622413,
+        "extreme_fiber_mm": 22.862068965517274,
+        "nominal_axial_plus_bending_MPa": 1.1126391110171772
+      },
+      {
+        "z_mm": 170,
+        "net_area_mm2": 496.80000000025507,
+        "Ixx_mm4": 49296.134473077705,
+        "extreme_fiber_mm": 25.84057971014495,
+        "nominal_axial_plus_bending_MPa": 0.7997320090736427
+      }
+    ],
+    "peak_nominal_demand_MPa": 1.1126391110179892,
+    "load_rating_established": false,
+    "limits": "Beam screening demand only. No ASA allowable, creep duration, temperature, print anisotropy, stress concentration, shelf/fastener FEA, anchor strength or physical qualification was established."
+  },
+  "14-inch-example": {
+    "assumed_laptop_mass_kg": 3,
+    "vertical_acceleration_factor": 2,
+    "load_split": "equal between two arms",
+    "force_per_arm_N": 29.43,
+    "wall_to_load_mm": 49.0,
+    "moment_per_arm_Nmm": 1442.07,
+    "anchor_center_spacing_mm": 166.0,
+    "ideal_anchor_pair_tension_N": 8.687168674698794,
+    "upright_sections": [
+      {
+        "z_mm": 1,
+        "net_area_mm2": 603.0000000000749,
+        "Ixx_mm4": 220910.88770823544,
+        "extreme_fiber_mm": 37.85820920398295,
+        "nominal_axial_plus_bending_MPa": 0.2959381432764142
+      },
+      {
+        "z_mm": 12,
+        "net_area_mm2": 723.5999999998756,
+        "Ixx_mm4": 254164.12703820452,
+        "extreme_fiber_mm": 43.74626865671479,
+        "nominal_axial_plus_bending_MPa": 0.28887811521011963
+      },
+      {
+        "z_mm": 26,
+        "net_area_mm2": 499.20000000003563,
+        "Ixx_mm4": 168793.57725538567,
+        "extreme_fiber_mm": 46.65384615384784,
+        "nominal_axial_plus_bending_MPa": 0.45753650651209327
+      },
+      {
+        "z_mm": 47.2,
+        "net_area_mm2": 404.4000000001052,
+        "Ixx_mm4": 46175.492733814644,
+        "extreme_fiber_mm": 20.531157270028004,
+        "nominal_axial_plus_bending_MPa": 0.7139666848769247
+      },
+      {
+        "z_mm": 50,
+        "net_area_mm2": 208.86000000003153,
+        "Ixx_mm4": 33238.98072717521,
+        "extreme_fiber_mm": 22.861821315714025,
+        "nominal_axial_plus_bending_MPa": 1.132765716484637
+      },
+      {
+        "z_mm": 52.8,
+        "net_area_mm2": 260.39999999995536,
+        "Ixx_mm4": 43965.00346584425,
+        "extreme_fiber_mm": 19.71889400922131,
+        "nominal_axial_plus_bending_MPa": 0.7598061789368721
+      },
+      {
+        "z_mm": 74,
+        "net_area_mm2": 304.7399999998507,
+        "Ixx_mm4": 34756.672224589485,
+        "extreme_fiber_mm": 22.590667454223773,
+        "nominal_axial_plus_bending_MPa": 1.0338711060252115
+      },
+      {
+        "z_mm": 98,
+        "net_area_mm2": 208.79999999995715,
+        "Ixx_mm4": 33236.778546200556,
+        "extreme_fiber_mm": 22.862068965517075,
+        "nominal_axial_plus_bending_MPa": 1.1328826700837067
+      },
+      {
+        "z_mm": 122,
+        "net_area_mm2": 208.79999999995923,
+        "Ixx_mm4": 33236.778546200716,
+        "extreme_fiber_mm": 22.862068965517267,
+        "nominal_axial_plus_bending_MPa": 1.132882670083709
+      },
+      {
+        "z_mm": 146,
+        "net_area_mm2": 352.8000000001813,
+        "Ixx_mm4": 35028.119025324246,
+        "extreme_fiber_mm": 22.51020408163269,
+        "nominal_axial_plus_bending_MPa": 1.0101392676764724
+      },
+      {
+        "z_mm": 170,
+        "net_area_mm2": 588.5500000003026,
+        "Ixx_mm4": 49679.319761983876,
+        "extreme_fiber_mm": 25.685328349333137,
+        "nominal_axial_plus_bending_MPa": 0.795586949547504
+      }
+    ],
+    "peak_nominal_demand_MPa": 1.132882670083709,
+    "load_rating_established": false,
+    "limits": "Beam screening demand only. No ASA allowable, creep duration, temperature, print anisotropy, stress concentration, shelf/fastener FEA, anchor strength or physical qualification was established."
+  },
+  "15-6-inch-example": {
+    "assumed_laptop_mass_kg": 3,
+    "vertical_acceleration_factor": 2,
+    "load_split": "equal between two arms",
+    "force_per_arm_N": 29.43,
+    "wall_to_load_mm": 52.0,
+    "moment_per_arm_Nmm": 1530.36,
+    "anchor_center_spacing_mm": 186.0,
+    "ideal_anchor_pair_tension_N": 8.22774193548387,
+    "upright_sections": [
+      {
+        "z_mm": 1,
+        "net_area_mm2": 621.000000000069,
+        "Ixx_mm4": 277260.3688761075,
+        "extreme_fiber_mm": 42.06521763285396,
+        "nominal_axial_plus_bending_MPa": 0.2795735189122832
+      },
+      {
+        "z_mm": 12,
+        "net_area_mm2": 741.6000000002241,
+        "Ixx_mm4": 312770.2000917198,
+        "extreme_fiber_mm": 48.29126213592576,
+        "nominal_axial_plus_bending_MPa": 0.27596981513726676
+      },
+      {
+        "z_mm": 26,
+        "net_area_mm2": 499.2000000000829,
+        "Ixx_mm4": 192844.34648615867,
+        "extreme_fiber_mm": 52.13461538461878,
+        "nominal_axial_plus_bending_MPa": 0.4726803782892227
+      },
+      {
+        "z_mm": 47.2,
+        "net_area_mm2": 404.4000000001022,
+        "Ixx_mm4": 46175.49273381446,
+        "extreme_fiber_mm": 20.53115727002802,
+        "nominal_axial_plus_bending_MPa": 0.7532233504380375
+      },
+      {
+        "z_mm": 50,
+        "net_area_mm2": 352.80000000005606,
+        "Ixx_mm4": 35028.11902531167,
+        "extreme_fiber_mm": 22.510204081632686,
+        "nominal_axial_plus_bending_MPa": 1.0668772819827472
+      },
+      {
+        "z_mm": 52.8,
+        "net_area_mm2": 289.19999999995986,
+        "Ixx_mm4": 44943.200077474816,
+        "extreme_fiber_mm": 19.946058091290613,
+        "nominal_axial_plus_bending_MPa": 0.7809463075274234
+      },
+      {
+        "z_mm": 74,
+        "net_area_mm2": 208.79999999995923,
+        "Ixx_mm4": 33236.77854620045,
+        "extreme_fiber_mm": 22.862068965517288,
+        "nominal_axial_plus_bending_MPa": 1.1936133472809598
+      },
+      {
+        "z_mm": 98,
+        "net_area_mm2": 208.79999999995943,
+        "Ixx_mm4": 33236.77854620063,
+        "extreme_fiber_mm": 22.862068965517285,
+        "nominal_axial_plus_bending_MPa": 1.1936133472809536
+      },
+      {
+        "z_mm": 122,
+        "net_area_mm2": 352.7999999999306,
+        "Ixx_mm4": 35028.119025298554,
+        "extreme_fiber_mm": 22.510204081632686,
+        "nominal_axial_plus_bending_MPa": 1.0668772819831451
+      },
+      {
+        "z_mm": 146,
+        "net_area_mm2": 208.80000000010764,
+        "Ixx_mm4": 33236.7785462245,
+        "extreme_fiber_mm": 22.862068965517302,
+        "nominal_axial_plus_bending_MPa": 1.1936133472800983
+      },
+      {
+        "z_mm": 170,
+        "net_area_mm2": 208.80000000010762,
+        "Ixx_mm4": 33236.77854622344,
+        "extreme_fiber_mm": 22.86206896551728,
+        "nominal_axial_plus_bending_MPa": 1.1936133472801314
+      }
+    ],
+    "peak_nominal_demand_MPa": 1.1936133472809598,
+    "load_rating_established": false,
+    "limits": "Beam screening demand only. No ASA allowable, creep duration, temperature, print anisotropy, stress concentration, shelf/fastener FEA, anchor strength or physical qualification was established."
+  },
+  "16-inch-example": {
+    "assumed_laptop_mass_kg": 3,
+    "vertical_acceleration_factor": 2,
+    "load_split": "equal between two arms",
+    "force_per_arm_N": 29.43,
+    "wall_to_load_mm": 52.0,
+    "moment_per_arm_Nmm": 1530.36,
+    "anchor_center_spacing_mm": 186.0,
+    "ideal_anchor_pair_tension_N": 8.22774193548387,
+    "upright_sections": [
+      {
+        "z_mm": 1,
+        "net_area_mm2": 621.000000000069,
+        "Ixx_mm4": 277260.3688761075,
+        "extreme_fiber_mm": 42.06521763285396,
+        "nominal_axial_plus_bending_MPa": 0.2795735189122832
+      },
+      {
+        "z_mm": 12,
+        "net_area_mm2": 741.6000000002241,
+        "Ixx_mm4": 312770.2000917198,
+        "extreme_fiber_mm": 48.29126213592576,
+        "nominal_axial_plus_bending_MPa": 0.27596981513726676
+      },
+      {
+        "z_mm": 26,
+        "net_area_mm2": 499.2000000000829,
+        "Ixx_mm4": 192844.34648615867,
+        "extreme_fiber_mm": 52.13461538461878,
+        "nominal_axial_plus_bending_MPa": 0.4726803782892227
+      },
+      {
+        "z_mm": 47.2,
+        "net_area_mm2": 404.4000000001022,
+        "Ixx_mm4": 46175.49273381446,
+        "extreme_fiber_mm": 20.53115727002802,
+        "nominal_axial_plus_bending_MPa": 0.7532233504380375
+      },
+      {
+        "z_mm": 50,
+        "net_area_mm2": 352.80000000005606,
+        "Ixx_mm4": 35028.11902531167,
+        "extreme_fiber_mm": 22.510204081632686,
+        "nominal_axial_plus_bending_MPa": 1.0668772819827472
+      },
+      {
+        "z_mm": 52.8,
+        "net_area_mm2": 289.19999999995986,
+        "Ixx_mm4": 44943.200077474816,
+        "extreme_fiber_mm": 19.946058091290613,
+        "nominal_axial_plus_bending_MPa": 0.7809463075274234
+      },
+      {
+        "z_mm": 74,
+        "net_area_mm2": 208.79999999995923,
+        "Ixx_mm4": 33236.77854620045,
+        "extreme_fiber_mm": 22.862068965517288,
+        "nominal_axial_plus_bending_MPa": 1.1936133472809598
+      },
+      {
+        "z_mm": 98,
+        "net_area_mm2": 208.79999999995943,
+        "Ixx_mm4": 33236.77854620063,
+        "extreme_fiber_mm": 22.862068965517285,
+        "nominal_axial_plus_bending_MPa": 1.1936133472809536
+      },
+      {
+        "z_mm": 122,
+        "net_area_mm2": 352.7999999999306,
+        "Ixx_mm4": 35028.119025298554,
+        "extreme_fiber_mm": 22.510204081632686,
+        "nominal_axial_plus_bending_MPa": 1.0668772819831451
+      },
+      {
+        "z_mm": 146,
+        "net_area_mm2": 208.80000000010764,
+        "Ixx_mm4": 33236.7785462245,
+        "extreme_fiber_mm": 22.862068965517302,
+        "nominal_axial_plus_bending_MPa": 1.1936133472800983
+      },
+      {
+        "z_mm": 170,
+        "net_area_mm2": 208.80000000010762,
+        "Ixx_mm4": 33236.77854622344,
+        "extreme_fiber_mm": 22.86206896551728,
+        "nominal_axial_plus_bending_MPa": 1.1936133472801314
+      }
+    ],
+    "peak_nominal_demand_MPa": 1.1936133472809598,
+    "load_rating_established": false,
+    "limits": "Beam screening demand only. No ASA allowable, creep duration, temperature, print anisotropy, stress concentration, shelf/fastener FEA, anchor strength or physical qualification was established."
+  },
+  "17-inch-example": {
+    "assumed_laptop_mass_kg": 3,
+    "vertical_acceleration_factor": 2,
+    "load_split": "equal between two arms",
+    "force_per_arm_N": 29.43,
+    "wall_to_load_mm": 54.0,
+    "moment_per_arm_Nmm": 1589.22,
+    "anchor_center_spacing_mm": 186.0,
+    "ideal_anchor_pair_tension_N": 8.544193548387097,
+    "upright_sections": [
+      {
+        "z_mm": 1,
+        "net_area_mm2": 633.0000000000713,
+        "Ixx_mm4": 320059.0915040496,
+        "extreme_fiber_mm": 44.83175379147325,
+        "nominal_axial_plus_bending_MPa": 0.2691002833541869
+      },
+      {
+        "z_mm": 12,
+        "net_area_mm2": 753.6000000002188,
+        "Ixx_mm4": 357348.3233042525,
+        "extreme_fiber_mm": 51.2802547770747,
+        "nominal_axial_plus_bending_MPa": 0.26710904386185996
+      },
+      {
+        "z_mm": 26,
+        "net_area_mm2": 499.20000000008747,
+        "Ixx_mm4": 210456.654178467,
+        "extreme_fiber_mm": 55.78846153846517,
+        "nominal_axial_plus_bending_MPa": 0.48022938326305725
+      },
+      {
+        "z_mm": 47.2,
+        "net_area_mm2": 404.4000000001022,
+        "Ixx_mm4": 46175.492733814644,
+        "extreme_fiber_mm": 20.53115727002802,
+        "nominal_axial_plus_bending_MPa": 0.7793944608121074
+      },
+      {
+        "z_mm": 50,
+        "net_area_mm2": 352.80000000005595,
+        "Ixx_mm4": 35028.119025311295,
+        "extreme_fiber_mm": 22.510204081632686,
+        "nominal_axial_plus_bending_MPa": 1.104702624853367
+      },
+      {
+        "z_mm": 52.8,
+        "net_area_mm2": 289.19999999995827,
+        "Ixx_mm4": 44943.20007747453,
+        "extreme_fiber_mm": 19.946058091290645,
+        "nominal_axial_plus_bending_MPa": 0.8070687237601308
+      },
+      {
+        "z_mm": 74,
+        "net_area_mm2": 208.7999999999592,
+        "Ixx_mm4": 33236.77854620067,
+        "extreme_fiber_mm": 22.862068965517288,
+        "nominal_axial_plus_bending_MPa": 1.2341004654124472
+      },
+      {
+        "z_mm": 98,
+        "net_area_mm2": 208.79999999995937,
+        "Ixx_mm4": 33236.77854620045,
+        "extreme_fiber_mm": 22.86206896551728,
+        "nominal_axial_plus_bending_MPa": 1.234100465412454
+      },
+      {
+        "z_mm": 122,
+        "net_area_mm2": 352.7999999999306,
+        "Ixx_mm4": 35028.119025299275,
+        "extreme_fiber_mm": 22.510204081632686,
+        "nominal_axial_plus_bending_MPa": 1.104702624853747
+      },
+      {
+        "z_mm": 146,
+        "net_area_mm2": 208.80000000010762,
+        "Ixx_mm4": 33236.77854622504,
+        "extreme_fiber_mm": 22.8620689655173,
+        "nominal_axial_plus_bending_MPa": 1.234100465411546
+      },
+      {
+        "z_mm": 170,
+        "net_area_mm2": 208.80000000010756,
+        "Ixx_mm4": 33236.778546223264,
+        "extreme_fiber_mm": 22.86206896551728,
+        "nominal_axial_plus_bending_MPa": 1.2341004654116037
+      }
+    ],
+    "peak_nominal_demand_MPa": 1.234100465412454,
+    "load_rating_established": false,
+    "limits": "Beam screening demand only. No ASA allowable, creep duration, temperature, print anisotropy, stress concentration, shelf/fastener FEA, anchor strength or physical qualification was established."
+  },
+  "5560": {
+    "assumed_laptop_mass_kg": 3,
+    "vertical_acceleration_factor": 2,
+    "load_split": "equal between two arms",
+    "force_per_arm_N": 29.43,
+    "wall_to_load_mm": 50.0,
+    "moment_per_arm_Nmm": 1471.5,
+    "anchor_center_spacing_mm": 176.3,
+    "ideal_anchor_pair_tension_N": 8.346568349404423,
+    "upright_sections": [
+      {
+        "z_mm": 1,
+        "net_area_mm2": 609.0000000000869,
+        "Ixx_mm4": 238671.1152992967,
+        "extreme_fiber_mm": 39.268473152711856,
+        "nominal_axial_plus_bending_MPa": 0.29043049133583665
+      },
+      {
+        "z_mm": 12,
+        "net_area_mm2": 729.5999999998727,
+        "Ixx_mm4": 272626.4281023635,
+        "extreme_fiber_mm": 45.269736842103576,
+        "nominal_axial_plus_bending_MPa": 0.2846803854168146
+      },
+      {
+        "z_mm": 26,
+        "net_area_mm2": 499.20000000003694,
+        "Ixx_mm4": 176494.80802461653,
+        "extreme_fiber_mm": 48.48076923077098,
+        "nominal_axial_plus_bending_MPa": 0.4631557463389313
+      },
+      {
+        "z_mm": 47.2,
+        "net_area_mm2": 404.4000000001019,
+        "Ixx_mm4": 46175.492733814644,
+        "extreme_fiber_mm": 20.53115727002802,
+        "nominal_axial_plus_bending_MPa": 0.7270522400639623
+      },
+      {
+        "z_mm": 50,
+        "net_area_mm2": 352.8000000000559,
+        "Ixx_mm4": 35028.11902531147,
+        "extreme_fiber_mm": 22.51020408163268,
+        "nominal_axial_plus_bending_MPa": 1.029051939112144
+      },
+      {
+        "z_mm": 52.8,
+        "net_area_mm2": 260.3999999999563,
+        "Ixx_mm4": 43965.00346584446,
+        "extreme_fiber_mm": 19.718894009221252,
+        "nominal_axial_plus_bending_MPa": 0.7730059288502774
+      },
+      {
+        "z_mm": 74,
+        "net_area_mm2": 208.79999999995906,
+        "Ixx_mm4": 33236.778546200534,
+        "extreme_fiber_mm": 22.86206896551728,
+        "nominal_axial_plus_bending_MPa": 1.1531262291494622
+      },
+      {
+        "z_mm": 98,
+        "net_area_mm2": 208.7999999999592,
+        "Ixx_mm4": 33236.7785462006,
+        "extreme_fiber_mm": 22.86206896551727,
+        "nominal_axial_plus_bending_MPa": 1.1531262291494597
+      },
+      {
+        "z_mm": 122,
+        "net_area_mm2": 352.7999999999304,
+        "Ixx_mm4": 35028.11902530026,
+        "extreme_fiber_mm": 22.510204081632686,
+        "nominal_axial_plus_bending_MPa": 1.0290519391124768
+      },
+      {
+        "z_mm": 146,
+        "net_area_mm2": 208.80000000010722,
+        "Ixx_mm4": 33236.77854622263,
+        "extreme_fiber_mm": 22.86206896551728,
+        "nominal_axial_plus_bending_MPa": 1.1531262291486895
+      },
+      {
+        "z_mm": 170,
+        "net_area_mm2": 208.80000000010725,
+        "Ixx_mm4": 33236.77854622319,
+        "extreme_fiber_mm": 22.862068965517278,
+        "nominal_axial_plus_bending_MPa": 1.1531262291486721
+      }
+    ],
+    "peak_nominal_demand_MPa": 1.1531262291494622,
+    "load_rating_established": false,
+    "limits": "Beam screening demand only. No ASA allowable, creep duration, temperature, print anisotropy, stress concentration, shelf/fastener FEA, anchor strength or physical qualification was established."
+  }
+}

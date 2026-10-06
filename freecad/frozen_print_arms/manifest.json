@@ -1,0 +1,17 @@
+{
+  "reason": "User started printing; no further arm/cradle geometry changes authorized.",
+  "parts": {
+    "02_right_cradle": {
+      "source": "Compound015",
+      "file": "02_right_cradle.brep",
+      "sha256": "9a25a2a3b968b176881e55ad60a91070514447d025824b5524784e1dc1d5e687",
+      "volume": 274207.0057675637
+    },
+    "01_left_cradle": {
+      "source": "Mirroring",
+      "file": "01_left_cradle.brep",
+      "sha256": "4a597e80ff8555bdbf0da95f5abca9923f4f1ce12e27003e6c5c1a79d0e5b7e4",
+      "volume": 274207.00576756365
+    }
+  }
+}

@@ -1,0 +1,39 @@
+/* Generated for OpenCFD OpenFOAM v2412; setup only. */
+FoamFile
+{
+    version 2.0;
+    format ascii;
+    class volScalarField;
+    location "0";
+    object omega;
+}
+
+dimensions [0 0 -1 0 0 0 0];
+internalField uniform 20;
+boundaryField
+{
+    printed
+    {
+        type omegaWallFunction; value uniform 20;
+    }
+    laptop
+    {
+        type omegaWallFunction; value uniform 20;
+    }
+    noctua
+    {
+        type omegaWallFunction; value uniform 20;
+    }
+    wall_plane
+    {
+        type omegaWallFunction; value uniform 20;
+    }
+    ambient_openings
+    {
+        type inletOutlet; inletValue uniform 20; value uniform 20;
+    }
+    backgroundBox
+    {
+        type omegaWallFunction; value uniform 20;
+    }
+}

@@ -1,0 +1,72 @@
+{
+  "runtime": "BARAM bundled OpenFOAM-v2412 build6467f461-20260821 with Microsoft MPI10.1.12498.18",
+  "surface_gate": "WSL OpenCFD2412 default surfaceCheck:closed,noillegaltriangles,noselfintersections",
+  "mesh_checks": "StandardcheckMesh MeshOK; expanded diagnostics retain1weakdeterminantcell,concavepolyhedra",
+  "inputs": [
+    {
+      "path": "profile_reconstruction.json",
+      "bytes": 3313,
+      "sha256": "e74f3c245cd7c16d0ee7e9533757d6eb5b3cdc13ecee13177c1c2b04bb0a0e51"
+    },
+    {
+      "path": "fusion\\native\\cfd_helpers_traced.py",
+      "bytes": 5973,
+      "sha256": "27b563fe0d8a85686d1db7f9df865cdc0a14823e03bb77b0c9d43fa4ff2925d9"
+    },
+    {
+      "path": "fusion\\output\\native\\cfd_helpers_traced.json",
+      "bytes": 12607,
+      "sha256": "8a64f4f30f49a6af90d0ecd78bb1a10d7badb1c2a1080c375875a9ec4d61cf81"
+    },
+    {
+      "path": "fusion\\output\\native\\cfd_helpers_traced.step",
+      "bytes": 86255,
+      "sha256": "6fa7e681562fb4f9ac68e63bbe39f1ce2a4039499740c63e80dbb2e0b972ded2"
+    },
+    {
+      "path": "fusion\\cfd\\repair_surface.py",
+      "bytes": 3646,
+      "sha256": "77e9845885f97f1c12b036865a3fe74c93945b10de87356622ab8d253945d5c0"
+    },
+    {
+      "path": "fusion\\cfd\\stabilize_surface.py",
+      "bytes": 1358,
+      "sha256": "44e3c9abf6d1004d025b61eb59983295bc5d5aada3f93033fbb1a2d811dd518d"
+    },
+    {
+      "path": "fusion\\cfd\\cases\\OpenCFD_v2412\\installed_pressure10_v3\\constant\\triSurface\\fluid_boundary.stl",
+      "bytes": 7203701,
+      "sha256": "eb35b35137bad5f48453a284222b4148d4d60ffd96e89a6732395e33f1d2a466"
+    },
+    {
+      "path": "fusion\\cfd\\cases\\OpenCFD_v2412\\installed_pressure10_v3\\system\\snappyHexMeshDict",
+      "bytes": 2397,
+      "sha256": "74d09d190b18136b180fa851dda93b9f3388c5afff4ad9494abb1843bc036d30"
+    },
+    {
+      "path": "fusion\\cfd\\cases\\OpenCFD_v2412\\installed_pressure10_v3\\system\\topoSetDict",
+      "bytes": 1313,
+      "sha256": "f0f0a40eb48835fb12dbe791c02c0516e75fd2546c0c7d9569437cd1e8eb24c3"
+    },
+    {
+      "path": "fusion\\cfd\\cases\\OpenCFD_v2412\\installed_pressure10_v3\\constant\\fvOptions",
+      "bytes": 906,
+      "sha256": "9cc43b8c29187dfa5c5aa5567f8170a249017560c64711c162ed53546288b84c"
+    },
+    {
+      "path": "fusion\\cfd\\cases\\OpenCFD_v2412\\installed_pressure10_v3\\system\\fvSchemes",
+      "bytes": 676,
+      "sha256": "d5107f6cbd6b1771f7a8a65d588d97c551b90d96f129cc0776254b0df32863c6"
+    },
+    {
+      "path": "fusion\\cfd\\cases\\OpenCFD_v2412\\installed_pressure10_v3\\system\\fvSolution",
+      "bytes": 788,
+      "sha256": "0cdcc308762fd4f8f6c2a32dec50acb8ee500db415c7dd5a35de7845e1079b81"
+    },
+    {
+      "path": "fusion\\cfd\\cases\\OpenCFD_v2412\\installed_pressure10_v3\\system\\controlDict",
+      "bytes": 1702,
+      "sha256": "8959195fb01dc94e812ec4d8dc7dd1fe1a3a3f457adb4c447b00b41be896fdb0"
+    }
+  ]
+}

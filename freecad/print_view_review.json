@@ -1,0 +1,37 @@
+{
+  "04_right_fan_duct": {
+    "valid": true,
+    "single_solid": true,
+    "small_faces": 0,
+    "short_edges": 0,
+    "view": "Duct: inlet-down print review"
+  },
+  "10_right_fan_tray": {
+    "valid": true,
+    "single_solid": true,
+    "small_faces": 0,
+    "short_edges": 0,
+    "view": "Tray: grille-down print review"
+  },
+  "06_right_fan_retainer": {
+    "valid": true,
+    "single_solid": true,
+    "small_faces": 0,
+    "short_edges": 0,
+    "view": "Cap: front-face-down print review"
+  },
+  "08_right_outlet_rail": {
+    "valid": true,
+    "single_solid": true,
+    "small_faces": 0,
+    "short_edges": 0,
+    "view": "Rail: lip-down print review"
+  },
+  "12_right_push_pin": {
+    "valid": true,
+    "single_solid": true,
+    "small_faces": 0,
+    "short_edges": 0,
+    "view": "Pin: button-down print review"
+  }
+}

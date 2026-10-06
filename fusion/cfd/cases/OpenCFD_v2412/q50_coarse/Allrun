@@ -1,0 +1,34 @@
+#!/bin/sh
+set -eu
+cd "$(dirname "$0")"
+case "${WM_PROJECT_VERSION:-}" in
+    v2412|2412) ;;
+    *) echo "Source OpenCFD OpenFOAM v2412 before running this case." >&2; exit 2 ;;
+esac
+[ "${WM_PROJECT:-}" = OpenFOAM ] || { echo "Wrong OpenFOAM environment" >&2; exit 2; }
+for command in python3 blockMesh surfaceCheck snappyHexMesh checkMesh simpleFoam; do
+    command -v "$command" >/dev/null 2>&1 || { echo "Missing $command" >&2; exit 2; }
+done
+# Verify the loaded executable agrees with the environment, without solving.
+simpleFoam -help > version_check.txt 2>&1
+grep -Eq 'OpenFOAM-v2412|OpenFOAM-2412' version_check.txt || {
+    echo "simpleFoam executable is not identified as OpenCFD v2412" >&2; exit 2;
+}
+if [ -e constant/polyMesh ] || [ -e log.blockMesh ] || [ -e log.simpleFoam ]; then
+    echo "This case has mesh/run evidence already; generate a fresh case to preserve it." >&2
+    exit 2
+fi
+echo "Running explicitly requested sealed fixed-flow benchmark; no thermal or fan-curve solve."
+surfaceCheck -checkSelfIntersection constant/triSurface/fluid_boundary.stl > log.surfaceCheck 2>&1
+grep -q 'Surface is closed' log.surfaceCheck || { echo "Surface closure check failed" >&2; exit 3; }
+if grep -q 'Surface is self-intersecting' log.surfaceCheck; then
+    echo "Surface self-intersection reported; repair geometry before meshing." >&2
+    exit 3
+fi
+blockMesh > log.blockMesh 2>&1
+snappyHexMesh -overwrite > log.snappyHexMesh 2>&1
+checkMesh -allGeometry -allTopology > log.checkMesh 2>&1
+grep -q 'Mesh OK' log.checkMesh || { echo "Mesh checks did not pass; inspect log.checkMesh" >&2; exit 3; }
+python3 verify_mesh.py
+simpleFoam > log.simpleFoam 2>&1
+echo "Solver returned. Inspect convergence, flux balance, yPlus and mesh sensitivity before using results."

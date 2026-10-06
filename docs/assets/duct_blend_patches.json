@@ -1,0 +1,17 @@
+{
+  "status": "done",
+  "construction": "Separate additive patches derived from the original native wall loft",
+  "wall_loss_mm3": 0.0,
+  "difference_from_wall_preserving_solid_mm3": 0.0,
+  "gaps_mm": {
+    "04_right_fan_duct / 06_right_fan_retainer": 0.3000000000000346,
+    "04_right_fan_duct / 10_right_fan_tray": 0.2999999999998891,
+    "06_right_fan_retainer / 10_right_fan_tray": 0.3000000000000346,
+    "03_left_fan_duct / 05_left_fan_retainer": 0.3000000000000346,
+    "03_left_fan_duct / 09_left_fan_tray": 0.2999999999998891,
+    "05_left_fan_retainer / 09_left_fan_tray": 0.3000000000000346
+  },
+  "arms_difference_mm3": 0,
+  "patches_per_duct": 2,
+  "new_sketches": 2
+}

@@ -1,0 +1,72 @@
+{
+  "phase": "mesh",
+  "started_utc": "2026-09-08T14:39:16.838816+00:00",
+  "state": "complete",
+  "steps": [
+    {
+      "tool": "blockMesh",
+      "executable_sha256": "8df4dd069353a306ec7c849152ae095a7fa21a339af171ce868dd904d198a7e8",
+      "arguments": [],
+      "parallel": false,
+      "log": "log.blockMesh",
+      "exit_code": 0,
+      "wall_seconds": 0.375
+    },
+    {
+      "tool": "decomposePar",
+      "executable_sha256": "021782820be67200e4da842f81715d7c6bceddc6693e308566da785262542c0b",
+      "arguments": [],
+      "parallel": false,
+      "log": "log.decomposeMesh",
+      "exit_code": 0,
+      "wall_seconds": 0.625
+    },
+    {
+      "tool": "snappyHexMesh",
+      "executable_sha256": "124b85394bccd220f7d65292d152441517643d2379e6ed3863868421443b89a0",
+      "arguments": [
+        "-overwrite"
+      ],
+      "parallel": true,
+      "log": "log.snappyHexMesh",
+      "exit_code": 0,
+      "wall_seconds": 764.6879999999946
+    },
+    {
+      "tool": "reconstructParMesh",
+      "executable_sha256": "01e20569dded77d653585b01301527a769f0bec082e6164026eaccbafb2fcecc",
+      "arguments": [
+        "-constant"
+      ],
+      "parallel": false,
+      "log": "log.reconstructMesh",
+      "exit_code": 0,
+      "wall_seconds": 6.327999999994063
+    },
+    {
+      "tool": "checkMesh",
+      "executable_sha256": "ce99a5275c1e4f22c6ad4dfd3f79374bfc84f90b0ade7881a74463584ce39bca",
+      "arguments": [
+        "-constant"
+      ],
+      "parallel": false,
+      "log": "log.checkMesh.standard",
+      "exit_code": 0,
+      "wall_seconds": 13.5
+    },
+    {
+      "tool": "checkMesh",
+      "executable_sha256": "ce99a5275c1e4f22c6ad4dfd3f79374bfc84f90b0ade7881a74463584ce39bca",
+      "arguments": [
+        "-constant",
+        "-allGeometry",
+        "-allTopology"
+      ],
+      "parallel": false,
+      "log": "log.checkMesh.expanded",
+      "exit_code": 0,
+      "wall_seconds": 45.078000000008615
+    }
+  ],
+  "finished_utc": "2026-09-08T14:53:07.510062+00:00"
+}

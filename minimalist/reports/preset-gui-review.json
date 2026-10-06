@@ -1,0 +1,56 @@
+{
+  "13-inch-example": {
+    "visible_shape_objects": 20,
+    "installed_visible_parts": 20,
+    "bad_features": [],
+    "distinct_part_colors": 5,
+    "native_sha256": "21d953ba2fcbda1b1341bed5085a3f3ddeeecff24fc2abd08587e0aff8a11bff",
+    "pass": true,
+    "file_unchanged": true
+  },
+  "14-inch-example": {
+    "visible_shape_objects": 20,
+    "installed_visible_parts": 20,
+    "bad_features": [],
+    "distinct_part_colors": 5,
+    "native_sha256": "a6f5829f2f1001ec49c44b135f6f1f088db7eafc3921074a53c1ed435e51929d",
+    "pass": true,
+    "file_unchanged": true
+  },
+  "15-6-inch-example": {
+    "visible_shape_objects": 20,
+    "installed_visible_parts": 20,
+    "bad_features": [],
+    "distinct_part_colors": 5,
+    "native_sha256": "8bfbbeaaa716b32907f12cd0b0e3e3f29ac891943ac899fe3281b580fd6437a7",
+    "pass": true,
+    "file_unchanged": true
+  },
+  "16-inch-example": {
+    "visible_shape_objects": 20,
+    "installed_visible_parts": 20,
+    "bad_features": [],
+    "distinct_part_colors": 5,
+    "native_sha256": "70dfca602ba381a0990f334de44f52b2ff7542f19a7c69278e0942e3f858e985",
+    "pass": true,
+    "file_unchanged": true
+  },
+  "17-inch-example": {
+    "visible_shape_objects": 20,
+    "installed_visible_parts": 20,
+    "bad_features": [],
+    "distinct_part_colors": 5,
+    "native_sha256": "218c0f0af40d46e1689ddde2474d8da9abfe5efb790557d4dca13385a8ef86ba",
+    "pass": true,
+    "file_unchanged": true
+  },
+  "5560": {
+    "visible_shape_objects": 20,
+    "installed_visible_parts": 20,
+    "bad_features": [],
+    "distinct_part_colors": 5,
+    "native_sha256": "109ac2fbadb0bf8c23e14b563b2e30ae69641a30d52d80c07a87c71e97400984",
+    "pass": true,
+    "file_unchanged": true
+  }
+}

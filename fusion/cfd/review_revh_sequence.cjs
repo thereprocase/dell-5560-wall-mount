@@ -1,0 +1,107 @@
+// Browser acceptance for the hourly page, actual MP4 decoding and mobile layout.
+const {chromium}=require('F:/Code/dell-5560-wall-mount-minimalist/freecad/showcase/tooling/node_modules/playwright');
+const fs=require('fs'),path=require('path'),crypto=require('crypto');
+const base=process.argv[2]||'http://127.0.0.1:8881/simulation/revh-transient/sequence/';
+const output=process.argv[3]||'fusion/cfd/runs/revh_fourhour_08/browser-initial';
+(async()=>{
+ fs.mkdirSync(output,{recursive:true});
+ const browser=await chromium.launch({executablePath:'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe',headless:true});
+ try {
+  const page=await browser.newPage({viewport:{width:1440,height:1050}});
+  const errors=[];page.on('pageerror',e=>errors.push(e.message));
+  const response=await page.goto(base,{waitUntil:'networkidle'});
+  if(!response.ok())errors.push('Page HTTP '+response.status());
+  const links=await page.locator('a[href]').evaluateAll(els=>[...new Set(els.map(a=>a.href))]);
+  const badLinks=[];
+  for(const link of links){
+   if(!link.startsWith(new URL(base).origin))continue;
+   const r=await page.request.head(link);
+   if(!r.ok())badLinks.push({url:link,status:r.status()});
+  }
+  if(badLinks.length)errors.push('Broken internal links');
+  const video=page.locator('#flow-video');let meta=null;
+  if(await video.count()){
+   // Python's local file server does not implement byte ranges. Decode its
+   // complete file as a blob locally; public checks use the real HTTPS source.
+   if(new URL(base).hostname==='127.0.0.1')await video.evaluate(async v=>{v.src=URL.createObjectURL(await (await fetch(v.querySelector('source').src)).blob());v.load();});
+   await video.scrollIntoViewIfNeeded();await video.evaluate(v=>v.play());
+   await page.waitForFunction(()=>document.querySelector('#flow-video').currentTime>.25);
+   await video.evaluate(v=>v.pause());
+   const source=await video.locator('source').getAttribute('src');
+   const report=await (await page.request.get(new URL('progress.json',new URL(source,base)).href)).json();
+   const expectedIndex=process.argv.indexOf('--expected-sha');
+   if(expectedIndex>=0&&report.video_sha256!==process.argv[expectedIndex+1])errors.push('Deployed checkpoint does not match the expected video SHA-256');
+   for(const alias of (process.argv.includes('--no-early-alias')?['latest.mp4']:['latest.mp4','early/flow.mp4'])){
+    const response=await page.request.get(new URL(alias+'?v='+report.video_sha256,base).href);
+    if(!response.ok()||crypto.createHash('sha256').update(await response.body()).digest('hex')!==report.video_sha256)errors.push('Current-video alias mismatch: '+alias);
+   }
+   meta=await video.evaluate(v=>({duration:v.duration,width:v.videoWidth,height:v.videoHeight,controls:v.controls,autoplay:v.autoplay,loop:v.loop,error:v.error}));
+   const hashes=[],seekTimes=[];
+   for(const fraction of [.15,.50,.85]){
+    const index=Math.floor((report.source_frames-1)*fraction);
+    const t=report.source_frame_start_s[index]+.01;
+    await video.evaluate((v,t)=>new Promise(resolve=>{v.addEventListener('seeked',()=>requestAnimationFrame(()=>requestAnimationFrame(resolve)),{once:true});v.currentTime=t;}),t);
+    seekTimes.push(await video.evaluate(v=>v.currentTime));
+    const frame=await video.evaluate(v=>{const c=document.createElement('canvas');c.width=900;c.height=750;c.getContext('2d').drawImage(v,600,170,1100,780,0,0,900,750);return c.toDataURL();});
+    hashes.push(crypto.createHash('sha256').update(frame).digest('hex'));
+   }
+   meta={...meta,playback_advanced:true,seek_times:seekTimes,distinct_decoded_flow_regions:new Set(hashes).size,source_frames:report.source_frames};
+   if(new Set(hashes).size!==3)errors.push('Flow regions did not decode as three distinct states');
+   if(Math.abs(meta.duration-report.video_duration_s)>.05||meta.width!==1800||meta.height!==1100||!meta.controls||meta.autoplay||meta.loop||meta.error)errors.push('Video presentation check failed');
+   await video.screenshot({path:path.join(output,'video-desktop.png')});
+  }
+  const fastVideo=page.locator('#flow-video-fast');let fastMeta=null;
+  if(await fastVideo.count()){
+   const report=await (await page.request.get(new URL('latest-5x.json',base).href)).json();
+   const latest=await (await page.request.get(new URL('latest.json',base).href)).json();
+   if(report.source_video_sha256!==latest.video_sha256)errors.push('5x video is from a different checkpoint');
+   const response=await page.request.get(new URL('latest-5x.mp4?v='+report.video_sha256,base).href);
+   if(!response.ok()||crypto.createHash('sha256').update(await response.body()).digest('hex')!==report.video_sha256)errors.push('5x video hash mismatch');
+   if(new URL(base).hostname==='127.0.0.1')await fastVideo.evaluate(async v=>{v.src=URL.createObjectURL(await (await fetch(v.querySelector('source').src)).blob());v.load();});
+   await fastVideo.scrollIntoViewIfNeeded();await fastVideo.evaluate(v=>v.play());
+   await page.waitForFunction(()=>document.querySelector('#flow-video-fast').currentTime>.25);
+   await fastVideo.evaluate(v=>v.pause());
+   fastMeta=await fastVideo.evaluate(v=>({duration:v.duration,width:v.videoWidth,height:v.videoHeight,error:v.error,controls:v.controls}));
+   const hashes=[];
+   for(const fraction of [.15,.50,.85]){
+    await fastVideo.evaluate((v,t)=>new Promise(resolve=>{v.addEventListener('seeked',()=>requestAnimationFrame(()=>requestAnimationFrame(resolve)),{once:true});v.currentTime=t;}),fastMeta.duration*fraction);
+    const frame=await fastVideo.evaluate(v=>{const c=document.createElement('canvas');c.width=900;c.height=750;c.getContext('2d').drawImage(v,600,170,1100,780,0,0,900,750);return c.toDataURL();});
+    hashes.push(crypto.createHash('sha256').update(frame).digest('hex'));
+   }
+   fastMeta={...fastMeta,playback_advanced:true,distinct_decoded_flow_regions:new Set(hashes).size,speed_multiplier:report.speed_multiplier};
+   if(new Set(hashes).size!==3||Math.abs(fastMeta.duration-report.source_video_duration_s/5)>.025||fastMeta.width!==1800||fastMeta.height!==1100||fastMeta.error||!fastMeta.controls)errors.push('5x playback check failed');
+   await fastVideo.screenshot({path:path.join(output,'video-5x-desktop.png')});
+  }
+  const tracerVideo=page.locator('#flow-video-tracers');let tracerMeta=null;
+  if(await tracerVideo.count()){
+   const report=await (await page.request.get(new URL('latest-tracers.json',base).href)).json();
+   const latest=await (await page.request.get(new URL('latest.json',base).href)).json();
+   if(report.source_video_sha256!==latest.video_sha256||report.samples_read_and_hash_verified!==latest.source_frames||report.preview)errors.push('Tracer source checkpoint mismatch');
+   const response=await page.request.get(new URL('latest-tracers.mp4?v='+report.video_sha256,base).href);
+   if(!response.ok()||crypto.createHash('sha256').update(await response.body()).digest('hex')!==report.video_sha256)errors.push('Tracer video hash mismatch');
+   if(new URL(base).hostname==='127.0.0.1')await tracerVideo.evaluate(async v=>{v.src=URL.createObjectURL(await (await fetch(v.querySelector('source').src)).blob());v.load();});
+   await tracerVideo.scrollIntoViewIfNeeded();await tracerVideo.evaluate(v=>v.play());
+   await page.waitForFunction(()=>document.querySelector('#flow-video-tracers').currentTime>.25);
+   await tracerVideo.evaluate(v=>v.pause());
+   tracerMeta=await tracerVideo.evaluate(v=>({duration:v.duration,width:v.videoWidth,height:v.videoHeight,error:v.error,controls:v.controls}));
+   const hashes=[];
+   for(const fraction of [.15,.50,.85]){
+    await tracerVideo.evaluate((v,t)=>new Promise(resolve=>{v.addEventListener('seeked',()=>requestAnimationFrame(()=>requestAnimationFrame(resolve)),{once:true});v.currentTime=t;}),tracerMeta.duration*fraction);
+    const frame=await tracerVideo.evaluate(v=>{const c=document.createElement('canvas');c.width=1200;c.height=700;c.getContext('2d').drawImage(v,100,200,1550,700,0,0,1200,700);return c.toDataURL();});
+    hashes.push(crypto.createHash('sha256').update(frame).digest('hex'));
+   }
+   tracerMeta={...tracerMeta,playback_advanced:true,distinct_decoded_flow_regions:new Set(hashes).size,particle_transport:report.clouds};
+   if(new Set(hashes).size!==3||Math.abs(tracerMeta.duration-report.video_duration_s)>.025||tracerMeta.width!==1800||tracerMeta.height!==1100||tracerMeta.error||!tracerMeta.controls||report.clouds.some(c=>c.integrated_travel_mm<=0))errors.push('Moving-tracer playback check failed');
+   await tracerVideo.screenshot({path:path.join(output,'video-tracers-desktop.png')});
+  }
+  await page.screenshot({path:path.join(output,'desktop.png'),fullPage:true});
+  await page.setViewportSize({width:390,height:844});
+  if(await video.count())await video.scrollIntoViewIfNeeded();
+  const mobileOverflow=await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth);
+  await page.screenshot({path:path.join(output,'mobile.png'),fullPage:true});
+  if(mobileOverflow)errors.push('Mobile page overflow');
+  const result={checked_utc:new Date().toISOString(),url:base,video:meta,fast_video:fastMeta,tracer_video:tracerMeta,internal_links_checked:links.length,badLinks,mobile_overflow:mobileOverflow,errors};
+  fs.writeFileSync(path.join(output,'review.json'),JSON.stringify(result,null,2)+'\n');console.log(JSON.stringify(result));
+  if(errors.length)process.exitCode=1;
+ }finally{await browser.close();}
+})().catch(e=>{console.error(e);process.exitCode=1;});

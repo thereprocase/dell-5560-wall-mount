@@ -1,0 +1,70 @@
+{
+  "revision": "H-D4",
+  "native_sha256": "9b423831ca0aa4c3d6507f46d4051cea1a1990736894ee7295f20d946d2cdf2c",
+  "parts": {
+    "03_left_fan_duct": {
+      "orientation": "inlet face down; original D3 pose and profile retained",
+      "volume_mm3": 140123.8999870309,
+      "dimensions_mm": [
+        174.5,
+        131.70000000000005,
+        109.64469683442255
+      ],
+      "bounds_mm": [
+        40.75,
+        62.1499999964833,
+        7.105427357601002e-15,
+        215.25,
+        193.84999999648335,
+        109.64469683442255
+      ],
+      "closed_mesh": true,
+      "step_valid_solids": 1,
+      "step_roundtrip_difference_mm3": 0.0,
+      "bed_and_8mm_brim_clear": true,
+      "stock_cutter_and_brim_clear": true,
+      "sha256": {
+        ".stl": "33f05b89b12471ff31faebd73468ed5b058816f0b28d11ceeae82175b88d7e93",
+        ".step": "38b101701a0eded504fc874e426e2bf913e2df82141fec912d050baf19305472",
+        ".3mf": "1b5428c192d0be38a1c7fdd66658c4f57dd153cda4134cce6b723f268a2508cd"
+      }
+    },
+    "04_right_fan_duct": {
+      "orientation": "inlet face down; original D3 pose and profile retained",
+      "volume_mm3": 140123.89998702297,
+      "dimensions_mm": [
+        174.5,
+        131.70000000000005,
+        109.64469683442252
+      ],
+      "bounds_mm": [
+        40.74999999999999,
+        62.14999999648332,
+        -2.842170943040401e-14,
+        215.25,
+        193.84999999648335,
+        109.64469683442249
+      ],
+      "closed_mesh": true,
+      "step_valid_solids": 1,
+      "step_roundtrip_difference_mm3": 0.0,
+      "bed_and_8mm_brim_clear": true,
+      "stock_cutter_and_brim_clear": true,
+      "sha256": {
+        ".stl": "de0f7d4c9c40b233ebf839eda592797bf5abb277d046a79fc619fe2d87a72e2e",
+        ".step": "e45e46430c55b8d88486cfc54dc1c5ec9c45e447308d00ebf5960b8c8032a4cd",
+        ".3mf": "c0820d317a7a13ee096b511a85bfa6ec0326616bdf8b17bbc2aab31c3ff8b869"
+      }
+    }
+  },
+  "gui_preservation": {
+    "geometry_archive_members_unchanged": 1941,
+    "gui_archive_members_restored": 2401,
+    "old_view_providers_retained": 897,
+    "new_hidden_view_providers": 3,
+    "document_xml_sha256": "dc9ef12c2d0f0e27ab4dd95423931f6c3f3e2af4781140bd42229652fd239d13",
+    "native_sha256": "9b423831ca0aa4c3d6507f46d4051cea1a1990736894ee7295f20d946d2cdf2c",
+    "passed": true,
+    "headless_native_sha256": "db66042dcc2d5c2f878ae8b5add61c0c6acd7f74884f1fb6c91d3cb6c4d164e4"
+  }
+}

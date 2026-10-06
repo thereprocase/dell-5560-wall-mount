@@ -1,0 +1,168 @@
+{
+  "04_right_fan_duct": {
+    "valid": true,
+    "solids": 1,
+    "small_faces": [
+      {
+        "face": 10,
+        "area_mm2": 0.019999947723728262,
+        "center": [
+          138.9999984723895,
+          99.20040900366729,
+          -44.07551732263932
+        ]
+      },
+      {
+        "face": 29,
+        "area_mm2": -8.333192598114878e-08,
+        "center": [
+          139.99999250008275,
+          100.93847386255696,
+          -45.81358218152915
+        ]
+      },
+      {
+        "face": 76,
+        "area_mm2": 0.019999973512415004,
+        "center": [
+          2.0000006578453067,
+          99.20041037597512,
+          -44.075518694947235
+        ]
+      },
+      {
+        "face": 80,
+        "area_mm2": -8.333192778147316e-08,
+        "center": [
+          1.0000074999173407,
+          100.93847386253786,
+          -45.813582181510036
+        ]
+      }
+    ],
+    "short_edges": 6
+  },
+  "03_left_fan_duct": {
+    "valid": true,
+    "solids": 1,
+    "small_faces": [
+      {
+        "face": 10,
+        "area_mm2": 0.019999947723595035,
+        "center": [
+          -138.9999984723886,
+          99.20040900366192,
+          -44.07551732263393
+        ]
+      },
+      {
+        "face": 29,
+        "area_mm2": -8.333192598114878e-08,
+        "center": [
+          -139.99999250008275,
+          100.93847386255696,
+          -45.81358218152915
+        ]
+      },
+      {
+        "face": 76,
+        "area_mm2": 0.019999973512413227,
+        "center": [
+          -2.000000657845199,
+          99.20041037597521,
+          -44.07551869494731
+        ]
+      },
+      {
+        "face": 80,
+        "area_mm2": -8.333192778147316e-08,
+        "center": [
+          -1.0000074999173407,
+          100.93847386253786,
+          -45.813582181510036
+        ]
+      }
+    ],
+    "short_edges": 6
+  },
+  "06_right_fan_retainer": {
+    "valid": true,
+    "solids": 1,
+    "small_faces": [],
+    "short_edges": 0
+  },
+  "05_left_fan_retainer": {
+    "valid": true,
+    "solids": 1,
+    "small_faces": [],
+    "short_edges": 0
+  },
+  "08_right_outlet_rail": {
+    "valid": true,
+    "solids": 1,
+    "small_faces": [
+      {
+        "face": 7,
+        "area_mm2": 0.04191152837813661,
+        "center": [
+          182.0,
+          6.3,
+          184.29476105895273
+        ]
+      }
+    ],
+    "short_edges": 2
+  },
+  "07_left_outlet_rail": {
+    "valid": true,
+    "solids": 1,
+    "small_faces": [
+      {
+        "face": 7,
+        "area_mm2": 0.04191152837813661,
+        "center": [
+          -182.0,
+          6.3,
+          184.29476105895273
+        ]
+      }
+    ],
+    "short_edges": 2
+  },
+  "10_right_fan_tray": {
+    "valid": true,
+    "solids": 1,
+    "small_faces": [],
+    "short_edges": 0
+  },
+  "09_left_fan_tray": {
+    "valid": true,
+    "solids": 1,
+    "small_faces": [],
+    "short_edges": 0
+  },
+  "11_left_push_pin": {
+    "valid": true,
+    "solids": 1,
+    "small_faces": [],
+    "short_edges": 0
+  },
+  "12_right_push_pin": {
+    "valid": true,
+    "solids": 1,
+    "small_faces": [],
+    "short_edges": 0
+  },
+  "13_left_push_pin": {
+    "valid": true,
+    "solids": 1,
+    "small_faces": [],
+    "short_edges": 0
+  },
+  "14_right_push_pin": {
+    "valid": true,
+    "solids": 1,
+    "small_faces": [],
+    "short_edges": 0
+  }
+}

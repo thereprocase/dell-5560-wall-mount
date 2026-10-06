@@ -1,0 +1,122 @@
+{
+  "attempts_used": 34,
+  "authorized_total": 40,
+  "remaining": 6,
+  "http_responses": 33,
+  "sandbox_blocked_attempts": 1,
+  "mcp_calls": 0,
+  "feature_ids": [
+    {
+      "id": "FsccNllSqSt2GtL_0",
+      "type": "newSketch",
+      "name": "Pin - axial profile (mm)",
+      "constraint_count": 26
+    },
+    {
+      "id": "F6eJcmPlBqWoX2y_0",
+      "type": "revolve",
+      "name": "Pin - revolve 360 degrees",
+      "constraint_count": 0
+    },
+    {
+      "id": "FqmwXx7eYeJWJUo_1",
+      "type": "newSketch",
+      "name": "Pin - 1 mm split from z=4",
+      "constraint_count": 11
+    },
+    {
+      "id": "FGkQYbmYK6DR0na_1",
+      "type": "extrude",
+      "name": "Pin - split cut symmetric 6 mm",
+      "constraint_count": 0
+    }
+  ],
+  "assembly_occurrence_paths": [
+    [
+      "M5mFLLhN5gdXda3TN"
+    ],
+    [
+      "MHmYUYWHGspLYhsuH"
+    ],
+    [
+      "MTvwZny9b7s59RYDm"
+    ],
+    [
+      "MZxzRMC3bPemsaqUG"
+    ]
+  ],
+  "shared_variables_assigned": 38,
+  "nominal_restored": true,
+  "parameter_test": "pinHeadRadius 4 -> 4.5 -> 4 mm; geometric response measured",
+  "limitations": [
+    "Only pin modeled; other ten distinct parts pending",
+    "Occurrences positioned but not fixed/mated",
+    "Split anchor remains fixed at nominal coordinates",
+    "Only head-radius perturbation tested; solver DOF not queried",
+    "OCCT direct volume integration discrepancy retained"
+  ],
+  "geometry_comparison": {
+    "native_valid": true,
+    "source_valid": true,
+    "native_solids": 1,
+    "source_solids": 1,
+    "native_volume_mm3": 204.50798697739742,
+    "source_volume_mm3": 204.56030211045663,
+    "native_bounds_mm": [
+      -4.0,
+      -4.0,
+      0.0,
+      4.0,
+      4.0,
+      14.0
+    ],
+    "source_bounds_mm": [
+      -4.0,
+      -3.999999999995126,
+      -3.375522084070326e-12,
+      4.0,
+      4.000000000004874,
+      14.000000000001343
+    ],
+    "native_minus_source_mm3": 0.0,
+    "source_minus_native_mm3": 0.0,
+    "common_volume_mm3": 204.50798697739748,
+    "freecad_version": [
+      "1",
+      "1",
+      "3",
+      "20260725 (Git shallow)",
+      "Unknown",
+      "2026/07/25 04:52:02",
+      "grafted,grafted",
+      "145529fe741292ff0b3977a01195bf0247425794"
+    ],
+    "occt_version": "7.8.1",
+    "input_sha256": {
+      "onshape\\exploration_20\\33-native-pin-download.step": "342d4fa50cbbedebee91b93910b4f128c92ef4fd853cd03cf240800ff4d5e80e",
+      "parts\\12_right_push_pin.step": "cedf1d08e6fab4ce99cbc8ba86cbdce780338605096829f31a8541065a6d0fd3"
+    },
+    "symmetric_difference_mm3": 0.0,
+    "passes_1e-4_mm3_difference": true,
+    "volume_delta_mm3": -0.052315133059209984,
+    "volume_and_boolean_agree": false,
+    "tessellated_volume_checks": [
+      {
+        "deflection_mm": 0.005,
+        "native_mm3": 204.54877849836453,
+        "source_mm3": 204.54874795192106
+      },
+      {
+        "deflection_mm": 0.001,
+        "native_mm3": 204.55895445340283,
+        "source_mm3": 204.55895582094365
+      },
+      {
+        "deflection_mm": 0.0001,
+        "native_mm3": 204.55988150407416,
+        "source_mm3": 204.55988312993784
+      }
+    ],
+    "assessment": "Both Boolean differences empty and fine tessellated volumes agree closely. Raw OCCT volume integration disagrees; an integration discrepancy is suspected, not proven. Exact conversion is not unconditionally accepted."
+  }
+}

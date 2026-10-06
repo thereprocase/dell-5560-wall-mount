@@ -1,0 +1,600 @@
+{
+  "created_utc": "2026-09-07T20:56:09.269169+00:00",
+  "benchmark": "SIMPLIFIED SEALED INTERNAL FLOW BENCHMARK",
+  "installed_flow_prediction": false,
+  "thermal_results": false,
+  "assumptions": [
+    "Artificial side seals suppress lateral ambient leakage.",
+    "Envelope uses two ideal inner ruled ducts and a continuous rear plenum.",
+    "Inlet cylinders represent fluid, not modeled fan blades or fan performance.",
+    "Disconnected enclosed pockets are excluded from the inlet-to-outlet fluid domain.",
+    "The laptop_shell patch labels the full planar Y40 benchmark boundary, including assumed continuation beyond the actual laptop outline; it is not a full physical thermal shell."
+  ],
+  "gap_mm": 8,
+  "step_units": "millimetres",
+  "stl_units": "metres",
+  "freecad_version": [
+    "1",
+    "1",
+    "3",
+    "20260725 (Git shallow)",
+    "Unknown",
+    "2026/07/25 04:52:02",
+    "grafted,grafted",
+    "145529fe741292ff0b3977a01195bf0247425794"
+  ],
+  "occt_version": "7.8.1",
+  "boundaries": {
+    "fan_left": {
+      "face_indices_zero_based": [
+        0
+      ],
+      "brep_area_m2": 0.010568317686676066,
+      "triangles": 82,
+      "mesh_area_m2": 0.010558465589678632,
+      "area_mean_normal": [
+        0.0,
+        0.7071067883971442,
+        -0.7071067739752444
+      ],
+      "area_weighted_normal": [
+        0.0,
+        0.7071067883974974,
+        -0.7071067739755975
+      ],
+      "stl_file": "fan_left.stl",
+      "stl_units": "metres",
+      "sha256": "fe6235469031cca8d8545cfe8c3c943b7057272e89c1fb130d6a3a3cc6903f15"
+    },
+    "fan_right": {
+      "face_indices_zero_based": [
+        2
+      ],
+      "brep_area_m2": 0.010568317686676066,
+      "triangles": 82,
+      "mesh_area_m2": 0.010558465589678632,
+      "area_mean_normal": [
+        0.0,
+        0.7071067883971442,
+        -0.7071067739752444
+      ],
+      "area_weighted_normal": [
+        0.0,
+        0.7071067883974974,
+        -0.7071067739755975
+      ],
+      "stl_file": "fan_right.stl",
+      "stl_units": "metres",
+      "sha256": "c1179d513bbfe9bbe9108ee5dc54099ac5ffb7fea8d9e8493929c4e2cab1535e"
+    },
+    "outlet": {
+      "face_indices_zero_based": [
+        177
+      ],
+      "brep_area_m2": 0.0028536,
+      "triangles": 10,
+      "mesh_area_m2": 0.002853599975585937,
+      "area_mean_normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "area_weighted_normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "stl_file": "outlet.stl",
+      "stl_units": "metres",
+      "sha256": "e13bdb5feac4aabf4627045e3c6326ff63b78eb87c519e00dc090ee37df285a1"
+    },
+    "laptop_shell": {
+      "face_indices_zero_based": [
+        176
+      ],
+      "brep_area_m2": 0.08327999999999999,
+      "triangles": 6,
+      "mesh_area_m2": 0.08327999999999999,
+      "area_mean_normal": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "area_weighted_normal": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "stl_file": "laptop_shell.stl",
+      "stl_units": "metres",
+      "sha256": "c126d6eea65a98965c986c7f918aae5d037442049fc92cc6f71f94057b4d4aca"
+    },
+    "wall_plane": {
+      "face_indices_zero_based": [
+        15,
+        118,
+        119
+      ],
+      "brep_area_m2": 0.04458230676500972,
+      "triangles": 142,
+      "mesh_area_m2": 0.0445822528996258,
+      "area_mean_normal": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "area_weighted_normal": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "stl_file": "wall_plane.stl",
+      "stl_units": "metres",
+      "sha256": "384cf9e2f1f3808f3334435f60a4f023be1c5cab4b9a6fe9c77de0c8cce53861"
+    },
+    "assumed_side_seals": {
+      "face_indices_zero_based": [
+        76,
+        88,
+        117,
+        120,
+        186,
+        206
+      ],
+      "brep_area_m2": 0.005011013172867801,
+      "triangles": 240,
+      "mesh_area_m2": 0.005011101450785291,
+      "area_mean_normal": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "area_weighted_normal": null,
+      "stl_file": "assumed_side_seals.stl",
+      "stl_units": "metres",
+      "sha256": "46a6cb6f47c600e9798729fa1ed1c5ba3aa7251e577672baccdee96e76680ce1",
+      "outward_normals": [
+        [
+          -1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "normal_note": "Opposite seals have cancelling area vectors; no single normal describes this patch."
+    },
+    "printed_or_model_walls": {
+      "face_indices_zero_based": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163,
+        164,
+        165,
+        166,
+        167,
+        168,
+        169,
+        170,
+        171,
+        172,
+        173,
+        174,
+        175,
+        178,
+        179,
+        180,
+        181,
+        182,
+        183,
+        184,
+        185,
+        187,
+        188,
+        189,
+        190,
+        191,
+        192,
+        193,
+        194,
+        195,
+        196,
+        197,
+        198,
+        199,
+        200,
+        201,
+        202,
+        203,
+        204,
+        205,
+        207,
+        208,
+        209,
+        210,
+        211,
+        212,
+        213,
+        214,
+        215,
+        216,
+        217,
+        218,
+        219,
+        220,
+        221,
+        222,
+        223,
+        224,
+        225,
+        226,
+        227,
+        228
+      ],
+      "brep_area_m2": 0.18193940041593057,
+      "triangles": 5546,
+      "mesh_area_m2": 0.1819581841434304,
+      "area_mean_normal": [
+        0.0,
+        -0.29473624800046866,
+        0.06637967488940076
+      ],
+      "area_weighted_normal": [
+        0.0,
+        -0.9755643550238949,
+        0.2197138803235058
+      ],
+      "stl_file": "printed_or_model_walls.stl",
+      "stl_units": "metres",
+      "sha256": "abb88404f3238c3636133321e6fe5f8d5979429fe658aa49ddca7a317173faec"
+    }
+  },
+  "errors": [],
+  "ready": true,
+  "inputs": [
+    {
+      "path": "F:\\Code\\dell-5560-wall-mount\\fusion\\output\\native\\assembly.step",
+      "sha256": "3fe701a85725d9e6106d945cf05ad31b346da697cd9ac4720ee2c152cf0d4c1a"
+    },
+    {
+      "path": "F:\\Code\\dell-5560-wall-mount\\outlet_gap_variants\\left_outlet_rail_gap_8mm.step",
+      "sha256": "bb77d9ddd25aa18fc7dc4dd1fd960dd480bfab43760402f437306032c9e41220"
+    },
+    {
+      "path": "F:\\Code\\dell-5560-wall-mount\\outlet_gap_variants\\right_outlet_rail_gap_8mm.step",
+      "sha256": "8d75bbe2cf4059de3c14085879062f66a8ba419d57a0d3824e39000d570ab640"
+    }
+  ],
+  "connected_components_before_selection": 11,
+  "excluded_disconnected_pockets": [
+    {
+      "volume_mm3": 52355.67629920657,
+      "bounds_mm": [
+        151.2,
+        4.0,
+        44.0,
+        180.0,
+        22.0,
+        150.0
+      ]
+    },
+    {
+      "volume_mm3": 52355.67629920656,
+      "bounds_mm": [
+        -180.0,
+        4.0,
+        44.0,
+        -151.2,
+        22.0,
+        150.0
+      ]
+    },
+    {
+      "volume_mm3": 11526.895535099906,
+      "bounds_mm": [
+        142.4,
+        11.0,
+        5.0,
+        180.0,
+        21.0,
+        36.0
+      ]
+    },
+    {
+      "volume_mm3": 11526.895535099906,
+      "bounds_mm": [
+        -180.0,
+        11.0,
+        5.0,
+        -142.4,
+        21.0,
+        36.0
+      ]
+    },
+    {
+      "volume_mm3": 11526.895535099904,
+      "bounds_mm": [
+        142.4,
+        23.0,
+        5.0,
+        180.0,
+        33.0,
+        36.0
+      ]
+    },
+    {
+      "volume_mm3": 11526.895535099904,
+      "bounds_mm": [
+        -180.0,
+        23.0,
+        5.0,
+        -142.4,
+        33.0,
+        36.0
+      ]
+    },
+    {
+      "volume_mm3": 15.149670453671067,
+      "bounds_mm": [
+        132.95,
+        105.85551762620057,
+        -42.987806691180836,
+        137.05,
+        109.58578643764838,
+        -39.257537879733285
+      ]
+    },
+    {
+      "volume_mm3": 15.149670453671064,
+      "bounds_mm": [
+        -137.05,
+        105.85551762620057,
+        -42.987806691180836,
+        -132.95,
+        109.58578643764838,
+        -39.257537879733285
+      ]
+    },
+    {
+      "volume_mm3": 15.10144051459228,
+      "bounds_mm": [
+        2.999999999999917,
+        9.489138881292973,
+        -126.58578643762691,
+        7.05,
+        109.58578643764838,
+        -29.335090031504052
+      ]
+    },
+    {
+      "volume_mm3": 15.101440514592277,
+      "bounds_mm": [
+        -7.05,
+        9.489138881292973,
+        -126.58578643762691,
+        -2.999999999999917,
+        109.58578643764838,
+        -29.335090031504052
+      ]
+    }
+  ],
+  "valid": true,
+  "solids": 1,
+  "connected": true,
+  "closed_brep": true,
+  "volume_m3": 0.004612028423142778,
+  "bounds_mm": [
+    -180.0,
+    -3.552713678800501e-15,
+    -129.25483399593907,
+    180.0,
+    112.25483399593908,
+    232.0
+  ],
+  "surface_faces": 229,
+  "brep_surface_area_m2": 0.3388029557271599,
+  "face_partition_exact": true,
+  "fan_centers_m": {
+    "fan_left": [
+      -0.07,
+      0.07124264068711929,
+      -0.08824264068711929
+    ],
+    "fan_right": [
+      0.07,
+      0.07124264068711929,
+      -0.08824264068711929
+    ]
+  },
+  "fan_inlet_outward_normal": [
+    0.0,
+    0.7071067811865476,
+    -0.7071067811865476
+  ],
+  "fan_flow_into_domain_normal": [
+    0,
+    -0.7071067811865476,
+    0.7071067811865476
+  ],
+  "outlet_outward_normal": [
+    0,
+    0,
+    1
+  ],
+  "fluid_step_sha256": "f1e7c5fc38a7e64e3dbe93842fdcd703a73a95baa68f98c003611bdf1ff58858",
+  "mesh": {
+    "linear_deflection_mm": 0.1,
+    "angular_deflection_radians": 0.15,
+    "vertices": 3052,
+    "triangles": 6108,
+    "degenerate_triangles": 0,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "mesh_is_solid": true,
+    "closed": true,
+    "area_m2": 0.3388020696487847,
+    "triangle_partition_exact": true
+  },
+  "scope_status": "Initial sealed baseline only; does not yet satisfy requested laptop vents and internal-blower model.",
+  "missing_from_requested_installed_model": [
+    "Laptop underside vent openings and their resistance",
+    "Two internal Dell blowers and fan performance data",
+    "Internal laptop air paths and hinge exhaust geometry",
+    "Ambient leakage and recirculation domain"
+  ]
+}

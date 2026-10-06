@@ -1,0 +1,3 @@
+FoamFile {version 2.0; format ascii; class dictionary; object mapFieldsDict;}
+patchMap (laptop laptop noctua noctua wall_plane wall_plane ambient_openings ambient_openings);
+cuttingPatches ();

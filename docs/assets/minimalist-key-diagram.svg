@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 480" role="img" aria-labelledby="title desc">
+<title id="title">Minimalist two-rung key and withdrawal keeper</title><desc id="desc">Schematic exploded side view. A gold key passes through two slots in the gray arm and teal carriage. A vertical split keeper passes through the exposed key ends. Rung centers are 12 millimeters apart; the key spans 24 millimeters.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#52676b"/></marker></defs>
+<rect width="780" height="480" fill="#e6ebe7"/>
+<text x="36" y="45" font-family="Arial,sans-serif" font-size="20" fill="#17373b" font-weight="bold">TWO RUNGS CARRY THE ATTACHMENT</text>
+<g stroke="#25494e" stroke-width="3"><rect x="315" y="105" width="70" height="268" rx="3" fill="#667a82"/><rect x="456" y="154" width="32" height="193" fill="#439e99"/>
+<g fill="#e6ebe7"><path d="M315 186h70v23h-70zM315 236h70v23h-70zM315 286h70v23h-70zM456 186h32v23h-32zM456 286h32v23h-32z"/></g>
+<path d="M103 174h30v142h-30zM133 186h135v23H133zM133 286h135v23H133z" fill="#d8ad58" stroke="#7b602e"/>
+<path d="M592 95h29v13h-29zM601 108h11v205h-11z" fill="#d8ad58" stroke="#7b602e"/>
+<path d="M603 313h7l4 8-7 12-7-12z" fill="#d8ad58" stroke="#7b602e"/>
+<path d="M608 275v55" stroke="#e6ebe7"/>
+</g>
+<g stroke="#52676b" fill="none" stroke-width="2" marker-end="url(#arrow)"><path d="M158 141h126"/><path d="M409 244h32"/><path d="M651 147v131"/></g>
+<g font-family="Arial,sans-serif" fill="#25494e" font-size="17"><text x="79" y="362">Printed key</text><text x="312" y="405">Arm</text><text x="438" y="382">Carriage</text><text x="554" y="73">Split keeper</text><text x="52" y="421">Align arm + carriage → insert key → insert keeper</text><text x="52" y="451" font-size="14">Schematic: spacing expanded for clarity. Key span 24 mm; ladder pitch 12 mm.</text></g>
+<path d="M708 198v99M698 198h20M698 297h20" fill="none" stroke="#52676b" stroke-width="2"/>
+<text x="730" y="250" font-family="Arial,sans-serif" font-size="15" fill="#25494e" transform="rotate(90 730 250)">24 mm between tongues</text>
+</svg>

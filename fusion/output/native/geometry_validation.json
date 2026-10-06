@@ -1,0 +1,457 @@
+{
+  "created_utc": "2026-09-07T20:41:43.606515+00:00",
+  "reference_revision": "F",
+  "freecad_version": [
+    "1",
+    "1",
+    "3",
+    "20260725 (Git shallow)",
+    "Unknown",
+    "2026/07/25 04:52:02",
+    "grafted,grafted",
+    "145529fe741292ff0b3977a01195bf0247425794"
+  ],
+  "occt_version": "7.8.1",
+  "local_fan": false,
+  "volume_tolerance_mm3": 0.001,
+  "bounds_tolerance_mm": 1e-05,
+  "parts": {
+    "cradle": {
+      "native_path": "F:\\Code\\dell-5560-wall-mount\\fusion\\output\\native\\cradle.step",
+      "source_path": "F:\\Code\\dell-5560-wall-mount\\parts\\02_right_cradle.step",
+      "comparison_frame": "installed_right",
+      "errors": [],
+      "passed": true,
+      "native_sha256": "12bcf1e5a54a120f623c8edc4830be2438231320f5d85f8f9ed0563542a1d8d3",
+      "native_valid": true,
+      "native_solids": 1,
+      "native_bounds_mm": [
+        139.99999999999997,
+        0.0,
+        -65.0,
+        184.0,
+        84.0,
+        184.0
+      ],
+      "native_volume_mm3": 274206.99913568184,
+      "source_sha256": "b744ce7fed3e8e9f623f9f7be71c310fb638c2b13bb97aa08b34ba1cd613eab0",
+      "source_valid": true,
+      "source_solids": 1,
+      "source_bounds_mm": [
+        139.99999999999136,
+        -8.881784197001252e-16,
+        -65.0,
+        184.0,
+        84.0,
+        184.0
+      ],
+      "source_volume_mm3": 274207.00576756103,
+      "native_minus_source_mm3": 0.0,
+      "native_minus_source_valid": true,
+      "native_minus_source_solids": 0,
+      "source_minus_native_mm3": 0.0,
+      "source_minus_native_valid": true,
+      "source_minus_native_solids": 0,
+      "volume_delta_mm3": -0.006631879194173962,
+      "symmetric_difference_mm3": 0.0,
+      "max_bounds_delta_mm": 8.611777957412414e-12,
+      "geometric_checks_passed": true,
+      "raw_volume_check_passed": false,
+      "volume_validation_method": "convergent_tessellation",
+      "tessellated_volume_fallback": {
+        "checks": [
+          {
+            "deflection_mm": 0.01,
+            "native": {
+              "signed_volume_mm3": 274207.07843330095,
+              "volume_mm3": 274207.07843330095,
+              "vertices": 6489,
+              "triangles": 12970,
+              "integration_origin_mm": [
+                164.4811502856951,
+                30.4800188617272,
+                40.189760667372234
+              ]
+            },
+            "source": {
+              "signed_volume_mm3": 274207.07906783157,
+              "volume_mm3": 274207.07906783157,
+              "vertices": 6499,
+              "triangles": 12990,
+              "integration_origin_mm": [
+                164.47340439405022,
+                30.450547342475254,
+                40.42847739612521
+              ]
+            },
+            "volume_delta_mm3": -0.000634530617389828
+          },
+          {
+            "deflection_mm": 0.001,
+            "native": {
+              "signed_volume_mm3": 274207.00768251315,
+              "volume_mm3": 274207.00768251315,
+              "vertices": 34290,
+              "triangles": 68572,
+              "integration_origin_mm": [
+                164.597396168562,
+                30.320251103967934,
+                39.87242404581649
+              ]
+            },
+            "source": {
+              "signed_volume_mm3": 274207.00768269243,
+              "volume_mm3": 274207.00768269243,
+              "vertices": 34325,
+              "triangles": 68642,
+              "integration_origin_mm": [
+                164.59553640316128,
+                30.270589843741185,
+                40.06538083073677
+              ]
+            },
+            "volume_delta_mm3": -1.7927959561347961e-07
+          },
+          {
+            "deflection_mm": 0.0001,
+            "native": {
+              "signed_volume_mm3": 274207.0063594781,
+              "volume_mm3": 274207.0063594781,
+              "vertices": 62319,
+              "triangles": 124630,
+              "integration_origin_mm": [
+                164.52762127239984,
+                30.502119012291903,
+                39.94203969250578
+              ]
+            },
+            "source": {
+              "signed_volume_mm3": 274207.00636606105,
+              "volume_mm3": 274207.00636606105,
+              "vertices": 62451,
+              "triangles": 124894,
+              "integration_origin_mm": [
+                164.5110977485295,
+                30.49006506797926,
+                40.206874689799406
+              ]
+            },
+            "volume_delta_mm3": -6.582937203347683e-06
+          }
+        ],
+        "delta_tolerance_mm3": 0.001,
+        "last_two_deltas_within_tolerance": true,
+        "last_delta_change_mm3": -6.403657607734203e-06,
+        "delta_convergence_supported": true,
+        "supported": true,
+        "scope": "Convergence of native/source volume difference; not proof of identical surfaces."
+      },
+      "volume_discrepancy_note": "Raw BRep volume check failed. Strict Boolean/bounds/validity checks passed, and independent tessellated volume differences support acceptance within the recorded tolerance. Raw discrepancy retained."
+    },
+    "duct": {
+      "native_path": "F:\\Code\\dell-5560-wall-mount\\fusion\\output\\native\\duct.step",
+      "source_path": "F:\\Code\\dell-5560-wall-mount\\parts\\04_right_fan_duct.step",
+      "comparison_frame": "installed_right",
+      "errors": [],
+      "passed": true,
+      "native_sha256": "cb7dde2ab9a421578b9074981cc2c1fd254f286387020ccfe2d0e2ab7c50e7de",
+      "native_valid": true,
+      "native_solids": 1,
+      "native_bounds_mm": [
+        0.9999999999999996,
+        3.9999999999999933,
+        -134.91168824543163,
+        175.5,
+        117.9116882454315,
+        0.0
+      ],
+      "native_volume_mm3": 137915.52256956167,
+      "source_sha256": "21e4857dcba4724d9418739e32297985d4f7a9ac92256697d8584227669f5ede",
+      "source_valid": true,
+      "source_solids": 1,
+      "source_bounds_mm": [
+        1.0,
+        4.0,
+        -134.9116882454,
+        175.5,
+        117.91168824543443,
+        0.0
+      ],
+      "source_volume_mm3": 137915.52526221197,
+      "native_minus_source_mm3": 0.0,
+      "native_minus_source_valid": true,
+      "native_minus_source_solids": 0,
+      "source_minus_native_mm3": 0.0,
+      "source_minus_native_valid": true,
+      "source_minus_native_solids": 0,
+      "volume_delta_mm3": -0.002692650305107236,
+      "symmetric_difference_mm3": 0.0,
+      "max_bounds_delta_mm": 3.163336259603966e-11,
+      "geometric_checks_passed": true,
+      "raw_volume_check_passed": false,
+      "volume_validation_method": "convergent_tessellation",
+      "tessellated_volume_fallback": {
+        "checks": [
+          {
+            "deflection_mm": 0.01,
+            "native": {
+              "signed_volume_mm3": 137918.7545404172,
+              "volume_mm3": 137918.7545404172,
+              "vertices": 3584,
+              "triangles": 7172,
+              "integration_origin_mm": [
+                79.3420027189516,
+                88.38586571990609,
+                -52.44518433427278
+              ]
+            },
+            "source": {
+              "signed_volume_mm3": 137918.75418035703,
+              "volume_mm3": 137918.75418035703,
+              "vertices": 3552,
+              "triangles": 7108,
+              "integration_origin_mm": [
+                79.47059151794701,
+                88.19193676864113,
+                -52.5613625481626
+              ]
+            },
+            "volume_delta_mm3": 0.00036006016307510436
+          },
+          {
+            "deflection_mm": 0.001,
+            "native": {
+              "signed_volume_mm3": 137915.64176288832,
+              "volume_mm3": 137915.64176288832,
+              "vertices": 18912,
+              "triangles": 37828,
+              "integration_origin_mm": [
+                78.66421694128853,
+                89.78165212970828,
+                -52.09842949429625
+              ]
+            },
+            "source": {
+              "signed_volume_mm3": 137915.64168219498,
+              "volume_mm3": 137915.64168219498,
+              "vertices": 18729,
+              "triangles": 37462,
+              "integration_origin_mm": [
+                78.97184636215093,
+                89.5793172639542,
+                -52.22202307453325
+              ]
+            },
+            "volume_delta_mm3": 8.069333853200078e-05
+          },
+          {
+            "deflection_mm": 0.0001,
+            "native": {
+              "signed_volume_mm3": 137915.55784823472,
+              "volume_mm3": 137915.55784823472,
+              "vertices": 34295,
+              "triangles": 68594,
+              "integration_origin_mm": [
+                78.66479846433378,
+                89.68040689665874,
+                -52.37077912291022
+              ]
+            },
+            "source": {
+              "signed_volume_mm3": 137915.55778044826,
+              "volume_mm3": 137915.55778044826,
+              "vertices": 33964,
+              "triangles": 67932,
+              "integration_origin_mm": [
+                78.83242539552018,
+                89.48562702658542,
+                -52.495626026460926
+              ]
+            },
+            "volume_delta_mm3": 6.778645911253989e-05
+          }
+        ],
+        "delta_tolerance_mm3": 0.001,
+        "last_two_deltas_within_tolerance": true,
+        "last_delta_change_mm3": -1.2906879419460893e-05,
+        "delta_convergence_supported": true,
+        "supported": true,
+        "scope": "Convergence of native/source volume difference; not proof of identical surfaces."
+      },
+      "volume_discrepancy_note": "Raw BRep volume check failed. Strict Boolean/bounds/validity checks passed, and independent tessellated volume differences support acceptance within the recorded tolerance. Raw discrepancy retained."
+    },
+    "rail": {
+      "native_path": "F:\\Code\\dell-5560-wall-mount\\fusion\\output\\native\\rail.step",
+      "source_path": "F:\\Code\\dell-5560-wall-mount\\parts\\08_right_outlet_rail.step",
+      "comparison_frame": "installed_right",
+      "errors": [],
+      "passed": true,
+      "native_sha256": "095d08bea2fad14be90b8eba1cc09e3a77650b8f54b5e5173fe4e4ce567c1980",
+      "native_valid": true,
+      "native_solids": 1,
+      "native_bounds_mm": [
+        0.2,
+        0.0,
+        154.0,
+        184.0,
+        39.0,
+        232.0
+      ],
+      "native_volume_mm3": 63831.94036724245,
+      "source_sha256": "38a48c7e4eaec0f2e2e64fc63a7d863793cb36c2c4d07dc6bc842407d087748c",
+      "source_valid": true,
+      "source_solids": 1,
+      "source_bounds_mm": [
+        0.2,
+        -8.490985692333197e-13,
+        154.0,
+        184.0,
+        39.0,
+        232.00000000000955
+      ],
+      "source_volume_mm3": 63831.940368737196,
+      "native_minus_source_mm3": 0.0,
+      "native_minus_source_valid": true,
+      "native_minus_source_solids": 0,
+      "source_minus_native_mm3": 0.0,
+      "source_minus_native_valid": true,
+      "source_minus_native_solids": 0,
+      "volume_delta_mm3": -1.4947436284273863e-06,
+      "symmetric_difference_mm3": 0.0,
+      "max_bounds_delta_mm": 9.549694368615746e-12,
+      "geometric_checks_passed": true,
+      "raw_volume_check_passed": true,
+      "volume_validation_method": "raw_brep"
+    },
+    "tray": {
+      "native_path": "F:\\Code\\dell-5560-wall-mount\\fusion\\output\\native\\tray.step",
+      "source_path": "F:\\Code\\dell-5560-wall-mount\\parts\\10_right_fan_tray.step",
+      "comparison_frame": "installed_right",
+      "errors": [],
+      "passed": true,
+      "native_sha256": "f34250e3c9748dc664a17f3eb08caf9910f07376c6684a54b5c0fa860874c599",
+      "native_valid": true,
+      "native_solids": 1,
+      "native_bounds_mm": [
+        1.0,
+        24.5735931288072,
+        -160.367532368147,
+        140.0,
+        143.367532368147,
+        -40.51293295702725
+      ],
+      "native_volume_mm3": 87444.07619047377,
+      "source_sha256": "f74c743913e81dc9a2b9e31c8cb7574fe053474c3672b77c590896c4826218cf",
+      "source_valid": true,
+      "source_solids": 1,
+      "source_bounds_mm": [
+        1.0,
+        24.573593128807,
+        -160.3675323681185,
+        140.0,
+        143.367532368145,
+        -40.51293295701911
+      ],
+      "source_volume_mm3": 87444.07619045906,
+      "native_minus_source_mm3": 0.0,
+      "native_minus_source_valid": true,
+      "native_minus_source_solids": 0,
+      "source_minus_native_mm3": 0.0,
+      "source_minus_native_valid": true,
+      "source_minus_native_solids": 0,
+      "volume_delta_mm3": 1.4711986295878887e-08,
+      "symmetric_difference_mm3": 0.0,
+      "max_bounds_delta_mm": 2.850697455869522e-11,
+      "geometric_checks_passed": true,
+      "raw_volume_check_passed": true,
+      "volume_validation_method": "raw_brep"
+    },
+    "cap": {
+      "native_path": "F:\\Code\\dell-5560-wall-mount\\fusion\\output\\native\\cap.step",
+      "source_path": "F:\\Code\\dell-5560-wall-mount\\parts\\06_right_fan_retainer.step",
+      "comparison_frame": "installed_right",
+      "errors": [],
+      "passed": true,
+      "native_sha256": "3a968aa53d95f010bbd9af58d61010c2942810666275ebd9436878aee3192ab8",
+      "native_valid": true,
+      "native_solids": 1,
+      "native_bounds_mm": [
+        1.0,
+        108.719300090006,
+        -67.0294372515232,
+        140.0,
+        149.02438661764,
+        -26.724350723889554
+      ],
+      "native_volume_mm3": 24834.544404382657,
+      "source_sha256": "89e2ecb2ae7db966646e529069b153f7b723d60248868a789f289421af39a746",
+      "source_valid": true,
+      "source_solids": 1,
+      "source_bounds_mm": [
+        1.0,
+        108.71930009,
+        -67.02943725152,
+        140.0,
+        149.0243866176412,
+        -26.724350723881425
+      ],
+      "source_volume_mm3": 24834.544404383872,
+      "native_minus_source_mm3": 0.0,
+      "native_minus_source_valid": true,
+      "native_minus_source_solids": 0,
+      "source_minus_native_mm3": 0.0,
+      "source_minus_native_valid": true,
+      "source_minus_native_solids": 0,
+      "volume_delta_mm3": -1.2150849215686321e-09,
+      "symmetric_difference_mm3": 0.0,
+      "max_bounds_delta_mm": 8.128608897095546e-12,
+      "geometric_checks_passed": true,
+      "raw_volume_check_passed": true,
+      "volume_validation_method": "raw_brep"
+    },
+    "pin": {
+      "native_path": "F:\\Code\\dell-5560-wall-mount\\fusion\\output\\native\\pin.step",
+      "source_path": "F:\\Code\\dell-5560-wall-mount\\parts\\12_right_push_pin.step",
+      "comparison_frame": "pin_local",
+      "errors": [],
+      "passed": true,
+      "native_sha256": "e7be3ee62fff467a9730c7cea2eaca28769cc07425c7a4be7c2e5102103c6087",
+      "native_valid": true,
+      "native_solids": 1,
+      "native_bounds_mm": [
+        -4.0,
+        -4.0,
+        0.0,
+        4.0,
+        4.0,
+        14.0
+      ],
+      "native_volume_mm3": 204.5603021147502,
+      "source_sha256": "cedf1d08e6fab4ce99cbc8ba86cbdce780338605096829f31a8541065a6d0fd3",
+      "source_valid": true,
+      "source_solids": 1,
+      "source_bounds_mm": [
+        -4.0,
+        -3.999999999995112,
+        -3.389732938785528e-12,
+        4.0,
+        4.0000000000048885,
+        14.000000000001329
+      ],
+      "source_volume_mm3": 204.56030211045663,
+      "native_minus_source_mm3": 0.0,
+      "native_minus_source_valid": true,
+      "native_minus_source_solids": 0,
+      "source_minus_native_mm3": 0.0,
+      "source_minus_native_valid": true,
+      "source_minus_native_solids": 0,
+      "volume_delta_mm3": 4.293553956813412e-09,
+      "symmetric_difference_mm3": 0.0,
+      "max_bounds_delta_mm": 4.888534022029489e-12,
+      "geometric_checks_passed": true,
+      "raw_volume_check_passed": true,
+      "volume_validation_method": "raw_brep"
+    }
+  },
+  "all_passed": true
+}

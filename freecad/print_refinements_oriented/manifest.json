@@ -1,0 +1,70 @@
+{
+  "machine": "P1S",
+  "nozzle_mm": 0.4,
+  "layer_mm": 0.2,
+  "material": "ASA",
+  "arms": "Frozen; not regenerated",
+  "slicing": "Toolpaths not validated",
+  "parts": {
+    "04_right_fan_duct": {
+      "orientation": "inlet down",
+      "dimensions_mm": [
+        174.5,
+        131.70000000000005,
+        109.64469683442252
+      ],
+      "closed_mesh": true,
+      "8mm_brim_and_cutter_clear": true
+    },
+    "03_left_fan_duct": {
+      "orientation": "inlet down",
+      "dimensions_mm": [
+        174.5,
+        131.70000000000005,
+        109.64469683442252
+      ],
+      "closed_mesh": true,
+      "8mm_brim_and_cutter_clear": true
+    },
+    "08_right_outlet_rail": {
+      "orientation": "lip down",
+      "dimensions_mm": [
+        183.80000000000007,
+        39.00000000000006,
+        78.00000000000003
+      ],
+      "closed_mesh": true,
+      "8mm_brim_and_cutter_clear": true
+    },
+    "07_left_outlet_rail": {
+      "orientation": "lip down",
+      "dimensions_mm": [
+        183.80000000000004,
+        39.00000000000006,
+        78.00000000000003
+      ],
+      "closed_mesh": true,
+      "8mm_brim_and_cutter_clear": true
+    },
+    "10_right_fan_tray": {
+      "orientation": "grille down",
+      "dimensions_mm": [
+        139.0,
+        131.70000000000005,
+        38.00000000000007
+      ],
+      "closed_mesh": true,
+      "8mm_brim_and_cutter_clear": true
+    },
+    "09_left_fan_tray": {
+      "orientation": "grille down",
+      "dimensions_mm": [
+        139.0,
+        131.70000000000005,
+        38.0
+      ],
+      "closed_mesh": true,
+      "8mm_brim_and_cutter_clear": true
+    }
+  }
+}

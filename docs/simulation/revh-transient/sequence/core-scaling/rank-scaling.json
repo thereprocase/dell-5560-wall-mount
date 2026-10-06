@@ -1,0 +1,143 @@
+{
+  "created_utc": "2026-09-08T19:03:18.524071+00:00",
+  "scope": "Compare 4/6/8 MPI ranks while the independent four-rank startup run continues.\n\nThe flowing production workers are suspended only during timed solves and are\nresumed in finally. An independent watchdog also resumes them after ten minutes.\nEvery candidate uses identical initial fields, numerics, mesh and output cadence.\nThis measures local throughput, not CFD validation.\n",
+  "background_startup_ranks": 4,
+  "paused_production_case": "revh_flowing_12",
+  "paused_pids": [
+    2841847,
+    2841848,
+    2841849,
+    2841850
+  ],
+  "benchmark_steps": 4,
+  "deltaT_s": 1.25e-05,
+  "results": {
+    "4": {
+      "wall_seconds": 105.12728269000945,
+      "clock_seconds": [
+        37.0,
+        59.0,
+        81.0,
+        101.0
+      ],
+      "seconds_per_step_after_first": 21.333333333333332,
+      "max_Courant": 0.3666416957,
+      "bounding_lines": []
+    },
+    "6": {
+      "wall_seconds": 91.17391224199673,
+      "clock_seconds": [
+        30.0,
+        49.0,
+        68.0,
+        87.0
+      ],
+      "seconds_per_step_after_first": 19.0,
+      "max_Courant": 0.3666416957,
+      "bounding_lines": [],
+      "fields": {
+        "U": {
+          "rms_error": 3.858251282678682e-07,
+          "max_abs_error": 0.00012012954283471822,
+          "pass": true
+        },
+        "p": {
+          "rms_error": 2.558892845562229e-05,
+          "max_abs_error": 0.004175743235124152,
+          "pass": true
+        },
+        "k": {
+          "rms_error": 7.199022050917598e-07,
+          "max_abs_error": 0.00027396847249028244,
+          "pass": true
+        },
+        "omega": {
+          "rms_error": 0.08608316082075647,
+          "max_abs_error": 136.69315447872384,
+          "pass": true
+        },
+        "nut": {
+          "rms_error": 6.6420068676884514e-09,
+          "max_abs_error": 8.505673777712457e-06,
+          "pass": true
+        }
+      },
+      "field_check_passed": true,
+      "throughput_ratio": 1.1228070175438596
+    },
+    "8": {
+      "wall_seconds": 81.72622747800779,
+      "clock_seconds": [
+        28.0,
+        45.0,
+        61.0,
+        77.0
+      ],
+      "seconds_per_step_after_first": 16.333333333333332,
+      "max_Courant": 0.3666416957,
+      "bounding_lines": [],
+      "fields": {
+        "U": {
+          "rms_error": 2.3848901702102653e-07,
+          "max_abs_error": 0.00016632627250341703,
+          "pass": true
+        },
+        "p": {
+          "rms_error": 1.319489649318004e-05,
+          "max_abs_error": 0.004759038464307891,
+          "pass": true
+        },
+        "k": {
+          "rms_error": 2.1913065288631673e-06,
+          "max_abs_error": 0.0007055127197758138,
+          "pass": true
+        },
+        "omega": {
+          "rms_error": 0.3214848160660475,
+          "max_abs_error": 497.40225454431084,
+          "pass": true
+        },
+        "nut": {
+          "rms_error": 6.632747640568993e-09,
+          "max_abs_error": 8.505675902638994e-06,
+          "pass": true
+        }
+      },
+      "field_check_passed": true,
+      "throughput_ratio": 1.306122448979592
+    }
+  },
+  "environment": {
+    "HWLOC_COMPONENTS": "linux,stop",
+    "OMP_NUM_THREADS": "1"
+  },
+  "criteria": {
+    "rms_relative": 0.001,
+    "maximum_relative": 0.01,
+    "absolute": 1e-06,
+    "minimum_throughput_gain": 0.1
+  },
+  "production_suspended_utc": "2026-09-08T19:08:52.723658+00:00",
+  "production_pause_seconds": 278.2136031990085,
+  "production_resumed_utc": "2026-09-08T19:10:14.487218+00:00",
+  "resume_note": "Eight-rank launch originally refused six physical-core slots. Retry uses --use-hwthread-cpus with binding still disabled; four startup plus eight benchmark workers fit twelve WSL threads.",
+  "production_pause_segments_seconds": [
+    196.4499589830084,
+    81.7636442160001
+  ],
+  "identical_input_sha256": {
+    "0/U": "0ef774e32196adfa4b01b06d4a72bb302d1ae36f68487cfce7d74ff9eb63a270",
+    "0/p": "e26ba8e2008540b643a058f3e0fd22a787df0fd89a7caa30c768b19736ccbdf0",
+    "0/phi": "fc60441bba385da12183b59fcdf78f25e8e3f19b6623cdaf8ea327d9c2277fb4",
+    "0/k": "28c8f9160d048221f3e47121a656a0740be4aba8b58ed1b00fb4d02f3d0bd034",
+    "0/omega": "4944ae6e951c7c09347a09bc5f92a7cc8f28722f3227a323e0b365b1b8e3e05d",
+    "0/nut": "cb1aeb1be401abe1dd58335ad143b6105a1a620e99c2959e4b7ff73b2e323801",
+    "constant/polyMesh/points": "acafdfcb81038befd0cecaf554be9ab3da5fa1419d89c578e5e6f8198ecf97e0",
+    "constant/polyMesh/faces": "0698fdd6f40db0866813820a6c14320e1192fcb7bfe82f139faa45c5131d221d",
+    "constant/fvOptions": "9cc43b8c29187dfa5c5aa5567f8170a249017560c64711c162ed53546288b84c",
+    "system/fvSchemes": "4a9f534b8d7ef36d4ce9ff952684fc60699a8f9bff8b836de1bbbd6fee7c7f25",
+    "system/fvSolution": "8c8570ee1ca42e2b8d8d743d06c5d3b3d07f8b6626a5b331ebd8ab68e90563c9",
+    "system/controlDict": "b2aff675e66ae3e5086a53d7d0935682337f07b860cb69711192dfd007318634"
+  },
+  "state": "complete"
+}

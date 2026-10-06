@@ -1,0 +1,12 @@
+{
+  "duct_assembly_from_room_mm3": 0.0,
+  "rail_assembly_from_room_mm3": 0.0,
+  "tray_removal_mm3": 0.0,
+  "fan_removal_mm3": 0.0,
+  "estimated_profile_interference_mm3": 0.0,
+  "lift_then_forward_mm3": 0.0,
+  "all_four_wall_bolts_room_access": true,
+  "intentional_pin_radial_interference_mm": 0.05,
+  "pin_interference_note": "Tiny overlaps at split-pin crowns are intentional elastic interference, subject to coupon fit.",
+  "glue_bond_capacity_tested": false
+}

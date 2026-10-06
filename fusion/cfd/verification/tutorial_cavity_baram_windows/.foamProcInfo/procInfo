@@ -1,0 +1,14 @@
+Build           "6467f461-20260821";
+API             2412;
+Version         v2412;
+Arch            "LSB;label=32;scalar=64";
+Exec            C:\Users\USER\AppData\Local\Programs\BARAM-26.3.0\solvers\openfoam\bin\icoFoam.exe;
+Command         "C:\Users\USER\AppData\Local\Programs\BARAM-26.3.0\solvers\openfoam\bin\icoFoam.exe -case F:\Code\dell-5560-wall-mount\fusion\cfd\verification\tutorial_cavity_baram_windows";
+Date            "Sep 07 2026";
+Time            "17:42:59";
+Host            WORKSTATION;
+User            repro;
+PID             5960;
+Case            "F:/Code/dell-5560-wall-mount/fusion/cfd/verification/tutorial_cavity_baram_windows";
+nProcs          1;
+State           running;

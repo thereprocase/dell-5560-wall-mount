@@ -1,0 +1,104 @@
+{
+  "source_gcode": "preview.gcode",
+  "source_gcode_sha256": "59ddc74c8f4e3a0441cc26f68b151aad6cc0e247eebee898a298ef04259994aa",
+  "layers": 15,
+  "method": "Model paths buffered by reported line width. Island support: previous layer plus 0.15 mm. A deposited bead is supported where it overlaps the prior-layer footprint by at least 0.05 mm: buffer that footprint by half the current bead width minus 0.05 mm. Report contiguous unsupported subsegments, not full move lengths. Same-layer anchoring order and physical sag are not proven.",
+  "floating_components": [],
+  "unsupported_by_feature_mm": {
+    "Internal solid infill": 0.15668800466201524
+  },
+  "max_bridge_move_mm": 0,
+  "max_unsupported_bridge_span_mm": 0,
+  "bridge_path_count": 0,
+  "bridge_layers": [],
+  "longest_bridges": [],
+  "max_unsupported_deposition_span_mm": 0.15668800466201524,
+  "longest_unsupported_paths": [
+    {
+      "z_mm": 2.8,
+      "move_length_mm": 1.8334189298794206,
+      "unsupported_length_mm": 0.15668800466201524,
+      "unsupported_total_mm": 0.15668800466201524,
+      "feature": "Internal solid infill"
+    },
+    {
+      "z_mm": 0.8,
+      "move_length_mm": 1.8334189298794206,
+      "unsupported_length_mm": 0.15284133295616062,
+      "unsupported_total_mm": 0.15284133295616062,
+      "feature": "Internal solid infill"
+    },
+    {
+      "z_mm": 1.6,
+      "move_length_mm": 1.8334189298794206,
+      "unsupported_length_mm": 0.15284133295616062,
+      "unsupported_total_mm": 0.15284133295616062,
+      "feature": "Internal solid infill"
+    },
+    {
+      "z_mm": 2.4,
+      "move_length_mm": 1.8334189298794206,
+      "unsupported_length_mm": 0.15284133295616062,
+      "unsupported_total_mm": 0.15284133295616062,
+      "feature": "Internal solid infill"
+    },
+    {
+      "z_mm": 2.0,
+      "move_length_mm": 1.8245436179105865,
+      "unsupported_length_mm": 0.14595553981055784,
+      "unsupported_total_mm": 0.14595553981055784,
+      "feature": "Internal solid infill"
+    },
+    {
+      "z_mm": 1.2,
+      "move_length_mm": 1.8245436179105865,
+      "unsupported_length_mm": 0.14533224630955338,
+      "unsupported_total_mm": 0.14533224630955338,
+      "feature": "Internal solid infill"
+    },
+    {
+      "z_mm": 1.4,
+      "move_length_mm": 0.8324061508662823,
+      "unsupported_length_mm": 0.03772399085224637,
+      "unsupported_total_mm": 0.03772399085224637,
+      "feature": "Internal solid infill"
+    },
+    {
+      "z_mm": 1.8,
+      "move_length_mm": 2.7439867671141784,
+      "unsupported_length_mm": 0.011441358236402044,
+      "unsupported_total_mm": 0.011441358236402044,
+      "feature": "Internal solid infill"
+    },
+    {
+      "z_mm": 0.6,
+      "move_length_mm": 0.8324061508662823,
+      "unsupported_length_mm": 0.009120560207471998,
+      "unsupported_total_mm": 0.009120560207471998,
+      "feature": "Internal solid infill"
+    },
+    {
+      "z_mm": 1.0,
+      "move_length_mm": 0.8324061508662823,
+      "unsupported_length_mm": 0.009120062665374315,
+      "unsupported_total_mm": 0.009120062665374315,
+      "feature": "Internal solid infill"
+    },
+    {
+      "z_mm": 2.6,
+      "move_length_mm": 0.8324061508662823,
+      "unsupported_length_mm": 0.0054256984303823206,
+      "unsupported_total_mm": 0.0054256984303823206,
+      "feature": "Internal solid infill"
+    }
+  ],
+  "time_and_material_comments": [
+    "; model printing time: 12m 26s; total estimated time: 18m 41s",
+    "; filament used [mm] = 2584.01",
+    "; filament used [cm3] = 6.22",
+    "; filament used [g] = 6.53"
+  ],
+  "analysis_geometry_sha256": "8812c05847ebac259e449c79250d306d671817ec3ff8aaf6611fe6f99ceb8363",
+  "identical_deposited_path_trace_as": "13-inch-example/05_left_fan_cap/preview.gcode",
+  "analysis_feature_scope": "All positive-extrusion model paths; bridge-tagged and all-feature maxima are reported separately."
+}

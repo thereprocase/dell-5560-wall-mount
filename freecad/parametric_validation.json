@@ -1,0 +1,142 @@
+{
+  "outletGap": [
+    {
+      "value": 8,
+      "valid": true,
+      "invalid_parts": [],
+      "feature_errors": [],
+      "variant_comparison": {
+        "left": {
+          "delta_mm3": 0.0,
+          "boolean_valid": true
+        },
+        "right": {
+          "delta_mm3": 0.0,
+          "boolean_valid": true
+        }
+      }
+    },
+    {
+      "value": 16,
+      "valid": true,
+      "invalid_parts": [],
+      "feature_errors": [],
+      "variant_comparison": {
+        "left": {
+          "delta_mm3": 0.0,
+          "boolean_valid": true
+        },
+        "right": {
+          "delta_mm3": 0.0,
+          "boolean_valid": true
+        }
+      }
+    }
+  ],
+  "laptopWidth": [
+    {
+      "value": 342.4,
+      "valid": true,
+      "invalid_parts": [],
+      "feature_errors": []
+    },
+    {
+      "value": 346.4,
+      "valid": true,
+      "invalid_parts": [],
+      "feature_errors": []
+    }
+  ],
+  "laptopHeight": [
+    {
+      "value": 229.3,
+      "valid": true,
+      "invalid_parts": [],
+      "feature_errors": []
+    },
+    {
+      "value": 231.3,
+      "valid": true,
+      "invalid_parts": [],
+      "feature_errors": []
+    }
+  ],
+  "laptopThickness": [
+    {
+      "value": 19.5,
+      "valid": false,
+      "invalid_parts": [],
+      "feature_errors": [
+        "Fillet003",
+        "Fillet013",
+        "Fillet014"
+      ]
+    },
+    {
+      "value": 20.5,
+      "valid": false,
+      "invalid_parts": [],
+      "feature_errors": [
+        "Fillet003",
+        "Fillet013",
+        "Fillet014"
+      ]
+    }
+  ],
+  "wallGap": [
+    {
+      "value": 39.5,
+      "valid": false,
+      "invalid_parts": [],
+      "feature_errors": [
+        "Fillet003",
+        "Fillet013",
+        "Fillet014"
+      ]
+    },
+    {
+      "value": 40.5,
+      "valid": false,
+      "invalid_parts": [],
+      "feature_errors": [
+        "Fillet003",
+        "Fillet013",
+        "Fillet014"
+      ]
+    }
+  ],
+  "tineHeight": [
+    {
+      "value": 93,
+      "valid": false,
+      "invalid_parts": [],
+      "feature_errors": [
+        "Fillet003",
+        "Fillet013",
+        "Fillet014"
+      ]
+    },
+    {
+      "value": 95,
+      "valid": false,
+      "invalid_parts": [],
+      "feature_errors": [
+        "Fillet003",
+        "Fillet013",
+        "Fillet014"
+      ]
+    }
+  ],
+  "wallHoleDiameter": [
+    {
+      "value": 6.8,
+      "valid": false,
+      "invalid_parts": [],
+      "feature_errors": [
+        "Fillet003",
+        "Fillet013",
+        "Fillet014"
+      ]
+    }
+  ]
+}

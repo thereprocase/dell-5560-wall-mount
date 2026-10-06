@@ -1,0 +1,32 @@
+2026-09-07T21:13:21Z
+WM_PROJECT_VERSION=v2412
+openfoam2412 2412.260127-1
+openfoam2412-tools 2412.260127-1
+openfoam2412-tutorials 2412.260127-1
+/usr/lib/openfoam/openfoam2412/platforms/linux64GccDPInt32Opt/bin/foamDictionary
+/usr/lib/openfoam/openfoam2412/platforms/linux64GccDPInt32Opt/bin/surfaceCheck
+/usr/lib/openfoam/openfoam2412/platforms/linux64GccDPInt32Opt/bin/blockMesh
+/usr/lib/openfoam/openfoam2412/platforms/linux64GccDPInt32Opt/bin/snappyHexMesh
+/usr/lib/openfoam/openfoam2412/platforms/linux64GccDPInt32Opt/bin/checkMesh
+/usr/lib/openfoam/openfoam2412/platforms/linux64GccDPInt32Opt/bin/simpleFoam
+/usr/lib/openfoam/openfoam2412/platforms/linux64GccDPInt32Opt/bin/icoFoam
+
+Usage: simpleFoam [OPTIONS]
+Options:
+  -case <dir>       Case directory (instead of current directory)
+  -decomposeParDict <file>
+                    Alternative decomposePar dictionary file
+  -dry-run          Check case set-up only using a single time step
+  -dry-run-write    Check case set-up and write only using a single time step
+  -parallel         Run in parallel
+  -postProcess      Execute functionObjects only
+  -doc              Display documentation in browser
+  -help             Display short help and exit
+  -help-full        Display full help and exit
+
+Steady-state solver for incompressible, turbulent flows.
+
+Using: OpenFOAM-2412 (2412) - visit www.openfoam.com
+Build: _b8cf4d35-20260127 (patch=260127)
+Arch:  LSB;label=32;scalar=64
+

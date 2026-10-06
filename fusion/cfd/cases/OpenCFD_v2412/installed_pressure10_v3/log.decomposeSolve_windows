@@ -1,0 +1,176 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2412                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 6467f461-20260821 OPENFOAM=2412 version=v2412
+Arch   : "LSB;label=32;scalar=64"
+Exec   : C:\Users\USER\AppData\Local\Programs\BARAM-26.3.0\solvers\openfoam\bin\decomposePar.exe -force
+Date   : Sep 07 2026
+Time   : 18:23:08
+Host   : WORKSTATION
+PID    : 25112
+I/O    : uncollated
+Case   : F:/Code/dell-5560-wall-mount/fusion/cfd/cases/OpenCFD_v2412/installed_pressure10_v3
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 0, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+--> FOAM Warning : 
+    From void Foam::Time::setControls()
+    in file db/Time/Time.C at line 337
+    Reading "0/uniform/time" at line 19 to 27
+    Time read from time dictionary 300 differs from actual time 0.
+    This may cause unexpected database behaviour. If you are not interested
+    in preserving time state delete the time dictionary.
+
+
+Decomposing mesh
+
+Create mesh
+
+Calculating distribution of cells
+Decomposition method scotch [8] (region region0)
+
+Finished decomposition in 1.492 s
+
+Calculating original mesh data
+
+Distributing cells to processors
+
+Distributing faces to processors
+
+Distributing points to processors
+
+Constructing processor meshes
+
+Processor 0
+    Number of cells = 103892
+    Number of points = 130862
+    Number of faces shared with processor 1 = 1271
+    Number of faces shared with processor 2 = 851
+    Number of faces shared with processor 3 = 67
+    Number of faces shared with processor 4 = 1138
+    Number of processor patches = 4
+    Number of processor faces = 3327
+    Number of boundary faces = 29065
+
+Processor 1
+    Number of cells = 103970
+    Number of points = 133810
+    Number of faces shared with processor 0 = 1271
+    Number of faces shared with processor 2 = 1465
+    Number of faces shared with processor 3 = 734
+    Number of faces shared with processor 4 = 312
+    Number of faces shared with processor 5 = 1137
+    Number of faces shared with processor 6 = 545
+    Number of faces shared with processor 7 = 155
+    Number of processor patches = 7
+    Number of processor faces = 5619
+    Number of boundary faces = 25342
+
+Processor 2
+    Number of cells = 104864
+    Number of points = 133280
+    Number of faces shared with processor 0 = 851
+    Number of faces shared with processor 1 = 1465
+    Number of faces shared with processor 3 = 1452
+    Number of faces shared with processor 4 = 258
+    Number of faces shared with processor 6 = 1094
+    Number of processor patches = 5
+    Number of processor faces = 5120
+    Number of boundary faces = 24570
+
+Processor 3
+    Number of cells = 105572
+    Number of points = 131433
+    Number of faces shared with processor 0 = 67
+    Number of faces shared with processor 1 = 734
+    Number of faces shared with processor 2 = 1452
+    Number of faces shared with processor 6 = 383
+    Number of faces shared with processor 7 = 1140
+    Number of processor patches = 5
+    Number of processor faces = 3776
+    Number of boundary faces = 28583
+
+Processor 4
+    Number of cells = 104053
+    Number of points = 129784
+    Number of faces shared with processor 0 = 1138
+    Number of faces shared with processor 1 = 312
+    Number of faces shared with processor 2 = 258
+    Number of faces shared with processor 5 = 1337
+    Number of faces shared with processor 6 = 353
+    Number of faces shared with processor 7 = 32
+    Number of processor patches = 6
+    Number of processor faces = 3430
+    Number of boundary faces = 29114
+
+Processor 5
+    Number of cells = 103902
+    Number of points = 134532
+    Number of faces shared with processor 1 = 1137
+    Number of faces shared with processor 4 = 1337
+    Number of faces shared with processor 6 = 1265
+    Number of faces shared with processor 7 = 1157
+    Number of processor patches = 4
+    Number of processor faces = 4896
+    Number of boundary faces = 27613
+
+Processor 6
+    Number of cells = 104896
+    Number of points = 131371
+    Number of faces shared with processor 1 = 545
+    Number of faces shared with processor 2 = 1094
+    Number of faces shared with processor 3 = 383
+    Number of faces shared with processor 4 = 353
+    Number of faces shared with processor 5 = 1265
+    Number of faces shared with processor 7 = 1759
+    Number of processor patches = 6
+    Number of processor faces = 5399
+    Number of boundary faces = 23536
+
+Processor 7
+    Number of cells = 105129
+    Number of points = 131773
+    Number of faces shared with processor 1 = 155
+    Number of faces shared with processor 3 = 1140
+    Number of faces shared with processor 4 = 32
+    Number of faces shared with processor 5 = 1157
+    Number of faces shared with processor 6 = 1759
+    Number of processor patches = 5
+    Number of processor faces = 4243
+    Number of boundary faces = 27906
+
+Number of processor faces = 17905
+Max number of cells = 105572 (0.9922537721% above average 104534.75)
+Max number of processor patches = 7 (33.33333333% above average 5.25)
+Max number of faces between processors = 5619 (25.52918179% above average 4476.25)
+
+Time = 0
+
+Processor 0: field transfer
+Detected additional non-decomposed files in "F:/Code/dell-5560-wall-mount/fusion/cfd/cases/OpenCFD_v2412/installed_pressure10_v3/0/uniform"
+Processor 1: field transfer
+Detected additional non-decomposed files in "F:/Code/dell-5560-wall-mount/fusion/cfd/cases/OpenCFD_v2412/installed_pressure10_v3/0/uniform"
+Processor 2: field transfer
+Detected additional non-decomposed files in "F:/Code/dell-5560-wall-mount/fusion/cfd/cases/OpenCFD_v2412/installed_pressure10_v3/0/uniform"
+Processor 3: field transfer
+Detected additional non-decomposed files in "F:/Code/dell-5560-wall-mount/fusion/cfd/cases/OpenCFD_v2412/installed_pressure10_v3/0/uniform"
+Processor 4: field transfer
+Detected additional non-decomposed files in "F:/Code/dell-5560-wall-mount/fusion/cfd/cases/OpenCFD_v2412/installed_pressure10_v3/0/uniform"
+Processor 5: field transfer
+Detected additional non-decomposed files in "F:/Code/dell-5560-wall-mount/fusion/cfd/cases/OpenCFD_v2412/installed_pressure10_v3/0/uniform"
+Processor 6: field transfer
+Detected additional non-decomposed files in "F:/Code/dell-5560-wall-mount/fusion/cfd/cases/OpenCFD_v2412/installed_pressure10_v3/0/uniform"
+Processor 7: field transfer
+Detected additional non-decomposed files in "F:/Code/dell-5560-wall-mount/fusion/cfd/cases/OpenCFD_v2412/installed_pressure10_v3/0/uniform"
+
+End
+

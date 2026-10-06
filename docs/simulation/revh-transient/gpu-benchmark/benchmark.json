@@ -1,0 +1,90 @@
+{
+  "date_utc": "2026-09-08",
+  "recommendation": "Keep the CPU backend for the next run; tested GPU backend is not accepted.",
+  "scope": "Backend commissioning on a mesh with known defects; not mesh convergence, hardware validation, sustained shedding or settled suction.",
+  "mesh_cells": 3193565,
+  "source_mesh": "revh_sequence_05",
+  "steps": 10,
+  "dt_s": 1e-05,
+  "end_time_s": 0.0001,
+  "ranks": 4,
+  "initialization": "Identical quiescent U and identical p/k/omega/nut; no mapped Revision F fields.",
+  "hardware": "NVIDIA GeForce RTX 3080 Ti, 12 GiB nominal, WSL CUDA 12.4",
+  "openfoam": "2412 patch 260127; double precision, 32-bit labels",
+  "OGL_commit": "d3e80f4651ebe8b7383af4b746a6c3a43f87bc3e",
+  "Ginkgo_commit": "ac44187f33ed1aa0c0fe9436dc86b25a860374ba",
+  "runs": {
+    "cpu": {
+      "case": "duct_cpu_02",
+      "backend": "OpenFOAM GAMG",
+      "solve_wall_seconds": 178.31437867099885,
+      "mean_step_seconds_after_first_three": 16.285714285714285,
+      "pressure_iterations_total": 474,
+      "pressure_calls": 120,
+      "max_pressure_iterations": 16,
+      "bounding_events": 5,
+      "max_logged_Courant": 0.002125211215,
+      "final_net_flux_m3_s": -3.650345608e-12,
+      "final_sum_absolute_flux_m3_s": 3.866692273e-05,
+      "final_relative_mass_imbalance": 1.888097293642586e-07,
+      "observed_total_device_memory_MiB": [
+        2566,
+        2598
+      ],
+      "observed_device_utilization_percent": [
+        11,
+        71
+      ]
+    },
+    "gpu": {
+      "case": "duct_gpu_01",
+      "backend": "OGL CUDA GKOCG with block Jacobi",
+      "solve_wall_seconds": 219.85855576000176,
+      "mean_step_seconds_after_first_three": 19.857142857142858,
+      "pressure_iterations_total": 18907,
+      "pressure_calls": 120,
+      "max_pressure_iterations": 730,
+      "bounding_events": 5,
+      "max_logged_Courant": 0.002125211216,
+      "final_net_flux_m3_s": -5.875125125e-12,
+      "final_sum_absolute_flux_m3_s": 3.86669263e-05,
+      "final_relative_mass_imbalance": 3.0388374185304716e-07,
+      "observed_total_device_memory_MiB": [
+        2590,
+        3643
+      ],
+      "observed_device_utilization_percent": [
+        3,
+        88
+      ]
+    }
+  },
+  "gpu_over_cpu_wall_ratio": 1.2329827655999324,
+  "field_comparison_passed": false,
+  "comparison_detail": "All field RMS errors pass; maximum local errors in U and p exceed the preset atol 1e-7 plus rtol 1e-4 times the reference maximum.",
+  "memory_timing_limits": "Single sequential run per backend on a shared desktop, not a repeated dedicated-machine performance study. Device memory/utilization are total-device 500 ms samples, including other applications. One 1.4 s geometry render ran near GPU-case setup. Timing includes solver startup, function objects and endpoint field writing; excludes mesh preparation, decomposition and reconstruction.",
+  "other_trials": [
+    {
+      "case": "smoke_gpu_01",
+      "result": "Multigrid/scaling -1: CUDA illegal memory access."
+    },
+    {
+      "case": "smoke_gpu_02",
+      "result": "Block Jacobi/scaling -1: exited zero but numerically rejected; pressure grew to billions."
+    },
+    {
+      "case": "smoke_gpu_03",
+      "result": "Block Jacobi/scaling 1: all five fields pass against the 4800-cell CPU reference."
+    },
+    {
+      "case": "smoke_gpu_04",
+      "result": "Multigrid/scaling 1/ranksPerGPU 4: CUDA illegal memory access."
+    },
+    {
+      "case": "smoke_gpu_05",
+      "result": "Multigrid/scaling 1/ranksPerGPU 1: CUDA illegal memory access."
+    }
+  ],
+  "source_mesh_limits": "Four low-determinant cells, 71820 concave cells and poor wall-layer coverage. Standard checks pass, expanded checks fail two. Used for a bounded backend benchmark only.",
+  "long_video_status": "No replacement long sequence has been completed. The published startup movie still has four actual source frames."
+}

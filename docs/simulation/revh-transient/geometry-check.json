@@ -1,0 +1,322 @@
+{
+  "native_sha256": "01d41e0c91873dc18e7d3b6a6384f2ad8b988a5ccb8d5be0353a2aec8a0cecb3",
+  "revision_h_blends_present": true,
+  "native_part_count": 14,
+  "step_solid_count": 14,
+  "parts": [
+    {
+      "part": "02_right_cradle",
+      "native_valid": true,
+      "native_solids": 1,
+      "step_valid": true,
+      "centroid_delta_mm": 1.7019523906932114e-05,
+      "relative_volume_delta": 1.967464210580398e-07
+    },
+    {
+      "part": "01_left_cradle",
+      "native_valid": true,
+      "native_solids": 1,
+      "step_valid": true,
+      "centroid_delta_mm": 1.7017236333306267e-05,
+      "relative_volume_delta": 1.96720900978568e-07
+    },
+    {
+      "part": "04_right_fan_duct",
+      "native_valid": true,
+      "native_solids": 1,
+      "step_valid": true,
+      "centroid_delta_mm": 3.059429995924881e-08,
+      "relative_volume_delta": 3.6498222077753683e-10
+    },
+    {
+      "part": "03_left_fan_duct",
+      "native_valid": true,
+      "native_solids": 1,
+      "step_valid": true,
+      "centroid_delta_mm": 3.4696389724268376e-08,
+      "relative_volume_delta": 2.566368369423941e-10
+    },
+    {
+      "part": "06_right_fan_retainer",
+      "native_valid": true,
+      "native_solids": 1,
+      "step_valid": true,
+      "centroid_delta_mm": 1.3504778310628695e-11,
+      "relative_volume_delta": 1.8267134273027784e-13
+    },
+    {
+      "part": "05_left_fan_retainer",
+      "native_valid": true,
+      "native_solids": 1,
+      "step_valid": true,
+      "centroid_delta_mm": 1.4156930569734117e-11,
+      "relative_volume_delta": 7.309783482149854e-14
+    },
+    {
+      "part": "08_right_outlet_rail",
+      "native_valid": true,
+      "native_solids": 1,
+      "step_valid": true,
+      "centroid_delta_mm": 1.3234645795975847e-09,
+      "relative_volume_delta": 2.0938534880880284e-11
+    },
+    {
+      "part": "07_left_outlet_rail",
+      "native_valid": true,
+      "native_solids": 1,
+      "step_valid": true,
+      "centroid_delta_mm": 7.381611701390213e-10,
+      "relative_volume_delta": 6.506084787738943e-12
+    },
+    {
+      "part": "10_right_fan_tray",
+      "native_valid": true,
+      "native_solids": 1,
+      "step_valid": true,
+      "centroid_delta_mm": 9.897751355251834e-11,
+      "relative_volume_delta": 8.554105029663815e-13
+    },
+    {
+      "part": "09_left_fan_tray",
+      "native_valid": true,
+      "native_solids": 1,
+      "step_valid": true,
+      "centroid_delta_mm": 1.1630052801670642e-10,
+      "relative_volume_delta": 8.477164248865311e-13
+    },
+    {
+      "part": "11_left_push_pin",
+      "native_valid": true,
+      "native_solids": 1,
+      "step_valid": true,
+      "centroid_delta_mm": 3.553581074539171e-11,
+      "relative_volume_delta": 6.292198152303107e-12
+    },
+    {
+      "part": "12_right_push_pin",
+      "native_valid": true,
+      "native_solids": 1,
+      "step_valid": true,
+      "centroid_delta_mm": 3.553581074539171e-11,
+      "relative_volume_delta": 6.2921981523031074e-12
+    },
+    {
+      "part": "13_left_push_pin",
+      "native_valid": true,
+      "native_solids": 1,
+      "step_valid": true,
+      "centroid_delta_mm": 3.553547829100466e-11,
+      "relative_volume_delta": 6.29192027131508e-12
+    },
+    {
+      "part": "14_right_push_pin",
+      "native_valid": true,
+      "native_solids": 1,
+      "step_valid": true,
+      "centroid_delta_mm": 3.553547829100466e-11,
+      "relative_volume_delta": 6.29192027131508e-12
+    }
+  ],
+  "probes": [
+    {
+      "name": "duct_edge_x-0.111",
+      "point_m": [
+        -0.111,
+        0.039,
+        0.008
+      ],
+      "inside_CAD_fluid": true
+    },
+    {
+      "name": "duct_wake_x-0.111",
+      "point_m": [
+        -0.111,
+        0.039,
+        0.02
+      ],
+      "inside_CAD_fluid": true
+    },
+    {
+      "name": "front_lip_wallside_x-0.111",
+      "point_m": [
+        -0.111,
+        0.046,
+        0.004
+      ],
+      "inside_CAD_fluid": true
+    },
+    {
+      "name": "front_lip_outside_x-0.111",
+      "point_m": [
+        -0.111,
+        0.06,
+        0.004
+      ],
+      "inside_CAD_fluid": true
+    },
+    {
+      "name": "hinge_underside_x-0.111",
+      "point_m": [
+        -0.111,
+        0.037,
+        0.219
+      ],
+      "inside_CAD_fluid": true
+    },
+    {
+      "name": "hinge_exit_x-0.111",
+      "point_m": [
+        -0.111,
+        0.046,
+        0.239
+      ],
+      "inside_CAD_fluid": true
+    },
+    {
+      "name": "hinge_wake_x-0.111",
+      "point_m": [
+        -0.111,
+        0.046,
+        0.25
+      ],
+      "inside_CAD_fluid": true
+    },
+    {
+      "name": "duct_edge_x0.07",
+      "point_m": [
+        0.07,
+        0.039,
+        0.008
+      ],
+      "inside_CAD_fluid": true
+    },
+    {
+      "name": "duct_wake_x0.07",
+      "point_m": [
+        0.07,
+        0.039,
+        0.02
+      ],
+      "inside_CAD_fluid": true
+    },
+    {
+      "name": "front_lip_wallside_x0.07",
+      "point_m": [
+        0.07,
+        0.046,
+        0.004
+      ],
+      "inside_CAD_fluid": true
+    },
+    {
+      "name": "front_lip_outside_x0.07",
+      "point_m": [
+        0.07,
+        0.06,
+        0.004
+      ],
+      "inside_CAD_fluid": true
+    },
+    {
+      "name": "hinge_underside_x0.07",
+      "point_m": [
+        0.07,
+        0.037,
+        0.219
+      ],
+      "inside_CAD_fluid": true
+    },
+    {
+      "name": "hinge_exit_x0.07",
+      "point_m": [
+        0.07,
+        0.046,
+        0.239
+      ],
+      "inside_CAD_fluid": true
+    },
+    {
+      "name": "hinge_wake_x0.07",
+      "point_m": [
+        0.07,
+        0.046,
+        0.25
+      ],
+      "inside_CAD_fluid": true
+    },
+    {
+      "name": "duct_edge_x0.111",
+      "point_m": [
+        0.111,
+        0.039,
+        0.008
+      ],
+      "inside_CAD_fluid": true
+    },
+    {
+      "name": "duct_wake_x0.111",
+      "point_m": [
+        0.111,
+        0.039,
+        0.02
+      ],
+      "inside_CAD_fluid": true
+    },
+    {
+      "name": "front_lip_wallside_x0.111",
+      "point_m": [
+        0.111,
+        0.046,
+        0.004
+      ],
+      "inside_CAD_fluid": true
+    },
+    {
+      "name": "front_lip_outside_x0.111",
+      "point_m": [
+        0.111,
+        0.06,
+        0.004
+      ],
+      "inside_CAD_fluid": true
+    },
+    {
+      "name": "hinge_underside_x0.111",
+      "point_m": [
+        0.111,
+        0.037,
+        0.219
+      ],
+      "inside_CAD_fluid": true
+    },
+    {
+      "name": "hinge_exit_x0.111",
+      "point_m": [
+        0.111,
+        0.046,
+        0.239
+      ],
+      "inside_CAD_fluid": true
+    },
+    {
+      "name": "hinge_wake_x0.111",
+      "point_m": [
+        0.111,
+        0.046,
+        0.25
+      ],
+      "inside_CAD_fluid": true
+    },
+    {
+      "name": "ambient_reference",
+      "point_m": [
+        0,
+        0.25,
+        0.1
+      ],
+      "inside_CAD_fluid": true
+    }
+  ],
+  "comparison": "Independent saved native snapshot against installed-coordinate STEP: validity, solid count, centroid and volume. Not a pointwise equivalence proof.",
+  "pass": true
+}

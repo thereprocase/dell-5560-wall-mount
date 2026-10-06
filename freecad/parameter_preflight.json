@@ -1,0 +1,202 @@
+{
+  "laptopWidth": {
+    "content": "=344.4 mm",
+    "type": "Quantity",
+    "value": "344.4 mm"
+  },
+  "laptopHeight": {
+    "content": "=230.3 mm",
+    "type": "Quantity",
+    "value": "230.3 mm"
+  },
+  "laptopThickness": {
+    "content": "=20 mm",
+    "type": "Quantity",
+    "value": "20.0 mm"
+  },
+  "wallGap": {
+    "content": "=40 mm",
+    "type": "Quantity",
+    "value": "40.0 mm"
+  },
+  "tineHeight": {
+    "content": "=94 mm",
+    "type": "Quantity",
+    "value": "94.0 mm"
+  },
+  "wallHoleDiameter": {
+    "content": "=7 mm",
+    "type": "Quantity",
+    "value": "7.0 mm"
+  },
+  "wallDriverDiameter": {
+    "content": "=16 mm",
+    "type": "Quantity",
+    "value": "16.0 mm"
+  },
+  "wallHoleHalfSpacing": {
+    "content": "=laptopWidth / 2 - 10.2 mm",
+    "type": "Quantity",
+    "value": "162.0 mm"
+  },
+  "lowerWallHoleZ": {
+    "content": "=-36 mm",
+    "type": "Quantity",
+    "value": "-36.0 mm"
+  },
+  "upperWallHoleZ": {
+    "content": "=174 mm",
+    "type": "Quantity",
+    "value": "174.0 mm"
+  },
+  "fanFrameWidth": {
+    "content": "=120 mm",
+    "type": "Quantity",
+    "value": "120.0 mm"
+  },
+  "fanThicknessNominal": {
+    "content": "=25 mm",
+    "type": "Quantity",
+    "value": "25.0 mm"
+  },
+  "fanAngle": {
+    "content": "=45 deg",
+    "type": "Quantity",
+    "value": "45.0 deg"
+  },
+  "fanCenterY": {
+    "content": "=67 mm",
+    "type": "Quantity",
+    "value": "67.0 mm"
+  },
+  "fanCenterZ": {
+    "content": "=-84 mm",
+    "type": "Quantity",
+    "value": "-84.0 mm"
+  },
+  "grilleBarWidth": {
+    "content": "=2.4 mm",
+    "type": "Quantity",
+    "value": "2.4 mm"
+  },
+  "ductSkinNominal": {
+    "content": "=2 mm",
+    "type": "Quantity",
+    "value": "2.0 mm"
+  },
+  "outletGap": {
+    "content": "=12 mm",
+    "type": "Quantity",
+    "value": "12.0 mm"
+  },
+  "contractionStartZ": {
+    "content": "=laptopHeight - 32.3 mm",
+    "type": "Quantity",
+    "value": "198.0 mm"
+  },
+  "throatZ": {
+    "content": "=laptopHeight - 4.3 mm",
+    "type": "Quantity",
+    "value": "226.0 mm"
+  },
+  "outletZ": {
+    "content": "=laptopHeight + 1.7 mm",
+    "type": "Quantity",
+    "value": "232.0 mm"
+  },
+  "slotFitAllowance": {
+    "content": "=6 mm",
+    "type": "Quantity",
+    "value": "6.0 mm"
+  },
+  "bareSlot": {
+    "content": "=laptopThickness + slotFitAllowance",
+    "type": "Quantity",
+    "value": "26.0 mm"
+  },
+  "keyClearance": {
+    "content": "=0.3 mm",
+    "type": "Quantity",
+    "value": "0.3 mm"
+  },
+  "trayHorizontalClearance": {
+    "content": "=0.3 mm",
+    "type": "Quantity",
+    "value": "0.3 mm"
+  },
+  "trayRoofClearance": {
+    "content": "=0.3 mm",
+    "type": "Quantity",
+    "value": "0.3 mm"
+  },
+  "trayRootClearance": {
+    "content": "=0.2 mm",
+    "type": "Quantity",
+    "value": "0.2 mm"
+  },
+  "capPinPassageDiameter": {
+    "content": "=4.5 mm",
+    "type": "Quantity",
+    "value": "4.5 mm"
+  },
+  "pinSocketDiameter": {
+    "content": "=4.1 mm",
+    "type": "Quantity",
+    "value": "4.1 mm"
+  },
+  "pinShaftDiametralClearance": {
+    "content": "=0.1 mm",
+    "type": "Quantity",
+    "value": "0.1 mm"
+  },
+  "pinCrownDiametralInterference": {
+    "content": "=0.1 mm",
+    "type": "Quantity",
+    "value": "0.1 mm"
+  },
+  "pinHeadDiameter": {
+    "content": "=8 mm",
+    "type": "Quantity",
+    "value": "8.0 mm"
+  },
+  "pinHeadHeight": {
+    "content": "=2 mm",
+    "type": "Quantity",
+    "value": "2.0 mm"
+  },
+  "pinHeadChamfer": {
+    "content": "=0.6 mm",
+    "type": "Quantity",
+    "value": "0.6 mm"
+  },
+  "pinShaftLength": {
+    "content": "=10 mm",
+    "type": "Quantity",
+    "value": "10.0 mm"
+  },
+  "pinCrownHeight": {
+    "content": "=2 mm",
+    "type": "Quantity",
+    "value": "2.0 mm"
+  },
+  "pinTipDiameter": {
+    "content": "=3.2 mm",
+    "type": "Quantity",
+    "value": "3.2 mm"
+  },
+  "pinSplitWidth": {
+    "content": "=1 mm",
+    "type": "Quantity",
+    "value": "1.0 mm"
+  },
+  "pinSplitStart": {
+    "content": "=4 mm",
+    "type": "Quantity",
+    "value": "4.0 mm"
+  },
+  "laptopLift": {
+    "content": "=105 mm",
+    "type": "Quantity",
+    "value": "105.0 mm"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "native_sha256": "057d6fa4df9c726c07c029d8b4d1938a603ab8b5b7b5cd6065a0f3c1033c786f",
+  "images": {
+    "revh-cables-installed.png": "2da35cd54183f7d13dcdd2f00924254dd23c86b834641f7d6e544f67de2e35b4",
+    "revh-cables-tray.png": "5951f42fe8de1921b261ba28a18c1cfe4e4f5f2414628c039d4818e957d34bff",
+    "revh-cables-groove-open.png": "30c3a7d661e97e3c4c13f432c4e3934642e4c274a18d2727e8c1964025eabd76",
+    "revh-cables-groove-closed.png": "cc4607ab3abbaf26f9c8a7431b9e31aa398a36f7d22481dbd9c121991f70a1ba",
+    "revh-cables-coupon.png": "7bbb0f57452f2cdea2baaf71e6cde6b9b675cac35fa8d219eda3e0f145aeeb52"
+  },
+  "source_file_unchanged": true,
+  "reference_cable_diameter_mm": 4
+}

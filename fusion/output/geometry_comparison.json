@@ -1,0 +1,9 @@
+{
+  "native_valid": true,
+  "source_valid": true,
+  "native_volume_mm3": 204.5603021147502,
+  "source_volume_mm3": 204.56030211045663,
+  "native_minus_source_mm3": 0.0,
+  "source_minus_native_mm3": 0.0,
+  "native_solids": 1
+}

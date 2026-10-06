@@ -1,0 +1,13 @@
+{
+  "04_right_fan_duct": {
+    "valid": true,
+    "solids": 1,
+    "removed_volume": 98.25904033513507,
+    "socket_support_removed": 0.0
+  },
+  "10_right_fan_tray": {
+    "valid": true,
+    "solids": 1,
+    "removed_volume": 2112.000000000364
+  }
+}

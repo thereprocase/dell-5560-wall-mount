@@ -1,0 +1,9 @@
+FoamFile { version 2.0; format ascii; class dictionary; object controlDict; }
+application simpleFoam; startFrom startTime; startTime 0; stopAt endTime; endTime 1600; deltaT 1; writeControl timeStep; writeInterval 100; purgeWrite 2; writeFormat ascii; writePrecision 9; runTimeModifiable false;
+functions
+{
+ ventPressure {type surfaceFieldValue; libs ("libfieldFunctionObjects.so"); writeControl timeStep; writeInterval 20; regionType patch; name laptopVent; operation areaAverage; fields (p);}
+ inletFlow {type surfaceFieldValue; libs ("libfieldFunctionObjects.so"); writeControl timeStep; writeInterval 20; regionType patch; name fanInlet; operation sum; fields (phi);}
+ outletFlow {type surfaceFieldValue; libs ("libfieldFunctionObjects.so"); writeControl timeStep; writeInterval 20; regionType patch; name slotOutlet; operation sum; fields (phi);}
+ ventFlow {type surfaceFieldValue; libs ("libfieldFunctionObjects.so"); writeControl timeStep; writeInterval 20; regionType patch; name laptopVent; operation sum; fields (phi);}
+}

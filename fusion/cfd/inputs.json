@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "status": "setup_only_solver_unverified",
+  "openfoam_distribution": "OpenCFD",
+  "openfoam_version": "v2412",
+  "openfoam_package_target": "2412.260127-1",
+  "solver": "simpleFoam",
+  "scope": "sealed_internal_flow_benchmark",
+  "geometry_units": "m",
+  "geometry_directory": "geometry",
+  "patches": ["fan_left", "fan_right", "outlet", "laptop_shell", "wall_plane", "assumed_side_seals", "printed_or_model_walls"],
+  "fan": {
+    "model": "Noctua NF-A12x25 PWM",
+    "variant": "standard original-generation 12 V PWM",
+    "identification": "user confirmed standard in session context",
+    "maximum_rpm": 2000,
+    "free_airflow_m3_h": 102.1,
+    "maximum_static_pressure_mm_H2O": 2.34,
+    "operating_rpm": null,
+    "fan_curve_points": null,
+    "source": "https://www.noctua.at/en/products/nf-a12x25-pwm/specifications"
+  },
+  "per_fan_flow_sweep_cfm": [20, 35, 50],
+  "flow_provenance": "assumed delivered flow; not a measured or solved fan operating point",
+  "air": {"kinematic_viscosity_m2_s": 0.000015, "reference_density_kg_m3": 1.2, "properties_provenance": "constant room-air engineering assumptions"},
+  "turbulence": {"model": "kOmegaSST", "intensity": 0.05, "length_scale_m": 0.008, "provenance": "unmeasured inlet assumptions; sensitivity required"},
+  "thermal": {"enabled": false, "laptop_heat_W": null, "ambient_temperature_K": null},
+  "nominal_outlet_gap_mm": 12,
+  "block_mesh_domain_m": {"min": [-0.2, -0.02, -0.16], "max": [0.2, 0.15, 0.25]},
+  "location_in_mesh_m": [0, 0.02, 0.10],
+  "outlet_refinement_box_m": {"min": [-0.185, -0.002, 0.185], "max": [0.185, 0.045, 0.24]},
+  "mesh_levels": {
+    "coarse": {"base_cell_m": 0.008, "surface_level": 3, "outlet_level": 3, "max_global_cells": 1500000, "wall_layers": 3, "purpose": "setup and topology check; nominal surface cells about 1 mm"},
+    "medium": {"base_cell_m": 0.006, "surface_level": 3, "outlet_level": 3, "max_global_cells": 3000000, "wall_layers": 3, "purpose": "sensitivity candidate; nominal surface cells about 0.75 mm"},
+    "fine": {"base_cell_m": 0.004, "surface_level": 3, "outlet_level": 4, "max_global_cells": 6000000, "wall_layers": 4, "purpose": "sensitivity candidate; nominal surface cells about 0.5 mm, outlet 0.25 mm"}
+  },
+  "run_controls": {"maximum_iterations": 2000, "write_interval": 100},
+  "excluded_physics": ["ambient leakage", "external recirculation", "guard and fan intake loss upstream of truncated inlet", "fan operating-point prediction", "blade rotation and swirl", "heat transfer", "laptop internal fans", "CPU temperature"]
+}

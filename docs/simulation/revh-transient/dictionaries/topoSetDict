@@ -1,0 +1,19 @@
+/* Generated for OpenCFD OpenFOAM v2412; setup only. */
+FoamFile
+{
+    version 2.0;
+    format ascii;
+    class dictionary;
+    object topoSetDict;
+}
+
+actions (
+{name dell_fan_left; type cellSet; action new; source cylinderToCell; p1 (-0.111017191995 0.0432 0.1711187905); p2 (-0.111017191995 0.0452 0.1711187905); radius 0.025;}
+{name dell_fan_left; type cellZoneSet; action new; source setToCellZone; set dell_fan_left;}
+{name dell_fan_right; type cellSet; action new; source cylinderToCell; p1 (0.11126389683 0.0432 0.1711187905); p2 (0.11126389683 0.0452 0.1711187905); radius 0.025;}
+{name dell_fan_right; type cellZoneSet; action new; source setToCellZone; set dell_fan_right;}
+{name noctua_fan_left; type cellSet; action new; source cylinderToCell; p1 (-0.07000000000000002 0.08503122292025699 -0.10203122292025697); p2 (-0.07000000000000002 0.07796015510839151 -0.0949601551083915); radius 0.055;}
+{name noctua_fan_left; type cellZoneSet; action new; source setToCellZone; set noctua_fan_left;}
+{name noctua_fan_right; type cellSet; action new; source cylinderToCell; p1 (0.07 0.08503122292025696 -0.10203122292025697); p2 (0.07 0.07796015510839148 -0.0949601551083915); radius 0.055;}
+{name noctua_fan_right; type cellZoneSet; action new; source setToCellZone; set noctua_fan_right;}
+);

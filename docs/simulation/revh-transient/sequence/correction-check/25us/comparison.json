@@ -1,0 +1,93 @@
+{
+  "created_utc": "2026-09-08T17:58:13.499602+00:00",
+  "physical_duration_s": 0.00015,
+  "source_steady_iteration": 300,
+  "criteria": {
+    "rms_relative": 0.001,
+    "maximum_relative": 0.01,
+    "absolute": 1e-06,
+    "maximum_Courant": 0.5,
+    "maximum_boundary_flux_ratio": 0.0001,
+    "scope": "Six physical steps at 25 microseconds. Short-run coupling check only."
+  },
+  "wall_seconds": {
+    "3": 295.6963035929948,
+    "2": 224.30982105300063
+  },
+  "diagnostics": {
+    "3": {
+      "maximum_Courant": 0.7340699608,
+      "maximum_flux_ratio": 2.8814592753786563e-10,
+      "bounding_lines": []
+    },
+    "2": {
+      "maximum_Courant": 0.7340640889,
+      "maximum_flux_ratio": 1.9723765905416002e-10,
+      "bounding_lines": []
+    }
+  },
+  "identical_input_sha256": {
+    "constant/polyMesh/points": "acafdfcb81038befd0cecaf554be9ab3da5fa1419d89c578e5e6f8198ecf97e0",
+    "constant/polyMesh/faces": "0698fdd6f40db0866813820a6c14320e1192fcb7bfe82f139faa45c5131d221d",
+    "constant/polyMesh/owner": "913e1b1f26891bedacf1f65290de812c2cebffcad671a4c6d3c18ea5aee8d8b9",
+    "constant/polyMesh/neighbour": "9795488e161619b6a35f91a4d8fd1446def80eac5b0be8bb1eb7bcb475a09d38",
+    "constant/polyMesh/boundary": "84bc446e91808d0949205d696127c5851db5dc0a0d8463425c68c3fcd8dd0262",
+    "constant/polyMesh/cellZones": "74b5e72eaf2951fb56102b01452b2c456f8ef323c21b4f582328352c438ca2f0",
+    "0/U": "0ef774e32196adfa4b01b06d4a72bb302d1ae36f68487cfce7d74ff9eb63a270",
+    "0/p": "e26ba8e2008540b643a058f3e0fd22a787df0fd89a7caa30c768b19736ccbdf0",
+    "0/phi": "fc60441bba385da12183b59fcdf78f25e8e3f19b6623cdaf8ea327d9c2277fb4",
+    "0/k": "28c8f9160d048221f3e47121a656a0740be4aba8b58ed1b00fb4d02f3d0bd034",
+    "0/omega": "4944ae6e951c7c09347a09bc5f92a7cc8f28722f3227a323e0b365b1b8e3e05d",
+    "0/nut": "cb1aeb1be401abe1dd58335ad143b6105a1a620e99c2959e4b7ff73b2e323801",
+    "constant/fvOptions": "9cc43b8c29187dfa5c5aa5567f8170a249017560c64711c162ed53546288b84c",
+    "constant/transportProperties": "1069a1ce6cb788eb2cd088aafe0a82be2c995e8789ef1f62aa8dddda58c9feac",
+    "constant/turbulenceProperties": "cb6f3b7279dc6caf9e85294bdd89cf84cbe8eda756a6383850ab01bb380ee2de",
+    "system/fvSchemes": "4a9f534b8d7ef36d4ce9ff952684fc60699a8f9bff8b836de1bbbd6fee7c7f25",
+    "system/controlDict": "5e7a2e0c846af24e231cba53aa1b7cb59f26dca7c09f1085d4799780837c1f94"
+  },
+  "fields": {
+    "U": {
+      "finite": true,
+      "reference_rms": 1.22209970329232,
+      "reference_max_abs": 5.543999483093113,
+      "error_rms": 3.0286075963827647e-05,
+      "max_abs_error": 0.003999753138312467,
+      "pass": true
+    },
+    "p": {
+      "finite": true,
+      "reference_rms": 2.729939159023174,
+      "reference_max_abs": 17.486688196364344,
+      "error_rms": 0.0001499648209020881,
+      "max_abs_error": 0.13873100633914692,
+      "pass": true
+    },
+    "k": {
+      "finite": true,
+      "reference_rms": 0.15188473127784863,
+      "reference_max_abs": 1.1207406694629427,
+      "error_rms": 8.278879334196642e-07,
+      "max_abs_error": 0.00014345408569579887,
+      "pass": true
+    },
+    "omega": {
+      "finite": true,
+      "reference_rms": 65161.81072744561,
+      "reference_max_abs": 16962368.38127166,
+      "error_rms": 0.09802290310289331,
+      "max_abs_error": 39.090931318569346,
+      "pass": true
+    },
+    "nut": {
+      "finite": true,
+      "reference_rms": 8.998851114509362e-05,
+      "reference_max_abs": 0.0017578875401608358,
+      "error_rms": 1.5216972683399993e-09,
+      "max_abs_error": 3.558019214924325e-07,
+      "pass": true
+    }
+  },
+  "accepted": false,
+  "speedup_ratio": 1.3182494738967616,
+  "scope": "Bounded six-step correction-count comparison on identical flowing fields.\n\nThe predeclared short-run acceptance is 0.1% RMS and 1% maximum field error,\nplus 1e-6 absolute tolerance, against three outer correctors. It is only a\ncoupling-cost check, not time-step, mesh, or long-time statistical convergence.\n"
+}

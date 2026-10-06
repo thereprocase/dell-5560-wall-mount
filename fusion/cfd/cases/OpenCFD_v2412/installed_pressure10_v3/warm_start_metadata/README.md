@@ -1,0 +1,1 @@
+The field values were copied from v2 iteration 300 into v3 time 0. The old uniform/time metadata was preserved here after the initial read warning. The solver log confirms v3 began at Time=1 and advanced from there. This is steady SIMPLE iteration numbering, not physical elapsed time. Future warm-start preparation should exclude uniform/time before launch.

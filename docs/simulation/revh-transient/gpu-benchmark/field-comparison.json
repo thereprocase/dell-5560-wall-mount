@@ -1,0 +1,80 @@
+{
+  "reference": "duct_cpu_02",
+  "candidate": "duct_gpu_01",
+  "physical_time_s": 0.0001,
+  "relative_tolerance": 0.0001,
+  "absolute_tolerance": 1e-07,
+  "criterion": "Both RMS and maximum field error <= atol + rtol times the corresponding reference magnitude.",
+  "reader": "Native OpenFOAM binary internalField values; no VTK field conversion.",
+  "identical_input_hashes": {
+    "constant/polyMesh/points": "acafdfcb81038befd0cecaf554be9ab3da5fa1419d89c578e5e6f8198ecf97e0",
+    "constant/polyMesh/faces": "0698fdd6f40db0866813820a6c14320e1192fcb7bfe82f139faa45c5131d221d",
+    "constant/polyMesh/owner": "913e1b1f26891bedacf1f65290de812c2cebffcad671a4c6d3c18ea5aee8d8b9",
+    "constant/polyMesh/neighbour": "9795488e161619b6a35f91a4d8fd1446def80eac5b0be8bb1eb7bcb475a09d38",
+    "constant/polyMesh/boundary": "84bc446e91808d0949205d696127c5851db5dc0a0d8463425c68c3fcd8dd0262",
+    "constant/polyMesh/cellZones": "74b5e72eaf2951fb56102b01452b2c456f8ef323c21b4f582328352c438ca2f0",
+    "0/U": "f9d936626e58eda0e814db7bf503d1873ff1adb0dcabab1e40d8e6384df70cc5",
+    "0/p": "4df09d2274207dee1e3d013a1e7b841144f17b398b01fff634727f7545b7b6a6",
+    "0/k": "d780dfbfac105c08e0be9a2757460b6815bb1430dc395f60019a5268e084f34a",
+    "0/omega": "faebf37af7e43afe393511d19aae3344447154f3f5d7bbb1ba49db25cacfad3c",
+    "0/nut": "ab58a78f0a2e2ff95b8425668664d654bb79e53d33410cf303262a687b913a9b",
+    "constant/fvOptions": "9cc43b8c29187dfa5c5aa5567f8170a249017560c64711c162ed53546288b84c",
+    "constant/transportProperties": "1069a1ce6cb788eb2cd088aafe0a82be2c995e8789ef1f62aa8dddda58c9feac",
+    "constant/turbulenceProperties": "cb6f3b7279dc6caf9e85294bdd89cf84cbe8eda756a6383850ab01bb380ee2de",
+    "system/fvSchemes": "4a9f534b8d7ef36d4ce9ff952684fc60699a8f9bff8b836de1bbbd6fee7c7f25"
+  },
+  "fields": {
+    "U": {
+      "finite": true,
+      "values": 9580695,
+      "reference_rms": 0.004697581160234263,
+      "error_rms": 1.1675138222379817e-07,
+      "reference_max_abs": 0.18976191494858147,
+      "max_abs_error": 6.245963159541676e-05,
+      "max_error_cell": 2363554,
+      "pass": false
+    },
+    "p": {
+      "finite": true,
+      "values": 3193565,
+      "reference_rms": 1.9912701562912751,
+      "error_rms": 1.7588876231321582e-05,
+      "reference_max_abs": 9.89810787401118,
+      "max_abs_error": 0.008382455375658182,
+      "max_error_cell": 3015999,
+      "pass": false
+    },
+    "k": {
+      "finite": true,
+      "values": 3193565,
+      "reference_rms": 0.009839450775204765,
+      "error_rms": 1.5705622125778692e-10,
+      "reference_max_abs": 0.01001508272621294,
+      "max_abs_error": 5.1851977050693283e-08,
+      "max_error_cell": 46508,
+      "pass": true
+    },
+    "omega": {
+      "finite": true,
+      "values": 3193565,
+      "reference_rms": 65052.78848619054,
+      "error_rms": 0.001943429006702308,
+      "reference_max_abs": 16962361.630950313,
+      "max_abs_error": 0.884279127640184,
+      "max_error_cell": 2137690,
+      "pass": true
+    },
+    "nut": {
+      "finite": true,
+      "values": 3193565,
+      "reference_rms": 0.0004373879603685898,
+      "error_rms": 6.925788606267759e-10,
+      "reference_max_abs": 0.0005000149464437647,
+      "max_abs_error": 1.2592264850774196e-07,
+      "max_error_cell": 967882,
+      "pass": true
+    }
+  },
+  "passed": false,
+  "scope": "CPU/GPU field comparison only; not CFD validation or independence."
+}

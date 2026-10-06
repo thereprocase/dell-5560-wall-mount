@@ -1,0 +1,47 @@
+{
+  "invalid_features": [],
+  "underconstrained_sketches": [],
+  "arms": {
+    "02_right_cradle": 0.0,
+    "01_left_cradle": 0.0
+  },
+  "rails": {
+    "08_right_outlet_rail": {
+      "valid": true,
+      "solids": 1,
+      "laptop_overlap": 0.0,
+      "other_part_overlaps": {},
+      "insertion_samples": {
+        "0": 0.0,
+        "0.3": 0.0,
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0,
+        "10": 0.0,
+        "20": 0.0,
+        "40": 0.0,
+        "60": 0.0
+      },
+      "driver_overlap": 0.0
+    },
+    "07_left_outlet_rail": {
+      "valid": true,
+      "solids": 1,
+      "laptop_overlap": 0.0,
+      "other_part_overlaps": {},
+      "insertion_samples": {
+        "0": 0.0,
+        "0.3": 0.0,
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0,
+        "10": 0.0,
+        "20": 0.0,
+        "40": 0.0,
+        "60": 0.0
+      },
+      "driver_overlap": 0.0
+    }
+  },
+  "all_pass": true
+}

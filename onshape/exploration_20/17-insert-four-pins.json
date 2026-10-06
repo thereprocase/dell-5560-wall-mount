@@ -1,0 +1,97 @@
+{
+  "status": 200,
+  "data": {
+    "insertInstanceResponses": [
+      {
+        "occurrences": [
+          {
+            "fixed": false,
+            "mateStatuses": null,
+            "hidden": false,
+            "transform": null,
+            "path": [
+              "MHmYUYWHGspLYhsuH"
+            ]
+          }
+        ]
+      },
+      {
+        "occurrences": [
+          {
+            "fixed": false,
+            "mateStatuses": null,
+            "hidden": false,
+            "transform": null,
+            "path": [
+              "M5mFLLhN5gdXda3TN"
+            ]
+          }
+        ]
+      },
+      {
+        "occurrences": [
+          {
+            "fixed": false,
+            "mateStatuses": null,
+            "hidden": false,
+            "transform": null,
+            "path": [
+              "MTvwZny9b7s59RYDm"
+            ]
+          }
+        ]
+      },
+      {
+        "occurrences": [
+          {
+            "fixed": false,
+            "mateStatuses": null,
+            "hidden": false,
+            "transform": null,
+            "path": [
+              "MZxzRMC3bPemsaqUG"
+            ]
+          }
+        ]
+      }
+    ],
+    "insertResponses": [
+      {
+        "fixed": false,
+        "mateStatuses": null,
+        "hidden": false,
+        "transform": null,
+        "path": [
+          "MHmYUYWHGspLYhsuH"
+        ]
+      },
+      {
+        "fixed": false,
+        "mateStatuses": null,
+        "hidden": false,
+        "transform": null,
+        "path": [
+          "M5mFLLhN5gdXda3TN"
+        ]
+      },
+      {
+        "fixed": false,
+        "mateStatuses": null,
+        "hidden": false,
+        "transform": null,
+        "path": [
+          "MTvwZny9b7s59RYDm"
+        ]
+      },
+      {
+        "fixed": false,
+        "mateStatuses": null,
+        "hidden": false,
+        "transform": null,
+        "path": [
+          "MZxzRMC3bPemsaqUG"
+        ]
+      }
+    ]
+  }
+}

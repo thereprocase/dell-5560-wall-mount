@@ -1,0 +1,103 @@
+{
+  "status": "done",
+  "file": "F:/Code/dell-5560-wall-mount-standby/freecad/Precision_5560_Native.FCStd",
+  "styled_sources": [
+    "PinBody",
+    "Compound015",
+    "Mirroring",
+    "Compound027",
+    "Mirroring001",
+    "Compound042",
+    "Mirroring002",
+    "Compound049",
+    "Mirroring003",
+    "Compound077",
+    "Mirroring005",
+    "Instance",
+    "Instance001",
+    "Instance002",
+    "Instance003",
+    "Instance004",
+    "Instance005",
+    "Instance006",
+    "Instance007",
+    "Instance008",
+    "Instance009"
+  ],
+  "invalid_features": [],
+  "line_width": 1.3,
+  "style": "Flat Lines",
+  "lighting": [
+    [
+      "String",
+      "HeadlightDirection",
+      "(0.6841049,-0.12062616,-0.7193398)"
+    ],
+    [
+      "String",
+      "FillLightDirection",
+      "(-0.6403416,0.7631294,0.087155744)"
+    ],
+    [
+      "String",
+      "BacklightDirection",
+      "(-0.7544065,-0.63302225,-0.17364818)"
+    ],
+    [
+      "Integer",
+      "HeadlightIntensity",
+      95
+    ],
+    [
+      "Integer",
+      "FillLightIntensity",
+      14
+    ],
+    [
+      "Integer",
+      "BacklightIntensity",
+      48
+    ],
+    [
+      "Integer",
+      "AmbientLightIntensity",
+      10
+    ],
+    [
+      "Boolean",
+      "EnableHeadlight",
+      true
+    ],
+    [
+      "Boolean",
+      "EnableBacklight",
+      true
+    ],
+    [
+      "Boolean",
+      "EnableFillLight",
+      true
+    ],
+    [
+      "Unsigned Long",
+      "HeadlightColor",
+      4294240511
+    ],
+    [
+      "Unsigned Long",
+      "FillLightColor",
+      3588816895
+    ],
+    [
+      "Unsigned Long",
+      "BacklightColor",
+      3925082111
+    ],
+    [
+      "Unsigned Long",
+      "AmbientLightColor",
+      4294967295
+    ]
+  ],
+  "limitations": "Cel-inspired lighting and outlines, no quantized shader or texture geometry."
+}

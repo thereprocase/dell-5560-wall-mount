@@ -1,0 +1,51 @@
+"""Run once in FreeCAD; local queued scripts execute on the GUI thread."""
+from pathlib import Path
+import json, traceback, time, os
+import FreeCAD as App
+import FreeCADGui as Gui
+from PySide import QtCore
+ROOT = Path(__file__).resolve().parent
+QUEUE = ROOT / 'queue'
+if not hasattr(App, '_mount_runner_lock'):
+    import msvcrt
+    handle=open(ROOT/'.runner.lock','a+b')
+    if handle.tell()==0: handle.write(b'0'); handle.flush()
+    handle.seek(0)
+    try: msvcrt.locking(handle.fileno(),msvcrt.LK_NBLCK,1)
+    except OSError:
+        handle.close()
+        raise RuntimeError('Another FreeCAD session owns this project runner; no jobs claimed')
+    App._mount_runner_lock=handle
+if hasattr(App, '_mount_runner'):
+    App._mount_runner.stop()
+def poll():
+    jobs = sorted(QUEUE.glob('*.ready'))
+    if not jobs:
+        return
+    job = jobs[0]
+    running = job.with_suffix('.running')
+    try: job.rename(running)
+    except FileNotFoundError: return
+    result = {'job': job.name, 'started': time.time()}
+    App._mount_runner.stop()
+    try:
+        script = Path(running.read_text(encoding='utf-8-sig').strip())
+        if not script.resolve().is_relative_to(ROOT.resolve()):
+            raise ValueError('Job must be inside the FreeCAD project directory')
+        exec(compile(script.read_text(encoding='utf-8-sig'), str(script), 'exec'),
+             {'__name__': '__main__', '__file__': str(script)})
+        result['status'] = 'done'
+    except Exception:
+        result.update(status='failed', error=traceback.format_exc())
+        App.Console.PrintError(result['error'])
+    result['finished'] = time.time()
+    running.with_suffix('.json').write_text(json.dumps(result, indent=2), encoding='utf-8')
+    running.rename(running.with_suffix('.' + result['status']))
+    App._mount_runner.start(1000)
+App._mount_runner = QtCore.QTimer()
+App._mount_runner.timeout.connect(poll)
+App._mount_runner.start(1000)
+(ROOT / 'runner_ready.json').write_text(json.dumps({
+    'pid': os.getpid(), 'version': App.Version(), 'documents': list(App.listDocuments()), 'started': time.time()
+}, indent=2), encoding='utf-8')
+App.Console.PrintMessage('Wall mount live runner ready. Local project queue only.\n')

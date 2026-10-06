@@ -1,0 +1,148 @@
+{
+  "status": 200,
+  "data": {
+    "btType": "BTFeatureScriptEvalResponse-1859",
+    "rejectMicroversionSkew": false,
+    "microversionSkew": false,
+    "result": {
+      "btType": "com.belmonttech.serialize.fsvalue.BTFSValueMap",
+      "typeTag": "",
+      "value": [
+        {
+          "btType": "BTFSValueMapEntry-2077",
+          "value": {
+            "btType": "com.belmonttech.serialize.fsvalue.BTFSValueArray",
+            "typeTag": "Vector",
+            "value": [
+              {
+                "btType": "com.belmonttech.serialize.fsvalue.BTFSValueNumber",
+                "typeTag": "",
+                "value": 4.0
+              },
+              {
+                "btType": "com.belmonttech.serialize.fsvalue.BTFSValueNumber",
+                "typeTag": "",
+                "value": 4.0
+              },
+              {
+                "btType": "com.belmonttech.serialize.fsvalue.BTFSValueNumber",
+                "typeTag": "",
+                "value": 14.0
+              }
+            ]
+          },
+          "key": {
+            "btType": "com.belmonttech.serialize.fsvalue.BTFSValueString",
+            "typeTag": "",
+            "value": "max_mm"
+          }
+        },
+        {
+          "btType": "BTFSValueMapEntry-2077",
+          "value": {
+            "btType": "com.belmonttech.serialize.fsvalue.BTFSValueArray",
+            "typeTag": "Vector",
+            "value": [
+              {
+                "btType": "com.belmonttech.serialize.fsvalue.BTFSValueNumber",
+                "typeTag": "",
+                "value": -4.0
+              },
+              {
+                "btType": "com.belmonttech.serialize.fsvalue.BTFSValueNumber",
+                "typeTag": "",
+                "value": -4.0
+              },
+              {
+                "btType": "com.belmonttech.serialize.fsvalue.BTFSValueNumber",
+                "typeTag": "",
+                "value": 0.0
+              }
+            ]
+          },
+          "key": {
+            "btType": "com.belmonttech.serialize.fsvalue.BTFSValueString",
+            "typeTag": "",
+            "value": "min_mm"
+          }
+        },
+        {
+          "btType": "BTFSValueMapEntry-2077",
+          "value": {
+            "btType": "com.belmonttech.serialize.fsvalue.BTFSValueArray",
+            "typeTag": "",
+            "value": [
+              {
+                "btType": "com.belmonttech.serialize.fsvalue.BTFSValueString",
+                "typeTag": "",
+                "value": "JHD"
+              }
+            ]
+          },
+          "key": {
+            "btType": "com.belmonttech.serialize.fsvalue.BTFSValueString",
+            "typeTag": "",
+            "value": "partIds"
+          }
+        },
+        {
+          "btType": "BTFSValueMapEntry-2077",
+          "value": {
+            "btType": "com.belmonttech.serialize.fsvalue.BTFSValueNumber",
+            "typeTag": "",
+            "value": 4.2
+          },
+          "key": {
+            "btType": "com.belmonttech.serialize.fsvalue.BTFSValueString",
+            "typeTag": "",
+            "value": "pinCrownDiameter_mm"
+          }
+        },
+        {
+          "btType": "BTFSValueMapEntry-2077",
+          "value": {
+            "btType": "com.belmonttech.serialize.fsvalue.BTFSValueNumber",
+            "typeTag": "",
+            "value": 4.0
+          },
+          "key": {
+            "btType": "com.belmonttech.serialize.fsvalue.BTFSValueString",
+            "typeTag": "",
+            "value": "pinHeadRadius_mm"
+          }
+        },
+        {
+          "btType": "BTFSValueMapEntry-2077",
+          "value": {
+            "btType": "com.belmonttech.serialize.fsvalue.BTFSValueNumber",
+            "typeTag": "",
+            "value": 1.0
+          },
+          "key": {
+            "btType": "com.belmonttech.serialize.fsvalue.BTFSValueString",
+            "typeTag": "",
+            "value": "solidCount"
+          }
+        },
+        {
+          "btType": "BTFSValueMapEntry-2077",
+          "value": {
+            "btType": "com.belmonttech.serialize.fsvalue.BTFSValueNumber",
+            "typeTag": "",
+            "value": 204.56030071178654
+          },
+          "key": {
+            "btType": "com.belmonttech.serialize.fsvalue.BTFSValueString",
+            "typeTag": "",
+            "value": "volume_mm3"
+          }
+        }
+      ]
+    },
+    "notices": [],
+    "sourceMicroversion": "93dcc10a79c9f4291b27edf0",
+    "libraryVersion": 3070,
+    "serializationVersion": "1.2.21",
+    "console": ""
+  }
+}

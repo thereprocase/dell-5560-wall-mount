@@ -1,0 +1,54 @@
+{
+  "created_utc": "2026-09-08T17:46:03.365489+00:00",
+  "solver": "simpleFoam",
+  "iteration": 300,
+  "converged": false,
+  "scope": "Current numerical steady-solver iterate on a provisional mesh; not a validated steady solution.",
+  "section_x_m": 0.111,
+  "density_kg_m3": 1.2,
+  "source_section_sha256": "75f32198d6a35e1a2cd79ecee994ab8c69a67a6948d6abcf8fe948f62b5269b8",
+  "image_sha256": {
+    "speed-arrows.png": "d31bf4d4982463aad77352e2799c3df6e5f3caf15e6099e0b65da789620b88d5",
+    "pressure-arrows.png": "034449f1f76ebeadb69c8745b82e4bd4236348487a24d98fd426916807e770a8",
+    "vorticity-arrows.png": "0081038b9a6309ba7e6d83eab19dbf6d1db30f6522e1d45f3ddaf1c7c34c4ede"
+  },
+  "sampled_ranges": {
+    "speed-arrows/Complete air path": [
+      0.0,
+      5.323404788970947
+    ],
+    "speed-arrows/Front lip / duct outlet": [
+      0.0,
+      3.774401903152466
+    ],
+    "speed-arrows/Hinge lip / discharge": [
+      0.0,
+      5.3182692527771
+    ],
+    "pressure-arrows/Complete air path": [
+      -7.768639087677002,
+      19.420696258544922
+    ],
+    "pressure-arrows/Front lip / duct outlet": [
+      -2.0588154792785645,
+      7.255966663360596
+    ],
+    "pressure-arrows/Hinge lip / discharge": [
+      -6.908893585205078,
+      6.658803939819336
+    ],
+    "vorticity-arrows/Complete air path": [
+      -26674.021484375,
+      23549.267578125
+    ],
+    "vorticity-arrows/Front lip / duct outlet": [
+      -11611.7724609375,
+      23549.267578125
+    ],
+    "vorticity-arrows/Hinge lip / discharge": [
+      -26674.021484375,
+      6552.7373046875
+    ]
+  },
+  "arrows": "Actual sampled in-plane U components. Reference arrows show 5 m/s; overview and close-up scales are marked independently."
+}

@@ -1,0 +1,164 @@
+{
+  "status": 200,
+  "data": {
+    "btType": "BTFeatureDefinitionResponse-1617",
+    "rejectMicroversionSkew": false,
+    "microversionSkew": false,
+    "featureState": {
+      "btType": "BTFeatureState-1688",
+      "featureStatus": "ERROR",
+      "inactive": false
+    },
+    "feature": {
+      "btType": "BTMFeature-134",
+      "namespace": "",
+      "name": "Pin - revolve 360 degrees",
+      "suppressed": false,
+      "parameters": [
+        {
+          "btType": "BTMParameterEnum-145",
+          "namespace": "",
+          "nodeId": "MZv8dls22Yn6dSa0n",
+          "libraryRelationType": "DEFAULT",
+          "enumName": "ExtendedToolBodyType",
+          "value": "SOLID",
+          "parameterId": "bodyType",
+          "parameterName": ""
+        },
+        {
+          "btType": "BTMParameterEnum-145",
+          "namespace": "",
+          "nodeId": "M2xQ2Rs9QyTJVn7jd",
+          "libraryRelationType": "DEFAULT",
+          "enumName": "NewBodyOperationType",
+          "value": "NEW",
+          "parameterId": "operationType",
+          "parameterName": ""
+        },
+        {
+          "btType": "BTMParameterQueryList-148",
+          "libraryRelationType": "DEFAULT",
+          "queries": [
+            {
+              "btType": "BTMIndividualQuery-138",
+              "queryStatement": null,
+              "queryString": "query=qSketchRegion(makeId(\"FsccNllSqSt2GtL_0\"));",
+              "nodeId": "M73B3oxA8JLieMTuE",
+              "deterministicIds": [
+                "JGC"
+              ]
+            }
+          ],
+          "filter": {
+            "btType": "BTAndFilter-110",
+            "operand1": {
+              "btType": "BTAndFilter-110",
+              "operand1": {
+                "btType": "BTEntityTypeFilter-124",
+                "entityType": "FACE"
+              },
+              "operand2": {
+                "btType": "BTGeometryFilter-130",
+                "geometryType": "PLANE"
+              }
+            },
+            "operand2": {
+              "btType": "BTConstructionObjectFilter-113",
+              "isConstruction": false
+            }
+          },
+          "nodeId": "MjSgmJe6XH1k7+Vg1",
+          "parameterId": "entities",
+          "parameterName": ""
+        },
+        {
+          "btType": "BTMParameterQueryList-148",
+          "libraryRelationType": "DEFAULT",
+          "queries": [
+            {
+              "btType": "BTMIndividualQuery-138",
+              "queryStatement": null,
+              "queryString": "query=qContainsPoint(qCreatedBy(makeId(\"FsccNllSqSt2GtL_0\"), EntityType.EDGE), vector(0,0,7)*millimeter);",
+              "nodeId": "MfcuEbyFK7DPJgXHq",
+              "deterministicIds": [
+                "JFh",
+                "JGh"
+              ]
+            }
+          ],
+          "filter": {
+            "btType": "BTOrFilter-167",
+            "operand1": {
+              "btType": "BTOrFilter-167",
+              "operand1": {
+                "btType": "BTGeometryFilter-130",
+                "geometryType": "LINE"
+              },
+              "operand2": {
+                "btType": "BTOrFilter-167",
+                "operand1": {
+                  "btType": "BTGeometryFilter-130",
+                  "geometryType": "CIRCLE"
+                },
+                "operand2": {
+                  "btType": "BTOrFilter-167",
+                  "operand1": {
+                    "btType": "BTGeometryFilter-130",
+                    "geometryType": "ARC"
+                  },
+                  "operand2": {
+                    "btType": "BTOrFilter-167",
+                    "operand1": {
+                      "btType": "BTGeometryFilter-130",
+                      "geometryType": "CYLINDER"
+                    },
+                    "operand2": {
+                      "btType": "BTOrFilter-167",
+                      "operand1": {
+                        "btType": "BTGeometryFilter-130",
+                        "geometryType": "CONE"
+                      },
+                      "operand2": {
+                        "btType": "BTGeometryFilter-130",
+                        "geometryType": "REVOLVED"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "operand2": {
+              "btType": "BTMateConnectorFilter-163",
+              "requiresOccurrence": false,
+              "allowImplicitMateConnector": false,
+              "isMateConnectorInferenceEnabledByDefault": false
+            }
+          },
+          "nodeId": "MVYh3JphDasMZtQzh",
+          "parameterId": "axis",
+          "parameterName": ""
+        },
+        {
+          "btType": "BTMParameterEnum-145",
+          "namespace": "",
+          "nodeId": "MlhWxDUPDtFIwI/J/",
+          "libraryRelationType": "DEFAULT",
+          "enumName": "RevolveType",
+          "value": "FULL",
+          "parameterId": "revolveType",
+          "parameterName": ""
+        }
+      ],
+      "featureId": "F6eJcmPlBqWoX2y_0",
+      "nodeId": "M9F4+CqfsTjxg4obK",
+      "featureType": "revolve",
+      "returnAfterSubfeatures": false,
+      "subFeatures": [],
+      "parameterLibraries": [],
+      "suppressionState": null
+    },
+    "sourceMicroversion": "1ba3cb24b739866c9c2aebea",
+    "libraryVersion": 0,
+    "serializationVersion": "1.2.21"
+  }
+}

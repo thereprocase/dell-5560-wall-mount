@@ -1,0 +1,69 @@
+/* Generated for OpenCFD OpenFOAM v2412; setup only. */
+FoamFile
+{
+    version 2.0;
+    format ascii;
+    class dictionary;
+    object controlDict;
+}
+
+
+application pimpleFoam;
+startFrom latestTime; startTime 0; stopAt endTime; endTime .00002; deltaT .00001;
+adjustTimeStep yes; maxCo .5; maxDeltaT .000025;
+writeControl timeStep; writeInterval 1; purgeWrite 0;
+writeFormat binary; writePrecision 10; writeCompression off;
+timeFormat general; timePrecision 10; runTimeModifiable false;
+functions {
+ probes {type probes; libs (sampling); fields (p U); interpolationScheme cellPoint;
+  writeControl timeStep; writeInterval 1; probeLocations ((-0.111 0.039 0.008)
+(-0.111 0.039 0.02)
+(-0.111 0.046 0.004)
+(-0.111 0.06 0.004)
+(-0.111 0.037 0.219)
+(-0.111 0.046 0.239)
+(-0.111 0.046 0.25)
+(0.07 0.039 0.008)
+(0.07 0.039 0.02)
+(0.07 0.046 0.004)
+(0.07 0.06 0.004)
+(0.07 0.037 0.219)
+(0.07 0.046 0.239)
+(0.07 0.046 0.25)
+(0.111 0.039 0.008)
+(0.111 0.039 0.02)
+(0.111 0.046 0.004)
+(0.111 0.06 0.004)
+(0.111 0.037 0.219)
+(0.111 0.046 0.239)
+(0.111 0.046 0.25)
+(0 0.25 0.1));}
+ extrema {type fieldMinMax; libs (fieldFunctionObjects); fields (U p k omega); writeControl timeStep; writeInterval 1;}
+ yPlus {type yPlus; libs (fieldFunctionObjects); executeControl writeTime; writeControl writeTime;}
+ vorticity {type vorticity; libs (fieldFunctionObjects); executeControl timeStep; executeInterval 1; writeControl writeTime;}
+ Q {type Q; libs (fieldFunctionObjects); executeControl timeStep; executeInterval 1; writeControl writeTime;}
+ ambient_flux {type surfaceFieldValue; libs (fieldFunctionObjects); regionType patch; name ambient_openings;
+  operation sum; fields (phi); writeFields false; writeControl timeStep; writeInterval 1;}
+ ambient_abs_flux {type surfaceFieldValue; libs (fieldFunctionObjects); regionType patch; name ambient_openings;
+  operation sumMag; fields (phi); writeFields false; writeControl timeStep; writeInterval 1;}
+
+ edge_sections {
+  type surfaces; libs (sampling);
+  writeControl timeStep; writeInterval 1;
+  surfaceFormat vtk; interpolationScheme cellPoint;
+  fields (p U vorticity Q);
+  surfaces {left_front {type cuttingPlane; planeType pointAndNormal;
+ pointAndNormalDict {point (-0.111 0 0); normal (1 0 0);}
+ bounds (-0.112 0.025 -0.008) (-0.11 0.075 0.035); interpolate true;}
+left_hinge {type cuttingPlane; planeType pointAndNormal;
+ pointAndNormalDict {point (-0.111 0 0); normal (1 0 0);}
+ bounds (-0.112 0.025 0.208) (-0.11 0.075 0.262); interpolate true;}
+right_front {type cuttingPlane; planeType pointAndNormal;
+ pointAndNormalDict {point (0.111 0 0); normal (1 0 0);}
+ bounds (0.11 0.025 -0.008) (0.112 0.075 0.035); interpolate true;}
+right_hinge {type cuttingPlane; planeType pointAndNormal;
+ pointAndNormalDict {point (0.111 0 0); normal (1 0 0);}
+ bounds (0.11 0.025 0.208) (0.112 0.075 0.262); interpolate true;}}
+ }
+}
+

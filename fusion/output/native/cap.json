@@ -1,0 +1,265 @@
+{
+  "stage": "cap",
+  "volume_mm3": 24834.54440438304,
+  "sketches": [
+    {
+      "name": "Cap outer plate | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Tray locating toe | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Outer V flute 1 profile tool | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Outer V flute 2 profile tool | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Rounded cable passage tool | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Inboard cap screw tool | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Outboard cap screw tool | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Locating toe relief 1 tool | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Locating toe relief 2 tool | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Locating toe relief 3 tool | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Lower cap rim and rib pocket 1 tool | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Lower cap rim and rib pocket 2 tool | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Lower cap rim and rib pocket 3 tool | profile",
+      "fully_constrained": true
+    },
+    {
+      "name": "Upper cap weight relief tool | profile",
+      "fully_constrained": true
+    }
+  ],
+  "features": [
+    {
+      "name": "Cap outer plate | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Cap outer plate | section radii",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Tray locating toe | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Tray locating toe | section radii",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Join cap plate and locating toe",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Outer V flute 1 profile tool | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Outer V flute 1",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Outer V flute 2 profile tool | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Outer V flute 2",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Rounded cable passage tool | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Rounded cable passage tool | section radii",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Cable passage",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Inboard cap screw tool | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Inboard cap screw clearance",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Outboard cap screw tool | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Outboard cap screw clearance",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Locating toe relief 1 tool | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Locating toe relief 1 tool | section radii",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Locating toe relief 1",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Locating toe relief 2 tool | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Locating toe relief 2 tool | section radii",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Locating toe relief 2",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Locating toe relief 3 tool | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Locating toe relief 3 tool | section radii",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Locating toe relief 3",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Lower cap rim and rib pocket 1 tool | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Lower cap rim and rib pocket 1 tool | section radii",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Lower cap rim and rib pocket 1",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Lower cap rim and rib pocket 2 tool | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Lower cap rim and rib pocket 2 tool | section radii",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Lower cap rim and rib pocket 2",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Lower cap rim and rib pocket 3 tool | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Lower cap rim and rib pocket 3 tool | section radii",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Lower cap rim and rib pocket 3",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Upper cap weight relief tool | extrude",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Upper cap weight relief tool | section radii",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Upper cap weight relief",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Installed fan placement | fan pivot",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Installed fan placement | inclination",
+      "health": 0,
+      "message": ""
+    },
+    {
+      "name": "Installed fan placement | installed datum",
+      "health": 0,
+      "message": ""
+    }
+  ],
+  "bodies": 1
+}
