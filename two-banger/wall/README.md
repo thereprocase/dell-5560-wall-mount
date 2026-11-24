@@ -1,5 +1,7 @@
 # Tight Wall-Mount Stacked Two-Banger 5560 Rack
 
+**Status:** CAD and automated fit checks only; no part has been printed or test-fitted. [3D viewer and downloads](https://thereprocase.github.io/dell-5560-wall-mount/two-banger/wall/).
+
 Tight-to-the-wall stacked edition: both Dell Precision 5560s sit in the **same
 orientation** (undersides facing the `Y = 0` wall, hinges up), tilted `10°`
 forward and stacked vertically at a **`212.0 mm` pitch** (tucked `15 mm` below

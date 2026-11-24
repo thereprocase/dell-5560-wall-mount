@@ -10,6 +10,10 @@ arms, size range and airflow adjustment too.
 [Explore both designs](https://thereprocase.github.io/dell-5560-wall-mount/) ·
 [Print and assembly guide](https://thereprocase.github.io/dell-5560-wall-mount/minimalist-guide.html)
 
+## Two-Up wall stack: two 5560s tucked to the wall
+
+Both laptops face the wall in the same orientation, tilted 10° forward and stacked at a 212 mm pitch, within 108 mm of the wall and fed from below by two 140 mm fans. Not yet printed. [Design notes](two-banger/wall/README.md) · [3D viewer and downloads](https://thereprocase.github.io/dell-5560-wall-mount/two-banger/wall/).
+
 ## Two-Banger: two 5560s on one rack
 
 A desk-standing A-frame that holds two Precision 5560s back to back over two 140 mm fans, in 4 flat printed parts with M4 screws, plus a wall-hung variant. Not yet printed. [Design notes](two-banger/README.md) · [3D viewer and downloads](https://thereprocase.github.io/dell-5560-wall-mount/two-banger/).
