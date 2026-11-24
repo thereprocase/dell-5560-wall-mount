@@ -10,10 +10,6 @@ arms, size range and airflow adjustment too.
 [Explore both designs](https://thereprocase.github.io/dell-5560-wall-mount/) ·
 [Print and assembly guide](https://thereprocase.github.io/dell-5560-wall-mount/minimalist-guide.html)
 
-## Two-Up: two 5560s on one wall mount
-
-Two Precision 5560s stacked at 15° on the wall and fed from one rear plenum, 38 printed parts derived from Minimalist M1.1. Not yet printed. [Design notes](two-up/README.md) · [3D viewer and downloads](https://thereprocase.github.io/dell-5560-wall-mount/two-up/).
-
 ## Two-Banger: two 5560s on one rack
 
 A desk-standing A-frame that holds two Precision 5560s back to back over two 140 mm fans, in 4 flat printed parts with M4 screws, plus a wall-hung variant. Not yet printed. [Design notes](two-banger/README.md) · [3D viewer and downloads](https://thereprocase.github.io/dell-5560-wall-mount/two-banger/).
