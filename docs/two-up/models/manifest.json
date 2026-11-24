@@ -1,0 +1,683 @@
+{
+ "parts": [
+  {
+   "key": "01_left_lower_arm",
+   "label": "01 / Left lower tilted arm",
+   "family": "arm",
+   "mass_g": 128.987,
+   "bbox": [
+    30.0,
+    81.19,
+    234.0
+   ],
+   "center": [
+    -161.2,
+    40.6,
+    43.0
+   ],
+   "stl_bytes": 305134
+  },
+  {
+   "key": "02_right_lower_arm",
+   "label": "02 / Right lower tilted arm",
+   "family": "arm",
+   "mass_g": 128.987,
+   "bbox": [
+    30.0,
+    81.19,
+    234.0
+   ],
+   "center": [
+    161.2,
+    40.6,
+    43.0
+   ],
+   "stl_bytes": 305134
+  },
+  {
+   "key": "03_left_fan_cage",
+   "label": "03 / Left open fan cradle",
+   "family": "cage",
+   "mass_g": 54.233,
+   "bbox": [
+    135.4,
+    110.52,
+    112.22
+   ],
+   "center": [
+    -99.6,
+    73.59,
+    -69.86
+   ],
+   "stl_bytes": 700826
+  },
+  {
+   "key": "04_right_fan_cage",
+   "label": "04 / Right open fan cradle",
+   "family": "cage",
+   "mass_g": 54.233,
+   "bbox": [
+    135.4,
+    110.52,
+    112.22
+   ],
+   "center": [
+    99.6,
+    73.59,
+    -69.86
+   ],
+   "stl_bytes": 700826
+  },
+  {
+   "key": "05_left_fan_cap",
+   "label": "05 / Left removable fan retainer",
+   "family": "cap",
+   "mass_g": 5.916,
+   "bbox": [
+    135.4,
+    26.94,
+    26.94
+   ],
+   "center": [
+    -99.6,
+    117.71,
+    -24.89
+   ],
+   "stl_bytes": 258076
+  },
+  {
+   "key": "06_right_fan_cap",
+   "label": "06 / Right removable fan retainer",
+   "family": "cap",
+   "mass_g": 5.916,
+   "bbox": [
+    135.4,
+    26.94,
+    26.94
+   ],
+   "center": [
+    99.6,
+    117.71,
+    -24.89
+   ],
+   "stl_bytes": 258076
+  },
+  {
+   "key": "07_left_tier1_splitter_dam",
+   "label": "07 / Left Tier 1 splitter dam",
+   "family": "dam",
+   "mass_g": 58.767,
+   "bbox": [
+    163.6,
+    85.61,
+    157.59
+   ],
+   "center": [
+    -82.1,
+    44.8,
+    219.8
+   ],
+   "stl_bytes": 29364
+  },
+  {
+   "key": "08_right_tier1_splitter_dam",
+   "label": "08 / Right Tier 1 splitter dam",
+   "family": "dam",
+   "mass_g": 58.767,
+   "bbox": [
+    163.6,
+    85.61,
+    157.59
+   ],
+   "center": [
+    82.1,
+    44.8,
+    219.8
+   ],
+   "stl_bytes": 29364
+  },
+  {
+   "key": "09_left_upper_arm",
+   "label": "09 / Left upper stacking arm",
+   "family": "arm",
+   "mass_g": 135.37,
+   "bbox": [
+    30.0,
+    97.62,
+    235.0
+   ],
+   "center": [
+    -161.2,
+    48.81,
+    277.5
+   ],
+   "stl_bytes": 277810
+  },
+  {
+   "key": "10_right_upper_arm",
+   "label": "10 / Right upper stacking arm",
+   "family": "arm",
+   "mass_g": 135.37,
+   "bbox": [
+    30.0,
+    97.62,
+    235.0
+   ],
+   "center": [
+    161.2,
+    48.81,
+    277.5
+   ],
+   "stl_bytes": 277810
+  },
+  {
+   "key": "11_left_tier2_dam",
+   "label": "11 / Left Tier 2 upper dam",
+   "family": "dam",
+   "mass_g": 26.926,
+   "bbox": [
+    163.6,
+    48.0,
+    115.3
+   ],
+   "center": [
+    -82.1,
+    26.0,
+    434.65
+   ],
+   "stl_bytes": 23292
+  },
+  {
+   "key": "12_right_tier2_dam",
+   "label": "12 / Right Tier 2 upper dam",
+   "family": "dam",
+   "mass_g": 26.926,
+   "bbox": [
+    163.6,
+    48.0,
+    115.3
+   ],
+   "center": [
+    82.1,
+    26.0,
+    434.65
+   ],
+   "stl_bytes": 23292
+  },
+  {
+   "key": "13_left_tier1_cheek_panel",
+   "label": "13 / Left Tier 1 cheek panel",
+   "family": "cheek",
+   "mass_g": 33.007,
+   "bbox": [
+    6.4,
+    84.0,
+    210.3
+   ],
+   "center": [
+    -175.4,
+    42.0,
+    105.15
+   ],
+   "stl_bytes": 19244
+  },
+  {
+   "key": "14_right_tier1_cheek_panel",
+   "label": "14 / Right Tier 1 cheek panel",
+   "family": "cheek",
+   "mass_g": 33.007,
+   "bbox": [
+    6.4,
+    84.0,
+    210.3
+   ],
+   "center": [
+    175.4,
+    42.0,
+    105.15
+   ],
+   "stl_bytes": 19244
+  },
+  {
+   "key": "15_left_tier2_cheek_panel",
+   "label": "15 / Left Tier 2 cheek panel",
+   "family": "cheek",
+   "mass_g": 33.007,
+   "bbox": [
+    6.4,
+    84.0,
+    210.3
+   ],
+   "center": [
+    -175.4,
+    42.0,
+    365.15
+   ],
+   "stl_bytes": 19244
+  },
+  {
+   "key": "16_right_tier2_cheek_panel",
+   "label": "16 / Right Tier 2 cheek panel",
+   "family": "cheek",
+   "mass_g": 33.007,
+   "bbox": [
+    6.4,
+    84.0,
+    210.3
+   ],
+   "center": [
+    175.4,
+    42.0,
+    365.15
+   ],
+   "stl_bytes": 19244
+  },
+  {
+   "key": "17_left_arm_splice_key",
+   "label": "17 / Left four-rung arm splice key",
+   "family": "key",
+   "mass_g": 11.529,
+   "bbox": [
+    26.2,
+    18.0,
+    69.0
+   ],
+   "center": [
+    -167.4,
+    31.0,
+    160.0
+   ],
+   "stl_bytes": 407852
+  },
+  {
+   "key": "18_right_arm_splice_key",
+   "label": "18 / Right four-rung arm splice key",
+   "family": "key",
+   "mass_g": 11.529,
+   "bbox": [
+    26.2,
+    18.0,
+    69.0
+   ],
+   "center": [
+    167.4,
+    31.0,
+    160.0
+   ],
+   "stl_bytes": 407852
+  },
+  {
+   "key": "19_left_fan_key",
+   "label": "19 / Left fan two-rung key",
+   "family": "key",
+   "mass_g": 2.968,
+   "bbox": [
+    25.2,
+    12.0,
+    32.0
+   ],
+   "center": [
+    -166.9,
+    31.0,
+    -42.0
+   ],
+   "stl_bytes": 205452
+  },
+  {
+   "key": "20_right_fan_key",
+   "label": "20 / Right fan two-rung key",
+   "family": "key",
+   "mass_g": 2.968,
+   "bbox": [
+    25.2,
+    12.0,
+    32.0
+   ],
+   "center": [
+    166.9,
+    31.0,
+    -42.0
+   ],
+   "stl_bytes": 205452
+  },
+  {
+   "key": "21_left_tier1_dam_key",
+   "label": "21 / Left tier1_dam two-rung key",
+   "family": "key",
+   "mass_g": 2.968,
+   "bbox": [
+    25.2,
+    12.0,
+    32.0
+   ],
+   "center": [
+    -166.9,
+    31.0,
+    158.0
+   ],
+   "stl_bytes": 205452
+  },
+  {
+   "key": "22_right_tier1_dam_key",
+   "label": "22 / Right tier1_dam two-rung key",
+   "family": "key",
+   "mass_g": 2.968,
+   "bbox": [
+    25.2,
+    12.0,
+    32.0
+   ],
+   "center": [
+    166.9,
+    31.0,
+    158.0
+   ],
+   "stl_bytes": 205452
+  },
+  {
+   "key": "23_left_tier2_dam_key",
+   "label": "23 / Left tier2_dam two-rung key",
+   "family": "key",
+   "mass_g": 2.968,
+   "bbox": [
+    25.2,
+    12.0,
+    32.0
+   ],
+   "center": [
+    -166.9,
+    31.0,
+    394.0
+   ],
+   "stl_bytes": 205452
+  },
+  {
+   "key": "24_right_tier2_dam_key",
+   "label": "24 / Right tier2_dam two-rung key",
+   "family": "key",
+   "mass_g": 2.968,
+   "bbox": [
+    25.2,
+    12.0,
+    32.0
+   ],
+   "center": [
+    166.9,
+    31.0,
+    394.0
+   ],
+   "stl_bytes": 205452
+  },
+  {
+   "key": "25_left_fan_keeper",
+   "label": "25 / Left fan keeper pin",
+   "family": "pin",
+   "mass_g": 0.242,
+   "bbox": [
+    5.4,
+    7.0,
+    33.4
+   ],
+   "center": [
+    -157.3,
+    31.0,
+    -41.5
+   ],
+   "stl_bytes": 409370
+  },
+  {
+   "key": "26_right_fan_keeper",
+   "label": "26 / Right fan keeper pin",
+   "family": "pin",
+   "mass_g": 0.242,
+   "bbox": [
+    5.4,
+    7.0,
+    33.4
+   ],
+   "center": [
+    157.3,
+    31.0,
+    -41.5
+   ],
+   "stl_bytes": 409370
+  },
+  {
+   "key": "27_left_tier1_dam_keeper",
+   "label": "27 / Left tier1_dam keeper pin",
+   "family": "pin",
+   "mass_g": 0.242,
+   "bbox": [
+    5.4,
+    7.0,
+    33.4
+   ],
+   "center": [
+    -157.3,
+    31.0,
+    158.5
+   ],
+   "stl_bytes": 409370
+  },
+  {
+   "key": "28_right_tier1_dam_keeper",
+   "label": "28 / Right tier1_dam keeper pin",
+   "family": "pin",
+   "mass_g": 0.242,
+   "bbox": [
+    5.4,
+    7.0,
+    33.4
+   ],
+   "center": [
+    157.3,
+    31.0,
+    158.5
+   ],
+   "stl_bytes": 409370
+  },
+  {
+   "key": "29_left_tier2_dam_keeper",
+   "label": "29 / Left tier2_dam keeper pin",
+   "family": "pin",
+   "mass_g": 0.242,
+   "bbox": [
+    5.4,
+    7.0,
+    33.4
+   ],
+   "center": [
+    -157.3,
+    31.0,
+    394.5
+   ],
+   "stl_bytes": 409370
+  },
+  {
+   "key": "30_right_tier2_dam_keeper",
+   "label": "30 / Right tier2_dam keeper pin",
+   "family": "pin",
+   "mass_g": 0.242,
+   "bbox": [
+    5.4,
+    7.0,
+    33.4
+   ],
+   "center": [
+    157.3,
+    31.0,
+    394.5
+   ],
+   "stl_bytes": 409370
+  },
+  {
+   "key": "31_left_splice_keeper_low",
+   "label": "31 / Left splice_keeper_low",
+   "family": "pin",
+   "mass_g": 0.242,
+   "bbox": [
+    5.4,
+    7.0,
+    33.4
+   ],
+   "center": [
+    -157.3,
+    31.0,
+    141.3
+   ],
+   "stl_bytes": 409370
+  },
+  {
+   "key": "32_right_splice_keeper_low",
+   "label": "32 / Right splice_keeper_low",
+   "family": "pin",
+   "mass_g": 0.242,
+   "bbox": [
+    5.4,
+    7.0,
+    33.4
+   ],
+   "center": [
+    157.3,
+    31.0,
+    141.3
+   ],
+   "stl_bytes": 409370
+  },
+  {
+   "key": "33_left_splice_keeper_high",
+   "label": "33 / Left splice_keeper_high",
+   "family": "pin",
+   "mass_g": 0.242,
+   "bbox": [
+    5.4,
+    7.0,
+    33.4
+   ],
+   "center": [
+    -157.3,
+    31.0,
+    177.3
+   ],
+   "stl_bytes": 409370
+  },
+  {
+   "key": "34_right_splice_keeper_high",
+   "label": "34 / Right splice_keeper_high",
+   "family": "pin",
+   "mass_g": 0.242,
+   "bbox": [
+    5.4,
+    7.0,
+    33.4
+   ],
+   "center": [
+    157.3,
+    31.0,
+    177.3
+   ],
+   "stl_bytes": 409370
+  },
+  {
+   "key": "35_left_cap_pin_1",
+   "label": "35 / Left retainer pin 1",
+   "family": "pin",
+   "mass_g": 0.274,
+   "bbox": [
+    8.0,
+    14.9,
+    14.9
+   ],
+   "center": [
+    -35.6,
+    116.95,
+    -27.85
+   ],
+   "stl_bytes": 487800
+  },
+  {
+   "key": "36_right_cap_pin_1",
+   "label": "36 / Right retainer pin 1",
+   "family": "pin",
+   "mass_g": 0.274,
+   "bbox": [
+    8.0,
+    14.9,
+    14.9
+   ],
+   "center": [
+    35.6,
+    116.95,
+    -27.85
+   ],
+   "stl_bytes": 487800
+  },
+  {
+   "key": "37_left_cap_pin_2",
+   "label": "37 / Left retainer pin 2",
+   "family": "pin",
+   "mass_g": 0.274,
+   "bbox": [
+    8.0,
+    14.9,
+    14.9
+   ],
+   "center": [
+    -163.6,
+    116.95,
+    -27.85
+   ],
+   "stl_bytes": 487800
+  },
+  {
+   "key": "38_right_cap_pin_2",
+   "label": "38 / Right retainer pin 2",
+   "family": "pin",
+   "mass_g": 0.274,
+   "bbox": [
+    8.0,
+    14.9,
+    14.9
+   ],
+   "center": [
+    163.6,
+    116.95,
+    -27.85
+   ],
+   "stl_bytes": 487800
+  }
+ ],
+ "envelope": {
+  "min": [
+   -180.5,
+   0.0,
+   -125.97
+  ],
+  "max": [
+   180.5,
+   131.18,
+   492.3
+  ],
+  "size": [
+   361.0,
+   131.18,
+   618.27
+  ]
+ },
+ "total_mass_g": 996.81,
+ "density_g_per_cm3": 1.05,
+ "laptop": {
+  "width": 344.4,
+  "depth": 230.3,
+  "thickness": 20.0,
+  "tilt_deg": 15.0,
+  "lower_base_z": 0.0,
+  "upper_base_z": 260.0
+ },
+ "bed": {
+  "x": 256.0,
+  "y": 256.0,
+  "z": 256.0,
+  "brim_mm": 8.0
+ }
+}

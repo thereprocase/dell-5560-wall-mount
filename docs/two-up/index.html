@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0000A8">
+<title>Two-Up Precision 5560 wall mount — review</title>
+<link rel="stylesheet" href="gridline/gridline.css">
+<link rel="stylesheet" href="gridline/responsive.css">
+<link rel="stylesheet" href="gridline/interaction.css">
+<link rel="stylesheet" href="gridline/polish.css">
+<link rel="stylesheet" href="page.css">
+<script type="importmap">{"imports":{"three":"./vendor/three.module.js"}}</script>
+</head>
+<body>
+<div class="gl-desktop">
+  <div class="gl-titlebar">
+    <a class="gl-brand" href="/"><img src="gridline/logo.svg" alt="">Two-Up 5560 wall mount</a>
+    <span class="gl-state">CAD REVIEW · NOT PRINTED</span>
+  </div>
+  <nav class="gl-menu" aria-label="Sections">
+    <a href="#viewer" aria-current="page">Model</a>
+    <a href="#numbers">Numbers</a>
+    <a href="#parts">Parts</a>
+    <a href="#status">Status</a>
+    <a href="downloads/two-up-package.zip">Package</a>
+  </nav>
+
+  <div class="gl-workspace">
+    <aside class="gl-directory">
+      <div class="gl-caption">CONTENTS</div>
+      <nav>
+        <a href="#viewer">01 / Interactive model</a>
+        <a href="#numbers">02 / Geometry budget</a>
+        <a href="#parts">03 / Part register</a>
+        <a href="#status">04 / What is verified</a>
+        <a href="#next">05 / Open decisions</a>
+      </nav>
+    </aside>
+
+    <main class="page">
+      <section class="pane">
+        <div class="pane-head">
+          <h1>Two Precision 5560 laptops, one shared plenum</h1>
+          <span class="tag">REV A · 15° STACK</span>
+        </div>
+        <p class="lede">
+          A two-up variant of the Minimalist M1.1 mount: two tilted cradles stacked at a 260 mm
+          pitch, fed from a single rear plenum, with flat cheek shrouds closing the sides. Every
+          part is sized to print on a 256 mm bed. Geometry, mass and bed fit are measured from the
+          FreeCAD model. Nothing here has been printed, sliced or airflow-tested.
+        </p>
+        <dl class="facts">
+          <div><dt>Installed envelope</dt><dd>361 × 131 × 618 mm</dd></div>
+          <div><dt>ASA mass, 38 parts</dt><dd>996.8 g</dd></div>
+          <div><dt>Parts over bed</dt><dd>0 of 38</dd></div>
+          <div><dt>Largest part</dt><dd>251 × 114 mm with brim</dd></div>
+        </dl>
+      </section>
+
+      <section class="pane" id="viewer">
+        <div class="pane-head">
+          <h2>01 / Interactive model</h2>
+          <span class="tag mono">THREE.JS · STL</span>
+        </div>
+        <div class="viewer-shell">
+          <canvas id="v-canvas" aria-label="Interactive 3D model of the two-up wall mount"></canvas>
+          <div class="viewer-loading" id="v-loading">Loading 38 parts…</div>
+          <div class="viewer-error" id="v-error" hidden></div>
+          <div class="viewer-legend">
+            <span><i class="sw arm"></i>Arms</span>
+            <span><i class="sw cage"></i>Fan cradles</span>
+            <span><i class="sw cap"></i>Retainers</span>
+            <span><i class="sw cheek"></i>Cheek shrouds</span>
+            <span><i class="sw dam"></i>Dams</span>
+            <span><i class="sw key"></i>Keys</span>
+            <span><i class="sw pin"></i>Pins</span>
+          </div>
+        </div>
+        <div class="viewer-controls">
+          <label>Explode <output id="v-explode-value">0%</output>
+            <input id="v-explode" type="range" min="0" max="100" value="0" step="1">
+          </label>
+          <label class="check"><input id="v-hardware" type="checkbox" checked> Hardware</label>
+          <label class="check"><input id="v-laptop" type="checkbox" checked> Laptop envelopes</label>
+          <label class="check"><input id="v-bed" type="checkbox"> Bed plane</label>
+          <label class="check"><input id="v-edges" type="checkbox" checked> Edges</label>
+          <button id="v-iso" type="button">Isometric</button>
+          <button id="v-side" type="button">Side</button>
+          <button id="v-front" type="button">Front</button>
+          <button id="v-reset" type="button">Reset</button>
+          <span class="mono viewer-status"><span id="v-count">38 parts</span> · <span id="v-phase">installed</span></span>
+        </div>
+        <p class="note">
+          The blue wireframe boxes are 344.4 × 230.3 × 20 mm case envelopes leaning 15° back from
+          the wall. They are placeholders for fit, not modelled laptops.
+        </p>
+      </section>
+
+      <section class="pane" id="numbers">
+        <div class="pane-head">
+          <h2>02 / Geometry budget</h2>
+          <span class="tag mono">ESTIMATE</span>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Measure</th><th>Upright M1.1</th><th>Two-up at 15°</th><th>Source</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Vertical per case</td><td>230.3 mm</td><td>227.6 mm</td><td>230.3·cos15 + 20·sin15</td></tr>
+              <tr><td>Projection off wall</td><td>68.0 mm</td><td>126.9 mm</td><td>40 + 78.9 + 2 + 6</td></tr>
+              <tr><td>Plenum depth at hinge</td><td>40.0 mm</td><td>99.6 mm</td><td>40 + 230.3·sin15</td></tr>
+              <tr><td>Stack pitch</td><td>—</td><td>260.0 mm</td><td>222.5 + 37.5 clearance</td></tr>
+              <tr><td>Installed height</td><td>284.3 mm</td><td>618.3 mm</td><td>FreeCAD envelope</td></tr>
+              <tr><td>CG lever from wall</td><td>50.0 mm</td><td>79.5 mm</td><td>40 + 115.15·sin15 + 10·cos15</td></tr>
+              <tr><td>Overturning, 2 g both cases</td><td>2.94 N·m</td><td>9.35 N·m</td><td>2 × 117.7 N × 79.5 mm / 2</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="note">
+          Overturning assumes a 3 kg case at 2 g, matching the M1.1 section review. These are
+          arithmetic, not a load rating: no ASA interlayer allowable, creep or anchor capacity is
+          established.
+        </p>
+      </section>
+
+      <section class="pane" id="parts">
+        <div class="pane-head">
+          <h2>03 / Part register</h2>
+          <span class="tag mono">38 INSTALLED · 1 COUPON</span>
+        </div>
+        <div class="table-wrap scroll">
+          <table id="part-table">
+            <thead>
+              <tr><th>No.</th><th>Part</th><th>Family</th><th>Mass g</th><th>Bounding box mm</th><th>Bed</th></tr>
+            </thead>
+            <tbody id="part-rows"></tbody>
+          </table>
+        </div>
+        <p class="note">
+          Mass is B-rep volume × 1.05 g/cm³. Bed check allows an 8 mm outer brim on both X and Y,
+          so the printable footprint limit is 240 × 240 mm.
+        </p>
+      </section>
+
+      <section class="pane" id="status">
+        <div class="pane-head">
+          <h2>04 / What is verified</h2>
+          <span class="tag warn">PROTOTYPE</span>
+        </div>
+        <div class="two-col">
+          <div>
+            <h3>Checked</h3>
+            <ul class="checklist yes">
+              <li>FreeCAD 1.1.4 recompute: 38 parts, one solid each, all valid</li>
+              <li>STEP and STL exported for every part</li>
+              <li>STL mesh audit: 0 non-manifold edges, positive volume</li>
+              <li>Analytical estimate vs B-rep: worst gap 2.85%</li>
+              <li>Bed fit with brim: 0 of 38 over 256 mm</li>
+              <li>Dam and fan-cradle interference with arms: 0 mm³</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Not checked</h3>
+            <ul class="checklist no">
+              <li>Cheek shrouds intersect the arms: 336 mm³ tier 1, 276 mm³ tier 2</li>
+              <li>Splice keys intersect both arms: 706 mm³ lower, 324 mm³ upper</li>
+              <li>No slicing, no toolpath review, no print</li>
+              <li>No physical fit, retention or ASA creep test</li>
+              <li>No airflow measurement; plenum gain is unproven</li>
+              <li>No anchor capacity for the 3.2× overturning increase</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="pane" id="next">
+        <div class="pane-head">
+          <h2>05 / Open decisions</h2>
+          <span class="tag mono">3</span>
+        </div>
+        <ol class="decisions">
+          <li><strong>Single-laptop use.</strong> If a cradle is often empty, a blanking panel is needed or the shared plenum dumps its pressure through the open bay.</li>
+          <li><strong>Wall substrate.</strong> Bolt spacing is 316.4 mm, which does not meet 406.4 mm studs; a plywood backer board is the default.</li>
+          <li><strong>Fan count.</strong> Two 120 mm fans at the bottom, with ladder slots left free on the upper arms for a second pair if tier 2 runs warm.</li>
+        </ol>
+        <p class="note">
+          Full reasoning, failure modes and the 0/10/15/20° trade-off table are in the design memo
+          shipped inside the download package.
+        </p>
+      </section>
+    </main>
+  </div>
+
+  <div class="gl-statusbar">
+    <span class="mono">Two-up 5560 · Rev A</span>
+    <span class="mono">CAD checks passed · physical fit, airflow and strength untested</span>
+    <span class="mono"><a href="downloads/two-up-package.zip">STEP + STL + FCStd + memo</a></span>
+  </div>
+</div>
+<script type="module" src="viewer.js"></script>
+<script type="module">
+  const fmt = n => n.toFixed(1);
+  fetch('models/manifest.json').then(r => r.json()).then(meta => {
+    const rows = document.getElementById('part-rows');
+    const parts = meta.parts.slice().sort((a, b) => a.key.localeCompare(b.key));
+    for (const p of parts) {
+      const tr = document.createElement('tr');
+      const b = p.bbox;
+      const dims = [b[0], b[1], b[2]].sort((x, y) => y - x);
+      const fits = dims[1] + 16 <= 256 && dims[2] + 16 <= 256 && dims[0] <= 256;
+      tr.innerHTML = `<td class="mono">${p.key.slice(0, 2)}</td>`
+        + `<td>${p.label.replace(/^\d+ \/ /, '')}</td>`
+        + `<td class="mono">${p.family}</td>`
+        + `<td class="mono num">${fmt(p.mass_g)}</td>`
+        + `<td class="mono">${fmt(b[0])} × ${fmt(b[1])} × ${fmt(b[2])}</td>`
+        + `<td class="mono ${fits ? 'ok' : 'bad'}">${fits ? 'PASS' : 'FAIL'}</td>`;
+      rows.appendChild(tr);
+    }
+  }).catch(e => console.error(e));
+</script>
+</body>
+</html>
