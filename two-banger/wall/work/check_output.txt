@@ -1,0 +1,26 @@
+Tight Wall-Mount Two-Banger 5560 Rack — FreeCAD B-Rep & Bed-Fit Verification
+================================================================================================
+Part count          : 10
+Invalid features    : 0
+Unconstrained sk    : 0
+Wall intrusion (Y<0): 0
+Part-to-part clash  : 0 (max overlap 0.0 mm3)
+Part-to-env clash   : 0 (max overlap 0.0 mm3)
+Material            : PETG (1.27 g/cm3)
+
+Part Name              | Footprint XY (mm) | With 8mm Brim     | Height Z |  Vol cm3 |   Mass g | Status
+------------------------------------------------------------------------------------------------
+01_left_lower_arm      |  238.0 x  107.9   |  254.0 x  123.9   |   34.1mm |   179.36 |   227.78 | PASS  
+02_right_lower_arm     |  238.0 x  107.9   |  254.0 x  123.9   |   34.1mm |   179.36 |   227.78 | PASS  
+03_left_upper_arm      |  238.0 x   88.2   |  254.0 x  104.2   |   34.1mm |   197.68 |   251.05 | PASS  
+04_right_upper_arm     |  238.0 x   88.2   |  254.0 x  104.2   |   34.1mm |   197.68 |   251.05 | PASS  
+05_left_fan_tray       |  172.4 x  149.0   |  188.4 x  165.0   |   12.0mm |   142.98 |   181.58 | PASS  
+06_right_fan_tray      |  172.4 x  149.0   |  188.4 x  165.0   |   12.0mm |   142.98 |   181.58 | PASS  
+07_left_lower_inlay    |  104.0 x   33.5   |  120.0 x   49.5   |    1.0mm |     2.57 |     3.27 | PASS  
+08_right_lower_inlay   |  104.0 x   33.5   |  120.0 x   49.5   |    1.0mm |     2.57 |     3.27 | PASS  
+09_left_upper_inlay    |  130.0 x   38.0   |  146.0 x   54.0   |    1.0mm |     3.51 |     4.46 | PASS  
+10_right_upper_inlay   |  130.0 x   38.0   |  146.0 x   54.0   |    1.0mm |     3.51 |     4.46 | PASS  
+------------------------------------------------------------------------------------------------
+TOTAL (10 bodies)      | 6 print plates    | all <= 256x256    |  <=256mm |  1052.20 |  1336.29 | PASS  
+================================================================================================
+OVERALL RESULT: PASS

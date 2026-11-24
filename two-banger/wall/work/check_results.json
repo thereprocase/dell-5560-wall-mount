@@ -1,0 +1,174 @@
+{
+  "passed": true,
+  "part_count": 10,
+  "petg_density_g_per_cm3": 1.27,
+  "total_volume_cm3": 1052.195,
+  "total_mass_g": 1336.288,
+  "bad_features": [],
+  "unconstrained_sketches": [],
+  "wall_intrusions_mm": {},
+  "part_overlaps_mm3": {},
+  "envelope_overlaps_mm3": {},
+  "parts": {
+    "01_left_lower_arm": {
+      "orientation": "outer flat face down",
+      "valid_single_solid": true,
+      "footprint_xy_mm": [
+        238.0,
+        107.888
+      ],
+      "with_8mm_brim_xy_mm": [
+        254.0,
+        123.888
+      ],
+      "height_z_mm": 34.1,
+      "fits_256_bed_with_brim": true,
+      "volume_cm3": 179.357,
+      "mass_g_petg": 227.783
+    },
+    "02_right_lower_arm": {
+      "orientation": "outer flat face down",
+      "valid_single_solid": true,
+      "footprint_xy_mm": [
+        238.0,
+        107.888
+      ],
+      "with_8mm_brim_xy_mm": [
+        254.0,
+        123.888
+      ],
+      "height_z_mm": 34.1,
+      "fits_256_bed_with_brim": true,
+      "volume_cm3": 179.357,
+      "mass_g_petg": 227.783
+    },
+    "03_left_upper_arm": {
+      "orientation": "outer flat face down",
+      "valid_single_solid": true,
+      "footprint_xy_mm": [
+        238.0,
+        88.19
+      ],
+      "with_8mm_brim_xy_mm": [
+        254.0,
+        104.19
+      ],
+      "height_z_mm": 34.1,
+      "fits_256_bed_with_brim": true,
+      "volume_cm3": 197.68,
+      "mass_g_petg": 251.054
+    },
+    "04_right_upper_arm": {
+      "orientation": "outer flat face down",
+      "valid_single_solid": true,
+      "footprint_xy_mm": [
+        238.0,
+        88.19
+      ],
+      "with_8mm_brim_xy_mm": [
+        254.0,
+        104.19
+      ],
+      "height_z_mm": 34.1,
+      "fits_256_bed_with_brim": true,
+      "volume_cm3": 197.68,
+      "mass_g_petg": 251.054
+    },
+    "05_left_fan_tray": {
+      "orientation": "fan tray deck flat down",
+      "valid_single_solid": true,
+      "footprint_xy_mm": [
+        172.4,
+        149.0
+      ],
+      "with_8mm_brim_xy_mm": [
+        188.4,
+        165.0
+      ],
+      "height_z_mm": 12.0,
+      "fits_256_bed_with_brim": true,
+      "volume_cm3": 142.976,
+      "mass_g_petg": 181.58
+    },
+    "06_right_fan_tray": {
+      "orientation": "fan tray deck flat down",
+      "valid_single_solid": true,
+      "footprint_xy_mm": [
+        172.4,
+        149.0
+      ],
+      "with_8mm_brim_xy_mm": [
+        188.4,
+        165.0
+      ],
+      "height_z_mm": 12.0,
+      "fits_256_bed_with_brim": true,
+      "volume_cm3": 142.976,
+      "mass_g_petg": 181.58
+    },
+    "07_left_lower_inlay": {
+      "orientation": "outer flat face down",
+      "valid_single_solid": true,
+      "footprint_xy_mm": [
+        104.0,
+        33.454
+      ],
+      "with_8mm_brim_xy_mm": [
+        120.0,
+        49.454
+      ],
+      "height_z_mm": 1.0,
+      "fits_256_bed_with_brim": true,
+      "volume_cm3": 2.572,
+      "mass_g_petg": 3.266
+    },
+    "08_right_lower_inlay": {
+      "orientation": "outer flat face down",
+      "valid_single_solid": true,
+      "footprint_xy_mm": [
+        104.0,
+        33.454
+      ],
+      "with_8mm_brim_xy_mm": [
+        120.0,
+        49.454
+      ],
+      "height_z_mm": 1.0,
+      "fits_256_bed_with_brim": true,
+      "volume_cm3": 2.572,
+      "mass_g_petg": 3.266
+    },
+    "09_left_upper_inlay": {
+      "orientation": "outer flat face down",
+      "valid_single_solid": true,
+      "footprint_xy_mm": [
+        130.0,
+        38.038
+      ],
+      "with_8mm_brim_xy_mm": [
+        146.0,
+        54.038
+      ],
+      "height_z_mm": 1.0,
+      "fits_256_bed_with_brim": true,
+      "volume_cm3": 3.512,
+      "mass_g_petg": 4.461
+    },
+    "10_right_upper_inlay": {
+      "orientation": "outer flat face down",
+      "valid_single_solid": true,
+      "footprint_xy_mm": [
+        130.0,
+        38.038
+      ],
+      "with_8mm_brim_xy_mm": [
+        146.0,
+        54.038
+      ],
+      "height_z_mm": 1.0,
+      "fits_256_bed_with_brim": true,
+      "volume_cm3": 3.512,
+      "mass_g_petg": 4.461
+    }
+  }
+}

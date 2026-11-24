@@ -1,0 +1,95 @@
+{
+  "name": "Two-Banger 5560 Rack",
+  "material": "PETG",
+  "density_g_per_cm3": 1.27,
+  "bed": {
+    "x": 256.0,
+    "y": 256.0,
+    "z": 256.0,
+    "brim": 8.0
+  },
+  "laptop": {
+    "width": 344.4,
+    "depth": 230.3,
+    "thickness": 20.0,
+    "tilt_deg": 14.0,
+    "plenum_base_half_y": 71.0,
+    "base_z": 47.0
+  },
+  "fan": {
+    "size": 140.0,
+    "thickness": 25.0,
+    "center_x": 74.5,
+    "deck_top_z": 21.0
+  },
+  "parts": [
+    {
+      "key": "01_left_end_frame",
+      "label": "01 / Left A-frame end cheek",
+      "family": "frame",
+      "orientation": "outer flat face down",
+      "footprint_mm": [
+        228.0,
+        201.42,
+        18.5
+      ],
+      "with_brim_mm": [
+        244.0,
+        217.42
+      ],
+      "volume_cm3": 212.64,
+      "mass_g": 270.06
+    },
+    {
+      "key": "02_right_end_frame",
+      "label": "02 / Right A-frame end cheek",
+      "family": "frame",
+      "orientation": "outer flat face down",
+      "footprint_mm": [
+        228.0,
+        201.42,
+        18.5
+      ],
+      "with_brim_mm": [
+        244.0,
+        217.42
+      ],
+      "volume_cm3": 212.64,
+      "mass_g": 270.06
+    },
+    {
+      "key": "03_left_fan_tray",
+      "label": "03 / Left 140 mm fan tray half",
+      "family": "tray",
+      "orientation": "bottom deck flat down",
+      "footprint_mm": [
+        172.4,
+        149.0,
+        14.0
+      ],
+      "with_brim_mm": [
+        188.4,
+        165.0
+      ],
+      "volume_cm3": 84.75,
+      "mass_g": 107.63
+    },
+    {
+      "key": "04_right_fan_tray",
+      "label": "04 / Right 140 mm fan tray half",
+      "family": "tray",
+      "orientation": "bottom deck flat down",
+      "footprint_mm": [
+        172.4,
+        149.0,
+        14.0
+      ],
+      "with_brim_mm": [
+        188.4,
+        165.0
+      ],
+      "volume_cm3": 84.75,
+      "mass_g": 107.63
+    }
+  ]
+}

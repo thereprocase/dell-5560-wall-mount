@@ -1,0 +1,77 @@
+{
+  "passed": true,
+  "part_count": 4,
+  "petg_density_g_per_cm3": 1.27,
+  "total_volume_cm3": 594.785,
+  "total_mass_g": 755.378,
+  "bad_features": [],
+  "unconstrained_sketches": [],
+  "part_overlaps_mm3": {},
+  "envelope_overlaps_mm3": {},
+  "parts": {
+    "01_left_end_frame": {
+      "orientation": "outer flat face down",
+      "valid_single_solid": true,
+      "footprint_xy_mm": [
+        228.0,
+        201.42
+      ],
+      "with_8mm_brim_xy_mm": [
+        244.0,
+        217.42
+      ],
+      "height_z_mm": 18.5,
+      "fits_256_bed_with_brim": true,
+      "volume_cm3": 212.643,
+      "mass_g_petg": 270.057
+    },
+    "02_right_end_frame": {
+      "orientation": "outer flat face down",
+      "valid_single_solid": true,
+      "footprint_xy_mm": [
+        228.0,
+        201.42
+      ],
+      "with_8mm_brim_xy_mm": [
+        244.0,
+        217.42
+      ],
+      "height_z_mm": 18.5,
+      "fits_256_bed_with_brim": true,
+      "volume_cm3": 212.643,
+      "mass_g_petg": 270.057
+    },
+    "03_left_fan_tray": {
+      "orientation": "bottom deck flat down",
+      "valid_single_solid": true,
+      "footprint_xy_mm": [
+        172.4,
+        149.0
+      ],
+      "with_8mm_brim_xy_mm": [
+        188.4,
+        165.0
+      ],
+      "height_z_mm": 14.0,
+      "fits_256_bed_with_brim": true,
+      "volume_cm3": 84.75,
+      "mass_g_petg": 107.632
+    },
+    "04_right_fan_tray": {
+      "orientation": "bottom deck flat down",
+      "valid_single_solid": true,
+      "footprint_xy_mm": [
+        172.4,
+        149.0
+      ],
+      "with_8mm_brim_xy_mm": [
+        188.4,
+        165.0
+      ],
+      "height_z_mm": 14.0,
+      "fits_256_bed_with_brim": true,
+      "volume_cm3": 84.75,
+      "mass_g_petg": 107.632
+    }
+  }
+}

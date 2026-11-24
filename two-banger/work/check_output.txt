@@ -1,0 +1,19 @@
+Two-Banger 5560 Rack — FreeCAD B-Rep & Bed-Fit Verification
+================================================================================================
+Part count          : 4
+Invalid features    : 0
+Unconstrained sk    : 0
+Part-to-part clash  : 0 (max overlap 0.0 mm3)
+Part-to-env clash   : 0 (max overlap 0.0 mm3)
+Material            : PETG (1.27 g/cm3)
+
+Part Name              | Footprint XY (mm) | With 8mm Brim     | Height Z |  Vol cm3 |   Mass g | Status
+------------------------------------------------------------------------------------------------
+01_left_end_frame      |  228.0 x  201.4   |  244.0 x  217.4   |   18.5mm |   212.64 |   270.06 | PASS  
+02_right_end_frame     |  228.0 x  201.4   |  244.0 x  217.4   |   18.5mm |   212.64 |   270.06 | PASS  
+03_left_fan_tray       |  172.4 x  149.0   |  188.4 x  165.0   |   14.0mm |    84.75 |   107.63 | PASS  
+04_right_fan_tray      |  172.4 x  149.0   |  188.4 x  165.0   |   14.0mm |    84.75 |   107.63 | PASS  
+------------------------------------------------------------------------------------------------
+TOTAL (4 parts)        | 4 print plates    | all <= 256x256    |  <=256mm |   594.79 |   755.38 | PASS  
+================================================================================================
+OVERALL RESULT: PASS

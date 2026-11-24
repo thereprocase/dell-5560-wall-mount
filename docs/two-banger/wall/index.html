@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0000A8">
+<title>Two-Banger 5560 Wall Rack — review</title>
+<link rel="stylesheet" href="gridline/gridline.css">
+<link rel="stylesheet" href="gridline/responsive.css">
+<link rel="stylesheet" href="gridline/interaction.css">
+<link rel="stylesheet" href="gridline/polish.css">
+<link rel="stylesheet" href="page.css">
+<script type="importmap">{"imports":{"three":"./vendor/three.module.js"}}</script>
+</head>
+<body>
+<div class="gl-desktop">
+  <div class="gl-titlebar">
+    <a class="gl-brand" href="/"><img src="gridline/logo.svg" alt="">Two-Banger 5560 Wall Rack</a>
+    <span class="gl-state">CAD REVIEW · NOT PRINTED</span>
+  </div>
+  <nav class="gl-menu" aria-label="Sections">
+    <a href="../">← Desk edition</a>
+    <a href="#viewer" aria-current="page">Model</a>
+    <a href="#numbers">Numbers</a>
+    <a href="#parts">Parts</a>
+    <a href="#status">Status</a>
+    <a href="#open">Open</a>
+  </nav>
+
+  <div class="gl-workspace">
+    <aside class="gl-directory">
+      <div class="gl-caption">CONTENTS</div>
+      <nav>
+        <a href="#viewer">01 / Interactive model</a>
+        <a href="#numbers">02 / Geometry &amp; layout</a>
+        <a href="#parts">03 / Parts &amp; hardware</a>
+        <a href="#status">04 / What was checked</a>
+        <a href="#open">05 / Open questions</a>
+      </nav>
+    </aside>
+
+    <main class="page">
+      <section class="pane">
+        <div class="pane-head">
+          <h1>Tight Wall-Mount Two-Banger: same-orientation stack, 55° fans</h1>
+          <span class="tag">WALL MOUNT · 10° STACK</span>
+        </div>
+        <p class="lede">
+          Tight-to-the-wall edition of the Two-Banger rack. Both Dell Precision 5560s sit in the
+          same orientation—undersides facing a 35 mm wall plenum, leaning 10° forward, stacked at a
+          212 mm vertical pitch so Tier 2's base tucks 15 mm below Tier 1's hinge and forces
+          Tier 1's hot exhaust outboard. Two 140 × 140 × 25 mm fans bolt onto a solid 12 mm 50°
+          fan plate (printed in two halves, glued at X = 0) with M4 heat-set inserts in its ends
+          taking M4 screws from the sides of the lower wall panels. Full-height 18 mm side cheeks
+          and 26 mm gusseted inboard seats capture both laptops laterally; four flush 1 mm 2-color
+          inlay panels with 1 × 1 mm V-grooves print flat on the bed with zero bridging.
+        </p>
+        <dl class="facts">
+          <div><dt>Printed parts</dt><dd>6 plates (10 bodies, PETG)</dd></div>
+          <div><dt>Total PETG mass</dt><dd>1336.3 g</dd></div>
+          <div><dt>Wall projection</dt><dd>108 mm (127 mm at fans)</dd></div>
+          <div><dt>Largest bed item</dt><dd>254 × 124 mm w/ brim</dd></div>
+        </dl>
+      </section>
+
+      <section class="pane" id="viewer">
+        <div class="pane-head">
+          <h2>01 / Interactive model</h2>
+          <span class="tag mono">THREE.JS · STL</span>
+        </div>
+        <div class="viewer-shell">
+          <canvas id="v-canvas" aria-label="Interactive 3D model of the Wall-Mount Two-Banger 5560 Rack"></canvas>
+          <div class="viewer-loading" id="v-loading">Loading 6 parts…</div>
+          <div class="viewer-error" id="v-error" hidden></div>
+          <div class="viewer-legend">
+            <span><i class="sw" style="background:#2f545e"></i>Lower &amp; upper arms</span>
+            <span><i class="sw" style="background:#278e91"></i>55° fan trays</span>
+            <span><i class="sw" style="background:#0000a8"></i>5560 envelopes</span>
+            <span><i class="sw" style="background:#b87900"></i>140 mm fans</span>
+          </div>
+        </div>
+        <div class="viewer-controls">
+          <label>Explode <output id="v-explode-value">0%</output>
+            <input id="v-explode" type="range" min="0" max="100" value="0" step="1">
+          </label>
+          <label class="check"><input id="v-envelopes" type="checkbox" checked> Laptop &amp; fan boxes</label>
+          <label class="check"><input id="v-bed" type="checkbox"> 256 mm bed</label>
+          <label class="check"><input id="v-edges" type="checkbox" checked> Edges</label>
+          <button id="v-iso" type="button">Isometric</button>
+          <button id="v-side" type="button">Side</button>
+          <button id="v-front" type="button">Front</button>
+          <button id="v-reset" type="button">Reset</button>
+          <span class="mono viewer-status">6 parts · <span id="v-phase">assembled</span></span>
+        </div>
+        <p class="note">
+          The gray plane at Y = 0 is the wall. Blue wireframe boxes are 344.4 × 230.3 × 20.0 mm
+          closed 5560 envelopes leaning 10° forward; amber boxes are 140 × 140 × 25 mm fans at 55°.
+        </p>
+      </section>
+
+      <section class="pane" id="numbers">
+        <div class="pane-head">
+          <h2>02 / Geometry &amp; layout</h2>
+          <span class="tag mono">FREECAD B-REP</span>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Measure</th><th>Value</th><th>Basis</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Wall gap (base → hinge)</td><td>35.0 mm → 75.0 mm</td><td>35 mm base + 230.3·sin(10°) forward lean</td></tr>
+              <tr><td>Laptop wall projection</td><td>101.2 mm</td><td>75.0 + 20.0·cos(10°) + 6.5 mm front lip</td></tr>
+              <tr><td>Stack vertical pitch</td><td>212.0 mm</td><td>Tucked 15 mm below Tier 1 hinge (Z = 226.8 mm); exhaust vents outboard</td></tr>
+              <tr><td>Fan angle &amp; placement</td><td>50° from horizontal</td><td>Blows up-and-wallward into Y = 0..35 mm plenum</td></tr>
+              <tr><td>Wall anchor spacing</td><td>337.4 mm (X)</td><td>8× Ø7.2 mm bores (4 per side: Z = -28, 114, 240, 356 mm)</td></tr>
+              <tr><td>Retention cheeks &amp; seat</td><td>18 mm cheek · 26 mm seat</td><td>Full-height side cheeks + gusseted inboard seat</td></tr>
+              <tr><td>Front retention fork</td><td>76.2 mm (3.0 in)</td><td>3-inch bearing along front face; chamfered tip &amp; heel</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="note">
+          <strong>Even airflow split:</strong> Both 140 mm fans sit side-by-side at 55° centered on
+          the 344.4 mm laptop width, blowing symmetrically up the enclosed wall plenum behind both
+          stacked laptops.
+        </p>
+      </section>
+
+      <section class="pane" id="parts">
+        <div class="pane-head">
+          <h2>03 / Parts &amp; hardware</h2>
+          <a class="tag mono" href="models/two-banger-5560-wall-steps.zip" download>↓ Download all STEPs (.zip)</a>
+        </div>
+        <div class="table-wrap">
+          <table id="part-table">
+            <thead>
+              <tr><th>Part</th><th>Description</th><th>Print Pose</th><th>Footprint (mm)</th><th>With 8 mm Brim</th><th>Mass (g)</th><th>Bed</th></tr>
+            </thead>
+            <tbody id="part-rows"></tbody>
+          </table>
+        </div>
+        <div class="table-wrap" style="margin-top:12px">
+          <table>
+            <thead>
+              <tr><th>Hardware Item</th><th>Qty</th><th>Where Used</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>1/4-in or M6 wall anchor / lag bolt (w/ washer)</td><td class="num">8</td><td>4 per side through Ø7.2 mm bores (Z = -28, 114, 240, 356 mm)</td></tr>
+              <tr><td>M4 heat-set brass insert (Ø5.6 mm pilot)</td><td class="num">12</td><td>8× fan corners (124.5 mm pitch) + 4× outer ends of the solid 12 mm fan plate</td></tr>
+              <tr><td>M4 × 12 mm socket-head cap screw</td><td class="num">4</td><td>Driven from outside of lower wall panels into fan-plate end inserts (flush Ø8 mm counterbores)</td></tr>
+              <tr><td>M4 × 30 mm fan screw</td><td class="num">8</td><td>4 per 140 × 140 × 25 mm fan into solid-plate M4 heat-set inserts (zero loose nuts)</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="pane" id="status">
+        <div class="pane-head">
+          <h2>04 / What was checked</h2>
+          <span class="tag warn">CAD VERIFIED · NOT PRINTED</span>
+        </div>
+        <div class="two-col">
+          <div>
+            <h3>Passed in FreeCAD 1.1.4</h3>
+            <ul class="checklist yes">
+              <li>All 6 parts recompute as valid single B-rep solids (0 invalid features, 0 unconstrained sketches)</li>
+              <li>Wall intrusion check: 0 parts or laptop envelopes cross Y &lt; 0</li>
+              <li>P1S 256 × 256 × 256 mm bed fit with 8 mm brim: max footprint 254.0 × 123.9 × 34.1 mm (lower arms), 254.0 × 104.2 × 34.1 mm (upper arms), 188.4 × 165.0 × 12.0 mm (solid fan plates); 1.0 mm inlays print flat on arm bed faces</li>
+              <li>Boolean part-to-part interference: 0.0 mm³ across all 15 pairs</li>
+              <li>Boolean part-to-envelope interference: 0.0 mm³ against both stacked 5560s and both 55° 140 mm fans</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Not yet checked</h3>
+            <ul class="checklist no">
+              <li>No OrcaSlicer G-code or PETG print test</li>
+              <li>No physical load or warm PETG creep test on the 24 mm front lip or wall pads</li>
+              <li>No thermal bench test on Tier 2 intake temperature above Tier 1 exhaust</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="pane" id="open">
+        <div class="pane-head">
+          <h2>05 / Open questions</h2>
+          <span class="tag">DECISIONS</span>
+        </div>
+        <ul class="checklist">
+          <li><strong>Wall substrate:</strong> Horizontal anchor spacing is 337.4 mm (misses 16-in / 406.4 mm studs)—mount a plywood backer board across studs or use rated hollow-wall toggle anchors.</li>
+          <li><strong>Tier 1 exhaust vs. Tier 2 intake:</strong> Both laptops share one open wall plenum; if Tier 2 runs warm from Tier 1 hinge exhaust, add a simple sheet deflector at Z = 230 mm.</li>
+          <li><strong>Overhead lift clearance:</strong> Allow ~45 mm above Tier 2's hinge (Z ≈ 520 mm total) for hand removal.</li>
+        </ul>
+      </section>
+    </main>
+  </div>
+</div>
+<script type="module" src="viewer.js"></script>
+</body>
+</html>

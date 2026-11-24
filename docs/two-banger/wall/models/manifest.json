@@ -1,0 +1,199 @@
+{
+  "name": "Tight Wall-Mount Two-Banger 5560 Rack",
+  "material": "PETG",
+  "density_g_per_cm3": 1.27,
+  "bed": {
+    "x": 256.0,
+    "y": 256.0,
+    "z": 256.0,
+    "brim": 8.0
+  },
+  "laptop": {
+    "width": 344.4,
+    "depth": 230.3,
+    "thickness": 20.0,
+    "tilt_deg": 10.0,
+    "wall_gap": 35.0,
+    "stack_pitch_z": 212.0
+  },
+  "fan": {
+    "size": 140.0,
+    "thickness": 25.0,
+    "center_x": 74.5,
+    "center_y": 60.0,
+    "center_z": -48.0,
+    "tilt_deg": 50.0
+  },
+  "parts": [
+    {
+      "key": "01_left_lower_arm",
+      "label": "01 / Left lower wall arm",
+      "family": "arm",
+      "orientation": "outer flat face down",
+      "footprint_mm": [
+        238.0,
+        107.89,
+        34.0
+      ],
+      "with_brim_mm": [
+        254.0,
+        123.89
+      ],
+      "volume_cm3": 179.36,
+      "mass_g": 227.78
+    },
+    {
+      "key": "02_right_lower_arm",
+      "label": "02 / Right lower wall arm",
+      "family": "arm",
+      "orientation": "outer flat face down",
+      "footprint_mm": [
+        238.0,
+        107.89,
+        34.0
+      ],
+      "with_brim_mm": [
+        254.0,
+        123.89
+      ],
+      "volume_cm3": 179.36,
+      "mass_g": 227.78
+    },
+    {
+      "key": "03_left_upper_arm",
+      "label": "03 / Left upper stacking arm",
+      "family": "arm",
+      "orientation": "outer flat face down",
+      "footprint_mm": [
+        238.0,
+        88.19,
+        34.0
+      ],
+      "with_brim_mm": [
+        254.0,
+        104.19
+      ],
+      "volume_cm3": 197.68,
+      "mass_g": 251.05
+    },
+    {
+      "key": "04_right_upper_arm",
+      "label": "04 / Right upper stacking arm",
+      "family": "arm",
+      "orientation": "outer flat face down",
+      "footprint_mm": [
+        238.0,
+        88.19,
+        34.0
+      ],
+      "with_brim_mm": [
+        254.0,
+        104.19
+      ],
+      "volume_cm3": 197.68,
+      "mass_g": 251.05
+    },
+    {
+      "key": "05_left_fan_tray",
+      "label": "05 / Left 55-deg solid fan plate",
+      "family": "tray",
+      "orientation": "fan tray deck flat down",
+      "footprint_mm": [
+        172.4,
+        149.0,
+        12.0
+      ],
+      "with_brim_mm": [
+        188.4,
+        165.0
+      ],
+      "volume_cm3": 142.98,
+      "mass_g": 181.58
+    },
+    {
+      "key": "06_right_fan_tray",
+      "label": "06 / Right 55-deg solid fan plate",
+      "family": "tray",
+      "orientation": "fan tray deck flat down",
+      "footprint_mm": [
+        172.4,
+        149.0,
+        12.0
+      ],
+      "with_brim_mm": [
+        188.4,
+        165.0
+      ],
+      "volume_cm3": 142.98,
+      "mass_g": 181.58
+    },
+    {
+      "key": "07_left_lower_inlay",
+      "label": "07 / Left lower 2-color inlay",
+      "family": "inlay",
+      "orientation": "outer flat face down",
+      "footprint_mm": [
+        104.0,
+        33.45,
+        1.0
+      ],
+      "with_brim_mm": [
+        120.0,
+        49.45
+      ],
+      "volume_cm3": 2.57,
+      "mass_g": 3.27
+    },
+    {
+      "key": "08_right_lower_inlay",
+      "label": "08 / Right lower 2-color inlay",
+      "family": "inlay",
+      "orientation": "outer flat face down",
+      "footprint_mm": [
+        104.0,
+        33.45,
+        1.0
+      ],
+      "with_brim_mm": [
+        120.0,
+        49.45
+      ],
+      "volume_cm3": 2.57,
+      "mass_g": 3.27
+    },
+    {
+      "key": "09_left_upper_inlay",
+      "label": "09 / Left upper 2-color inlay",
+      "family": "inlay",
+      "orientation": "outer flat face down",
+      "footprint_mm": [
+        130.0,
+        38.04,
+        1.0
+      ],
+      "with_brim_mm": [
+        146.0,
+        54.04
+      ],
+      "volume_cm3": 3.51,
+      "mass_g": 4.46
+    },
+    {
+      "key": "10_right_upper_inlay",
+      "label": "10 / Right upper 2-color inlay",
+      "family": "inlay",
+      "orientation": "outer flat face down",
+      "footprint_mm": [
+        130.0,
+        38.04,
+        1.0
+      ],
+      "with_brim_mm": [
+        146.0,
+        54.04
+      ],
+      "volume_cm3": 3.51,
+      "mass_g": 4.46
+    }
+  ]
+}

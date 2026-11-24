@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0000A8">
+<title>Two-Banger 5560 Rack — review</title>
+<link rel="stylesheet" href="gridline/gridline.css">
+<link rel="stylesheet" href="gridline/responsive.css">
+<link rel="stylesheet" href="gridline/interaction.css">
+<link rel="stylesheet" href="gridline/polish.css">
+<link rel="stylesheet" href="page.css">
+<script type="importmap">{"imports":{"three":"./vendor/three.module.js"}}</script>
+</head>
+<body>
+<div class="gl-desktop">
+  <div class="gl-titlebar">
+    <a class="gl-brand" href="/"><img src="gridline/logo.svg" alt="">Two-Banger 5560 Rack</a>
+    <span class="gl-state">CAD REVIEW · NOT PRINTED</span>
+  </div>
+  <nav class="gl-menu" aria-label="Sections">
+    <a href="#viewer" aria-current="page">Model</a>
+    <a href="#numbers">Numbers</a>
+    <a href="#parts">Parts</a>
+    <a href="#status">Status</a>
+    <a href="#open">Open</a>
+    <a href="wall/">Wall-mount edition →</a>
+  </nav>
+
+  <div class="gl-workspace">
+    <aside class="gl-directory">
+      <div class="gl-caption">CONTENTS</div>
+      <nav>
+        <a href="#viewer">01 / Interactive model</a>
+        <a href="#numbers">02 / Geometry &amp; layout</a>
+        <a href="#parts">03 / Parts &amp; hardware</a>
+        <a href="#status">04 / What was checked</a>
+        <a href="#open">05 / Open questions</a>
+      </nav>
+    </aside>
+
+    <main class="page">
+      <section class="pane">
+        <div class="pane-head">
+          <h1>Two-Banger: two 5560s, two 140 mm fans, four printed parts</h1>
+          <span class="tag">GREENFIELD · 14° A-FRAME</span>
+        </div>
+        <p class="lede">
+          A desk-standing, back-to-back A-frame rack for two Dell Precision 5560s and two standard
+          140 × 140 × 25 mm fans. Both laptops lean inward at 14°, undersides facing a shared
+          wedge plenum fed straight up by the two fans sitting flat at the bottom. Four support-free
+          PETG parts bolt together with ten M4 screws and eight fan screws—no glue, no splice keys,
+          no keeper pins.
+        </p>
+        <dl class="facts">
+          <div><dt>Printed parts</dt><dd>4 plates (PETG)</dd></div>
+          <div><dt>Total PETG mass</dt><dd>755.4 g</dd></div>
+          <div><dt>Rack footprint</dt><dd>365 × 201 × 228 mm</dd></div>
+          <div><dt>Largest bed item</dt><dd>244 × 217 mm w/ brim</dd></div>
+        </dl>
+      </section>
+
+      <section class="pane" id="viewer">
+        <div class="pane-head">
+          <h2>01 / Interactive model</h2>
+          <span class="tag mono">THREE.JS · STL</span>
+        </div>
+        <div class="viewer-shell">
+          <canvas id="v-canvas" aria-label="Interactive 3D model of the Two-Banger 5560 Rack"></canvas>
+          <div class="viewer-loading" id="v-loading">Loading 4 parts…</div>
+          <div class="viewer-error" id="v-error" hidden></div>
+          <div class="viewer-legend">
+            <span><i class="sw" style="background:#2f545e"></i>End frames</span>
+            <span><i class="sw" style="background:#278e91"></i>Fan trays</span>
+            <span><i class="sw" style="background:#0000a8"></i>5560 envelopes</span>
+            <span><i class="sw" style="background:#b87900"></i>140 mm fans</span>
+          </div>
+        </div>
+        <div class="viewer-controls">
+          <label>Explode <output id="v-explode-value">0%</output>
+            <input id="v-explode" type="range" min="0" max="100" value="0" step="1">
+          </label>
+          <label class="check"><input id="v-envelopes" type="checkbox" checked> Laptop &amp; fan boxes</label>
+          <label class="check"><input id="v-bed" type="checkbox"> 256 mm bed</label>
+          <label class="check"><input id="v-edges" type="checkbox" checked> Edges</label>
+          <button id="v-iso" type="button">Isometric</button>
+          <button id="v-side" type="button">Side</button>
+          <button id="v-front" type="button">Front</button>
+          <button id="v-reset" type="button">Reset</button>
+          <span class="mono viewer-status">4 parts · <span id="v-phase">assembled</span></span>
+        </div>
+        <p class="note">
+          Blue wireframe boxes are 344.4 × 230.3 × 20.0 mm closed 5560 envelopes leaning inward at
+          14°. Amber boxes are 140 × 140 × 25 mm fans sitting flat on the tray deck.
+        </p>
+      </section>
+
+      <section class="pane" id="numbers">
+        <div class="pane-head">
+          <h2>02 / Geometry &amp; layout</h2>
+          <span class="tag mono">FREECAD B-REP</span>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Measure</th><th>Value</th><th>Basis</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Laptop envelope (×2)</td><td>344.4 × 230.3 × 20.0 mm</td><td>Closed Dell Precision 5560</td></tr>
+              <tr><td>Fan envelope (×2)</td><td>140.0 × 140.0 × 25.0 mm</td><td>124.5 mm hole square, Ø4.3 mm</td></tr>
+              <tr><td>A-frame tilt</td><td>14.0° inward</td><td>Gravity rests laptops against inner rails</td></tr>
+              <tr><td>Plenum gap (base → hinge)</td><td>142.0 mm → 30.6 mm</td><td>140 mm fan width tapering up to hinge exhaust</td></tr>
+              <tr><td>Under-fan desk clearance</td><td>16.0 mm</td><td>Open ends + front/back intake arch</td></tr>
+              <tr><td>Support rail width</td><td>12.5 mm per side</td><td>Clears intake zones (|X| ≈ 76–146 mm) and all side ports</td></tr>
+              <tr><td>Outer bottom lip</td><td>24.0 mm</td><td>Lift 24 mm straight up to remove a laptop by hand</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="note">
+          <strong>Even airflow split:</strong> Both laptops and both 140 mm fans are mirror-symmetric
+          about the rack centerlines (X = 0 and Y = 0), so each laptop's intake underside sees the
+          exact same wedge plenum geometry and share of fan air.
+        </p>
+      </section>
+
+      <section class="pane" id="parts">
+        <div class="pane-head">
+          <h2>03 / Parts &amp; hardware</h2>
+          <a class="tag mono" href="models/two-banger-5560-steps.zip" download>↓ Download all STEPs (.zip)</a>
+        </div>
+        <div class="table-wrap">
+          <table id="part-table">
+            <thead>
+              <tr><th>Part</th><th>Description</th><th>Print Pose</th><th>Footprint (mm)</th><th>With 8 mm Brim</th><th>Mass (g)</th><th>Bed</th></tr>
+            </thead>
+            <tbody id="part-rows"></tbody>
+          </table>
+        </div>
+        <div class="table-wrap" style="margin-top:12px">
+          <table>
+            <thead>
+              <tr><th>Hardware Item</th><th>Qty</th><th>Where Used</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>M4 × 12 mm socket-head cap screw</td><td class="num">6</td><td>4× end-frame-to-tray joints, 2× center tray seam (X = 0)</td></tr>
+              <tr><td>M4 heat-set brass insert (Ø5.6 mm pilot)</td><td class="num">4</td><td>Pressed into outer end bosses of the two fan trays</td></tr>
+              <tr><td>M4 hex nut (or M4 × 10 mm locknut)</td><td class="num">2</td><td>Center tray seam at X = 0</td></tr>
+              <tr><td>M4 × 30 mm fan screw + M4 nut</td><td class="num">8</td><td>4 per 140 × 140 × 25 mm fan through Ø4.3 mm tray holes</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="pane" id="status">
+        <div class="pane-head">
+          <h2>04 / What was checked</h2>
+          <span class="tag warn">CAD VERIFIED · NOT PRINTED</span>
+        </div>
+        <div class="two-col">
+          <div>
+            <h3>Passed in FreeCAD 1.1.4</h3>
+            <ul class="checklist yes">
+              <li>All 4 parts recompute as valid single B-rep solids (0 invalid features, 0 unconstrained sketches)</li>
+              <li>P1S 256 × 256 × 256 mm bed fit with 8 mm brim: max footprint 244.0 × 217.4 × 18.5 mm</li>
+              <li>Boolean part-to-part interference: 0.0 mm³ across all 6 pairs</li>
+              <li>Boolean part-to-envelope interference: 0.0 mm³ against both 5560s and both 140 mm fans</li>
+              <li>STEP and STL exported for all 4 parts</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Not yet checked</h3>
+            <ul class="checklist no">
+              <li>No OrcaSlicer G-code or PETG bridge/bed-adhesion print test</li>
+              <li>No physical laptop insertion/port-clearance check with cables plugged in</li>
+              <li>No acoustic or thermal bench test (airflow split is symmetric geometry only)</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="pane" id="open">
+        <div class="pane-head">
+          <h2>05 / Open questions</h2>
+          <span class="tag">DECISIONS</span>
+        </div>
+        <ul class="checklist">
+          <li><strong>Rubber feet:</strong> Add 4× adhesive silicone bumpons under the end-frame feet if used on a slick desk.</li>
+          <li><strong>Single-laptop mode:</strong> If one bay is frequently empty, add a flat PETG blanking plate or expect half the plenum pressure to vent through the open side.</li>
+          <li><strong>Top tie bar:</strong> Not included so the rack stays at 4 parts and leaves the hinge exhaust unobstructed; verify frame rigidity once bolted together.</li>
+        </ul>
+      </section>
+    </main>
+  </div>
+</div>
+<script type="module" src="viewer.js"></script>
+</body>
+</html>
